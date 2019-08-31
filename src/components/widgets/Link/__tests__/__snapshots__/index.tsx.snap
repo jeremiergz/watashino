@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/widgets/Link Test Suite matches snapshot 1`] = `
+<a
+  className="sc-bdVaJa ctyFLo"
+  href="/test-page"
+  underlined={true}
+>
+  Link Component
+</a>
+`;
