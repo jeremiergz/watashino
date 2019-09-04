@@ -50,14 +50,6 @@
       "**/*/*.{ts,tsx}",
       "!**/*/*.d.ts"
     ],
-    "coverageThreshold": {
-      "global": {
-        "branches": 80,
-        "functions": 80,
-        "lines": 80,
-        "statements": -50
-      }
-    },
     "globals": {
       "__PATH_PREFIX__": ""
     },
@@ -79,8 +71,8 @@
   },
   "dependencies": {
     "@react-google-maps/api": "1.6.0",
-    "gatsby": "2.15.5",
-    "gatsby-image": "2.2.16",
+    "gatsby": "2.15.6",
+    "gatsby-image": "2.2.17",
     "gatsby-plugin-google-fonts": "1.0.1",
     "gatsby-plugin-manifest": "2.2.13",
     "gatsby-plugin-react-helmet": "3.1.6",
@@ -88,7 +80,7 @@
     "gatsby-plugin-sharp": "2.2.19",
     "gatsby-plugin-styled-components": "3.1.4",
     "gatsby-plugin-typescript": "2.1.6",
-    "gatsby-source-filesystem": "2.1.19",
+    "gatsby-source-filesystem": "2.1.20",
     "gatsby-transformer-json": "2.2.7",
     "gatsby-transformer-remark": "2.6.21",
     "gatsby-transformer-sharp": "2.2.13",
