@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/widgets/List Test Suite matches snapshot 1`] = `
+<ul
+  className="sc-bdVaJa sc-bxivhb cjqEZu"
+>
+  <label
+    className="sc-htpNat knBskS"
+    color="#17365C"
+    display="block"
+    fontSize={32}
+    fontWeight={800}
+  >
+    List Label
+  </label>
+  <li
+    className="sc-bdVaJa sc-bwzfXH gDuMzH"
+    fontSize={24}
+    fontWeight={600}
+  >
+    List Item 0
+  </li>
+  <li
+    className="sc-bdVaJa sc-bwzfXH gDuMzH"
+    fontSize={24}
+    fontWeight={600}
+  >
+    List Item 1
+  </li>
+</ul>
+`;

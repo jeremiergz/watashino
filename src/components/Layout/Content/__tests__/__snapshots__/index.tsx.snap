@@ -3,7 +3,7 @@
 exports[`components/Layout/Content Test Suite matches snapshot 1`] = `
 Array [
   <h1
-    className="sc-bdVaJa iSXfdi"
+    className="sc-bdVaJa sc-bwzfXH cctPTR"
   >
     SEO Test
   </h1>,

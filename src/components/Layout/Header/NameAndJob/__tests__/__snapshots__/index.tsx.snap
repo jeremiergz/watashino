@@ -1,97 +1,98 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
-<div
-  className="sc-htpNat KtFsv"
+<a
+  className="sc-bxivhb dUMdtZ sc-htpNat bPidjF"
+  href="/"
+  underlined={false}
 >
-  <a
-    className="sc-bxivhb dUMdtZ sc-bwzfXH cnfbYo"
-    href="/"
+  <div
+    className=" gatsby-image-wrapper"
+    style={
+      Object {
+        "display": "inline-block",
+        "height": undefined,
+        "overflow": "hidden",
+        "position": "relative",
+        "width": undefined,
+      }
+    }
   >
-    <div
-      className=" gatsby-image-wrapper"
+    <img
+      alt=""
+      src="data:image/png;base64"
       style={
         Object {
-          "display": "inline-block",
-          "height": undefined,
-          "overflow": "hidden",
-          "position": "relative",
-          "width": undefined,
+          "height": "100%",
+          "left": 0,
+          "objectFit": "cover",
+          "objectPosition": "center",
+          "opacity": 1,
+          "position": "absolute",
+          "top": 0,
+          "transitionDelay": "500ms",
+          "width": "100%",
         }
       }
-    >
+    />
+    <picture>
+      <source
+        srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+      />
       <img
         alt=""
-        src="data:image/png;base64"
+        loading="lazy"
+        onLoad={[Function]}
+        src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
+        srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
         style={
           Object {
             "height": "100%",
             "left": 0,
             "objectFit": "cover",
             "objectPosition": "center",
-            "opacity": 1,
+            "opacity": 0,
             "position": "absolute",
             "top": 0,
-            "transitionDelay": "500ms",
+            "transition": "opacity 500ms",
             "width": "100%",
           }
         }
       />
-      <picture>
-        <source
-          srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
-        />
-        <img
-          alt=""
-          loading="lazy"
-          onLoad={[Function]}
-          src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
-          srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
-          style={
-            Object {
-              "height": "100%",
-              "left": 0,
-              "objectFit": "cover",
-              "objectPosition": "center",
-              "opacity": 0,
-              "position": "absolute",
-              "top": 0,
-              "transition": "opacity 500ms",
-              "width": "100%",
-            }
-          }
-        />
-      </picture>
-      <noscript
-        dangerouslySetInnerHTML={
-          Object {
-            "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+    </picture>
+    <noscript
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
 /static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
 /static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
 /static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
 /static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
-          }
         }
-      />
-    </div>
-    <div
-      className="sc-ifAKCX epwMCi"
+      }
+    />
+  </div>
+  <div
+    className="sc-ifAKCX epwMCi"
+  >
+    <h3
+      className="sc-bdVaJa sc-bwzfXH eKuxhZ"
+      color="#31859A"
+      fontWeight={800}
+      letterSpacing={-1}
     >
-      <h2
-        className="sc-EHOje guhvyK"
-      >
-        Jeremie Rodriguez
-      </h2>
-      <h3
-        className="sc-bZQynM gEErmK"
-      >
-        Full Stack Engineer
-      </h3>
-    </div>
-  </a>
-</div>
+      Jeremie Rodriguez
+    </h3>
+    <h4
+      className="sc-bdVaJa sc-bwzfXH hNlWrZ"
+      fontWeight={600}
+    >
+      Full Stack Engineer
+    </h4>
+  </div>
+</a>
 `;
