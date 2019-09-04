@@ -10,7 +10,7 @@ const notFoundNav = Navigation.links.notFound;
 const NotFoundPage = () => (
     <Layout>
         <Layout.Content title={notFoundNav.name} keywords={notFoundNav.keywords}>
-            <Heading as="h4">Man, I hate when this happens...</Heading>
+            <Heading variant="h4">Man, I hate when this happens...</Heading>
             {'Find you way '}
             <Link to={homeNav.to} underlined>
                 Home

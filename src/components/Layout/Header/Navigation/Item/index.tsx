@@ -19,7 +19,9 @@ const Item = styled.div`
 `;
 
 const Link = styled(BaseLink)`
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `;
 
 const Svg = styled.svg`
@@ -32,7 +34,7 @@ const ItemComponent = ({ link, ...rest }: Props) => {
         <Item {...rest}>
             <Link to={link.to}>
                 <Svg as={link.icon} />
-                <div>{link.name}</div>
+                {link.name}
             </Link>
         </Item>
     );

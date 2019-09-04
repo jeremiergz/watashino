@@ -51,9 +51,9 @@ const Main = styled.main`
     max-width: ${theme.sizes.tablet}px;
     margin: auto;
     text-align: center;
-    padding: 0 16px;
+    padding: 0 16px 16px 16px;
     ${theme.breakpoints.minWidth.tablet} {
-        padding: 0 32px;
+        padding: 0 32px 32px 32px;
     }
 `;
 

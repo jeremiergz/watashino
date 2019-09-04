@@ -1,4 +1,40 @@
 {
+  "company": {
+    "name": "Sigfox",
+    "website": "https://sigfox.com"
+  },
+  "contacts": [
+    {
+      "img": "contact-phone.png",
+      "label": "+33 6 81 51 64 42",
+      "url": "tel:+33681516442"
+    },
+    {
+      "img": "contact-linkedin.png",
+      "label": "/jeremiergz",
+      "url": "https://linkedin.com/in/jeremiergz"
+    },
+    {
+      "img": "contact-twitter.png",
+      "label": "@JeremieRgz",
+      "url": "https://twitter.com/JeremieRgz"
+    },
+    {
+      "img": "contact-gitlab.png",
+      "label": "/jeremiergz",
+      "url": "https://gitlab.com/jeremiergz"
+    },
+    {
+      "img": "contact-github.png",
+      "label": "/jeremiergz",
+      "url": "https://github.com/jeremiergz"
+    },
+    {
+      "img": "contact-email.png",
+      "label": "contact@jeremierodriguez.com",
+      "url": "mailto:contact@jeremierodriguez.com"
+    }
+  ],
   "jobTitle": "Full Stack Engineer",
   "location": {
     "city": "Toulouse",

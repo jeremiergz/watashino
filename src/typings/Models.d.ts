@@ -1,4 +1,9 @@
 declare namespace Models {
+    type Article = {
+        date: Date;
+        slug: string;
+        title: string;
+    };
     type Location = {
         city: string;
         country: string;

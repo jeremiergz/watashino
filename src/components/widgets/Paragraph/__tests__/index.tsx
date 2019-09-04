@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
-import Heading from '..';
+import Paragraph from '..';
 
-describe('components/widgets/Heading Test Suite', () => {
+describe('components/widgets/Paragraph Test Suite', () => {
     it('matches snapshot', () => {
-        const jsx = <Heading variant="h1">Heading Component</Heading>;
+        const jsx = <Paragraph>Paragraph Component</Paragraph>;
         expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
     });
 });

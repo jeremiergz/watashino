@@ -11,7 +11,7 @@ const ContentComponent = ({ children, description, keywords, lang, meta, title }
     return (
         <>
             <SEO description={description} keywords={keywords} lang={lang} meta={meta} title={title} />
-            <Heading as="h1">{title}</Heading>
+            <Heading variant="h1">{title}</Heading>
             {children}
         </>
     );

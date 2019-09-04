@@ -1,14 +1,16 @@
-import { GatsbyLinkProps, Link as GatsbyLink } from 'gatsby';
-import React from 'react';
+import { Link as GatsbyLink } from 'gatsby';
+import React, { HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import theme from '../../../theme';
 
-type Props = Omit<GatsbyLinkProps<null>, 'ref'> & {
+type Props = HTMLAttributes<HTMLAnchorElement> & {
+    external?: boolean;
+    to: string;
     underlined?: boolean;
 };
 
-const Link = styled(GatsbyLink)<Props>`
-    text-decoration: ${({ underlined }) => (underlined ? 'underlined' : 'none')};
+const Link = styled.a`
+    text-decoration: ${({ underlined }: Partial<Props>) => (underlined ? 'underlined' : 'none')};
     font-weight: ${theme.fonts.main.weight.semiBold};
     color: ${theme.colors.text};
     transition: color 100ms ease-in-out;
@@ -17,9 +19,23 @@ const Link = styled(GatsbyLink)<Props>`
     }
 `;
 
-const LinkComponent = ({ children, to, underlined, ...rest }: Props) => {
+const LinkComponent = ({ children, external = false, to, underlined = false, ...rest }: Props) => {
+    const isTouchDevice = typeof window !== 'undefined' && window.navigator.maxTouchPoints > 0;
+    const target = isTouchDevice ? '_self' : '_blank';
+    const linkProps = external
+        ? {
+              href: to,
+              rel: 'noopener noreferrer',
+              target,
+          }
+        : {
+              activeStyle: { color: theme.colors.secondary },
+              as: GatsbyLink,
+              partiallyActive: to !== '/' ? true : false,
+              to: to,
+          };
     return (
-        <Link to={to} underlined={underlined} activeStyle={{ color: theme.colors.secondary }} {...rest}>
+        <Link {...linkProps} underlined={underlined} {...rest}>
             {children}
         </Link>
     );

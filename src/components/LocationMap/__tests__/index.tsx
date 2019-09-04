@@ -18,8 +18,8 @@ describe('components/LocationMap Test Suite', () => {
                 location: {
                     country: 'USA',
                     city: 'San Francisco',
-                    lat: 37.7749,
-                    lng: 122.4194,
+                    lat: 37.77493,
+                    lng: -122.41942,
                 },
             },
         }));

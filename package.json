@@ -13,15 +13,15 @@
   "bugs": {
     "url": "https://gitlab.com/jeremiergz/watashino/issues"
   },
-  "files": [
-    "public/**/*"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://gitlab.com/jeremiergz/watashino.git"
   },
   "license": "Apache-2.0",
   "author": "Jeremie Rodriguez <contact@jeremierodriguez.com> (https://github.com/jeremiergz)",
+  "files": [
+    "public/**/*"
+  ],
   "scripts": {
     "build": "run-s clean compile",
     "clean": "rimraf .cache coverage dist out public",
@@ -78,10 +78,8 @@
     "verbose": true
   },
   "dependencies": {
-    "@babel/preset-typescript": "^7.3.3",
-    "@graphql-codegen/add": "^1.7.0",
     "@react-google-maps/api": "1.6.0",
-    "gatsby": "2.15.2",
+    "gatsby": "2.15.5",
     "gatsby-image": "2.2.16",
     "gatsby-plugin-google-fonts": "1.0.1",
     "gatsby-plugin-manifest": "2.2.13",
@@ -92,15 +90,19 @@
     "gatsby-plugin-typescript": "2.1.6",
     "gatsby-source-filesystem": "2.1.19",
     "gatsby-transformer-json": "2.2.7",
+    "gatsby-transformer-remark": "2.6.21",
     "gatsby-transformer-sharp": "2.2.13",
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "react-helmet": "5.2.1",
-    "styled-components": "4.3.2"
+    "styled-components": "4.3.2",
+    "styled-system": "5.1.1"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.3.3",
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
+    "@graphql-codegen/add": "^1.7.0",
     "@graphql-codegen/cli": "^1.7.0",
     "@graphql-codegen/typescript": "^1.7.0",
     "@graphql-codegen/typescript-operations": "^1.7.0",
@@ -111,6 +113,7 @@
     "@types/react-helmet": "^5.0.9",
     "@types/react-test-renderer": "^16.9.0",
     "@types/styled-components": "^4.1.18",
+    "@types/styled-system": "^5.1.1",
     "babel-jest": "^24.9.0",
     "babel-plugin-styled-components": "^1.10.6",
     "babel-preset-gatsby": "^0.2.12",

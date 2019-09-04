@@ -6,8 +6,6 @@ import theme from '../../../../theme';
 import Heading from '../../../widgets/Heading';
 import BaseLink from '../../../widgets/Link';
 
-const Container = styled.div``;
-
 const Link = styled(BaseLink)`
     display: flex;
     flex-direction: column;
@@ -31,28 +29,9 @@ const Description = styled.div`
     }
 `;
 
-const Name = styled(Heading)`
-    margin: 0;
-    font-weight: ${theme.fonts.main.weight.bold};
-    letter-spacing: -1px;
-    transition: color 100ms ease-in-out;
-    padding: 8px;
-    z-index: 1;
-    :hover {
-        color: ${theme.colors.secondary};
-    }
-`;
-
-const JobTitle = styled(Heading)`
-    margin: 0;
-    font-weight: ${theme.fonts.main.weight.semiBold};
-    margin-top: -8px;
-    padding: 0 8px 8px 8px;
-`;
-
 const NameAndJobComponent = () => {
-    const { dataJson, file } = useStaticQuery<GraphQL.PersonalDetailsQueryQuery>(graphql`
-        query PersonalDetailsQuery {
+    const { dataJson, file } = useStaticQuery<GraphQL.HeaderDataQueryQuery>(graphql`
+        query HeaderDataQuery {
             dataJson {
                 jobTitle
             }
@@ -66,15 +45,35 @@ const NameAndJobComponent = () => {
         }
     `);
     return (
-        <Container>
+        <>
             <Link to="/">
                 <Img fixed={file.childImageSharp.fixed as FixedObject} />
                 <Description>
-                    <Name as="h2">Jeremie Rodriguez</Name>
-                    <JobTitle as="h3">{dataJson.jobTitle}</JobTitle>
+                    <Heading
+                        color={theme.colors.secondary}
+                        fontWeight={theme.fonts.main.weight.bold}
+                        letterSpacing={-1}
+                        margin={0}
+                        padding={2}
+                        variant="h3"
+                        zIndex={1}
+                    >
+                        Jeremie Rodriguez
+                    </Heading>
+                    <Heading
+                        fontWeight={theme.fonts.main.weight.semiBold}
+                        margin={0}
+                        marginTop={-2}
+                        paddingBottom={2}
+                        paddingTop={0}
+                        paddingX={2}
+                        variant="h4"
+                    >
+                        {dataJson.jobTitle}
+                    </Heading>
                 </Description>
             </Link>
-        </Container>
+        </>
     );
 };
 
