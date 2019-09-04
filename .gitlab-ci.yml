@@ -2,6 +2,7 @@ stages:
   - "build"
   - "quality"
   - "security"
+  - "deploy"
 
 image: "node:12"
 
@@ -17,6 +18,9 @@ build:npm:
     - "npm install"
   script:
     - "npm run build"
+  artifacts:
+    paths:
+      - "public"
 
 build:docker:
   stage: "build"
@@ -70,3 +74,15 @@ dependency_scanning:
   artifacts:
     reports:
       dependency_scanning: "gl-dependency-scanning-report.json"
+
+pages:
+  stage: "deploy"
+  script:
+    - "ls -lh public"
+  artifacts:
+    paths:
+      - "public"
+  needs:
+    - "build:npm"
+  only:
+    - "master"

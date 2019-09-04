@@ -20,7 +20,7 @@
   "license": "Apache-2.0",
   "author": "Jeremie Rodriguez <contact@jeremierodriguez.com> (https://github.com/jeremiergz)",
   "files": [
-    "public/**/*"
+    "public/"
   ],
   "scripts": {
     "build": "run-s clean compile",
