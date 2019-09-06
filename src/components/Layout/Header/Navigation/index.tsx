@@ -1,18 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
-import theme from '../../../../theme';
+import Flex from '../../../primitives/Flex';
 import BookIcon from '../../../svg/Book';
 import HouseIcon from '../../../svg/House';
 import MoodIcon from '../../../svg/Mood';
 import Item from './Item';
-
-const Navigation = styled.div`
-    display: flex;
-    margin-top: 16px;
-    ${theme.breakpoints.minWidth.tablet} {
-        margin-top: 0;
-    }
-`;
 
 const links = {
     home: {
@@ -41,20 +32,21 @@ const links = {
     },
 };
 
-const NavigationComponent = () => {
+const Navigation = () => {
     return (
-        <Navigation>
+        <Flex marginTop={{ _: 16, tablet: 0 }}>
             {Object.keys(links)
                 .filter(key => !links[key].ignoreInNavigation)
                 .map(key => {
                     const link = links[key];
                     return <Item key={link.name} link={link} />;
                 })}
-        </Navigation>
+        </Flex>
     );
 };
 
-NavigationComponent.displayName = 'Navigation';
-NavigationComponent.links = links;
+Navigation.displayName = 'Navigation';
 
-export default NavigationComponent;
+Navigation.links = links;
+
+export default Navigation;

@@ -1,6 +1,7 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import Img, { FixedObject, FluidObject } from 'gatsby-image';
 import React from 'react';
+import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Navigation from '../components/Layout/Header/Navigation';
 import LocationMap from '../components/LocationMap';
@@ -8,14 +9,18 @@ import Box from '../components/primitives/Box';
 import Flex from '../components/primitives/Flex';
 import Link from '../components/widgets/Link';
 import Paragraph from '../components/widgets/Paragraph';
-import styled from 'styled-components';
 
 const aboutMeNav = Navigation.links.aboutMe;
 
 const vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
 
-const GorillaImg = styled(Img)`
+const GorillaImage = styled(Img)`
     border-radius: 8px;
+`;
+
+const ContactImage = styled(Img)`
+    height: 100%;
+    width: 100%;
 `;
 
 const AboutMePage = () => {
@@ -66,7 +71,7 @@ const AboutMePage = () => {
     return (
         <Layout>
             <Layout.Content title={aboutMeNav.name} keywords={aboutMeNav.keywords}>
-                <GorillaImg fluid={coverImgFluid as FluidObject} />
+                <GorillaImage fluid={coverImgFluid as FluidObject} />
                 <Paragraph>{`Hi there, I'm Jeremie!`}</Paragraph>
                 <Paragraph>
                     {`I'm currently working at `}
@@ -81,8 +86,11 @@ const AboutMePage = () => {
             <Flex alignItems="center" justifyContent="center" margin={5}>
                 {contacts.map(({ img, url }) => (
                     <Link key={url} to={url} external>
-                        <Box paddingX={2}>
-                            <Img fixed={imgNodes.find(i => i.base === img).childImageSharp.fixed as FixedObject} />
+                        <Box paddingX={2} width={[32, 48]}>
+                            <ContactImage
+                                as={Img}
+                                fixed={imgNodes.find(i => i.base === img).childImageSharp.fixed as FixedObject}
+                            />
                         </Box>
                     </Link>
                 ))}
@@ -91,5 +99,7 @@ const AboutMePage = () => {
         </Layout>
     );
 };
+
+AboutMePage.displayName = 'AboutMePage';
 
 export default AboutMePage;

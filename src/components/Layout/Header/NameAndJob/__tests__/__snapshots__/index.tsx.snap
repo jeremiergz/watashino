@@ -2,9 +2,10 @@
 
 exports[`components/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
 <a
-  className="sc-bxivhb dUMdtZ sc-htpNat bPidjF"
+  className="sc-htpNat sc-ifAKCX gHTeqL sc-bxivhb dzviYf"
+  color="#262626"
+  fontWeight={600}
   href="/"
-  underlined={false}
 >
   <div
     className=" gatsby-image-wrapper"
@@ -77,7 +78,7 @@ exports[`components/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
     />
   </div>
   <div
-    className="sc-ifAKCX epwMCi"
+    className="sc-EHOje dlMdUP"
   >
     <h3
       className="sc-bdVaJa sc-bwzfXH eKuxhZ"

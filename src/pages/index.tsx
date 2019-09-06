@@ -10,4 +10,6 @@ const IndexPage = () => (
     </Layout>
 );
 
+IndexPage.displayName = 'IndexPage';
+
 export default IndexPage;

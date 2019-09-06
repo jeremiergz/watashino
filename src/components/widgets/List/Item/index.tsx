@@ -1,5 +1,4 @@
 import React from 'react';
-import theme from '../../../../theme';
 import Flex, { FlexProps } from '../../../primitives/Flex';
 
 type ItemProps = FlexProps;
@@ -10,7 +9,7 @@ const Item = ({ children, ...rest }: ItemProps) => {
             alignItems="center"
             as="li"
             fontSize={24}
-            fontWeight={theme.fonts.main.weight.semiBold}
+            fontWeight="semi-bold"
             justifyContent="left"
             paddingX={0}
             paddingY={2}
@@ -21,6 +20,8 @@ const Item = ({ children, ...rest }: ItemProps) => {
         </Flex>
     );
 };
+
+Item.displayName = 'ListItem';
 
 export { ItemProps };
 export default Item;

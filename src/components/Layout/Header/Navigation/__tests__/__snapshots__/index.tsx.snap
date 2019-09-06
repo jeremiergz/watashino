@@ -2,18 +2,19 @@
 
 exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
 <div
-  className="sc-ifAKCX fSDoTH"
+  className="sc-EHOje bgjbpX"
 >
   <div
-    className="sc-bwzfXH wIIFn"
+    className="sc-htpNat dXQKdu"
   >
     <a
-      className="sc-htpNat hhQZsf sc-bdVaJa fkCkAu"
+      className="sc-bdVaJa sc-bxivhb gRrtFq sc-bwzfXH cuVWiB"
+      color="#262626"
+      fontWeight={600}
       href="/"
-      underlined={false}
     >
       <svg
-        className="sc-bxivhb btqxNa"
+        className="sc-ifAKCX edruXQ"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -29,15 +30,16 @@ exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
     </a>
   </div>
   <div
-    className="sc-bwzfXH wIIFn"
+    className="sc-htpNat dXQKdu"
   >
     <a
-      className="sc-htpNat hhQZsf sc-bdVaJa fkCkAu"
+      className="sc-bdVaJa sc-bxivhb gRrtFq sc-bwzfXH cuVWiB"
+      color="#262626"
+      fontWeight={600}
       href="/articles"
-      underlined={false}
     >
       <svg
-        className="sc-bxivhb btqxNa"
+        className="sc-ifAKCX edruXQ"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -56,15 +58,16 @@ exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
     </a>
   </div>
   <div
-    className="sc-bwzfXH wIIFn"
+    className="sc-htpNat dXQKdu"
   >
     <a
-      className="sc-htpNat hhQZsf sc-bdVaJa fkCkAu"
+      className="sc-bdVaJa sc-bxivhb gRrtFq sc-bwzfXH cuVWiB"
+      color="#262626"
+      fontWeight={600}
       href="/about-me"
-      underlined={false}
     >
       <svg
-        className="sc-bxivhb btqxNa"
+        className="sc-ifAKCX edruXQ"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >

@@ -1,35 +1,11 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import Img, { FixedObject } from 'gatsby-image';
 import React from 'react';
-import styled from 'styled-components';
-import theme from '../../../../theme';
+import Flex from '../../../primitives/Flex';
 import Heading from '../../../widgets/Heading';
-import BaseLink from '../../../widgets/Link';
+import Link from '../../../widgets/Link';
 
-const Link = styled(BaseLink)`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    ${theme.breakpoints.minWidth.tablet} {
-        flex-direction: row;
-        justify-content: flex-start;
-        text-align: left;
-    }
-`;
-
-const Description = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: ${theme.colors.text};
-    ${theme.breakpoints.minWidth.tablet} {
-        margin-left: 8px;
-    }
-`;
-
-const NameAndJobComponent = () => {
+const NameAndJob = () => {
     const { dataJson, file } = useStaticQuery<GraphQL.HeaderDataQueryQuery>(graphql`
         query HeaderDataQuery {
             dataJson {
@@ -45,38 +21,43 @@ const NameAndJobComponent = () => {
         }
     `);
     return (
-        <>
-            <Link to="/">
-                <Img fixed={file.childImageSharp.fixed as FixedObject} />
-                <Description>
-                    <Heading
-                        color={theme.colors.secondary}
-                        fontWeight={theme.fonts.main.weight.bold}
-                        letterSpacing={-1}
-                        margin={0}
-                        padding={2}
-                        variant="h3"
-                        zIndex={1}
-                    >
-                        Jeremie Rodriguez
-                    </Heading>
-                    <Heading
-                        fontWeight={theme.fonts.main.weight.semiBold}
-                        margin={0}
-                        marginTop={-2}
-                        paddingBottom={2}
-                        paddingTop={0}
-                        paddingX={2}
-                        variant="h4"
-                    >
-                        {dataJson.jobTitle}
-                    </Heading>
-                </Description>
-            </Link>
-        </>
+        <Link
+            alignItems="center"
+            display="flex"
+            flexDirection={{ _: 'column', tablet: 'row' }}
+            justifyContent={{ _: 'center', tablet: 'flex-start' }}
+            textAlign={{ _: 'center', tablet: 'left' }}
+            to="/"
+        >
+            <Img fixed={file.childImageSharp.fixed as FixedObject} />
+            <Flex color="text" flexDirection="column" justifyContent="center" marginLeft={{ tablet: 2 }}>
+                <Heading
+                    color="secondary"
+                    fontWeight="bold"
+                    letterSpacing={-1}
+                    margin={0}
+                    padding={2}
+                    variant="h3"
+                    zIndex={1}
+                >
+                    Jeremie Rodriguez
+                </Heading>
+                <Heading
+                    fontWeight="semi-bold"
+                    margin={0}
+                    marginTop={-2}
+                    paddingBottom={2}
+                    paddingTop={0}
+                    paddingX={2}
+                    variant="h4"
+                >
+                    {dataJson.jobTitle}
+                </Heading>
+            </Flex>
+        </Link>
     );
 };
 
-NameAndJobComponent.displayName = 'NameAndJob';
+NameAndJob.displayName = 'NameAndJob';
 
-export default NameAndJobComponent;
+export default NameAndJob;

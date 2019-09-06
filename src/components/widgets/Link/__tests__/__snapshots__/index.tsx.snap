@@ -2,9 +2,11 @@
 
 exports[`components/widgets/Link Test Suite matches snapshot 1`] = `
 <a
-  className="sc-bdVaJa ctyFLo"
+  className="sc-bdVaJa sc-bwzfXH ftSJPu"
+  color="#262626"
+  fontWeight={600}
   href="/test-page"
-  underlined={true}
+  variant="underlined"
 >
   Link Component
 </a>

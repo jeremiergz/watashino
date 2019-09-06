@@ -5,7 +5,7 @@ import Link from '..';
 describe('components/widgets/Link Test Suite', () => {
     it('matches snapshot', () => {
         const jsx = (
-            <Link to="/test-page" underlined>
+            <Link to="/test-page" variant="underlined">
                 Link Component
             </Link>
         );

@@ -1,8 +1,9 @@
 import React, { ComponentType } from 'react';
-import styled from 'styled-components';
-import BaseLink from '../../../../widgets/Link';
+import Box from '../../../../primitives/Box';
+import Flex from '../../../../primitives/Flex';
+import Link from '../../../../widgets/Link';
 
-type Props = {
+type ItemProps = {
     link: {
         icon: ComponentType;
         name: string;
@@ -10,36 +11,18 @@ type Props = {
     };
 };
 
-const Item = styled.div`
-    min-width: 96px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-`;
-
-const Link = styled(BaseLink)`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`;
-
-const Svg = styled.svg`
-    height: 32px;
-    width: 32px;
-`;
-
-const ItemComponent = ({ link, ...rest }: Props) => {
+const Item = ({ link, ...rest }: ItemProps) => {
     return (
-        <Item {...rest}>
-            <Link to={link.to}>
-                <Svg as={link.icon} />
+        <Flex alignItems="center" flexDirection="column" justifyContent="center" minWidth={96} {...rest}>
+            <Link alignItems="center" display="flex" flexDirection="column" to={link.to}>
+                <Box as={link.icon} height={32} width={32} />
                 {link.name}
             </Link>
-        </Item>
+        </Flex>
     );
 };
 
-ItemComponent.displayName = 'Item';
+Item.displayName = 'Item';
 
-export default ItemComponent;
+export { ItemProps };
+export default Item;

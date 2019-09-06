@@ -1,25 +1,32 @@
 import { Link as GatsbyLink } from 'gatsby';
-import React, { HTMLAttributes } from 'react';
+import React from 'react';
 import styled from 'styled-components';
+import { variant } from 'styled-system';
 import theme from '../../../theme';
+import BaseBox, { BoxProps } from '../../primitives/Box';
 
-type Props = HTMLAttributes<HTMLAnchorElement> & {
+type LinkProps = BoxProps & {
     external?: boolean;
     to: string;
-    underlined?: boolean;
+    variant?: 'underlined';
 };
 
-const Link = styled.a`
-    text-decoration: ${({ underlined }: Partial<Props>) => (underlined ? 'underlined' : 'none')};
-    font-weight: ${theme.fonts.main.weight.semiBold};
-    color: ${theme.colors.text};
+const Box = styled(BaseBox)`
+    text-decoration: none;
     transition: color 100ms ease-in-out;
     :hover {
         color: ${theme.colors.secondary};
     }
+    ${variant({
+        variants: {
+            underlined: {
+                textDecoration: 'underline',
+            },
+        },
+    })}
 `;
 
-const LinkComponent = ({ children, external = false, to, underlined = false, ...rest }: Props) => {
+const Link = ({ children, external, to, ...rest }: LinkProps) => {
     const isTouchDevice = typeof window !== 'undefined' && window.navigator.maxTouchPoints > 0;
     const target = isTouchDevice ? '_self' : '_blank';
     const linkProps = external
@@ -30,17 +37,17 @@ const LinkComponent = ({ children, external = false, to, underlined = false, ...
           }
         : {
               activeStyle: { color: theme.colors.secondary },
-              as: GatsbyLink,
               partiallyActive: to !== '/' ? true : false,
-              to: to,
+              to,
           };
     return (
-        <Link {...linkProps} underlined={underlined} {...rest}>
+        <Box as={external ? 'a' : GatsbyLink} color="text" fontWeight="semi-bold" {...linkProps} {...rest}>
             {children}
-        </Link>
+        </Box>
     );
 };
 
-LinkComponent.displayName = 'Link';
+Link.displayName = 'Link';
 
-export default LinkComponent;
+export { LinkProps };
+export default Link;

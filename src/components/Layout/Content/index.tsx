@@ -2,12 +2,12 @@ import React, { HTMLAttributes } from 'react';
 import Heading from '../../widgets/Heading';
 import SEO, { SEOProps } from '../../widgets/SEO';
 
-type Props = Pick<HTMLAttributes<HTMLElement>, 'children'> &
+type ContentProps = Pick<HTMLAttributes<HTMLElement>, 'children'> &
     SEOProps & {
         title: string;
     };
 
-const ContentComponent = ({ children, description, keywords, lang, meta, title }: Props) => {
+const Content = ({ children, description, keywords, lang, meta, title }: ContentProps) => {
     return (
         <>
             <SEO description={description} keywords={keywords} lang={lang} meta={meta} title={title} />
@@ -17,6 +17,6 @@ const ContentComponent = ({ children, description, keywords, lang, meta, title }
     );
 };
 
-ContentComponent.displayName = 'Content';
+Content.displayName = 'Content';
 
-export default ContentComponent;
+export default Content;

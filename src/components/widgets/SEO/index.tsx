@@ -1,8 +1,8 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
-type Props = {
+type SEOProps = {
     description?: string;
     keywords?: string[];
     lang?: string;
@@ -33,11 +33,11 @@ function buildMeta({
         { content: title, name: 'twitter:title' },
         { content: title, property: 'og:title' },
     ]
-        .concat(keywords.length > 0 ? { content: keywords.join(`, `), name: `keywords` } : [])
+        .concat(keywords.length > 0 ? { content: keywords.join(', '), name: 'keywords' } : [])
         .concat(meta);
 }
 
-const SEOComponent = ({ description = '', keywords = [], lang = 'en', meta = [], title }: Props) => {
+const SEO = ({ description = '', keywords = [], lang = 'en', meta = [], title }: SEOProps) => {
     const data = useStaticQuery<GraphQL.SeoQueryQuery>(graphql`
         query SEOQuery {
             site {
@@ -61,7 +61,7 @@ const SEOComponent = ({ description = '', keywords = [], lang = 'en', meta = [],
     );
 };
 
-SEOComponent.displayName = 'SEO';
+SEO.displayName = 'SEO';
 
-export { Props as SEOProps };
-export default SEOComponent;
+export { SEOProps };
+export default SEO;

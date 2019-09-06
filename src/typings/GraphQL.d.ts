@@ -19,18 +19,18 @@ declare namespace GraphQL {
     type BooleanQueryOperatorInput = {
         eq?: Maybe<Scalars['Boolean']>;
         ne?: Maybe<Scalars['Boolean']>;
-        in?: Maybe<Maybe<Scalars['Boolean']>[]>;
-        nin?: Maybe<Maybe<Scalars['Boolean']>[]>;
+        in?: Maybe<Array<Maybe<Scalars['Boolean']>>>;
+        nin?: Maybe<Array<Maybe<Scalars['Boolean']>>>;
     };
 
     type DataJson = Node & {
         __typename?: 'DataJson';
         id: Scalars['ID'];
         parent?: Maybe<Node>;
-        children: Node[];
+        children: Array<Node>;
         internal: Internal;
         company?: Maybe<DataJsonCompany>;
-        contacts?: Maybe<Maybe<DataJsonContacts>[]>;
+        contacts?: Maybe<Array<Maybe<DataJsonContacts>>>;
         jobTitle?: Maybe<Scalars['String']>;
         location?: Maybe<DataJsonLocation>;
     };
@@ -49,11 +49,11 @@ declare namespace GraphQL {
     type DataJsonConnection = {
         __typename?: 'DataJsonConnection';
         totalCount: Scalars['Int'];
-        edges: DataJsonEdge[];
-        nodes: DataJson[];
+        edges: Array<DataJsonEdge>;
+        nodes: Array<DataJson>;
         pageInfo: PageInfo;
-        distinct: Scalars['String'][];
-        group: DataJsonGroupConnection[];
+        distinct: Array<Scalars['String']>;
+        group: Array<DataJsonGroupConnection>;
     };
 
     type DataJsonConnectionDistinctArgs = {
@@ -204,8 +204,8 @@ declare namespace GraphQL {
     type DataJsonGroupConnection = {
         __typename?: 'DataJsonGroupConnection';
         totalCount: Scalars['Int'];
-        edges: DataJsonEdge[];
-        nodes: DataJson[];
+        edges: Array<DataJsonEdge>;
+        nodes: Array<DataJson>;
         pageInfo: PageInfo;
         field: Scalars['String'];
         fieldValue?: Maybe<Scalars['String']>;
@@ -227,8 +227,8 @@ declare namespace GraphQL {
     };
 
     type DataJsonSortInput = {
-        fields?: Maybe<Maybe<DataJsonFieldsEnum>[]>;
-        order?: Maybe<Maybe<SortOrderEnum>[]>;
+        fields?: Maybe<Array<Maybe<DataJsonFieldsEnum>>>;
+        order?: Maybe<Array<Maybe<SortOrderEnum>>>;
     };
 
     type DateQueryOperatorInput = {
@@ -238,15 +238,15 @@ declare namespace GraphQL {
         gte?: Maybe<Scalars['Date']>;
         lt?: Maybe<Scalars['Date']>;
         lte?: Maybe<Scalars['Date']>;
-        in?: Maybe<Maybe<Scalars['Date']>[]>;
-        nin?: Maybe<Maybe<Scalars['Date']>[]>;
+        in?: Maybe<Array<Maybe<Scalars['Date']>>>;
+        nin?: Maybe<Array<Maybe<Scalars['Date']>>>;
     };
 
     type Directory = Node & {
         __typename?: 'Directory';
         id: Scalars['ID'];
         parent?: Maybe<Node>;
-        children: Node[];
+        children: Array<Node>;
         internal: Internal;
         sourceInstanceName?: Maybe<Scalars['String']>;
         absolutePath?: Maybe<Scalars['String']>;
@@ -349,11 +349,11 @@ declare namespace GraphQL {
     type DirectoryConnection = {
         __typename?: 'DirectoryConnection';
         totalCount: Scalars['Int'];
-        edges: DirectoryEdge[];
-        nodes: Directory[];
+        edges: Array<DirectoryEdge>;
+        nodes: Array<Directory>;
         pageInfo: PageInfo;
-        distinct: Scalars['String'][];
-        group: DirectoryGroupConnection[];
+        distinct: Array<Scalars['String']>;
+        group: Array<DirectoryGroupConnection>;
     };
 
     type DirectoryConnectionDistinctArgs = {
@@ -538,16 +538,16 @@ declare namespace GraphQL {
     type DirectoryGroupConnection = {
         __typename?: 'DirectoryGroupConnection';
         totalCount: Scalars['Int'];
-        edges: DirectoryEdge[];
-        nodes: Directory[];
+        edges: Array<DirectoryEdge>;
+        nodes: Array<Directory>;
         pageInfo: PageInfo;
         field: Scalars['String'];
         fieldValue?: Maybe<Scalars['String']>;
     };
 
     type DirectorySortInput = {
-        fields?: Maybe<Maybe<DirectoryFieldsEnum>[]>;
-        order?: Maybe<Maybe<SortOrderEnum>[]>;
+        fields?: Maybe<Array<Maybe<DirectoryFieldsEnum>>>;
+        order?: Maybe<Array<Maybe<SortOrderEnum>>>;
     };
 
     type DuotoneGradient = {
@@ -595,7 +595,7 @@ declare namespace GraphQL {
         publicURL?: Maybe<Scalars['String']>;
         id: Scalars['ID'];
         parent?: Maybe<Node>;
-        children: Node[];
+        children: Array<Node>;
         internal: Internal;
         childDataJson?: Maybe<DataJson>;
         childMarkdownRemark?: Maybe<MarkdownRemark>;
@@ -661,11 +661,11 @@ declare namespace GraphQL {
     type FileConnection = {
         __typename?: 'FileConnection';
         totalCount: Scalars['Int'];
-        edges: FileEdge[];
-        nodes: File[];
+        edges: Array<FileEdge>;
+        nodes: Array<File>;
         pageInfo: PageInfo;
-        distinct: Scalars['String'][];
-        group: FileGroupConnection[];
+        distinct: Array<Scalars['String']>;
+        group: Array<FileGroupConnection>;
     };
 
     type FileConnectionDistinctArgs = {
@@ -1051,16 +1051,16 @@ declare namespace GraphQL {
     type FileGroupConnection = {
         __typename?: 'FileGroupConnection';
         totalCount: Scalars['Int'];
-        edges: FileEdge[];
-        nodes: File[];
+        edges: Array<FileEdge>;
+        nodes: Array<File>;
         pageInfo: PageInfo;
         field: Scalars['String'];
         fieldValue?: Maybe<Scalars['String']>;
     };
 
     type FileSortInput = {
-        fields?: Maybe<Maybe<FileFieldsEnum>[]>;
-        order?: Maybe<Maybe<SortOrderEnum>[]>;
+        fields?: Maybe<Array<Maybe<FileFieldsEnum>>>;
+        order?: Maybe<Array<Maybe<SortOrderEnum>>>;
     };
 
     type FloatQueryOperatorInput = {
@@ -1070,8 +1070,8 @@ declare namespace GraphQL {
         gte?: Maybe<Scalars['Float']>;
         lt?: Maybe<Scalars['Float']>;
         lte?: Maybe<Scalars['Float']>;
-        in?: Maybe<Maybe<Scalars['Float']>[]>;
-        nin?: Maybe<Maybe<Scalars['Float']>[]>;
+        in?: Maybe<Array<Maybe<Scalars['Float']>>>;
+        nin?: Maybe<Array<Maybe<Scalars['Float']>>>;
     };
 
     enum ImageCropFocus {
@@ -1111,7 +1111,7 @@ declare namespace GraphQL {
         original?: Maybe<ImageSharpOriginal>;
         resize?: Maybe<ImageSharpResize>;
         parent?: Maybe<Node>;
-        children: Node[];
+        children: Array<Node>;
         internal: Internal;
     };
 
@@ -1171,7 +1171,7 @@ declare namespace GraphQL {
         rotate?: Maybe<Scalars['Int']>;
         trim?: Maybe<Scalars['Float']>;
         sizes?: Maybe<Scalars['String']>;
-        srcSetBreakpoints?: Maybe<Maybe<Scalars['Int']>[]>;
+        srcSetBreakpoints?: Maybe<Array<Maybe<Scalars['Int']>>>;
     };
 
     type ImageSharpSizesArgs = {
@@ -1192,7 +1192,7 @@ declare namespace GraphQL {
         rotate?: Maybe<Scalars['Int']>;
         trim?: Maybe<Scalars['Float']>;
         sizes?: Maybe<Scalars['String']>;
-        srcSetBreakpoints?: Maybe<Maybe<Scalars['Int']>[]>;
+        srcSetBreakpoints?: Maybe<Array<Maybe<Scalars['Int']>>>;
     };
 
     type ImageSharpResizeArgs = {
@@ -1217,11 +1217,11 @@ declare namespace GraphQL {
     type ImageSharpConnection = {
         __typename?: 'ImageSharpConnection';
         totalCount: Scalars['Int'];
-        edges: ImageSharpEdge[];
-        nodes: ImageSharp[];
+        edges: Array<ImageSharpEdge>;
+        nodes: Array<ImageSharp>;
         pageInfo: PageInfo;
-        distinct: Scalars['String'][];
-        group: ImageSharpGroupConnection[];
+        distinct: Array<Scalars['String']>;
+        group: Array<ImageSharpGroupConnection>;
     };
 
     type ImageSharpConnectionDistinctArgs = {
@@ -1457,8 +1457,8 @@ declare namespace GraphQL {
     type ImageSharpGroupConnection = {
         __typename?: 'ImageSharpGroupConnection';
         totalCount: Scalars['Int'];
-        edges: ImageSharpEdge[];
-        nodes: ImageSharp[];
+        edges: Array<ImageSharpEdge>;
+        nodes: Array<ImageSharp>;
         pageInfo: PageInfo;
         field: Scalars['String'];
         fieldValue?: Maybe<Scalars['String']>;
@@ -1555,8 +1555,8 @@ declare namespace GraphQL {
     };
 
     type ImageSharpSortInput = {
-        fields?: Maybe<Maybe<ImageSharpFieldsEnum>[]>;
-        order?: Maybe<Maybe<SortOrderEnum>[]>;
+        fields?: Maybe<Array<Maybe<ImageSharpFieldsEnum>>>;
+        order?: Maybe<Array<Maybe<SortOrderEnum>>>;
     };
 
     type Internal = {
@@ -1564,7 +1564,7 @@ declare namespace GraphQL {
         content?: Maybe<Scalars['String']>;
         contentDigest: Scalars['String'];
         description?: Maybe<Scalars['String']>;
-        fieldOwners?: Maybe<Maybe<Scalars['String']>[]>;
+        fieldOwners?: Maybe<Array<Maybe<Scalars['String']>>>;
         ignoreType?: Maybe<Scalars['Boolean']>;
         mediaType?: Maybe<Scalars['String']>;
         owner: Scalars['String'];
@@ -1589,15 +1589,15 @@ declare namespace GraphQL {
         gte?: Maybe<Scalars['Int']>;
         lt?: Maybe<Scalars['Int']>;
         lte?: Maybe<Scalars['Int']>;
-        in?: Maybe<Maybe<Scalars['Int']>[]>;
-        nin?: Maybe<Maybe<Scalars['Int']>[]>;
+        in?: Maybe<Array<Maybe<Scalars['Int']>>>;
+        nin?: Maybe<Array<Maybe<Scalars['Int']>>>;
     };
 
     type JsonQueryOperatorInput = {
         eq?: Maybe<Scalars['JSON']>;
         ne?: Maybe<Scalars['JSON']>;
-        in?: Maybe<Maybe<Scalars['JSON']>[]>;
-        nin?: Maybe<Maybe<Scalars['JSON']>[]>;
+        in?: Maybe<Array<Maybe<Scalars['JSON']>>>;
+        nin?: Maybe<Array<Maybe<Scalars['JSON']>>>;
         regex?: Maybe<Scalars['JSON']>;
         glob?: Maybe<Scalars['JSON']>;
     };
@@ -1642,12 +1642,12 @@ declare namespace GraphQL {
         html?: Maybe<Scalars['String']>;
         htmlAst?: Maybe<Scalars['JSON']>;
         excerptAst?: Maybe<Scalars['JSON']>;
-        headings?: Maybe<Maybe<MarkdownHeading>[]>;
+        headings?: Maybe<Array<Maybe<MarkdownHeading>>>;
         timeToRead?: Maybe<Scalars['Int']>;
         tableOfContents?: Maybe<Scalars['String']>;
         wordCount?: Maybe<MarkdownWordCount>;
         parent?: Maybe<Node>;
-        children: Node[];
+        children: Array<Node>;
         internal: Internal;
     };
 
@@ -1675,11 +1675,11 @@ declare namespace GraphQL {
     type MarkdownRemarkConnection = {
         __typename?: 'MarkdownRemarkConnection';
         totalCount: Scalars['Int'];
-        edges: MarkdownRemarkEdge[];
-        nodes: MarkdownRemark[];
+        edges: Array<MarkdownRemarkEdge>;
+        nodes: Array<MarkdownRemark>;
         pageInfo: PageInfo;
-        distinct: Scalars['String'][];
-        group: MarkdownRemarkGroupConnection[];
+        distinct: Array<Scalars['String']>;
+        group: Array<MarkdownRemarkGroupConnection>;
     };
 
     type MarkdownRemarkConnectionDistinctArgs = {
@@ -1849,16 +1849,16 @@ declare namespace GraphQL {
     type MarkdownRemarkGroupConnection = {
         __typename?: 'MarkdownRemarkGroupConnection';
         totalCount: Scalars['Int'];
-        edges: MarkdownRemarkEdge[];
-        nodes: MarkdownRemark[];
+        edges: Array<MarkdownRemarkEdge>;
+        nodes: Array<MarkdownRemark>;
         pageInfo: PageInfo;
         field: Scalars['String'];
         fieldValue?: Maybe<Scalars['String']>;
     };
 
     type MarkdownRemarkSortInput = {
-        fields?: Maybe<Maybe<MarkdownRemarkFieldsEnum>[]>;
-        order?: Maybe<Maybe<SortOrderEnum>[]>;
+        fields?: Maybe<Array<Maybe<MarkdownRemarkFieldsEnum>>>;
+        order?: Maybe<Array<Maybe<SortOrderEnum>>>;
     };
 
     type MarkdownWordCount = {
@@ -1878,7 +1878,7 @@ declare namespace GraphQL {
     type Node = {
         id: Scalars['ID'];
         parent?: Maybe<Node>;
-        children: Node[];
+        children: Array<Node>;
         internal: Internal;
     };
 
@@ -2173,7 +2173,7 @@ declare namespace GraphQL {
         __typename?: 'Site';
         id: Scalars['ID'];
         parent?: Maybe<Node>;
-        children: Node[];
+        children: Array<Node>;
         internal: Internal;
         siteMetadata?: Maybe<SiteSiteMetadata>;
         port?: Maybe<Scalars['Int']>;
@@ -2193,11 +2193,11 @@ declare namespace GraphQL {
     type SiteConnection = {
         __typename?: 'SiteConnection';
         totalCount: Scalars['Int'];
-        edges: SiteEdge[];
-        nodes: Site[];
+        edges: Array<SiteEdge>;
+        nodes: Array<Site>;
         pageInfo: PageInfo;
-        distinct: Scalars['String'][];
-        group: SiteGroupConnection[];
+        distinct: Array<Scalars['String']>;
+        group: Array<SiteGroupConnection>;
     };
 
     type SiteConnectionDistinctArgs = {
@@ -2330,8 +2330,8 @@ declare namespace GraphQL {
     type SiteGroupConnection = {
         __typename?: 'SiteGroupConnection';
         totalCount: Scalars['Int'];
-        edges: SiteEdge[];
-        nodes: Site[];
+        edges: Array<SiteEdge>;
+        nodes: Array<Site>;
         pageInfo: PageInfo;
         field: Scalars['String'];
         fieldValue?: Maybe<Scalars['String']>;
@@ -2341,7 +2341,7 @@ declare namespace GraphQL {
         __typename?: 'SitePage';
         id: Scalars['ID'];
         parent?: Maybe<Node>;
-        children: Node[];
+        children: Array<Node>;
         internal: Internal;
         path?: Maybe<Scalars['String']>;
         internalComponentName?: Maybe<Scalars['String']>;
@@ -2356,11 +2356,11 @@ declare namespace GraphQL {
     type SitePageConnection = {
         __typename?: 'SitePageConnection';
         totalCount: Scalars['Int'];
-        edges: SitePageEdge[];
-        nodes: SitePage[];
+        edges: Array<SitePageEdge>;
+        nodes: Array<SitePage>;
         pageInfo: PageInfo;
-        distinct: Scalars['String'][];
-        group: SitePageGroupConnection[];
+        distinct: Array<Scalars['String']>;
+        group: Array<SitePageGroupConnection>;
     };
 
     type SitePageConnectionDistinctArgs = {
@@ -2563,30 +2563,30 @@ declare namespace GraphQL {
     type SitePageGroupConnection = {
         __typename?: 'SitePageGroupConnection';
         totalCount: Scalars['Int'];
-        edges: SitePageEdge[];
-        nodes: SitePage[];
+        edges: Array<SitePageEdge>;
+        nodes: Array<SitePage>;
         pageInfo: PageInfo;
         field: Scalars['String'];
         fieldValue?: Maybe<Scalars['String']>;
     };
 
     type SitePageSortInput = {
-        fields?: Maybe<Maybe<SitePageFieldsEnum>[]>;
-        order?: Maybe<Maybe<SortOrderEnum>[]>;
+        fields?: Maybe<Array<Maybe<SitePageFieldsEnum>>>;
+        order?: Maybe<Array<Maybe<SortOrderEnum>>>;
     };
 
     type SitePlugin = Node & {
         __typename?: 'SitePlugin';
         id: Scalars['ID'];
         parent?: Maybe<Node>;
-        children: Node[];
+        children: Array<Node>;
         internal: Internal;
         resolve?: Maybe<Scalars['String']>;
         name?: Maybe<Scalars['String']>;
         version?: Maybe<Scalars['String']>;
         pluginOptions?: Maybe<SitePluginPluginOptions>;
-        nodeAPIs?: Maybe<Maybe<Scalars['String']>[]>;
-        ssrAPIs?: Maybe<Maybe<Scalars['String']>[]>;
+        nodeAPIs?: Maybe<Array<Maybe<Scalars['String']>>>;
+        ssrAPIs?: Maybe<Array<Maybe<Scalars['String']>>>;
         pluginFilepath?: Maybe<Scalars['String']>;
         packageJson?: Maybe<SitePluginPackageJson>;
     };
@@ -2594,11 +2594,11 @@ declare namespace GraphQL {
     type SitePluginConnection = {
         __typename?: 'SitePluginConnection';
         totalCount: Scalars['Int'];
-        edges: SitePluginEdge[];
-        nodes: SitePlugin[];
+        edges: Array<SitePluginEdge>;
+        nodes: Array<SitePlugin>;
         pageInfo: PageInfo;
-        distinct: Scalars['String'][];
-        group: SitePluginGroupConnection[];
+        distinct: Array<Scalars['String']>;
+        group: Array<SitePluginGroupConnection>;
     };
 
     type SitePluginConnectionDistinctArgs = {
@@ -2756,8 +2756,8 @@ declare namespace GraphQL {
     type SitePluginGroupConnection = {
         __typename?: 'SitePluginGroupConnection';
         totalCount: Scalars['Int'];
-        edges: SitePluginEdge[];
-        nodes: SitePlugin[];
+        edges: Array<SitePluginEdge>;
+        nodes: Array<SitePlugin>;
         pageInfo: PageInfo;
         field: Scalars['String'];
         fieldValue?: Maybe<Scalars['String']>;
@@ -2770,10 +2770,10 @@ declare namespace GraphQL {
         version?: Maybe<Scalars['String']>;
         main?: Maybe<Scalars['String']>;
         license?: Maybe<Scalars['String']>;
-        dependencies?: Maybe<Maybe<SitePluginPackageJsonDependencies>[]>;
-        devDependencies?: Maybe<Maybe<SitePluginPackageJsonDevDependencies>[]>;
-        peerDependencies?: Maybe<Maybe<SitePluginPackageJsonPeerDependencies>[]>;
-        keywords?: Maybe<Maybe<Scalars['String']>[]>;
+        dependencies?: Maybe<Array<Maybe<SitePluginPackageJsonDependencies>>>;
+        devDependencies?: Maybe<Array<Maybe<SitePluginPackageJsonDevDependencies>>>;
+        peerDependencies?: Maybe<Array<Maybe<SitePluginPackageJsonPeerDependencies>>>;
+        keywords?: Maybe<Array<Maybe<Scalars['String']>>>;
     };
 
     type SitePluginPackageJsonDependencies = {
@@ -2836,7 +2836,7 @@ declare namespace GraphQL {
     type SitePluginPluginOptions = {
         __typename?: 'SitePluginPluginOptions';
         display?: Maybe<Scalars['String']>;
-        fonts?: Maybe<Maybe<Scalars['String']>[]>;
+        fonts?: Maybe<Array<Maybe<Scalars['String']>>>;
         background_color?: Maybe<Scalars['String']>;
         icon?: Maybe<Scalars['String']>;
         name?: Maybe<Scalars['String']>;
@@ -2861,8 +2861,8 @@ declare namespace GraphQL {
     };
 
     type SitePluginSortInput = {
-        fields?: Maybe<Maybe<SitePluginFieldsEnum>[]>;
-        order?: Maybe<Maybe<SortOrderEnum>[]>;
+        fields?: Maybe<Array<Maybe<SitePluginFieldsEnum>>>;
+        order?: Maybe<Array<Maybe<SortOrderEnum>>>;
     };
 
     type SiteSiteMetadata = {
@@ -2879,8 +2879,8 @@ declare namespace GraphQL {
     };
 
     type SiteSortInput = {
-        fields?: Maybe<Maybe<SiteFieldsEnum>[]>;
-        order?: Maybe<Maybe<SortOrderEnum>[]>;
+        fields?: Maybe<Array<Maybe<SiteFieldsEnum>>>;
+        order?: Maybe<Array<Maybe<SortOrderEnum>>>;
     };
 
     enum SortOrderEnum {
@@ -2891,8 +2891,8 @@ declare namespace GraphQL {
     type StringQueryOperatorInput = {
         eq?: Maybe<Scalars['String']>;
         ne?: Maybe<Scalars['String']>;
-        in?: Maybe<Maybe<Scalars['String']>[]>;
-        nin?: Maybe<Maybe<Scalars['String']>[]>;
+        in?: Maybe<Array<Maybe<Scalars['String']>>>;
+        nin?: Maybe<Array<Maybe<Scalars['String']>>>;
         regex?: Maybe<Scalars['String']>;
         glob?: Maybe<Scalars['String']>;
     };
@@ -3036,9 +3036,7 @@ declare namespace GraphQL {
     type LocationMapDataQueryQuery = { __typename?: 'Query' } & {
         dataJson: Maybe<
             { __typename?: 'DataJson' } & {
-                location: Maybe<
-                    { __typename?: 'DataJsonLocation' } & Pick<DataJsonLocation, 'country' | 'city' | 'lat' | 'lng'>
-                >;
+                location: Maybe<{ __typename?: 'DataJsonLocation' } & Pick<DataJsonLocation, 'lat' | 'lng'>>;
             }
         >;
     };
@@ -3063,18 +3061,22 @@ declare namespace GraphQL {
                     company: Maybe<{ __typename?: 'DataJsonCompany' } & Pick<DataJsonCompany, 'name' | 'website'>>;
                     location: Maybe<{ __typename?: 'DataJsonLocation' } & Pick<DataJsonLocation, 'city'>>;
                     contacts: Maybe<
-                        Maybe<{ __typename?: 'DataJsonContacts' } & Pick<DataJsonContacts, 'img' | 'label' | 'url'>>[]
+                        Array<
+                            Maybe<{ __typename?: 'DataJsonContacts' } & Pick<DataJsonContacts, 'img' | 'label' | 'url'>>
+                        >
                     >;
                 }
         >;
         allFile: { __typename?: 'FileConnection' } & {
-            nodes: ({ __typename?: 'File' } & Pick<File, 'base'> & {
-                    childImageSharp: Maybe<
-                        { __typename?: 'ImageSharp' } & {
-                            fixed: Maybe<{ __typename?: 'ImageSharpFixed' } & GatsbyImageSharpFixedFragment>;
-                        }
-                    >;
-                })[];
+            nodes: Array<
+                { __typename?: 'File' } & Pick<File, 'base'> & {
+                        childImageSharp: Maybe<
+                            { __typename?: 'ImageSharp' } & {
+                                fixed: Maybe<{ __typename?: 'ImageSharpFixed' } & GatsbyImageSharpFixedFragment>;
+                            }
+                        >;
+                    }
+            >;
         };
         file: Maybe<
             { __typename?: 'File' } & Pick<File, 'id'> & {
@@ -3091,14 +3093,16 @@ declare namespace GraphQL {
 
     type ArticlesQueryQuery = { __typename?: 'Query' } & {
         allMarkdownRemark: { __typename?: 'MarkdownRemarkConnection' } & {
-            nodes: ({ __typename?: 'MarkdownRemark' } & {
-                frontmatter: Maybe<
-                    { __typename?: 'MarkdownRemarkFrontmatter' } & Pick<
-                        MarkdownRemarkFrontmatter,
-                        'date' | 'slug' | 'title'
-                    >
-                >;
-            })[];
+            nodes: Array<
+                { __typename?: 'MarkdownRemark' } & {
+                    frontmatter: Maybe<
+                        { __typename?: 'MarkdownRemarkFrontmatter' } & Pick<
+                            MarkdownRemarkFrontmatter,
+                            'date' | 'slug' | 'title'
+                        >
+                    >;
+                }
+            >;
         };
     };
 

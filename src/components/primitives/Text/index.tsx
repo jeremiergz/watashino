@@ -2,9 +2,9 @@ import styled, { StyledComponentProps } from 'styled-components';
 import {
     color,
     ColorProps,
+    compose,
     display,
     DisplayProps,
-    compose,
     space,
     SpaceProps,
     typography,
@@ -12,19 +12,18 @@ import {
     zIndex,
     ZIndexProps,
 } from 'styled-system';
+import { Theme } from '../../../theme';
 
 type TextProps = StyledComponentProps<
     'span',
-    {},
-    ColorProps &
-        DisplayProps &
-        SpaceProps &
-        TypographyProps &
-        ZIndexProps & {
-            as?: keyof JSX.IntrinsicElements | React.ComponentType;
-        },
+    Theme,
+    ColorProps & DisplayProps & SpaceProps & Omit<TypographyProps, 'fontWeight'> & ZIndexProps,
     never
->;
+> & {
+    as?: keyof JSX.IntrinsicElements | React.ComponentType<unknown>;
+    color?: keyof Theme['colors'];
+    fontWeight?: keyof Theme['fontWeights'];
+};
 
 const Text = styled.span<TextProps>`
     ${compose(
@@ -35,6 +34,8 @@ const Text = styled.span<TextProps>`
         zIndex,
     )}
 `;
+
+Text.displayName = 'Text';
 
 export { TextProps };
 export default Text;

@@ -1,10 +1,11 @@
 import React, { HTMLAttributes } from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import theme from '../../theme';
+import Box from '../primitives/Box';
 import Content from './Content';
 import Header from './Header';
 
-type Props = HTMLAttributes<HTMLDivElement>;
+type LayoutProps = HTMLAttributes<HTMLDivElement>;
 
 const GlobalStyle = createGlobalStyle`
     html, body {
@@ -13,9 +14,9 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         > * {
-            font-family: ${theme.fonts.main.family};
-            font-weight: ${theme.fonts.main.weight.regular};
             color: ${theme.colors.text};
+            font-family: ${theme.fonts.main};
+            font-weight: ${theme.fontWeights.regular};
         }
     }
     @keyframes fadein {
@@ -47,25 +48,28 @@ const GlobalStyle = createGlobalStyle`
     }
 `;
 
-const Main = styled.main`
-    max-width: ${theme.sizes.tablet}px;
-    margin: auto;
-    text-align: center;
-    padding: 0 16px 16px 16px;
-    ${theme.breakpoints.minWidth.tablet} {
-        padding: 0 32px 32px 32px;
-    }
-`;
-
-const LayoutComponent = ({ children }: Props) => (
-    <>
-        <GlobalStyle />
-        <Header />
-        <Main>{children}</Main>
-    </>
+const Layout = ({ children }: LayoutProps) => (
+    <ThemeProvider theme={theme}>
+        <>
+            <Header />
+            <Box
+                as="main"
+                maxWidth={theme.breakpoints[3]}
+                margin="auto"
+                textAlign="center"
+                paddingX={{ _: 16, tablet: 32 }}
+                paddingBottom={{ _: 16, tablet: 32 }}
+            >
+                {children}
+            </Box>
+            <GlobalStyle />
+        </>
+    </ThemeProvider>
 );
 
-LayoutComponent.displayName = 'Layout';
-LayoutComponent.Content = Content;
+Layout.displayName = 'Layout';
 
-export default LayoutComponent;
+Layout.Content = Content;
+
+export { LayoutProps };
+export default Layout;

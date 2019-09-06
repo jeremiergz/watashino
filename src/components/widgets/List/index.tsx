@@ -18,6 +18,8 @@ const List = ({ children, ...rest }: ListProps) => {
     );
 };
 
+List.displayName = 'List';
+
 List.Label = Label;
 List.Item = Item;
 

@@ -3,12 +3,13 @@
 exports[`components/Layout Test Suite matches snapshot 1`] = `
 Array [
   <header
-    className="sc-dnqmqq doyGZP"
+    className="sc-iwsKbI cxSHXi"
   >
     <a
-      className="sc-bxivhb dUMdtZ sc-htpNat bPidjF"
+      className="sc-htpNat sc-ifAKCX gHTeqL sc-bxivhb dzviYf"
+      color="#262626"
+      fontWeight={600}
       href="/"
-      underlined={false}
     >
       <div
         className=" gatsby-image-wrapper"
@@ -81,7 +82,7 @@ Array [
         />
       </div>
       <div
-        className="sc-ifAKCX epwMCi"
+        className="sc-EHOje dlMdUP"
       >
         <h3
           className="sc-bdVaJa sc-bwzfXH eKuxhZ"
@@ -100,18 +101,19 @@ Array [
       </div>
     </a>
     <div
-      className="sc-htoDjs kVKPjQ"
+      className="sc-dnqmqq fBvVsq"
     >
       <div
-        className="sc-EHOje gsNgDW"
+        className="sc-bZQynM gzyewu"
       >
         <a
-          className="sc-bZQynM bTlvCF sc-htpNat bPidjF"
+          className="sc-htpNat sc-gzVnrw jSstRQ sc-bxivhb dzviYf"
+          color="#262626"
+          fontWeight={600}
           href="/"
-          underlined={false}
         >
           <svg
-            className="sc-gzVnrw cNzScz"
+            className="sc-htoDjs kJflDH"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -127,15 +129,16 @@ Array [
         </a>
       </div>
       <div
-        className="sc-EHOje gsNgDW"
+        className="sc-bZQynM gzyewu"
       >
         <a
-          className="sc-bZQynM bTlvCF sc-htpNat bPidjF"
+          className="sc-htpNat sc-gzVnrw jSstRQ sc-bxivhb dzviYf"
+          color="#262626"
+          fontWeight={600}
           href="/articles"
-          underlined={false}
         >
           <svg
-            className="sc-gzVnrw cNzScz"
+            className="sc-htoDjs kJflDH"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -154,15 +157,16 @@ Array [
         </a>
       </div>
       <div
-        className="sc-EHOje gsNgDW"
+        className="sc-bZQynM gzyewu"
       >
         <a
-          className="sc-bZQynM bTlvCF sc-htpNat bPidjF"
+          className="sc-htpNat sc-gzVnrw jSstRQ sc-bxivhb dzviYf"
+          color="#262626"
+          fontWeight={600}
           href="/about-me"
-          underlined={false}
         >
           <svg
-            className="sc-gzVnrw cNzScz"
+            className="sc-htoDjs kJflDH"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -180,7 +184,7 @@ Array [
     </div>
   </header>,
   <main
-    className="sc-iwsKbI bjkRDN"
+    className="sc-gZMcBi juqrOa"
   >
     Layout Component
   </main>,

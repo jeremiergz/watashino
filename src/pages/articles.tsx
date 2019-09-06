@@ -6,7 +6,6 @@ import Navigation from '../components/Layout/Header/Navigation';
 import Box from '../components/primitives/Box';
 import Link from '../components/widgets/Link';
 import List from '../components/widgets/List';
-import theme from '../theme';
 import { getMonthAndDay } from '../utils/Date';
 
 const articlesNav = Navigation.links.articles;
@@ -64,9 +63,9 @@ const ArticlesPage = () => {
                                         <List.Item key={slug}>
                                             <Box
                                                 as="span"
-                                                color={theme.colors.secondary}
+                                                color="secondary"
                                                 fontSize={16}
-                                                fontWeight={theme.fonts.main.weight.bold}
+                                                fontWeight="bold"
                                                 marginRight={4}
                                                 marginTop="2px"
                                                 minWidth={64}
@@ -84,5 +83,7 @@ const ArticlesPage = () => {
         </Layout>
     );
 };
+
+ArticlesPage.displayName = 'ArticlesPage';
 
 export default ArticlesPage;

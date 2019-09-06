@@ -1,9 +1,9 @@
-import React, { HTMLAttributes } from 'react';
-import Text from '../../primitives/Text';
+import React from 'react';
+import Text, { TextProps } from '../../primitives/Text';
 
-type Props = HTMLAttributes<HTMLParagraphElement> & {};
+type ParagraphProps = TextProps;
 
-const ParagraphComponent = ({ children, ...rest }: Props) => {
+const Paragraph = ({ children, ...rest }: ParagraphProps) => {
     return (
         <Text as="p" fontSize={20} textAlign="left" {...rest}>
             {children}
@@ -11,6 +11,7 @@ const ParagraphComponent = ({ children, ...rest }: Props) => {
     );
 };
 
-ParagraphComponent.displayName = 'Paragraph';
+Paragraph.displayName = 'Paragraph';
 
-export default ParagraphComponent;
+export { ParagraphProps };
+export default Paragraph;

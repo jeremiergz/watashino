@@ -1,14 +1,9 @@
 import { GoogleMap, Marker, useLoadScript } from '@react-google-maps/api';
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import styled from 'styled-components';
+import Box from '../primitives/Box';
 
-const LocationMap = styled.div`
-    height: 416px;
-    width: 100%;
-`;
-
-const LocationMapComponent = () => {
+const LocationMap = () => {
     const { isLoaded } = useLoadScript({
         googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
         preventGoogleFontsLoading: true,
@@ -19,8 +14,6 @@ const LocationMapComponent = () => {
         query LocationMapDataQuery {
             dataJson {
                 location {
-                    country
-                    city
                     lat
                     lng
                 }
@@ -33,7 +26,7 @@ const LocationMapComponent = () => {
     };
     return (
         isLoaded && (
-            <LocationMap>
+            <Box height={416} width="100%">
                 <GoogleMap
                     center={position}
                     mapContainerStyle={{ height: '100%', width: '100%', borderRadius: '8px' }}
@@ -41,11 +34,11 @@ const LocationMapComponent = () => {
                 >
                     <Marker position={position} />
                 </GoogleMap>
-            </LocationMap>
+            </Box>
         )
     );
 };
 
-LocationMapComponent.displayName = 'LocationMap';
+LocationMap.displayName = 'LocationMap';
 
-export default LocationMapComponent;
+export default LocationMap;
