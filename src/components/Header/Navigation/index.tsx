@@ -1,8 +1,8 @@
 import React from 'react';
-import Flex from '../../../primitives/Flex';
-import BookIcon from '../../../svg/Book';
-import HouseIcon from '../../../svg/House';
-import MoodIcon from '../../../svg/Mood';
+import Flex from '../../primitives/Flex';
+import BookIcon from '../../svg/Book';
+import HouseIcon from '../../svg/House';
+import MoodIcon from '../../svg/Mood';
 import Item from './Item';
 
 const links = {
@@ -12,11 +12,11 @@ const links = {
         to: '/',
         keywords: ['contact', 'gatsby', 'react'],
     },
-    articles: {
+    posts: {
         icon: BookIcon,
-        name: 'Articles',
-        to: '/articles',
-        keywords: ['articles', 'gatsby', 'react'],
+        name: 'Posts',
+        to: '/posts',
+        keywords: ['posts', 'gatsby', 'react'],
     },
     aboutMe: {
         icon: MoodIcon,
@@ -34,7 +34,7 @@ const links = {
 
 const Navigation = () => {
     return (
-        <Flex marginTop={{ _: 16, tablet: 0 }}>
+        <Flex as="nav" marginTop={{ _: 16, tablet: 0 }}>
             {Object.keys(links)
                 .filter(key => !links[key].ignoreInNavigation)
                 .map(key => {

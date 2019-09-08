@@ -35,6 +35,13 @@ module.exports = {
             },
         },
         {
+            resolve: 'gatsby-remark-vscode',
+            options: {
+                colorTheme: 'Dark+ (default dark)',
+                languageAliases: {},
+            },
+        },
+        {
             resolve: 'gatsby-source-filesystem',
             options: {
                 name: 'data',
@@ -44,8 +51,8 @@ module.exports = {
         {
             resolve: 'gatsby-source-filesystem',
             options: {
-                name: 'articles',
-                path: `${__dirname}/content/articles`,
+                name: 'posts',
+                path: `${__dirname}/content/posts`,
             },
         },
         {

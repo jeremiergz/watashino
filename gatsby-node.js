@@ -4,12 +4,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions;
     const result = await graphql(`
         {
-            allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 1000) {
-                edges {
-                    node {
-                        frontmatter {
-                            slug
-                        }
+            allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
+                nodes {
+                    frontmatter {
+                        slug
                     }
                 }
             }
@@ -19,11 +17,17 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         reporter.panicOnBuild('Error while running GraphQL query');
         return;
     }
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const posts = result.data.allMarkdownRemark.nodes;
+    posts.forEach(({ frontmatter }, index) => {
+        const previous = index === posts.length - 1 ? null : posts[index + 1].frontmatter.slug;
+        const next = index === 0 ? null : posts[index - 1].frontmatter.slug;
         createPage({
-            path: node.frontmatter.slug,
-            component: path.resolve('src/templates/Articles.tsx'),
-            context: {},
+            component: path.resolve('src/templates/Posts.tsx'),
+            context: {
+                previous,
+                next,
+            },
+            path: frontmatter.slug,
         });
     });
 };

@@ -13,11 +13,14 @@ Object.defineProperties(breakpoints, {
 const colors = {
     dark: '#424242',
     error: '#F44336',
+    gray: '#757575',
     info: '#2196F3',
-    primary: '#17365C',
-    secondary: '#31859A',
+    lightgray: '#E0E0E0',
+    primary: '#31859A',
+    secondary: '#17365C',
     success: '#4CAF50',
     text: '#262626',
+    white: '#FAFAFA',
 } as const;
 
 const fonts = {
@@ -38,6 +41,10 @@ const theme = {
 };
 
 type Theme = typeof theme;
+type ThemeProps = {
+    color?: keyof Theme['colors'];
+    fontWeight?: keyof Theme['fontWeights'];
+};
 
-export { Theme };
+export { Theme, ThemeProps };
 export default theme;

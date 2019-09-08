@@ -21,7 +21,7 @@ const months = {
 function getMonthAndDay(date: Date) {
     const month = months[date.getMonth()];
     const day = date
-        .getDay()
+        .getDate()
         .toString()
         .padStart(2, '0');
     return [month, day];

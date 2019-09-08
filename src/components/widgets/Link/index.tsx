@@ -1,8 +1,9 @@
-import { Link as GatsbyLink } from 'gatsby';
+import { Link as BaseGatsbyLink } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 import { variant } from 'styled-system';
 import theme from '../../../theme';
+import withoutStylingProps from '../../hocs/withoutStylingProps';
 import BaseBox, { BoxProps } from '../../primitives/Box';
 
 type LinkProps = BoxProps & {
@@ -14,8 +15,14 @@ type LinkProps = BoxProps & {
 const Box = styled(BaseBox)`
     text-decoration: none;
     transition: color 100ms ease-in-out;
+    .gatsby-image-wrapper {
+        transition: filter 100ms ease-in-out;
+    }
     :hover {
-        color: ${theme.colors.secondary};
+        color: ${theme.colors.primary};
+        .gatsby-image-wrapper {
+            filter: brightness(0.75);
+        }
     }
     ${variant({
         variants: {
@@ -25,6 +32,8 @@ const Box = styled(BaseBox)`
         },
     })}
 `;
+
+const GatsbyLink = withoutStylingProps(BaseGatsbyLink);
 
 const Link = ({ children, external, to, ...rest }: LinkProps) => {
     const isTouchDevice = typeof window !== 'undefined' && window.navigator.maxTouchPoints > 0;
@@ -36,7 +45,7 @@ const Link = ({ children, external, to, ...rest }: LinkProps) => {
               target,
           }
         : {
-              activeStyle: { color: theme.colors.secondary },
+              activeStyle: { color: theme.colors.primary },
               partiallyActive: to !== '/' ? true : false,
               to,
           };

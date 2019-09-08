@@ -1,9 +1,4 @@
 declare namespace Models {
-    type Article = {
-        date: Date;
-        slug: string;
-        title: string;
-    };
     type Location = {
         city: string;
         country: string;
@@ -15,4 +10,10 @@ declare namespace Models {
         string,
         { keywords: string[]; ignoreInNavigation?: boolean; name: string; to: string }
     >;
+
+    type Post = {
+        date: Date;
+        slug: string;
+        title: string;
+    };
 }

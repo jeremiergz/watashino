@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { TimeHTMLAttributes } from 'react';
 import styled, { StyledComponentProps } from 'styled-components';
 import {
     border,
@@ -17,7 +17,7 @@ import {
     zIndex,
     ZIndexProps,
 } from 'styled-system';
-import { Theme } from '../../../theme';
+import { Theme, ThemeProps } from '../../../theme';
 
 type BoxProps = StyledComponentProps<
     'div',
@@ -28,12 +28,12 @@ type BoxProps = StyledComponentProps<
         LayoutProps &
         SpaceProps &
         Omit<TypographyProps, 'fontWeight'> &
-        ZIndexProps,
+        ZIndexProps &
+        TimeHTMLAttributes<unknown> &
+        ThemeProps,
     never
 > & {
     as?: keyof JSX.IntrinsicElements | React.ComponentType<unknown>;
-    color?: keyof Theme['colors'];
-    fontWeight?: keyof Theme['fontWeights'];
 };
 
 const Box = styled.div<BoxProps>`

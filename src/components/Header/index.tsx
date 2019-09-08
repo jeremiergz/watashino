@@ -1,6 +1,6 @@
 import React from 'react';
-import useTheme from '../../../hooks/useTheme';
-import Box from '../../primitives/Box';
+import useTheme from '../../hooks/useTheme';
+import Box from '../primitives/Box';
 import NameAndJob from './NameAndJob';
 import Navigation from './Navigation';
 

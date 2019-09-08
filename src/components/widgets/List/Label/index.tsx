@@ -7,7 +7,7 @@ const Label = ({ children, ...rest }: LabelProps) => {
     return (
         <Text
             as="label"
-            color="primary"
+            color="secondary"
             display="block"
             fontSize={32}
             fontWeight="semi-bold"

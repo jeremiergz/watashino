@@ -1,9 +1,9 @@
 import React, { HTMLAttributes } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import theme from '../../theme';
+import Header from '../Header';
 import Box from '../primitives/Box';
 import Content from './Content';
-import Header from './Header';
 
 type LayoutProps = HTMLAttributes<HTMLDivElement>;
 
@@ -54,11 +54,11 @@ const Layout = ({ children }: LayoutProps) => (
             <Header />
             <Box
                 as="main"
-                maxWidth={theme.breakpoints[3]}
                 margin="auto"
-                textAlign="center"
-                paddingX={{ _: 16, tablet: 32 }}
+                maxWidth={theme.breakpoints[3]}
                 paddingBottom={{ _: 16, tablet: 32 }}
+                paddingX={{ _: 16, tablet: 32 }}
+                textAlign="center"
             >
                 {children}
             </Box>

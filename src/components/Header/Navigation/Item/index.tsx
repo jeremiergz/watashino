@@ -1,7 +1,7 @@
 import React, { ComponentType } from 'react';
-import Box from '../../../../primitives/Box';
-import Flex from '../../../../primitives/Flex';
-import Link from '../../../../widgets/Link';
+import Box from '../../../primitives/Box';
+import Flex from '../../../primitives/Flex';
+import Link from '../../../widgets/Link';
 
 type ItemProps = {
     link: {

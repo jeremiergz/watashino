@@ -1,6 +1,6 @@
 import React from 'react';
+import Navigation from '../components/Header/Navigation';
 import Layout from '../components/Layout';
-import Navigation from '../components/Layout/Header/Navigation';
 import Heading from '../components/widgets/Heading';
 import Link from '../components/widgets/Link';
 
@@ -9,7 +9,7 @@ const notFoundNav = Navigation.links.notFound;
 
 const NotFoundPage = () => (
     <Layout>
-        <Layout.Content title={notFoundNav.name} keywords={notFoundNav.keywords}>
+        <Layout.Content keywords={notFoundNav.keywords} title={notFoundNav.name} type="section">
             <Heading variant="h4">Man, I hate when this happens...</Heading>
             {'Find your way '}
             <Link to={homeNav.to} variant="underlined">

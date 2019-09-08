@@ -1,14 +1,14 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
+import Navigation from '../components/Header/Navigation';
 import Layout from '../components/Layout';
-import Navigation from '../components/Layout/Header/Navigation';
 import Box from '../components/primitives/Box';
 import Link from '../components/widgets/Link';
 import List from '../components/widgets/List';
 import { getMonthAndDay } from '../utils/Date';
 
-const articlesNav = Navigation.links.articles;
+const postsNav = Navigation.links.posts;
 
 const Groups = styled(Box)`
     > :first-child > label {
@@ -16,11 +16,11 @@ const Groups = styled(Box)`
     }
 `;
 
-const ArticlesPage = () => {
+const PostsPage = () => {
     const {
         allMarkdownRemark: { nodes },
-    } = useStaticQuery<GraphQL.ArticlesQueryQuery>(graphql`
-        query ArticlesQuery {
+    } = useStaticQuery<GraphQL.PostsQueryQuery>(graphql`
+        query PostsQuery {
             allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
                 nodes {
                     frontmatter {
@@ -32,38 +32,38 @@ const ArticlesPage = () => {
             }
         }
     `);
-    const allArticles: Record<string, Models.Article[]> = nodes.reduce((acc, node) => {
+    const allPosts: Record<string, Models.Post[]> = nodes.reduce((acc, node) => {
         const {
             frontmatter: { date: rawDate, slug, title },
         } = node;
         const date = new Date(rawDate);
         const year = date.getFullYear();
         const yearGroup = acc[year];
-        const article = { date, slug, title };
+        const post = { date, slug, title };
         if (yearGroup) {
-            acc[year].push(article);
+            acc[year].push(post);
         } else {
-            acc[year] = [article];
+            acc[year] = [post];
         }
         return acc;
     }, {});
     return (
         <Layout>
-            <Layout.Content title={articlesNav.name} keywords={articlesNav.keywords}>
+            <Layout.Content keywords={postsNav.keywords} title={postsNav.name} type="section">
                 <Groups>
-                    {Object.keys(allArticles)
+                    {Object.keys(allPosts)
                         .sort((a, b) => b.localeCompare(a))
                         .map(year => (
                             <List key={year}>
                                 <List.Label>{year}</List.Label>
-                                {allArticles[year].map(({ date, slug, title }) => {
+                                {allPosts[year].map(({ date, slug, title }) => {
                                     const [month, day] = getMonthAndDay(date);
                                     const monthAndDay = `${month}-${day}`;
                                     return (
                                         <List.Item key={slug}>
                                             <Box
                                                 as="span"
-                                                color="secondary"
+                                                color="primary"
                                                 fontSize={16}
                                                 fontWeight="bold"
                                                 marginRight={4}
@@ -84,6 +84,6 @@ const ArticlesPage = () => {
     );
 };
 
-ArticlesPage.displayName = 'ArticlesPage';
+PostsPage.displayName = 'PostsPage';
 
-export default ArticlesPage;
+export default PostsPage;

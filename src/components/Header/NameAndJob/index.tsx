@@ -1,9 +1,9 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import Img, { FixedObject } from 'gatsby-image';
 import React from 'react';
-import Flex from '../../../primitives/Flex';
-import Heading from '../../../widgets/Heading';
-import Link from '../../../widgets/Link';
+import Flex from '../../primitives/Flex';
+import Heading from '../../widgets/Heading';
+import Link from '../../widgets/Link';
 
 const NameAndJob = () => {
     const { dataJson, file } = useStaticQuery<GraphQL.HeaderDataQueryQuery>(graphql`
@@ -13,8 +13,8 @@ const NameAndJob = () => {
             }
             file(relativePath: { eq: "profile-pic.png" }) {
                 childImageSharp {
-                    fixed(width: 80, height: 80) {
-                        ...GatsbyImageSharpFixed
+                    fixed(height: 80, width: 80) {
+                        ...GatsbyImageSharpFixed_withWebp
                     }
                 }
             }
@@ -29,10 +29,10 @@ const NameAndJob = () => {
             textAlign={{ _: 'center', tablet: 'left' }}
             to="/"
         >
-            <Img fixed={file.childImageSharp.fixed as FixedObject} />
+            <Img fixed={file.childImageSharp.fixed as FixedObject} imgStyle={{ height: '80px', width: '80px' }} />
             <Flex color="text" flexDirection="column" justifyContent="center" marginLeft={{ tablet: 2 }}>
                 <Heading
-                    color="secondary"
+                    color="primary"
                     fontWeight="bold"
                     letterSpacing={-1}
                     margin={0}
