@@ -4,8 +4,8 @@ import Heading from '../../widgets/Heading';
 import SEO, { SEOProps } from '../../widgets/SEO';
 
 type ContentProps = Pick<HTMLAttributes<HTMLElement>, 'children'> &
-    SEOProps & {
-        title: string;
+    Omit<SEOProps, 'title'> & {
+        title?: string;
         type: 'post' | 'section';
     };
 
@@ -18,9 +18,11 @@ const Content = ({ children, description, keywords, lang, meta, title, type }: C
     return (
         <>
             <SEO description={description} keywords={keywords} lang={lang} meta={meta} title={title} />
-            <Heading marginTop={0} variant="h1">
-                {title}
-            </Heading>
+            {title && (
+                <Heading marginTop={0} variant="h1">
+                    {title}
+                </Heading>
+            )}
             <Box as={typesMapping[type]}>{children}</Box>
         </>
     );

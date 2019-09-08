@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import Heading from '../components/widgets/Heading';
 import Link from '../components/widgets/Link';
 
-const homeNav = Navigation.links.home;
+const homeNav = Navigation.links.posts;
 const notFoundNav = Navigation.links.notFound;
 
 const NotFoundPage = () => (

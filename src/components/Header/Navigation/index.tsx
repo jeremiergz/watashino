@@ -1,34 +1,33 @@
 import React from 'react';
 import Flex from '../../primitives/Flex';
 import BookIcon from '../../svg/Book';
-import HouseIcon from '../../svg/House';
 import MoodIcon from '../../svg/Mood';
 import Item from './Item';
 
 const links = {
     home: {
-        icon: HouseIcon,
+        ignoreInNavigation: true,
+        keywords: ['contact', 'gatsby', 'react'],
         name: 'Home',
         to: '/',
-        keywords: ['contact', 'gatsby', 'react'],
     },
     posts: {
         icon: BookIcon,
+        keywords: ['posts', 'gatsby', 'react'],
         name: 'Posts',
         to: '/posts',
-        keywords: ['posts', 'gatsby', 'react'],
     },
     aboutMe: {
         icon: MoodIcon,
+        keywords: ['about', 'gatsby', 'react'],
         name: 'About Me',
         to: '/about-me',
-        keywords: ['about', 'gatsby', 'react'],
     },
     notFound: {
+        ignoreInNavigation: true,
+        keywords: ['404', 'gatsby', 'react'],
         name: '404 Not Found',
         to: '/',
-        keywords: ['404', 'gatsby', 'react'],
-        ignoreInNavigation: true,
     },
 };
 

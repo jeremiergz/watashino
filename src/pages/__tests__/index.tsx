@@ -4,7 +4,7 @@ import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
 import NotFoundPage from '../404';
 import AboutMePage from '../about-me';
-import IndexPage from '..';
+import IndexPage from '../index';
 import PostsPage from '../posts';
 
 describe('pages Test Suite', () => {

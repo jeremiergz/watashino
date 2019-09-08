@@ -13,7 +13,6 @@ module.exports = {
         'gatsby-plugin-styled-components',
         'gatsby-plugin-typescript',
         'gatsby-transformer-json',
-        'gatsby-transformer-remark',
         'gatsby-transformer-sharp',
         {
             resolve: 'gatsby-plugin-google-fonts',
@@ -35,13 +34,6 @@ module.exports = {
             },
         },
         {
-            resolve: 'gatsby-remark-vscode',
-            options: {
-                colorTheme: 'Dark+ (default dark)',
-                languageAliases: {},
-            },
-        },
-        {
             resolve: 'gatsby-source-filesystem',
             options: {
                 name: 'data',
@@ -60,6 +52,20 @@ module.exports = {
             options: {
                 name: 'images',
                 path: `${__dirname}/src/images`,
+            },
+        },
+        {
+            resolve: 'gatsby-transformer-remark',
+            options: {
+                plugins: [
+                    {
+                        resolve: 'gatsby-remark-vscode',
+                        options: {
+                            colorTheme: 'Dark+ (default dark)',
+                            languageAliases: {},
+                        },
+                    },
+                ],
             },
         },
     ],

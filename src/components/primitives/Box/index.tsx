@@ -10,6 +10,8 @@ import {
     FlexboxProps,
     layout,
     LayoutProps,
+    position,
+    PositionProps,
     space,
     SpaceProps,
     typography,
@@ -28,6 +30,7 @@ type BoxProps = StyledComponentProps<
         LayoutProps &
         SpaceProps &
         Omit<TypographyProps, 'fontWeight'> &
+        PositionProps &
         ZIndexProps &
         TimeHTMLAttributes<unknown> &
         ThemeProps,
@@ -42,6 +45,7 @@ const Box = styled.div<BoxProps>`
         color,
         flexbox,
         layout,
+        position,
         space,
         typography,
         zIndex,

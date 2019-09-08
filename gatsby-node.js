@@ -22,7 +22,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         const previous = index === posts.length - 1 ? null : posts[index + 1].frontmatter.slug;
         const next = index === 0 ? null : posts[index - 1].frontmatter.slug;
         createPage({
-            component: path.resolve('src/templates/Posts.tsx'),
+            component: path.resolve('src/templates/Post.tsx'),
             context: {
                 previous,
                 next,

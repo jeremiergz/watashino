@@ -1,22 +1,16 @@
-/* eslint-disable react/display-name */
 import { graphql } from 'gatsby';
-import React, { createElement } from 'react';
-import RehypeReact from 'rehype-react';
+import React from 'react';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
-import Box from '../components/primitives/Box';
 import Flex from '../components/primitives/Flex';
 import Text from '../components/primitives/Text';
 import Chip from '../components/widgets/Chip';
-import Heading from '../components/widgets/Heading';
-import Link from '../components/widgets/Link';
-import Paragraph from '../components/widgets/Paragraph';
 import PreviousNextNavigation from '../components/widgets/PreviousNextNavigation';
 import theme, { Theme } from '../theme';
-import { lightenColor } from '../utils/CSS';
 import { getMonthAndDay } from '../utils/Date';
+import { renderASTToJSX } from '../utils/HTML';
 
-type PostsProps = {
+type PostProps = {
     data: GraphQL.PostQueryQuery;
     pageContext: {
         next: string;
@@ -35,60 +29,19 @@ const Chips = styled(Flex)`
     }
 `;
 
-const Posts = ({ data, pageContext }: PostsProps) => {
+const Post = ({ data, pageContext }: PostProps) => {
     const { next, previous } = pageContext;
     const {
         markdownRemark: {
             frontmatter: { date: rawDate, keywords: rawKeywords, title },
-            html,
             htmlAst,
         },
     } = data;
-    const renderAst = new RehypeReact({
-        components: {
-            a: ({ children, href }) => (
-                <Link external to={href}>
-                    {children}
-                </Link>
-            ),
-            blockquote: ({ children }) => (
-                <Flex
-                    as="blockquote"
-                    backgroundColor={lightenColor(theme.colors.primary, 0.33)}
-                    borderRadius={8}
-                    paddingX={4}
-                >
-                    {children}
-                </Flex>
-            ),
-            // code: ({ children }) => (
-            //     <Text
-            //         as="code"
-            //         backgroundColor="dark"
-            //         borderRadius={8}
-            //         color="white"
-            //         display="inline-block"
-            //         lineHeight="20px"
-            //         paddingX={3}
-            //         paddingY={2}
-            //     >
-            //         {children}
-            //     </Text>
-            // ),
-            h1: ({ children }) => <Heading variant="h1">{children}</Heading>,
-            h2: ({ children }) => <Heading variant="h2">{children}</Heading>,
-            h3: ({ children }) => <Heading variant="h3">{children}</Heading>,
-            h4: ({ children }) => <Heading variant="h4">{children}</Heading>,
-            hr: () => <Box as="hr" borderWidth={1} color="gray" marginX={4} marginY={5} />,
-            p: Paragraph,
-        },
-        createElement: createElement,
-    }).Compiler;
     const date = new Date(rawDate);
     const keywords = rawKeywords.split(',');
     const [month, day] = getMonthAndDay(date);
     const displayedDate = `${day} ${month} ${date.getFullYear()}`;
-    const renderedHTML = renderAst(htmlAst);
+    const renderedJSX = renderASTToJSX(htmlAst);
     return (
         <Layout>
             <Layout.Content keywords={keywords} title={title} type="post">
@@ -123,8 +76,7 @@ const Posts = ({ data, pageContext }: PostsProps) => {
                     </Text>
                 </Flex>
                 <PreviousNextNavigation marginBottom={5} marginTop={3} next={next} previous={previous} />
-                {renderedHTML}
-                <Box dangerouslySetInnerHTML={{ __html: html }} />
+                {renderedJSX}
                 <PreviousNextNavigation marginTop={5} next={next} previous={previous} />
             </Layout.Content>
         </Layout>
@@ -134,7 +86,6 @@ const Posts = ({ data, pageContext }: PostsProps) => {
 export const query = graphql`
     query PostQuery($path: String!) {
         markdownRemark(frontmatter: { slug: { eq: $path } }) {
-            html
             htmlAst
             frontmatter {
                 date
@@ -144,5 +95,5 @@ export const query = graphql`
         }
     }
 `;
-export { PostsProps };
-export default Posts;
+export { PostProps };
+export default Post;
