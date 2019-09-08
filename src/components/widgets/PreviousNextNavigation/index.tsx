@@ -11,8 +11,48 @@ type PreviousNextNavigationProps = FlexProps & {
 const PreviousNextNavigation = ({ next, previous, ...rest }: PreviousNextNavigationProps) => {
     return (
         <Flex justifyContent="space-between" {...rest}>
-            {previous ? <Link to={previous}>{'◂ Prev'}</Link> : <Box />}
-            {next ? <Link to={next}>{'Next ▸'}</Link> : <Box />}
+            {previous ? (
+                <Link
+                    backgroundColor="dark"
+                    borderBottomLeftRadius={16}
+                    borderBottomRightRadius={4}
+                    borderTopLeftRadius={16}
+                    borderTopRightRadius={4}
+                    color="white"
+                    fontSize={16}
+                    fontWeight="semi-bold"
+                    paddingBottom="3px"
+                    paddingLeft={3}
+                    paddingRight={2}
+                    paddingTop="2px"
+                    to={previous}
+                >
+                    {'Prev'}
+                </Link>
+            ) : (
+                <Box />
+            )}
+            {next ? (
+                <Link
+                    backgroundColor="dark"
+                    borderBottomLeftRadius={4}
+                    borderBottomRightRadius={16}
+                    borderTopLeftRadius={4}
+                    borderTopRightRadius={16}
+                    color="white"
+                    fontSize={16}
+                    fontWeight="semi-bold"
+                    paddingBottom="3px"
+                    paddingLeft={2}
+                    paddingRight={3}
+                    paddingTop="2px"
+                    to={next}
+                >
+                    {'Next'}
+                </Link>
+            ) : (
+                <Box />
+            )}
         </Flex>
     );
 };
