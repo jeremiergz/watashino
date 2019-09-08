@@ -1,5 +1,7 @@
 FROM node:12-alpine AS builder
 
+RUN apk add --no-cache g++ gcc make python
+
 USER node
 WORKDIR /tmp
 COPY --chown=node:node . .
