@@ -42,5 +42,6 @@
     "lat": 43.6047,
     "lng": 1.4442,
     "website": "https://www.toulouse-visit.com"
-  }
+  },
+  "openToGigs": true
 }

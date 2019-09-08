@@ -35,7 +35,7 @@ const AboutMePage = () => {
         coverImg: {
             childImageSharp: { fluid: coverImgFluid },
         },
-        personalDetails: { company, contacts, jobTitle, location },
+        personalDetails: { company, contacts, jobTitle, location, openToGigs },
         techImgs: { nodes: techImgNodes },
         techs: { nodes: technologies },
     } = useStaticQuery<GraphQL.AboutMePageDataQuery>(graphql`
@@ -69,16 +69,17 @@ const AboutMePage = () => {
                     name
                     website
                 }
-                jobTitle
-                location {
-                    city
-                    website
-                }
                 contacts {
                     img
                     label
                     url
                 }
+                jobTitle
+                location {
+                    city
+                    website
+                }
+                openToGigs
             }
             techImgs: allFile(filter: { relativePath: { regex: "/tech-/" } }) {
                 nodes {
@@ -158,13 +159,15 @@ const AboutMePage = () => {
                         </Link>
                     ))}
                 </Technologies>
-                <Paragraph>
-                    {` I'm also doing freelancing gigs, feel free to `}
-                    <Link to={mailto.url} external variant="underlined">
-                        contact me
-                    </Link>
-                    {` if you're interested!`}
-                </Paragraph>
+                {openToGigs && (
+                    <Paragraph>
+                        {` I'm also doing freelancing gigs, feel free to `}
+                        <Link to={mailto.url} external variant="underlined">
+                            contact me
+                        </Link>
+                        {` if you're interested!`}
+                    </Paragraph>
+                )}
                 <Box fontSize={20} marginBottom={2} marginTop={5}>
                     {'▾ By the way, this is where I live, '}
                     <Link to={location.website} external>

@@ -33,6 +33,7 @@ declare namespace GraphQL {
         contacts?: Maybe<Array<Maybe<DataJsonContacts>>>;
         jobTitle?: Maybe<Scalars['String']>;
         location?: Maybe<DataJsonLocation>;
+        openToGigs?: Maybe<Scalars['Boolean']>;
     };
 
     type DataJsonCompany = {
@@ -189,6 +190,7 @@ declare namespace GraphQL {
         LocationLat = 'location___lat',
         LocationLng = 'location___lng',
         LocationWebsite = 'location___website',
+        OpenToGigs = 'openToGigs',
     }
 
     type DataJsonFilterInput = {
@@ -200,6 +202,7 @@ declare namespace GraphQL {
         contacts?: Maybe<DataJsonContactsFilterListInput>;
         jobTitle?: Maybe<StringQueryOperatorInput>;
         location?: Maybe<DataJsonLocationFilterInput>;
+        openToGigs?: Maybe<BooleanQueryOperatorInput>;
     };
 
     type DataJsonGroupConnection = {
@@ -860,6 +863,7 @@ declare namespace GraphQL {
         ChildDataJsonLocationLat = 'childDataJson___location___lat',
         ChildDataJsonLocationLng = 'childDataJson___location___lng',
         ChildDataJsonLocationWebsite = 'childDataJson___location___website',
+        ChildDataJsonOpenToGigs = 'childDataJson___openToGigs',
         ChildrenTechnologiesJson = 'childrenTechnologiesJson',
         ChildrenTechnologiesJsonId = 'childrenTechnologiesJson___id',
         ChildrenTechnologiesJsonParentId = 'childrenTechnologiesJson___parent___id',
@@ -1988,10 +1992,10 @@ declare namespace GraphQL {
         allSite: SiteConnection;
         directory?: Maybe<Directory>;
         allDirectory: DirectoryConnection;
-        dataJson?: Maybe<DataJson>;
-        allDataJson: DataJsonConnection;
         technologiesJson?: Maybe<TechnologiesJson>;
         allTechnologiesJson: TechnologiesJsonConnection;
+        dataJson?: Maybe<DataJson>;
+        allDataJson: DataJsonConnection;
     };
 
     type QueryImageSharpArgs = {
@@ -2203,24 +2207,6 @@ declare namespace GraphQL {
         limit?: Maybe<Scalars['Int']>;
     };
 
-    type QueryDataJsonArgs = {
-        id?: Maybe<StringQueryOperatorInput>;
-        parent?: Maybe<NodeFilterInput>;
-        children?: Maybe<NodeFilterListInput>;
-        internal?: Maybe<InternalFilterInput>;
-        company?: Maybe<DataJsonCompanyFilterInput>;
-        contacts?: Maybe<DataJsonContactsFilterListInput>;
-        jobTitle?: Maybe<StringQueryOperatorInput>;
-        location?: Maybe<DataJsonLocationFilterInput>;
-    };
-
-    type QueryAllDataJsonArgs = {
-        filter?: Maybe<DataJsonFilterInput>;
-        sort?: Maybe<DataJsonSortInput>;
-        skip?: Maybe<Scalars['Int']>;
-        limit?: Maybe<Scalars['Int']>;
-    };
-
     type QueryTechnologiesJsonArgs = {
         id?: Maybe<StringQueryOperatorInput>;
         parent?: Maybe<NodeFilterInput>;
@@ -2234,6 +2220,25 @@ declare namespace GraphQL {
     type QueryAllTechnologiesJsonArgs = {
         filter?: Maybe<TechnologiesJsonFilterInput>;
         sort?: Maybe<TechnologiesJsonSortInput>;
+        skip?: Maybe<Scalars['Int']>;
+        limit?: Maybe<Scalars['Int']>;
+    };
+
+    type QueryDataJsonArgs = {
+        id?: Maybe<StringQueryOperatorInput>;
+        parent?: Maybe<NodeFilterInput>;
+        children?: Maybe<NodeFilterListInput>;
+        internal?: Maybe<InternalFilterInput>;
+        company?: Maybe<DataJsonCompanyFilterInput>;
+        contacts?: Maybe<DataJsonContactsFilterListInput>;
+        jobTitle?: Maybe<StringQueryOperatorInput>;
+        location?: Maybe<DataJsonLocationFilterInput>;
+        openToGigs?: Maybe<BooleanQueryOperatorInput>;
+    };
+
+    type QueryAllDataJsonArgs = {
+        filter?: Maybe<DataJsonFilterInput>;
+        sort?: Maybe<DataJsonSortInput>;
         skip?: Maybe<Scalars['Int']>;
         limit?: Maybe<Scalars['Int']>;
     };
@@ -3382,14 +3387,14 @@ declare namespace GraphQL {
             }
         >;
         personalDetails: Maybe<
-            { __typename?: 'DataJson' } & Pick<DataJson, 'jobTitle'> & {
+            { __typename?: 'DataJson' } & Pick<DataJson, 'jobTitle' | 'openToGigs'> & {
                     company: Maybe<{ __typename?: 'DataJsonCompany' } & Pick<DataJsonCompany, 'name' | 'website'>>;
-                    location: Maybe<{ __typename?: 'DataJsonLocation' } & Pick<DataJsonLocation, 'city' | 'website'>>;
                     contacts: Maybe<
                         Array<
                             Maybe<{ __typename?: 'DataJsonContacts' } & Pick<DataJsonContacts, 'img' | 'label' | 'url'>>
                         >
                     >;
+                    location: Maybe<{ __typename?: 'DataJsonLocation' } & Pick<DataJsonLocation, 'city' | 'website'>>;
                 }
         >;
         techImgs: { __typename?: 'FileConnection' } & {
