@@ -2,12 +2,11 @@
 
 exports[`components/Layout/Header Test Suite matches snapshot 1`] = `
 <header
-  className="sc-iwsKbI cxSHXi"
+  className="sc-bdVaJa kOkKhQ"
+  display="flex"
 >
   <a
-    className="sc-htpNat sc-ifAKCX gHTeqL sc-bxivhb dzviYf"
-    color="#262626"
-    fontWeight={600}
+    className="sc-bdVaJa sc-bxivhb jKEtLG"
     href="/"
   >
     <div
@@ -27,7 +26,7 @@ exports[`components/Layout/Header Test Suite matches snapshot 1`] = `
         src="data:image/png;base64"
         style={
           Object {
-            "height": "100%",
+            "height": "80px",
             "left": 0,
             "objectFit": "cover",
             "objectPosition": "center",
@@ -35,7 +34,7 @@ exports[`components/Layout/Header Test Suite matches snapshot 1`] = `
             "position": "absolute",
             "top": 0,
             "transitionDelay": "500ms",
-            "width": "100%",
+            "width": "80px",
           }
         }
       />
@@ -55,7 +54,7 @@ exports[`components/Layout/Header Test Suite matches snapshot 1`] = `
 /static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
           style={
             Object {
-              "height": "100%",
+              "height": "80px",
               "left": 0,
               "objectFit": "cover",
               "objectPosition": "center",
@@ -63,7 +62,7 @@ exports[`components/Layout/Header Test Suite matches snapshot 1`] = `
               "position": "absolute",
               "top": 0,
               "transition": "opacity 500ms",
-              "width": "100%",
+              "width": "80px",
             }
           }
         />
@@ -81,39 +80,43 @@ exports[`components/Layout/Header Test Suite matches snapshot 1`] = `
       />
     </div>
     <div
-      className="sc-EHOje dlMdUP"
+      className="sc-bdVaJa ezLUsa"
+      color="text"
+      display="flex"
     >
       <h3
-        className="sc-bdVaJa sc-bwzfXH eKuxhZ"
-        color="#31859A"
-        fontWeight={800}
+        className="sc-bwzfXH sc-htpNat klUrKO"
+        color="primary"
+        fontWeight="bold"
         letterSpacing={-1}
       >
         Jeremie Rodriguez
       </h3>
       <h4
-        className="sc-bdVaJa sc-bwzfXH hNlWrZ"
-        fontWeight={600}
+        className="sc-bwzfXH sc-htpNat bvVtPB"
+        fontWeight="semi-bold"
       >
         Full Stack Engineer
       </h4>
     </div>
   </a>
-  <div
-    className="sc-dnqmqq fBvVsq"
+  <nav
+    className="sc-bdVaJa cRCMnF"
+    display="flex"
   >
     <div
-      className="sc-bZQynM gzyewu"
+      className="sc-bdVaJa fvcPEV"
+      display="flex"
     >
       <a
-        className="sc-htpNat sc-gzVnrw jSstRQ sc-bxivhb dzviYf"
-        color="#262626"
-        fontWeight={600}
+        className="sc-bdVaJa sc-bxivhb jXVeSa"
         href="/"
       >
         <svg
-          className="sc-htoDjs kJflDH"
+          className="sc-bdVaJa ipxrgW"
+          height={32}
           viewBox="0 0 24 24"
+          width={32}
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -128,17 +131,18 @@ exports[`components/Layout/Header Test Suite matches snapshot 1`] = `
       </a>
     </div>
     <div
-      className="sc-bZQynM gzyewu"
+      className="sc-bdVaJa fvcPEV"
+      display="flex"
     >
       <a
-        className="sc-htpNat sc-gzVnrw jSstRQ sc-bxivhb dzviYf"
-        color="#262626"
-        fontWeight={600}
-        href="/articles"
+        className="sc-bdVaJa sc-bxivhb jXVeSa"
+        href="/posts"
       >
         <svg
-          className="sc-htoDjs kJflDH"
+          className="sc-bdVaJa ipxrgW"
+          height={32}
           viewBox="0 0 24 24"
+          width={32}
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -152,21 +156,22 @@ exports[`components/Layout/Header Test Suite matches snapshot 1`] = `
             d="M17.5 10.5c.88 0 1.73.09 2.5.26V9.24c-.79-.15-1.64-.24-2.5-.24-1.7 0-3.24.29-4.5.83v1.66c1.13-.64 2.7-.99 4.5-.99zM13 12.49v1.66c1.13-.64 2.7-.99 4.5-.99.88 0 1.73.09 2.5.26V11.9c-.79-.15-1.64-.24-2.5-.24-1.7 0-3.24.3-4.5.83zM17.5 14.33c-1.7 0-3.24.29-4.5.83v1.66c1.13-.64 2.7-.99 4.5-.99.88 0 1.73.09 2.5.26v-1.52c-.79-.16-1.64-.24-2.5-.24z"
           />
         </svg>
-        Articles
+        Posts
       </a>
     </div>
     <div
-      className="sc-bZQynM gzyewu"
+      className="sc-bdVaJa fvcPEV"
+      display="flex"
     >
       <a
-        className="sc-htpNat sc-gzVnrw jSstRQ sc-bxivhb dzviYf"
-        color="#262626"
-        fontWeight={600}
+        className="sc-bdVaJa sc-bxivhb jXVeSa"
         href="/about-me"
       >
         <svg
-          className="sc-htoDjs kJflDH"
+          className="sc-bdVaJa ipxrgW"
+          height={32}
           viewBox="0 0 24 24"
+          width={32}
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -180,6 +185,6 @@ exports[`components/Layout/Header Test Suite matches snapshot 1`] = `
         About Me
       </a>
     </div>
-  </div>
+  </nav>
 </header>
 `;

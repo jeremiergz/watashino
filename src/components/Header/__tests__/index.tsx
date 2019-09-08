@@ -1,9 +1,11 @@
 import * as Gatsby from 'gatsby';
 import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
-import NameAndJob from '..';
+import { ThemeProvider } from 'styled-components';
+import Header from '..';
+import theme from '../../../theme';
 
-describe('components/Layout/Header/NameAndJob Test Suite', () => {
+describe('components/Layout/Header Test Suite', () => {
     beforeAll(() => {
         const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
         useStaticQuery.mockImplementation(() => ({
@@ -25,7 +27,11 @@ describe('components/Layout/Header/NameAndJob Test Suite', () => {
     });
 
     it('matches snapshot', () => {
-        const jsx = <NameAndJob />;
+        const jsx = (
+            <ThemeProvider theme={theme}>
+                <Header />
+            </ThemeProvider>
+        );
         expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
     });
 });

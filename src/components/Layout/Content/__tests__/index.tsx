@@ -19,7 +19,7 @@ describe('components/Layout/Content Test Suite', () => {
 
     it('matches snapshot', () => {
         const jsx = (
-            <Content description="SEO Test description" keywords={['test']} lang="en" title="SEO Test">
+            <Content description="SEO Test description" keywords={['test']} lang="en" title="SEO Test" type="post">
                 Content Component
             </Content>
         );

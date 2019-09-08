@@ -1,21 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
-<div
-  className="sc-EHOje bgjbpX"
+<nav
+  className="sc-bdVaJa fCoKxI"
+  display="flex"
 >
   <div
-    className="sc-htpNat dXQKdu"
+    className="sc-bdVaJa fvcPEV"
+    display="flex"
   >
     <a
-      className="sc-bdVaJa sc-bxivhb gRrtFq sc-bwzfXH cuVWiB"
-      color="#262626"
-      fontWeight={600}
+      className="sc-bdVaJa sc-bwzfXH gMfxso"
       href="/"
     >
       <svg
-        className="sc-ifAKCX edruXQ"
+        className="sc-bdVaJa ipxrgW"
+        height={32}
         viewBox="0 0 24 24"
+        width={32}
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -30,17 +32,18 @@ exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
     </a>
   </div>
   <div
-    className="sc-htpNat dXQKdu"
+    className="sc-bdVaJa fvcPEV"
+    display="flex"
   >
     <a
-      className="sc-bdVaJa sc-bxivhb gRrtFq sc-bwzfXH cuVWiB"
-      color="#262626"
-      fontWeight={600}
-      href="/articles"
+      className="sc-bdVaJa sc-bwzfXH gMfxso"
+      href="/posts"
     >
       <svg
-        className="sc-ifAKCX edruXQ"
+        className="sc-bdVaJa ipxrgW"
+        height={32}
         viewBox="0 0 24 24"
+        width={32}
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -54,21 +57,22 @@ exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
           d="M17.5 10.5c.88 0 1.73.09 2.5.26V9.24c-.79-.15-1.64-.24-2.5-.24-1.7 0-3.24.29-4.5.83v1.66c1.13-.64 2.7-.99 4.5-.99zM13 12.49v1.66c1.13-.64 2.7-.99 4.5-.99.88 0 1.73.09 2.5.26V11.9c-.79-.15-1.64-.24-2.5-.24-1.7 0-3.24.3-4.5.83zM17.5 14.33c-1.7 0-3.24.29-4.5.83v1.66c1.13-.64 2.7-.99 4.5-.99.88 0 1.73.09 2.5.26v-1.52c-.79-.16-1.64-.24-2.5-.24z"
         />
       </svg>
-      Articles
+      Posts
     </a>
   </div>
   <div
-    className="sc-htpNat dXQKdu"
+    className="sc-bdVaJa fvcPEV"
+    display="flex"
   >
     <a
-      className="sc-bdVaJa sc-bxivhb gRrtFq sc-bwzfXH cuVWiB"
-      color="#262626"
-      fontWeight={600}
+      className="sc-bdVaJa sc-bwzfXH gMfxso"
       href="/about-me"
     >
       <svg
-        className="sc-ifAKCX edruXQ"
+        className="sc-bdVaJa ipxrgW"
+        height={32}
         viewBox="0 0 24 24"
+        width={32}
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -82,5 +86,5 @@ exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
       About Me
     </a>
   </div>
-</div>
+</nav>
 `;

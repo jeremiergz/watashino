@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/widgets/PreviousNextNavigation Test Suite matches snapshot 1`] = `
+<div
+  className="sc-bdVaJa wFNrS"
+  display="flex"
+>
+  <a
+    className="sc-bdVaJa sc-bwzfXH gtvCHp"
+    href="/previous"
+  >
+    ◂ Prev
+  </a>
+  <a
+    className="sc-bdVaJa sc-bwzfXH gtvCHp"
+    href="/next"
+  >
+    Next ▸
+  </a>
+</div>
+`;

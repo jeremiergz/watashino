@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
-import Navigation from '..';
+import Navigation from '../../Navigation';
 
 describe('components/Layout/Header/Navigation Test Suite', () => {
     it('matches snapshot', () => {

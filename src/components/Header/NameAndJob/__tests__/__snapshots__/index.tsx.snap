@@ -2,9 +2,7 @@
 
 exports[`components/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
 <a
-  className="sc-htpNat sc-ifAKCX gHTeqL sc-bxivhb dzviYf"
-  color="#262626"
-  fontWeight={600}
+  className="sc-bdVaJa sc-bxivhb lmWmlg"
   href="/"
 >
   <div
@@ -24,7 +22,7 @@ exports[`components/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
       src="data:image/png;base64"
       style={
         Object {
-          "height": "100%",
+          "height": "80px",
           "left": 0,
           "objectFit": "cover",
           "objectPosition": "center",
@@ -32,7 +30,7 @@ exports[`components/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
           "position": "absolute",
           "top": 0,
           "transitionDelay": "500ms",
-          "width": "100%",
+          "width": "80px",
         }
       }
     />
@@ -52,7 +50,7 @@ exports[`components/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
 /static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
         style={
           Object {
-            "height": "100%",
+            "height": "80px",
             "left": 0,
             "objectFit": "cover",
             "objectPosition": "center",
@@ -60,7 +58,7 @@ exports[`components/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
             "position": "absolute",
             "top": 0,
             "transition": "opacity 500ms",
-            "width": "100%",
+            "width": "80px",
           }
         }
       />
@@ -78,19 +76,21 @@ exports[`components/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
     />
   </div>
   <div
-    className="sc-EHOje dlMdUP"
+    className="sc-bdVaJa eubjBd"
+    color="text"
+    display="flex"
   >
     <h3
-      className="sc-bdVaJa sc-bwzfXH eKuxhZ"
-      color="#31859A"
-      fontWeight={800}
+      className="sc-bwzfXH sc-htpNat bMUGVr"
+      color="primary"
+      fontWeight="bold"
       letterSpacing={-1}
     >
       Jeremie Rodriguez
     </h3>
     <h4
-      className="sc-bdVaJa sc-bwzfXH hNlWrZ"
-      fontWeight={600}
+      className="sc-bwzfXH sc-htpNat gQbsun"
+      fontWeight="semi-bold"
     >
       Full Stack Engineer
     </h4>

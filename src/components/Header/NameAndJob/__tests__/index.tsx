@@ -1,9 +1,9 @@
 import * as Gatsby from 'gatsby';
 import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
-import Header from '..';
+import NameAndJob from '../../NameAndJob';
 
-describe('components/Layout/Header Test Suite', () => {
+describe('components/Layout/Header/NameAndJob Test Suite', () => {
     beforeAll(() => {
         const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
         useStaticQuery.mockImplementation(() => ({
@@ -25,7 +25,7 @@ describe('components/Layout/Header Test Suite', () => {
     });
 
     it('matches snapshot', () => {
-        const jsx = <Header />;
+        const jsx = <NameAndJob />;
         expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
     });
 });

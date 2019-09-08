@@ -2,17 +2,18 @@
 
 exports[`components/Layout/Header/Navigation/Item Test Suite matches snapshot 1`] = `
 <div
-  className="sc-htpNat dXQKdu"
+  className="sc-bdVaJa fvcPEV"
+  display="flex"
 >
   <a
-    className="sc-bdVaJa sc-bxivhb gRrtFq sc-bwzfXH cuVWiB"
-    color="#262626"
-    fontWeight={600}
+    className="sc-bdVaJa sc-bwzfXH gMfxso"
     href="/test-page"
   >
     <svg
-      className="sc-ifAKCX edruXQ"
+      className="sc-bdVaJa ipxrgW"
+      height={32}
       viewBox="0 0 24 24"
+      width={32}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

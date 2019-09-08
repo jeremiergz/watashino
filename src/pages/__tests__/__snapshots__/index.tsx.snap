@@ -1,0 +1,1260 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages Test Suite pages/404 Test Suite matches snapshot 1`] = `
+Array [
+  <header
+    className="sc-bdVaJa kOkKhQ"
+    display="flex"
+  >
+    <a
+      className="sc-bdVaJa sc-bwzfXH fuDuwY"
+      href="/"
+    >
+      <div
+        className=" gatsby-image-wrapper"
+        style={
+          Object {
+            "display": "inline-block",
+            "height": undefined,
+            "overflow": "hidden",
+            "position": "relative",
+            "width": undefined,
+          }
+        }
+      >
+        <img
+          alt=""
+          src="data:image/png;base64"
+          style={
+            Object {
+              "height": "80px",
+              "left": 0,
+              "objectFit": "cover",
+              "objectPosition": "center",
+              "opacity": 1,
+              "position": "absolute",
+              "top": 0,
+              "transitionDelay": "500ms",
+              "width": "80px",
+            }
+          }
+        />
+        <picture>
+          <source
+            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+          />
+          <img
+            alt=""
+            loading="lazy"
+            onLoad={[Function]}
+            src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
+            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+            style={
+              Object {
+                "height": "80px",
+                "left": 0,
+                "objectFit": "cover",
+                "objectPosition": "center",
+                "opacity": 0,
+                "position": "absolute",
+                "top": 0,
+                "transition": "opacity 500ms",
+                "width": "80px",
+              }
+            }
+          />
+        </picture>
+        <noscript
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+            }
+          }
+        />
+      </div>
+      <div
+        className="sc-bdVaJa ezLUsa"
+        color="text"
+        display="flex"
+      >
+        <h3
+          className="sc-htpNat sc-bxivhb dwRYCY"
+          color="primary"
+          fontWeight="bold"
+          letterSpacing={-1}
+        >
+          Jeremie Rodriguez
+        </h3>
+        <h4
+          className="sc-htpNat sc-bxivhb bxICaF"
+          fontWeight="semi-bold"
+        >
+          Full Stack Engineer
+        </h4>
+      </div>
+    </a>
+    <nav
+      className="sc-bdVaJa cRCMnF"
+      display="flex"
+    >
+      <div
+        className="sc-bdVaJa fvcPEV"
+        display="flex"
+      >
+        <a
+          className="sc-bdVaJa sc-bwzfXH eNWkmY"
+          href="/"
+        >
+          <svg
+            className="sc-bdVaJa ipxrgW"
+            height={32}
+            viewBox="0 0 24 24"
+            width={32}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0H24V24H0z"
+              fill="none"
+            />
+            <path
+              d="M19 9.3V4h-3v2.6L12 3 2 12h3v8h5v-6h4v6h5v-8h3l-3-2.7zm-9 .7c0-1.1.9-2 2-2s2 .9 2 2h-4z"
+            />
+          </svg>
+          Home
+        </a>
+      </div>
+      <div
+        className="sc-bdVaJa fvcPEV"
+        display="flex"
+      >
+        <a
+          className="sc-bdVaJa sc-bwzfXH eNWkmY"
+          href="/posts"
+        >
+          <svg
+            className="sc-bdVaJa ipxrgW"
+            height={32}
+            viewBox="0 0 24 24"
+            width={32}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0H24V24H0z"
+              fill="none"
+            />
+            <path
+              d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v11.5z"
+            />
+            <path
+              d="M17.5 10.5c.88 0 1.73.09 2.5.26V9.24c-.79-.15-1.64-.24-2.5-.24-1.7 0-3.24.29-4.5.83v1.66c1.13-.64 2.7-.99 4.5-.99zM13 12.49v1.66c1.13-.64 2.7-.99 4.5-.99.88 0 1.73.09 2.5.26V11.9c-.79-.15-1.64-.24-2.5-.24-1.7 0-3.24.3-4.5.83zM17.5 14.33c-1.7 0-3.24.29-4.5.83v1.66c1.13-.64 2.7-.99 4.5-.99.88 0 1.73.09 2.5.26v-1.52c-.79-.16-1.64-.24-2.5-.24z"
+            />
+          </svg>
+          Posts
+        </a>
+      </div>
+      <div
+        className="sc-bdVaJa fvcPEV"
+        display="flex"
+      >
+        <a
+          className="sc-bdVaJa sc-bwzfXH eNWkmY"
+          href="/about-me"
+        >
+          <svg
+            className="sc-bdVaJa ipxrgW"
+            height={32}
+            viewBox="0 0 24 24"
+            width={32}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"
+            />
+          </svg>
+          About Me
+        </a>
+      </div>
+    </nav>
+  </header>,
+  <main
+    className="sc-bdVaJa bTnvRn"
+  >
+    <h1
+      className="sc-htpNat sc-bxivhb eRoEjD"
+    >
+      404 Not Found
+    </h1>
+    <section
+      className="sc-bdVaJa bqchxS"
+    >
+      <h4
+        className="sc-htpNat sc-bxivhb larKd"
+      >
+        Man, I hate when this happens...
+      </h4>
+      Find your way 
+      <a
+        className="sc-bdVaJa sc-bwzfXH jjmfID"
+        href="/"
+        variant="underlined"
+      >
+        Home
+      </a>
+    </section>
+  </main>,
+]
+`;
+
+exports[`pages Test Suite pages/about-me Test Suite matches snapshot 1`] = `
+Array [
+  <header
+    className="sc-bdVaJa kOkKhQ"
+    display="flex"
+  >
+    <a
+      className="sc-bdVaJa sc-bwzfXH fuDuwY"
+      href="/"
+    >
+      <div
+        className=" gatsby-image-wrapper"
+        style={
+          Object {
+            "display": "inline-block",
+            "height": undefined,
+            "overflow": "hidden",
+            "position": "relative",
+            "width": undefined,
+          }
+        }
+      >
+        <img
+          alt=""
+          src="data:image/png;base64"
+          style={
+            Object {
+              "height": "80px",
+              "left": 0,
+              "objectFit": "cover",
+              "objectPosition": "center",
+              "opacity": 1,
+              "position": "absolute",
+              "top": 0,
+              "transitionDelay": "500ms",
+              "width": "80px",
+            }
+          }
+        />
+        <picture>
+          <source
+            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+          />
+          <img
+            alt=""
+            loading="lazy"
+            onLoad={[Function]}
+            src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
+            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+            style={
+              Object {
+                "height": "80px",
+                "left": 0,
+                "objectFit": "cover",
+                "objectPosition": "center",
+                "opacity": 0,
+                "position": "absolute",
+                "top": 0,
+                "transition": "opacity 500ms",
+                "width": "80px",
+              }
+            }
+          />
+        </picture>
+        <noscript
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+            }
+          }
+        />
+      </div>
+      <div
+        className="sc-bdVaJa ezLUsa"
+        color="text"
+        display="flex"
+      >
+        <h3
+          className="sc-htpNat sc-bxivhb dwRYCY"
+          color="primary"
+          fontWeight="bold"
+          letterSpacing={-1}
+        >
+          Jeremie Rodriguez
+        </h3>
+        <h4
+          className="sc-htpNat sc-bxivhb bxICaF"
+          fontWeight="semi-bold"
+        >
+          Full Stack Engineer
+        </h4>
+      </div>
+    </a>
+    <nav
+      className="sc-bdVaJa cRCMnF"
+      display="flex"
+    >
+      <div
+        className="sc-bdVaJa fvcPEV"
+        display="flex"
+      >
+        <a
+          className="sc-bdVaJa sc-bwzfXH eNWkmY"
+          href="/"
+        >
+          <svg
+            className="sc-bdVaJa ipxrgW"
+            height={32}
+            viewBox="0 0 24 24"
+            width={32}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0H24V24H0z"
+              fill="none"
+            />
+            <path
+              d="M19 9.3V4h-3v2.6L12 3 2 12h3v8h5v-6h4v6h5v-8h3l-3-2.7zm-9 .7c0-1.1.9-2 2-2s2 .9 2 2h-4z"
+            />
+          </svg>
+          Home
+        </a>
+      </div>
+      <div
+        className="sc-bdVaJa fvcPEV"
+        display="flex"
+      >
+        <a
+          className="sc-bdVaJa sc-bwzfXH eNWkmY"
+          href="/posts"
+        >
+          <svg
+            className="sc-bdVaJa ipxrgW"
+            height={32}
+            viewBox="0 0 24 24"
+            width={32}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0H24V24H0z"
+              fill="none"
+            />
+            <path
+              d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v11.5z"
+            />
+            <path
+              d="M17.5 10.5c.88 0 1.73.09 2.5.26V9.24c-.79-.15-1.64-.24-2.5-.24-1.7 0-3.24.29-4.5.83v1.66c1.13-.64 2.7-.99 4.5-.99zM13 12.49v1.66c1.13-.64 2.7-.99 4.5-.99.88 0 1.73.09 2.5.26V11.9c-.79-.15-1.64-.24-2.5-.24-1.7 0-3.24.3-4.5.83zM17.5 14.33c-1.7 0-3.24.29-4.5.83v1.66c1.13-.64 2.7-.99 4.5-.99.88 0 1.73.09 2.5.26v-1.52c-.79-.16-1.64-.24-2.5-.24z"
+            />
+          </svg>
+          Posts
+        </a>
+      </div>
+      <div
+        className="sc-bdVaJa fvcPEV"
+        display="flex"
+      >
+        <a
+          className="sc-bdVaJa sc-bwzfXH eNWkmY"
+          href="/about-me"
+        >
+          <svg
+            className="sc-bdVaJa ipxrgW"
+            height={32}
+            viewBox="0 0 24 24"
+            width={32}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"
+            />
+          </svg>
+          About Me
+        </a>
+      </div>
+    </nav>
+  </header>,
+  <main
+    className="sc-bdVaJa bTnvRn"
+  >
+    <h1
+      className="sc-htpNat sc-bxivhb eRoEjD"
+    >
+      About Me
+    </h1>
+    <section
+      className="sc-bdVaJa bqchxS"
+    >
+      <div
+        className="sc-bdVaJa deHWfd"
+        display="flex"
+      >
+        <a
+          className="sc-bdVaJa sc-bwzfXH mJyyF"
+          color="text"
+          fontWeight="semi-bold"
+          href="mailto:contact@fake.test"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            className="sc-bdVaJa fgLydp"
+            width={
+              Object {
+                "_": 32,
+                "mobileM": 38,
+              }
+            }
+          >
+            <div
+              className=" gatsby-image-wrapper"
+              style={
+                Object {
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "paddingBottom": "100%",
+                    "width": "100%",
+                  }
+                }
+              />
+              <img
+                alt=""
+                src="data:image/png;base64"
+                style={
+                  Object {
+                    "height": "100%",
+                    "left": 0,
+                    "objectFit": "cover",
+                    "objectPosition": "center",
+                    "opacity": 1,
+                    "position": "absolute",
+                    "top": 0,
+                    "transitionDelay": "500ms",
+                    "width": "100%",
+                  }
+                }
+              />
+              <picture>
+                <source
+                  srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+                />
+                <img
+                  alt="FakeContact"
+                  loading="lazy"
+                  onLoad={[Function]}
+                  src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
+                  srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+                  style={
+                    Object {
+                      "height": "100%",
+                      "left": 0,
+                      "objectFit": "cover",
+                      "objectPosition": "center",
+                      "opacity": 0,
+                      "position": "absolute",
+                      "top": 0,
+                      "transition": "opacity 500ms",
+                      "width": "100%",
+                    }
+                  }
+                />
+              </picture>
+              <noscript
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"FakeContact\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        className=" gatsby-image-wrapper"
+        style={
+          Object {
+            "overflow": "hidden",
+            "position": "relative",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "paddingBottom": "100%",
+              "width": "100%",
+            }
+          }
+        />
+        <img
+          alt=""
+          src="data:image/png;base64"
+          style={
+            Object {
+              "borderRadius": 8,
+              "height": "100%",
+              "left": 0,
+              "objectFit": "cover",
+              "objectPosition": "center",
+              "opacity": 1,
+              "position": "absolute",
+              "top": 0,
+              "transitionDelay": "500ms",
+              "width": "100%",
+            }
+          }
+        />
+        <picture>
+          <source
+            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+          />
+          <img
+            alt="Cover"
+            loading="lazy"
+            onLoad={[Function]}
+            src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
+            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+            style={
+              Object {
+                "borderRadius": 8,
+                "height": "100%",
+                "left": 0,
+                "objectFit": "cover",
+                "objectPosition": "center",
+                "opacity": 0,
+                "position": "absolute",
+                "top": 0,
+                "transition": "opacity 500ms",
+                "width": "100%",
+              }
+            }
+          />
+        </picture>
+        <noscript
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"Cover\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+            }
+          }
+        />
+      </div>
+      <p
+        className="sc-htpNat idEHUX"
+        fontSize={20}
+      >
+        Hi there, I'm Jeremie!
+      </p>
+      <p
+        className="sc-htpNat idEHUX"
+        fontSize={20}
+      >
+        I'm currently working at 
+        <a
+          className="sc-bdVaJa sc-bwzfXH ivlKJT"
+          color="text"
+          display="inline-flex"
+          fontWeight="semi-bold"
+          height="26px"
+          href="https://fakecompany.test"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <span
+            className=" gatsby-image-wrapper"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": undefined,
+                "overflow": "hidden",
+                "position": "relative",
+                "width": undefined,
+              }
+            }
+          >
+            <img
+              alt=""
+              src="data:image/png;base64"
+              style={
+                Object {
+                  "height": "25px",
+                  "left": 0,
+                  "objectFit": "cover",
+                  "objectPosition": "center",
+                  "opacity": 1,
+                  "position": "absolute",
+                  "top": 0,
+                  "transitionDelay": "500ms",
+                  "width": "100%",
+                }
+              }
+            />
+            <picture>
+              <source
+                srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+              />
+              <img
+                alt="FakeCompany"
+                loading="lazy"
+                onLoad={[Function]}
+                src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
+                srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+                style={
+                  Object {
+                    "height": "25px",
+                    "left": 0,
+                    "objectFit": "cover",
+                    "objectPosition": "center",
+                    "opacity": 0,
+                    "position": "absolute",
+                    "top": 0,
+                    "transition": "opacity 500ms",
+                    "width": "100%",
+                  }
+                }
+              />
+            </picture>
+            <noscript
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"FakeCompany\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                }
+              }
+            />
+          </span>
+        </a>
+         as a Full Stack Engineer.
+      </p>
+      <p
+        className="sc-htpNat idEHUX"
+        fontSize={20}
+      >
+        I particularly enjoy working with those technologies:
+      </p>
+      <div
+        className="sc-ifAKCX jqePfi sc-bdVaJa ioaQcV"
+        display="flex"
+      >
+        <a
+          className="sc-bdVaJa sc-bwzfXH fCWFWt"
+          color="text"
+          fontWeight="semi-bold"
+          href="https://image.tech"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            className=" gatsby-image-wrapper"
+            style={
+              Object {
+                "display": "inline-block",
+                "height": undefined,
+                "overflow": "hidden",
+                "position": "relative",
+                "width": undefined,
+              }
+            }
+          >
+            <img
+              alt=""
+              src="data:image/png;base64"
+              style={
+                Object {
+                  "height": "52px",
+                  "left": 0,
+                  "objectFit": "cover",
+                  "objectPosition": "center",
+                  "opacity": 1,
+                  "position": "absolute",
+                  "top": 0,
+                  "transitionDelay": "500ms",
+                  "width": "52px",
+                }
+              }
+            />
+            <picture>
+              <source
+                srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+              />
+              <img
+                alt="TechImage"
+                loading="lazy"
+                onLoad={[Function]}
+                src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
+                srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+                style={
+                  Object {
+                    "height": "52px",
+                    "left": 0,
+                    "objectFit": "cover",
+                    "objectPosition": "center",
+                    "opacity": 0,
+                    "position": "absolute",
+                    "top": 0,
+                    "transition": "opacity 500ms",
+                    "width": "52px",
+                  }
+                }
+              />
+            </picture>
+            <noscript
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"TechImage\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                }
+              }
+            />
+          </div>
+        </a>
+      </div>
+      <p
+        className="sc-htpNat idEHUX"
+        fontSize={20}
+      >
+         I'm also doing freelancing gigs, feel free to 
+        <a
+          className="sc-bdVaJa sc-bwzfXH jjmfID"
+          color="text"
+          fontWeight="semi-bold"
+          href="mailto:contact@fake.test"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          contact me
+        </a>
+         if you're interested!
+      </p>
+      <div
+        className="sc-bdVaJa huqEVX"
+        fontSize={20}
+      >
+        ▾ By the way, this is where I live, 
+        <a
+          className="sc-bdVaJa sc-bwzfXH mJyyF"
+          color="text"
+          fontWeight="semi-bold"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          San Francisco
+        </a>
+        ! ▾
+      </div>
+    </section>
+  </main>,
+]
+`;
+
+exports[`pages Test Suite pages/index Test Suite matches snapshot 1`] = `
+Array [
+  <header
+    className="sc-bdVaJa kOkKhQ"
+    display="flex"
+  >
+    <a
+      className="sc-bdVaJa sc-bwzfXH fuDuwY"
+      href="/"
+    >
+      <div
+        className=" gatsby-image-wrapper"
+        style={
+          Object {
+            "display": "inline-block",
+            "height": undefined,
+            "overflow": "hidden",
+            "position": "relative",
+            "width": undefined,
+          }
+        }
+      >
+        <img
+          alt=""
+          src="data:image/png;base64"
+          style={
+            Object {
+              "height": "80px",
+              "left": 0,
+              "objectFit": "cover",
+              "objectPosition": "center",
+              "opacity": 1,
+              "position": "absolute",
+              "top": 0,
+              "transitionDelay": "500ms",
+              "width": "80px",
+            }
+          }
+        />
+        <picture>
+          <source
+            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+          />
+          <img
+            alt=""
+            loading="lazy"
+            onLoad={[Function]}
+            src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
+            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+            style={
+              Object {
+                "height": "80px",
+                "left": 0,
+                "objectFit": "cover",
+                "objectPosition": "center",
+                "opacity": 0,
+                "position": "absolute",
+                "top": 0,
+                "transition": "opacity 500ms",
+                "width": "80px",
+              }
+            }
+          />
+        </picture>
+        <noscript
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+            }
+          }
+        />
+      </div>
+      <div
+        className="sc-bdVaJa ezLUsa"
+        color="text"
+        display="flex"
+      >
+        <h3
+          className="sc-htpNat sc-bxivhb dwRYCY"
+          color="primary"
+          fontWeight="bold"
+          letterSpacing={-1}
+        >
+          Jeremie Rodriguez
+        </h3>
+        <h4
+          className="sc-htpNat sc-bxivhb bxICaF"
+          fontWeight="semi-bold"
+        >
+          Full Stack Engineer
+        </h4>
+      </div>
+    </a>
+    <nav
+      className="sc-bdVaJa cRCMnF"
+      display="flex"
+    >
+      <div
+        className="sc-bdVaJa fvcPEV"
+        display="flex"
+      >
+        <a
+          className="sc-bdVaJa sc-bwzfXH eNWkmY"
+          href="/"
+        >
+          <svg
+            className="sc-bdVaJa ipxrgW"
+            height={32}
+            viewBox="0 0 24 24"
+            width={32}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0H24V24H0z"
+              fill="none"
+            />
+            <path
+              d="M19 9.3V4h-3v2.6L12 3 2 12h3v8h5v-6h4v6h5v-8h3l-3-2.7zm-9 .7c0-1.1.9-2 2-2s2 .9 2 2h-4z"
+            />
+          </svg>
+          Home
+        </a>
+      </div>
+      <div
+        className="sc-bdVaJa fvcPEV"
+        display="flex"
+      >
+        <a
+          className="sc-bdVaJa sc-bwzfXH eNWkmY"
+          href="/posts"
+        >
+          <svg
+            className="sc-bdVaJa ipxrgW"
+            height={32}
+            viewBox="0 0 24 24"
+            width={32}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0H24V24H0z"
+              fill="none"
+            />
+            <path
+              d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v11.5z"
+            />
+            <path
+              d="M17.5 10.5c.88 0 1.73.09 2.5.26V9.24c-.79-.15-1.64-.24-2.5-.24-1.7 0-3.24.29-4.5.83v1.66c1.13-.64 2.7-.99 4.5-.99zM13 12.49v1.66c1.13-.64 2.7-.99 4.5-.99.88 0 1.73.09 2.5.26V11.9c-.79-.15-1.64-.24-2.5-.24-1.7 0-3.24.3-4.5.83zM17.5 14.33c-1.7 0-3.24.29-4.5.83v1.66c1.13-.64 2.7-.99 4.5-.99.88 0 1.73.09 2.5.26v-1.52c-.79-.16-1.64-.24-2.5-.24z"
+            />
+          </svg>
+          Posts
+        </a>
+      </div>
+      <div
+        className="sc-bdVaJa fvcPEV"
+        display="flex"
+      >
+        <a
+          className="sc-bdVaJa sc-bwzfXH eNWkmY"
+          href="/about-me"
+        >
+          <svg
+            className="sc-bdVaJa ipxrgW"
+            height={32}
+            viewBox="0 0 24 24"
+            width={32}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"
+            />
+          </svg>
+          About Me
+        </a>
+      </div>
+    </nav>
+  </header>,
+  <main
+    className="sc-bdVaJa bTnvRn"
+  >
+    <h1
+      className="sc-htpNat sc-bxivhb eRoEjD"
+    >
+      Home
+    </h1>
+    <section
+      className="sc-bdVaJa bqchxS"
+    />
+  </main>,
+]
+`;
+
+exports[`pages Test Suite pages/posts Test Suite matches snapshot 1`] = `
+Array [
+  <header
+    className="sc-bdVaJa kOkKhQ"
+    display="flex"
+  >
+    <a
+      className="sc-bdVaJa sc-bwzfXH fuDuwY"
+      href="/"
+    >
+      <div
+        className=" gatsby-image-wrapper"
+        style={
+          Object {
+            "display": "inline-block",
+            "height": undefined,
+            "overflow": "hidden",
+            "position": "relative",
+            "width": undefined,
+          }
+        }
+      >
+        <img
+          alt=""
+          src="data:image/png;base64"
+          style={
+            Object {
+              "height": "80px",
+              "left": 0,
+              "objectFit": "cover",
+              "objectPosition": "center",
+              "opacity": 1,
+              "position": "absolute",
+              "top": 0,
+              "transitionDelay": "500ms",
+              "width": "80px",
+            }
+          }
+        />
+        <picture>
+          <source
+            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+          />
+          <img
+            alt=""
+            loading="lazy"
+            onLoad={[Function]}
+            src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
+            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+            style={
+              Object {
+                "height": "80px",
+                "left": 0,
+                "objectFit": "cover",
+                "objectPosition": "center",
+                "opacity": 0,
+                "position": "absolute",
+                "top": 0,
+                "transition": "opacity 500ms",
+                "width": "80px",
+              }
+            }
+          />
+        </picture>
+        <noscript
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+            }
+          }
+        />
+      </div>
+      <div
+        className="sc-bdVaJa ezLUsa"
+        color="text"
+        display="flex"
+      >
+        <h3
+          className="sc-htpNat sc-bxivhb dwRYCY"
+          color="primary"
+          fontWeight="bold"
+          letterSpacing={-1}
+        >
+          Jeremie Rodriguez
+        </h3>
+        <h4
+          className="sc-htpNat sc-bxivhb bxICaF"
+          fontWeight="semi-bold"
+        >
+          Full Stack Engineer
+        </h4>
+      </div>
+    </a>
+    <nav
+      className="sc-bdVaJa cRCMnF"
+      display="flex"
+    >
+      <div
+        className="sc-bdVaJa fvcPEV"
+        display="flex"
+      >
+        <a
+          className="sc-bdVaJa sc-bwzfXH eNWkmY"
+          href="/"
+        >
+          <svg
+            className="sc-bdVaJa ipxrgW"
+            height={32}
+            viewBox="0 0 24 24"
+            width={32}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0H24V24H0z"
+              fill="none"
+            />
+            <path
+              d="M19 9.3V4h-3v2.6L12 3 2 12h3v8h5v-6h4v6h5v-8h3l-3-2.7zm-9 .7c0-1.1.9-2 2-2s2 .9 2 2h-4z"
+            />
+          </svg>
+          Home
+        </a>
+      </div>
+      <div
+        className="sc-bdVaJa fvcPEV"
+        display="flex"
+      >
+        <a
+          className="sc-bdVaJa sc-bwzfXH eNWkmY"
+          href="/posts"
+        >
+          <svg
+            className="sc-bdVaJa ipxrgW"
+            height={32}
+            viewBox="0 0 24 24"
+            width={32}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0H24V24H0z"
+              fill="none"
+            />
+            <path
+              d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v11.5z"
+            />
+            <path
+              d="M17.5 10.5c.88 0 1.73.09 2.5.26V9.24c-.79-.15-1.64-.24-2.5-.24-1.7 0-3.24.29-4.5.83v1.66c1.13-.64 2.7-.99 4.5-.99zM13 12.49v1.66c1.13-.64 2.7-.99 4.5-.99.88 0 1.73.09 2.5.26V11.9c-.79-.15-1.64-.24-2.5-.24-1.7 0-3.24.3-4.5.83zM17.5 14.33c-1.7 0-3.24.29-4.5.83v1.66c1.13-.64 2.7-.99 4.5-.99.88 0 1.73.09 2.5.26v-1.52c-.79-.16-1.64-.24-2.5-.24z"
+            />
+          </svg>
+          Posts
+        </a>
+      </div>
+      <div
+        className="sc-bdVaJa fvcPEV"
+        display="flex"
+      >
+        <a
+          className="sc-bdVaJa sc-bwzfXH eNWkmY"
+          href="/about-me"
+        >
+          <svg
+            className="sc-bdVaJa ipxrgW"
+            height={32}
+            viewBox="0 0 24 24"
+            width={32}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"
+            />
+          </svg>
+          About Me
+        </a>
+      </div>
+    </nav>
+  </header>,
+  <main
+    className="sc-bdVaJa bTnvRn"
+  >
+    <h1
+      className="sc-htpNat sc-bxivhb eRoEjD"
+    >
+      Posts
+    </h1>
+    <section
+      className="sc-bdVaJa bqchxS"
+    >
+      <div
+        className="sc-bdVaJa sc-bZQynM RXBWc"
+      >
+        <ul
+          className="sc-bdVaJa sc-EHOje iuKmTz"
+        >
+          <label
+            className="sc-htpNat fCroox"
+            color="secondary"
+            display="block"
+            fontSize={32}
+            fontWeight="semi-bold"
+          >
+            2019
+          </label>
+          <li
+            className="sc-bdVaJa hSqMzR"
+            display="flex"
+            fontSize={24}
+            fontWeight="semi-bold"
+          >
+            <span
+              className="sc-bdVaJa gFthFs"
+              color="primary"
+              fontSize={16}
+              fontWeight="bold"
+            >
+              AUG-08
+            </span>
+            <a
+              className="sc-bdVaJa sc-bwzfXH mJyyF"
+              href="/posts/test"
+            >
+              Test Post
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>,
+]
+`;
