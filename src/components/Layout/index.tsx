@@ -19,31 +19,10 @@ const GlobalStyle = createGlobalStyle`
             font-weight: ${theme.fontWeights.regular};
         }
     }
-    @keyframes fadein {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    @keyframes pulse {
-        0% {
-            box-shadow: 0 0 0 0 rgba(49, 133, 154, 0.5);
-        }
-        70% {
-            box-shadow: 0 0 0 10px rgba(49, 133, 154, 0);
-        }
-        100% {
-            box-shadow: 0 0 0 0 rgba(49, 133, 154, 0);
-        }
-    }
-    @keyframes spin {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(360deg);
+    /* Format Markdown images loaded by gatsby-remark-images */
+    .gatsby-resp-image-wrapper {
+        .gatsby-resp-image-background-image, .gatsby-resp-image-image {
+            border-radius: 8px;
         }
     }
 `;

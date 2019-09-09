@@ -59,6 +59,14 @@ module.exports = {
             options: {
                 plugins: [
                     {
+                        resolve: 'gatsby-remark-images',
+                        options: {
+                            maxWidth: 768,
+                            quality: 75,
+                            withWebp: true,
+                        },
+                    },
+                    {
                         resolve: 'gatsby-remark-vscode',
                         options: {
                             colorTheme: 'Dark+ (default dark)',
