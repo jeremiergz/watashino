@@ -50,7 +50,7 @@ const Post = ({ data, pageContext }: PostProps) => {
                     flexDirection={{ _: 'column', tablet: 'row-reverse' }}
                     justifyContent="center"
                 >
-                    <Chips flexWrap="wrap" justifyContent="center" marginTop={{ tablet: '2px' }}>
+                    <Chips flexWrap="wrap" justifyContent="center">
                         {keywords.map(keyword => (
                             <Chip
                                 color={theme.colors.primary}
