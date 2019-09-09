@@ -1,12 +1,14 @@
-include:
-  template: "Dependency-Scanning.gitlab-ci.yml"
-
 stages:
   - "build"
   - "quality"
   - "deploy"
 
 image: "node:12"
+
+variables:
+  DOCKER_DRIVER: "overlay2"
+  DOCKER_IMAGE_TAG_CI: "${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_NAME}"
+  DOCKER_TLS_CERTDIR: "/certs"
 
 cache:
   key: "$CI_BUILD_REF_NAME"
@@ -27,10 +29,6 @@ build:npm:
 build:docker:
   stage: "build"
   image: "docker:stable"
-  variables:
-    DOCKER_DRIVER: "overlay2"
-    DOCKER_IMAGE_TAG_CI: "${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_NAME}"
-    DOCKER_TLS_CERTDIR: "/certs"
   services:
     - "docker:dind"
   before_script:
@@ -57,9 +55,6 @@ quality:test:
   script:
     - "npm run test"
 
-dependency_scanning:
-  stage: "quality"
-
 pages:
   stage: "deploy"
   script:
@@ -69,5 +64,4 @@ pages:
       - "public"
   needs:
     - "build:npm"
-  only:
-    - "master"
+  when: "manual"
