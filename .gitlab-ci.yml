@@ -39,6 +39,9 @@ build:docker:
       --build-arg VERSION=${CI_COMMIT_SHORT_SHA}
       --tag ${DOCKER_IMAGE_TAG_CI} .
     - "docker push ${DOCKER_IMAGE_TAG_CI}"
+  cache: {}
+  only:
+    - "develop"
 
 quality:lint:
   stage: "quality"
@@ -46,6 +49,8 @@ quality:lint:
     - "npm install"
   script:
     - "npm run lint"
+  except:
+    - "posts"
   allow_failure: true
 
 quality:test:
@@ -54,6 +59,8 @@ quality:test:
     - "npm install"
   script:
     - "npm run test"
+  except:
+    - "posts"
 
 pages:
   stage: "deploy"
@@ -62,6 +69,9 @@ pages:
   artifacts:
     paths:
       - "public"
+  cache: {}
   needs:
     - "build:npm"
-  when: "manual"
+  only:
+    - "posts"
+    - "tags"
