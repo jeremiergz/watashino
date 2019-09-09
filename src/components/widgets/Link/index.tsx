@@ -8,6 +8,7 @@ import BaseBox, { BoxProps } from '../../primitives/Box';
 
 type LinkProps = BoxProps & {
     external?: boolean;
+    partiallyActive?: boolean;
     to: string;
     variant?: 'underlined';
 };
@@ -35,7 +36,7 @@ const Box = styled(BaseBox)`
 
 const GatsbyLink = withoutStylingProps(BaseGatsbyLink);
 
-const Link = ({ children, external, to, ...rest }: LinkProps) => {
+const Link = ({ children, external, partiallyActive = false, to, ...rest }: LinkProps) => {
     const isTouchDevice = typeof window !== 'undefined' && window.navigator.maxTouchPoints > 0;
     const target = isTouchDevice ? '_self' : '_blank';
     const linkProps = external
@@ -46,7 +47,7 @@ const Link = ({ children, external, to, ...rest }: LinkProps) => {
           }
         : {
               activeStyle: { color: theme.colors.primary },
-              partiallyActive: to !== '/' ? true : false,
+              partiallyActive: partiallyActive && (to !== '/' ? true : false),
               to,
           };
     return (

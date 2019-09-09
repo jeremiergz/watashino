@@ -43,7 +43,7 @@ const Navigation = () => {
                         justifyContent="center"
                         minWidth={96}
                     >
-                        <Link alignItems="center" display="flex" flexDirection="column" to={link.to}>
+                        <Link alignItems="center" display="flex" flexDirection="column" partiallyActive to={link.to}>
                             <Box as={iconsMapping[link.icon]} height={32} width={32} />
                             {link.name}
                         </Link>
