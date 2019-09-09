@@ -1,14 +1,11 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
-import Navigation from '../components/Header/Navigation';
 import Layout from '../components/Layout';
 import Box from '../components/primitives/Box';
 import Link from '../components/widgets/Link';
 import List from '../components/widgets/List';
 import { getMonthAndDay } from '../utils/Date';
-
-const postsNav = Navigation.links.posts;
 
 const Groups = styled(Box)`
     > :first-child > label {
@@ -18,10 +15,11 @@ const Groups = styled(Box)`
 
 const PostsPage = () => {
     const {
-        allMarkdownRemark: { nodes },
-    } = useStaticQuery<GraphQL.PostsQueryQuery>(graphql`
-        query PostsQuery {
-            allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+        mdData: { nodes },
+        pageData: { keywords, name },
+    } = useStaticQuery<GraphQL.PostsPageQuery>(graphql`
+        query PostsPage {
+            mdData: allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
                 nodes {
                     frontmatter {
                         date
@@ -29,6 +27,10 @@ const PostsPage = () => {
                         title
                     }
                 }
+            }
+            pageData: navigationJson(page: { eq: "PostsPage" }) {
+                keywords
+                name
             }
         }
     `);
@@ -49,7 +51,7 @@ const PostsPage = () => {
     }, {});
     return (
         <Layout>
-            <Layout.Content keywords={postsNav.keywords} title={postsNav.name} type="section">
+            <Layout.Content keywords={keywords} title={name} type="section">
                 <Groups>
                     {Object.keys(allPosts)
                         .sort((a, b) => b.localeCompare(a))

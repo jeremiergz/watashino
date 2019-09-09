@@ -38,8 +38,8 @@ function buildMeta({
 }
 
 const SEO = ({ description = '', keywords = [], lang = 'en', meta = [], title }: SEOProps) => {
-    const data = useStaticQuery<GraphQL.SeoQueryQuery>(graphql`
-        query SEOQuery {
+    const data = useStaticQuery<GraphQL.SeoDataQuery>(graphql`
+        query SEOData {
             site {
                 siteMetadata {
                     title

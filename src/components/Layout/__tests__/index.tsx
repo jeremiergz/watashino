@@ -5,12 +5,21 @@ import Layout from '..';
 
 describe('components/Layout Test Suite', () => {
     beforeAll(() => {
+        const nodes = [
+            {
+                icon: 'icon',
+                ignoreInNavigation: false,
+                keywords: [],
+                name: 'Test',
+                navOrder: 0,
+                to: '/',
+            },
+        ];
         const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
         useStaticQuery
             .mockImplementationOnce(() => ({
-                dataJson: {
-                    jobTitle: 'Full Stack Engineer',
-                },
+                allNavigationJson: { nodes },
+                dataJson: { jobTitle: 'Full Stack Engineer' },
                 file: {
                     childImageSharp: {
                         fixed: {
@@ -24,6 +33,7 @@ describe('components/Layout Test Suite', () => {
                 },
             }))
             .mockImplementationOnce(() => ({
+                allNavigationJson: { nodes },
                 site: {
                     siteMetadata: {
                         title: 'SEO Test title',

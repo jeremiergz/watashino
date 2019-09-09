@@ -10,8 +10,8 @@ const LocationMap = () => {
     });
     const {
         dataJson: { location },
-    } = useStaticQuery<GraphQL.LocationMapDataQueryQuery>(graphql`
-        query LocationMapDataQuery {
+    } = useStaticQuery<GraphQL.LocationMapDataQuery>(graphql`
+        query LocationMapData {
             dataJson {
                 location {
                     lat

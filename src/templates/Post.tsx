@@ -11,7 +11,7 @@ import { getMonthAndDay } from '../utils/Date';
 import { renderASTToJSX } from '../utils/HTML';
 
 type PostProps = {
-    data: GraphQL.PostQueryQuery;
+    data: GraphQL.PostDataQuery;
     pageContext: {
         next: string;
         previous: string;
@@ -84,7 +84,7 @@ const Post = ({ data, pageContext }: PostProps) => {
 };
 
 export const query = graphql`
-    query PostQuery($path: String!) {
+    query PostData($path: String!) {
         markdownRemark(frontmatter: { slug: { eq: $path } }) {
             htmlAst
             frontmatter {

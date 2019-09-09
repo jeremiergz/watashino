@@ -1,51 +1,58 @@
+import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
+import Box from '../../primitives/Box';
 import Flex from '../../primitives/Flex';
 import BookIcon from '../../svg/Book';
+import HouseIcon from '../../svg/House';
 import MoodIcon from '../../svg/Mood';
-import Item from './Item';
+import Link from '../../widgets/Link';
 
-const links = {
-    home: {
-        ignoreInNavigation: true,
-        keywords: ['contact', 'gatsby', 'react'],
-        name: 'Home',
-        to: '/',
-    },
-    posts: {
-        icon: BookIcon,
-        keywords: ['posts', 'gatsby', 'react'],
-        name: 'Posts',
-        to: '/posts',
-    },
-    aboutMe: {
-        icon: MoodIcon,
-        keywords: ['about', 'gatsby', 'react'],
-        name: 'About Me',
-        to: '/about-me',
-    },
-    notFound: {
-        ignoreInNavigation: true,
-        keywords: ['404', 'gatsby', 'react'],
-        name: '404 Not Found',
-        to: '/',
-    },
+const iconsMapping = {
+    book: BookIcon,
+    home: HouseIcon,
+    mood: MoodIcon,
 };
 
 const Navigation = () => {
+    const {
+        allNavigationJson: { nodes: links },
+    } = useStaticQuery<GraphQL.NavigationDataQuery>(graphql`
+        query NavigationData {
+            allNavigationJson {
+                nodes {
+                    icon
+                    ignoreInNavigation
+                    keywords
+                    name
+                    navOrder
+                    to
+                }
+            }
+        }
+    `);
     return (
         <Flex as="nav" marginTop={{ _: 16, tablet: 0 }}>
-            {Object.keys(links)
-                .filter(key => !links[key].ignoreInNavigation)
-                .map(key => {
-                    const link = links[key];
-                    return <Item key={link.name} link={link} />;
-                })}
+            {links
+                .filter(link => !link.ignoreInNavigation)
+                .sort((a, b) => a.navOrder - b.navOrder)
+                .map(link => (
+                    <Flex
+                        alignItems="center"
+                        flexDirection="column"
+                        key={link.name}
+                        justifyContent="center"
+                        minWidth={96}
+                    >
+                        <Link alignItems="center" display="flex" flexDirection="column" to={link.to}>
+                            <Box as={iconsMapping[link.icon]} height={32} width={32} />
+                            {link.name}
+                        </Link>
+                    </Flex>
+                ))}
         </Flex>
     );
 };
 
 Navigation.displayName = 'Navigation';
-
-Navigation.links = links;
 
 export default Navigation;

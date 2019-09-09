@@ -1,17 +1,24 @@
-import { navigate } from 'gatsby';
+import { navigate, useStaticQuery, graphql } from 'gatsby';
 import React, { useEffect } from 'react';
-import Navigation from '../components/Header/Navigation';
 import Layout from '../components/Layout';
 
-const postsNav = Navigation.links.posts;
-
 const IndexPage = () => {
+    const {
+        pageData: { keywords },
+    } = useStaticQuery<GraphQL.IndexPageQuery>(graphql`
+        query IndexPage {
+            pageData: navigationJson(page: { eq: "NotFoundPage" }) {
+                keywords
+                name
+            }
+        }
+    `);
     useEffect(() => {
-        navigate(postsNav.to);
+        navigate('/posts');
     }, []);
     return (
         <Layout>
-            <Layout.Content type="section" />
+            <Layout.Content keywords={keywords} type="section" />
         </Layout>
     );
 };

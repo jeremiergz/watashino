@@ -2,7 +2,6 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Img, { FixedObject, FluidObject } from 'gatsby-image';
 import React from 'react';
 import styled from 'styled-components';
-import Navigation from '../components/Header/Navigation';
 import Layout from '../components/Layout';
 import LocationMap from '../components/LocationMap';
 import Box from '../components/primitives/Box';
@@ -10,8 +9,6 @@ import Flex from '../components/primitives/Flex';
 import Link from '../components/widgets/Link';
 import Paragraph from '../components/widgets/Paragraph';
 import { Theme } from '../theme';
-
-const aboutMeNav = Navigation.links.aboutMe;
 
 const vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
 
@@ -35,6 +32,7 @@ const AboutMePage = () => {
         coverImg: {
             childImageSharp: { fluid: coverImgFluid },
         },
+        pageData: { keywords, name },
         personalDetails: { company, contacts, jobTitle, location, openToGigs },
         techImgs: { nodes: techImgNodes },
         techs: { nodes: technologies },
@@ -63,6 +61,10 @@ const AboutMePage = () => {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }
+            }
+            pageData: navigationJson(page: { eq: "AboutMePage" }) {
+                keywords
+                name
             }
             personalDetails: dataJson {
                 company {
@@ -127,7 +129,7 @@ const AboutMePage = () => {
     const mailto = contacts.find(c => c.url.startsWith('mailto:'));
     return (
         <Layout>
-            <Layout.Content keywords={aboutMeNav.keywords} title={aboutMeNav.name} type="section">
+            <Layout.Content keywords={keywords} title={name} type="section">
                 <Flex alignItems="center" justifyContent="center" marginBottom={4}>
                     {contactObjects.map(({ img, label, url }) => (
                         <Link key={url} to={url} external>

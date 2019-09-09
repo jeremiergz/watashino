@@ -3,7 +3,7 @@
 exports[`components/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
 <a
   className="sc-bdVaJa sc-bxivhb lmWmlg"
-  href="/"
+  href="/about-me"
 >
   <div
     className=" gatsby-image-wrapper"

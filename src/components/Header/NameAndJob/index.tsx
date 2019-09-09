@@ -6,8 +6,8 @@ import Heading from '../../widgets/Heading';
 import Link from '../../widgets/Link';
 
 const NameAndJob = () => {
-    const { dataJson, file } = useStaticQuery<GraphQL.HeaderDataQueryQuery>(graphql`
-        query HeaderDataQuery {
+    const { dataJson, file } = useStaticQuery<GraphQL.HeaderDataQuery>(graphql`
+        query HeaderData {
             dataJson {
                 jobTitle
             }
@@ -27,7 +27,7 @@ const NameAndJob = () => {
             flexDirection={{ _: 'column', tablet: 'row' }}
             justifyContent={{ _: 'center', tablet: 'flex-start' }}
             textAlign={{ _: 'center', tablet: 'left' }}
-            to="/"
+            to="/about-me"
         >
             <Img fixed={file.childImageSharp.fixed as FixedObject} imgStyle={{ height: '80px', width: '80px' }} />
             <Flex color="text" flexDirection="column" justifyContent="center" marginLeft={{ tablet: 2 }}>

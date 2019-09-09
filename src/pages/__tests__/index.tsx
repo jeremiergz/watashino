@@ -40,14 +40,27 @@ describe('pages Test Suite', () => {
         }));
         const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
         useStaticQuery.mockImplementation(() => ({
-            allMarkdownRemark: {
+            mdData: {
                 nodes: [{ frontmatter: { date: '2019-08-08', slug: '/posts/test', title: 'Test Post' } }],
+            },
+            allNavigationJson: {
+                nodes: [
+                    {
+                        icon: 'icon',
+                        ignoreInNavigation: false,
+                        keywords: [],
+                        name: 'Test',
+                        navOrder: 0,
+                        to: '/',
+                    },
+                ],
             },
             companyImg: { childImageSharp },
             contactImgs: { nodes: [{ base: 'contact-image.png', childImageSharp }] },
             coverImg: { childImageSharp },
             dataJson: { jobTitle, location },
             file: { childImageSharp },
+            pageData: { keywords: ['test', 'keyword'], name: 'Test Page' },
             personalDetails: {
                 company: {
                     name: 'FakeCompany',
@@ -67,6 +80,8 @@ describe('pages Test Suite', () => {
             techs: { nodes: [{ img: 'tech-image.png', name: 'TechImage', website: 'https://image.tech' }] },
             techImgs: { nodes: [{ base: 'tech-image.png', childImageSharp }] },
         }));
+        const navigate = jest.spyOn(Gatsby, 'navigate');
+        navigate.mockImplementation(x => x);
     });
 
     describe('pages/404 Test Suite', () => {

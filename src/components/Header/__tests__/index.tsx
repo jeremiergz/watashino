@@ -9,6 +9,18 @@ describe('components/Layout/Header Test Suite', () => {
     beforeAll(() => {
         const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
         useStaticQuery.mockImplementation(() => ({
+            allNavigationJson: {
+                nodes: [
+                    {
+                        icon: 'icon',
+                        ignoreInNavigation: false,
+                        keywords: [],
+                        name: 'Test',
+                        navOrder: 0,
+                        to: '/',
+                    },
+                ],
+            },
             dataJson: {
                 jobTitle: 'Full Stack Engineer',
             },
