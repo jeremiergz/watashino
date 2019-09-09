@@ -14,7 +14,7 @@ const IndexPage = () => {
         }
     `);
     useEffect(() => {
-        navigate('/posts');
+        navigate('/about-me');
     }, []);
     return (
         <Layout>
