@@ -5,11 +5,6 @@
   },
   "contacts": [
     {
-      "img": "contact-phone.png",
-      "label": "+33 6 81 51 64 42",
-      "url": "tel:+33681516442"
-    },
-    {
       "img": "contact-linkedin.png",
       "label": "/jeremiergz",
       "url": "https://linkedin.com/in/jeremiergz"
