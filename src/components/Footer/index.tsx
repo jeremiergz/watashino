@@ -24,13 +24,12 @@ const Footer = () => {
     return (
         <Box
             as="footer"
-            maxWidth={theme.breakpoints[5]}
-            padding={{ _: 16, tablet: 32 }}
-            textAlign="center"
-            position="absolute"
             bottom={0}
             left={0}
+            padding={{ _: 16, tablet: 32 }}
+            position="absolute"
             right={0}
+            textAlign="center"
         >
             <Link borderBottom="1px dashed gray" color="gray" external to={sourceCodeURL}>
                 {`v${version} - source code`}
