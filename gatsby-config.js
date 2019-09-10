@@ -6,10 +6,13 @@ module.exports = {
         author: packageJSON.author,
         description: packageJSON.description,
         title: 'Jeremie Rodriguez',
+        siteUrl: packageJSON.homepage,
     },
     plugins: [
         'gatsby-plugin-react-helmet',
+        'gatsby-plugin-robots-txt',
         'gatsby-plugin-sharp',
+        'gatsby-plugin-sitemap',
         'gatsby-plugin-styled-components',
         'gatsby-plugin-typescript',
         'gatsby-transformer-json',
@@ -38,6 +41,13 @@ module.exports = {
             options: {
                 name: 'data',
                 path: `${__dirname}/content/data`,
+            },
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'packageJSON',
+                path: `${__dirname}/package.json`,
             },
         },
         {
