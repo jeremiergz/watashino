@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
+<nav
+  className="sc-bdVaJa eynWct"
+  display="flex"
+>
+  <div
+    className="sc-bdVaJa hcqTQy"
+    display="flex"
+  >
+    <a
+      className="sc-bdVaJa sc-bwzfXH BnjcO"
+      href="/"
+      target="_blank"
+    >
+      <div
+        className="sc-bdVaJa kKgGND"
+        height={32}
+        width={32}
+      />
+      Test
+    </a>
+  </div>
+  <div
+    className="sc-bdVaJa hcqTQy"
+    display="flex"
+  >
+    <a
+      className="sc-bdVaJa sc-bwzfXH BnjcO"
+      color="text"
+      display="flex"
+      download={true}
+      fontWeight="semi-bold"
+      href="/static/resume-file.pdf"
+      target="_blank"
+    >
+      <svg
+        className="sc-bdVaJa kKgGND"
+        height={32}
+        viewBox="0 0 24 24"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+      Resume
+    </a>
+  </div>
+</nav>
+`;

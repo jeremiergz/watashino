@@ -1,8 +1,8 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import Layout from '../components/Layout';
-import Heading from '../components/widgets/Heading';
-import Link from '../components/widgets/Link';
+import Heading from '../components/common/Heading';
+import Link from '../components/common/Link';
+import Layout from '../components/core/Layout';
 
 const NotFoundPage = () => {
     const {

@@ -1,11 +1,11 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
-import Layout from '../components/Layout';
+import Chip from '../components/common/Chip';
+import PreviousNextNavigation from '../components/common/PreviousNextNavigation';
+import Layout from '../components/core/Layout';
 import Flex from '../components/primitives/Flex';
 import Text from '../components/primitives/Text';
-import Chip from '../components/widgets/Chip';
-import PreviousNextNavigation from '../components/widgets/PreviousNextNavigation';
 import theme, { Theme } from '../theme';
 import { getMonthAndDay } from '../utils/Date';
 import { renderASTToJSX } from '../utils/HTML';

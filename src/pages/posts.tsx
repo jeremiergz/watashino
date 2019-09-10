@@ -1,10 +1,10 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
-import Layout from '../components/Layout';
+import Link from '../components/common/Link';
+import List from '../components/common/List';
+import Layout from '../components/core/Layout';
 import Box from '../components/primitives/Box';
-import Link from '../components/widgets/Link';
-import List from '../components/widgets/List';
 import { getMonthAndDay } from '../utils/Date';
 
 const Groups = styled(Box)`

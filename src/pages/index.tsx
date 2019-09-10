@@ -1,6 +1,6 @@
-import { navigate, useStaticQuery, graphql } from 'gatsby';
+import { graphql, navigate, useStaticQuery } from 'gatsby';
 import React, { useEffect } from 'react';
-import Layout from '../components/Layout';
+import Layout from '../components/core/Layout';
 
 const IndexPage = () => {
     const {

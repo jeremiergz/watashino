@@ -2,12 +2,12 @@
 import React, { createElement } from 'react';
 import RehypeReact from 'rehype-react';
 import styled from 'styled-components';
+import Code from '../../components/common/Code';
+import Heading from '../../components/common/Heading';
+import InlineCode from '../../components/common/InlineCode';
+import Link from '../../components/common/Link';
+import Paragraph from '../../components/common/Paragraph';
 import Box from '../../components/primitives/Box';
-import Code from '../../components/widgets/Code';
-import Heading from '../../components/widgets/Heading';
-import InlineCode from '../../components/widgets/InlineCode';
-import Link from '../../components/widgets/Link';
-import Paragraph from '../../components/widgets/Paragraph';
 import theme from '../../theme';
 
 const VerticalHR = styled(Box)`

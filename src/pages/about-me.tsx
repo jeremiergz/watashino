@@ -2,12 +2,12 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Img, { FixedObject, FluidObject } from 'gatsby-image';
 import React from 'react';
 import styled from 'styled-components';
-import Layout from '../components/Layout';
-import LocationMap from '../components/LocationMap';
+import Link from '../components/common/Link';
+import Paragraph from '../components/common/Paragraph';
+import Layout from '../components/core/Layout';
+import LocationMap from '../components/core/LocationMap';
 import Box from '../components/primitives/Box';
 import Flex from '../components/primitives/Flex';
-import Link from '../components/widgets/Link';
-import Paragraph from '../components/widgets/Paragraph';
 import { Theme } from '../theme';
 
 const vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
