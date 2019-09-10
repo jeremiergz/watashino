@@ -27,13 +27,13 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-manifest',
             options: {
-                background_color: '#663399',
+                background_color: '#17365C',
                 display: 'minimal-ui',
                 icon: 'src/images/profile-pic.png',
                 name: packageJSON.name,
                 short_name: packageJSON.name,
                 start_url: '/',
-                theme_color: '#663399',
+                theme_color: '#31859A',
             },
         },
         {
