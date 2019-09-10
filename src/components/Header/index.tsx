@@ -1,14 +1,13 @@
 import React from 'react';
 import useTheme from '../../hooks/useTheme';
-import Box from '../primitives/Box';
+import Flex from '../primitives/Flex';
 import NameAndJob from './NameAndJob';
 import Navigation from './Navigation';
 
 const Header = () => {
     const theme = useTheme();
     return (
-        <Box
-            display="flex"
+        <Flex
             alignItems="center"
             as="header"
             flexDirection={{ _: 'column', tablet: 'row' }}
@@ -20,7 +19,7 @@ const Header = () => {
         >
             <NameAndJob />
             <Navigation />
-        </Box>
+        </Flex>
     );
 };
 

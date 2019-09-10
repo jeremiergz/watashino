@@ -40,6 +40,8 @@ type BoxProps = StyledComponentProps<
 };
 
 const Box = styled.div<BoxProps>`
+    #___gatsby > div {
+    }
     ${compose(
         border,
         color,
@@ -49,7 +51,7 @@ const Box = styled.div<BoxProps>`
         space,
         typography,
         zIndex,
-    )}
+    )};
 `;
 
 Box.displayName = 'Box';

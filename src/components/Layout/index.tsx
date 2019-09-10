@@ -1,6 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import theme from '../../theme';
+import Footer from '../Footer';
 import Header from '../Header';
 import Box from '../primitives/Box';
 import Content from './Content';
@@ -19,6 +20,10 @@ const GlobalStyle = createGlobalStyle`
             font-weight: ${theme.fontWeights.regular};
         }
     }
+    #___gatsby {
+        position: relative;
+        min-height: 100%;
+    }
     /* Format Markdown images loaded by gatsby-remark-images */
     .gatsby-resp-image-wrapper {
         .gatsby-resp-image-background-image, .gatsby-resp-image-image {
@@ -35,12 +40,13 @@ const Layout = ({ children }: LayoutProps) => (
                 as="main"
                 margin="auto"
                 maxWidth={theme.breakpoints[3]}
-                paddingBottom={{ _: 16, tablet: 32 }}
+                paddingBottom={{ _: 78, tablet: 108 }}
                 paddingX={{ _: 16, tablet: 32 }}
                 textAlign="center"
             >
                 {children}
             </Box>
+            <Footer />
             <GlobalStyle />
         </>
     </ThemeProvider>
