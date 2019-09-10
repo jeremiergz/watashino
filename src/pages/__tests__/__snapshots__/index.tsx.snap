@@ -3,11 +3,11 @@
 exports[`pages Test Suite pages/404 Test Suite matches snapshot 1`] = `
 Array [
   <header
-    className="sc-bdVaJa kOkKhQ"
+    className="sc-bdVaJa hnBVJS"
     display="flex"
   >
     <a
-      className="sc-bdVaJa sc-bxivhb jKEtLG"
+      className="sc-bdVaJa sc-bwzfXH fwrRXJ"
       href="/about-me"
     >
       <div
@@ -81,12 +81,12 @@ Array [
         />
       </div>
       <div
-        className="sc-bdVaJa ezLUsa"
+        className="sc-bdVaJa fnwDOj"
         color="text"
         display="flex"
       >
         <h3
-          className="sc-bwzfXH sc-htpNat klUrKO"
+          className="sc-htpNat sc-bxivhb dwRYCY"
           color="primary"
           fontWeight="bold"
           letterSpacing={-1}
@@ -94,7 +94,7 @@ Array [
           Jeremie Rodriguez
         </h3>
         <h4
-          className="sc-bwzfXH sc-htpNat bvVtPB"
+          className="sc-htpNat sc-bxivhb bxICaF"
           fontWeight="semi-bold"
         >
           Full Stack Engineer
@@ -102,19 +102,19 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-bdVaJa cRCMnF"
+      className="sc-bdVaJa jWggOi"
       display="flex"
     >
       <div
-        className="sc-bdVaJa fvcPEV"
+        className="sc-bdVaJa hcqTQy"
         display="flex"
       >
         <a
-          className="sc-bdVaJa sc-bxivhb jXVeSa"
+          className="sc-bdVaJa sc-bwzfXH gLziNZ"
           href="/"
         >
           <div
-            className="sc-bdVaJa ipxrgW"
+            className="sc-bdVaJa kKgGND"
             height={32}
             width={32}
           />
@@ -124,24 +124,24 @@ Array [
     </nav>
   </header>,
   <main
-    className="sc-bdVaJa bTnvRn"
+    className="sc-bdVaJa ewwdog"
   >
     <h1
-      className="sc-bwzfXH sc-htpNat hGBqDJ"
+      className="sc-htpNat sc-bxivhb eRoEjD"
     >
       Test Page
     </h1>
     <section
-      className="sc-bdVaJa bqchxS"
+      className="sc-bdVaJa ldoftI"
     >
       <h4
-        className="sc-bwzfXH sc-htpNat ghdpNU"
+        className="sc-htpNat sc-bxivhb larKd"
       >
         Man, I hate when this happens...
       </h4>
       Find your way 
       <a
-        className="sc-bdVaJa sc-bxivhb bRfUBT"
+        className="sc-bdVaJa sc-bwzfXH hQvgBH"
         href="/about-me"
         variant="underlined"
       >
@@ -149,17 +149,38 @@ Array [
       </a>
     </section>
   </main>,
+  <footer
+    className="sc-bdVaJa kiLLtx"
+  >
+    <a
+      className="sc-bdVaJa sc-bwzfXH iUaXwc"
+      color="gray"
+      fontWeight="semi-bold"
+      href="https://test-repository/tree/3.16.120"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      v3.16.120 - source code
+    </a>
+    <div
+      className="sc-bdVaJa fHfaaQ"
+      color="gray"
+      fontSize={14}
+    >
+      licensed under the Test-Licence license
+    </div>
+  </footer>,
 ]
 `;
 
 exports[`pages Test Suite pages/about-me Test Suite matches snapshot 1`] = `
 Array [
   <header
-    className="sc-bdVaJa kOkKhQ"
+    className="sc-bdVaJa hnBVJS"
     display="flex"
   >
     <a
-      className="sc-bdVaJa sc-bxivhb jKEtLG"
+      className="sc-bdVaJa sc-bwzfXH fwrRXJ"
       href="/about-me"
     >
       <div
@@ -233,12 +254,12 @@ Array [
         />
       </div>
       <div
-        className="sc-bdVaJa ezLUsa"
+        className="sc-bdVaJa fnwDOj"
         color="text"
         display="flex"
       >
         <h3
-          className="sc-bwzfXH sc-htpNat klUrKO"
+          className="sc-htpNat sc-bxivhb dwRYCY"
           color="primary"
           fontWeight="bold"
           letterSpacing={-1}
@@ -246,7 +267,7 @@ Array [
           Jeremie Rodriguez
         </h3>
         <h4
-          className="sc-bwzfXH sc-htpNat bvVtPB"
+          className="sc-htpNat sc-bxivhb bxICaF"
           fontWeight="semi-bold"
         >
           Full Stack Engineer
@@ -254,19 +275,19 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-bdVaJa cRCMnF"
+      className="sc-bdVaJa jWggOi"
       display="flex"
     >
       <div
-        className="sc-bdVaJa fvcPEV"
+        className="sc-bdVaJa hcqTQy"
         display="flex"
       >
         <a
-          className="sc-bdVaJa sc-bxivhb jXVeSa"
+          className="sc-bdVaJa sc-bwzfXH gLziNZ"
           href="/"
         >
           <div
-            className="sc-bdVaJa ipxrgW"
+            className="sc-bdVaJa kKgGND"
             height={32}
             width={32}
           />
@@ -276,22 +297,22 @@ Array [
     </nav>
   </header>,
   <main
-    className="sc-bdVaJa bTnvRn"
+    className="sc-bdVaJa ewwdog"
   >
     <h1
-      className="sc-bwzfXH sc-htpNat hGBqDJ"
+      className="sc-htpNat sc-bxivhb eRoEjD"
     >
       Test Page
     </h1>
     <section
-      className="sc-bdVaJa bqchxS"
+      className="sc-bdVaJa ldoftI"
     >
       <div
-        className="sc-bdVaJa deHWfd"
+        className="sc-bdVaJa gwoYCn"
         display="flex"
       >
         <a
-          className="sc-bdVaJa sc-bxivhb buFgYq"
+          className="sc-bdVaJa sc-bwzfXH hmXZsL"
           color="text"
           fontWeight="semi-bold"
           href="mailto:contact@fake.test"
@@ -299,7 +320,7 @@ Array [
           target="_blank"
         >
           <div
-            className="sc-bdVaJa fgLydp"
+            className="sc-bdVaJa huqcnx"
             width={
               Object {
                 "_": 32,
@@ -463,18 +484,18 @@ Array [
         />
       </div>
       <p
-        className="sc-bwzfXH hbXsuk"
+        className="sc-htpNat idEHUX"
         fontSize={20}
       >
         Hi there, I'm Jeremie!
       </p>
       <p
-        className="sc-bwzfXH hbXsuk"
+        className="sc-htpNat idEHUX"
         fontSize={20}
       >
         I'm currently working at 
         <a
-          className="sc-bdVaJa sc-bxivhb ctdksJ"
+          className="sc-bdVaJa sc-bwzfXH ljoVRr"
           color="text"
           display="inline-flex"
           fontWeight="semi-bold"
@@ -557,17 +578,17 @@ Array [
          as a Full Stack Engineer.
       </p>
       <p
-        className="sc-bwzfXH hbXsuk"
+        className="sc-htpNat idEHUX"
         fontSize={20}
       >
         I particularly enjoy working with those technologies:
       </p>
       <div
-        className="sc-ifAKCX jqePfi sc-bdVaJa ioaQcV"
+        className="sc-ifAKCX jqePfi sc-bdVaJa jePtRj"
         display="flex"
       >
         <a
-          className="sc-bdVaJa sc-bxivhb jUTziW"
+          className="sc-bdVaJa sc-bwzfXH eGQKDZ"
           color="text"
           fontWeight="semi-bold"
           href="https://image.tech"
@@ -647,12 +668,12 @@ Array [
         </a>
       </div>
       <div
-        className="sc-bdVaJa huqEVX"
+        className="sc-bdVaJa lmRjJq"
         fontSize={20}
       >
         ▾ By the way, this is where I live, 
         <a
-          className="sc-bdVaJa sc-bxivhb buFgYq"
+          className="sc-bdVaJa sc-bwzfXH hmXZsL"
           color="text"
           fontWeight="semi-bold"
           rel="noopener noreferrer"
@@ -664,17 +685,38 @@ Array [
       </div>
     </section>
   </main>,
+  <footer
+    className="sc-bdVaJa kiLLtx"
+  >
+    <a
+      className="sc-bdVaJa sc-bwzfXH iUaXwc"
+      color="gray"
+      fontWeight="semi-bold"
+      href="https://test-repository/tree/3.16.120"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      v3.16.120 - source code
+    </a>
+    <div
+      className="sc-bdVaJa fHfaaQ"
+      color="gray"
+      fontSize={14}
+    >
+      licensed under the Test-Licence license
+    </div>
+  </footer>,
 ]
 `;
 
 exports[`pages Test Suite pages/index Test Suite matches snapshot 1`] = `
 Array [
   <header
-    className="sc-bdVaJa kOkKhQ"
+    className="sc-bdVaJa hnBVJS"
     display="flex"
   >
     <a
-      className="sc-bdVaJa sc-bxivhb jKEtLG"
+      className="sc-bdVaJa sc-bwzfXH fwrRXJ"
       href="/about-me"
     >
       <div
@@ -748,12 +790,12 @@ Array [
         />
       </div>
       <div
-        className="sc-bdVaJa ezLUsa"
+        className="sc-bdVaJa fnwDOj"
         color="text"
         display="flex"
       >
         <h3
-          className="sc-bwzfXH sc-htpNat klUrKO"
+          className="sc-htpNat sc-bxivhb dwRYCY"
           color="primary"
           fontWeight="bold"
           letterSpacing={-1}
@@ -761,7 +803,7 @@ Array [
           Jeremie Rodriguez
         </h3>
         <h4
-          className="sc-bwzfXH sc-htpNat bvVtPB"
+          className="sc-htpNat sc-bxivhb bxICaF"
           fontWeight="semi-bold"
         >
           Full Stack Engineer
@@ -769,19 +811,19 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-bdVaJa cRCMnF"
+      className="sc-bdVaJa jWggOi"
       display="flex"
     >
       <div
-        className="sc-bdVaJa fvcPEV"
+        className="sc-bdVaJa hcqTQy"
         display="flex"
       >
         <a
-          className="sc-bdVaJa sc-bxivhb jXVeSa"
+          className="sc-bdVaJa sc-bwzfXH gLziNZ"
           href="/"
         >
           <div
-            className="sc-bdVaJa ipxrgW"
+            className="sc-bdVaJa kKgGND"
             height={32}
             width={32}
           />
@@ -791,23 +833,44 @@ Array [
     </nav>
   </header>,
   <main
-    className="sc-bdVaJa bTnvRn"
+    className="sc-bdVaJa ewwdog"
   >
     <section
-      className="sc-bdVaJa bqchxS"
+      className="sc-bdVaJa ldoftI"
     />
   </main>,
+  <footer
+    className="sc-bdVaJa kiLLtx"
+  >
+    <a
+      className="sc-bdVaJa sc-bwzfXH iUaXwc"
+      color="gray"
+      fontWeight="semi-bold"
+      href="https://test-repository/tree/3.16.120"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      v3.16.120 - source code
+    </a>
+    <div
+      className="sc-bdVaJa fHfaaQ"
+      color="gray"
+      fontSize={14}
+    >
+      licensed under the Test-Licence license
+    </div>
+  </footer>,
 ]
 `;
 
 exports[`pages Test Suite pages/posts Test Suite matches snapshot 1`] = `
 Array [
   <header
-    className="sc-bdVaJa kOkKhQ"
+    className="sc-bdVaJa hnBVJS"
     display="flex"
   >
     <a
-      className="sc-bdVaJa sc-bxivhb jKEtLG"
+      className="sc-bdVaJa sc-bwzfXH fwrRXJ"
       href="/about-me"
     >
       <div
@@ -881,12 +944,12 @@ Array [
         />
       </div>
       <div
-        className="sc-bdVaJa ezLUsa"
+        className="sc-bdVaJa fnwDOj"
         color="text"
         display="flex"
       >
         <h3
-          className="sc-bwzfXH sc-htpNat klUrKO"
+          className="sc-htpNat sc-bxivhb dwRYCY"
           color="primary"
           fontWeight="bold"
           letterSpacing={-1}
@@ -894,7 +957,7 @@ Array [
           Jeremie Rodriguez
         </h3>
         <h4
-          className="sc-bwzfXH sc-htpNat bvVtPB"
+          className="sc-htpNat sc-bxivhb bxICaF"
           fontWeight="semi-bold"
         >
           Full Stack Engineer
@@ -902,19 +965,19 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-bdVaJa cRCMnF"
+      className="sc-bdVaJa jWggOi"
       display="flex"
     >
       <div
-        className="sc-bdVaJa fvcPEV"
+        className="sc-bdVaJa hcqTQy"
         display="flex"
       >
         <a
-          className="sc-bdVaJa sc-bxivhb jXVeSa"
+          className="sc-bdVaJa sc-bwzfXH gLziNZ"
           href="/"
         >
           <div
-            className="sc-bdVaJa ipxrgW"
+            className="sc-bdVaJa kKgGND"
             height={32}
             width={32}
           />
@@ -924,24 +987,24 @@ Array [
     </nav>
   </header>,
   <main
-    className="sc-bdVaJa bTnvRn"
+    className="sc-bdVaJa ewwdog"
   >
     <h1
-      className="sc-bwzfXH sc-htpNat hGBqDJ"
+      className="sc-htpNat sc-bxivhb eRoEjD"
     >
       Test Page
     </h1>
     <section
-      className="sc-bdVaJa bqchxS"
+      className="sc-bdVaJa ldoftI"
     >
       <div
-        className="sc-bdVaJa sc-bZQynM RXBWc"
+        className="sc-bdVaJa sc-bZQynM bRypTt"
       >
         <ul
-          className="sc-bdVaJa sc-EHOje iuKmTz"
+          className="sc-bdVaJa sc-EHOje cgDDgZ"
         >
           <label
-            className="sc-bwzfXH hZTinx"
+            className="sc-htpNat fCroox"
             color="secondary"
             display="block"
             fontSize={32}
@@ -950,13 +1013,13 @@ Array [
             2019
           </label>
           <li
-            className="sc-bdVaJa hSqMzR"
+            className="sc-bdVaJa eKlUuD"
             display="flex"
             fontSize={24}
             fontWeight="semi-bold"
           >
             <span
-              className="sc-bdVaJa gFthFs"
+              className="sc-bdVaJa jqsAZI"
               color="primary"
               fontSize={16}
               fontWeight="bold"
@@ -964,7 +1027,7 @@ Array [
               AUG-08
             </span>
             <a
-              className="sc-bdVaJa sc-bxivhb buFgYq"
+              className="sc-bdVaJa sc-bwzfXH hmXZsL"
               href="/posts/test"
             >
               Test Post
@@ -974,5 +1037,26 @@ Array [
       </div>
     </section>
   </main>,
+  <footer
+    className="sc-bdVaJa kiLLtx"
+  >
+    <a
+      className="sc-bdVaJa sc-bwzfXH iUaXwc"
+      color="gray"
+      fontWeight="semi-bold"
+      href="https://test-repository/tree/3.16.120"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      v3.16.120 - source code
+    </a>
+    <div
+      className="sc-bdVaJa fHfaaQ"
+      color="gray"
+      fontSize={14}
+    >
+      licensed under the Test-Licence license
+    </div>
+  </footer>,
 ]
 `;

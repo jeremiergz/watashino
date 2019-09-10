@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Footer Test Suite matches snapshot 1`] = `
+<footer
+  className="sc-bdVaJa kiLLtx"
+>
+  <a
+    className="sc-bdVaJa sc-bwzfXH iUaXwc"
+    color="gray"
+    fontWeight="semi-bold"
+    href="https://test-repository/tree/3.16.120"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    v3.16.120 - source code
+  </a>
+  <div
+    className="sc-bdVaJa fHfaaQ"
+    color="gray"
+    fontSize={14}
+  >
+    licensed under the Test-Licence license
+  </div>
+</footer>
+`;

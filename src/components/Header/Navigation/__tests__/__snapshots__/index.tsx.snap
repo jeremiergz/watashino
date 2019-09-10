@@ -2,19 +2,19 @@
 
 exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
 <nav
-  className="sc-bdVaJa fCoKxI"
+  className="sc-bdVaJa eynWct"
   display="flex"
 >
   <div
-    className="sc-bdVaJa fvcPEV"
+    className="sc-bdVaJa hcqTQy"
     display="flex"
   >
     <a
-      className="sc-bdVaJa sc-bwzfXH gMfxso"
+      className="sc-bdVaJa sc-bwzfXH BnjcO"
       href="/"
     >
       <div
-        className="sc-bdVaJa ipxrgW"
+        className="sc-bdVaJa kKgGND"
         height={32}
         width={32}
       />

@@ -60,6 +60,11 @@ describe('pages Test Suite', () => {
             coverImg: { childImageSharp },
             dataJson: { jobTitle, location },
             file: { childImageSharp },
+            packageJson: {
+                license: 'Test-Licence',
+                repository: { url: 'git+https://test-repository.git' },
+                version: '3.16.120',
+            },
             pageData: { keywords: ['test', 'keyword'], name: 'Test Page' },
             personalDetails: {
                 company: {

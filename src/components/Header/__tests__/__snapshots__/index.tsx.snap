@@ -2,11 +2,11 @@
 
 exports[`components/Layout/Header Test Suite matches snapshot 1`] = `
 <header
-  className="sc-bdVaJa kOkKhQ"
+  className="sc-bdVaJa hnBVJS"
   display="flex"
 >
   <a
-    className="sc-bdVaJa sc-bxivhb jKEtLG"
+    className="sc-bdVaJa sc-bxivhb bGOBuK"
     href="/about-me"
   >
     <div
@@ -80,7 +80,7 @@ exports[`components/Layout/Header Test Suite matches snapshot 1`] = `
       />
     </div>
     <div
-      className="sc-bdVaJa ezLUsa"
+      className="sc-bdVaJa fnwDOj"
       color="text"
       display="flex"
     >
@@ -101,19 +101,19 @@ exports[`components/Layout/Header Test Suite matches snapshot 1`] = `
     </div>
   </a>
   <nav
-    className="sc-bdVaJa cRCMnF"
+    className="sc-bdVaJa jWggOi"
     display="flex"
   >
     <div
-      className="sc-bdVaJa fvcPEV"
+      className="sc-bdVaJa hcqTQy"
       display="flex"
     >
       <a
-        className="sc-bdVaJa sc-bxivhb jXVeSa"
+        className="sc-bdVaJa sc-bxivhb bAdvYf"
         href="/"
       >
         <div
-          className="sc-bdVaJa ipxrgW"
+          className="sc-bdVaJa kKgGND"
           height={32}
           width={32}
         />

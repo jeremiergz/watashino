@@ -3,11 +3,11 @@
 exports[`components/Layout Test Suite matches snapshot 1`] = `
 Array [
   <header
-    className="sc-bdVaJa kOkKhQ"
+    className="sc-bdVaJa hnBVJS"
     display="flex"
   >
     <a
-      className="sc-bdVaJa sc-bxivhb jKEtLG"
+      className="sc-bdVaJa sc-bwzfXH fwrRXJ"
       href="/about-me"
     >
       <div
@@ -81,12 +81,12 @@ Array [
         />
       </div>
       <div
-        className="sc-bdVaJa ezLUsa"
+        className="sc-bdVaJa fnwDOj"
         color="text"
         display="flex"
       >
         <h3
-          className="sc-bwzfXH sc-htpNat klUrKO"
+          className="sc-htpNat sc-bxivhb dwRYCY"
           color="primary"
           fontWeight="bold"
           letterSpacing={-1}
@@ -94,7 +94,7 @@ Array [
           Jeremie Rodriguez
         </h3>
         <h4
-          className="sc-bwzfXH sc-htpNat bvVtPB"
+          className="sc-htpNat sc-bxivhb bxICaF"
           fontWeight="semi-bold"
         >
           Full Stack Engineer
@@ -102,19 +102,19 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-bdVaJa cRCMnF"
+      className="sc-bdVaJa jWggOi"
       display="flex"
     >
       <div
-        className="sc-bdVaJa fvcPEV"
+        className="sc-bdVaJa hcqTQy"
         display="flex"
       >
         <a
-          className="sc-bdVaJa sc-bxivhb jXVeSa"
+          className="sc-bdVaJa sc-bwzfXH gLziNZ"
           href="/"
         >
           <div
-            className="sc-bdVaJa ipxrgW"
+            className="sc-bdVaJa kKgGND"
             height={32}
             width={32}
           />
@@ -124,9 +124,30 @@ Array [
     </nav>
   </header>,
   <main
-    className="sc-bdVaJa bTnvRn"
+    className="sc-bdVaJa ewwdog"
   >
     Layout Component
   </main>,
+  <footer
+    className="sc-bdVaJa kiLLtx"
+  >
+    <a
+      className="sc-bdVaJa sc-bwzfXH iUaXwc"
+      color="gray"
+      fontWeight="semi-bold"
+      href="https://test-repository/tree/3.16.120"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      v3.16.120 - source code
+    </a>
+    <div
+      className="sc-bdVaJa fHfaaQ"
+      color="gray"
+      fontSize={14}
+    >
+      licensed under the Test-Licence license
+    </div>
+  </footer>,
 ]
 `;
