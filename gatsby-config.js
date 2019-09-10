@@ -2,6 +2,7 @@ require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` });
 const packageJSON = require('./package.json');
 
 const { author, description, homepage, name } = packageJSON;
+const appColor = '#17365C';
 const appName = `${name.charAt(0).toUpperCase()}${name.substring(1, name.length)}`;
 const authorName = 'Jeremie Rodriguez';
 
@@ -31,13 +32,13 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-manifest',
             options: {
-                background_color: '#17365C',
+                background_color: appColor,
                 display: 'minimal-ui',
                 icon: 'src/images/profile-pic.png',
                 name: `${authorName} - ${appName}`,
                 short_name: appName,
                 start_url: '/',
-                theme_color: '#31859A',
+                theme_color: appColor,
             },
         },
         {
