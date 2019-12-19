@@ -4,13 +4,12 @@ import { variant } from 'styled-system';
 import theme from '../../../theme';
 import BaseBox, { BoxProps } from '../../primitives/Box';
 
-type AnchorProps = HTMLAttributes<HTMLAnchorElement> &
-    BoxProps & {
-        download?: boolean;
-        href?: string;
-        target?: string;
-        variant?: 'underlined';
-    };
+type AnchorProps = BoxProps & {
+    download?: boolean;
+    href?: string;
+    target?: string;
+    variant?: 'underlined';
+};
 
 const Box = styled(BaseBox)`
     text-decoration: none;

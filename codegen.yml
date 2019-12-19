@@ -7,11 +7,11 @@ documents:
   - "./src/**/*.{ts,tsx}"
   - "./node_modules/gatsby-*/**/*.js"
 generates:
-  ./src/typings/GraphQL.d.ts:
+  ./src/@types/GraphQL.d.ts:
     schema: "http://localhost:8000/___graphql"
     plugins:
       - add:
-          content: "declare namespace GraphQL {"
+          content: "declare module GraphQL {"
       - add:
           placement: "append"
           content: "}"

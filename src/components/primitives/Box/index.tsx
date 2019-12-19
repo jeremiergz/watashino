@@ -36,7 +36,7 @@ type BoxProps = StyledComponentProps<
         ThemeProps,
     never
 > & {
-    as?: keyof JSX.IntrinsicElements | React.ComponentType<unknown>;
+    as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
 };
 
 const Box = styled.div<BoxProps>`

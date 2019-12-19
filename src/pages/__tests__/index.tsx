@@ -86,7 +86,7 @@ describe('pages Test Suite', () => {
             techImgs: { nodes: [{ base: 'tech-image.png', childImageSharp }] },
         }));
         const navigate = jest.spyOn(Gatsby, 'navigate');
-        navigate.mockImplementation(x => x);
+        navigate.mockImplementation(x => null);
     });
 
     describe('pages/404 Test Suite', () => {

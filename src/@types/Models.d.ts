@@ -1,4 +1,4 @@
-declare namespace Models {
+declare module Models {
     type Post = {
         date: Date;
         slug: string;

@@ -1,5 +1,6 @@
-declare namespace GraphQL {
+declare module GraphQL {
     type Maybe<T> = T | null;
+
     /** All built-in and custom scalars, mapped to their actual values */
     type Scalars = {
         ID: string;
@@ -10,7 +11,7 @@ declare namespace GraphQL {
         /**
          * A date string, such as 2007-12-03, compliant with the ISO 8601 standard for
          * representation of dates and times using the Gregorian calendar.
-         **/
+         */
         Date: any;
         /** The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf). */
         JSON: any;
@@ -253,43 +254,43 @@ declare namespace GraphQL {
 
     type Directory = Node & {
         __typename?: 'Directory';
+        sourceInstanceName: Scalars['String'];
+        absolutePath: Scalars['String'];
+        relativePath: Scalars['String'];
+        extension: Scalars['String'];
+        size: Scalars['Int'];
+        prettySize: Scalars['String'];
+        modifiedTime: Scalars['Date'];
+        accessTime: Scalars['Date'];
+        changeTime: Scalars['Date'];
+        birthTime: Scalars['Date'];
+        root: Scalars['String'];
+        dir: Scalars['String'];
+        base: Scalars['String'];
+        ext: Scalars['String'];
+        name: Scalars['String'];
+        relativeDirectory: Scalars['String'];
+        dev: Scalars['Int'];
+        mode: Scalars['Int'];
+        nlink: Scalars['Int'];
+        uid: Scalars['Int'];
+        gid: Scalars['Int'];
+        rdev: Scalars['Int'];
+        ino: Scalars['Float'];
+        atimeMs: Scalars['Float'];
+        mtimeMs: Scalars['Float'];
+        ctimeMs: Scalars['Float'];
+        atime: Scalars['Date'];
+        mtime: Scalars['Date'];
+        ctime: Scalars['Date'];
+        birthtime?: Maybe<Scalars['Date']>;
+        birthtimeMs?: Maybe<Scalars['Float']>;
+        blksize?: Maybe<Scalars['Int']>;
+        blocks?: Maybe<Scalars['Int']>;
         id: Scalars['ID'];
         parent?: Maybe<Node>;
         children: Array<Node>;
         internal: Internal;
-        sourceInstanceName?: Maybe<Scalars['String']>;
-        absolutePath?: Maybe<Scalars['String']>;
-        relativePath?: Maybe<Scalars['String']>;
-        extension?: Maybe<Scalars['String']>;
-        size?: Maybe<Scalars['Int']>;
-        prettySize?: Maybe<Scalars['String']>;
-        modifiedTime?: Maybe<Scalars['Date']>;
-        accessTime?: Maybe<Scalars['Date']>;
-        changeTime?: Maybe<Scalars['Date']>;
-        birthTime?: Maybe<Scalars['Date']>;
-        root?: Maybe<Scalars['String']>;
-        dir?: Maybe<Scalars['String']>;
-        base?: Maybe<Scalars['String']>;
-        ext?: Maybe<Scalars['String']>;
-        name?: Maybe<Scalars['String']>;
-        relativeDirectory?: Maybe<Scalars['String']>;
-        dev?: Maybe<Scalars['Int']>;
-        mode?: Maybe<Scalars['Int']>;
-        nlink?: Maybe<Scalars['Int']>;
-        uid?: Maybe<Scalars['Int']>;
-        gid?: Maybe<Scalars['Int']>;
-        rdev?: Maybe<Scalars['Int']>;
-        blksize?: Maybe<Scalars['Int']>;
-        ino?: Maybe<Scalars['Int']>;
-        blocks?: Maybe<Scalars['Int']>;
-        atimeMs?: Maybe<Scalars['Float']>;
-        mtimeMs?: Maybe<Scalars['Float']>;
-        ctimeMs?: Maybe<Scalars['Float']>;
-        birthtimeMs?: Maybe<Scalars['Float']>;
-        atime?: Maybe<Scalars['Date']>;
-        mtime?: Maybe<Scalars['Date']>;
-        ctime?: Maybe<Scalars['Date']>;
-        birthtime?: Maybe<Scalars['Date']>;
     };
 
     type DirectoryModifiedTimeArgs = {
@@ -341,13 +342,6 @@ declare namespace GraphQL {
         locale?: Maybe<Scalars['String']>;
     };
 
-    type DirectoryBirthtimeArgs = {
-        formatString?: Maybe<Scalars['String']>;
-        fromNow?: Maybe<Scalars['Boolean']>;
-        difference?: Maybe<Scalars['String']>;
-        locale?: Maybe<Scalars['String']>;
-    };
-
     type DirectoryConnection = {
         __typename?: 'DirectoryConnection';
         totalCount: Scalars['Int'];
@@ -376,6 +370,39 @@ declare namespace GraphQL {
     };
 
     enum DirectoryFieldsEnum {
+        SourceInstanceName = 'sourceInstanceName',
+        AbsolutePath = 'absolutePath',
+        RelativePath = 'relativePath',
+        Extension = 'extension',
+        Size = 'size',
+        PrettySize = 'prettySize',
+        ModifiedTime = 'modifiedTime',
+        AccessTime = 'accessTime',
+        ChangeTime = 'changeTime',
+        BirthTime = 'birthTime',
+        Root = 'root',
+        Dir = 'dir',
+        Base = 'base',
+        Ext = 'ext',
+        Name = 'name',
+        RelativeDirectory = 'relativeDirectory',
+        Dev = 'dev',
+        Mode = 'mode',
+        Nlink = 'nlink',
+        Uid = 'uid',
+        Gid = 'gid',
+        Rdev = 'rdev',
+        Ino = 'ino',
+        AtimeMs = 'atimeMs',
+        MtimeMs = 'mtimeMs',
+        CtimeMs = 'ctimeMs',
+        Atime = 'atime',
+        Mtime = 'mtime',
+        Ctime = 'ctime',
+        Birthtime = 'birthtime',
+        BirthtimeMs = 'birthtimeMs',
+        Blksize = 'blksize',
+        Blocks = 'blocks',
         Id = 'id',
         ParentId = 'parent___id',
         ParentParentId = 'parent___parent___id',
@@ -462,46 +489,9 @@ declare namespace GraphQL {
         InternalMediaType = 'internal___mediaType',
         InternalOwner = 'internal___owner',
         InternalType = 'internal___type',
-        SourceInstanceName = 'sourceInstanceName',
-        AbsolutePath = 'absolutePath',
-        RelativePath = 'relativePath',
-        Extension = 'extension',
-        Size = 'size',
-        PrettySize = 'prettySize',
-        ModifiedTime = 'modifiedTime',
-        AccessTime = 'accessTime',
-        ChangeTime = 'changeTime',
-        BirthTime = 'birthTime',
-        Root = 'root',
-        Dir = 'dir',
-        Base = 'base',
-        Ext = 'ext',
-        Name = 'name',
-        RelativeDirectory = 'relativeDirectory',
-        Dev = 'dev',
-        Mode = 'mode',
-        Nlink = 'nlink',
-        Uid = 'uid',
-        Gid = 'gid',
-        Rdev = 'rdev',
-        Blksize = 'blksize',
-        Ino = 'ino',
-        Blocks = 'blocks',
-        AtimeMs = 'atimeMs',
-        MtimeMs = 'mtimeMs',
-        CtimeMs = 'ctimeMs',
-        BirthtimeMs = 'birthtimeMs',
-        Atime = 'atime',
-        Mtime = 'mtime',
-        Ctime = 'ctime',
-        Birthtime = 'birthtime',
     }
 
     type DirectoryFilterInput = {
-        id?: Maybe<StringQueryOperatorInput>;
-        parent?: Maybe<NodeFilterInput>;
-        children?: Maybe<NodeFilterListInput>;
-        internal?: Maybe<InternalFilterInput>;
         sourceInstanceName?: Maybe<StringQueryOperatorInput>;
         absolutePath?: Maybe<StringQueryOperatorInput>;
         relativePath?: Maybe<StringQueryOperatorInput>;
@@ -524,17 +514,21 @@ declare namespace GraphQL {
         uid?: Maybe<IntQueryOperatorInput>;
         gid?: Maybe<IntQueryOperatorInput>;
         rdev?: Maybe<IntQueryOperatorInput>;
-        blksize?: Maybe<IntQueryOperatorInput>;
-        ino?: Maybe<IntQueryOperatorInput>;
-        blocks?: Maybe<IntQueryOperatorInput>;
+        ino?: Maybe<FloatQueryOperatorInput>;
         atimeMs?: Maybe<FloatQueryOperatorInput>;
         mtimeMs?: Maybe<FloatQueryOperatorInput>;
         ctimeMs?: Maybe<FloatQueryOperatorInput>;
-        birthtimeMs?: Maybe<FloatQueryOperatorInput>;
         atime?: Maybe<DateQueryOperatorInput>;
         mtime?: Maybe<DateQueryOperatorInput>;
         ctime?: Maybe<DateQueryOperatorInput>;
         birthtime?: Maybe<DateQueryOperatorInput>;
+        birthtimeMs?: Maybe<FloatQueryOperatorInput>;
+        blksize?: Maybe<IntQueryOperatorInput>;
+        blocks?: Maybe<IntQueryOperatorInput>;
+        id?: Maybe<StringQueryOperatorInput>;
+        parent?: Maybe<NodeFilterInput>;
+        children?: Maybe<NodeFilterListInput>;
+        internal?: Maybe<InternalFilterInput>;
     };
 
     type DirectoryGroupConnection = {
@@ -560,50 +554,50 @@ declare namespace GraphQL {
 
     type File = Node & {
         __typename?: 'File';
+        sourceInstanceName: Scalars['String'];
+        absolutePath: Scalars['String'];
+        relativePath: Scalars['String'];
+        extension: Scalars['String'];
+        size: Scalars['Int'];
+        prettySize: Scalars['String'];
+        modifiedTime: Scalars['Date'];
+        accessTime: Scalars['Date'];
+        changeTime: Scalars['Date'];
+        birthTime: Scalars['Date'];
+        root: Scalars['String'];
+        dir: Scalars['String'];
+        base: Scalars['String'];
+        ext: Scalars['String'];
+        name: Scalars['String'];
+        relativeDirectory: Scalars['String'];
+        dev: Scalars['Int'];
+        mode: Scalars['Int'];
+        nlink: Scalars['Int'];
+        uid: Scalars['Int'];
+        gid: Scalars['Int'];
+        rdev: Scalars['Int'];
+        ino: Scalars['Float'];
+        atimeMs: Scalars['Float'];
+        mtimeMs: Scalars['Float'];
+        ctimeMs: Scalars['Float'];
+        atime: Scalars['Date'];
+        mtime: Scalars['Date'];
+        ctime: Scalars['Date'];
         birthtime?: Maybe<Scalars['Date']>;
         birthtimeMs?: Maybe<Scalars['Float']>;
-        sourceInstanceName?: Maybe<Scalars['String']>;
-        absolutePath?: Maybe<Scalars['String']>;
-        relativePath?: Maybe<Scalars['String']>;
-        extension?: Maybe<Scalars['String']>;
-        size?: Maybe<Scalars['Int']>;
-        prettySize?: Maybe<Scalars['String']>;
-        modifiedTime?: Maybe<Scalars['Date']>;
-        accessTime?: Maybe<Scalars['Date']>;
-        changeTime?: Maybe<Scalars['Date']>;
-        birthTime?: Maybe<Scalars['Date']>;
-        root?: Maybe<Scalars['String']>;
-        dir?: Maybe<Scalars['String']>;
-        base?: Maybe<Scalars['String']>;
-        ext?: Maybe<Scalars['String']>;
-        name?: Maybe<Scalars['String']>;
-        relativeDirectory?: Maybe<Scalars['String']>;
-        dev?: Maybe<Scalars['Int']>;
-        mode?: Maybe<Scalars['Int']>;
-        nlink?: Maybe<Scalars['Int']>;
-        uid?: Maybe<Scalars['Int']>;
-        gid?: Maybe<Scalars['Int']>;
-        rdev?: Maybe<Scalars['Int']>;
         blksize?: Maybe<Scalars['Int']>;
-        ino?: Maybe<Scalars['Int']>;
         blocks?: Maybe<Scalars['Int']>;
-        atimeMs?: Maybe<Scalars['Float']>;
-        mtimeMs?: Maybe<Scalars['Float']>;
-        ctimeMs?: Maybe<Scalars['Float']>;
-        atime?: Maybe<Scalars['Date']>;
-        mtime?: Maybe<Scalars['Date']>;
-        ctime?: Maybe<Scalars['Date']>;
         /** Copy file to static directory and return public url to it */
         publicURL?: Maybe<Scalars['String']>;
+        childImageSharp?: Maybe<ImageSharp>;
         id: Scalars['ID'];
         parent?: Maybe<Node>;
         children: Array<Node>;
         internal: Internal;
-        childrenTechnologiesJson?: Maybe<Array<Maybe<TechnologiesJson>>>;
         childrenNavigationJson?: Maybe<Array<Maybe<NavigationJson>>>;
+        childrenTechnologiesJson?: Maybe<Array<Maybe<TechnologiesJson>>>;
         childDataJson?: Maybe<DataJson>;
         childWatashinoJson?: Maybe<WatashinoJson>;
-        childImageSharp?: Maybe<ImageSharp>;
         childMarkdownRemark?: Maybe<MarkdownRemark>;
     };
 
@@ -684,8 +678,6 @@ declare namespace GraphQL {
     };
 
     enum FileFieldsEnum {
-        Birthtime = 'birthtime',
-        BirthtimeMs = 'birthtimeMs',
         SourceInstanceName = 'sourceInstanceName',
         AbsolutePath = 'absolutePath',
         RelativePath = 'relativePath',
@@ -708,16 +700,109 @@ declare namespace GraphQL {
         Uid = 'uid',
         Gid = 'gid',
         Rdev = 'rdev',
-        Blksize = 'blksize',
         Ino = 'ino',
-        Blocks = 'blocks',
         AtimeMs = 'atimeMs',
         MtimeMs = 'mtimeMs',
         CtimeMs = 'ctimeMs',
         Atime = 'atime',
         Mtime = 'mtime',
         Ctime = 'ctime',
+        Birthtime = 'birthtime',
+        BirthtimeMs = 'birthtimeMs',
+        Blksize = 'blksize',
+        Blocks = 'blocks',
         PublicUrl = 'publicURL',
+        ChildImageSharpFixedBase64 = 'childImageSharp___fixed___base64',
+        ChildImageSharpFixedTracedSvg = 'childImageSharp___fixed___tracedSVG',
+        ChildImageSharpFixedAspectRatio = 'childImageSharp___fixed___aspectRatio',
+        ChildImageSharpFixedWidth = 'childImageSharp___fixed___width',
+        ChildImageSharpFixedHeight = 'childImageSharp___fixed___height',
+        ChildImageSharpFixedSrc = 'childImageSharp___fixed___src',
+        ChildImageSharpFixedSrcSet = 'childImageSharp___fixed___srcSet',
+        ChildImageSharpFixedSrcWebp = 'childImageSharp___fixed___srcWebp',
+        ChildImageSharpFixedSrcSetWebp = 'childImageSharp___fixed___srcSetWebp',
+        ChildImageSharpFixedOriginalName = 'childImageSharp___fixed___originalName',
+        ChildImageSharpResolutionsBase64 = 'childImageSharp___resolutions___base64',
+        ChildImageSharpResolutionsTracedSvg = 'childImageSharp___resolutions___tracedSVG',
+        ChildImageSharpResolutionsAspectRatio = 'childImageSharp___resolutions___aspectRatio',
+        ChildImageSharpResolutionsWidth = 'childImageSharp___resolutions___width',
+        ChildImageSharpResolutionsHeight = 'childImageSharp___resolutions___height',
+        ChildImageSharpResolutionsSrc = 'childImageSharp___resolutions___src',
+        ChildImageSharpResolutionsSrcSet = 'childImageSharp___resolutions___srcSet',
+        ChildImageSharpResolutionsSrcWebp = 'childImageSharp___resolutions___srcWebp',
+        ChildImageSharpResolutionsSrcSetWebp = 'childImageSharp___resolutions___srcSetWebp',
+        ChildImageSharpResolutionsOriginalName = 'childImageSharp___resolutions___originalName',
+        ChildImageSharpFluidBase64 = 'childImageSharp___fluid___base64',
+        ChildImageSharpFluidTracedSvg = 'childImageSharp___fluid___tracedSVG',
+        ChildImageSharpFluidAspectRatio = 'childImageSharp___fluid___aspectRatio',
+        ChildImageSharpFluidSrc = 'childImageSharp___fluid___src',
+        ChildImageSharpFluidSrcSet = 'childImageSharp___fluid___srcSet',
+        ChildImageSharpFluidSrcWebp = 'childImageSharp___fluid___srcWebp',
+        ChildImageSharpFluidSrcSetWebp = 'childImageSharp___fluid___srcSetWebp',
+        ChildImageSharpFluidSizes = 'childImageSharp___fluid___sizes',
+        ChildImageSharpFluidOriginalImg = 'childImageSharp___fluid___originalImg',
+        ChildImageSharpFluidOriginalName = 'childImageSharp___fluid___originalName',
+        ChildImageSharpFluidPresentationWidth = 'childImageSharp___fluid___presentationWidth',
+        ChildImageSharpFluidPresentationHeight = 'childImageSharp___fluid___presentationHeight',
+        ChildImageSharpSizesBase64 = 'childImageSharp___sizes___base64',
+        ChildImageSharpSizesTracedSvg = 'childImageSharp___sizes___tracedSVG',
+        ChildImageSharpSizesAspectRatio = 'childImageSharp___sizes___aspectRatio',
+        ChildImageSharpSizesSrc = 'childImageSharp___sizes___src',
+        ChildImageSharpSizesSrcSet = 'childImageSharp___sizes___srcSet',
+        ChildImageSharpSizesSrcWebp = 'childImageSharp___sizes___srcWebp',
+        ChildImageSharpSizesSrcSetWebp = 'childImageSharp___sizes___srcSetWebp',
+        ChildImageSharpSizesSizes = 'childImageSharp___sizes___sizes',
+        ChildImageSharpSizesOriginalImg = 'childImageSharp___sizes___originalImg',
+        ChildImageSharpSizesOriginalName = 'childImageSharp___sizes___originalName',
+        ChildImageSharpSizesPresentationWidth = 'childImageSharp___sizes___presentationWidth',
+        ChildImageSharpSizesPresentationHeight = 'childImageSharp___sizes___presentationHeight',
+        ChildImageSharpOriginalWidth = 'childImageSharp___original___width',
+        ChildImageSharpOriginalHeight = 'childImageSharp___original___height',
+        ChildImageSharpOriginalSrc = 'childImageSharp___original___src',
+        ChildImageSharpResizeSrc = 'childImageSharp___resize___src',
+        ChildImageSharpResizeTracedSvg = 'childImageSharp___resize___tracedSVG',
+        ChildImageSharpResizeWidth = 'childImageSharp___resize___width',
+        ChildImageSharpResizeHeight = 'childImageSharp___resize___height',
+        ChildImageSharpResizeAspectRatio = 'childImageSharp___resize___aspectRatio',
+        ChildImageSharpResizeOriginalName = 'childImageSharp___resize___originalName',
+        ChildImageSharpId = 'childImageSharp___id',
+        ChildImageSharpParentId = 'childImageSharp___parent___id',
+        ChildImageSharpParentParentId = 'childImageSharp___parent___parent___id',
+        ChildImageSharpParentParentChildren = 'childImageSharp___parent___parent___children',
+        ChildImageSharpParentChildren = 'childImageSharp___parent___children',
+        ChildImageSharpParentChildrenId = 'childImageSharp___parent___children___id',
+        ChildImageSharpParentChildrenChildren = 'childImageSharp___parent___children___children',
+        ChildImageSharpParentInternalContent = 'childImageSharp___parent___internal___content',
+        ChildImageSharpParentInternalContentDigest = 'childImageSharp___parent___internal___contentDigest',
+        ChildImageSharpParentInternalDescription = 'childImageSharp___parent___internal___description',
+        ChildImageSharpParentInternalFieldOwners = 'childImageSharp___parent___internal___fieldOwners',
+        ChildImageSharpParentInternalIgnoreType = 'childImageSharp___parent___internal___ignoreType',
+        ChildImageSharpParentInternalMediaType = 'childImageSharp___parent___internal___mediaType',
+        ChildImageSharpParentInternalOwner = 'childImageSharp___parent___internal___owner',
+        ChildImageSharpParentInternalType = 'childImageSharp___parent___internal___type',
+        ChildImageSharpChildren = 'childImageSharp___children',
+        ChildImageSharpChildrenId = 'childImageSharp___children___id',
+        ChildImageSharpChildrenParentId = 'childImageSharp___children___parent___id',
+        ChildImageSharpChildrenParentChildren = 'childImageSharp___children___parent___children',
+        ChildImageSharpChildrenChildren = 'childImageSharp___children___children',
+        ChildImageSharpChildrenChildrenId = 'childImageSharp___children___children___id',
+        ChildImageSharpChildrenChildrenChildren = 'childImageSharp___children___children___children',
+        ChildImageSharpChildrenInternalContent = 'childImageSharp___children___internal___content',
+        ChildImageSharpChildrenInternalContentDigest = 'childImageSharp___children___internal___contentDigest',
+        ChildImageSharpChildrenInternalDescription = 'childImageSharp___children___internal___description',
+        ChildImageSharpChildrenInternalFieldOwners = 'childImageSharp___children___internal___fieldOwners',
+        ChildImageSharpChildrenInternalIgnoreType = 'childImageSharp___children___internal___ignoreType',
+        ChildImageSharpChildrenInternalMediaType = 'childImageSharp___children___internal___mediaType',
+        ChildImageSharpChildrenInternalOwner = 'childImageSharp___children___internal___owner',
+        ChildImageSharpChildrenInternalType = 'childImageSharp___children___internal___type',
+        ChildImageSharpInternalContent = 'childImageSharp___internal___content',
+        ChildImageSharpInternalContentDigest = 'childImageSharp___internal___contentDigest',
+        ChildImageSharpInternalDescription = 'childImageSharp___internal___description',
+        ChildImageSharpInternalFieldOwners = 'childImageSharp___internal___fieldOwners',
+        ChildImageSharpInternalIgnoreType = 'childImageSharp___internal___ignoreType',
+        ChildImageSharpInternalMediaType = 'childImageSharp___internal___mediaType',
+        ChildImageSharpInternalOwner = 'childImageSharp___internal___owner',
+        ChildImageSharpInternalType = 'childImageSharp___internal___type',
         Id = 'id',
         ParentId = 'parent___id',
         ParentParentId = 'parent___parent___id',
@@ -804,48 +889,6 @@ declare namespace GraphQL {
         InternalMediaType = 'internal___mediaType',
         InternalOwner = 'internal___owner',
         InternalType = 'internal___type',
-        ChildrenTechnologiesJson = 'childrenTechnologiesJson',
-        ChildrenTechnologiesJsonId = 'childrenTechnologiesJson___id',
-        ChildrenTechnologiesJsonParentId = 'childrenTechnologiesJson___parent___id',
-        ChildrenTechnologiesJsonParentParentId = 'childrenTechnologiesJson___parent___parent___id',
-        ChildrenTechnologiesJsonParentParentChildren = 'childrenTechnologiesJson___parent___parent___children',
-        ChildrenTechnologiesJsonParentChildren = 'childrenTechnologiesJson___parent___children',
-        ChildrenTechnologiesJsonParentChildrenId = 'childrenTechnologiesJson___parent___children___id',
-        ChildrenTechnologiesJsonParentChildrenChildren = 'childrenTechnologiesJson___parent___children___children',
-        ChildrenTechnologiesJsonParentInternalContent = 'childrenTechnologiesJson___parent___internal___content',
-        ChildrenTechnologiesJsonParentInternalContentDigest = 'childrenTechnologiesJson___parent___internal___contentDigest',
-        ChildrenTechnologiesJsonParentInternalDescription = 'childrenTechnologiesJson___parent___internal___description',
-        ChildrenTechnologiesJsonParentInternalFieldOwners = 'childrenTechnologiesJson___parent___internal___fieldOwners',
-        ChildrenTechnologiesJsonParentInternalIgnoreType = 'childrenTechnologiesJson___parent___internal___ignoreType',
-        ChildrenTechnologiesJsonParentInternalMediaType = 'childrenTechnologiesJson___parent___internal___mediaType',
-        ChildrenTechnologiesJsonParentInternalOwner = 'childrenTechnologiesJson___parent___internal___owner',
-        ChildrenTechnologiesJsonParentInternalType = 'childrenTechnologiesJson___parent___internal___type',
-        ChildrenTechnologiesJsonChildren = 'childrenTechnologiesJson___children',
-        ChildrenTechnologiesJsonChildrenId = 'childrenTechnologiesJson___children___id',
-        ChildrenTechnologiesJsonChildrenParentId = 'childrenTechnologiesJson___children___parent___id',
-        ChildrenTechnologiesJsonChildrenParentChildren = 'childrenTechnologiesJson___children___parent___children',
-        ChildrenTechnologiesJsonChildrenChildren = 'childrenTechnologiesJson___children___children',
-        ChildrenTechnologiesJsonChildrenChildrenId = 'childrenTechnologiesJson___children___children___id',
-        ChildrenTechnologiesJsonChildrenChildrenChildren = 'childrenTechnologiesJson___children___children___children',
-        ChildrenTechnologiesJsonChildrenInternalContent = 'childrenTechnologiesJson___children___internal___content',
-        ChildrenTechnologiesJsonChildrenInternalContentDigest = 'childrenTechnologiesJson___children___internal___contentDigest',
-        ChildrenTechnologiesJsonChildrenInternalDescription = 'childrenTechnologiesJson___children___internal___description',
-        ChildrenTechnologiesJsonChildrenInternalFieldOwners = 'childrenTechnologiesJson___children___internal___fieldOwners',
-        ChildrenTechnologiesJsonChildrenInternalIgnoreType = 'childrenTechnologiesJson___children___internal___ignoreType',
-        ChildrenTechnologiesJsonChildrenInternalMediaType = 'childrenTechnologiesJson___children___internal___mediaType',
-        ChildrenTechnologiesJsonChildrenInternalOwner = 'childrenTechnologiesJson___children___internal___owner',
-        ChildrenTechnologiesJsonChildrenInternalType = 'childrenTechnologiesJson___children___internal___type',
-        ChildrenTechnologiesJsonInternalContent = 'childrenTechnologiesJson___internal___content',
-        ChildrenTechnologiesJsonInternalContentDigest = 'childrenTechnologiesJson___internal___contentDigest',
-        ChildrenTechnologiesJsonInternalDescription = 'childrenTechnologiesJson___internal___description',
-        ChildrenTechnologiesJsonInternalFieldOwners = 'childrenTechnologiesJson___internal___fieldOwners',
-        ChildrenTechnologiesJsonInternalIgnoreType = 'childrenTechnologiesJson___internal___ignoreType',
-        ChildrenTechnologiesJsonInternalMediaType = 'childrenTechnologiesJson___internal___mediaType',
-        ChildrenTechnologiesJsonInternalOwner = 'childrenTechnologiesJson___internal___owner',
-        ChildrenTechnologiesJsonInternalType = 'childrenTechnologiesJson___internal___type',
-        ChildrenTechnologiesJsonImg = 'childrenTechnologiesJson___img',
-        ChildrenTechnologiesJsonName = 'childrenTechnologiesJson___name',
-        ChildrenTechnologiesJsonWebsite = 'childrenTechnologiesJson___website',
         ChildrenNavigationJson = 'childrenNavigationJson',
         ChildrenNavigationJsonId = 'childrenNavigationJson___id',
         ChildrenNavigationJsonParentId = 'childrenNavigationJson___parent___id',
@@ -892,6 +935,48 @@ declare namespace GraphQL {
         ChildrenNavigationJsonPage = 'childrenNavigationJson___page',
         ChildrenNavigationJsonTo = 'childrenNavigationJson___to',
         ChildrenNavigationJsonIgnoreInNavigation = 'childrenNavigationJson___ignoreInNavigation',
+        ChildrenTechnologiesJson = 'childrenTechnologiesJson',
+        ChildrenTechnologiesJsonId = 'childrenTechnologiesJson___id',
+        ChildrenTechnologiesJsonParentId = 'childrenTechnologiesJson___parent___id',
+        ChildrenTechnologiesJsonParentParentId = 'childrenTechnologiesJson___parent___parent___id',
+        ChildrenTechnologiesJsonParentParentChildren = 'childrenTechnologiesJson___parent___parent___children',
+        ChildrenTechnologiesJsonParentChildren = 'childrenTechnologiesJson___parent___children',
+        ChildrenTechnologiesJsonParentChildrenId = 'childrenTechnologiesJson___parent___children___id',
+        ChildrenTechnologiesJsonParentChildrenChildren = 'childrenTechnologiesJson___parent___children___children',
+        ChildrenTechnologiesJsonParentInternalContent = 'childrenTechnologiesJson___parent___internal___content',
+        ChildrenTechnologiesJsonParentInternalContentDigest = 'childrenTechnologiesJson___parent___internal___contentDigest',
+        ChildrenTechnologiesJsonParentInternalDescription = 'childrenTechnologiesJson___parent___internal___description',
+        ChildrenTechnologiesJsonParentInternalFieldOwners = 'childrenTechnologiesJson___parent___internal___fieldOwners',
+        ChildrenTechnologiesJsonParentInternalIgnoreType = 'childrenTechnologiesJson___parent___internal___ignoreType',
+        ChildrenTechnologiesJsonParentInternalMediaType = 'childrenTechnologiesJson___parent___internal___mediaType',
+        ChildrenTechnologiesJsonParentInternalOwner = 'childrenTechnologiesJson___parent___internal___owner',
+        ChildrenTechnologiesJsonParentInternalType = 'childrenTechnologiesJson___parent___internal___type',
+        ChildrenTechnologiesJsonChildren = 'childrenTechnologiesJson___children',
+        ChildrenTechnologiesJsonChildrenId = 'childrenTechnologiesJson___children___id',
+        ChildrenTechnologiesJsonChildrenParentId = 'childrenTechnologiesJson___children___parent___id',
+        ChildrenTechnologiesJsonChildrenParentChildren = 'childrenTechnologiesJson___children___parent___children',
+        ChildrenTechnologiesJsonChildrenChildren = 'childrenTechnologiesJson___children___children',
+        ChildrenTechnologiesJsonChildrenChildrenId = 'childrenTechnologiesJson___children___children___id',
+        ChildrenTechnologiesJsonChildrenChildrenChildren = 'childrenTechnologiesJson___children___children___children',
+        ChildrenTechnologiesJsonChildrenInternalContent = 'childrenTechnologiesJson___children___internal___content',
+        ChildrenTechnologiesJsonChildrenInternalContentDigest = 'childrenTechnologiesJson___children___internal___contentDigest',
+        ChildrenTechnologiesJsonChildrenInternalDescription = 'childrenTechnologiesJson___children___internal___description',
+        ChildrenTechnologiesJsonChildrenInternalFieldOwners = 'childrenTechnologiesJson___children___internal___fieldOwners',
+        ChildrenTechnologiesJsonChildrenInternalIgnoreType = 'childrenTechnologiesJson___children___internal___ignoreType',
+        ChildrenTechnologiesJsonChildrenInternalMediaType = 'childrenTechnologiesJson___children___internal___mediaType',
+        ChildrenTechnologiesJsonChildrenInternalOwner = 'childrenTechnologiesJson___children___internal___owner',
+        ChildrenTechnologiesJsonChildrenInternalType = 'childrenTechnologiesJson___children___internal___type',
+        ChildrenTechnologiesJsonInternalContent = 'childrenTechnologiesJson___internal___content',
+        ChildrenTechnologiesJsonInternalContentDigest = 'childrenTechnologiesJson___internal___contentDigest',
+        ChildrenTechnologiesJsonInternalDescription = 'childrenTechnologiesJson___internal___description',
+        ChildrenTechnologiesJsonInternalFieldOwners = 'childrenTechnologiesJson___internal___fieldOwners',
+        ChildrenTechnologiesJsonInternalIgnoreType = 'childrenTechnologiesJson___internal___ignoreType',
+        ChildrenTechnologiesJsonInternalMediaType = 'childrenTechnologiesJson___internal___mediaType',
+        ChildrenTechnologiesJsonInternalOwner = 'childrenTechnologiesJson___internal___owner',
+        ChildrenTechnologiesJsonInternalType = 'childrenTechnologiesJson___internal___type',
+        ChildrenTechnologiesJsonImg = 'childrenTechnologiesJson___img',
+        ChildrenTechnologiesJsonName = 'childrenTechnologiesJson___name',
+        ChildrenTechnologiesJsonWebsite = 'childrenTechnologiesJson___website',
         ChildDataJsonId = 'childDataJson___id',
         ChildDataJsonParentId = 'childDataJson___parent___id',
         ChildDataJsonParentParentId = 'childDataJson___parent___parent___id',
@@ -1045,7 +1130,7 @@ declare namespace GraphQL {
         ChildWatashinoJsonDevDependenciesGraphqlCodegenCli = 'childWatashinoJson___devDependencies____graphql_codegen_cli',
         ChildWatashinoJsonDevDependenciesGraphqlCodegenTypescript = 'childWatashinoJson___devDependencies____graphql_codegen_typescript',
         ChildWatashinoJsonDevDependenciesGraphqlCodegenTypescriptOperations = 'childWatashinoJson___devDependencies____graphql_codegen_typescript_operations',
-        ChildWatashinoJsonDevDependenciesKobionicEslintConfigTypescript = 'childWatashinoJson___devDependencies____kobionic_eslint_config_typescript',
+        ChildWatashinoJsonDevDependenciesKobionicEslintConfigTypescriptReact = 'childWatashinoJson___devDependencies____kobionic_eslint_config_typescript_react',
         ChildWatashinoJsonDevDependenciesTypesJest = 'childWatashinoJson___devDependencies____types_jest',
         ChildWatashinoJsonDevDependenciesTypesReact = 'childWatashinoJson___devDependencies____types_react',
         ChildWatashinoJsonDevDependenciesTypesReactDom = 'childWatashinoJson___devDependencies____types_react_dom',
@@ -1057,108 +1142,19 @@ declare namespace GraphQL {
         ChildWatashinoJsonDevDependenciesBabelJest = 'childWatashinoJson___devDependencies___babel_jest',
         ChildWatashinoJsonDevDependenciesBabelPluginStyledComponents = 'childWatashinoJson___devDependencies___babel_plugin_styled_components',
         ChildWatashinoJsonDevDependenciesBabelPresetGatsby = 'childWatashinoJson___devDependencies___babel_preset_gatsby',
+        ChildWatashinoJsonDevDependenciesEslint = 'childWatashinoJson___devDependencies___eslint',
         ChildWatashinoJsonDevDependenciesEslintPluginReact = 'childWatashinoJson___devDependencies___eslint_plugin_react',
         ChildWatashinoJsonDevDependenciesGraphql = 'childWatashinoJson___devDependencies___graphql',
         ChildWatashinoJsonDevDependenciesHusky = 'childWatashinoJson___devDependencies___husky',
         ChildWatashinoJsonDevDependenciesJest = 'childWatashinoJson___devDependencies___jest',
         ChildWatashinoJsonDevDependenciesJestStyledComponents = 'childWatashinoJson___devDependencies___jest_styled_components',
         ChildWatashinoJsonDevDependenciesNpmRunAll = 'childWatashinoJson___devDependencies___npm_run_all',
+        ChildWatashinoJsonDevDependenciesPrettier = 'childWatashinoJson___devDependencies___prettier',
         ChildWatashinoJsonDevDependenciesReactTestRenderer = 'childWatashinoJson___devDependencies___react_test_renderer',
         ChildWatashinoJsonDevDependenciesRimraf = 'childWatashinoJson___devDependencies___rimraf',
         ChildWatashinoJsonDevDependenciesTsJest = 'childWatashinoJson___devDependencies___ts_jest',
         ChildWatashinoJsonDevDependenciesTypescript = 'childWatashinoJson___devDependencies___typescript',
         ChildWatashinoJsonEnginesNode = 'childWatashinoJson___engines___node',
-        ChildImageSharpId = 'childImageSharp___id',
-        ChildImageSharpFixedBase64 = 'childImageSharp___fixed___base64',
-        ChildImageSharpFixedTracedSvg = 'childImageSharp___fixed___tracedSVG',
-        ChildImageSharpFixedAspectRatio = 'childImageSharp___fixed___aspectRatio',
-        ChildImageSharpFixedWidth = 'childImageSharp___fixed___width',
-        ChildImageSharpFixedHeight = 'childImageSharp___fixed___height',
-        ChildImageSharpFixedSrc = 'childImageSharp___fixed___src',
-        ChildImageSharpFixedSrcSet = 'childImageSharp___fixed___srcSet',
-        ChildImageSharpFixedSrcWebp = 'childImageSharp___fixed___srcWebp',
-        ChildImageSharpFixedSrcSetWebp = 'childImageSharp___fixed___srcSetWebp',
-        ChildImageSharpFixedOriginalName = 'childImageSharp___fixed___originalName',
-        ChildImageSharpResolutionsBase64 = 'childImageSharp___resolutions___base64',
-        ChildImageSharpResolutionsTracedSvg = 'childImageSharp___resolutions___tracedSVG',
-        ChildImageSharpResolutionsAspectRatio = 'childImageSharp___resolutions___aspectRatio',
-        ChildImageSharpResolutionsWidth = 'childImageSharp___resolutions___width',
-        ChildImageSharpResolutionsHeight = 'childImageSharp___resolutions___height',
-        ChildImageSharpResolutionsSrc = 'childImageSharp___resolutions___src',
-        ChildImageSharpResolutionsSrcSet = 'childImageSharp___resolutions___srcSet',
-        ChildImageSharpResolutionsSrcWebp = 'childImageSharp___resolutions___srcWebp',
-        ChildImageSharpResolutionsSrcSetWebp = 'childImageSharp___resolutions___srcSetWebp',
-        ChildImageSharpResolutionsOriginalName = 'childImageSharp___resolutions___originalName',
-        ChildImageSharpFluidBase64 = 'childImageSharp___fluid___base64',
-        ChildImageSharpFluidTracedSvg = 'childImageSharp___fluid___tracedSVG',
-        ChildImageSharpFluidAspectRatio = 'childImageSharp___fluid___aspectRatio',
-        ChildImageSharpFluidSrc = 'childImageSharp___fluid___src',
-        ChildImageSharpFluidSrcSet = 'childImageSharp___fluid___srcSet',
-        ChildImageSharpFluidSrcWebp = 'childImageSharp___fluid___srcWebp',
-        ChildImageSharpFluidSrcSetWebp = 'childImageSharp___fluid___srcSetWebp',
-        ChildImageSharpFluidSizes = 'childImageSharp___fluid___sizes',
-        ChildImageSharpFluidOriginalImg = 'childImageSharp___fluid___originalImg',
-        ChildImageSharpFluidOriginalName = 'childImageSharp___fluid___originalName',
-        ChildImageSharpFluidPresentationWidth = 'childImageSharp___fluid___presentationWidth',
-        ChildImageSharpFluidPresentationHeight = 'childImageSharp___fluid___presentationHeight',
-        ChildImageSharpSizesBase64 = 'childImageSharp___sizes___base64',
-        ChildImageSharpSizesTracedSvg = 'childImageSharp___sizes___tracedSVG',
-        ChildImageSharpSizesAspectRatio = 'childImageSharp___sizes___aspectRatio',
-        ChildImageSharpSizesSrc = 'childImageSharp___sizes___src',
-        ChildImageSharpSizesSrcSet = 'childImageSharp___sizes___srcSet',
-        ChildImageSharpSizesSrcWebp = 'childImageSharp___sizes___srcWebp',
-        ChildImageSharpSizesSrcSetWebp = 'childImageSharp___sizes___srcSetWebp',
-        ChildImageSharpSizesSizes = 'childImageSharp___sizes___sizes',
-        ChildImageSharpSizesOriginalImg = 'childImageSharp___sizes___originalImg',
-        ChildImageSharpSizesOriginalName = 'childImageSharp___sizes___originalName',
-        ChildImageSharpSizesPresentationWidth = 'childImageSharp___sizes___presentationWidth',
-        ChildImageSharpSizesPresentationHeight = 'childImageSharp___sizes___presentationHeight',
-        ChildImageSharpOriginalWidth = 'childImageSharp___original___width',
-        ChildImageSharpOriginalHeight = 'childImageSharp___original___height',
-        ChildImageSharpOriginalSrc = 'childImageSharp___original___src',
-        ChildImageSharpResizeSrc = 'childImageSharp___resize___src',
-        ChildImageSharpResizeTracedSvg = 'childImageSharp___resize___tracedSVG',
-        ChildImageSharpResizeWidth = 'childImageSharp___resize___width',
-        ChildImageSharpResizeHeight = 'childImageSharp___resize___height',
-        ChildImageSharpResizeAspectRatio = 'childImageSharp___resize___aspectRatio',
-        ChildImageSharpResizeOriginalName = 'childImageSharp___resize___originalName',
-        ChildImageSharpParentId = 'childImageSharp___parent___id',
-        ChildImageSharpParentParentId = 'childImageSharp___parent___parent___id',
-        ChildImageSharpParentParentChildren = 'childImageSharp___parent___parent___children',
-        ChildImageSharpParentChildren = 'childImageSharp___parent___children',
-        ChildImageSharpParentChildrenId = 'childImageSharp___parent___children___id',
-        ChildImageSharpParentChildrenChildren = 'childImageSharp___parent___children___children',
-        ChildImageSharpParentInternalContent = 'childImageSharp___parent___internal___content',
-        ChildImageSharpParentInternalContentDigest = 'childImageSharp___parent___internal___contentDigest',
-        ChildImageSharpParentInternalDescription = 'childImageSharp___parent___internal___description',
-        ChildImageSharpParentInternalFieldOwners = 'childImageSharp___parent___internal___fieldOwners',
-        ChildImageSharpParentInternalIgnoreType = 'childImageSharp___parent___internal___ignoreType',
-        ChildImageSharpParentInternalMediaType = 'childImageSharp___parent___internal___mediaType',
-        ChildImageSharpParentInternalOwner = 'childImageSharp___parent___internal___owner',
-        ChildImageSharpParentInternalType = 'childImageSharp___parent___internal___type',
-        ChildImageSharpChildren = 'childImageSharp___children',
-        ChildImageSharpChildrenId = 'childImageSharp___children___id',
-        ChildImageSharpChildrenParentId = 'childImageSharp___children___parent___id',
-        ChildImageSharpChildrenParentChildren = 'childImageSharp___children___parent___children',
-        ChildImageSharpChildrenChildren = 'childImageSharp___children___children',
-        ChildImageSharpChildrenChildrenId = 'childImageSharp___children___children___id',
-        ChildImageSharpChildrenChildrenChildren = 'childImageSharp___children___children___children',
-        ChildImageSharpChildrenInternalContent = 'childImageSharp___children___internal___content',
-        ChildImageSharpChildrenInternalContentDigest = 'childImageSharp___children___internal___contentDigest',
-        ChildImageSharpChildrenInternalDescription = 'childImageSharp___children___internal___description',
-        ChildImageSharpChildrenInternalFieldOwners = 'childImageSharp___children___internal___fieldOwners',
-        ChildImageSharpChildrenInternalIgnoreType = 'childImageSharp___children___internal___ignoreType',
-        ChildImageSharpChildrenInternalMediaType = 'childImageSharp___children___internal___mediaType',
-        ChildImageSharpChildrenInternalOwner = 'childImageSharp___children___internal___owner',
-        ChildImageSharpChildrenInternalType = 'childImageSharp___children___internal___type',
-        ChildImageSharpInternalContent = 'childImageSharp___internal___content',
-        ChildImageSharpInternalContentDigest = 'childImageSharp___internal___contentDigest',
-        ChildImageSharpInternalDescription = 'childImageSharp___internal___description',
-        ChildImageSharpInternalFieldOwners = 'childImageSharp___internal___fieldOwners',
-        ChildImageSharpInternalIgnoreType = 'childImageSharp___internal___ignoreType',
-        ChildImageSharpInternalMediaType = 'childImageSharp___internal___mediaType',
-        ChildImageSharpInternalOwner = 'childImageSharp___internal___owner',
-        ChildImageSharpInternalType = 'childImageSharp___internal___type',
         ChildMarkdownRemarkId = 'childMarkdownRemark___id',
         ChildMarkdownRemarkFrontmatterTitle = 'childMarkdownRemark___frontmatter___title',
         ChildMarkdownRemarkFrontmatterDate = 'childMarkdownRemark___frontmatter___date',
@@ -1218,8 +1214,6 @@ declare namespace GraphQL {
     }
 
     type FileFilterInput = {
-        birthtime?: Maybe<DateQueryOperatorInput>;
-        birthtimeMs?: Maybe<FloatQueryOperatorInput>;
         sourceInstanceName?: Maybe<StringQueryOperatorInput>;
         absolutePath?: Maybe<StringQueryOperatorInput>;
         relativePath?: Maybe<StringQueryOperatorInput>;
@@ -1242,25 +1236,27 @@ declare namespace GraphQL {
         uid?: Maybe<IntQueryOperatorInput>;
         gid?: Maybe<IntQueryOperatorInput>;
         rdev?: Maybe<IntQueryOperatorInput>;
-        blksize?: Maybe<IntQueryOperatorInput>;
-        ino?: Maybe<IntQueryOperatorInput>;
-        blocks?: Maybe<IntQueryOperatorInput>;
+        ino?: Maybe<FloatQueryOperatorInput>;
         atimeMs?: Maybe<FloatQueryOperatorInput>;
         mtimeMs?: Maybe<FloatQueryOperatorInput>;
         ctimeMs?: Maybe<FloatQueryOperatorInput>;
         atime?: Maybe<DateQueryOperatorInput>;
         mtime?: Maybe<DateQueryOperatorInput>;
         ctime?: Maybe<DateQueryOperatorInput>;
+        birthtime?: Maybe<DateQueryOperatorInput>;
+        birthtimeMs?: Maybe<FloatQueryOperatorInput>;
+        blksize?: Maybe<IntQueryOperatorInput>;
+        blocks?: Maybe<IntQueryOperatorInput>;
         publicURL?: Maybe<StringQueryOperatorInput>;
+        childImageSharp?: Maybe<ImageSharpFilterInput>;
         id?: Maybe<StringQueryOperatorInput>;
         parent?: Maybe<NodeFilterInput>;
         children?: Maybe<NodeFilterListInput>;
         internal?: Maybe<InternalFilterInput>;
-        childrenTechnologiesJson?: Maybe<TechnologiesJsonFilterListInput>;
         childrenNavigationJson?: Maybe<NavigationJsonFilterListInput>;
+        childrenTechnologiesJson?: Maybe<TechnologiesJsonFilterListInput>;
         childDataJson?: Maybe<DataJsonFilterInput>;
         childWatashinoJson?: Maybe<WatashinoJsonFilterInput>;
-        childImageSharp?: Maybe<ImageSharpFilterInput>;
         childMarkdownRemark?: Maybe<MarkdownRemarkFilterInput>;
     };
 
@@ -1319,13 +1315,13 @@ declare namespace GraphQL {
 
     type ImageSharp = Node & {
         __typename?: 'ImageSharp';
-        id: Scalars['ID'];
         fixed?: Maybe<ImageSharpFixed>;
         resolutions?: Maybe<ImageSharpResolutions>;
         fluid?: Maybe<ImageSharpFluid>;
         sizes?: Maybe<ImageSharpSizes>;
         original?: Maybe<ImageSharpOriginal>;
         resize?: Maybe<ImageSharpResize>;
+        id: Scalars['ID'];
         parent?: Maybe<Node>;
         children: Array<Node>;
         internal: Internal;
@@ -1341,6 +1337,9 @@ declare namespace GraphQL {
         duotone?: Maybe<DuotoneGradient>;
         traceSVG?: Maybe<Potrace>;
         quality?: Maybe<Scalars['Int']>;
+        jpegQuality?: Maybe<Scalars['Int']>;
+        pngQuality?: Maybe<Scalars['Int']>;
+        webpQuality?: Maybe<Scalars['Int']>;
         toFormat?: Maybe<ImageFormat>;
         toFormatBase64?: Maybe<ImageFormat>;
         cropFocus?: Maybe<ImageCropFocus>;
@@ -1360,6 +1359,9 @@ declare namespace GraphQL {
         duotone?: Maybe<DuotoneGradient>;
         traceSVG?: Maybe<Potrace>;
         quality?: Maybe<Scalars['Int']>;
+        jpegQuality?: Maybe<Scalars['Int']>;
+        pngQuality?: Maybe<Scalars['Int']>;
+        webpQuality?: Maybe<Scalars['Int']>;
         toFormat?: Maybe<ImageFormat>;
         toFormatBase64?: Maybe<ImageFormat>;
         cropFocus?: Maybe<ImageCropFocus>;
@@ -1379,6 +1381,9 @@ declare namespace GraphQL {
         duotone?: Maybe<DuotoneGradient>;
         traceSVG?: Maybe<Potrace>;
         quality?: Maybe<Scalars['Int']>;
+        jpegQuality?: Maybe<Scalars['Int']>;
+        pngQuality?: Maybe<Scalars['Int']>;
+        webpQuality?: Maybe<Scalars['Int']>;
         toFormat?: Maybe<ImageFormat>;
         toFormatBase64?: Maybe<ImageFormat>;
         cropFocus?: Maybe<ImageCropFocus>;
@@ -1400,6 +1405,9 @@ declare namespace GraphQL {
         duotone?: Maybe<DuotoneGradient>;
         traceSVG?: Maybe<Potrace>;
         quality?: Maybe<Scalars['Int']>;
+        jpegQuality?: Maybe<Scalars['Int']>;
+        pngQuality?: Maybe<Scalars['Int']>;
+        webpQuality?: Maybe<Scalars['Int']>;
         toFormat?: Maybe<ImageFormat>;
         toFormatBase64?: Maybe<ImageFormat>;
         cropFocus?: Maybe<ImageCropFocus>;
@@ -1415,6 +1423,9 @@ declare namespace GraphQL {
         width?: Maybe<Scalars['Int']>;
         height?: Maybe<Scalars['Int']>;
         quality?: Maybe<Scalars['Int']>;
+        jpegQuality?: Maybe<Scalars['Int']>;
+        pngQuality?: Maybe<Scalars['Int']>;
+        webpQuality?: Maybe<Scalars['Int']>;
         jpegProgressive?: Maybe<Scalars['Boolean']>;
         pngCompressionLevel?: Maybe<Scalars['Int']>;
         pngCompressionSpeed?: Maybe<Scalars['Int']>;
@@ -1458,7 +1469,6 @@ declare namespace GraphQL {
     };
 
     enum ImageSharpFieldsEnum {
-        Id = 'id',
         FixedBase64 = 'fixed___base64',
         FixedTracedSvg = 'fixed___tracedSVG',
         FixedAspectRatio = 'fixed___aspectRatio',
@@ -1512,6 +1522,7 @@ declare namespace GraphQL {
         ResizeHeight = 'resize___height',
         ResizeAspectRatio = 'resize___aspectRatio',
         ResizeOriginalName = 'resize___originalName',
+        Id = 'id',
         ParentId = 'parent___id',
         ParentParentId = 'parent___parent___id',
         ParentParentParentId = 'parent___parent___parent___id',
@@ -1600,13 +1611,13 @@ declare namespace GraphQL {
     }
 
     type ImageSharpFilterInput = {
-        id?: Maybe<StringQueryOperatorInput>;
         fixed?: Maybe<ImageSharpFixedFilterInput>;
         resolutions?: Maybe<ImageSharpResolutionsFilterInput>;
         fluid?: Maybe<ImageSharpFluidFilterInput>;
         sizes?: Maybe<ImageSharpSizesFilterInput>;
         original?: Maybe<ImageSharpOriginalFilterInput>;
         resize?: Maybe<ImageSharpResizeFilterInput>;
+        id?: Maybe<StringQueryOperatorInput>;
         parent?: Maybe<NodeFilterInput>;
         children?: Maybe<NodeFilterListInput>;
         internal?: Maybe<InternalFilterInput>;
@@ -1883,6 +1894,7 @@ declare namespace GraphQL {
     };
 
     type MarkdownRemarkTableOfContentsArgs = {
+        absolute?: Maybe<Scalars['Boolean']>;
         pathToSlugField?: Maybe<Scalars['String']>;
         maxDepth?: Maybe<Scalars['Int']>;
         heading?: Maybe<Scalars['String']>;
@@ -2313,53 +2325,31 @@ declare namespace GraphQL {
 
     type Query = {
         __typename?: 'Query';
-        imageSharp?: Maybe<ImageSharp>;
-        allImageSharp: ImageSharpConnection;
         file?: Maybe<File>;
         allFile: FileConnection;
-        markdownRemark?: Maybe<MarkdownRemark>;
-        allMarkdownRemark: MarkdownRemarkConnection;
-        sitePage?: Maybe<SitePage>;
-        allSitePage: SitePageConnection;
-        sitePlugin?: Maybe<SitePlugin>;
-        allSitePlugin: SitePluginConnection;
-        site?: Maybe<Site>;
-        allSite: SiteConnection;
         directory?: Maybe<Directory>;
         allDirectory: DirectoryConnection;
-        technologiesJson?: Maybe<TechnologiesJson>;
-        allTechnologiesJson: TechnologiesJsonConnection;
-        navigationJson?: Maybe<NavigationJson>;
-        allNavigationJson: NavigationJsonConnection;
-        dataJson?: Maybe<DataJson>;
-        allDataJson: DataJsonConnection;
+        imageSharp?: Maybe<ImageSharp>;
+        allImageSharp: ImageSharpConnection;
+        markdownRemark?: Maybe<MarkdownRemark>;
+        allMarkdownRemark: MarkdownRemarkConnection;
         watashinoJson?: Maybe<WatashinoJson>;
         allWatashinoJson: WatashinoJsonConnection;
-    };
-
-    type QueryImageSharpArgs = {
-        id?: Maybe<StringQueryOperatorInput>;
-        fixed?: Maybe<ImageSharpFixedFilterInput>;
-        resolutions?: Maybe<ImageSharpResolutionsFilterInput>;
-        fluid?: Maybe<ImageSharpFluidFilterInput>;
-        sizes?: Maybe<ImageSharpSizesFilterInput>;
-        original?: Maybe<ImageSharpOriginalFilterInput>;
-        resize?: Maybe<ImageSharpResizeFilterInput>;
-        parent?: Maybe<NodeFilterInput>;
-        children?: Maybe<NodeFilterListInput>;
-        internal?: Maybe<InternalFilterInput>;
-    };
-
-    type QueryAllImageSharpArgs = {
-        filter?: Maybe<ImageSharpFilterInput>;
-        sort?: Maybe<ImageSharpSortInput>;
-        skip?: Maybe<Scalars['Int']>;
-        limit?: Maybe<Scalars['Int']>;
+        technologiesJson?: Maybe<TechnologiesJson>;
+        allTechnologiesJson: TechnologiesJsonConnection;
+        dataJson?: Maybe<DataJson>;
+        allDataJson: DataJsonConnection;
+        navigationJson?: Maybe<NavigationJson>;
+        allNavigationJson: NavigationJsonConnection;
+        site?: Maybe<Site>;
+        allSite: SiteConnection;
+        sitePlugin?: Maybe<SitePlugin>;
+        allSitePlugin: SitePluginConnection;
+        sitePage?: Maybe<SitePage>;
+        allSitePage: SitePageConnection;
     };
 
     type QueryFileArgs = {
-        birthtime?: Maybe<DateQueryOperatorInput>;
-        birthtimeMs?: Maybe<FloatQueryOperatorInput>;
         sourceInstanceName?: Maybe<StringQueryOperatorInput>;
         absolutePath?: Maybe<StringQueryOperatorInput>;
         relativePath?: Maybe<StringQueryOperatorInput>;
@@ -2382,31 +2372,100 @@ declare namespace GraphQL {
         uid?: Maybe<IntQueryOperatorInput>;
         gid?: Maybe<IntQueryOperatorInput>;
         rdev?: Maybe<IntQueryOperatorInput>;
-        blksize?: Maybe<IntQueryOperatorInput>;
-        ino?: Maybe<IntQueryOperatorInput>;
-        blocks?: Maybe<IntQueryOperatorInput>;
+        ino?: Maybe<FloatQueryOperatorInput>;
         atimeMs?: Maybe<FloatQueryOperatorInput>;
         mtimeMs?: Maybe<FloatQueryOperatorInput>;
         ctimeMs?: Maybe<FloatQueryOperatorInput>;
         atime?: Maybe<DateQueryOperatorInput>;
         mtime?: Maybe<DateQueryOperatorInput>;
         ctime?: Maybe<DateQueryOperatorInput>;
+        birthtime?: Maybe<DateQueryOperatorInput>;
+        birthtimeMs?: Maybe<FloatQueryOperatorInput>;
+        blksize?: Maybe<IntQueryOperatorInput>;
+        blocks?: Maybe<IntQueryOperatorInput>;
         publicURL?: Maybe<StringQueryOperatorInput>;
+        childImageSharp?: Maybe<ImageSharpFilterInput>;
         id?: Maybe<StringQueryOperatorInput>;
         parent?: Maybe<NodeFilterInput>;
         children?: Maybe<NodeFilterListInput>;
         internal?: Maybe<InternalFilterInput>;
-        childrenTechnologiesJson?: Maybe<TechnologiesJsonFilterListInput>;
         childrenNavigationJson?: Maybe<NavigationJsonFilterListInput>;
+        childrenTechnologiesJson?: Maybe<TechnologiesJsonFilterListInput>;
         childDataJson?: Maybe<DataJsonFilterInput>;
         childWatashinoJson?: Maybe<WatashinoJsonFilterInput>;
-        childImageSharp?: Maybe<ImageSharpFilterInput>;
         childMarkdownRemark?: Maybe<MarkdownRemarkFilterInput>;
     };
 
     type QueryAllFileArgs = {
         filter?: Maybe<FileFilterInput>;
         sort?: Maybe<FileSortInput>;
+        skip?: Maybe<Scalars['Int']>;
+        limit?: Maybe<Scalars['Int']>;
+    };
+
+    type QueryDirectoryArgs = {
+        sourceInstanceName?: Maybe<StringQueryOperatorInput>;
+        absolutePath?: Maybe<StringQueryOperatorInput>;
+        relativePath?: Maybe<StringQueryOperatorInput>;
+        extension?: Maybe<StringQueryOperatorInput>;
+        size?: Maybe<IntQueryOperatorInput>;
+        prettySize?: Maybe<StringQueryOperatorInput>;
+        modifiedTime?: Maybe<DateQueryOperatorInput>;
+        accessTime?: Maybe<DateQueryOperatorInput>;
+        changeTime?: Maybe<DateQueryOperatorInput>;
+        birthTime?: Maybe<DateQueryOperatorInput>;
+        root?: Maybe<StringQueryOperatorInput>;
+        dir?: Maybe<StringQueryOperatorInput>;
+        base?: Maybe<StringQueryOperatorInput>;
+        ext?: Maybe<StringQueryOperatorInput>;
+        name?: Maybe<StringQueryOperatorInput>;
+        relativeDirectory?: Maybe<StringQueryOperatorInput>;
+        dev?: Maybe<IntQueryOperatorInput>;
+        mode?: Maybe<IntQueryOperatorInput>;
+        nlink?: Maybe<IntQueryOperatorInput>;
+        uid?: Maybe<IntQueryOperatorInput>;
+        gid?: Maybe<IntQueryOperatorInput>;
+        rdev?: Maybe<IntQueryOperatorInput>;
+        ino?: Maybe<FloatQueryOperatorInput>;
+        atimeMs?: Maybe<FloatQueryOperatorInput>;
+        mtimeMs?: Maybe<FloatQueryOperatorInput>;
+        ctimeMs?: Maybe<FloatQueryOperatorInput>;
+        atime?: Maybe<DateQueryOperatorInput>;
+        mtime?: Maybe<DateQueryOperatorInput>;
+        ctime?: Maybe<DateQueryOperatorInput>;
+        birthtime?: Maybe<DateQueryOperatorInput>;
+        birthtimeMs?: Maybe<FloatQueryOperatorInput>;
+        blksize?: Maybe<IntQueryOperatorInput>;
+        blocks?: Maybe<IntQueryOperatorInput>;
+        id?: Maybe<StringQueryOperatorInput>;
+        parent?: Maybe<NodeFilterInput>;
+        children?: Maybe<NodeFilterListInput>;
+        internal?: Maybe<InternalFilterInput>;
+    };
+
+    type QueryAllDirectoryArgs = {
+        filter?: Maybe<DirectoryFilterInput>;
+        sort?: Maybe<DirectorySortInput>;
+        skip?: Maybe<Scalars['Int']>;
+        limit?: Maybe<Scalars['Int']>;
+    };
+
+    type QueryImageSharpArgs = {
+        fixed?: Maybe<ImageSharpFixedFilterInput>;
+        resolutions?: Maybe<ImageSharpResolutionsFilterInput>;
+        fluid?: Maybe<ImageSharpFluidFilterInput>;
+        sizes?: Maybe<ImageSharpSizesFilterInput>;
+        original?: Maybe<ImageSharpOriginalFilterInput>;
+        resize?: Maybe<ImageSharpResizeFilterInput>;
+        id?: Maybe<StringQueryOperatorInput>;
+        parent?: Maybe<NodeFilterInput>;
+        children?: Maybe<NodeFilterListInput>;
+        internal?: Maybe<InternalFilterInput>;
+    };
+
+    type QueryAllImageSharpArgs = {
+        filter?: Maybe<ImageSharpFilterInput>;
+        sort?: Maybe<ImageSharpSortInput>;
         skip?: Maybe<Scalars['Int']>;
         limit?: Maybe<Scalars['Int']>;
     };
@@ -2432,176 +2491,6 @@ declare namespace GraphQL {
     type QueryAllMarkdownRemarkArgs = {
         filter?: Maybe<MarkdownRemarkFilterInput>;
         sort?: Maybe<MarkdownRemarkSortInput>;
-        skip?: Maybe<Scalars['Int']>;
-        limit?: Maybe<Scalars['Int']>;
-    };
-
-    type QuerySitePageArgs = {
-        id?: Maybe<StringQueryOperatorInput>;
-        parent?: Maybe<NodeFilterInput>;
-        children?: Maybe<NodeFilterListInput>;
-        internal?: Maybe<InternalFilterInput>;
-        path?: Maybe<StringQueryOperatorInput>;
-        internalComponentName?: Maybe<StringQueryOperatorInput>;
-        component?: Maybe<StringQueryOperatorInput>;
-        componentChunkName?: Maybe<StringQueryOperatorInput>;
-        isCreatedByStatefulCreatePages?: Maybe<BooleanQueryOperatorInput>;
-        pluginCreator?: Maybe<SitePluginFilterInput>;
-        pluginCreatorId?: Maybe<StringQueryOperatorInput>;
-        componentPath?: Maybe<StringQueryOperatorInput>;
-    };
-
-    type QueryAllSitePageArgs = {
-        filter?: Maybe<SitePageFilterInput>;
-        sort?: Maybe<SitePageSortInput>;
-        skip?: Maybe<Scalars['Int']>;
-        limit?: Maybe<Scalars['Int']>;
-    };
-
-    type QuerySitePluginArgs = {
-        id?: Maybe<StringQueryOperatorInput>;
-        parent?: Maybe<NodeFilterInput>;
-        children?: Maybe<NodeFilterListInput>;
-        internal?: Maybe<InternalFilterInput>;
-        resolve?: Maybe<StringQueryOperatorInput>;
-        name?: Maybe<StringQueryOperatorInput>;
-        version?: Maybe<StringQueryOperatorInput>;
-        pluginOptions?: Maybe<SitePluginPluginOptionsFilterInput>;
-        nodeAPIs?: Maybe<StringQueryOperatorInput>;
-        browserAPIs?: Maybe<StringQueryOperatorInput>;
-        ssrAPIs?: Maybe<StringQueryOperatorInput>;
-        pluginFilepath?: Maybe<StringQueryOperatorInput>;
-        packageJson?: Maybe<SitePluginPackageJsonFilterInput>;
-    };
-
-    type QueryAllSitePluginArgs = {
-        filter?: Maybe<SitePluginFilterInput>;
-        sort?: Maybe<SitePluginSortInput>;
-        skip?: Maybe<Scalars['Int']>;
-        limit?: Maybe<Scalars['Int']>;
-    };
-
-    type QuerySiteArgs = {
-        id?: Maybe<StringQueryOperatorInput>;
-        parent?: Maybe<NodeFilterInput>;
-        children?: Maybe<NodeFilterListInput>;
-        internal?: Maybe<InternalFilterInput>;
-        siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
-        port?: Maybe<IntQueryOperatorInput>;
-        host?: Maybe<StringQueryOperatorInput>;
-        polyfill?: Maybe<BooleanQueryOperatorInput>;
-        pathPrefix?: Maybe<StringQueryOperatorInput>;
-        buildTime?: Maybe<DateQueryOperatorInput>;
-    };
-
-    type QueryAllSiteArgs = {
-        filter?: Maybe<SiteFilterInput>;
-        sort?: Maybe<SiteSortInput>;
-        skip?: Maybe<Scalars['Int']>;
-        limit?: Maybe<Scalars['Int']>;
-    };
-
-    type QueryDirectoryArgs = {
-        id?: Maybe<StringQueryOperatorInput>;
-        parent?: Maybe<NodeFilterInput>;
-        children?: Maybe<NodeFilterListInput>;
-        internal?: Maybe<InternalFilterInput>;
-        sourceInstanceName?: Maybe<StringQueryOperatorInput>;
-        absolutePath?: Maybe<StringQueryOperatorInput>;
-        relativePath?: Maybe<StringQueryOperatorInput>;
-        extension?: Maybe<StringQueryOperatorInput>;
-        size?: Maybe<IntQueryOperatorInput>;
-        prettySize?: Maybe<StringQueryOperatorInput>;
-        modifiedTime?: Maybe<DateQueryOperatorInput>;
-        accessTime?: Maybe<DateQueryOperatorInput>;
-        changeTime?: Maybe<DateQueryOperatorInput>;
-        birthTime?: Maybe<DateQueryOperatorInput>;
-        root?: Maybe<StringQueryOperatorInput>;
-        dir?: Maybe<StringQueryOperatorInput>;
-        base?: Maybe<StringQueryOperatorInput>;
-        ext?: Maybe<StringQueryOperatorInput>;
-        name?: Maybe<StringQueryOperatorInput>;
-        relativeDirectory?: Maybe<StringQueryOperatorInput>;
-        dev?: Maybe<IntQueryOperatorInput>;
-        mode?: Maybe<IntQueryOperatorInput>;
-        nlink?: Maybe<IntQueryOperatorInput>;
-        uid?: Maybe<IntQueryOperatorInput>;
-        gid?: Maybe<IntQueryOperatorInput>;
-        rdev?: Maybe<IntQueryOperatorInput>;
-        blksize?: Maybe<IntQueryOperatorInput>;
-        ino?: Maybe<IntQueryOperatorInput>;
-        blocks?: Maybe<IntQueryOperatorInput>;
-        atimeMs?: Maybe<FloatQueryOperatorInput>;
-        mtimeMs?: Maybe<FloatQueryOperatorInput>;
-        ctimeMs?: Maybe<FloatQueryOperatorInput>;
-        birthtimeMs?: Maybe<FloatQueryOperatorInput>;
-        atime?: Maybe<DateQueryOperatorInput>;
-        mtime?: Maybe<DateQueryOperatorInput>;
-        ctime?: Maybe<DateQueryOperatorInput>;
-        birthtime?: Maybe<DateQueryOperatorInput>;
-    };
-
-    type QueryAllDirectoryArgs = {
-        filter?: Maybe<DirectoryFilterInput>;
-        sort?: Maybe<DirectorySortInput>;
-        skip?: Maybe<Scalars['Int']>;
-        limit?: Maybe<Scalars['Int']>;
-    };
-
-    type QueryTechnologiesJsonArgs = {
-        id?: Maybe<StringQueryOperatorInput>;
-        parent?: Maybe<NodeFilterInput>;
-        children?: Maybe<NodeFilterListInput>;
-        internal?: Maybe<InternalFilterInput>;
-        img?: Maybe<StringQueryOperatorInput>;
-        name?: Maybe<StringQueryOperatorInput>;
-        website?: Maybe<StringQueryOperatorInput>;
-    };
-
-    type QueryAllTechnologiesJsonArgs = {
-        filter?: Maybe<TechnologiesJsonFilterInput>;
-        sort?: Maybe<TechnologiesJsonSortInput>;
-        skip?: Maybe<Scalars['Int']>;
-        limit?: Maybe<Scalars['Int']>;
-    };
-
-    type QueryNavigationJsonArgs = {
-        id?: Maybe<StringQueryOperatorInput>;
-        parent?: Maybe<NodeFilterInput>;
-        children?: Maybe<NodeFilterListInput>;
-        internal?: Maybe<InternalFilterInput>;
-        icon?: Maybe<StringQueryOperatorInput>;
-        keywords?: Maybe<StringQueryOperatorInput>;
-        name?: Maybe<StringQueryOperatorInput>;
-        navOrder?: Maybe<IntQueryOperatorInput>;
-        page?: Maybe<StringQueryOperatorInput>;
-        to?: Maybe<StringQueryOperatorInput>;
-        ignoreInNavigation?: Maybe<BooleanQueryOperatorInput>;
-    };
-
-    type QueryAllNavigationJsonArgs = {
-        filter?: Maybe<NavigationJsonFilterInput>;
-        sort?: Maybe<NavigationJsonSortInput>;
-        skip?: Maybe<Scalars['Int']>;
-        limit?: Maybe<Scalars['Int']>;
-    };
-
-    type QueryDataJsonArgs = {
-        id?: Maybe<StringQueryOperatorInput>;
-        parent?: Maybe<NodeFilterInput>;
-        children?: Maybe<NodeFilterListInput>;
-        internal?: Maybe<InternalFilterInput>;
-        company?: Maybe<DataJsonCompanyFilterInput>;
-        contacts?: Maybe<DataJsonContactsFilterListInput>;
-        jobTitle?: Maybe<StringQueryOperatorInput>;
-        location?: Maybe<DataJsonLocationFilterInput>;
-        openToGigs?: Maybe<BooleanQueryOperatorInput>;
-        resumeFile?: Maybe<StringQueryOperatorInput>;
-    };
-
-    type QueryAllDataJsonArgs = {
-        filter?: Maybe<DataJsonFilterInput>;
-        sort?: Maybe<DataJsonSortInput>;
         skip?: Maybe<Scalars['Int']>;
         limit?: Maybe<Scalars['Int']>;
     };
@@ -2634,6 +2523,130 @@ declare namespace GraphQL {
     type QueryAllWatashinoJsonArgs = {
         filter?: Maybe<WatashinoJsonFilterInput>;
         sort?: Maybe<WatashinoJsonSortInput>;
+        skip?: Maybe<Scalars['Int']>;
+        limit?: Maybe<Scalars['Int']>;
+    };
+
+    type QueryTechnologiesJsonArgs = {
+        id?: Maybe<StringQueryOperatorInput>;
+        parent?: Maybe<NodeFilterInput>;
+        children?: Maybe<NodeFilterListInput>;
+        internal?: Maybe<InternalFilterInput>;
+        img?: Maybe<StringQueryOperatorInput>;
+        name?: Maybe<StringQueryOperatorInput>;
+        website?: Maybe<StringQueryOperatorInput>;
+    };
+
+    type QueryAllTechnologiesJsonArgs = {
+        filter?: Maybe<TechnologiesJsonFilterInput>;
+        sort?: Maybe<TechnologiesJsonSortInput>;
+        skip?: Maybe<Scalars['Int']>;
+        limit?: Maybe<Scalars['Int']>;
+    };
+
+    type QueryDataJsonArgs = {
+        id?: Maybe<StringQueryOperatorInput>;
+        parent?: Maybe<NodeFilterInput>;
+        children?: Maybe<NodeFilterListInput>;
+        internal?: Maybe<InternalFilterInput>;
+        company?: Maybe<DataJsonCompanyFilterInput>;
+        contacts?: Maybe<DataJsonContactsFilterListInput>;
+        jobTitle?: Maybe<StringQueryOperatorInput>;
+        location?: Maybe<DataJsonLocationFilterInput>;
+        openToGigs?: Maybe<BooleanQueryOperatorInput>;
+        resumeFile?: Maybe<StringQueryOperatorInput>;
+    };
+
+    type QueryAllDataJsonArgs = {
+        filter?: Maybe<DataJsonFilterInput>;
+        sort?: Maybe<DataJsonSortInput>;
+        skip?: Maybe<Scalars['Int']>;
+        limit?: Maybe<Scalars['Int']>;
+    };
+
+    type QueryNavigationJsonArgs = {
+        id?: Maybe<StringQueryOperatorInput>;
+        parent?: Maybe<NodeFilterInput>;
+        children?: Maybe<NodeFilterListInput>;
+        internal?: Maybe<InternalFilterInput>;
+        icon?: Maybe<StringQueryOperatorInput>;
+        keywords?: Maybe<StringQueryOperatorInput>;
+        name?: Maybe<StringQueryOperatorInput>;
+        navOrder?: Maybe<IntQueryOperatorInput>;
+        page?: Maybe<StringQueryOperatorInput>;
+        to?: Maybe<StringQueryOperatorInput>;
+        ignoreInNavigation?: Maybe<BooleanQueryOperatorInput>;
+    };
+
+    type QueryAllNavigationJsonArgs = {
+        filter?: Maybe<NavigationJsonFilterInput>;
+        sort?: Maybe<NavigationJsonSortInput>;
+        skip?: Maybe<Scalars['Int']>;
+        limit?: Maybe<Scalars['Int']>;
+    };
+
+    type QuerySiteArgs = {
+        id?: Maybe<StringQueryOperatorInput>;
+        parent?: Maybe<NodeFilterInput>;
+        children?: Maybe<NodeFilterListInput>;
+        internal?: Maybe<InternalFilterInput>;
+        siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
+        port?: Maybe<IntQueryOperatorInput>;
+        host?: Maybe<StringQueryOperatorInput>;
+        polyfill?: Maybe<BooleanQueryOperatorInput>;
+        pathPrefix?: Maybe<StringQueryOperatorInput>;
+        buildTime?: Maybe<DateQueryOperatorInput>;
+    };
+
+    type QueryAllSiteArgs = {
+        filter?: Maybe<SiteFilterInput>;
+        sort?: Maybe<SiteSortInput>;
+        skip?: Maybe<Scalars['Int']>;
+        limit?: Maybe<Scalars['Int']>;
+    };
+
+    type QuerySitePluginArgs = {
+        id?: Maybe<StringQueryOperatorInput>;
+        parent?: Maybe<NodeFilterInput>;
+        children?: Maybe<NodeFilterListInput>;
+        internal?: Maybe<InternalFilterInput>;
+        resolve?: Maybe<StringQueryOperatorInput>;
+        name?: Maybe<StringQueryOperatorInput>;
+        version?: Maybe<StringQueryOperatorInput>;
+        pluginOptions?: Maybe<SitePluginPluginOptionsFilterInput>;
+        nodeAPIs?: Maybe<StringQueryOperatorInput>;
+        browserAPIs?: Maybe<StringQueryOperatorInput>;
+        ssrAPIs?: Maybe<StringQueryOperatorInput>;
+        pluginFilepath?: Maybe<StringQueryOperatorInput>;
+        packageJson?: Maybe<SitePluginPackageJsonFilterInput>;
+    };
+
+    type QueryAllSitePluginArgs = {
+        filter?: Maybe<SitePluginFilterInput>;
+        sort?: Maybe<SitePluginSortInput>;
+        skip?: Maybe<Scalars['Int']>;
+        limit?: Maybe<Scalars['Int']>;
+    };
+
+    type QuerySitePageArgs = {
+        id?: Maybe<StringQueryOperatorInput>;
+        parent?: Maybe<NodeFilterInput>;
+        children?: Maybe<NodeFilterListInput>;
+        internal?: Maybe<InternalFilterInput>;
+        path?: Maybe<StringQueryOperatorInput>;
+        internalComponentName?: Maybe<StringQueryOperatorInput>;
+        component?: Maybe<StringQueryOperatorInput>;
+        componentChunkName?: Maybe<StringQueryOperatorInput>;
+        isCreatedByStatefulCreatePages?: Maybe<BooleanQueryOperatorInput>;
+        context?: Maybe<SitePageContextFilterInput>;
+        pluginCreator?: Maybe<SitePluginFilterInput>;
+        pluginCreatorId?: Maybe<StringQueryOperatorInput>;
+        componentPath?: Maybe<StringQueryOperatorInput>;
+    };
+
+    type QueryAllSitePageArgs = {
+        filter?: Maybe<SitePageFilterInput>;
+        sort?: Maybe<SitePageSortInput>;
         skip?: Maybe<Scalars['Int']>;
         limit?: Maybe<Scalars['Int']>;
     };
@@ -2818,6 +2831,7 @@ declare namespace GraphQL {
         component?: Maybe<Scalars['String']>;
         componentChunkName?: Maybe<Scalars['String']>;
         isCreatedByStatefulCreatePages?: Maybe<Scalars['Boolean']>;
+        context?: Maybe<SitePageContext>;
         pluginCreator?: Maybe<SitePlugin>;
         pluginCreatorId?: Maybe<Scalars['String']>;
         componentPath?: Maybe<Scalars['String']>;
@@ -2841,6 +2855,17 @@ declare namespace GraphQL {
         skip?: Maybe<Scalars['Int']>;
         limit?: Maybe<Scalars['Int']>;
         field: SitePageFieldsEnum;
+    };
+
+    type SitePageContext = {
+        __typename?: 'SitePageContext';
+        previous?: Maybe<Scalars['String']>;
+        next?: Maybe<Scalars['String']>;
+    };
+
+    type SitePageContextFilterInput = {
+        previous?: Maybe<StringQueryOperatorInput>;
+        next?: Maybe<StringQueryOperatorInput>;
     };
 
     type SitePageEdge = {
@@ -2942,6 +2967,8 @@ declare namespace GraphQL {
         Component = 'component',
         ComponentChunkName = 'componentChunkName',
         IsCreatedByStatefulCreatePages = 'isCreatedByStatefulCreatePages',
+        ContextPrevious = 'context___previous',
+        ContextNext = 'context___next',
         PluginCreatorId = 'pluginCreator___id',
         PluginCreatorParentId = 'pluginCreator___parent___id',
         PluginCreatorParentParentId = 'pluginCreator___parent___parent___id',
@@ -2989,7 +3016,6 @@ declare namespace GraphQL {
         PluginCreatorPluginOptionsPluginsName = 'pluginCreator___pluginOptions___plugins___name',
         PluginCreatorPluginOptionsPluginsVersion = 'pluginCreator___pluginOptions___plugins___version',
         PluginCreatorPluginOptionsPluginsBrowserApIs = 'pluginCreator___pluginOptions___plugins___browserAPIs',
-        PluginCreatorPluginOptionsPluginsSsrApIs = 'pluginCreator___pluginOptions___plugins___ssrAPIs',
         PluginCreatorPluginOptionsPluginsPluginFilepath = 'pluginCreator___pluginOptions___plugins___pluginFilepath',
         PluginCreatorPluginOptionsDisplay = 'pluginCreator___pluginOptions___display',
         PluginCreatorPluginOptionsFonts = 'pluginCreator___pluginOptions___fonts',
@@ -3011,6 +3037,8 @@ declare namespace GraphQL {
         PluginCreatorPluginOptionsMarkdownCaptions = 'pluginCreator___pluginOptions___markdownCaptions',
         PluginCreatorPluginOptionsTracedSvg = 'pluginCreator___pluginOptions___tracedSVG',
         PluginCreatorPluginOptionsLoading = 'pluginCreator___pluginOptions___loading',
+        PluginCreatorPluginOptionsDisableBgImageOnAlpha = 'pluginCreator___pluginOptions___disableBgImageOnAlpha',
+        PluginCreatorPluginOptionsDisableBgImage = 'pluginCreator___pluginOptions___disableBgImage',
         PluginCreatorPluginOptionsColorTheme = 'pluginCreator___pluginOptions___colorTheme',
         PluginCreatorPluginOptionsPathCheck = 'pluginCreator___pluginOptions___pathCheck',
         PluginCreatorNodeApIs = 'pluginCreator___nodeAPIs',
@@ -3046,6 +3074,7 @@ declare namespace GraphQL {
         component?: Maybe<StringQueryOperatorInput>;
         componentChunkName?: Maybe<StringQueryOperatorInput>;
         isCreatedByStatefulCreatePages?: Maybe<BooleanQueryOperatorInput>;
+        context?: Maybe<SitePageContextFilterInput>;
         pluginCreator?: Maybe<SitePluginFilterInput>;
         pluginCreatorId?: Maybe<StringQueryOperatorInput>;
         componentPath?: Maybe<StringQueryOperatorInput>;
@@ -3216,9 +3245,10 @@ declare namespace GraphQL {
         PluginOptionsPluginsPluginOptionsMarkdownCaptions = 'pluginOptions___plugins___pluginOptions___markdownCaptions',
         PluginOptionsPluginsPluginOptionsTracedSvg = 'pluginOptions___plugins___pluginOptions___tracedSVG',
         PluginOptionsPluginsPluginOptionsLoading = 'pluginOptions___plugins___pluginOptions___loading',
+        PluginOptionsPluginsPluginOptionsDisableBgImageOnAlpha = 'pluginOptions___plugins___pluginOptions___disableBgImageOnAlpha',
+        PluginOptionsPluginsPluginOptionsDisableBgImage = 'pluginOptions___plugins___pluginOptions___disableBgImage',
         PluginOptionsPluginsPluginOptionsColorTheme = 'pluginOptions___plugins___pluginOptions___colorTheme',
         PluginOptionsPluginsBrowserApIs = 'pluginOptions___plugins___browserAPIs',
-        PluginOptionsPluginsSsrApIs = 'pluginOptions___plugins___ssrAPIs',
         PluginOptionsPluginsPluginFilepath = 'pluginOptions___plugins___pluginFilepath',
         PluginOptionsDisplay = 'pluginOptions___display',
         PluginOptionsFonts = 'pluginOptions___fonts',
@@ -3240,6 +3270,8 @@ declare namespace GraphQL {
         PluginOptionsMarkdownCaptions = 'pluginOptions___markdownCaptions',
         PluginOptionsTracedSvg = 'pluginOptions___tracedSVG',
         PluginOptionsLoading = 'pluginOptions___loading',
+        PluginOptionsDisableBgImageOnAlpha = 'pluginOptions___disableBgImageOnAlpha',
+        PluginOptionsDisableBgImage = 'pluginOptions___disableBgImage',
         PluginOptionsColorTheme = 'pluginOptions___colorTheme',
         PluginOptionsPathCheck = 'pluginOptions___pathCheck',
         NodeApIs = 'nodeAPIs',
@@ -3382,6 +3414,8 @@ declare namespace GraphQL {
         markdownCaptions?: Maybe<Scalars['Boolean']>;
         tracedSVG?: Maybe<Scalars['Boolean']>;
         loading?: Maybe<Scalars['String']>;
+        disableBgImageOnAlpha?: Maybe<Scalars['Boolean']>;
+        disableBgImage?: Maybe<Scalars['Boolean']>;
         colorTheme?: Maybe<Scalars['String']>;
         pathCheck?: Maybe<Scalars['Boolean']>;
     };
@@ -3408,6 +3442,8 @@ declare namespace GraphQL {
         markdownCaptions?: Maybe<BooleanQueryOperatorInput>;
         tracedSVG?: Maybe<BooleanQueryOperatorInput>;
         loading?: Maybe<StringQueryOperatorInput>;
+        disableBgImageOnAlpha?: Maybe<BooleanQueryOperatorInput>;
+        disableBgImage?: Maybe<BooleanQueryOperatorInput>;
         colorTheme?: Maybe<StringQueryOperatorInput>;
         pathCheck?: Maybe<BooleanQueryOperatorInput>;
     };
@@ -3420,7 +3456,6 @@ declare namespace GraphQL {
         version?: Maybe<Scalars['String']>;
         pluginOptions?: Maybe<SitePluginPluginOptionsPluginsPluginOptions>;
         browserAPIs?: Maybe<Array<Maybe<Scalars['String']>>>;
-        ssrAPIs?: Maybe<Array<Maybe<Scalars['String']>>>;
         pluginFilepath?: Maybe<Scalars['String']>;
     };
 
@@ -3431,7 +3466,6 @@ declare namespace GraphQL {
         version?: Maybe<StringQueryOperatorInput>;
         pluginOptions?: Maybe<SitePluginPluginOptionsPluginsPluginOptionsFilterInput>;
         browserAPIs?: Maybe<StringQueryOperatorInput>;
-        ssrAPIs?: Maybe<StringQueryOperatorInput>;
         pluginFilepath?: Maybe<StringQueryOperatorInput>;
     };
 
@@ -3452,6 +3486,8 @@ declare namespace GraphQL {
         markdownCaptions?: Maybe<Scalars['Boolean']>;
         tracedSVG?: Maybe<Scalars['Boolean']>;
         loading?: Maybe<Scalars['String']>;
+        disableBgImageOnAlpha?: Maybe<Scalars['Boolean']>;
+        disableBgImage?: Maybe<Scalars['Boolean']>;
         colorTheme?: Maybe<Scalars['String']>;
     };
 
@@ -3467,6 +3503,8 @@ declare namespace GraphQL {
         markdownCaptions?: Maybe<BooleanQueryOperatorInput>;
         tracedSVG?: Maybe<BooleanQueryOperatorInput>;
         loading?: Maybe<StringQueryOperatorInput>;
+        disableBgImageOnAlpha?: Maybe<BooleanQueryOperatorInput>;
+        disableBgImage?: Maybe<BooleanQueryOperatorInput>;
         colorTheme?: Maybe<StringQueryOperatorInput>;
     };
 
@@ -3794,7 +3832,7 @@ declare namespace GraphQL {
         _graphql_codegen_cli?: Maybe<Scalars['String']>;
         _graphql_codegen_typescript?: Maybe<Scalars['String']>;
         _graphql_codegen_typescript_operations?: Maybe<Scalars['String']>;
-        _kobionic_eslint_config_typescript?: Maybe<Scalars['String']>;
+        _kobionic_eslint_config_typescript_react?: Maybe<Scalars['String']>;
         _types_jest?: Maybe<Scalars['String']>;
         _types_react?: Maybe<Scalars['String']>;
         _types_react_dom?: Maybe<Scalars['String']>;
@@ -3806,12 +3844,14 @@ declare namespace GraphQL {
         babel_jest?: Maybe<Scalars['String']>;
         babel_plugin_styled_components?: Maybe<Scalars['String']>;
         babel_preset_gatsby?: Maybe<Scalars['String']>;
+        eslint?: Maybe<Scalars['String']>;
         eslint_plugin_react?: Maybe<Scalars['String']>;
         graphql?: Maybe<Scalars['String']>;
         husky?: Maybe<Scalars['String']>;
         jest?: Maybe<Scalars['String']>;
         jest_styled_components?: Maybe<Scalars['String']>;
         npm_run_all?: Maybe<Scalars['String']>;
+        prettier?: Maybe<Scalars['String']>;
         react_test_renderer?: Maybe<Scalars['String']>;
         rimraf?: Maybe<Scalars['String']>;
         ts_jest?: Maybe<Scalars['String']>;
@@ -3826,7 +3866,7 @@ declare namespace GraphQL {
         _graphql_codegen_cli?: Maybe<StringQueryOperatorInput>;
         _graphql_codegen_typescript?: Maybe<StringQueryOperatorInput>;
         _graphql_codegen_typescript_operations?: Maybe<StringQueryOperatorInput>;
-        _kobionic_eslint_config_typescript?: Maybe<StringQueryOperatorInput>;
+        _kobionic_eslint_config_typescript_react?: Maybe<StringQueryOperatorInput>;
         _types_jest?: Maybe<StringQueryOperatorInput>;
         _types_react?: Maybe<StringQueryOperatorInput>;
         _types_react_dom?: Maybe<StringQueryOperatorInput>;
@@ -3838,12 +3878,14 @@ declare namespace GraphQL {
         babel_jest?: Maybe<StringQueryOperatorInput>;
         babel_plugin_styled_components?: Maybe<StringQueryOperatorInput>;
         babel_preset_gatsby?: Maybe<StringQueryOperatorInput>;
+        eslint?: Maybe<StringQueryOperatorInput>;
         eslint_plugin_react?: Maybe<StringQueryOperatorInput>;
         graphql?: Maybe<StringQueryOperatorInput>;
         husky?: Maybe<StringQueryOperatorInput>;
         jest?: Maybe<StringQueryOperatorInput>;
         jest_styled_components?: Maybe<StringQueryOperatorInput>;
         npm_run_all?: Maybe<StringQueryOperatorInput>;
+        prettier?: Maybe<StringQueryOperatorInput>;
         react_test_renderer?: Maybe<StringQueryOperatorInput>;
         rimraf?: Maybe<StringQueryOperatorInput>;
         ts_jest?: Maybe<StringQueryOperatorInput>;
@@ -4016,7 +4058,7 @@ declare namespace GraphQL {
         DevDependenciesGraphqlCodegenCli = 'devDependencies____graphql_codegen_cli',
         DevDependenciesGraphqlCodegenTypescript = 'devDependencies____graphql_codegen_typescript',
         DevDependenciesGraphqlCodegenTypescriptOperations = 'devDependencies____graphql_codegen_typescript_operations',
-        DevDependenciesKobionicEslintConfigTypescript = 'devDependencies____kobionic_eslint_config_typescript',
+        DevDependenciesKobionicEslintConfigTypescriptReact = 'devDependencies____kobionic_eslint_config_typescript_react',
         DevDependenciesTypesJest = 'devDependencies____types_jest',
         DevDependenciesTypesReact = 'devDependencies____types_react',
         DevDependenciesTypesReactDom = 'devDependencies____types_react_dom',
@@ -4028,12 +4070,14 @@ declare namespace GraphQL {
         DevDependenciesBabelJest = 'devDependencies___babel_jest',
         DevDependenciesBabelPluginStyledComponents = 'devDependencies___babel_plugin_styled_components',
         DevDependenciesBabelPresetGatsby = 'devDependencies___babel_preset_gatsby',
+        DevDependenciesEslint = 'devDependencies___eslint',
         DevDependenciesEslintPluginReact = 'devDependencies___eslint_plugin_react',
         DevDependenciesGraphql = 'devDependencies___graphql',
         DevDependenciesHusky = 'devDependencies___husky',
         DevDependenciesJest = 'devDependencies___jest',
         DevDependenciesJestStyledComponents = 'devDependencies___jest_styled_components',
         DevDependenciesNpmRunAll = 'devDependencies___npm_run_all',
+        DevDependenciesPrettier = 'devDependencies___prettier',
         DevDependenciesReactTestRenderer = 'devDependencies___react_test_renderer',
         DevDependenciesRimraf = 'devDependencies___rimraf',
         DevDependenciesTsJest = 'devDependencies___ts_jest',
@@ -4179,6 +4223,7 @@ declare namespace GraphQL {
         fields?: Maybe<Array<Maybe<WatashinoJsonFieldsEnum>>>;
         order?: Maybe<Array<Maybe<SortOrderEnum>>>;
     };
+
     type GatsbyImageSharpFixedFragment = { __typename?: 'ImageSharpFixed' } & Pick<
         ImageSharpFixed,
         'base64' | 'width' | 'height' | 'src' | 'srcSet'
