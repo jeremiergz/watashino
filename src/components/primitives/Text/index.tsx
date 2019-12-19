@@ -19,33 +19,18 @@ import {
 } from 'styled-system';
 import { Theme, ThemeProps } from '../../../theme';
 
-type TextProps = StyledComponentProps<
-    'span',
-    Theme,
-    BorderProps &
-        ColorProps &
-        DisplayProps &
-        LayoutProps &
-        SpaceProps &
-        Omit<TypographyProps, 'fontWeight'> &
-        ZIndexProps &
-        ThemeProps &
-        TimeHTMLAttributes<unknown>,
-    never
-> & {
-    as?: keyof JSX.IntrinsicElements | ComponentType<unknown>;
-};
+type TextProps = BorderProps &
+    ColorProps &
+    DisplayProps &
+    LayoutProps &
+    SpaceProps &
+    Omit<TypographyProps, 'fontWeight'> &
+    ZIndexProps &
+    ThemeProps &
+    TimeHTMLAttributes<unknown>;
 
 const Text = styled.span<TextProps>`
-    ${compose(
-        border,
-        color,
-        display,
-        layout,
-        space,
-        typography,
-        zIndex,
-    )}
+    ${compose(border, color, display, layout, space, typography, zIndex)}
 `;
 
 Text.displayName = 'Text';

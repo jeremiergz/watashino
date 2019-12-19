@@ -42,16 +42,7 @@ type BoxProps = StyledComponentProps<
 const Box = styled.div<BoxProps>`
     #___gatsby > div {
     }
-    ${compose(
-        border,
-        color,
-        flexbox,
-        layout,
-        position,
-        space,
-        typography,
-        zIndex,
-    )};
+    ${compose(border, color, flexbox, layout, position, space, typography, zIndex)};
 `;
 
 Box.displayName = 'Box';
