@@ -28,6 +28,8 @@
     "compile": "gatsby build",
     "compile:typings": "graphql-codegen",
     "lint": "eslint --ext ts,tsx src",
+    "prerelease": "run-s build lint test",
+    "release": "node release.js",
     "start": "gatsby serve",
     "start:w": "gatsby develop",
     "test": "jest",
