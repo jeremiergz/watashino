@@ -28,10 +28,14 @@ const Svg = styled(Box)`
 
 const Navigation = () => {
     const {
+        allMarkdownRemark: { totalCount },
         allNavigationJson: { nodes: links },
         dataJson: { resumeFile },
     } = useStaticQuery<GraphQL.NavigationDataQuery>(graphql`
         query NavigationData {
+            allMarkdownRemark {
+                totalCount
+            }
             allNavigationJson {
                 nodes {
                     icon
@@ -50,7 +54,10 @@ const Navigation = () => {
     return (
         <Flex as="nav" marginTop={{ _: 16, tablet: 0 }}>
             {links
-                .filter(link => !link.ignoreInNavigation)
+                .filter(link => {
+                    if (link.to === '/posts' && totalCount === 0) return false;
+                    return !link.ignoreInNavigation;
+                })
                 .sort((a, b) => a.navOrder - b.navOrder)
                 .map(link => (
                     <LinkContainer key={link.name}>

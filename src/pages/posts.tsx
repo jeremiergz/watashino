@@ -1,5 +1,5 @@
-import { graphql, useStaticQuery } from 'gatsby';
-import React from 'react';
+import { graphql, useStaticQuery, navigate } from 'gatsby';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Link from '../components/common/Link';
 import List from '../components/common/List';
@@ -49,39 +49,45 @@ const PostsPage = () => {
         }
         return acc;
     }, {});
+    const allPostsKeys = Object.keys(allPosts);
+    useEffect(() => {
+        if (allPostsKeys.length === 0) navigate('/404');
+    }, [allPostsKeys]);
     return (
         <Layout>
-            <Layout.Content keywords={keywords} title={name} type="section">
-                <Groups>
-                    {Object.keys(allPosts)
-                        .sort((a, b) => b.localeCompare(a))
-                        .map(year => (
-                            <List key={year}>
-                                <List.Label>{year}</List.Label>
-                                {allPosts[year].map(({ date, slug, title }) => {
-                                    const [month, day] = getMonthAndDay(date);
-                                    const monthAndDay = `${month}-${day}`;
-                                    return (
-                                        <List.Item key={slug}>
-                                            <Box
-                                                as="span"
-                                                color="primary"
-                                                fontSize={16}
-                                                fontWeight="bold"
-                                                marginRight={4}
-                                                marginTop="2px"
-                                                minWidth={64}
-                                            >
-                                                {monthAndDay}
-                                            </Box>
-                                            <Link to={slug}>{title}</Link>
-                                        </List.Item>
-                                    );
-                                })}
-                            </List>
-                        ))}
-                </Groups>
-            </Layout.Content>
+            {allPostsKeys.length > 0 && (
+                <Layout.Content keywords={keywords} title={name} type="section">
+                    <Groups>
+                        {allPostsKeys
+                            .sort((a, b) => b.localeCompare(a))
+                            .map(year => (
+                                <List key={year}>
+                                    <List.Label>{year}</List.Label>
+                                    {allPosts[year].map(({ date, slug, title }) => {
+                                        const [month, day] = getMonthAndDay(date);
+                                        const monthAndDay = `${month}-${day}`;
+                                        return (
+                                            <List.Item key={slug}>
+                                                <Box
+                                                    as="span"
+                                                    color="primary"
+                                                    fontSize={16}
+                                                    fontWeight="bold"
+                                                    marginRight={4}
+                                                    marginTop="2px"
+                                                    minWidth={64}
+                                                >
+                                                    {monthAndDay}
+                                                </Box>
+                                                <Link to={slug}>{title}</Link>
+                                            </List.Item>
+                                        );
+                                    })}
+                                </List>
+                            ))}
+                    </Groups>
+                </Layout.Content>
+            )}
         </Layout>
     );
 };
