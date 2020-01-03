@@ -22,6 +22,9 @@ describe('components/LocationMap Test Suite', () => {
                     lng: -122.41942,
                 },
             },
+            googleMapsJson: {
+                styles: { dark: [], light: [] },
+            },
         }));
     });
 

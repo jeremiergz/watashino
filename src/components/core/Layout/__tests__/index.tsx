@@ -7,6 +7,9 @@ describe('components/Layout Test Suite', () => {
     beforeAll(() => {
         const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
         useStaticQuery.mockImplementation(() => ({
+            allMarkdownRemark: {
+                totalCount: 1,
+            },
             allNavigationJson: {
                 nodes: [
                     {

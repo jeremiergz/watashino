@@ -43,6 +43,9 @@ describe('pages Test Suite', () => {
             mdData: {
                 nodes: [{ frontmatter: { date: '2019-08-08', slug: '/posts/test', title: 'Test Post' } }],
             },
+            allMarkdownRemark: {
+                totalCount: 1,
+            },
             allNavigationJson: {
                 nodes: [
                     {
@@ -60,6 +63,9 @@ describe('pages Test Suite', () => {
             coverImg: { childImageSharp },
             dataJson: { jobTitle, location },
             file: { childImageSharp },
+            googleMapsJson: {
+                styles: { dark: [], light: [] },
+            },
             pageData: { keywords: ['test', 'keyword'], name: 'Test Page' },
             personalDetails: {
                 company: {
