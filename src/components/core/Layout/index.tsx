@@ -35,11 +35,12 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Layout = ({ children }: LayoutProps) => {
-    const storedTheme = (localStorage.getItem('theme') as ThemeType) || 'light';
+    const isBrowser = typeof window !== 'undefined';
+    const storedTheme = (isBrowser && (localStorage.getItem('theme') as ThemeType)) || 'light';
     const [theme, setTheme] = useState<ThemeType>(storedTheme);
     const saveTheme = (type: ThemeType) => {
         setTheme(type);
-        localStorage.setItem('theme', type);
+        if (isBrowser) localStorage.setItem('theme', type);
     };
     const selectedTheme = theme === 'light' ? LightTheme : DarkTheme;
     return (
