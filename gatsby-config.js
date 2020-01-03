@@ -1,17 +1,20 @@
 require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` });
 const packageJSON = require('./package.json');
 
-const { author, description, homepage, name } = packageJSON;
+const { author, description, homepage, license, name, repository, version } = packageJSON;
 const appColor = '#17365C';
 const appName = `${name.charAt(0).toUpperCase()}${name.substring(1, name.length)}`;
 const authorName = 'Jeremie Rodriguez';
 
 module.exports = {
     siteMetadata: {
-        author: author,
-        description: description,
+        author,
+        description,
+        license,
+        repository,
         title: authorName,
         siteUrl: homepage,
+        version,
     },
     plugins: [
         'gatsby-plugin-react-helmet',
@@ -46,13 +49,6 @@ module.exports = {
             options: {
                 name: 'data',
                 path: `${__dirname}/content/data`,
-            },
-        },
-        {
-            resolve: 'gatsby-source-filesystem',
-            options: {
-                name: 'packageJSON',
-                path: `${__dirname}/package.json`,
             },
         },
         {

@@ -8,12 +8,7 @@ declare module GraphQL {
         Boolean: boolean;
         Int: number;
         Float: number;
-        /**
-         * A date string, such as 2007-12-03, compliant with the ISO 8601 standard for
-         * representation of dates and times using the Gregorian calendar.
-         */
         Date: any;
-        /** The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf). */
         JSON: any;
     };
 
@@ -587,17 +582,15 @@ declare module GraphQL {
         birthtimeMs?: Maybe<Scalars['Float']>;
         blksize?: Maybe<Scalars['Int']>;
         blocks?: Maybe<Scalars['Int']>;
-        /** Copy file to static directory and return public url to it */
         publicURL?: Maybe<Scalars['String']>;
         childImageSharp?: Maybe<ImageSharp>;
         id: Scalars['ID'];
         parent?: Maybe<Node>;
         children: Array<Node>;
         internal: Internal;
+        childDataJson?: Maybe<DataJson>;
         childrenNavigationJson?: Maybe<Array<Maybe<NavigationJson>>>;
         childrenTechnologiesJson?: Maybe<Array<Maybe<TechnologiesJson>>>;
-        childDataJson?: Maybe<DataJson>;
-        childWatashinoJson?: Maybe<WatashinoJson>;
         childMarkdownRemark?: Maybe<MarkdownRemark>;
     };
 
@@ -889,6 +882,58 @@ declare module GraphQL {
         InternalMediaType = 'internal___mediaType',
         InternalOwner = 'internal___owner',
         InternalType = 'internal___type',
+        ChildDataJsonId = 'childDataJson___id',
+        ChildDataJsonParentId = 'childDataJson___parent___id',
+        ChildDataJsonParentParentId = 'childDataJson___parent___parent___id',
+        ChildDataJsonParentParentChildren = 'childDataJson___parent___parent___children',
+        ChildDataJsonParentChildren = 'childDataJson___parent___children',
+        ChildDataJsonParentChildrenId = 'childDataJson___parent___children___id',
+        ChildDataJsonParentChildrenChildren = 'childDataJson___parent___children___children',
+        ChildDataJsonParentInternalContent = 'childDataJson___parent___internal___content',
+        ChildDataJsonParentInternalContentDigest = 'childDataJson___parent___internal___contentDigest',
+        ChildDataJsonParentInternalDescription = 'childDataJson___parent___internal___description',
+        ChildDataJsonParentInternalFieldOwners = 'childDataJson___parent___internal___fieldOwners',
+        ChildDataJsonParentInternalIgnoreType = 'childDataJson___parent___internal___ignoreType',
+        ChildDataJsonParentInternalMediaType = 'childDataJson___parent___internal___mediaType',
+        ChildDataJsonParentInternalOwner = 'childDataJson___parent___internal___owner',
+        ChildDataJsonParentInternalType = 'childDataJson___parent___internal___type',
+        ChildDataJsonChildren = 'childDataJson___children',
+        ChildDataJsonChildrenId = 'childDataJson___children___id',
+        ChildDataJsonChildrenParentId = 'childDataJson___children___parent___id',
+        ChildDataJsonChildrenParentChildren = 'childDataJson___children___parent___children',
+        ChildDataJsonChildrenChildren = 'childDataJson___children___children',
+        ChildDataJsonChildrenChildrenId = 'childDataJson___children___children___id',
+        ChildDataJsonChildrenChildrenChildren = 'childDataJson___children___children___children',
+        ChildDataJsonChildrenInternalContent = 'childDataJson___children___internal___content',
+        ChildDataJsonChildrenInternalContentDigest = 'childDataJson___children___internal___contentDigest',
+        ChildDataJsonChildrenInternalDescription = 'childDataJson___children___internal___description',
+        ChildDataJsonChildrenInternalFieldOwners = 'childDataJson___children___internal___fieldOwners',
+        ChildDataJsonChildrenInternalIgnoreType = 'childDataJson___children___internal___ignoreType',
+        ChildDataJsonChildrenInternalMediaType = 'childDataJson___children___internal___mediaType',
+        ChildDataJsonChildrenInternalOwner = 'childDataJson___children___internal___owner',
+        ChildDataJsonChildrenInternalType = 'childDataJson___children___internal___type',
+        ChildDataJsonInternalContent = 'childDataJson___internal___content',
+        ChildDataJsonInternalContentDigest = 'childDataJson___internal___contentDigest',
+        ChildDataJsonInternalDescription = 'childDataJson___internal___description',
+        ChildDataJsonInternalFieldOwners = 'childDataJson___internal___fieldOwners',
+        ChildDataJsonInternalIgnoreType = 'childDataJson___internal___ignoreType',
+        ChildDataJsonInternalMediaType = 'childDataJson___internal___mediaType',
+        ChildDataJsonInternalOwner = 'childDataJson___internal___owner',
+        ChildDataJsonInternalType = 'childDataJson___internal___type',
+        ChildDataJsonCompanyName = 'childDataJson___company___name',
+        ChildDataJsonCompanyWebsite = 'childDataJson___company___website',
+        ChildDataJsonContacts = 'childDataJson___contacts',
+        ChildDataJsonContactsImg = 'childDataJson___contacts___img',
+        ChildDataJsonContactsLabel = 'childDataJson___contacts___label',
+        ChildDataJsonContactsUrl = 'childDataJson___contacts___url',
+        ChildDataJsonJobTitle = 'childDataJson___jobTitle',
+        ChildDataJsonLocationCity = 'childDataJson___location___city',
+        ChildDataJsonLocationCountry = 'childDataJson___location___country',
+        ChildDataJsonLocationLat = 'childDataJson___location___lat',
+        ChildDataJsonLocationLng = 'childDataJson___location___lng',
+        ChildDataJsonLocationWebsite = 'childDataJson___location___website',
+        ChildDataJsonOpenToGigs = 'childDataJson___openToGigs',
+        ChildDataJsonResumeFile = 'childDataJson___resumeFile',
         ChildrenNavigationJson = 'childrenNavigationJson',
         ChildrenNavigationJsonId = 'childrenNavigationJson___id',
         ChildrenNavigationJsonParentId = 'childrenNavigationJson___parent___id',
@@ -977,184 +1022,6 @@ declare module GraphQL {
         ChildrenTechnologiesJsonImg = 'childrenTechnologiesJson___img',
         ChildrenTechnologiesJsonName = 'childrenTechnologiesJson___name',
         ChildrenTechnologiesJsonWebsite = 'childrenTechnologiesJson___website',
-        ChildDataJsonId = 'childDataJson___id',
-        ChildDataJsonParentId = 'childDataJson___parent___id',
-        ChildDataJsonParentParentId = 'childDataJson___parent___parent___id',
-        ChildDataJsonParentParentChildren = 'childDataJson___parent___parent___children',
-        ChildDataJsonParentChildren = 'childDataJson___parent___children',
-        ChildDataJsonParentChildrenId = 'childDataJson___parent___children___id',
-        ChildDataJsonParentChildrenChildren = 'childDataJson___parent___children___children',
-        ChildDataJsonParentInternalContent = 'childDataJson___parent___internal___content',
-        ChildDataJsonParentInternalContentDigest = 'childDataJson___parent___internal___contentDigest',
-        ChildDataJsonParentInternalDescription = 'childDataJson___parent___internal___description',
-        ChildDataJsonParentInternalFieldOwners = 'childDataJson___parent___internal___fieldOwners',
-        ChildDataJsonParentInternalIgnoreType = 'childDataJson___parent___internal___ignoreType',
-        ChildDataJsonParentInternalMediaType = 'childDataJson___parent___internal___mediaType',
-        ChildDataJsonParentInternalOwner = 'childDataJson___parent___internal___owner',
-        ChildDataJsonParentInternalType = 'childDataJson___parent___internal___type',
-        ChildDataJsonChildren = 'childDataJson___children',
-        ChildDataJsonChildrenId = 'childDataJson___children___id',
-        ChildDataJsonChildrenParentId = 'childDataJson___children___parent___id',
-        ChildDataJsonChildrenParentChildren = 'childDataJson___children___parent___children',
-        ChildDataJsonChildrenChildren = 'childDataJson___children___children',
-        ChildDataJsonChildrenChildrenId = 'childDataJson___children___children___id',
-        ChildDataJsonChildrenChildrenChildren = 'childDataJson___children___children___children',
-        ChildDataJsonChildrenInternalContent = 'childDataJson___children___internal___content',
-        ChildDataJsonChildrenInternalContentDigest = 'childDataJson___children___internal___contentDigest',
-        ChildDataJsonChildrenInternalDescription = 'childDataJson___children___internal___description',
-        ChildDataJsonChildrenInternalFieldOwners = 'childDataJson___children___internal___fieldOwners',
-        ChildDataJsonChildrenInternalIgnoreType = 'childDataJson___children___internal___ignoreType',
-        ChildDataJsonChildrenInternalMediaType = 'childDataJson___children___internal___mediaType',
-        ChildDataJsonChildrenInternalOwner = 'childDataJson___children___internal___owner',
-        ChildDataJsonChildrenInternalType = 'childDataJson___children___internal___type',
-        ChildDataJsonInternalContent = 'childDataJson___internal___content',
-        ChildDataJsonInternalContentDigest = 'childDataJson___internal___contentDigest',
-        ChildDataJsonInternalDescription = 'childDataJson___internal___description',
-        ChildDataJsonInternalFieldOwners = 'childDataJson___internal___fieldOwners',
-        ChildDataJsonInternalIgnoreType = 'childDataJson___internal___ignoreType',
-        ChildDataJsonInternalMediaType = 'childDataJson___internal___mediaType',
-        ChildDataJsonInternalOwner = 'childDataJson___internal___owner',
-        ChildDataJsonInternalType = 'childDataJson___internal___type',
-        ChildDataJsonCompanyName = 'childDataJson___company___name',
-        ChildDataJsonCompanyWebsite = 'childDataJson___company___website',
-        ChildDataJsonContacts = 'childDataJson___contacts',
-        ChildDataJsonContactsImg = 'childDataJson___contacts___img',
-        ChildDataJsonContactsLabel = 'childDataJson___contacts___label',
-        ChildDataJsonContactsUrl = 'childDataJson___contacts___url',
-        ChildDataJsonJobTitle = 'childDataJson___jobTitle',
-        ChildDataJsonLocationCity = 'childDataJson___location___city',
-        ChildDataJsonLocationCountry = 'childDataJson___location___country',
-        ChildDataJsonLocationLat = 'childDataJson___location___lat',
-        ChildDataJsonLocationLng = 'childDataJson___location___lng',
-        ChildDataJsonLocationWebsite = 'childDataJson___location___website',
-        ChildDataJsonOpenToGigs = 'childDataJson___openToGigs',
-        ChildDataJsonResumeFile = 'childDataJson___resumeFile',
-        ChildWatashinoJsonId = 'childWatashinoJson___id',
-        ChildWatashinoJsonParentId = 'childWatashinoJson___parent___id',
-        ChildWatashinoJsonParentParentId = 'childWatashinoJson___parent___parent___id',
-        ChildWatashinoJsonParentParentChildren = 'childWatashinoJson___parent___parent___children',
-        ChildWatashinoJsonParentChildren = 'childWatashinoJson___parent___children',
-        ChildWatashinoJsonParentChildrenId = 'childWatashinoJson___parent___children___id',
-        ChildWatashinoJsonParentChildrenChildren = 'childWatashinoJson___parent___children___children',
-        ChildWatashinoJsonParentInternalContent = 'childWatashinoJson___parent___internal___content',
-        ChildWatashinoJsonParentInternalContentDigest = 'childWatashinoJson___parent___internal___contentDigest',
-        ChildWatashinoJsonParentInternalDescription = 'childWatashinoJson___parent___internal___description',
-        ChildWatashinoJsonParentInternalFieldOwners = 'childWatashinoJson___parent___internal___fieldOwners',
-        ChildWatashinoJsonParentInternalIgnoreType = 'childWatashinoJson___parent___internal___ignoreType',
-        ChildWatashinoJsonParentInternalMediaType = 'childWatashinoJson___parent___internal___mediaType',
-        ChildWatashinoJsonParentInternalOwner = 'childWatashinoJson___parent___internal___owner',
-        ChildWatashinoJsonParentInternalType = 'childWatashinoJson___parent___internal___type',
-        ChildWatashinoJsonChildren = 'childWatashinoJson___children',
-        ChildWatashinoJsonChildrenId = 'childWatashinoJson___children___id',
-        ChildWatashinoJsonChildrenParentId = 'childWatashinoJson___children___parent___id',
-        ChildWatashinoJsonChildrenParentChildren = 'childWatashinoJson___children___parent___children',
-        ChildWatashinoJsonChildrenChildren = 'childWatashinoJson___children___children',
-        ChildWatashinoJsonChildrenChildrenId = 'childWatashinoJson___children___children___id',
-        ChildWatashinoJsonChildrenChildrenChildren = 'childWatashinoJson___children___children___children',
-        ChildWatashinoJsonChildrenInternalContent = 'childWatashinoJson___children___internal___content',
-        ChildWatashinoJsonChildrenInternalContentDigest = 'childWatashinoJson___children___internal___contentDigest',
-        ChildWatashinoJsonChildrenInternalDescription = 'childWatashinoJson___children___internal___description',
-        ChildWatashinoJsonChildrenInternalFieldOwners = 'childWatashinoJson___children___internal___fieldOwners',
-        ChildWatashinoJsonChildrenInternalIgnoreType = 'childWatashinoJson___children___internal___ignoreType',
-        ChildWatashinoJsonChildrenInternalMediaType = 'childWatashinoJson___children___internal___mediaType',
-        ChildWatashinoJsonChildrenInternalOwner = 'childWatashinoJson___children___internal___owner',
-        ChildWatashinoJsonChildrenInternalType = 'childWatashinoJson___children___internal___type',
-        ChildWatashinoJsonInternalContent = 'childWatashinoJson___internal___content',
-        ChildWatashinoJsonInternalContentDigest = 'childWatashinoJson___internal___contentDigest',
-        ChildWatashinoJsonInternalDescription = 'childWatashinoJson___internal___description',
-        ChildWatashinoJsonInternalFieldOwners = 'childWatashinoJson___internal___fieldOwners',
-        ChildWatashinoJsonInternalIgnoreType = 'childWatashinoJson___internal___ignoreType',
-        ChildWatashinoJsonInternalMediaType = 'childWatashinoJson___internal___mediaType',
-        ChildWatashinoJsonInternalOwner = 'childWatashinoJson___internal___owner',
-        ChildWatashinoJsonInternalType = 'childWatashinoJson___internal___type',
-        ChildWatashinoJsonName = 'childWatashinoJson___name',
-        ChildWatashinoJsonVersion = 'childWatashinoJson___version',
-        ChildWatashinoJsonPrivate = 'childWatashinoJson___private',
-        ChildWatashinoJsonDescription = 'childWatashinoJson___description',
-        ChildWatashinoJsonKeywords = 'childWatashinoJson___keywords',
-        ChildWatashinoJsonHomepage = 'childWatashinoJson___homepage',
-        ChildWatashinoJsonBugsUrl = 'childWatashinoJson___bugs___url',
-        ChildWatashinoJsonRepositoryType = 'childWatashinoJson___repository___type',
-        ChildWatashinoJsonRepositoryUrl = 'childWatashinoJson___repository___url',
-        ChildWatashinoJsonLicense = 'childWatashinoJson___license',
-        ChildWatashinoJsonAuthor = 'childWatashinoJson___author',
-        ChildWatashinoJsonFiles = 'childWatashinoJson___files',
-        ChildWatashinoJsonScriptsBuild = 'childWatashinoJson___scripts___build',
-        ChildWatashinoJsonScriptsClean = 'childWatashinoJson___scripts___clean',
-        ChildWatashinoJsonScriptsCompile = 'childWatashinoJson___scripts___compile',
-        ChildWatashinoJsonScriptsCompileTypings = 'childWatashinoJson___scripts___compile_typings',
-        ChildWatashinoJsonScriptsLint = 'childWatashinoJson___scripts___lint',
-        ChildWatashinoJsonScriptsStart = 'childWatashinoJson___scripts___start',
-        ChildWatashinoJsonScriptsStartW = 'childWatashinoJson___scripts___start_w',
-        ChildWatashinoJsonScriptsTest = 'childWatashinoJson___scripts___test',
-        ChildWatashinoJsonScriptsTestCc = 'childWatashinoJson___scripts___test_cc',
-        ChildWatashinoJsonScriptsVersion = 'childWatashinoJson___scripts___version',
-        ChildWatashinoJsonHuskyHooksCommitMsg = 'childWatashinoJson___husky___hooks___commit_msg',
-        ChildWatashinoJsonCommitlintExtends = 'childWatashinoJson___commitlint___extends',
-        ChildWatashinoJsonJestCollectCoverage = 'childWatashinoJson___jest___collectCoverage',
-        ChildWatashinoJsonJestCollectCoverageFrom = 'childWatashinoJson___jest___collectCoverageFrom',
-        ChildWatashinoJsonJestGlobalsXPatHxPrefiXxx = 'childWatashinoJson___jest___globals____xPATHxPREFIXxx',
-        ChildWatashinoJsonJestSetupFiles = 'childWatashinoJson___jest___setupFiles',
-        ChildWatashinoJsonJestTestPathIgnorePatterns = 'childWatashinoJson___jest___testPathIgnorePatterns',
-        ChildWatashinoJsonJestTransformXxxxjsxxx = 'childWatashinoJson___jest___transform____xxxxjsxxx',
-        ChildWatashinoJsonJestTransformXxxxtsxxx = 'childWatashinoJson___jest___transform____xxxxtsxxx',
-        ChildWatashinoJsonJestTransformIgnorePatterns = 'childWatashinoJson___jest___transformIgnorePatterns',
-        ChildWatashinoJsonJestVerbose = 'childWatashinoJson___jest___verbose',
-        ChildWatashinoJsonDependenciesReactGoogleMapsApi = 'childWatashinoJson___dependencies____react_google_maps_api',
-        ChildWatashinoJsonDependenciesGatsby = 'childWatashinoJson___dependencies___gatsby',
-        ChildWatashinoJsonDependenciesGatsbyImage = 'childWatashinoJson___dependencies___gatsby_image',
-        ChildWatashinoJsonDependenciesGatsbyPluginGoogleFonts = 'childWatashinoJson___dependencies___gatsby_plugin_google_fonts',
-        ChildWatashinoJsonDependenciesGatsbyPluginManifest = 'childWatashinoJson___dependencies___gatsby_plugin_manifest',
-        ChildWatashinoJsonDependenciesGatsbyPluginReactHelmet = 'childWatashinoJson___dependencies___gatsby_plugin_react_helmet',
-        ChildWatashinoJsonDependenciesGatsbyPluginRobotsTxt = 'childWatashinoJson___dependencies___gatsby_plugin_robots_txt',
-        ChildWatashinoJsonDependenciesGatsbyPluginSharp = 'childWatashinoJson___dependencies___gatsby_plugin_sharp',
-        ChildWatashinoJsonDependenciesGatsbyPluginSitemap = 'childWatashinoJson___dependencies___gatsby_plugin_sitemap',
-        ChildWatashinoJsonDependenciesGatsbyPluginStyledComponents = 'childWatashinoJson___dependencies___gatsby_plugin_styled_components',
-        ChildWatashinoJsonDependenciesGatsbyPluginTypescript = 'childWatashinoJson___dependencies___gatsby_plugin_typescript',
-        ChildWatashinoJsonDependenciesGatsbyRemarkImages = 'childWatashinoJson___dependencies___gatsby_remark_images',
-        ChildWatashinoJsonDependenciesGatsbyRemarkVscode = 'childWatashinoJson___dependencies___gatsby_remark_vscode',
-        ChildWatashinoJsonDependenciesGatsbySourceFilesystem = 'childWatashinoJson___dependencies___gatsby_source_filesystem',
-        ChildWatashinoJsonDependenciesGatsbyTransformerJson = 'childWatashinoJson___dependencies___gatsby_transformer_json',
-        ChildWatashinoJsonDependenciesGatsbyTransformerRemark = 'childWatashinoJson___dependencies___gatsby_transformer_remark',
-        ChildWatashinoJsonDependenciesGatsbyTransformerSharp = 'childWatashinoJson___dependencies___gatsby_transformer_sharp',
-        ChildWatashinoJsonDependenciesReact = 'childWatashinoJson___dependencies___react',
-        ChildWatashinoJsonDependenciesReactDom = 'childWatashinoJson___dependencies___react_dom',
-        ChildWatashinoJsonDependenciesReactHelmet = 'childWatashinoJson___dependencies___react_helmet',
-        ChildWatashinoJsonDependenciesRehypeReact = 'childWatashinoJson___dependencies___rehype_react',
-        ChildWatashinoJsonDependenciesStyledComponents = 'childWatashinoJson___dependencies___styled_components',
-        ChildWatashinoJsonDependenciesStyledSystem = 'childWatashinoJson___dependencies___styled_system',
-        ChildWatashinoJsonDevDependenciesBabelPresetTypescript = 'childWatashinoJson___devDependencies____babel_preset_typescript',
-        ChildWatashinoJsonDevDependenciesCommitlintCli = 'childWatashinoJson___devDependencies____commitlint_cli',
-        ChildWatashinoJsonDevDependenciesCommitlintConfigConventional = 'childWatashinoJson___devDependencies____commitlint_config_conventional',
-        ChildWatashinoJsonDevDependenciesGraphqlCodegenAdd = 'childWatashinoJson___devDependencies____graphql_codegen_add',
-        ChildWatashinoJsonDevDependenciesGraphqlCodegenCli = 'childWatashinoJson___devDependencies____graphql_codegen_cli',
-        ChildWatashinoJsonDevDependenciesGraphqlCodegenTypescript = 'childWatashinoJson___devDependencies____graphql_codegen_typescript',
-        ChildWatashinoJsonDevDependenciesGraphqlCodegenTypescriptOperations = 'childWatashinoJson___devDependencies____graphql_codegen_typescript_operations',
-        ChildWatashinoJsonDevDependenciesKobionicEslintConfigTypescriptReact = 'childWatashinoJson___devDependencies____kobionic_eslint_config_typescript_react',
-        ChildWatashinoJsonDevDependenciesTypesJest = 'childWatashinoJson___devDependencies____types_jest',
-        ChildWatashinoJsonDevDependenciesTypesReact = 'childWatashinoJson___devDependencies____types_react',
-        ChildWatashinoJsonDevDependenciesTypesReactDom = 'childWatashinoJson___devDependencies____types_react_dom',
-        ChildWatashinoJsonDevDependenciesTypesReactHelmet = 'childWatashinoJson___devDependencies____types_react_helmet',
-        ChildWatashinoJsonDevDependenciesTypesReactTestRenderer = 'childWatashinoJson___devDependencies____types_react_test_renderer',
-        ChildWatashinoJsonDevDependenciesTypesRehypeReact = 'childWatashinoJson___devDependencies____types_rehype_react',
-        ChildWatashinoJsonDevDependenciesTypesStyledComponents = 'childWatashinoJson___devDependencies____types_styled_components',
-        ChildWatashinoJsonDevDependenciesTypesStyledSystem = 'childWatashinoJson___devDependencies____types_styled_system',
-        ChildWatashinoJsonDevDependenciesBabelJest = 'childWatashinoJson___devDependencies___babel_jest',
-        ChildWatashinoJsonDevDependenciesBabelPluginStyledComponents = 'childWatashinoJson___devDependencies___babel_plugin_styled_components',
-        ChildWatashinoJsonDevDependenciesBabelPresetGatsby = 'childWatashinoJson___devDependencies___babel_preset_gatsby',
-        ChildWatashinoJsonDevDependenciesEslint = 'childWatashinoJson___devDependencies___eslint',
-        ChildWatashinoJsonDevDependenciesEslintPluginReact = 'childWatashinoJson___devDependencies___eslint_plugin_react',
-        ChildWatashinoJsonDevDependenciesGraphql = 'childWatashinoJson___devDependencies___graphql',
-        ChildWatashinoJsonDevDependenciesHusky = 'childWatashinoJson___devDependencies___husky',
-        ChildWatashinoJsonDevDependenciesJest = 'childWatashinoJson___devDependencies___jest',
-        ChildWatashinoJsonDevDependenciesJestStyledComponents = 'childWatashinoJson___devDependencies___jest_styled_components',
-        ChildWatashinoJsonDevDependenciesNpmRunAll = 'childWatashinoJson___devDependencies___npm_run_all',
-        ChildWatashinoJsonDevDependenciesPrettier = 'childWatashinoJson___devDependencies___prettier',
-        ChildWatashinoJsonDevDependenciesReactTestRenderer = 'childWatashinoJson___devDependencies___react_test_renderer',
-        ChildWatashinoJsonDevDependenciesRimraf = 'childWatashinoJson___devDependencies___rimraf',
-        ChildWatashinoJsonDevDependenciesTsJest = 'childWatashinoJson___devDependencies___ts_jest',
-        ChildWatashinoJsonDevDependenciesTypescript = 'childWatashinoJson___devDependencies___typescript',
-        ChildWatashinoJsonEnginesNode = 'childWatashinoJson___engines___node',
         ChildMarkdownRemarkId = 'childMarkdownRemark___id',
         ChildMarkdownRemarkFrontmatterTitle = 'childMarkdownRemark___frontmatter___title',
         ChildMarkdownRemarkFrontmatterDate = 'childMarkdownRemark___frontmatter___date',
@@ -1253,10 +1120,9 @@ declare module GraphQL {
         parent?: Maybe<NodeFilterInput>;
         children?: Maybe<NodeFilterListInput>;
         internal?: Maybe<InternalFilterInput>;
+        childDataJson?: Maybe<DataJsonFilterInput>;
         childrenNavigationJson?: Maybe<NavigationJsonFilterListInput>;
         childrenTechnologiesJson?: Maybe<TechnologiesJsonFilterListInput>;
-        childDataJson?: Maybe<DataJsonFilterInput>;
-        childWatashinoJson?: Maybe<WatashinoJsonFilterInput>;
         childMarkdownRemark?: Maybe<MarkdownRemarkFilterInput>;
     };
 
@@ -2273,7 +2139,6 @@ declare module GraphQL {
         order?: Maybe<Array<Maybe<SortOrderEnum>>>;
     };
 
-    /** Node Interface */
     type Node = {
         id: Scalars['ID'];
         parent?: Maybe<Node>;
@@ -2333,14 +2198,12 @@ declare module GraphQL {
         allImageSharp: ImageSharpConnection;
         markdownRemark?: Maybe<MarkdownRemark>;
         allMarkdownRemark: MarkdownRemarkConnection;
-        watashinoJson?: Maybe<WatashinoJson>;
-        allWatashinoJson: WatashinoJsonConnection;
         technologiesJson?: Maybe<TechnologiesJson>;
         allTechnologiesJson: TechnologiesJsonConnection;
-        dataJson?: Maybe<DataJson>;
-        allDataJson: DataJsonConnection;
         navigationJson?: Maybe<NavigationJson>;
         allNavigationJson: NavigationJsonConnection;
+        dataJson?: Maybe<DataJson>;
+        allDataJson: DataJsonConnection;
         site?: Maybe<Site>;
         allSite: SiteConnection;
         sitePlugin?: Maybe<SitePlugin>;
@@ -2389,10 +2252,9 @@ declare module GraphQL {
         parent?: Maybe<NodeFilterInput>;
         children?: Maybe<NodeFilterListInput>;
         internal?: Maybe<InternalFilterInput>;
+        childDataJson?: Maybe<DataJsonFilterInput>;
         childrenNavigationJson?: Maybe<NavigationJsonFilterListInput>;
         childrenTechnologiesJson?: Maybe<TechnologiesJsonFilterListInput>;
-        childDataJson?: Maybe<DataJsonFilterInput>;
-        childWatashinoJson?: Maybe<WatashinoJsonFilterInput>;
         childMarkdownRemark?: Maybe<MarkdownRemarkFilterInput>;
     };
 
@@ -2495,38 +2357,6 @@ declare module GraphQL {
         limit?: Maybe<Scalars['Int']>;
     };
 
-    type QueryWatashinoJsonArgs = {
-        id?: Maybe<StringQueryOperatorInput>;
-        parent?: Maybe<NodeFilterInput>;
-        children?: Maybe<NodeFilterListInput>;
-        internal?: Maybe<InternalFilterInput>;
-        name?: Maybe<StringQueryOperatorInput>;
-        version?: Maybe<StringQueryOperatorInput>;
-        private?: Maybe<BooleanQueryOperatorInput>;
-        description?: Maybe<StringQueryOperatorInput>;
-        keywords?: Maybe<StringQueryOperatorInput>;
-        homepage?: Maybe<StringQueryOperatorInput>;
-        bugs?: Maybe<WatashinoJsonBugsFilterInput>;
-        repository?: Maybe<WatashinoJsonRepositoryFilterInput>;
-        license?: Maybe<StringQueryOperatorInput>;
-        author?: Maybe<StringQueryOperatorInput>;
-        files?: Maybe<StringQueryOperatorInput>;
-        scripts?: Maybe<WatashinoJsonScriptsFilterInput>;
-        husky?: Maybe<WatashinoJsonHuskyFilterInput>;
-        commitlint?: Maybe<WatashinoJsonCommitlintFilterInput>;
-        jest?: Maybe<WatashinoJsonJestFilterInput>;
-        dependencies?: Maybe<WatashinoJsonDependenciesFilterInput>;
-        devDependencies?: Maybe<WatashinoJsonDevDependenciesFilterInput>;
-        engines?: Maybe<WatashinoJsonEnginesFilterInput>;
-    };
-
-    type QueryAllWatashinoJsonArgs = {
-        filter?: Maybe<WatashinoJsonFilterInput>;
-        sort?: Maybe<WatashinoJsonSortInput>;
-        skip?: Maybe<Scalars['Int']>;
-        limit?: Maybe<Scalars['Int']>;
-    };
-
     type QueryTechnologiesJsonArgs = {
         id?: Maybe<StringQueryOperatorInput>;
         parent?: Maybe<NodeFilterInput>;
@@ -2540,26 +2370,6 @@ declare module GraphQL {
     type QueryAllTechnologiesJsonArgs = {
         filter?: Maybe<TechnologiesJsonFilterInput>;
         sort?: Maybe<TechnologiesJsonSortInput>;
-        skip?: Maybe<Scalars['Int']>;
-        limit?: Maybe<Scalars['Int']>;
-    };
-
-    type QueryDataJsonArgs = {
-        id?: Maybe<StringQueryOperatorInput>;
-        parent?: Maybe<NodeFilterInput>;
-        children?: Maybe<NodeFilterListInput>;
-        internal?: Maybe<InternalFilterInput>;
-        company?: Maybe<DataJsonCompanyFilterInput>;
-        contacts?: Maybe<DataJsonContactsFilterListInput>;
-        jobTitle?: Maybe<StringQueryOperatorInput>;
-        location?: Maybe<DataJsonLocationFilterInput>;
-        openToGigs?: Maybe<BooleanQueryOperatorInput>;
-        resumeFile?: Maybe<StringQueryOperatorInput>;
-    };
-
-    type QueryAllDataJsonArgs = {
-        filter?: Maybe<DataJsonFilterInput>;
-        sort?: Maybe<DataJsonSortInput>;
         skip?: Maybe<Scalars['Int']>;
         limit?: Maybe<Scalars['Int']>;
     };
@@ -2581,6 +2391,26 @@ declare module GraphQL {
     type QueryAllNavigationJsonArgs = {
         filter?: Maybe<NavigationJsonFilterInput>;
         sort?: Maybe<NavigationJsonSortInput>;
+        skip?: Maybe<Scalars['Int']>;
+        limit?: Maybe<Scalars['Int']>;
+    };
+
+    type QueryDataJsonArgs = {
+        id?: Maybe<StringQueryOperatorInput>;
+        parent?: Maybe<NodeFilterInput>;
+        children?: Maybe<NodeFilterListInput>;
+        internal?: Maybe<InternalFilterInput>;
+        company?: Maybe<DataJsonCompanyFilterInput>;
+        contacts?: Maybe<DataJsonContactsFilterListInput>;
+        jobTitle?: Maybe<StringQueryOperatorInput>;
+        location?: Maybe<DataJsonLocationFilterInput>;
+        openToGigs?: Maybe<BooleanQueryOperatorInput>;
+        resumeFile?: Maybe<StringQueryOperatorInput>;
+    };
+
+    type QueryAllDataJsonArgs = {
+        filter?: Maybe<DataJsonFilterInput>;
+        sort?: Maybe<DataJsonSortInput>;
         skip?: Maybe<Scalars['Int']>;
         limit?: Maybe<Scalars['Int']>;
     };
@@ -2788,8 +2618,12 @@ declare module GraphQL {
         InternalType = 'internal___type',
         SiteMetadataAuthor = 'siteMetadata___author',
         SiteMetadataDescription = 'siteMetadata___description',
+        SiteMetadataLicense = 'siteMetadata___license',
+        SiteMetadataRepositoryType = 'siteMetadata___repository___type',
+        SiteMetadataRepositoryUrl = 'siteMetadata___repository___url',
         SiteMetadataTitle = 'siteMetadata___title',
         SiteMetadataSiteUrl = 'siteMetadata___siteUrl',
+        SiteMetadataVersion = 'siteMetadata___version',
         Port = 'port',
         Host = 'host',
         Polyfill = 'polyfill',
@@ -3517,15 +3351,32 @@ declare module GraphQL {
         __typename?: 'SiteSiteMetadata';
         author?: Maybe<Scalars['String']>;
         description?: Maybe<Scalars['String']>;
+        license?: Maybe<Scalars['String']>;
+        repository?: Maybe<SiteSiteMetadataRepository>;
         title?: Maybe<Scalars['String']>;
         siteUrl?: Maybe<Scalars['String']>;
+        version?: Maybe<Scalars['String']>;
     };
 
     type SiteSiteMetadataFilterInput = {
         author?: Maybe<StringQueryOperatorInput>;
         description?: Maybe<StringQueryOperatorInput>;
+        license?: Maybe<StringQueryOperatorInput>;
+        repository?: Maybe<SiteSiteMetadataRepositoryFilterInput>;
         title?: Maybe<StringQueryOperatorInput>;
         siteUrl?: Maybe<StringQueryOperatorInput>;
+        version?: Maybe<StringQueryOperatorInput>;
+    };
+
+    type SiteSiteMetadataRepository = {
+        __typename?: 'SiteSiteMetadataRepository';
+        type?: Maybe<Scalars['String']>;
+        url?: Maybe<Scalars['String']>;
+    };
+
+    type SiteSiteMetadataRepositoryFilterInput = {
+        type?: Maybe<StringQueryOperatorInput>;
+        url?: Maybe<StringQueryOperatorInput>;
     };
 
     type SiteSortInput = {
@@ -3706,524 +3557,6 @@ declare module GraphQL {
         order?: Maybe<Array<Maybe<SortOrderEnum>>>;
     };
 
-    type WatashinoJson = Node & {
-        __typename?: 'WatashinoJson';
-        id: Scalars['ID'];
-        parent?: Maybe<Node>;
-        children: Array<Node>;
-        internal: Internal;
-        name?: Maybe<Scalars['String']>;
-        version?: Maybe<Scalars['String']>;
-        private?: Maybe<Scalars['Boolean']>;
-        description?: Maybe<Scalars['String']>;
-        keywords?: Maybe<Array<Maybe<Scalars['String']>>>;
-        homepage?: Maybe<Scalars['String']>;
-        bugs?: Maybe<WatashinoJsonBugs>;
-        repository?: Maybe<WatashinoJsonRepository>;
-        license?: Maybe<Scalars['String']>;
-        author?: Maybe<Scalars['String']>;
-        files?: Maybe<Array<Maybe<Scalars['String']>>>;
-        scripts?: Maybe<WatashinoJsonScripts>;
-        husky?: Maybe<WatashinoJsonHusky>;
-        commitlint?: Maybe<WatashinoJsonCommitlint>;
-        jest?: Maybe<WatashinoJsonJest>;
-        dependencies?: Maybe<WatashinoJsonDependencies>;
-        devDependencies?: Maybe<WatashinoJsonDevDependencies>;
-        engines?: Maybe<WatashinoJsonEngines>;
-    };
-
-    type WatashinoJsonBugs = {
-        __typename?: 'WatashinoJsonBugs';
-        url?: Maybe<Scalars['String']>;
-    };
-
-    type WatashinoJsonBugsFilterInput = {
-        url?: Maybe<StringQueryOperatorInput>;
-    };
-
-    type WatashinoJsonCommitlint = {
-        __typename?: 'WatashinoJsonCommitlint';
-        extends?: Maybe<Array<Maybe<Scalars['String']>>>;
-    };
-
-    type WatashinoJsonCommitlintFilterInput = {
-        extends?: Maybe<StringQueryOperatorInput>;
-    };
-
-    type WatashinoJsonConnection = {
-        __typename?: 'WatashinoJsonConnection';
-        totalCount: Scalars['Int'];
-        edges: Array<WatashinoJsonEdge>;
-        nodes: Array<WatashinoJson>;
-        pageInfo: PageInfo;
-        distinct: Array<Scalars['String']>;
-        group: Array<WatashinoJsonGroupConnection>;
-    };
-
-    type WatashinoJsonConnectionDistinctArgs = {
-        field: WatashinoJsonFieldsEnum;
-    };
-
-    type WatashinoJsonConnectionGroupArgs = {
-        skip?: Maybe<Scalars['Int']>;
-        limit?: Maybe<Scalars['Int']>;
-        field: WatashinoJsonFieldsEnum;
-    };
-
-    type WatashinoJsonDependencies = {
-        __typename?: 'WatashinoJsonDependencies';
-        _react_google_maps_api?: Maybe<Scalars['String']>;
-        gatsby?: Maybe<Scalars['String']>;
-        gatsby_image?: Maybe<Scalars['String']>;
-        gatsby_plugin_google_fonts?: Maybe<Scalars['String']>;
-        gatsby_plugin_manifest?: Maybe<Scalars['String']>;
-        gatsby_plugin_react_helmet?: Maybe<Scalars['String']>;
-        gatsby_plugin_robots_txt?: Maybe<Scalars['String']>;
-        gatsby_plugin_sharp?: Maybe<Scalars['String']>;
-        gatsby_plugin_sitemap?: Maybe<Scalars['String']>;
-        gatsby_plugin_styled_components?: Maybe<Scalars['String']>;
-        gatsby_plugin_typescript?: Maybe<Scalars['String']>;
-        gatsby_remark_images?: Maybe<Scalars['String']>;
-        gatsby_remark_vscode?: Maybe<Scalars['String']>;
-        gatsby_source_filesystem?: Maybe<Scalars['String']>;
-        gatsby_transformer_json?: Maybe<Scalars['String']>;
-        gatsby_transformer_remark?: Maybe<Scalars['String']>;
-        gatsby_transformer_sharp?: Maybe<Scalars['String']>;
-        react?: Maybe<Scalars['String']>;
-        react_dom?: Maybe<Scalars['String']>;
-        react_helmet?: Maybe<Scalars['String']>;
-        rehype_react?: Maybe<Scalars['String']>;
-        styled_components?: Maybe<Scalars['String']>;
-        styled_system?: Maybe<Scalars['String']>;
-    };
-
-    type WatashinoJsonDependenciesFilterInput = {
-        _react_google_maps_api?: Maybe<StringQueryOperatorInput>;
-        gatsby?: Maybe<StringQueryOperatorInput>;
-        gatsby_image?: Maybe<StringQueryOperatorInput>;
-        gatsby_plugin_google_fonts?: Maybe<StringQueryOperatorInput>;
-        gatsby_plugin_manifest?: Maybe<StringQueryOperatorInput>;
-        gatsby_plugin_react_helmet?: Maybe<StringQueryOperatorInput>;
-        gatsby_plugin_robots_txt?: Maybe<StringQueryOperatorInput>;
-        gatsby_plugin_sharp?: Maybe<StringQueryOperatorInput>;
-        gatsby_plugin_sitemap?: Maybe<StringQueryOperatorInput>;
-        gatsby_plugin_styled_components?: Maybe<StringQueryOperatorInput>;
-        gatsby_plugin_typescript?: Maybe<StringQueryOperatorInput>;
-        gatsby_remark_images?: Maybe<StringQueryOperatorInput>;
-        gatsby_remark_vscode?: Maybe<StringQueryOperatorInput>;
-        gatsby_source_filesystem?: Maybe<StringQueryOperatorInput>;
-        gatsby_transformer_json?: Maybe<StringQueryOperatorInput>;
-        gatsby_transformer_remark?: Maybe<StringQueryOperatorInput>;
-        gatsby_transformer_sharp?: Maybe<StringQueryOperatorInput>;
-        react?: Maybe<StringQueryOperatorInput>;
-        react_dom?: Maybe<StringQueryOperatorInput>;
-        react_helmet?: Maybe<StringQueryOperatorInput>;
-        rehype_react?: Maybe<StringQueryOperatorInput>;
-        styled_components?: Maybe<StringQueryOperatorInput>;
-        styled_system?: Maybe<StringQueryOperatorInput>;
-    };
-
-    type WatashinoJsonDevDependencies = {
-        __typename?: 'WatashinoJsonDevDependencies';
-        _babel_preset_typescript?: Maybe<Scalars['String']>;
-        _commitlint_cli?: Maybe<Scalars['String']>;
-        _commitlint_config_conventional?: Maybe<Scalars['String']>;
-        _graphql_codegen_add?: Maybe<Scalars['String']>;
-        _graphql_codegen_cli?: Maybe<Scalars['String']>;
-        _graphql_codegen_typescript?: Maybe<Scalars['String']>;
-        _graphql_codegen_typescript_operations?: Maybe<Scalars['String']>;
-        _kobionic_eslint_config_typescript_react?: Maybe<Scalars['String']>;
-        _types_jest?: Maybe<Scalars['String']>;
-        _types_react?: Maybe<Scalars['String']>;
-        _types_react_dom?: Maybe<Scalars['String']>;
-        _types_react_helmet?: Maybe<Scalars['String']>;
-        _types_react_test_renderer?: Maybe<Scalars['String']>;
-        _types_rehype_react?: Maybe<Scalars['String']>;
-        _types_styled_components?: Maybe<Scalars['String']>;
-        _types_styled_system?: Maybe<Scalars['String']>;
-        babel_jest?: Maybe<Scalars['String']>;
-        babel_plugin_styled_components?: Maybe<Scalars['String']>;
-        babel_preset_gatsby?: Maybe<Scalars['String']>;
-        eslint?: Maybe<Scalars['String']>;
-        eslint_plugin_react?: Maybe<Scalars['String']>;
-        graphql?: Maybe<Scalars['String']>;
-        husky?: Maybe<Scalars['String']>;
-        jest?: Maybe<Scalars['String']>;
-        jest_styled_components?: Maybe<Scalars['String']>;
-        npm_run_all?: Maybe<Scalars['String']>;
-        prettier?: Maybe<Scalars['String']>;
-        react_test_renderer?: Maybe<Scalars['String']>;
-        rimraf?: Maybe<Scalars['String']>;
-        ts_jest?: Maybe<Scalars['String']>;
-        typescript?: Maybe<Scalars['String']>;
-    };
-
-    type WatashinoJsonDevDependenciesFilterInput = {
-        _babel_preset_typescript?: Maybe<StringQueryOperatorInput>;
-        _commitlint_cli?: Maybe<StringQueryOperatorInput>;
-        _commitlint_config_conventional?: Maybe<StringQueryOperatorInput>;
-        _graphql_codegen_add?: Maybe<StringQueryOperatorInput>;
-        _graphql_codegen_cli?: Maybe<StringQueryOperatorInput>;
-        _graphql_codegen_typescript?: Maybe<StringQueryOperatorInput>;
-        _graphql_codegen_typescript_operations?: Maybe<StringQueryOperatorInput>;
-        _kobionic_eslint_config_typescript_react?: Maybe<StringQueryOperatorInput>;
-        _types_jest?: Maybe<StringQueryOperatorInput>;
-        _types_react?: Maybe<StringQueryOperatorInput>;
-        _types_react_dom?: Maybe<StringQueryOperatorInput>;
-        _types_react_helmet?: Maybe<StringQueryOperatorInput>;
-        _types_react_test_renderer?: Maybe<StringQueryOperatorInput>;
-        _types_rehype_react?: Maybe<StringQueryOperatorInput>;
-        _types_styled_components?: Maybe<StringQueryOperatorInput>;
-        _types_styled_system?: Maybe<StringQueryOperatorInput>;
-        babel_jest?: Maybe<StringQueryOperatorInput>;
-        babel_plugin_styled_components?: Maybe<StringQueryOperatorInput>;
-        babel_preset_gatsby?: Maybe<StringQueryOperatorInput>;
-        eslint?: Maybe<StringQueryOperatorInput>;
-        eslint_plugin_react?: Maybe<StringQueryOperatorInput>;
-        graphql?: Maybe<StringQueryOperatorInput>;
-        husky?: Maybe<StringQueryOperatorInput>;
-        jest?: Maybe<StringQueryOperatorInput>;
-        jest_styled_components?: Maybe<StringQueryOperatorInput>;
-        npm_run_all?: Maybe<StringQueryOperatorInput>;
-        prettier?: Maybe<StringQueryOperatorInput>;
-        react_test_renderer?: Maybe<StringQueryOperatorInput>;
-        rimraf?: Maybe<StringQueryOperatorInput>;
-        ts_jest?: Maybe<StringQueryOperatorInput>;
-        typescript?: Maybe<StringQueryOperatorInput>;
-    };
-
-    type WatashinoJsonEdge = {
-        __typename?: 'WatashinoJsonEdge';
-        next?: Maybe<WatashinoJson>;
-        node: WatashinoJson;
-        previous?: Maybe<WatashinoJson>;
-    };
-
-    type WatashinoJsonEngines = {
-        __typename?: 'WatashinoJsonEngines';
-        node?: Maybe<Scalars['String']>;
-    };
-
-    type WatashinoJsonEnginesFilterInput = {
-        node?: Maybe<StringQueryOperatorInput>;
-    };
-
-    enum WatashinoJsonFieldsEnum {
-        Id = 'id',
-        ParentId = 'parent___id',
-        ParentParentId = 'parent___parent___id',
-        ParentParentParentId = 'parent___parent___parent___id',
-        ParentParentParentChildren = 'parent___parent___parent___children',
-        ParentParentChildren = 'parent___parent___children',
-        ParentParentChildrenId = 'parent___parent___children___id',
-        ParentParentChildrenChildren = 'parent___parent___children___children',
-        ParentParentInternalContent = 'parent___parent___internal___content',
-        ParentParentInternalContentDigest = 'parent___parent___internal___contentDigest',
-        ParentParentInternalDescription = 'parent___parent___internal___description',
-        ParentParentInternalFieldOwners = 'parent___parent___internal___fieldOwners',
-        ParentParentInternalIgnoreType = 'parent___parent___internal___ignoreType',
-        ParentParentInternalMediaType = 'parent___parent___internal___mediaType',
-        ParentParentInternalOwner = 'parent___parent___internal___owner',
-        ParentParentInternalType = 'parent___parent___internal___type',
-        ParentChildren = 'parent___children',
-        ParentChildrenId = 'parent___children___id',
-        ParentChildrenParentId = 'parent___children___parent___id',
-        ParentChildrenParentChildren = 'parent___children___parent___children',
-        ParentChildrenChildren = 'parent___children___children',
-        ParentChildrenChildrenId = 'parent___children___children___id',
-        ParentChildrenChildrenChildren = 'parent___children___children___children',
-        ParentChildrenInternalContent = 'parent___children___internal___content',
-        ParentChildrenInternalContentDigest = 'parent___children___internal___contentDigest',
-        ParentChildrenInternalDescription = 'parent___children___internal___description',
-        ParentChildrenInternalFieldOwners = 'parent___children___internal___fieldOwners',
-        ParentChildrenInternalIgnoreType = 'parent___children___internal___ignoreType',
-        ParentChildrenInternalMediaType = 'parent___children___internal___mediaType',
-        ParentChildrenInternalOwner = 'parent___children___internal___owner',
-        ParentChildrenInternalType = 'parent___children___internal___type',
-        ParentInternalContent = 'parent___internal___content',
-        ParentInternalContentDigest = 'parent___internal___contentDigest',
-        ParentInternalDescription = 'parent___internal___description',
-        ParentInternalFieldOwners = 'parent___internal___fieldOwners',
-        ParentInternalIgnoreType = 'parent___internal___ignoreType',
-        ParentInternalMediaType = 'parent___internal___mediaType',
-        ParentInternalOwner = 'parent___internal___owner',
-        ParentInternalType = 'parent___internal___type',
-        Children = 'children',
-        ChildrenId = 'children___id',
-        ChildrenParentId = 'children___parent___id',
-        ChildrenParentParentId = 'children___parent___parent___id',
-        ChildrenParentParentChildren = 'children___parent___parent___children',
-        ChildrenParentChildren = 'children___parent___children',
-        ChildrenParentChildrenId = 'children___parent___children___id',
-        ChildrenParentChildrenChildren = 'children___parent___children___children',
-        ChildrenParentInternalContent = 'children___parent___internal___content',
-        ChildrenParentInternalContentDigest = 'children___parent___internal___contentDigest',
-        ChildrenParentInternalDescription = 'children___parent___internal___description',
-        ChildrenParentInternalFieldOwners = 'children___parent___internal___fieldOwners',
-        ChildrenParentInternalIgnoreType = 'children___parent___internal___ignoreType',
-        ChildrenParentInternalMediaType = 'children___parent___internal___mediaType',
-        ChildrenParentInternalOwner = 'children___parent___internal___owner',
-        ChildrenParentInternalType = 'children___parent___internal___type',
-        ChildrenChildren = 'children___children',
-        ChildrenChildrenId = 'children___children___id',
-        ChildrenChildrenParentId = 'children___children___parent___id',
-        ChildrenChildrenParentChildren = 'children___children___parent___children',
-        ChildrenChildrenChildren = 'children___children___children',
-        ChildrenChildrenChildrenId = 'children___children___children___id',
-        ChildrenChildrenChildrenChildren = 'children___children___children___children',
-        ChildrenChildrenInternalContent = 'children___children___internal___content',
-        ChildrenChildrenInternalContentDigest = 'children___children___internal___contentDigest',
-        ChildrenChildrenInternalDescription = 'children___children___internal___description',
-        ChildrenChildrenInternalFieldOwners = 'children___children___internal___fieldOwners',
-        ChildrenChildrenInternalIgnoreType = 'children___children___internal___ignoreType',
-        ChildrenChildrenInternalMediaType = 'children___children___internal___mediaType',
-        ChildrenChildrenInternalOwner = 'children___children___internal___owner',
-        ChildrenChildrenInternalType = 'children___children___internal___type',
-        ChildrenInternalContent = 'children___internal___content',
-        ChildrenInternalContentDigest = 'children___internal___contentDigest',
-        ChildrenInternalDescription = 'children___internal___description',
-        ChildrenInternalFieldOwners = 'children___internal___fieldOwners',
-        ChildrenInternalIgnoreType = 'children___internal___ignoreType',
-        ChildrenInternalMediaType = 'children___internal___mediaType',
-        ChildrenInternalOwner = 'children___internal___owner',
-        ChildrenInternalType = 'children___internal___type',
-        InternalContent = 'internal___content',
-        InternalContentDigest = 'internal___contentDigest',
-        InternalDescription = 'internal___description',
-        InternalFieldOwners = 'internal___fieldOwners',
-        InternalIgnoreType = 'internal___ignoreType',
-        InternalMediaType = 'internal___mediaType',
-        InternalOwner = 'internal___owner',
-        InternalType = 'internal___type',
-        Name = 'name',
-        Version = 'version',
-        Private = 'private',
-        Description = 'description',
-        Keywords = 'keywords',
-        Homepage = 'homepage',
-        BugsUrl = 'bugs___url',
-        RepositoryType = 'repository___type',
-        RepositoryUrl = 'repository___url',
-        License = 'license',
-        Author = 'author',
-        Files = 'files',
-        ScriptsBuild = 'scripts___build',
-        ScriptsClean = 'scripts___clean',
-        ScriptsCompile = 'scripts___compile',
-        ScriptsCompileTypings = 'scripts___compile_typings',
-        ScriptsLint = 'scripts___lint',
-        ScriptsStart = 'scripts___start',
-        ScriptsStartW = 'scripts___start_w',
-        ScriptsTest = 'scripts___test',
-        ScriptsTestCc = 'scripts___test_cc',
-        ScriptsVersion = 'scripts___version',
-        HuskyHooksCommitMsg = 'husky___hooks___commit_msg',
-        CommitlintExtends = 'commitlint___extends',
-        JestCollectCoverage = 'jest___collectCoverage',
-        JestCollectCoverageFrom = 'jest___collectCoverageFrom',
-        JestGlobalsXPatHxPrefiXxx = 'jest___globals____xPATHxPREFIXxx',
-        JestSetupFiles = 'jest___setupFiles',
-        JestTestPathIgnorePatterns = 'jest___testPathIgnorePatterns',
-        JestTransformXxxxjsxxx = 'jest___transform____xxxxjsxxx',
-        JestTransformXxxxtsxxx = 'jest___transform____xxxxtsxxx',
-        JestTransformIgnorePatterns = 'jest___transformIgnorePatterns',
-        JestVerbose = 'jest___verbose',
-        DependenciesReactGoogleMapsApi = 'dependencies____react_google_maps_api',
-        DependenciesGatsby = 'dependencies___gatsby',
-        DependenciesGatsbyImage = 'dependencies___gatsby_image',
-        DependenciesGatsbyPluginGoogleFonts = 'dependencies___gatsby_plugin_google_fonts',
-        DependenciesGatsbyPluginManifest = 'dependencies___gatsby_plugin_manifest',
-        DependenciesGatsbyPluginReactHelmet = 'dependencies___gatsby_plugin_react_helmet',
-        DependenciesGatsbyPluginRobotsTxt = 'dependencies___gatsby_plugin_robots_txt',
-        DependenciesGatsbyPluginSharp = 'dependencies___gatsby_plugin_sharp',
-        DependenciesGatsbyPluginSitemap = 'dependencies___gatsby_plugin_sitemap',
-        DependenciesGatsbyPluginStyledComponents = 'dependencies___gatsby_plugin_styled_components',
-        DependenciesGatsbyPluginTypescript = 'dependencies___gatsby_plugin_typescript',
-        DependenciesGatsbyRemarkImages = 'dependencies___gatsby_remark_images',
-        DependenciesGatsbyRemarkVscode = 'dependencies___gatsby_remark_vscode',
-        DependenciesGatsbySourceFilesystem = 'dependencies___gatsby_source_filesystem',
-        DependenciesGatsbyTransformerJson = 'dependencies___gatsby_transformer_json',
-        DependenciesGatsbyTransformerRemark = 'dependencies___gatsby_transformer_remark',
-        DependenciesGatsbyTransformerSharp = 'dependencies___gatsby_transformer_sharp',
-        DependenciesReact = 'dependencies___react',
-        DependenciesReactDom = 'dependencies___react_dom',
-        DependenciesReactHelmet = 'dependencies___react_helmet',
-        DependenciesRehypeReact = 'dependencies___rehype_react',
-        DependenciesStyledComponents = 'dependencies___styled_components',
-        DependenciesStyledSystem = 'dependencies___styled_system',
-        DevDependenciesBabelPresetTypescript = 'devDependencies____babel_preset_typescript',
-        DevDependenciesCommitlintCli = 'devDependencies____commitlint_cli',
-        DevDependenciesCommitlintConfigConventional = 'devDependencies____commitlint_config_conventional',
-        DevDependenciesGraphqlCodegenAdd = 'devDependencies____graphql_codegen_add',
-        DevDependenciesGraphqlCodegenCli = 'devDependencies____graphql_codegen_cli',
-        DevDependenciesGraphqlCodegenTypescript = 'devDependencies____graphql_codegen_typescript',
-        DevDependenciesGraphqlCodegenTypescriptOperations = 'devDependencies____graphql_codegen_typescript_operations',
-        DevDependenciesKobionicEslintConfigTypescriptReact = 'devDependencies____kobionic_eslint_config_typescript_react',
-        DevDependenciesTypesJest = 'devDependencies____types_jest',
-        DevDependenciesTypesReact = 'devDependencies____types_react',
-        DevDependenciesTypesReactDom = 'devDependencies____types_react_dom',
-        DevDependenciesTypesReactHelmet = 'devDependencies____types_react_helmet',
-        DevDependenciesTypesReactTestRenderer = 'devDependencies____types_react_test_renderer',
-        DevDependenciesTypesRehypeReact = 'devDependencies____types_rehype_react',
-        DevDependenciesTypesStyledComponents = 'devDependencies____types_styled_components',
-        DevDependenciesTypesStyledSystem = 'devDependencies____types_styled_system',
-        DevDependenciesBabelJest = 'devDependencies___babel_jest',
-        DevDependenciesBabelPluginStyledComponents = 'devDependencies___babel_plugin_styled_components',
-        DevDependenciesBabelPresetGatsby = 'devDependencies___babel_preset_gatsby',
-        DevDependenciesEslint = 'devDependencies___eslint',
-        DevDependenciesEslintPluginReact = 'devDependencies___eslint_plugin_react',
-        DevDependenciesGraphql = 'devDependencies___graphql',
-        DevDependenciesHusky = 'devDependencies___husky',
-        DevDependenciesJest = 'devDependencies___jest',
-        DevDependenciesJestStyledComponents = 'devDependencies___jest_styled_components',
-        DevDependenciesNpmRunAll = 'devDependencies___npm_run_all',
-        DevDependenciesPrettier = 'devDependencies___prettier',
-        DevDependenciesReactTestRenderer = 'devDependencies___react_test_renderer',
-        DevDependenciesRimraf = 'devDependencies___rimraf',
-        DevDependenciesTsJest = 'devDependencies___ts_jest',
-        DevDependenciesTypescript = 'devDependencies___typescript',
-        EnginesNode = 'engines___node',
-    }
-
-    type WatashinoJsonFilterInput = {
-        id?: Maybe<StringQueryOperatorInput>;
-        parent?: Maybe<NodeFilterInput>;
-        children?: Maybe<NodeFilterListInput>;
-        internal?: Maybe<InternalFilterInput>;
-        name?: Maybe<StringQueryOperatorInput>;
-        version?: Maybe<StringQueryOperatorInput>;
-        private?: Maybe<BooleanQueryOperatorInput>;
-        description?: Maybe<StringQueryOperatorInput>;
-        keywords?: Maybe<StringQueryOperatorInput>;
-        homepage?: Maybe<StringQueryOperatorInput>;
-        bugs?: Maybe<WatashinoJsonBugsFilterInput>;
-        repository?: Maybe<WatashinoJsonRepositoryFilterInput>;
-        license?: Maybe<StringQueryOperatorInput>;
-        author?: Maybe<StringQueryOperatorInput>;
-        files?: Maybe<StringQueryOperatorInput>;
-        scripts?: Maybe<WatashinoJsonScriptsFilterInput>;
-        husky?: Maybe<WatashinoJsonHuskyFilterInput>;
-        commitlint?: Maybe<WatashinoJsonCommitlintFilterInput>;
-        jest?: Maybe<WatashinoJsonJestFilterInput>;
-        dependencies?: Maybe<WatashinoJsonDependenciesFilterInput>;
-        devDependencies?: Maybe<WatashinoJsonDevDependenciesFilterInput>;
-        engines?: Maybe<WatashinoJsonEnginesFilterInput>;
-    };
-
-    type WatashinoJsonGroupConnection = {
-        __typename?: 'WatashinoJsonGroupConnection';
-        totalCount: Scalars['Int'];
-        edges: Array<WatashinoJsonEdge>;
-        nodes: Array<WatashinoJson>;
-        pageInfo: PageInfo;
-        field: Scalars['String'];
-        fieldValue?: Maybe<Scalars['String']>;
-    };
-
-    type WatashinoJsonHusky = {
-        __typename?: 'WatashinoJsonHusky';
-        hooks?: Maybe<WatashinoJsonHuskyHooks>;
-    };
-
-    type WatashinoJsonHuskyFilterInput = {
-        hooks?: Maybe<WatashinoJsonHuskyHooksFilterInput>;
-    };
-
-    type WatashinoJsonHuskyHooks = {
-        __typename?: 'WatashinoJsonHuskyHooks';
-        commit_msg?: Maybe<Scalars['String']>;
-    };
-
-    type WatashinoJsonHuskyHooksFilterInput = {
-        commit_msg?: Maybe<StringQueryOperatorInput>;
-    };
-
-    type WatashinoJsonJest = {
-        __typename?: 'WatashinoJsonJest';
-        collectCoverage?: Maybe<Scalars['Boolean']>;
-        collectCoverageFrom?: Maybe<Array<Maybe<Scalars['String']>>>;
-        globals?: Maybe<WatashinoJsonJestGlobals>;
-        setupFiles?: Maybe<Array<Maybe<Scalars['String']>>>;
-        testPathIgnorePatterns?: Maybe<Array<Maybe<Scalars['String']>>>;
-        transform?: Maybe<WatashinoJsonJestTransform>;
-        transformIgnorePatterns?: Maybe<Array<Maybe<Scalars['String']>>>;
-        verbose?: Maybe<Scalars['Boolean']>;
-    };
-
-    type WatashinoJsonJestFilterInput = {
-        collectCoverage?: Maybe<BooleanQueryOperatorInput>;
-        collectCoverageFrom?: Maybe<StringQueryOperatorInput>;
-        globals?: Maybe<WatashinoJsonJestGlobalsFilterInput>;
-        setupFiles?: Maybe<StringQueryOperatorInput>;
-        testPathIgnorePatterns?: Maybe<StringQueryOperatorInput>;
-        transform?: Maybe<WatashinoJsonJestTransformFilterInput>;
-        transformIgnorePatterns?: Maybe<StringQueryOperatorInput>;
-        verbose?: Maybe<BooleanQueryOperatorInput>;
-    };
-
-    type WatashinoJsonJestGlobals = {
-        __typename?: 'WatashinoJsonJestGlobals';
-        _xPATHxPREFIXxx?: Maybe<Scalars['String']>;
-    };
-
-    type WatashinoJsonJestGlobalsFilterInput = {
-        _xPATHxPREFIXxx?: Maybe<StringQueryOperatorInput>;
-    };
-
-    type WatashinoJsonJestTransform = {
-        __typename?: 'WatashinoJsonJestTransform';
-        _xxxxjsxxx?: Maybe<Scalars['String']>;
-        _xxxxtsxxx?: Maybe<Scalars['String']>;
-    };
-
-    type WatashinoJsonJestTransformFilterInput = {
-        _xxxxjsxxx?: Maybe<StringQueryOperatorInput>;
-        _xxxxtsxxx?: Maybe<StringQueryOperatorInput>;
-    };
-
-    type WatashinoJsonRepository = {
-        __typename?: 'WatashinoJsonRepository';
-        type?: Maybe<Scalars['String']>;
-        url?: Maybe<Scalars['String']>;
-    };
-
-    type WatashinoJsonRepositoryFilterInput = {
-        type?: Maybe<StringQueryOperatorInput>;
-        url?: Maybe<StringQueryOperatorInput>;
-    };
-
-    type WatashinoJsonScripts = {
-        __typename?: 'WatashinoJsonScripts';
-        build?: Maybe<Scalars['String']>;
-        clean?: Maybe<Scalars['String']>;
-        compile?: Maybe<Scalars['String']>;
-        compile_typings?: Maybe<Scalars['String']>;
-        lint?: Maybe<Scalars['String']>;
-        start?: Maybe<Scalars['String']>;
-        start_w?: Maybe<Scalars['String']>;
-        test?: Maybe<Scalars['String']>;
-        test_cc?: Maybe<Scalars['String']>;
-        version?: Maybe<Scalars['String']>;
-    };
-
-    type WatashinoJsonScriptsFilterInput = {
-        build?: Maybe<StringQueryOperatorInput>;
-        clean?: Maybe<StringQueryOperatorInput>;
-        compile?: Maybe<StringQueryOperatorInput>;
-        compile_typings?: Maybe<StringQueryOperatorInput>;
-        lint?: Maybe<StringQueryOperatorInput>;
-        start?: Maybe<StringQueryOperatorInput>;
-        start_w?: Maybe<StringQueryOperatorInput>;
-        test?: Maybe<StringQueryOperatorInput>;
-        test_cc?: Maybe<StringQueryOperatorInput>;
-        version?: Maybe<StringQueryOperatorInput>;
-    };
-
-    type WatashinoJsonSortInput = {
-        fields?: Maybe<Array<Maybe<WatashinoJsonFieldsEnum>>>;
-        order?: Maybe<Array<Maybe<SortOrderEnum>>>;
-    };
-
     type GatsbyImageSharpFixedFragment = { __typename?: 'ImageSharpFixed' } & Pick<
         ImageSharpFixed,
         'base64' | 'width' | 'height' | 'src' | 'srcSet'
@@ -4359,12 +3692,16 @@ declare module GraphQL {
     type FooterDataQueryVariables = {};
 
     type FooterDataQuery = { __typename?: 'Query' } & {
-        packageJson: Maybe<
-            { __typename?: 'WatashinoJson' } & Pick<WatashinoJson, 'license' | 'version'> & {
-                    repository: Maybe<
-                        { __typename?: 'WatashinoJsonRepository' } & Pick<WatashinoJsonRepository, 'url'>
-                    >;
-                }
+        site: Maybe<
+            { __typename?: 'Site' } & {
+                siteMetadata: Maybe<
+                    { __typename?: 'SiteSiteMetadata' } & Pick<SiteSiteMetadata, 'license' | 'version'> & {
+                            repository: Maybe<
+                                { __typename?: 'SiteSiteMetadataRepository' } & Pick<SiteSiteMetadataRepository, 'url'>
+                            >;
+                        }
+                >;
+            }
         >;
     };
 

@@ -5,15 +5,19 @@ import Box from '../../primitives/Box';
 
 const Footer = () => {
     const {
-        packageJson: { license, repository, version },
+        site: {
+            siteMetadata: { license, repository, version },
+        },
     } = useStaticQuery<GraphQL.FooterDataQuery>(graphql`
         query FooterData {
-            packageJson: watashinoJson {
-                license
-                repository {
-                    url
+            site {
+                siteMetadata {
+                    license
+                    repository {
+                        url
+                    }
+                    version
                 }
-                version
             }
         }
     `);
