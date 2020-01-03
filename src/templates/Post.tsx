@@ -6,7 +6,7 @@ import PreviousNextNavigation from '../components/common/PreviousNextNavigation'
 import Layout from '../components/core/Layout';
 import Flex from '../components/primitives/Flex';
 import Text from '../components/primitives/Text';
-import theme, { Theme } from '../theme';
+import { colors, Theme } from '../theme';
 import { getMonthAndDay } from '../utils/Date';
 import { renderASTToJSX } from '../utils/HTML';
 
@@ -52,12 +52,7 @@ const Post = ({ data, pageContext }: PostProps) => {
                 >
                     <Chips flexWrap="wrap" justifyContent="center">
                         {keywords.map(keyword => (
-                            <Chip
-                                color={theme.colors.primary}
-                                key={keyword}
-                                marginBottom={{ _: 2, tablet: 0 }}
-                                marginX={1}
-                            >
+                            <Chip color={colors.primary} key={keyword} marginBottom={{ _: 2, tablet: 0 }} marginX={1}>
                                 {keyword}
                             </Chip>
                         ))}

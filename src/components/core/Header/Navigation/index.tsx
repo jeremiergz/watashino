@@ -8,6 +8,7 @@ import BookIcon from '../../../svg/Book';
 import DownloadIcon from '../../../svg/Download';
 import HouseIcon from '../../../svg/House';
 import MoodIcon from '../../../svg/Mood';
+import styled from 'styled-components';
 
 const iconsMapping = {
     book: BookIcon,
@@ -20,6 +21,10 @@ const LinkContainer = ({ children, ...rest }: { children: ReactNode }) => (
         {children}
     </Flex>
 );
+
+const Svg = styled(Box)`
+    fill: ${({ theme }) => theme.svg};
+`;
 
 const Navigation = () => {
     const {
@@ -50,14 +55,14 @@ const Navigation = () => {
                 .map(link => (
                     <LinkContainer key={link.name}>
                         <Link alignItems="center" display="flex" flexDirection="column" partiallyActive to={link.to}>
-                            <Box as={iconsMapping[link.icon]} height={32} width={32} />
+                            <Svg as={iconsMapping[link.icon]} height={32} width={32} />
                             {link.name}
                         </Link>
                     </LinkContainer>
                 ))}
             <LinkContainer>
                 <Anchor alignItems="center" display="flex" download flexDirection="column" href={resumeFile}>
-                    <Box as={DownloadIcon} height={32} width={32} />
+                    <Svg as={DownloadIcon} height={32} width={32} />
                     Resume
                 </Anchor>
             </LinkContainer>

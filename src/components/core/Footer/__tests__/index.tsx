@@ -3,7 +3,7 @@ import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 import Footer from '..';
-import theme from '../../../../theme';
+import { DarkTheme } from '../../../../theme';
 
 describe('components/Footer Test Suite', () => {
     beforeAll(() => {
@@ -19,7 +19,7 @@ describe('components/Footer Test Suite', () => {
 
     it('matches snapshot', () => {
         const jsx = (
-            <ThemeProvider theme={theme}>
+            <ThemeProvider theme={DarkTheme}>
                 <Footer />
             </ThemeProvider>
         );

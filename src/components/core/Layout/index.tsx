@@ -1,23 +1,25 @@
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, useState } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import theme from '../../../theme';
+import { DarkTheme, LightTheme, Theme } from '../../../theme';
 import Box from '../../primitives/Box';
 import Footer from '../Footer';
 import Header from '../Header';
+import ThemeToggle from '../ThemeToggle';
 import Content from './Content';
 
 type LayoutProps = HTMLAttributes<HTMLDivElement>;
 
 const GlobalStyle = createGlobalStyle`
     html, body {
+        background-color: ${({ theme }: { theme: Theme }) => theme.background};
         height: 100%;
         width: 100%;
         margin: 0;
         padding: 0;
         > * {
-            color: ${theme.colors.text};
-            font-family: ${theme.fonts.main};
-            font-weight: ${theme.fontWeights.regular};
+            color: ${({ theme }: { theme: Theme }) => theme.colors.text};
+            font-family: ${({ theme }: { theme: Theme }) => theme.fonts.main};
+            font-weight: ${({ theme }: { theme: Theme }) => theme.fontWeights.regular};
         }
     }
     #___gatsby {
@@ -32,25 +34,35 @@ const GlobalStyle = createGlobalStyle`
     }
 `;
 
-const Layout = ({ children }: LayoutProps) => (
-    <ThemeProvider theme={theme}>
-        <>
-            <Header />
-            <Box
-                as="main"
-                margin="auto"
-                maxWidth={theme.breakpoints[3]}
-                paddingBottom={{ _: 78, tablet: 108 }}
-                paddingX={{ _: 16, tablet: 32 }}
-                textAlign="center"
-            >
-                {children}
-            </Box>
-            <Footer />
-            <GlobalStyle />
-        </>
-    </ThemeProvider>
-);
+const Layout = ({ children }: LayoutProps) => {
+    const storedTheme = (localStorage.getItem('theme') as ThemeType) || 'light';
+    const [theme, setTheme] = useState<ThemeType>(storedTheme);
+    const saveTheme = (type: ThemeType) => {
+        setTheme(type);
+        localStorage.setItem('theme', type);
+    };
+    const selectedTheme = theme === 'light' ? LightTheme : DarkTheme;
+    return (
+        <ThemeProvider theme={selectedTheme}>
+            <>
+                <ThemeToggle setTheme={saveTheme} />
+                <Header />
+                <Box
+                    as="main"
+                    margin="auto"
+                    maxWidth={selectedTheme.breakpoints[3]}
+                    paddingBottom={{ _: 78, tablet: 108 }}
+                    paddingX={{ _: 16, tablet: 32 }}
+                    textAlign="center"
+                >
+                    {children}
+                </Box>
+                <Footer />
+                <GlobalStyle />
+            </>
+        </ThemeProvider>
+    );
+};
 
 Layout.displayName = 'Layout';
 

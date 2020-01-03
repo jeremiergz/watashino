@@ -11,6 +11,7 @@ Object.defineProperties(breakpoints, {
 });
 
 const colors = {
+    black: '#212121',
     dark: '#424242',
     error: '#F44336',
     gray: '#757575',
@@ -33,18 +34,39 @@ const fontWeights = {
     'semi-bold': 600,
 } as const;
 
-const theme = {
+const DarkTheme = {
+    background: colors.black,
     breakpoints,
-    colors,
+    colors: {
+        ...colors,
+        text: colors.white,
+    },
     fonts,
     fontWeights,
+    svg: colors.white,
+    type: 'dark',
 };
 
-type Theme = typeof theme;
+const LightTheme = {
+    background: colors.white,
+    breakpoints,
+    colors: {
+        ...colors,
+        text: '#262626',
+    },
+    fonts,
+    fontWeights,
+    svg: '#262626',
+    type: 'light',
+};
+
+type Theme = typeof DarkTheme | typeof LightTheme;
 type ThemeProps = {
-    color?: keyof Theme['colors'];
+    background?: string;
+    color?: keyof Theme['colors'] | 'inherit';
     fontWeight?: keyof Theme['fontWeights'];
+    svg?: string;
+    type?: 'light' | 'dark';
 };
 
-export { Theme, ThemeProps };
-export default theme;
+export { colors, DarkTheme, LightTheme, Theme, ThemeProps };

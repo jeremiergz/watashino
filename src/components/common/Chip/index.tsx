@@ -22,8 +22,9 @@ const Chip = ({ children, color, ...rest }: ChipProps) => {
             fontWeight="semi-bold"
             lineHeight="12px"
             maxHeight={12}
+            paddingBottom={1}
+            paddingTop="3px"
             paddingX={2}
-            paddingY={1}
             {...rest}
         >
             {children}

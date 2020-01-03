@@ -1,7 +1,6 @@
-import React, { HTMLAttributes } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { variant } from 'styled-system';
-import theme from '../../../theme';
 import BaseBox, { BoxProps } from '../../primitives/Box';
 
 type AnchorProps = BoxProps & {
@@ -18,7 +17,7 @@ const Box = styled(BaseBox)`
         transition: filter 100ms ease-in-out;
     }
     :hover {
-        color: ${theme.colors.primary};
+        color: ${({ theme }) => theme.colors.primary};
         .gatsby-image-wrapper {
             filter: brightness(0.75);
         }
