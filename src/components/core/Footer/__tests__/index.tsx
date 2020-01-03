@@ -9,10 +9,12 @@ describe('components/Footer Test Suite', () => {
     beforeAll(() => {
         const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
         useStaticQuery.mockImplementation(() => ({
-            packageJson: {
-                license: 'Test-Licence',
-                repository: { url: 'git+https://test-repository.git' },
-                version: '3.16.120',
+            site: {
+                siteMetadata: {
+                    license: 'Test-Licence',
+                    repository: { url: 'git+https://test-repository.git' },
+                    version: '3.16.120',
+                },
             },
         }));
     });

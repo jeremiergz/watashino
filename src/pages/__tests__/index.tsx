@@ -60,11 +60,6 @@ describe('pages Test Suite', () => {
             coverImg: { childImageSharp },
             dataJson: { jobTitle, location },
             file: { childImageSharp },
-            packageJson: {
-                license: 'Test-Licence',
-                repository: { url: 'git+https://test-repository.git' },
-                version: '3.16.120',
-            },
             pageData: { keywords: ['test', 'keyword'], name: 'Test Page' },
             personalDetails: {
                 company: {
@@ -79,7 +74,10 @@ describe('pages Test Suite', () => {
                 siteMetadata: {
                     author: 'SEO Test author',
                     description: 'SEO Test description.',
+                    license: 'Test-Licence',
+                    repository: { url: 'git+https://test-repository.git' },
                     title: 'SEO Test title',
+                    version: '3.16.120',
                 },
             },
             techs: { nodes: [{ img: 'tech-image.png', name: 'TechImage', website: 'https://image.tech' }] },

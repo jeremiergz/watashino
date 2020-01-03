@@ -31,16 +31,14 @@ describe('components/Layout Test Suite', () => {
                     },
                 },
             },
-            packageJson: {
-                license: 'Test-Licence',
-                repository: { url: 'git+https://test-repository.git' },
-                version: '3.16.120',
-            },
             site: {
                 siteMetadata: {
-                    title: 'SEO Test title',
-                    description: 'SEO Test description.',
                     author: 'SEO Test author',
+                    description: 'SEO Test description.',
+                    license: 'Test-Licence',
+                    repository: { url: 'git+https://test-repository.git' },
+                    title: 'SEO Test title',
+                    version: '3.16.120',
                 },
             },
         }));
