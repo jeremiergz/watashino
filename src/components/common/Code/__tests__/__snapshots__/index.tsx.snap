@@ -2,7 +2,7 @@
 
 exports[`components/widgets/Code Test Suite matches snapshot 1`] = `
 <code
-  className="sc-bdVaJa hJmMKg"
+  className="sc-bdVaJa hrdGgz"
   fontSize={16}
 >
   Code Component

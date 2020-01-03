@@ -7,15 +7,15 @@ import Label from './Label';
 type ListProps = BoxProps;
 
 const Box = styled(BaseBox)`
-    list-style: none;
+  list-style: none;
 `;
 
 const List = ({ children, ...rest }: ListProps) => {
-    return (
-        <Box as="ul" margin={0} padding={0} {...rest}>
-            {children}
-        </Box>
-    );
+  return (
+    <Box as="ul" margin={0} padding={0} {...rest}>
+      {children}
+    </Box>
+  );
 };
 
 List.displayName = 'List';

@@ -35,34 +35,34 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Layout = ({ children }: LayoutProps) => {
-    const isBrowser = typeof window !== 'undefined';
-    const storedTheme = (isBrowser && (localStorage.getItem('theme') as ThemeType)) || 'light';
-    const [theme, setTheme] = useState<ThemeType>(storedTheme);
-    const saveTheme = (type: ThemeType) => {
-        setTheme(type);
-        if (isBrowser) localStorage.setItem('theme', type);
-    };
-    const selectedTheme = theme === 'light' ? LightTheme : DarkTheme;
-    return (
-        <ThemeProvider theme={selectedTheme}>
-            <>
-                <ThemeToggle setTheme={saveTheme} />
-                <Header />
-                <Box
-                    as="main"
-                    margin="auto"
-                    maxWidth={selectedTheme.breakpoints[3]}
-                    paddingBottom={{ _: 78, tablet: 108 }}
-                    paddingX={{ _: 16, tablet: 32 }}
-                    textAlign="center"
-                >
-                    {children}
-                </Box>
-                <Footer />
-                <GlobalStyle />
-            </>
-        </ThemeProvider>
-    );
+  const isBrowser = typeof window !== 'undefined';
+  const storedTheme = (isBrowser && (localStorage.getItem('theme') as ThemeType)) || 'light';
+  const [theme, setTheme] = useState<ThemeType>(storedTheme);
+  const saveTheme = (type: ThemeType) => {
+    setTheme(type);
+    if (isBrowser) localStorage.setItem('theme', type);
+  };
+  const selectedTheme = theme === 'light' ? LightTheme : DarkTheme;
+  return (
+    <ThemeProvider theme={selectedTheme}>
+      <>
+        <ThemeToggle setTheme={saveTheme} />
+        <Header />
+        <Box
+          as="main"
+          margin="auto"
+          maxWidth={selectedTheme.breakpoints[3]}
+          paddingBottom={{ _: 78, tablet: 108 }}
+          paddingX={{ _: 16, tablet: 32 }}
+          textAlign="center"
+        >
+          {children}
+        </Box>
+        <Footer />
+        <GlobalStyle />
+      </>
+    </ThemeProvider>
+  );
 };
 
 Layout.displayName = 'Layout';

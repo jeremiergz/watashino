@@ -2,20 +2,20 @@
 
 exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
 <nav
-  className="sc-bdVaJa jWggOi"
+  className="sc-bdVaJa ePhjHk"
   display="flex"
 >
   <div
-    className="sc-bdVaJa hcqTQy"
+    className="sc-bdVaJa lgUGop"
     display="flex"
   >
     <a
-      className="sc-bdVaJa sc-bwzfXH gdYiCt"
+      className="sc-bdVaJa sc-bwzfXH crHBMo"
       href="/"
       target="_blank"
     >
       <div
-        className="sc-bdVaJa sc-htpNat iTIkPI"
+        className="sc-bdVaJa sc-htpNat btrFJU"
         height={32}
         width={32}
       />
@@ -23,11 +23,11 @@ exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
     </a>
   </div>
   <div
-    className="sc-bdVaJa hcqTQy"
+    className="sc-bdVaJa lgUGop"
     display="flex"
   >
     <a
-      className="sc-bdVaJa sc-bwzfXH gdYiCt"
+      className="sc-bdVaJa sc-bwzfXH crHBMo"
       color="text"
       display="flex"
       download={true}
@@ -36,7 +36,7 @@ exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
       target="_blank"
     >
       <svg
-        className="sc-bdVaJa sc-htpNat iTIkPI"
+        className="sc-bdVaJa sc-htpNat btrFJU"
         height={32}
         viewBox="0 0 24 24"
         width={32}

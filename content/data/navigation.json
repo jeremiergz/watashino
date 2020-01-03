@@ -1,11 +1,7 @@
 [
   {
     "icon": "mood",
-    "keywords": [
-      "about",
-      "gatsby",
-      "react"
-    ],
+    "keywords": ["about", "gatsby", "react"],
     "name": "About Me",
     "navOrder": 1,
     "page": "AboutMePage",
@@ -14,33 +10,21 @@
   {
     "icon": "home",
     "ignoreInNavigation": true,
-    "keywords": [
-      "contact",
-      "gatsby",
-      "react"
-    ],
+    "keywords": ["contact", "gatsby", "react"],
     "name": "Home",
     "page": "IndexPage",
     "to": "/"
   },
   {
     "ignoreInNavigation": true,
-    "keywords": [
-      "404",
-      "gatsby",
-      "react"
-    ],
+    "keywords": ["404", "gatsby", "react"],
     "name": "404 Not Found",
     "page": "NotFoundPage",
     "to": "/"
   },
   {
     "icon": "book",
-    "keywords": [
-      "posts",
-      "gatsby",
-      "react"
-    ],
+    "keywords": ["posts", "gatsby", "react"],
     "name": "Posts",
     "navOrder": 0,
     "page": "PostsPage",

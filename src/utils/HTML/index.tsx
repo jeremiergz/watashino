@@ -11,37 +11,31 @@ import Box from '../../components/primitives/Box';
 import { colors } from '../../theme';
 
 const VerticalHR = styled(Box)`
-    box-sizing: border-box;
+  box-sizing: border-box;
 `;
 
 const astRenderer = new RehypeReact({
-    components: {
-        a: ({ children, href }) => (
-            <Link external to={href}>
-                {children}
-            </Link>
-        ),
-        blockquote: ({ children }) => (
-            <Box as="blockquote" color="gray" fontStyle="italic" paddingX={4} position="relative">
-                <VerticalHR
-                    border={`2px solid ${colors.gray}`}
-                    borderRadius={4}
-                    height="100%"
-                    left={0}
-                    position="absolute"
-                />
-                {children}
-            </Box>
-        ),
-        code: ({ children, className }) => (className ? <Code>{children}</Code> : <InlineCode>{children}</InlineCode>),
-        h1: ({ children }) => <Heading variant="h1">{children}</Heading>,
-        h2: ({ children }) => <Heading variant="h2">{children}</Heading>,
-        h3: ({ children }) => <Heading variant="h3">{children}</Heading>,
-        h4: ({ children }) => <Heading variant="h4">{children}</Heading>,
-        hr: () => <Box as="hr" border={`2px solid ${colors.gray}`} borderRadius={4} marginX={4} marginY={5} />,
-        p: Paragraph,
-    },
-    createElement: createElement,
+  components: {
+    a: ({ children, href }) => (
+      <Link external to={href}>
+        {children}
+      </Link>
+    ),
+    blockquote: ({ children }) => (
+      <Box as="blockquote" color="gray" fontStyle="italic" paddingX={4} position="relative">
+        <VerticalHR border={`2px solid ${colors.gray}`} borderRadius={4} height="100%" left={0} position="absolute" />
+        {children}
+      </Box>
+    ),
+    code: ({ children, className }) => (className ? <Code>{children}</Code> : <InlineCode>{children}</InlineCode>),
+    h1: ({ children }) => <Heading variant="h1">{children}</Heading>,
+    h2: ({ children }) => <Heading variant="h2">{children}</Heading>,
+    h3: ({ children }) => <Heading variant="h3">{children}</Heading>,
+    h4: ({ children }) => <Heading variant="h4">{children}</Heading>,
+    hr: () => <Box as="hr" border={`2px solid ${colors.gray}`} borderRadius={4} marginX={4} marginY={5} />,
+    p: Paragraph,
+  },
+  createElement: createElement,
 }).Compiler;
 
 /**
@@ -50,7 +44,7 @@ const astRenderer = new RehypeReact({
  * @param html the HTML AST to process
  */
 function renderASTToJSX(html: unknown) {
-    return astRenderer(html);
+  return astRenderer(html);
 }
 
 export { renderASTToJSX };

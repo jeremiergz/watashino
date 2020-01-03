@@ -3,12 +3,11 @@
   "bracketSpacing": true,
   "jsxBracketSameLine": false,
   "jsxSingleQuote": false,
-  "parser": "typescript",
   "printWidth": 120,
   "proseWrap": "preserve",
   "semi": true,
   "singleQuote": true,
-  "tabWidth": 4,
+  "tabWidth": 2,
   "trailingComma": "all",
   "useTabs": false
 }

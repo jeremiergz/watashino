@@ -2,10 +2,7 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "commonjs",
-    "lib": [
-      "dom",
-      "es2017"
-    ],
+    "lib": ["dom", "es2017"],
     "jsx": "react",
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
@@ -13,15 +10,8 @@
     "noEmit": true,
     "skipLibCheck": true,
     "strict": false,
-    "typeRoots": [
-      "node_modules/@types",
-      "src/@types"
-    ]
+    "typeRoots": ["node_modules/@types", "src/@types"]
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }

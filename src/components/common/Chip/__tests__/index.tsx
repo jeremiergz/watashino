@@ -5,12 +5,12 @@ import { DarkTheme } from '../../../../theme';
 import Chip from '../../Chip';
 
 describe('components/widgets/Chip Test Suite', () => {
-    it('matches snapshot', () => {
-        const jsx = (
-            <ThemeProvider theme={DarkTheme}>
-                <Chip>Chip Component</Chip>
-            </ThemeProvider>
-        );
-        expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
-    });
+  it('matches snapshot', () => {
+    const jsx = (
+      <ThemeProvider theme={DarkTheme}>
+        <Chip>Chip Component</Chip>
+      </ThemeProvider>
+    );
+    expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
+  });
 });

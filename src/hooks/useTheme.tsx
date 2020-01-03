@@ -3,7 +3,7 @@ import { ThemeContext } from 'styled-components';
 import { Theme } from '../theme';
 
 const useTheme = () => {
-    return useContext<Theme>(ThemeContext);
+  return useContext<Theme>(ThemeContext);
 };
 
 export default useTheme;

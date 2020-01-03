@@ -2,7 +2,7 @@
 
 ## Authors
 
-* [**Jeremie Rodriguez**](https://github.com/jeremiergz) &lt;[contact@jeremierodriguez.com](mailto:contact@jeremierodriguez.com)&gt; - Main developer
+- [**Jeremie Rodriguez**](https://github.com/jeremiergz) &lt;[contact@jeremierodriguez.com](mailto:contact@jeremierodriguez.com)&gt; - Main developer
 
 ## License
 

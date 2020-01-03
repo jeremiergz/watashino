@@ -1,75 +1,75 @@
 stages:
-  - "build"
-  - "quality"
-  - "deploy"
+  - 'build'
+  - 'quality'
+  - 'deploy'
 
-image: "node:12"
+image: 'node:12'
 
 variables:
-  DOCKER_DRIVER: "overlay2"
-  DOCKER_IMAGE_TAG_CI: "${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_NAME}"
-  DOCKER_TLS_CERTDIR: "/certs"
+  DOCKER_DRIVER: 'overlay2'
+  DOCKER_IMAGE_TAG_CI: '${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_NAME}'
+  DOCKER_TLS_CERTDIR: '/certs'
 
 cache:
-  key: "$CI_BUILD_REF_NAME"
+  key: '$CI_BUILD_REF_NAME'
   untracked: true
   paths:
-    - "node_modules/"
+    - 'node_modules/'
 
 build:npm:
-  stage: "build"
+  stage: 'build'
   before_script:
-    - "npm install"
+    - 'npm install'
   script:
-    - "npm run build"
+    - 'npm run build'
   artifacts:
     paths:
-      - "public"
+      - 'public'
 
 build:docker:
-  stage: "build"
-  image: "docker:stable"
+  stage: 'build'
+  image: 'docker:stable'
   services:
-    - "docker:dind"
+    - 'docker:dind'
   before_script:
-    - "echo ${CI_JOB_TOKEN} | docker login --username ${CI_REGISTRY_USER} --password-stdin ${CI_REGISTRY}"
+    - 'echo ${CI_JOB_TOKEN} | docker login --username ${CI_REGISTRY_USER} --password-stdin ${CI_REGISTRY}'
   script:
     - docker build
       --build-arg GIT_COMMIT=${CI_COMMIT_SHA}
       --build-arg VERSION=${CI_COMMIT_SHORT_SHA}
       --tag ${DOCKER_IMAGE_TAG_CI} .
-    - "docker push ${DOCKER_IMAGE_TAG_CI}"
+    - 'docker push ${DOCKER_IMAGE_TAG_CI}'
   cache: {}
   only:
-    - "develop"
+    - 'develop'
 
 quality:lint:
-  stage: "quality"
+  stage: 'quality'
   before_script:
-    - "npm install"
+    - 'npm install'
   script:
-    - "npm run lint"
+    - 'npm run lint'
   except:
-    - "posts"
+    - 'posts'
   allow_failure: true
 
 quality:test:
-  stage: "quality"
+  stage: 'quality'
   before_script:
-    - "npm install"
+    - 'npm install'
   script:
-    - "npm run test"
+    - 'npm run test'
   except:
-    - "posts"
+    - 'posts'
 
 pages:
-  stage: "deploy"
+  stage: 'deploy'
   script:
-    - "ls -lh public"
+    - 'ls -lh public'
   artifacts:
     paths:
-      - "public"
+      - 'public'
   cache: {}
   only:
-    - "posts"
-    - "tags"
+    - 'posts'
+    - 'tags'

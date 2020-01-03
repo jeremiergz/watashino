@@ -3,24 +3,24 @@ import React, { useEffect } from 'react';
 import Layout from '../components/core/Layout';
 
 const IndexPage = () => {
-    const {
-        pageData: { keywords },
-    } = useStaticQuery<GraphQL.IndexPageQuery>(graphql`
-        query IndexPage {
-            pageData: navigationJson(page: { eq: "NotFoundPage" }) {
-                keywords
-                name
-            }
-        }
-    `);
-    useEffect(() => {
-        navigate('/about-me');
-    }, []);
-    return (
-        <Layout>
-            <Layout.Content keywords={keywords} type="section" />
-        </Layout>
-    );
+  const {
+    pageData: { keywords },
+  } = useStaticQuery<GraphQL.IndexPageQuery>(graphql`
+    query IndexPage {
+      pageData: navigationJson(page: { eq: "NotFoundPage" }) {
+        keywords
+        name
+      }
+    }
+  `);
+  useEffect(() => {
+    navigate('/about-me');
+  }, []);
+  return (
+    <Layout>
+      <Layout.Content keywords={keywords} type="section" />
+    </Layout>
+  );
 };
 
 IndexPage.displayName = 'IndexPage';

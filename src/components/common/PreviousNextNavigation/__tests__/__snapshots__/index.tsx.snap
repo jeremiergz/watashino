@@ -2,18 +2,18 @@
 
 exports[`components/widgets/PreviousNextNavigation Test Suite matches snapshot 1`] = `
 <div
-  className="sc-bdVaJa drumYD"
+  className="sc-bdVaJa hLialp"
   display="flex"
 >
   <a
-    className="sc-bdVaJa sc-bwzfXH iUuHom"
+    className="sc-bdVaJa sc-bwzfXH hAeIai"
     href="/previous"
     target="_blank"
   >
     Prev
   </a>
   <a
-    className="sc-bdVaJa sc-bwzfXH flPJEJ"
+    className="sc-bdVaJa sc-bwzfXH kGLepB"
     href="/next"
     target="_blank"
   >

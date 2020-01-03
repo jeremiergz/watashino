@@ -5,12 +5,12 @@ import { DarkTheme } from '../../../../theme';
 import Code from '../../Code';
 
 describe('components/widgets/Code Test Suite', () => {
-    it('matches snapshot', () => {
-        const jsx = (
-            <ThemeProvider theme={DarkTheme}>
-                <Code>Code Component</Code>
-            </ThemeProvider>
-        );
-        expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
-    });
+  it('matches snapshot', () => {
+    const jsx = (
+      <ThemeProvider theme={DarkTheme}>
+        <Code>Code Component</Code>
+      </ThemeProvider>
+    );
+    expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
+  });
 });

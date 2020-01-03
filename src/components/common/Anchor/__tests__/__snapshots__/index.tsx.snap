@@ -2,7 +2,7 @@
 
 exports[`components/widgets/Link Test Suite matches snapshot 1`] = `
 <a
-  className="sc-bdVaJa sc-bwzfXH Bijxn"
+  className="sc-bdVaJa sc-bwzfXH hqSSnd"
   color="text"
   fontWeight="semi-bold"
   target="_blank"

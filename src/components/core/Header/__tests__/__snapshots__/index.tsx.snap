@@ -2,11 +2,11 @@
 
 exports[`components/Header Test Suite matches snapshot 1`] = `
 <header
-  className="sc-bdVaJa hnBVJS"
+  className="sc-bdVaJa hGmmkD"
   display="flex"
 >
   <a
-    className="sc-bdVaJa sc-bxivhb dhhcsJ"
+    className="sc-bdVaJa sc-bxivhb gPADi"
     href="/about-me"
     target="_blank"
   >
@@ -81,12 +81,12 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
       />
     </div>
     <div
-      className="sc-bdVaJa bkiUnt"
+      className="sc-bdVaJa iVZsci"
       color="text"
       display="flex"
     >
       <h3
-        className="sc-bwzfXH sc-htpNat klUrKO"
+        className="sc-bwzfXH sc-htpNat ckhhLs"
         color="primary"
         fontWeight="bold"
         letterSpacing={-1}
@@ -94,7 +94,7 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
         Jeremie Rodriguez
       </h3>
       <h4
-        className="sc-bwzfXH sc-htpNat bvVtPB"
+        className="sc-bwzfXH sc-htpNat PEkCT"
         fontWeight="semi-bold"
       >
         Full Stack Engineer
@@ -102,20 +102,20 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
     </div>
   </a>
   <nav
-    className="sc-bdVaJa jWggOi"
+    className="sc-bdVaJa ePhjHk"
     display="flex"
   >
     <div
-      className="sc-bdVaJa hcqTQy"
+      className="sc-bdVaJa lgUGop"
       display="flex"
     >
       <a
-        className="sc-bdVaJa sc-bxivhb bDQmTV"
+        className="sc-bdVaJa sc-bxivhb jhFPJu"
         href="/"
         target="_blank"
       >
         <div
-          className="sc-bdVaJa sc-ifAKCX iFbvis"
+          className="sc-bdVaJa sc-ifAKCX dVZqkN"
           height={32}
           width={32}
         />
@@ -123,11 +123,11 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
       </a>
     </div>
     <div
-      className="sc-bdVaJa hcqTQy"
+      className="sc-bdVaJa lgUGop"
       display="flex"
     >
       <a
-        className="sc-bdVaJa sc-bxivhb bDQmTV"
+        className="sc-bdVaJa sc-bxivhb jhFPJu"
         color="text"
         display="flex"
         download={true}
@@ -135,7 +135,7 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
         target="_blank"
       >
         <svg
-          className="sc-bdVaJa sc-ifAKCX iFbvis"
+          className="sc-bdVaJa sc-ifAKCX dVZqkN"
           height={32}
           viewBox="0 0 24 24"
           width={32}

@@ -2,7 +2,7 @@
 
 exports[`components/widgets/Heading Test Suite matches snapshot 1`] = `
 <h1
-  className="sc-bdVaJa sc-bwzfXH ciIrmy"
+  className="sc-bdVaJa sc-bwzfXH cjVdPm"
 >
   Heading Component
 </h1>

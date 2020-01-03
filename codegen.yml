@@ -1,21 +1,21 @@
 overwrite: true
 hooks:
   afterAllFileWrite:
-    - "eslint --fix"
-    - "prettier --write"
+    - 'eslint --fix'
+    - 'prettier --write'
 documents:
-  - "./src/**/*.{ts,tsx}"
-  - "./node_modules/gatsby-*/**/*.js"
+  - './src/**/*.{ts,tsx}'
+  - './node_modules/gatsby-*/**/*.js'
 generates:
   ./src/@types/GraphQL.d.ts:
-    schema: "http://localhost:8000/___graphql"
+    schema: 'http://localhost:8000/___graphql'
     plugins:
       - add:
-          content: "declare module GraphQL {"
+          content: 'declare module GraphQL {'
       - add:
-          placement: "append"
-          content: "}"
-      - "typescript"
-      - "typescript-operations"
+          placement: 'append'
+          content: '}'
+      - 'typescript'
+      - 'typescript-operations'
     config:
       noExport: true

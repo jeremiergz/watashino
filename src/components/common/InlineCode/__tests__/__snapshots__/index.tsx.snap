@@ -2,7 +2,7 @@
 
 exports[`components/widgets/InlineCode Test Suite matches snapshot 1`] = `
 <code
-  className="sc-bdVaJa jzzRT"
+  className="sc-bdVaJa iELOxI"
   color="white"
   display="inline-block"
   fontSize={16}

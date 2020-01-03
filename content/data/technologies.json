@@ -1,52 +1,52 @@
 [
-    {
-        "img": "tech-js.png",
-        "name": "JavaScript",
-        "website": "https://developer.mozilla.org/docs/Web/JavaScript"
-    },
-    {
-        "img": "tech-ts.png",
-        "name": "TypeScript",
-        "website": "https://www.typescriptlang.org"
-    },
-    {
-        "img": "tech-nodejs.png",
-        "name": "Node.js",
-        "website": "https://nodejs.org"
-    },
-    {
-        "img": "tech-golang.png",
-        "name": "Golang",
-        "website": "https://golang.org"
-    },
-    {
-        "img": "tech-react.png",
-        "name": "React.js",
-        "website": "https://reactjs.org"
-    },
-    {
-        "img": "tech-gatsby.png",
-        "name": "Gatsby",
-        "website": "https://www.gatsbyjs.org"
-    },
-    {
-        "img": "tech-nextjs.png",
-        "name": "Next.js",
-        "website": "https://nextjs.org"
-    },
-    {
-        "img": "tech-docker.png",
-        "name": "Docker",
-        "website": "https://www.docker.com"
-    },
-    {
-        "img": "tech-k8s.png",
-        "name": "Kubernetes",
-        "website": "https://kubernetes.io"
-    },
-    {
-        "img": "tech-ansible.png",
-        "name": "Ansible",
-        "website": "https://www.ansible.com"
-    }
+  {
+    "img": "tech-js.png",
+    "name": "JavaScript",
+    "website": "https://developer.mozilla.org/docs/Web/JavaScript"
+  },
+  {
+    "img": "tech-ts.png",
+    "name": "TypeScript",
+    "website": "https://www.typescriptlang.org"
+  },
+  {
+    "img": "tech-nodejs.png",
+    "name": "Node.js",
+    "website": "https://nodejs.org"
+  },
+  {
+    "img": "tech-golang.png",
+    "name": "Golang",
+    "website": "https://golang.org"
+  },
+  {
+    "img": "tech-react.png",
+    "name": "React.js",
+    "website": "https://reactjs.org"
+  },
+  {
+    "img": "tech-gatsby.png",
+    "name": "Gatsby",
+    "website": "https://www.gatsbyjs.org"
+  },
+  {
+    "img": "tech-nextjs.png",
+    "name": "Next.js",
+    "website": "https://nextjs.org"
+  },
+  {
+    "img": "tech-docker.png",
+    "name": "Docker",
+    "website": "https://www.docker.com"
+  },
+  {
+    "img": "tech-k8s.png",
+    "name": "Kubernetes",
+    "website": "https://kubernetes.io"
+  },
+  {
+    "img": "tech-ansible.png",
+    "name": "Ansible",
+    "website": "https://www.ansible.com"
+  }
 ]

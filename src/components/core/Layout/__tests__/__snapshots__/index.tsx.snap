@@ -3,29 +3,29 @@
 exports[`components/Layout Test Suite matches snapshot 1`] = `
 Array [
   <button
-    className="sc-EHOje jbJExk"
+    className="sc-EHOje iHBlot"
     onClick={[Function]}
   >
     <div
-      className="sc-bdVaJa ehkixs"
+      className="sc-bdVaJa cLjUOW"
       display="flex"
     >
       <div
-        className="sc-bZQynM jXtXYu"
+        className="sc-bZQynM jeZGWb"
       >
         <div
-          className="sc-bdVaJa ijEEyl"
+          className="sc-bdVaJa gcrpvP"
           height={16}
           width={8}
         />
         <div
-          className="sc-bdVaJa bHYXcW"
+          className="sc-bdVaJa gZPpMF"
           height={16}
           width={8}
         />
       </div>
       <span
-        className="sc-htpNat osxzr"
+        className="sc-htpNat iJnzsZ"
         color="gray"
         fontFamily="'Open Sans', sans-serif"
         fontSize={14}
@@ -35,11 +35,11 @@ Array [
     </div>
   </button>,
   <header
-    className="sc-bdVaJa hnBVJS"
+    className="sc-bdVaJa hGmmkD"
     display="flex"
   >
     <a
-      className="sc-bdVaJa sc-bwzfXH fwrRXJ"
+      className="sc-bdVaJa sc-bwzfXH krRFud"
       href="/about-me"
       target="_blank"
     >
@@ -114,12 +114,12 @@ Array [
         />
       </div>
       <div
-        className="sc-bdVaJa fnwDOj"
+        className="sc-bdVaJa djLWaF"
         color="text"
         display="flex"
       >
         <h3
-          className="sc-htpNat sc-bxivhb dwRYCY"
+          className="sc-htpNat sc-bxivhb jknvcF"
           color="primary"
           fontWeight="bold"
           letterSpacing={-1}
@@ -127,7 +127,7 @@ Array [
           Jeremie Rodriguez
         </h3>
         <h4
-          className="sc-htpNat sc-bxivhb bxICaF"
+          className="sc-htpNat sc-bxivhb lpeTDw"
           fontWeight="semi-bold"
         >
           Full Stack Engineer
@@ -135,20 +135,20 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-bdVaJa jWggOi"
+      className="sc-bdVaJa ePhjHk"
       display="flex"
     >
       <div
-        className="sc-bdVaJa hcqTQy"
+        className="sc-bdVaJa lgUGop"
         display="flex"
       >
         <a
-          className="sc-bdVaJa sc-bwzfXH gLziNZ"
+          className="sc-bdVaJa sc-bwzfXH kpNgfh"
           href="/"
           target="_blank"
         >
           <div
-            className="sc-bdVaJa sc-ifAKCX eOHiQj"
+            className="sc-bdVaJa sc-ifAKCX cPrshM"
             height={32}
             width={32}
           />
@@ -156,11 +156,11 @@ Array [
         </a>
       </div>
       <div
-        className="sc-bdVaJa hcqTQy"
+        className="sc-bdVaJa lgUGop"
         display="flex"
       >
         <a
-          className="sc-bdVaJa sc-bwzfXH gLziNZ"
+          className="sc-bdVaJa sc-bwzfXH kpNgfh"
           color="text"
           display="flex"
           download={true}
@@ -168,7 +168,7 @@ Array [
           target="_blank"
         >
           <svg
-            className="sc-bdVaJa sc-ifAKCX eOHiQj"
+            className="sc-bdVaJa sc-ifAKCX cPrshM"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -188,15 +188,15 @@ Array [
     </nav>
   </header>,
   <main
-    className="sc-bdVaJa ewwdog"
+    className="sc-bdVaJa ieheFk"
   >
     Layout Component
   </main>,
   <footer
-    className="sc-bdVaJa fKHVRB"
+    className="sc-bdVaJa ccyflP"
   >
     <a
-      className="sc-bdVaJa sc-bwzfXH iUaXwc"
+      className="sc-bdVaJa sc-bwzfXH gnTZvb"
       color="gray"
       fontWeight="semi-bold"
       href="https://test-repository/tree/3.16.120"
@@ -206,7 +206,7 @@ Array [
       v3.16.120 - source code
     </a>
     <div
-      className="sc-bdVaJa fHfaaQ"
+      className="sc-bdVaJa hJAvxc"
       color="gray"
       fontSize={14}
     >

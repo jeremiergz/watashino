@@ -2,10 +2,10 @@
 
 exports[`components/Footer Test Suite matches snapshot 1`] = `
 <footer
-  className="sc-bdVaJa fKHVRB"
+  className="sc-bdVaJa ccyflP"
 >
   <a
-    className="sc-bdVaJa sc-bwzfXH iUaXwc"
+    className="sc-bdVaJa sc-bwzfXH gnTZvb"
     color="gray"
     fontWeight="semi-bold"
     href="https://test-repository/tree/3.16.120"
@@ -15,7 +15,7 @@ exports[`components/Footer Test Suite matches snapshot 1`] = `
     v3.16.120 - source code
   </a>
   <div
-    className="sc-bdVaJa fHfaaQ"
+    className="sc-bdVaJa hJAvxc"
     color="gray"
     fontSize={14}
   >
