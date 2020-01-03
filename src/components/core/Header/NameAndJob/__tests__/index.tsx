@@ -1,6 +1,8 @@
 import * as Gatsby from 'gatsby';
 import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
+import { ThemeProvider } from 'styled-components';
+import { DarkTheme } from '../../../../../theme';
 import NameAndJob from '../../NameAndJob';
 
 describe('components/Layout/Header/NameAndJob Test Suite', () => {
@@ -25,7 +27,11 @@ describe('components/Layout/Header/NameAndJob Test Suite', () => {
     });
 
     it('matches snapshot', () => {
-        const jsx = <NameAndJob />;
+        const jsx = (
+            <ThemeProvider theme={DarkTheme}>
+                <NameAndJob />
+            </ThemeProvider>
+        );
         expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
     });
 });

@@ -2,11 +2,11 @@
 
 exports[`components/widgets/Link Test Suite matches snapshot 1`] = `
 <a
-  className="sc-bdVaJa sc-bwzfXH kSBVxK"
-  href="/test-page"
+  className="sc-bdVaJa sc-bwzfXH Bijxn"
+  color="text"
+  fontWeight="semi-bold"
   target="_blank"
-  variant="underlined"
 >
-  Link Component
+  Anchor Component
 </a>
 `;

@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
-import Link from '../../Link';
+import { ThemeProvider } from 'styled-components';
+import Anchor from '..';
+import { DarkTheme } from '../../../../theme';
 
 describe('components/widgets/Link Test Suite', () => {
     it('matches snapshot', () => {
         const jsx = (
-            <Link to="/test-page" variant="underlined">
-                Link Component
-            </Link>
+            <ThemeProvider theme={DarkTheme}>
+                <Anchor variant="underlined">Anchor Component</Anchor>
+            </ThemeProvider>
         );
         expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
     });

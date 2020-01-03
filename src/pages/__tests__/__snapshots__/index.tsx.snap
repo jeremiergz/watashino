@@ -2,6 +2,38 @@
 
 exports[`pages Test Suite pages/404 Test Suite matches snapshot 1`] = `
 Array [
+  <button
+    className="sc-EHOje jbJExk"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-htpNat hnQXOw"
+      display="flex"
+    >
+      <div
+        className="sc-bZQynM jXtXYu"
+      >
+        <div
+          className="sc-htpNat bXVFWC"
+          height={16}
+          width={8}
+        />
+        <div
+          className="sc-htpNat bpNkOJ"
+          height={16}
+          width={8}
+        />
+      </div>
+      <span
+        className="sc-bdVaJa hKwFKU"
+        color="gray"
+        fontFamily="'Open Sans', sans-serif"
+        fontSize={14}
+      >
+        light
+      </span>
+    </div>
+  </button>,
   <header
     className="sc-htpNat itJwdb"
     display="flex"
@@ -116,7 +148,7 @@ Array [
           target="_blank"
         >
           <div
-            className="sc-htpNat jYkDgh"
+            className="sc-htpNat sc-ifAKCX eOHiQj"
             height={32}
             width={32}
           />
@@ -136,7 +168,7 @@ Array [
           target="_blank"
         >
           <svg
-            className="sc-htpNat jYkDgh"
+            className="sc-htpNat sc-ifAKCX eOHiQj"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -208,6 +240,38 @@ Array [
 
 exports[`pages Test Suite pages/about-me Test Suite matches snapshot 1`] = `
 Array [
+  <button
+    className="sc-EHOje jbJExk"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-htpNat hnQXOw"
+      display="flex"
+    >
+      <div
+        className="sc-bZQynM jXtXYu"
+      >
+        <div
+          className="sc-htpNat bXVFWC"
+          height={16}
+          width={8}
+        />
+        <div
+          className="sc-htpNat bpNkOJ"
+          height={16}
+          width={8}
+        />
+      </div>
+      <span
+        className="sc-bdVaJa hKwFKU"
+        color="gray"
+        fontFamily="'Open Sans', sans-serif"
+        fontSize={14}
+      >
+        light
+      </span>
+    </div>
+  </button>,
   <header
     className="sc-htpNat itJwdb"
     display="flex"
@@ -322,7 +386,7 @@ Array [
           target="_blank"
         >
           <div
-            className="sc-htpNat jYkDgh"
+            className="sc-htpNat sc-ifAKCX eOHiQj"
             height={32}
             width={32}
           />
@@ -342,7 +406,7 @@ Array [
           target="_blank"
         >
           <svg
-            className="sc-htpNat jYkDgh"
+            className="sc-htpNat sc-ifAKCX eOHiQj"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -649,7 +713,7 @@ Array [
         I particularly enjoy working with those technologies:
       </p>
       <div
-        className="sc-htpNat gHpxOb sc-ifAKCX jqePfi"
+        className="sc-htpNat gHpxOb sc-gzVnrw gceciY"
         display="flex"
       >
         <a
@@ -776,6 +840,38 @@ Array [
 
 exports[`pages Test Suite pages/index Test Suite matches snapshot 1`] = `
 Array [
+  <button
+    className="sc-EHOje jbJExk"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-htpNat hnQXOw"
+      display="flex"
+    >
+      <div
+        className="sc-bZQynM jXtXYu"
+      >
+        <div
+          className="sc-htpNat bXVFWC"
+          height={16}
+          width={8}
+        />
+        <div
+          className="sc-htpNat bpNkOJ"
+          height={16}
+          width={8}
+        />
+      </div>
+      <span
+        className="sc-bdVaJa hKwFKU"
+        color="gray"
+        fontFamily="'Open Sans', sans-serif"
+        fontSize={14}
+      >
+        light
+      </span>
+    </div>
+  </button>,
   <header
     className="sc-htpNat itJwdb"
     display="flex"
@@ -890,7 +986,7 @@ Array [
           target="_blank"
         >
           <div
-            className="sc-htpNat jYkDgh"
+            className="sc-htpNat sc-ifAKCX eOHiQj"
             height={32}
             width={32}
           />
@@ -910,7 +1006,7 @@ Array [
           target="_blank"
         >
           <svg
-            className="sc-htpNat jYkDgh"
+            className="sc-htpNat sc-ifAKCX eOHiQj"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -962,6 +1058,38 @@ Array [
 
 exports[`pages Test Suite pages/posts Test Suite matches snapshot 1`] = `
 Array [
+  <button
+    className="sc-EHOje jbJExk"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-htpNat hnQXOw"
+      display="flex"
+    >
+      <div
+        className="sc-bZQynM jXtXYu"
+      >
+        <div
+          className="sc-htpNat bXVFWC"
+          height={16}
+          width={8}
+        />
+        <div
+          className="sc-htpNat bpNkOJ"
+          height={16}
+          width={8}
+        />
+      </div>
+      <span
+        className="sc-bdVaJa hKwFKU"
+        color="gray"
+        fontFamily="'Open Sans', sans-serif"
+        fontSize={14}
+      >
+        light
+      </span>
+    </div>
+  </button>,
   <header
     className="sc-htpNat itJwdb"
     display="flex"
@@ -1076,7 +1204,7 @@ Array [
           target="_blank"
         >
           <div
-            className="sc-htpNat jYkDgh"
+            className="sc-htpNat sc-ifAKCX eOHiQj"
             height={32}
             width={32}
           />
@@ -1096,7 +1224,7 @@ Array [
           target="_blank"
         >
           <svg
-            className="sc-htpNat jYkDgh"
+            className="sc-htpNat sc-ifAKCX eOHiQj"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -1127,10 +1255,10 @@ Array [
       className="sc-htpNat jPkxhQ"
     >
       <div
-        className="sc-htpNat sc-bZQynM bRypTt"
+        className="sc-htpNat sc-dnqmqq fjDhpJ"
       >
         <ul
-          className="sc-htpNat sc-EHOje cgDDgZ"
+          className="sc-htpNat sc-htoDjs kFimbZ"
         >
           <label
             className="sc-bdVaJa lTlpk"

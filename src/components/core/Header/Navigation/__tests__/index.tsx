@@ -1,6 +1,8 @@
 import * as Gatsby from 'gatsby';
 import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
+import { ThemeProvider } from 'styled-components';
+import { DarkTheme } from '../../../../../theme';
 import Navigation from '../../Navigation';
 
 describe('components/Layout/Header/Navigation Test Suite', () => {
@@ -24,7 +26,11 @@ describe('components/Layout/Header/Navigation Test Suite', () => {
     });
 
     it('matches snapshot', () => {
-        const jsx = <Navigation />;
+        const jsx = (
+            <ThemeProvider theme={DarkTheme}>
+                <Navigation />
+            </ThemeProvider>
+        );
         expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
     });
 });

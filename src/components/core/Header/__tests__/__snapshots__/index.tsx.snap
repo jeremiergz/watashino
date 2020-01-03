@@ -6,7 +6,7 @@ exports[`components/Layout/Header Test Suite matches snapshot 1`] = `
   display="flex"
 >
   <a
-    className="sc-bdVaJa sc-bxivhb bGOBuK"
+    className="sc-bdVaJa sc-bxivhb dhhcsJ"
     href="/about-me"
     target="_blank"
   >
@@ -81,7 +81,7 @@ exports[`components/Layout/Header Test Suite matches snapshot 1`] = `
       />
     </div>
     <div
-      className="sc-bdVaJa fnwDOj"
+      className="sc-bdVaJa bkiUnt"
       color="text"
       display="flex"
     >
@@ -110,12 +110,12 @@ exports[`components/Layout/Header Test Suite matches snapshot 1`] = `
       display="flex"
     >
       <a
-        className="sc-bdVaJa sc-bxivhb bAdvYf"
+        className="sc-bdVaJa sc-bxivhb bDQmTV"
         href="/"
         target="_blank"
       >
         <div
-          className="sc-bdVaJa kKgGND"
+          className="sc-bdVaJa sc-ifAKCX iFbvis"
           height={32}
           width={32}
         />
@@ -127,7 +127,7 @@ exports[`components/Layout/Header Test Suite matches snapshot 1`] = `
       display="flex"
     >
       <a
-        className="sc-bdVaJa sc-bxivhb bAdvYf"
+        className="sc-bdVaJa sc-bxivhb bDQmTV"
         color="text"
         display="flex"
         download={true}
@@ -135,7 +135,7 @@ exports[`components/Layout/Header Test Suite matches snapshot 1`] = `
         target="_blank"
       >
         <svg
-          className="sc-bdVaJa kKgGND"
+          className="sc-bdVaJa sc-ifAKCX iFbvis"
           height={32}
           viewBox="0 0 24 24"
           width={32}

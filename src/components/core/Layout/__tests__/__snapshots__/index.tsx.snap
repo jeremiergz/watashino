@@ -2,6 +2,38 @@
 
 exports[`components/Layout Test Suite matches snapshot 1`] = `
 Array [
+  <button
+    className="sc-EHOje jbJExk"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-bdVaJa ehkixs"
+      display="flex"
+    >
+      <div
+        className="sc-bZQynM jXtXYu"
+      >
+        <div
+          className="sc-bdVaJa ijEEyl"
+          height={16}
+          width={8}
+        />
+        <div
+          className="sc-bdVaJa bHYXcW"
+          height={16}
+          width={8}
+        />
+      </div>
+      <span
+        className="sc-htpNat osxzr"
+        color="gray"
+        fontFamily="'Open Sans', sans-serif"
+        fontSize={14}
+      >
+        light
+      </span>
+    </div>
+  </button>,
   <header
     className="sc-bdVaJa hnBVJS"
     display="flex"
@@ -116,7 +148,7 @@ Array [
           target="_blank"
         >
           <div
-            className="sc-bdVaJa kKgGND"
+            className="sc-bdVaJa sc-ifAKCX eOHiQj"
             height={32}
             width={32}
           />
@@ -136,7 +168,7 @@ Array [
           target="_blank"
         >
           <svg
-            className="sc-bdVaJa kKgGND"
+            className="sc-bdVaJa sc-ifAKCX eOHiQj"
             height={32}
             viewBox="0 0 24 24"
             width={32}

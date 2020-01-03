@@ -2,7 +2,7 @@
 
 exports[`components/widgets/Chip Test Suite matches snapshot 1`] = `
 <span
-  className="sc-bdVaJa fEZgsh"
+  className="sc-bdVaJa dVuGxE"
   color="#757575"
   fontSize={12}
   fontWeight="semi-bold"
