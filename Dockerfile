@@ -1,5 +1,10 @@
 FROM node:12 AS builder
 
+RUN apt-get update && \
+  apt-get install --yes libglu1 && \
+  apt-get clean && \
+  rm -rf /var/cache/apt/archives
+
 USER node
 WORKDIR /tmp
 COPY --chown=node:node . .
