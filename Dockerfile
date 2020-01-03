@@ -1,6 +1,4 @@
-FROM node:12-alpine AS builder
-
-RUN apk add --no-cache g++ gcc make python
+FROM node:12 AS builder
 
 USER node
 WORKDIR /tmp
