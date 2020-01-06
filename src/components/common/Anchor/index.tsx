@@ -10,13 +10,14 @@ type AnchorProps = BoxProps & {
   variant?: 'underlined';
 };
 
-const Box = styled(BaseBox)`
+const A = styled(BaseBox)`
+  color: inherit;
   text-decoration: none;
   transition: color 100ms ease-in-out;
   .gatsby-image-wrapper {
     transition: filter 100ms ease-in-out;
   }
-  :hover {
+  &:hover {
     color: ${({ theme }) => theme.colors.primary};
     .gatsby-image-wrapper {
       filter: brightness(0.75);
@@ -35,9 +36,9 @@ const Anchor = ({ children, ...rest }: AnchorProps) => {
   const isTouchDevice = typeof window !== 'undefined' && window.navigator.maxTouchPoints > 0;
   const target = isTouchDevice ? '_self' : '_blank';
   return (
-    <Box as="a" color="inherit" fontWeight="semi-bold" target={target} {...rest}>
+    <A as="a" fontWeight="semi-bold" target={target} {...rest}>
       {children}
-    </Box>
+    </A>
   );
 };
 

@@ -1,11 +1,11 @@
 import React from 'react';
-import useTheme from '../../../hooks/useTheme';
 import Flex from '../../primitives/Flex';
+import { useTheming } from '../ThemingManager';
 import NameAndJob from './NameAndJob';
 import Navigation from './Navigation';
 
 const Header = () => {
-  const theme = useTheme();
+  const { theme } = useTheming();
   return (
     <Flex
       alignItems="center"

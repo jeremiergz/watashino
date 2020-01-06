@@ -1,7 +1,7 @@
 import React from 'react';
-import useTheme from '../../../hooks/useTheme';
 import { Theme } from '../../../theme';
 import { lightenColor } from '../../../utils/CSS';
+import { useTheming } from '../../core/ThemingManager';
 import Text, { TextProps } from '../../primitives/Text';
 
 type ChipProps = Omit<TextProps, 'color'> & {
@@ -9,7 +9,7 @@ type ChipProps = Omit<TextProps, 'color'> & {
 };
 
 const Chip = ({ children, color, ...rest }: ChipProps) => {
-  const theme = useTheme();
+  const { theme } = useTheming();
   const fontColor = (color || theme.colors.gray) as keyof Theme['colors'];
   const backgroundColor = lightenColor(fontColor, 0.25);
   return (

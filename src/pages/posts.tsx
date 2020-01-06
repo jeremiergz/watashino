@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery, navigate } from 'gatsby';
+import { graphql, navigate, useStaticQuery } from 'gatsby';
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Link from '../components/common/Link';
@@ -6,6 +6,7 @@ import List from '../components/common/List';
 import Layout from '../components/core/Layout';
 import Box from '../components/primitives/Box';
 import { getMonthAndDay } from '../utils/Date';
+import { Routes } from '../utils/Routes';
 
 const Groups = styled(Box)`
   > :first-child > label {
@@ -51,7 +52,7 @@ const PostsPage = () => {
   }, {});
   const allPostsKeys = Object.keys(allPosts);
   useEffect(() => {
-    if (allPostsKeys.length === 0) navigate('/404');
+    if (allPostsKeys.length === 0) navigate(Routes.notFound);
   }, [allPostsKeys]);
   return (
     <Layout>

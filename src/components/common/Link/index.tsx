@@ -1,6 +1,7 @@
 import { Link as BaseGatsbyLink } from 'gatsby';
 import React from 'react';
-import useTheme from '../../../hooks/useTheme';
+import { Routes } from '../../../utils/Routes';
+import { useTheming } from '../../core/ThemingManager';
 import withoutStylingProps from '../../hocs/withoutStylingProps';
 import Anchor, { AnchorProps } from '../Anchor';
 
@@ -13,7 +14,7 @@ type LinkProps = AnchorProps & {
 const GatsbyLink = withoutStylingProps(BaseGatsbyLink);
 
 const Link = ({ children, external, partiallyActive = false, to, ...rest }: LinkProps) => {
-  const theme = useTheme();
+  const { theme } = useTheming();
   const isTouchDevice = typeof window !== 'undefined' && window.navigator.maxTouchPoints > 0;
   const target = isTouchDevice ? '_self' : '_blank';
   const linkProps = external
@@ -23,9 +24,9 @@ const Link = ({ children, external, partiallyActive = false, to, ...rest }: Link
         target,
       }
     : {
-        activeStyle: { color: theme.colors.primary },
+        activeStyle: partiallyActive && { color: theme.colors.primary },
         as: GatsbyLink,
-        partiallyActive: partiallyActive && (to !== '/' ? true : false),
+        partiallyActive: partiallyActive && (to !== Routes.index ? true : false),
         to,
       };
   return (

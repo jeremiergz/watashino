@@ -1,13 +1,11 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import Img, { FixedObject } from 'gatsby-image';
 import React from 'react';
-import useTheme from '../../../../hooks/useTheme';
 import Heading from '../../../common/Heading';
 import Link from '../../../common/Link';
 import Flex from '../../../primitives/Flex';
 
 const NameAndJob = () => {
-  const theme = useTheme();
   const { dataJson, file } = useStaticQuery<GraphQL.HeaderDataQuery>(graphql`
     query HeaderData {
       dataJson {

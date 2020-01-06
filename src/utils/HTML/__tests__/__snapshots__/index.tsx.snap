@@ -7,8 +7,7 @@ exports[`utils/HTML Test Suite matches snapshot 1`] = `
     fontSize={20}
   >
     <a
-      className="sc-htpNat sc-bxivhb bLlFun"
-      color="inherit"
+      className="sc-bxivhb sc-EHOje djSQgw"
       fontWeight="semi-bold"
       href="https://www.gatsbyjs.org"
       rel="noopener noreferrer"
@@ -20,12 +19,12 @@ exports[`utils/HTML Test Suite matches snapshot 1`] = `
   
 
   <blockquote
-    className="sc-htpNat SoFJf"
+    className="sc-bxivhb kgwSjx"
     color="gray"
     fontStyle="italic"
   >
     <div
-      className="sc-htpNat sc-ifAKCX dPXRuh"
+      className="sc-bxivhb sc-bZQynM gpdccO"
       height="100%"
     />
     
@@ -98,7 +97,7 @@ exports[`utils/HTML Test Suite matches snapshot 1`] = `
   
 
   <hr
-    className="sc-htpNat kCnBdq"
+    className="sc-bxivhb dCPlLh"
   />
   
 

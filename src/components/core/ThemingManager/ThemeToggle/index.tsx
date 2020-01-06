@@ -1,13 +1,13 @@
-import React, { Dispatch, SetStateAction } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import useTheme from '../../../hooks/useTheme';
-import Button from '../../common/Button';
-import Box from '../../primitives/Box';
-import Flex from '../../primitives/Flex';
-import Text from '../../primitives/Text';
+import { useTheming } from '..';
+import Button from '../../../common/Button';
+import Box from '../../../primitives/Box';
+import Flex from '../../../primitives/Flex';
+import Text from '../../../primitives/Text';
 
 type ThemeToggleProps = {
-  setTheme: (type: ThemeType) => void;
+  toggle: () => void;
 };
 
 const Circle = styled.div`
@@ -17,11 +17,10 @@ const Circle = styled.div`
   transform: ${({ theme }) => (theme.type === 'light' ? 'rotate3d(0, 0, 1, 0deg)' : 'rotate3d(0, 0, 1, 180deg)')};
 `;
 
-const ThemeToggle = ({ setTheme }: ThemeToggleProps) => {
-  const theme = useTheme();
-  const handleToggleTheme = () => setTheme(theme.type === 'light' ? 'dark' : 'light');
+const ThemeToggle = ({ toggle }: ThemeToggleProps) => {
+  const { theme } = useTheming();
   return (
-    <Button onClick={handleToggleTheme} position="absolute" right={2} top={2}>
+    <Button onClick={() => toggle()} position="absolute" right={3} top={3}>
       <Flex>
         <Circle>
           <Box

@@ -2,6 +2,7 @@ import * as Gatsby from 'gatsby';
 import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
 import Layout from '..';
+import ThemingManager from '../../ThemingManager';
 
 describe('components/Layout Test Suite', () => {
   beforeAll(() => {
@@ -48,7 +49,11 @@ describe('components/Layout Test Suite', () => {
   });
 
   it('matches snapshot', () => {
-    const jsx = <Layout>Layout Component</Layout>;
+    const jsx = (
+      <ThemingManager>
+        <Layout>Layout Component</Layout>
+      </ThemingManager>
+    );
     expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
   });
 });

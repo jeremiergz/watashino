@@ -1,10 +1,10 @@
-import React, { HTMLAttributes, useState } from 'react';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import { DarkTheme, LightTheme, Theme } from '../../../theme';
+import React, { HTMLAttributes } from 'react';
+import { createGlobalStyle } from 'styled-components';
+import { Theme } from '../../../theme';
 import Box from '../../primitives/Box';
 import Footer from '../Footer';
 import Header from '../Header';
-import ThemeToggle from '../ThemeToggle';
+import { useTheming } from '../ThemingManager';
 import Content from './Content';
 
 type LayoutProps = HTMLAttributes<HTMLDivElement>;
@@ -18,11 +18,9 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
     }
     body {
-        > * {
-            color: ${({ theme }: { theme: Theme }) => theme.colors.text};
-            font-family: ${({ theme }: { theme: Theme }) => theme.fonts.main};
-            font-weight: ${({ theme }: { theme: Theme }) => theme.fontWeights.regular};
-        }
+        color: ${({ theme }: { theme: Theme }) => theme.colors.text};
+        font-family: ${({ theme }: { theme: Theme }) => theme.fonts.main};
+        font-weight: ${({ theme }: { theme: Theme }) => theme.fontWeights.regular};
         svg {
             fill: ${({ theme }: { theme: Theme }) => theme.colors.text};
         }
@@ -40,23 +38,15 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Layout = ({ children }: LayoutProps) => {
-  const isBrowser = typeof window !== 'undefined';
-  const storedTheme = (isBrowser && (localStorage.getItem('theme') as ThemeType)) || 'light';
-  const [theme, setTheme] = useState<ThemeType>(storedTheme);
-  const saveTheme = (type: ThemeType) => {
-    setTheme(type);
-    if (isBrowser) localStorage.setItem('theme', type);
-  };
-  const selectedTheme = theme === 'light' ? LightTheme : DarkTheme;
+  const { theme } = useTheming();
   return (
-    <ThemeProvider theme={selectedTheme}>
+    <>
       <GlobalStyle />
-      <ThemeToggle setTheme={saveTheme} />
       <Header />
       <Box
         as="main"
         margin="auto"
-        maxWidth={selectedTheme.breakpoints[3]}
+        maxWidth={theme.breakpoints[3]}
         paddingBottom={{ _: 78, tablet: 108 }}
         paddingX={{ _: 16, tablet: 32 }}
         textAlign="center"
@@ -64,7 +54,7 @@ const Layout = ({ children }: LayoutProps) => {
         {children}
       </Box>
       <Footer />
-    </ThemeProvider>
+    </>
   );
 };
 

@@ -6,14 +6,14 @@ exports[`components/widgets/PreviousNextNavigation Test Suite matches snapshot 1
   display="flex"
 >
   <a
-    className="sc-bdVaJa sc-bwzfXH hAeIai"
+    className="sc-bdVaJa sc-ifAKCX gOFbvc"
     href="/previous"
     target="_blank"
   >
     Prev
   </a>
   <a
-    className="sc-bdVaJa sc-bwzfXH kGLepB"
+    className="sc-bdVaJa sc-ifAKCX dnlYhI"
     href="/next"
     target="_blank"
   >

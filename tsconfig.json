@@ -8,6 +8,7 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "noEmit": true,
+    "noUnusedLocals": true,
     "skipLibCheck": true,
     "strict": false,
     "typeRoots": ["node_modules/@types", "src/@types"]

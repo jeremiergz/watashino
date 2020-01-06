@@ -3,7 +3,7 @@
 exports[`components/Layout Test Suite matches snapshot 1`] = `
 Array [
   <button
-    className="sc-EHOje iHBlot"
+    className="sc-bwzfXH jfdKSm"
     onClick={[Function]}
   >
     <div
@@ -11,7 +11,7 @@ Array [
       display="flex"
     >
       <div
-        className="sc-bZQynM jeZGWb"
+        className="sc-bxivhb gahHdT"
       >
         <div
           className="sc-bdVaJa gcrpvP"
@@ -39,7 +39,7 @@ Array [
     display="flex"
   >
     <a
-      className="sc-bdVaJa sc-bwzfXH iFvHDA"
+      className="sc-bdVaJa sc-ifAKCX chIEls"
       href="/about-me"
       target="_blank"
     >
@@ -118,7 +118,7 @@ Array [
         display="flex"
       >
         <h3
-          className="sc-htpNat sc-bxivhb jknvcF"
+          className="sc-htpNat sc-EHOje cZVNAw"
           color="primary"
           fontWeight="bold"
           letterSpacing={-1}
@@ -126,7 +126,7 @@ Array [
           Jeremie Rodriguez
         </h3>
         <h4
-          className="sc-htpNat sc-bxivhb lpeTDw"
+          className="sc-htpNat sc-EHOje bQzxQU"
           fontWeight="semi-bold"
         >
           Full Stack Engineer
@@ -142,12 +142,12 @@ Array [
         display="flex"
       >
         <a
-          className="sc-bdVaJa sc-bwzfXH dDHkfz"
+          className="sc-bdVaJa sc-ifAKCX djohnT"
           href="/"
           target="_blank"
         >
           <svg
-            className="sc-ifAKCX eUxbqw"
+            className="sc-bZQynM fTyviB"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -161,15 +161,14 @@ Array [
         display="flex"
       >
         <a
-          className="sc-bdVaJa sc-bwzfXH dDHkfz"
-          color="inherit"
+          className="sc-bdVaJa sc-ifAKCX djohnT"
           display="flex"
           download={true}
           fontWeight="semi-bold"
           target="_blank"
         >
           <svg
-            className="sc-ifAKCX eUxbqw sc-ifAKCX eUxbqw"
+            className="sc-bZQynM fTyviB sc-bZQynM fTyviB"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -197,7 +196,7 @@ Array [
     className="sc-bdVaJa ccyflP"
   >
     <a
-      className="sc-bdVaJa sc-bwzfXH gnTZvb"
+      className="sc-bdVaJa sc-ifAKCX eSCzpL"
       color="gray"
       fontWeight="semi-bold"
       href="https://test-repository/tree/3.16.120"

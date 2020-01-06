@@ -10,12 +10,12 @@ exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
     display="flex"
   >
     <a
-      className="sc-bdVaJa sc-bwzfXH dDHkfz"
+      className="sc-bdVaJa sc-bwzfXH fHZPIv"
       href="/"
       target="_blank"
     >
       <svg
-        className="sc-htpNat kePDRN"
+        className="sc-EHOje jjYlEI"
         height={32}
         viewBox="0 0 24 24"
         width={32}
@@ -29,8 +29,7 @@ exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
     display="flex"
   >
     <a
-      className="sc-bdVaJa sc-bwzfXH dDHkfz"
-      color="inherit"
+      className="sc-bdVaJa sc-bwzfXH fHZPIv"
       display="flex"
       download={true}
       fontWeight="semi-bold"
@@ -38,7 +37,7 @@ exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
       target="_blank"
     >
       <svg
-        className="sc-htpNat kePDRN sc-htpNat kePDRN"
+        className="sc-EHOje jjYlEI sc-EHOje jjYlEI"
         height={32}
         viewBox="0 0 24 24"
         width={32}

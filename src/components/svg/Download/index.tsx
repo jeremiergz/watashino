@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react';
+import React from 'react';
 import Svg, { SvgProps } from '../../common/Svg';
 
 type DownloadProps = SvgProps;

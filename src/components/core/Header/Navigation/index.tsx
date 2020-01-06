@@ -1,5 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React, { ReactNode } from 'react';
+import { Routes } from '../../../../utils/Routes';
 import Anchor from '../../../common/Anchor';
 import Link from '../../../common/Link';
 import Svg from '../../../common/Svg';
@@ -50,7 +51,7 @@ const Navigation = () => {
     <Flex as="nav" marginTop={{ _: 16, tablet: 0 }}>
       {links
         .filter(link => {
-          if (link.to === '/posts' && totalCount === 0) return false;
+          if (link.to === Routes.posts && totalCount === 0) return false;
           return !link.ignoreInNavigation;
         })
         .sort((a, b) => a.navOrder - b.navOrder)

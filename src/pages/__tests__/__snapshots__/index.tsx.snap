@@ -3,29 +3,29 @@
 exports[`pages Test Suite pages/404 Test Suite matches snapshot 1`] = `
 Array [
   <button
-    className="sc-EHOje iHBlot"
+    className="sc-bdVaJa kROAPX"
     onClick={[Function]}
   >
     <div
-      className="sc-htpNat jdVgTT"
+      className="sc-bwzfXH lkiSAy"
       display="flex"
     >
       <div
-        className="sc-bZQynM jeZGWb"
+        className="sc-bxivhb gahHdT"
       >
         <div
-          className="sc-htpNat kPIHJm"
+          className="sc-bwzfXH fkncFp"
           height={16}
           width={8}
         />
         <div
-          className="sc-htpNat cwSDrh"
+          className="sc-bwzfXH eKomhk"
           height={16}
           width={8}
         />
       </div>
       <span
-        className="sc-bdVaJa fLkPDf"
+        className="sc-htpNat iJnzsZ"
         color="gray"
         fontFamily="'Open Sans', sans-serif"
         fontSize={14}
@@ -35,11 +35,11 @@ Array [
     </div>
   </button>,
   <header
-    className="sc-htpNat uLPvW"
+    className="sc-bwzfXH bKInsc"
     display="flex"
   >
     <a
-      className="sc-htpNat sc-bxivhb bLLmnD"
+      className="sc-bwzfXH sc-EHOje lpdRHf"
       href="/about-me"
       target="_blank"
     >
@@ -114,11 +114,11 @@ Array [
         />
       </div>
       <div
-        className="sc-htpNat ieqUQt"
+        className="sc-bwzfXH gGLeDg"
         display="flex"
       >
         <h3
-          className="sc-bdVaJa sc-bwzfXH hwmPtm"
+          className="sc-htpNat sc-ifAKCX ggqWfj"
           color="primary"
           fontWeight="bold"
           letterSpacing={-1}
@@ -126,7 +126,7 @@ Array [
           Jeremie Rodriguez
         </h3>
         <h4
-          className="sc-bdVaJa sc-bwzfXH ichCKc"
+          className="sc-htpNat sc-ifAKCX dvNjIF"
           fontWeight="semi-bold"
         >
           Full Stack Engineer
@@ -134,20 +134,20 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-htpNat iiuPDl"
+      className="sc-bwzfXH fxUOFO"
       display="flex"
     >
       <div
-        className="sc-htpNat eMqoww"
+        className="sc-bwzfXH jfoIBD"
         display="flex"
       >
         <a
-          className="sc-htpNat sc-bxivhb gCAJZx"
+          className="sc-bwzfXH sc-EHOje fLiyyB"
           href="/"
           target="_blank"
         >
           <svg
-            className="sc-ifAKCX eUxbqw"
+            className="sc-bZQynM fTyviB"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -157,19 +157,18 @@ Array [
         </a>
       </div>
       <div
-        className="sc-htpNat eMqoww"
+        className="sc-bwzfXH jfoIBD"
         display="flex"
       >
         <a
-          className="sc-htpNat sc-bxivhb gCAJZx"
-          color="inherit"
+          className="sc-bwzfXH sc-EHOje fLiyyB"
           display="flex"
           download={true}
           fontWeight="semi-bold"
           target="_blank"
         >
           <svg
-            className="sc-ifAKCX eUxbqw sc-ifAKCX eUxbqw"
+            className="sc-bZQynM fTyviB sc-bZQynM fTyviB"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -189,24 +188,24 @@ Array [
     </nav>
   </header>,
   <main
-    className="sc-htpNat gAErBN"
+    className="sc-bwzfXH bCplkB"
   >
     <h1
-      className="sc-bdVaJa sc-bwzfXH eCciCe"
+      className="sc-htpNat sc-ifAKCX bVwfBA"
     >
       Test Page
     </h1>
     <section
-      className="sc-htpNat kHVrFE"
+      className="sc-bwzfXH fzKcyd"
     >
       <h4
-        className="sc-bdVaJa sc-bwzfXH cCbrNn"
+        className="sc-htpNat sc-ifAKCX hbVJtX"
       >
         Man, I hate when this happens...
       </h4>
       Find your way 
       <a
-        className="sc-htpNat sc-bxivhb iduQbk"
+        className="sc-bwzfXH sc-EHOje eBhCns"
         href="/about-me"
         target="_blank"
         variant="underlined"
@@ -216,10 +215,10 @@ Array [
     </section>
   </main>,
   <footer
-    className="sc-htpNat hElDbX"
+    className="sc-bwzfXH ilFEYT"
   >
     <a
-      className="sc-htpNat sc-bxivhb mrvKq"
+      className="sc-bwzfXH sc-EHOje dYPiTX"
       color="gray"
       fontWeight="semi-bold"
       href="https://test-repository/tree/3.16.120"
@@ -229,7 +228,7 @@ Array [
       v3.16.120 - source code
     </a>
     <div
-      className="sc-htpNat bVNVLF"
+      className="sc-bwzfXH elgsBB"
       color="gray"
       fontSize={14}
     >
@@ -242,29 +241,29 @@ Array [
 exports[`pages Test Suite pages/about-me Test Suite matches snapshot 1`] = `
 Array [
   <button
-    className="sc-EHOje iHBlot"
+    className="sc-bdVaJa kROAPX"
     onClick={[Function]}
   >
     <div
-      className="sc-htpNat jdVgTT"
+      className="sc-bwzfXH lkiSAy"
       display="flex"
     >
       <div
-        className="sc-bZQynM jeZGWb"
+        className="sc-bxivhb gahHdT"
       >
         <div
-          className="sc-htpNat kPIHJm"
+          className="sc-bwzfXH fkncFp"
           height={16}
           width={8}
         />
         <div
-          className="sc-htpNat cwSDrh"
+          className="sc-bwzfXH eKomhk"
           height={16}
           width={8}
         />
       </div>
       <span
-        className="sc-bdVaJa fLkPDf"
+        className="sc-htpNat iJnzsZ"
         color="gray"
         fontFamily="'Open Sans', sans-serif"
         fontSize={14}
@@ -274,11 +273,11 @@ Array [
     </div>
   </button>,
   <header
-    className="sc-htpNat uLPvW"
+    className="sc-bwzfXH bKInsc"
     display="flex"
   >
     <a
-      className="sc-htpNat sc-bxivhb bLLmnD"
+      className="sc-bwzfXH sc-EHOje lpdRHf"
       href="/about-me"
       target="_blank"
     >
@@ -353,11 +352,11 @@ Array [
         />
       </div>
       <div
-        className="sc-htpNat ieqUQt"
+        className="sc-bwzfXH gGLeDg"
         display="flex"
       >
         <h3
-          className="sc-bdVaJa sc-bwzfXH hwmPtm"
+          className="sc-htpNat sc-ifAKCX ggqWfj"
           color="primary"
           fontWeight="bold"
           letterSpacing={-1}
@@ -365,7 +364,7 @@ Array [
           Jeremie Rodriguez
         </h3>
         <h4
-          className="sc-bdVaJa sc-bwzfXH ichCKc"
+          className="sc-htpNat sc-ifAKCX dvNjIF"
           fontWeight="semi-bold"
         >
           Full Stack Engineer
@@ -373,20 +372,20 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-htpNat iiuPDl"
+      className="sc-bwzfXH fxUOFO"
       display="flex"
     >
       <div
-        className="sc-htpNat eMqoww"
+        className="sc-bwzfXH jfoIBD"
         display="flex"
       >
         <a
-          className="sc-htpNat sc-bxivhb gCAJZx"
+          className="sc-bwzfXH sc-EHOje fLiyyB"
           href="/"
           target="_blank"
         >
           <svg
-            className="sc-ifAKCX eUxbqw"
+            className="sc-bZQynM fTyviB"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -396,19 +395,18 @@ Array [
         </a>
       </div>
       <div
-        className="sc-htpNat eMqoww"
+        className="sc-bwzfXH jfoIBD"
         display="flex"
       >
         <a
-          className="sc-htpNat sc-bxivhb gCAJZx"
-          color="inherit"
+          className="sc-bwzfXH sc-EHOje fLiyyB"
           display="flex"
           download={true}
           fontWeight="semi-bold"
           target="_blank"
         >
           <svg
-            className="sc-ifAKCX eUxbqw sc-ifAKCX eUxbqw"
+            className="sc-bZQynM fTyviB sc-bZQynM fTyviB"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -428,30 +426,29 @@ Array [
     </nav>
   </header>,
   <main
-    className="sc-htpNat gAErBN"
+    className="sc-bwzfXH bCplkB"
   >
     <h1
-      className="sc-bdVaJa sc-bwzfXH eCciCe"
+      className="sc-htpNat sc-ifAKCX bVwfBA"
     >
       Test Page
     </h1>
     <section
-      className="sc-htpNat kHVrFE"
+      className="sc-bwzfXH fzKcyd"
     >
       <div
-        className="sc-htpNat ftdpGt"
+        className="sc-bwzfXH iMubTR"
         display="flex"
       >
         <a
-          className="sc-htpNat sc-bxivhb bLlFun"
-          color="inherit"
+          className="sc-bwzfXH sc-EHOje djSQgw"
           fontWeight="semi-bold"
           href="mailto:contact@fake.test"
           rel="noopener noreferrer"
           target="_blank"
         >
           <div
-            className="sc-htpNat eqvCRq"
+            className="sc-bwzfXH cdTZGH"
             width={
               Object {
                 "_": 32,
@@ -615,19 +612,18 @@ Array [
         />
       </div>
       <p
-        className="sc-bdVaJa dCDznL"
+        className="sc-htpNat hPlLog"
         fontSize={20}
       >
         Hi there, I'm Jeremie!
       </p>
       <p
-        className="sc-bdVaJa dCDznL"
+        className="sc-htpNat hPlLog"
         fontSize={20}
       >
         I'm currently working at 
         <a
-          className="sc-htpNat sc-bxivhb pIQrk"
-          color="inherit"
+          className="sc-bwzfXH sc-EHOje epcTNB"
           display="inline-flex"
           fontWeight="semi-bold"
           height="26px"
@@ -709,18 +705,17 @@ Array [
          as a Full Stack Engineer.
       </p>
       <p
-        className="sc-bdVaJa dCDznL"
+        className="sc-htpNat hPlLog"
         fontSize={20}
       >
         I particularly enjoy working with those technologies:
       </p>
       <div
-        className="sc-htpNat fZnpUU sc-gzVnrw gfPMLp"
+        className="sc-bwzfXH eZPHMZ sc-gzVnrw gfPMLp"
         display="flex"
       >
         <a
-          className="sc-htpNat sc-bxivhb esdMEG"
-          color="inherit"
+          className="sc-bwzfXH sc-EHOje eZuepf"
           fontWeight="semi-bold"
           href="https://image.tech"
           rel="noopener noreferrer"
@@ -799,13 +794,12 @@ Array [
         </a>
       </div>
       <div
-        className="sc-htpNat kTLNfF"
+        className="sc-bwzfXH kgWTsT"
         fontSize={20}
       >
         ▾ By the way, this is where I live, 
         <a
-          className="sc-htpNat sc-bxivhb bLlFun"
-          color="inherit"
+          className="sc-bwzfXH sc-EHOje djSQgw"
           fontWeight="semi-bold"
           rel="noopener noreferrer"
           target="_blank"
@@ -817,10 +811,10 @@ Array [
     </section>
   </main>,
   <footer
-    className="sc-htpNat hElDbX"
+    className="sc-bwzfXH ilFEYT"
   >
     <a
-      className="sc-htpNat sc-bxivhb mrvKq"
+      className="sc-bwzfXH sc-EHOje dYPiTX"
       color="gray"
       fontWeight="semi-bold"
       href="https://test-repository/tree/3.16.120"
@@ -830,7 +824,7 @@ Array [
       v3.16.120 - source code
     </a>
     <div
-      className="sc-htpNat bVNVLF"
+      className="sc-bwzfXH elgsBB"
       color="gray"
       fontSize={14}
     >
@@ -843,29 +837,29 @@ Array [
 exports[`pages Test Suite pages/index Test Suite matches snapshot 1`] = `
 Array [
   <button
-    className="sc-EHOje iHBlot"
+    className="sc-bdVaJa kROAPX"
     onClick={[Function]}
   >
     <div
-      className="sc-htpNat jdVgTT"
+      className="sc-bwzfXH lkiSAy"
       display="flex"
     >
       <div
-        className="sc-bZQynM jeZGWb"
+        className="sc-bxivhb gahHdT"
       >
         <div
-          className="sc-htpNat kPIHJm"
+          className="sc-bwzfXH fkncFp"
           height={16}
           width={8}
         />
         <div
-          className="sc-htpNat cwSDrh"
+          className="sc-bwzfXH eKomhk"
           height={16}
           width={8}
         />
       </div>
       <span
-        className="sc-bdVaJa fLkPDf"
+        className="sc-htpNat iJnzsZ"
         color="gray"
         fontFamily="'Open Sans', sans-serif"
         fontSize={14}
@@ -875,11 +869,11 @@ Array [
     </div>
   </button>,
   <header
-    className="sc-htpNat uLPvW"
+    className="sc-bwzfXH bKInsc"
     display="flex"
   >
     <a
-      className="sc-htpNat sc-bxivhb bLLmnD"
+      className="sc-bwzfXH sc-EHOje lpdRHf"
       href="/about-me"
       target="_blank"
     >
@@ -954,11 +948,11 @@ Array [
         />
       </div>
       <div
-        className="sc-htpNat ieqUQt"
+        className="sc-bwzfXH gGLeDg"
         display="flex"
       >
         <h3
-          className="sc-bdVaJa sc-bwzfXH hwmPtm"
+          className="sc-htpNat sc-ifAKCX ggqWfj"
           color="primary"
           fontWeight="bold"
           letterSpacing={-1}
@@ -966,7 +960,7 @@ Array [
           Jeremie Rodriguez
         </h3>
         <h4
-          className="sc-bdVaJa sc-bwzfXH ichCKc"
+          className="sc-htpNat sc-ifAKCX dvNjIF"
           fontWeight="semi-bold"
         >
           Full Stack Engineer
@@ -974,20 +968,20 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-htpNat iiuPDl"
+      className="sc-bwzfXH fxUOFO"
       display="flex"
     >
       <div
-        className="sc-htpNat eMqoww"
+        className="sc-bwzfXH jfoIBD"
         display="flex"
       >
         <a
-          className="sc-htpNat sc-bxivhb gCAJZx"
+          className="sc-bwzfXH sc-EHOje fLiyyB"
           href="/"
           target="_blank"
         >
           <svg
-            className="sc-ifAKCX eUxbqw"
+            className="sc-bZQynM fTyviB"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -997,19 +991,18 @@ Array [
         </a>
       </div>
       <div
-        className="sc-htpNat eMqoww"
+        className="sc-bwzfXH jfoIBD"
         display="flex"
       >
         <a
-          className="sc-htpNat sc-bxivhb gCAJZx"
-          color="inherit"
+          className="sc-bwzfXH sc-EHOje fLiyyB"
           display="flex"
           download={true}
           fontWeight="semi-bold"
           target="_blank"
         >
           <svg
-            className="sc-ifAKCX eUxbqw sc-ifAKCX eUxbqw"
+            className="sc-bZQynM fTyviB sc-bZQynM fTyviB"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -1029,17 +1022,17 @@ Array [
     </nav>
   </header>,
   <main
-    className="sc-htpNat gAErBN"
+    className="sc-bwzfXH bCplkB"
   >
     <section
-      className="sc-htpNat kHVrFE"
+      className="sc-bwzfXH fzKcyd"
     />
   </main>,
   <footer
-    className="sc-htpNat hElDbX"
+    className="sc-bwzfXH ilFEYT"
   >
     <a
-      className="sc-htpNat sc-bxivhb mrvKq"
+      className="sc-bwzfXH sc-EHOje dYPiTX"
       color="gray"
       fontWeight="semi-bold"
       href="https://test-repository/tree/3.16.120"
@@ -1049,7 +1042,7 @@ Array [
       v3.16.120 - source code
     </a>
     <div
-      className="sc-htpNat bVNVLF"
+      className="sc-bwzfXH elgsBB"
       color="gray"
       fontSize={14}
     >
@@ -1062,29 +1055,29 @@ Array [
 exports[`pages Test Suite pages/posts Test Suite matches snapshot 1`] = `
 Array [
   <button
-    className="sc-EHOje iHBlot"
+    className="sc-bdVaJa kROAPX"
     onClick={[Function]}
   >
     <div
-      className="sc-htpNat jdVgTT"
+      className="sc-bwzfXH lkiSAy"
       display="flex"
     >
       <div
-        className="sc-bZQynM jeZGWb"
+        className="sc-bxivhb gahHdT"
       >
         <div
-          className="sc-htpNat kPIHJm"
+          className="sc-bwzfXH fkncFp"
           height={16}
           width={8}
         />
         <div
-          className="sc-htpNat cwSDrh"
+          className="sc-bwzfXH eKomhk"
           height={16}
           width={8}
         />
       </div>
       <span
-        className="sc-bdVaJa fLkPDf"
+        className="sc-htpNat iJnzsZ"
         color="gray"
         fontFamily="'Open Sans', sans-serif"
         fontSize={14}
@@ -1094,11 +1087,11 @@ Array [
     </div>
   </button>,
   <header
-    className="sc-htpNat uLPvW"
+    className="sc-bwzfXH bKInsc"
     display="flex"
   >
     <a
-      className="sc-htpNat sc-bxivhb bLLmnD"
+      className="sc-bwzfXH sc-EHOje lpdRHf"
       href="/about-me"
       target="_blank"
     >
@@ -1173,11 +1166,11 @@ Array [
         />
       </div>
       <div
-        className="sc-htpNat ieqUQt"
+        className="sc-bwzfXH gGLeDg"
         display="flex"
       >
         <h3
-          className="sc-bdVaJa sc-bwzfXH hwmPtm"
+          className="sc-htpNat sc-ifAKCX ggqWfj"
           color="primary"
           fontWeight="bold"
           letterSpacing={-1}
@@ -1185,7 +1178,7 @@ Array [
           Jeremie Rodriguez
         </h3>
         <h4
-          className="sc-bdVaJa sc-bwzfXH ichCKc"
+          className="sc-htpNat sc-ifAKCX dvNjIF"
           fontWeight="semi-bold"
         >
           Full Stack Engineer
@@ -1193,20 +1186,20 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-htpNat iiuPDl"
+      className="sc-bwzfXH fxUOFO"
       display="flex"
     >
       <div
-        className="sc-htpNat eMqoww"
+        className="sc-bwzfXH jfoIBD"
         display="flex"
       >
         <a
-          className="sc-htpNat sc-bxivhb gCAJZx"
+          className="sc-bwzfXH sc-EHOje fLiyyB"
           href="/"
           target="_blank"
         >
           <svg
-            className="sc-ifAKCX eUxbqw"
+            className="sc-bZQynM fTyviB"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -1216,19 +1209,18 @@ Array [
         </a>
       </div>
       <div
-        className="sc-htpNat eMqoww"
+        className="sc-bwzfXH jfoIBD"
         display="flex"
       >
         <a
-          className="sc-htpNat sc-bxivhb gCAJZx"
-          color="inherit"
+          className="sc-bwzfXH sc-EHOje fLiyyB"
           display="flex"
           download={true}
           fontWeight="semi-bold"
           target="_blank"
         >
           <svg
-            className="sc-ifAKCX eUxbqw sc-ifAKCX eUxbqw"
+            className="sc-bZQynM fTyviB sc-bZQynM fTyviB"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -1248,24 +1240,24 @@ Array [
     </nav>
   </header>,
   <main
-    className="sc-htpNat gAErBN"
+    className="sc-bwzfXH bCplkB"
   >
     <h1
-      className="sc-bdVaJa sc-bwzfXH eCciCe"
+      className="sc-htpNat sc-ifAKCX bVwfBA"
     >
       Test Page
     </h1>
     <section
-      className="sc-htpNat kHVrFE"
+      className="sc-bwzfXH fzKcyd"
     >
       <div
-        className="sc-htpNat sc-dnqmqq hvgxeu"
+        className="sc-bwzfXH sc-dnqmqq hvgxeu"
       >
         <ul
-          className="sc-htpNat sc-htoDjs bpQtwv"
+          className="sc-bwzfXH sc-htoDjs bpQtwv"
         >
           <label
-            className="sc-bdVaJa cAiBVA"
+            className="sc-htpNat hTcnQL"
             color="secondary"
             display="block"
             fontSize={32}
@@ -1274,13 +1266,13 @@ Array [
             2019
           </label>
           <li
-            className="sc-htpNat jMvEZm"
+            className="sc-bwzfXH jRMgMj"
             display="flex"
             fontSize={24}
             fontWeight="semi-bold"
           >
             <span
-              className="sc-htpNat cLQbaU"
+              className="sc-bwzfXH kDNjnc"
               color="primary"
               fontSize={16}
               fontWeight="bold"
@@ -1288,7 +1280,7 @@ Array [
               AUG-08
             </span>
             <a
-              className="sc-htpNat sc-bxivhb bLlFun"
+              className="sc-bwzfXH sc-EHOje djSQgw"
               href="/posts/test"
               target="_blank"
             >
@@ -1300,10 +1292,10 @@ Array [
     </section>
   </main>,
   <footer
-    className="sc-htpNat hElDbX"
+    className="sc-bwzfXH ilFEYT"
   >
     <a
-      className="sc-htpNat sc-bxivhb mrvKq"
+      className="sc-bwzfXH sc-EHOje dYPiTX"
       color="gray"
       fontWeight="semi-bold"
       href="https://test-repository/tree/3.16.120"
@@ -1313,7 +1305,7 @@ Array [
       v3.16.120 - source code
     </a>
     <div
-      className="sc-htpNat bVNVLF"
+      className="sc-bwzfXH elgsBB"
       color="gray"
       fontSize={14}
     >

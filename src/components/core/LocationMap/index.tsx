@@ -1,11 +1,11 @@
 import { GoogleMap, Marker, useLoadScript } from '@react-google-maps/api';
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import useTheme from '../../../hooks/useTheme';
 import Box from '../../primitives/Box';
+import { useTheming } from '../ThemingManager';
 
 const LocationMap = () => {
-  const theme = useTheme();
+  const { theme } = useTheming();
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: process.env.GATSBY_GOOGLE_MAPS_API_KEY,
     preventGoogleFontsLoading: true,

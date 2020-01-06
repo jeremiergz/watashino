@@ -2,6 +2,7 @@ import * as ReactGoogleMapsAPI from '@react-google-maps/api';
 import * as Gatsby from 'gatsby';
 import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
+import ThemingManager from '../../components/core/ThemingManager';
 import NotFoundPage from '../404';
 import AboutMePage from '../about-me';
 import IndexPage from '../index';
@@ -95,28 +96,44 @@ describe('pages Test Suite', () => {
 
   describe('pages/404 Test Suite', () => {
     it('matches snapshot', () => {
-      const jsx = <NotFoundPage />;
+      const jsx = (
+        <ThemingManager>
+          <NotFoundPage />
+        </ThemingManager>
+      );
       expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
     });
   });
 
   describe('pages/about-me Test Suite', () => {
     it('matches snapshot', () => {
-      const jsx = <AboutMePage />;
+      const jsx = (
+        <ThemingManager>
+          <AboutMePage />
+        </ThemingManager>
+      );
       expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
     });
   });
 
   describe('pages/index Test Suite', () => {
     it('matches snapshot', () => {
-      const jsx = <IndexPage />;
+      const jsx = (
+        <ThemingManager>
+          <IndexPage />
+        </ThemingManager>
+      );
       expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
     });
   });
 
   describe('pages/posts Test Suite', () => {
     it('matches snapshot', () => {
-      const jsx = <PostsPage />;
+      const jsx = (
+        <ThemingManager>
+          <PostsPage />
+        </ThemingManager>
+      );
       expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
     });
   });
