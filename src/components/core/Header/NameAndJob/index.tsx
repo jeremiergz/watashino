@@ -1,11 +1,13 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import Img, { FixedObject } from 'gatsby-image';
 import React from 'react';
+import useTheme from '../../../../hooks/useTheme';
 import Heading from '../../../common/Heading';
 import Link from '../../../common/Link';
 import Flex from '../../../primitives/Flex';
 
 const NameAndJob = () => {
+  const theme = useTheme();
   const { dataJson, file } = useStaticQuery<GraphQL.HeaderDataQuery>(graphql`
     query HeaderData {
       dataJson {
@@ -30,7 +32,7 @@ const NameAndJob = () => {
       to="/about-me"
     >
       <Img fixed={file.childImageSharp.fixed as FixedObject} imgStyle={{ height: '80px', width: '80px' }} />
-      <Flex color="text" flexDirection="column" justifyContent="center" marginLeft={{ tablet: 2 }}>
+      <Flex flexDirection="column" justifyContent="center" marginLeft={{ tablet: 2 }}>
         <Heading color="primary" fontWeight="bold" letterSpacing={-1} margin={0} padding={2} variant="h3" zIndex={1}>
           Jeremie Rodriguez
         </Heading>

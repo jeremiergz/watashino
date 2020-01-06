@@ -39,7 +39,7 @@ Array [
     display="flex"
   >
     <a
-      className="sc-htpNat sc-bxivhb kGGebl"
+      className="sc-htpNat sc-bxivhb bLLmnD"
       href="/about-me"
       target="_blank"
     >
@@ -114,8 +114,7 @@ Array [
         />
       </div>
       <div
-        className="sc-htpNat jctEvh"
-        color="text"
+        className="sc-htpNat ieqUQt"
         display="flex"
       >
         <h3
@@ -143,14 +142,16 @@ Array [
         display="flex"
       >
         <a
-          className="sc-htpNat sc-bxivhb hzXCSR"
+          className="sc-htpNat sc-bxivhb gCAJZx"
           href="/"
           target="_blank"
         >
-          <div
-            className="sc-htpNat sc-ifAKCX cPrshM"
+          <svg
+            className="sc-ifAKCX eUxbqw"
             height={32}
+            viewBox="0 0 24 24"
             width={32}
+            xmlns="http://www.w3.org/2000/svg"
           />
           Test
         </a>
@@ -160,15 +161,15 @@ Array [
         display="flex"
       >
         <a
-          className="sc-htpNat sc-bxivhb hzXCSR"
-          color="text"
+          className="sc-htpNat sc-bxivhb gCAJZx"
+          color="inherit"
           display="flex"
           download={true}
           fontWeight="semi-bold"
           target="_blank"
         >
           <svg
-            className="sc-htpNat sc-ifAKCX cPrshM"
+            className="sc-ifAKCX eUxbqw sc-ifAKCX eUxbqw"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -205,7 +206,7 @@ Array [
       </h4>
       Find your way 
       <a
-        className="sc-htpNat sc-bxivhb guUryU"
+        className="sc-htpNat sc-bxivhb iduQbk"
         href="/about-me"
         target="_blank"
         variant="underlined"
@@ -277,7 +278,7 @@ Array [
     display="flex"
   >
     <a
-      className="sc-htpNat sc-bxivhb kGGebl"
+      className="sc-htpNat sc-bxivhb bLLmnD"
       href="/about-me"
       target="_blank"
     >
@@ -352,8 +353,7 @@ Array [
         />
       </div>
       <div
-        className="sc-htpNat jctEvh"
-        color="text"
+        className="sc-htpNat ieqUQt"
         display="flex"
       >
         <h3
@@ -381,14 +381,16 @@ Array [
         display="flex"
       >
         <a
-          className="sc-htpNat sc-bxivhb hzXCSR"
+          className="sc-htpNat sc-bxivhb gCAJZx"
           href="/"
           target="_blank"
         >
-          <div
-            className="sc-htpNat sc-ifAKCX cPrshM"
+          <svg
+            className="sc-ifAKCX eUxbqw"
             height={32}
+            viewBox="0 0 24 24"
             width={32}
+            xmlns="http://www.w3.org/2000/svg"
           />
           Test
         </a>
@@ -398,15 +400,15 @@ Array [
         display="flex"
       >
         <a
-          className="sc-htpNat sc-bxivhb hzXCSR"
-          color="text"
+          className="sc-htpNat sc-bxivhb gCAJZx"
+          color="inherit"
           display="flex"
           download={true}
           fontWeight="semi-bold"
           target="_blank"
         >
           <svg
-            className="sc-htpNat sc-ifAKCX cPrshM"
+            className="sc-ifAKCX eUxbqw sc-ifAKCX eUxbqw"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -441,8 +443,8 @@ Array [
         display="flex"
       >
         <a
-          className="sc-htpNat sc-bxivhb fdHQor"
-          color="text"
+          className="sc-htpNat sc-bxivhb bLlFun"
+          color="inherit"
           fontWeight="semi-bold"
           href="mailto:contact@fake.test"
           rel="noopener noreferrer"
@@ -624,8 +626,8 @@ Array [
       >
         I'm currently working at 
         <a
-          className="sc-htpNat sc-bxivhb iMXIza"
-          color="text"
+          className="sc-htpNat sc-bxivhb pIQrk"
+          color="inherit"
           display="inline-flex"
           fontWeight="semi-bold"
           height="26px"
@@ -717,8 +719,8 @@ Array [
         display="flex"
       >
         <a
-          className="sc-htpNat sc-bxivhb iHEtc"
-          color="text"
+          className="sc-htpNat sc-bxivhb esdMEG"
+          color="inherit"
           fontWeight="semi-bold"
           href="https://image.tech"
           rel="noopener noreferrer"
@@ -802,8 +804,8 @@ Array [
       >
         ▾ By the way, this is where I live, 
         <a
-          className="sc-htpNat sc-bxivhb fdHQor"
-          color="text"
+          className="sc-htpNat sc-bxivhb bLlFun"
+          color="inherit"
           fontWeight="semi-bold"
           rel="noopener noreferrer"
           target="_blank"
@@ -877,7 +879,7 @@ Array [
     display="flex"
   >
     <a
-      className="sc-htpNat sc-bxivhb kGGebl"
+      className="sc-htpNat sc-bxivhb bLLmnD"
       href="/about-me"
       target="_blank"
     >
@@ -952,8 +954,7 @@ Array [
         />
       </div>
       <div
-        className="sc-htpNat jctEvh"
-        color="text"
+        className="sc-htpNat ieqUQt"
         display="flex"
       >
         <h3
@@ -981,14 +982,16 @@ Array [
         display="flex"
       >
         <a
-          className="sc-htpNat sc-bxivhb hzXCSR"
+          className="sc-htpNat sc-bxivhb gCAJZx"
           href="/"
           target="_blank"
         >
-          <div
-            className="sc-htpNat sc-ifAKCX cPrshM"
+          <svg
+            className="sc-ifAKCX eUxbqw"
             height={32}
+            viewBox="0 0 24 24"
             width={32}
+            xmlns="http://www.w3.org/2000/svg"
           />
           Test
         </a>
@@ -998,15 +1001,15 @@ Array [
         display="flex"
       >
         <a
-          className="sc-htpNat sc-bxivhb hzXCSR"
-          color="text"
+          className="sc-htpNat sc-bxivhb gCAJZx"
+          color="inherit"
           display="flex"
           download={true}
           fontWeight="semi-bold"
           target="_blank"
         >
           <svg
-            className="sc-htpNat sc-ifAKCX cPrshM"
+            className="sc-ifAKCX eUxbqw sc-ifAKCX eUxbqw"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -1095,7 +1098,7 @@ Array [
     display="flex"
   >
     <a
-      className="sc-htpNat sc-bxivhb kGGebl"
+      className="sc-htpNat sc-bxivhb bLLmnD"
       href="/about-me"
       target="_blank"
     >
@@ -1170,8 +1173,7 @@ Array [
         />
       </div>
       <div
-        className="sc-htpNat jctEvh"
-        color="text"
+        className="sc-htpNat ieqUQt"
         display="flex"
       >
         <h3
@@ -1199,14 +1201,16 @@ Array [
         display="flex"
       >
         <a
-          className="sc-htpNat sc-bxivhb hzXCSR"
+          className="sc-htpNat sc-bxivhb gCAJZx"
           href="/"
           target="_blank"
         >
-          <div
-            className="sc-htpNat sc-ifAKCX cPrshM"
+          <svg
+            className="sc-ifAKCX eUxbqw"
             height={32}
+            viewBox="0 0 24 24"
             width={32}
+            xmlns="http://www.w3.org/2000/svg"
           />
           Test
         </a>
@@ -1216,15 +1220,15 @@ Array [
         display="flex"
       >
         <a
-          className="sc-htpNat sc-bxivhb hzXCSR"
-          color="text"
+          className="sc-htpNat sc-bxivhb gCAJZx"
+          color="inherit"
           display="flex"
           download={true}
           fontWeight="semi-bold"
           target="_blank"
         >
           <svg
-            className="sc-htpNat sc-ifAKCX cPrshM"
+            className="sc-ifAKCX eUxbqw sc-ifAKCX eUxbqw"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -1284,7 +1288,7 @@ Array [
               AUG-08
             </span>
             <a
-              className="sc-htpNat sc-bxivhb fdHQor"
+              className="sc-htpNat sc-bxivhb bLlFun"
               href="/posts/test"
               target="_blank"
             >

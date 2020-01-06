@@ -16,10 +16,15 @@ const GlobalStyle = createGlobalStyle`
         width: 100%;
         margin: 0;
         padding: 0;
+    }
+    body {
         > * {
             color: ${({ theme }: { theme: Theme }) => theme.colors.text};
             font-family: ${({ theme }: { theme: Theme }) => theme.fonts.main};
             font-weight: ${({ theme }: { theme: Theme }) => theme.fontWeights.regular};
+        }
+        svg {
+            fill: ${({ theme }: { theme: Theme }) => theme.colors.text};
         }
     }
     #___gatsby {
@@ -45,22 +50,20 @@ const Layout = ({ children }: LayoutProps) => {
   const selectedTheme = theme === 'light' ? LightTheme : DarkTheme;
   return (
     <ThemeProvider theme={selectedTheme}>
-      <>
-        <ThemeToggle setTheme={saveTheme} />
-        <Header />
-        <Box
-          as="main"
-          margin="auto"
-          maxWidth={selectedTheme.breakpoints[3]}
-          paddingBottom={{ _: 78, tablet: 108 }}
-          paddingX={{ _: 16, tablet: 32 }}
-          textAlign="center"
-        >
-          {children}
-        </Box>
-        <Footer />
-        <GlobalStyle />
-      </>
+      <GlobalStyle />
+      <ThemeToggle setTheme={saveTheme} />
+      <Header />
+      <Box
+        as="main"
+        margin="auto"
+        maxWidth={selectedTheme.breakpoints[3]}
+        paddingBottom={{ _: 78, tablet: 108 }}
+        paddingX={{ _: 16, tablet: 32 }}
+        textAlign="center"
+      >
+        {children}
+      </Box>
+      <Footer />
     </ThemeProvider>
   );
 };

@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`utils/HTML Test Suite matches snapshot 1`] = `
+<div>
+  <p
+    className="sc-bdVaJa dCDznL"
+    fontSize={20}
+  >
+    <a
+      className="sc-htpNat sc-bxivhb bLlFun"
+      color="inherit"
+      fontWeight="semi-bold"
+      href="https://www.gatsbyjs.org"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Gatsby
+    </a>
+  </p>
+  
+
+  <blockquote
+    className="sc-htpNat SoFJf"
+    color="gray"
+    fontStyle="italic"
+  >
+    <div
+      className="sc-htpNat sc-ifAKCX dPXRuh"
+      height="100%"
+    />
+    
+
+    <p
+      className="sc-bdVaJa dCDznL"
+      fontSize={20}
+    >
+      blockquote
+    </p>
+    
+
+  </blockquote>
+  
+
+  <p
+    className="sc-bdVaJa dCDznL"
+    fontSize={20}
+  >
+    <code
+      className="sc-bdVaJa iELOxI"
+      color="white"
+      display="inline-block"
+      fontSize={16}
+    >
+      inline code
+    </code>
+  </p>
+  
+
+  <pre>
+    <code
+      className="sc-bdVaJa iELOxI"
+      color="white"
+      display="inline-block"
+      fontSize={16}
+    >
+      code
+
+    </code>
+  </pre>
+  
+
+  <h1
+    className="sc-bdVaJa sc-bwzfXH jrAUjp"
+  >
+    h1
+  </h1>
+  
+
+  <h2
+    className="sc-bdVaJa sc-bwzfXH gHduMf"
+  >
+    h2
+  </h2>
+  
+
+  <h3
+    className="sc-bdVaJa sc-bwzfXH iTNkdO"
+  >
+    h3
+  </h3>
+  
+
+  <h4
+    className="sc-bdVaJa sc-bwzfXH cCbrNn"
+  >
+    h4
+  </h4>
+  
+
+  <hr
+    className="sc-htpNat kCnBdq"
+  />
+  
+
+  <p
+    className="sc-bdVaJa dCDznL"
+    fontSize={20}
+  >
+    text
+  </p>
+</div>
+`;

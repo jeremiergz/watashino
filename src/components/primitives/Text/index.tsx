@@ -1,5 +1,5 @@
-import { ComponentType, TimeHTMLAttributes } from 'react';
-import styled, { StyledComponentProps } from 'styled-components';
+import { TimeHTMLAttributes } from 'react';
+import styled from 'styled-components';
 import {
   border,
   BorderProps,
@@ -17,7 +17,7 @@ import {
   zIndex,
   ZIndexProps,
 } from 'styled-system';
-import { Theme, ThemeProps } from '../../../theme';
+import { ThemeProps } from '../../../theme';
 
 type TextProps = BorderProps &
   ColorProps &

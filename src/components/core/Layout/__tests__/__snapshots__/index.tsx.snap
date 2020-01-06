@@ -39,7 +39,7 @@ Array [
     display="flex"
   >
     <a
-      className="sc-bdVaJa sc-bwzfXH krRFud"
+      className="sc-bdVaJa sc-bwzfXH iFvHDA"
       href="/about-me"
       target="_blank"
     >
@@ -114,8 +114,7 @@ Array [
         />
       </div>
       <div
-        className="sc-bdVaJa djLWaF"
-        color="text"
+        className="sc-bdVaJa cvOatm"
         display="flex"
       >
         <h3
@@ -143,14 +142,16 @@ Array [
         display="flex"
       >
         <a
-          className="sc-bdVaJa sc-bwzfXH kpNgfh"
+          className="sc-bdVaJa sc-bwzfXH dDHkfz"
           href="/"
           target="_blank"
         >
-          <div
-            className="sc-bdVaJa sc-ifAKCX cPrshM"
+          <svg
+            className="sc-ifAKCX eUxbqw"
             height={32}
+            viewBox="0 0 24 24"
             width={32}
+            xmlns="http://www.w3.org/2000/svg"
           />
           Test
         </a>
@@ -160,15 +161,15 @@ Array [
         display="flex"
       >
         <a
-          className="sc-bdVaJa sc-bwzfXH kpNgfh"
-          color="text"
+          className="sc-bdVaJa sc-bwzfXH dDHkfz"
+          color="inherit"
           display="flex"
           download={true}
           fontWeight="semi-bold"
           target="_blank"
         >
           <svg
-            className="sc-bdVaJa sc-ifAKCX cPrshM"
+            className="sc-ifAKCX eUxbqw sc-ifAKCX eUxbqw"
             height={32}
             viewBox="0 0 24 24"
             width={32}

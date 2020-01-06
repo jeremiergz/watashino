@@ -1,8 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`src/components/svg Test Suite Book Test Suite matches snapshot 1`] = `
+exports[`components/svg Test Suite Book Test Suite matches snapshot 1`] = `
 <svg
+  className="sc-bdVaJa GmTez"
+  height={32}
   viewBox="0 0 24 24"
+  width={32}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -18,9 +21,12 @@ exports[`src/components/svg Test Suite Book Test Suite matches snapshot 1`] = `
 </svg>
 `;
 
-exports[`src/components/svg Test Suite Business Test Suite matches snapshot 1`] = `
+exports[`components/svg Test Suite Business Test Suite matches snapshot 1`] = `
 <svg
+  className="sc-bdVaJa GmTez"
+  height={32}
   viewBox="0 0 24 24"
+  width={32}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -33,9 +39,12 @@ exports[`src/components/svg Test Suite Business Test Suite matches snapshot 1`] 
 </svg>
 `;
 
-exports[`src/components/svg Test Suite Download Test Suite matches snapshot 1`] = `
+exports[`components/svg Test Suite Download Test Suite matches snapshot 1`] = `
 <svg
+  className="sc-bdVaJa GmTez"
+  height={32}
   viewBox="0 0 24 24"
+  width={32}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -48,9 +57,12 @@ exports[`src/components/svg Test Suite Download Test Suite matches snapshot 1`] 
 </svg>
 `;
 
-exports[`src/components/svg Test Suite House Test Suite matches snapshot 1`] = `
+exports[`components/svg Test Suite House Test Suite matches snapshot 1`] = `
 <svg
+  className="sc-bdVaJa GmTez"
+  height={32}
   viewBox="0 0 24 24"
+  width={32}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -63,9 +75,12 @@ exports[`src/components/svg Test Suite House Test Suite matches snapshot 1`] = `
 </svg>
 `;
 
-exports[`src/components/svg Test Suite Mood Test Suite matches snapshot 1`] = `
+exports[`components/svg Test Suite Mood Test Suite matches snapshot 1`] = `
 <svg
+  className="sc-bdVaJa GmTez"
+  height={32}
   viewBox="0 0 24 24"
+  width={32}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -78,9 +93,12 @@ exports[`src/components/svg Test Suite Mood Test Suite matches snapshot 1`] = `
 </svg>
 `;
 
-exports[`src/components/svg Test Suite Person Test Suite matches snapshot 1`] = `
+exports[`components/svg Test Suite Person Test Suite matches snapshot 1`] = `
 <svg
+  className="sc-bdVaJa GmTez"
+  height={32}
   viewBox="0 0 24 24"
+  width={32}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path

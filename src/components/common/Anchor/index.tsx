@@ -35,7 +35,7 @@ const Anchor = ({ children, ...rest }: AnchorProps) => {
   const isTouchDevice = typeof window !== 'undefined' && window.navigator.maxTouchPoints > 0;
   const target = isTouchDevice ? '_self' : '_blank';
   return (
-    <Box as="a" color="text" fontWeight="semi-bold" target={target} {...rest}>
+    <Box as="a" color="inherit" fontWeight="semi-bold" target={target} {...rest}>
       {children}
     </Box>
   );

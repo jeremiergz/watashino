@@ -2,13 +2,12 @@ import { graphql, useStaticQuery } from 'gatsby';
 import React, { ReactNode } from 'react';
 import Anchor from '../../../common/Anchor';
 import Link from '../../../common/Link';
-import Box from '../../../primitives/Box';
+import Svg from '../../../common/Svg';
 import Flex from '../../../primitives/Flex';
 import BookIcon from '../../../svg/Book';
 import DownloadIcon from '../../../svg/Download';
 import HouseIcon from '../../../svg/House';
 import MoodIcon from '../../../svg/Mood';
-import styled from 'styled-components';
 
 const iconsMapping = {
   book: BookIcon,
@@ -17,14 +16,10 @@ const iconsMapping = {
 };
 
 const LinkContainer = ({ children, ...rest }: { children: ReactNode }) => (
-  <Flex alignItems="center" flexDirection="column" justifyContent="center" minWidth={96} {...rest}>
+  <Flex alignItems="center" flexDirection="column" justifyContent="center" minWidth={96}>
     {children}
   </Flex>
 );
-
-const Svg = styled(Box)`
-  fill: ${({ theme }) => theme.svg};
-`;
 
 const Navigation = () => {
   const {
@@ -62,14 +57,14 @@ const Navigation = () => {
         .map(link => (
           <LinkContainer key={link.name}>
             <Link alignItems="center" display="flex" flexDirection="column" partiallyActive to={link.to}>
-              <Svg as={iconsMapping[link.icon]} height={32} width={32} />
+              <Svg as={iconsMapping[link.icon]} />
               {link.name}
             </Link>
           </LinkContainer>
         ))}
       <LinkContainer>
         <Anchor alignItems="center" display="flex" download flexDirection="column" href={resumeFile}>
-          <Svg as={DownloadIcon} height={32} width={32} />
+          <Svg as={DownloadIcon} />
           Resume
         </Anchor>
       </LinkContainer>

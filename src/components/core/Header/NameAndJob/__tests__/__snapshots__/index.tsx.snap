@@ -2,7 +2,7 @@
 
 exports[`components/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
 <a
-  className="sc-htpNat sc-bxivhb gPADi"
+  className="sc-htpNat sc-bxivhb bLLmnD"
   href="/about-me"
   target="_blank"
 >
@@ -77,8 +77,7 @@ exports[`components/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
     />
   </div>
   <div
-    className="sc-htpNat krwaFs"
-    color="text"
+    className="sc-htpNat ieqUQt"
     display="flex"
   >
     <h3

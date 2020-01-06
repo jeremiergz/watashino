@@ -12,8 +12,8 @@ module.exports = {
     description,
     license,
     repository,
-    title: authorName,
     siteUrl: homepage,
+    title: authorName,
     version,
   },
   plugins: [

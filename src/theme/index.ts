@@ -20,7 +20,6 @@ const colors = {
   primary: '#31859A',
   secondary: '#17365C',
   success: '#4CAF50',
-  text: '#262626',
   white: '#FAFAFA',
 } as const;
 
@@ -63,7 +62,7 @@ const LightTheme = {
 type Theme = typeof DarkTheme | typeof LightTheme;
 type ThemeProps = {
   background?: string;
-  color?: keyof Theme['colors'] | 'inherit';
+  colors?: keyof Theme['colors'] | 'inherit';
   fontWeight?: keyof Theme['fontWeights'];
   svg?: string;
   type?: 'light' | 'dark';

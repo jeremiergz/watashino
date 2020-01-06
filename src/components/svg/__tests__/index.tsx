@@ -7,7 +7,7 @@ import HouseIcon from '../House';
 import MoodIcon from '../Mood';
 import PersonIcon from '../Person';
 
-describe('src/components/svg Test Suite', () => {
+describe('components/svg Test Suite', () => {
   describe('Book Test Suite', () => {
     it('matches snapshot', () => {
       const jsx = <BookIcon />;
