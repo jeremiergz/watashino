@@ -1,4 +1,5 @@
 import { Link as BaseGatsbyLink } from 'gatsby';
+import { OutboundLink as BaseOutboundLink } from 'gatsby-plugin-google-analytics';
 import React from 'react';
 import { Routes } from '../../../utils/Routes';
 import { useTheming } from '../../core/ThemingManager';
@@ -13,18 +14,21 @@ type LinkProps = AnchorProps & {
 
 const GatsbyLink = withoutStylingProps(BaseGatsbyLink);
 
+const OutboundLink = withoutStylingProps(BaseOutboundLink);
+
 const Link = ({ children, external, partiallyActive = false, to, ...rest }: LinkProps) => {
   const { theme } = useTheming();
   const isTouchDevice = typeof window !== 'undefined' && window.navigator.maxTouchPoints > 0;
   const target = isTouchDevice ? '_self' : '_blank';
   const linkProps = external
     ? {
+        as: OutboundLink,
         href: to,
         rel: 'noopener noreferrer',
         target,
       }
     : {
-        activeStyle: partiallyActive && { color: theme.colors.primary },
+        activeStyle: partiallyActive ? { color: theme.colors.primary } : {},
         as: GatsbyLink,
         partiallyActive: partiallyActive && (to !== Routes.index ? true : false),
         to,

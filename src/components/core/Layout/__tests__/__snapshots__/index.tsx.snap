@@ -197,9 +197,8 @@ Array [
   >
     <a
       className="sc-bdVaJa sc-ifAKCX eSCzpL"
-      color="gray"
-      fontWeight="semi-bold"
       href="https://test-repository/tree/3.16.120"
+      onClick={[Function]}
       rel="noopener noreferrer"
       target="_blank"
     >

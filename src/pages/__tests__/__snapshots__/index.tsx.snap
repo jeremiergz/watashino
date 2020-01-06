@@ -219,9 +219,8 @@ Array [
   >
     <a
       className="sc-bwzfXH sc-EHOje dYPiTX"
-      color="gray"
-      fontWeight="semi-bold"
       href="https://test-repository/tree/3.16.120"
+      onClick={[Function]}
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -442,8 +441,8 @@ Array [
       >
         <a
           className="sc-bwzfXH sc-EHOje djSQgw"
-          fontWeight="semi-bold"
           href="mailto:contact@fake.test"
+          onClick={[Function]}
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -624,10 +623,8 @@ Array [
         I'm currently working at 
         <a
           className="sc-bwzfXH sc-EHOje epcTNB"
-          display="inline-flex"
-          fontWeight="semi-bold"
-          height="26px"
           href="https://fakecompany.test"
+          onClick={[Function]}
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -716,8 +713,8 @@ Array [
       >
         <a
           className="sc-bwzfXH sc-EHOje eZuepf"
-          fontWeight="semi-bold"
           href="https://image.tech"
+          onClick={[Function]}
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -800,7 +797,7 @@ Array [
         ▾ By the way, this is where I live, 
         <a
           className="sc-bwzfXH sc-EHOje djSQgw"
-          fontWeight="semi-bold"
+          onClick={[Function]}
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -815,9 +812,8 @@ Array [
   >
     <a
       className="sc-bwzfXH sc-EHOje dYPiTX"
-      color="gray"
-      fontWeight="semi-bold"
       href="https://test-repository/tree/3.16.120"
+      onClick={[Function]}
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -1033,9 +1029,8 @@ Array [
   >
     <a
       className="sc-bwzfXH sc-EHOje dYPiTX"
-      color="gray"
-      fontWeight="semi-bold"
       href="https://test-repository/tree/3.16.120"
+      onClick={[Function]}
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -1296,9 +1291,8 @@ Array [
   >
     <a
       className="sc-bwzfXH sc-EHOje dYPiTX"
-      color="gray"
-      fontWeight="semi-bold"
       href="https://test-repository/tree/3.16.120"
+      onClick={[Function]}
       rel="noopener noreferrer"
       target="_blank"
     >

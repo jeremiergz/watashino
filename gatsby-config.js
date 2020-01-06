@@ -26,6 +26,13 @@ module.exports = {
     'gatsby-transformer-json',
     'gatsby-transformer-sharp',
     {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        cookieDomain: process.env.GOOGLE_ANALYTICS_COOKIE_DOMAIN,
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
         display: 'swap',
