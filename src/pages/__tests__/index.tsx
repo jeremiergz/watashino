@@ -7,6 +7,7 @@ import NotFoundPage from '../404';
 import AboutMePage from '../about-me';
 import IndexPage from '../index';
 import PostsPage from '../posts';
+import SkillsPage from '../skills';
 
 describe('pages Test Suite', () => {
   beforeAll(() => {
@@ -56,6 +57,23 @@ describe('pages Test Suite', () => {
             name: 'Test',
             navOrder: 0,
             to: '/',
+          },
+        ],
+      },
+      allSkillsJson: {
+        nodes: [
+          {
+            name: 'Skills Section 0',
+            sortOrder: 0,
+            items: [
+              { name: 'Skill 0', proficiencyLevel: 4, sortOrder: 0 },
+              { name: 'Skill 1', proficiencyLevel: 6, sortOrder: 1 },
+            ],
+          },
+          {
+            name: 'Skills Section 1',
+            sortOrder: 1,
+            items: [{ name: 'Skill 0', proficiencyLevel: 5, sortOrder: 0 }],
           },
         ],
       },
@@ -132,6 +150,17 @@ describe('pages Test Suite', () => {
       const jsx = (
         <ThemingManager>
           <PostsPage />
+        </ThemingManager>
+      );
+      expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
+    });
+  });
+
+  describe('pages/skills Test Suite', () => {
+    it('matches snapshot', () => {
+      const jsx = (
+        <ThemingManager>
+          <SkillsPage />
         </ThemingManager>
       );
       expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();

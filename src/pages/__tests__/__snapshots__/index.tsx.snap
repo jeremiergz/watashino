@@ -1308,3 +1308,494 @@ Array [
   </footer>,
 ]
 `;
+
+exports[`pages Test Suite pages/skills Test Suite matches snapshot 1`] = `
+Array [
+  <button
+    className="sc-bdVaJa kROAPX"
+    onClick={[Function]}
+  >
+    <div
+      className="sc-bwzfXH lkiSAy"
+      display="flex"
+    >
+      <div
+        className="sc-bxivhb gahHdT"
+      >
+        <div
+          className="sc-bwzfXH fkncFp"
+          height={16}
+          width={8}
+        />
+        <div
+          className="sc-bwzfXH eKomhk"
+          height={16}
+          width={8}
+        />
+      </div>
+      <span
+        className="sc-htpNat iJnzsZ"
+        color="gray"
+        fontFamily="'Open Sans', sans-serif"
+        fontSize={14}
+      >
+        light
+      </span>
+    </div>
+  </button>,
+  <header
+    className="sc-bwzfXH bKInsc"
+    display="flex"
+  >
+    <a
+      className="sc-bwzfXH sc-EHOje lpdRHf"
+      href="/about-me"
+      target="_blank"
+    >
+      <div
+        className=" gatsby-image-wrapper"
+        style={
+          Object {
+            "display": "inline-block",
+            "height": undefined,
+            "overflow": "hidden",
+            "position": "relative",
+            "width": undefined,
+          }
+        }
+      >
+        <img
+          alt=""
+          src="data:image/png;base64"
+          style={
+            Object {
+              "height": "80px",
+              "left": 0,
+              "objectFit": "cover",
+              "objectPosition": "center",
+              "opacity": 1,
+              "position": "absolute",
+              "top": 0,
+              "transitionDelay": "500ms",
+              "width": "80px",
+            }
+          }
+        />
+        <picture>
+          <source
+            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+          />
+          <img
+            alt=""
+            loading="lazy"
+            onLoad={[Function]}
+            src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
+            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+            style={
+              Object {
+                "height": "80px",
+                "left": 0,
+                "objectFit": "cover",
+                "objectPosition": "center",
+                "opacity": 0,
+                "position": "absolute",
+                "top": 0,
+                "transition": "opacity 500ms",
+                "width": "80px",
+              }
+            }
+          />
+        </picture>
+        <noscript
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+            }
+          }
+        />
+      </div>
+      <div
+        className="sc-bwzfXH gGLeDg"
+        display="flex"
+      >
+        <h3
+          className="sc-htpNat sc-ifAKCX ggqWfj"
+          color="primary"
+          fontWeight="bold"
+          letterSpacing={-1}
+        >
+          Jeremie Rodriguez
+        </h3>
+        <h4
+          className="sc-htpNat sc-ifAKCX dvNjIF"
+          fontWeight="semi-bold"
+        >
+          Full Stack Engineer
+        </h4>
+      </div>
+    </a>
+    <nav
+      className="sc-bwzfXH fxUOFO"
+      display="flex"
+    >
+      <div
+        className="sc-bwzfXH jfoIBD"
+        display="flex"
+      >
+        <a
+          className="sc-bwzfXH sc-EHOje fLiyyB"
+          href="/"
+          target="_blank"
+        >
+          <svg
+            className="sc-bZQynM fTyviB"
+            height={32}
+            viewBox="0 0 24 24"
+            width={32}
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          Test
+        </a>
+      </div>
+      <div
+        className="sc-bwzfXH jfoIBD"
+        display="flex"
+      >
+        <a
+          className="sc-bwzfXH sc-EHOje fLiyyB"
+          display="flex"
+          download={true}
+          fontWeight="semi-bold"
+          target="_blank"
+        >
+          <svg
+            className="sc-bZQynM fTyviB sc-bZQynM fTyviB"
+            height={32}
+            viewBox="0 0 24 24"
+            width={32}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+          Resume
+        </a>
+      </div>
+    </nav>
+  </header>,
+  <main
+    className="sc-bwzfXH bCplkB"
+  >
+    <h1
+      className="sc-htpNat sc-ifAKCX bVwfBA"
+    >
+      Test Page
+    </h1>
+    <section
+      className="sc-bwzfXH fzKcyd"
+    >
+      <div
+        className="sc-bwzfXH hzmtuO"
+      >
+        <div
+          className="sc-bwzfXH haCmXT"
+          display="flex"
+        >
+          <span
+            className="sc-htpNat egCBMV"
+            color="primary"
+            fontSize={20}
+            fontWeight="bold"
+          >
+            SKILLS SECTION 0
+          </span>
+        </div>
+        <div
+          className="sc-bwzfXH ltzdv"
+          display="flex"
+          height={22}
+        >
+          <span
+            className="sc-htpNat fQwsLP"
+            fontSize={16}
+            fontWeight="bold"
+          >
+            Skill 0
+          </span>
+          <div
+            className="sc-bwzfXH dkxODA"
+            display={
+              Object {
+                "_": "flex",
+                "mobileL": "none",
+              }
+            }
+          >
+            <span
+              className="sc-htpNat kwuKpu"
+              color="primary"
+              fontSize={22}
+              fontWeight="bold"
+            >
+              6
+              /
+              10
+            </span>
+          </div>
+          <div
+            className="sc-bwzfXH iKuULq"
+            display={
+              Object {
+                "_": "none",
+                "mobileL": "flex",
+              }
+            }
+          >
+            <span
+              className="sc-bwzfXH IkpaU"
+              height={16}
+              width={16}
+            />
+            <span
+              className="sc-bwzfXH ivdecN"
+              height={16}
+              width={16}
+            />
+            <span
+              className="sc-bwzfXH ivdecN"
+              height={16}
+              width={16}
+            />
+            <span
+              className="sc-bwzfXH ivdecN"
+              height={16}
+              width={16}
+            />
+            <span
+              className="sc-bwzfXH diPKog"
+              height={16}
+              width={16}
+            />
+            <span
+              className="sc-bwzfXH diPKog"
+              height={16}
+              width={16}
+            />
+            <span
+              className="sc-bwzfXH diPKog"
+              height={16}
+              width={16}
+            />
+          </div>
+        </div>
+        <div
+          className="sc-bwzfXH ltzdv"
+          display="flex"
+          height={22}
+        >
+          <span
+            className="sc-htpNat fQwsLP"
+            fontSize={16}
+            fontWeight="bold"
+          >
+            Skill 1
+          </span>
+          <div
+            className="sc-bwzfXH dkxODA"
+            display={
+              Object {
+                "_": "flex",
+                "mobileL": "none",
+              }
+            }
+          >
+            <span
+              className="sc-htpNat kwuKpu"
+              color="primary"
+              fontSize={22}
+              fontWeight="bold"
+            >
+              9
+              /
+              10
+            </span>
+          </div>
+          <div
+            className="sc-bwzfXH iKuULq"
+            display={
+              Object {
+                "_": "none",
+                "mobileL": "flex",
+              }
+            }
+          >
+            <span
+              className="sc-bwzfXH IkpaU"
+              height={16}
+              width={16}
+            />
+            <span
+              className="sc-bwzfXH ivdecN"
+              height={16}
+              width={16}
+            />
+            <span
+              className="sc-bwzfXH ivdecN"
+              height={16}
+              width={16}
+            />
+            <span
+              className="sc-bwzfXH ivdecN"
+              height={16}
+              width={16}
+            />
+            <span
+              className="sc-bwzfXH ivdecN"
+              height={16}
+              width={16}
+            />
+            <span
+              className="sc-bwzfXH ivdecN"
+              height={16}
+              width={16}
+            />
+            <span
+              className="sc-bwzfXH diPKog"
+              height={16}
+              width={16}
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-bwzfXH hzmtuO"
+      >
+        <div
+          className="sc-bwzfXH haCmXT"
+          display="flex"
+        >
+          <span
+            className="sc-htpNat egCBMV"
+            color="primary"
+            fontSize={20}
+            fontWeight="bold"
+          >
+            SKILLS SECTION 1
+          </span>
+        </div>
+        <div
+          className="sc-bwzfXH ltzdv"
+          display="flex"
+          height={22}
+        >
+          <span
+            className="sc-htpNat fQwsLP"
+            fontSize={16}
+            fontWeight="bold"
+          >
+            Skill 0
+          </span>
+          <div
+            className="sc-bwzfXH dkxODA"
+            display={
+              Object {
+                "_": "flex",
+                "mobileL": "none",
+              }
+            }
+          >
+            <span
+              className="sc-htpNat kwuKpu"
+              color="primary"
+              fontSize={22}
+              fontWeight="bold"
+            >
+              8
+              /
+              10
+            </span>
+          </div>
+          <div
+            className="sc-bwzfXH iKuULq"
+            display={
+              Object {
+                "_": "none",
+                "mobileL": "flex",
+              }
+            }
+          >
+            <span
+              className="sc-bwzfXH IkpaU"
+              height={16}
+              width={16}
+            />
+            <span
+              className="sc-bwzfXH ivdecN"
+              height={16}
+              width={16}
+            />
+            <span
+              className="sc-bwzfXH ivdecN"
+              height={16}
+              width={16}
+            />
+            <span
+              className="sc-bwzfXH ivdecN"
+              height={16}
+              width={16}
+            />
+            <span
+              className="sc-bwzfXH ivdecN"
+              height={16}
+              width={16}
+            />
+            <span
+              className="sc-bwzfXH diPKog"
+              height={16}
+              width={16}
+            />
+            <span
+              className="sc-bwzfXH diPKog"
+              height={16}
+              width={16}
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>,
+  <footer
+    className="sc-bwzfXH ilFEYT"
+  >
+    <a
+      className="sc-bwzfXH sc-EHOje dYPiTX"
+      href="https://test-repository/tree/3.16.120"
+      onClick={[Function]}
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      v3.16.120 - source code
+    </a>
+    <div
+      className="sc-bwzfXH elgsBB"
+      color="gray"
+      fontSize={14}
+    >
+      licensed under the Test-Licence license
+    </div>
+  </footer>,
+]
+`;
