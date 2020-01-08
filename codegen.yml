@@ -19,3 +19,5 @@ generates:
       - 'typescript-operations'
     config:
       noExport: true
+      preResolveTypes: true
+      skipTypename: true

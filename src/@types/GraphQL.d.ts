@@ -20,7 +20,6 @@ declare module GraphQL {
   };
 
   type DataJson = Node & {
-    __typename?: 'DataJson';
     id: Scalars['ID'];
     parent?: Maybe<Node>;
     children: Array<Node>;
@@ -34,7 +33,6 @@ declare module GraphQL {
   };
 
   type DataJsonCompany = {
-    __typename?: 'DataJsonCompany';
     name?: Maybe<Scalars['String']>;
     website?: Maybe<Scalars['String']>;
   };
@@ -45,7 +43,6 @@ declare module GraphQL {
   };
 
   type DataJsonConnection = {
-    __typename?: 'DataJsonConnection';
     totalCount: Scalars['Int'];
     edges: Array<DataJsonEdge>;
     nodes: Array<DataJson>;
@@ -65,7 +62,6 @@ declare module GraphQL {
   };
 
   type DataJsonContacts = {
-    __typename?: 'DataJsonContacts';
     img?: Maybe<Scalars['String']>;
     label?: Maybe<Scalars['String']>;
     url?: Maybe<Scalars['String']>;
@@ -82,7 +78,6 @@ declare module GraphQL {
   };
 
   type DataJsonEdge = {
-    __typename?: 'DataJsonEdge';
     next?: Maybe<DataJson>;
     node: DataJson;
     previous?: Maybe<DataJson>;
@@ -205,7 +200,6 @@ declare module GraphQL {
   };
 
   type DataJsonGroupConnection = {
-    __typename?: 'DataJsonGroupConnection';
     totalCount: Scalars['Int'];
     edges: Array<DataJsonEdge>;
     nodes: Array<DataJson>;
@@ -215,7 +209,6 @@ declare module GraphQL {
   };
 
   type DataJsonLocation = {
-    __typename?: 'DataJsonLocation';
     city?: Maybe<Scalars['String']>;
     country?: Maybe<Scalars['String']>;
     lat?: Maybe<Scalars['Float']>;
@@ -248,7 +241,6 @@ declare module GraphQL {
   };
 
   type Directory = Node & {
-    __typename?: 'Directory';
     sourceInstanceName: Scalars['String'];
     absolutePath: Scalars['String'];
     relativePath: Scalars['String'];
@@ -338,7 +330,6 @@ declare module GraphQL {
   };
 
   type DirectoryConnection = {
-    __typename?: 'DirectoryConnection';
     totalCount: Scalars['Int'];
     edges: Array<DirectoryEdge>;
     nodes: Array<Directory>;
@@ -358,7 +349,6 @@ declare module GraphQL {
   };
 
   type DirectoryEdge = {
-    __typename?: 'DirectoryEdge';
     next?: Maybe<Directory>;
     node: Directory;
     previous?: Maybe<Directory>;
@@ -527,7 +517,6 @@ declare module GraphQL {
   };
 
   type DirectoryGroupConnection = {
-    __typename?: 'DirectoryGroupConnection';
     totalCount: Scalars['Int'];
     edges: Array<DirectoryEdge>;
     nodes: Array<Directory>;
@@ -548,7 +537,6 @@ declare module GraphQL {
   };
 
   type File = Node & {
-    __typename?: 'File';
     sourceInstanceName: Scalars['String'];
     absolutePath: Scalars['String'];
     relativePath: Scalars['String'];
@@ -588,9 +576,10 @@ declare module GraphQL {
     parent?: Maybe<Node>;
     children: Array<Node>;
     internal: Internal;
-    childrenTechnologiesJson?: Maybe<Array<Maybe<TechnologiesJson>>>;
-    childrenNavigationJson?: Maybe<Array<Maybe<NavigationJson>>>;
     childDataJson?: Maybe<DataJson>;
+    childrenNavigationJson?: Maybe<Array<Maybe<NavigationJson>>>;
+    childrenTechnologiesJson?: Maybe<Array<Maybe<TechnologiesJson>>>;
+    childrenSkillsJson?: Maybe<Array<Maybe<SkillsJson>>>;
     childGoogleMapsJson?: Maybe<GoogleMapsJson>;
   };
 
@@ -644,7 +633,6 @@ declare module GraphQL {
   };
 
   type FileConnection = {
-    __typename?: 'FileConnection';
     totalCount: Scalars['Int'];
     edges: Array<FileEdge>;
     nodes: Array<File>;
@@ -664,7 +652,6 @@ declare module GraphQL {
   };
 
   type FileEdge = {
-    __typename?: 'FileEdge';
     next?: Maybe<File>;
     node: File;
     previous?: Maybe<File>;
@@ -882,94 +869,6 @@ declare module GraphQL {
     InternalMediaType = 'internal___mediaType',
     InternalOwner = 'internal___owner',
     InternalType = 'internal___type',
-    ChildrenTechnologiesJson = 'childrenTechnologiesJson',
-    ChildrenTechnologiesJsonId = 'childrenTechnologiesJson___id',
-    ChildrenTechnologiesJsonParentId = 'childrenTechnologiesJson___parent___id',
-    ChildrenTechnologiesJsonParentParentId = 'childrenTechnologiesJson___parent___parent___id',
-    ChildrenTechnologiesJsonParentParentChildren = 'childrenTechnologiesJson___parent___parent___children',
-    ChildrenTechnologiesJsonParentChildren = 'childrenTechnologiesJson___parent___children',
-    ChildrenTechnologiesJsonParentChildrenId = 'childrenTechnologiesJson___parent___children___id',
-    ChildrenTechnologiesJsonParentChildrenChildren = 'childrenTechnologiesJson___parent___children___children',
-    ChildrenTechnologiesJsonParentInternalContent = 'childrenTechnologiesJson___parent___internal___content',
-    ChildrenTechnologiesJsonParentInternalContentDigest = 'childrenTechnologiesJson___parent___internal___contentDigest',
-    ChildrenTechnologiesJsonParentInternalDescription = 'childrenTechnologiesJson___parent___internal___description',
-    ChildrenTechnologiesJsonParentInternalFieldOwners = 'childrenTechnologiesJson___parent___internal___fieldOwners',
-    ChildrenTechnologiesJsonParentInternalIgnoreType = 'childrenTechnologiesJson___parent___internal___ignoreType',
-    ChildrenTechnologiesJsonParentInternalMediaType = 'childrenTechnologiesJson___parent___internal___mediaType',
-    ChildrenTechnologiesJsonParentInternalOwner = 'childrenTechnologiesJson___parent___internal___owner',
-    ChildrenTechnologiesJsonParentInternalType = 'childrenTechnologiesJson___parent___internal___type',
-    ChildrenTechnologiesJsonChildren = 'childrenTechnologiesJson___children',
-    ChildrenTechnologiesJsonChildrenId = 'childrenTechnologiesJson___children___id',
-    ChildrenTechnologiesJsonChildrenParentId = 'childrenTechnologiesJson___children___parent___id',
-    ChildrenTechnologiesJsonChildrenParentChildren = 'childrenTechnologiesJson___children___parent___children',
-    ChildrenTechnologiesJsonChildrenChildren = 'childrenTechnologiesJson___children___children',
-    ChildrenTechnologiesJsonChildrenChildrenId = 'childrenTechnologiesJson___children___children___id',
-    ChildrenTechnologiesJsonChildrenChildrenChildren = 'childrenTechnologiesJson___children___children___children',
-    ChildrenTechnologiesJsonChildrenInternalContent = 'childrenTechnologiesJson___children___internal___content',
-    ChildrenTechnologiesJsonChildrenInternalContentDigest = 'childrenTechnologiesJson___children___internal___contentDigest',
-    ChildrenTechnologiesJsonChildrenInternalDescription = 'childrenTechnologiesJson___children___internal___description',
-    ChildrenTechnologiesJsonChildrenInternalFieldOwners = 'childrenTechnologiesJson___children___internal___fieldOwners',
-    ChildrenTechnologiesJsonChildrenInternalIgnoreType = 'childrenTechnologiesJson___children___internal___ignoreType',
-    ChildrenTechnologiesJsonChildrenInternalMediaType = 'childrenTechnologiesJson___children___internal___mediaType',
-    ChildrenTechnologiesJsonChildrenInternalOwner = 'childrenTechnologiesJson___children___internal___owner',
-    ChildrenTechnologiesJsonChildrenInternalType = 'childrenTechnologiesJson___children___internal___type',
-    ChildrenTechnologiesJsonInternalContent = 'childrenTechnologiesJson___internal___content',
-    ChildrenTechnologiesJsonInternalContentDigest = 'childrenTechnologiesJson___internal___contentDigest',
-    ChildrenTechnologiesJsonInternalDescription = 'childrenTechnologiesJson___internal___description',
-    ChildrenTechnologiesJsonInternalFieldOwners = 'childrenTechnologiesJson___internal___fieldOwners',
-    ChildrenTechnologiesJsonInternalIgnoreType = 'childrenTechnologiesJson___internal___ignoreType',
-    ChildrenTechnologiesJsonInternalMediaType = 'childrenTechnologiesJson___internal___mediaType',
-    ChildrenTechnologiesJsonInternalOwner = 'childrenTechnologiesJson___internal___owner',
-    ChildrenTechnologiesJsonInternalType = 'childrenTechnologiesJson___internal___type',
-    ChildrenTechnologiesJsonImg = 'childrenTechnologiesJson___img',
-    ChildrenTechnologiesJsonName = 'childrenTechnologiesJson___name',
-    ChildrenTechnologiesJsonWebsite = 'childrenTechnologiesJson___website',
-    ChildrenNavigationJson = 'childrenNavigationJson',
-    ChildrenNavigationJsonId = 'childrenNavigationJson___id',
-    ChildrenNavigationJsonParentId = 'childrenNavigationJson___parent___id',
-    ChildrenNavigationJsonParentParentId = 'childrenNavigationJson___parent___parent___id',
-    ChildrenNavigationJsonParentParentChildren = 'childrenNavigationJson___parent___parent___children',
-    ChildrenNavigationJsonParentChildren = 'childrenNavigationJson___parent___children',
-    ChildrenNavigationJsonParentChildrenId = 'childrenNavigationJson___parent___children___id',
-    ChildrenNavigationJsonParentChildrenChildren = 'childrenNavigationJson___parent___children___children',
-    ChildrenNavigationJsonParentInternalContent = 'childrenNavigationJson___parent___internal___content',
-    ChildrenNavigationJsonParentInternalContentDigest = 'childrenNavigationJson___parent___internal___contentDigest',
-    ChildrenNavigationJsonParentInternalDescription = 'childrenNavigationJson___parent___internal___description',
-    ChildrenNavigationJsonParentInternalFieldOwners = 'childrenNavigationJson___parent___internal___fieldOwners',
-    ChildrenNavigationJsonParentInternalIgnoreType = 'childrenNavigationJson___parent___internal___ignoreType',
-    ChildrenNavigationJsonParentInternalMediaType = 'childrenNavigationJson___parent___internal___mediaType',
-    ChildrenNavigationJsonParentInternalOwner = 'childrenNavigationJson___parent___internal___owner',
-    ChildrenNavigationJsonParentInternalType = 'childrenNavigationJson___parent___internal___type',
-    ChildrenNavigationJsonChildren = 'childrenNavigationJson___children',
-    ChildrenNavigationJsonChildrenId = 'childrenNavigationJson___children___id',
-    ChildrenNavigationJsonChildrenParentId = 'childrenNavigationJson___children___parent___id',
-    ChildrenNavigationJsonChildrenParentChildren = 'childrenNavigationJson___children___parent___children',
-    ChildrenNavigationJsonChildrenChildren = 'childrenNavigationJson___children___children',
-    ChildrenNavigationJsonChildrenChildrenId = 'childrenNavigationJson___children___children___id',
-    ChildrenNavigationJsonChildrenChildrenChildren = 'childrenNavigationJson___children___children___children',
-    ChildrenNavigationJsonChildrenInternalContent = 'childrenNavigationJson___children___internal___content',
-    ChildrenNavigationJsonChildrenInternalContentDigest = 'childrenNavigationJson___children___internal___contentDigest',
-    ChildrenNavigationJsonChildrenInternalDescription = 'childrenNavigationJson___children___internal___description',
-    ChildrenNavigationJsonChildrenInternalFieldOwners = 'childrenNavigationJson___children___internal___fieldOwners',
-    ChildrenNavigationJsonChildrenInternalIgnoreType = 'childrenNavigationJson___children___internal___ignoreType',
-    ChildrenNavigationJsonChildrenInternalMediaType = 'childrenNavigationJson___children___internal___mediaType',
-    ChildrenNavigationJsonChildrenInternalOwner = 'childrenNavigationJson___children___internal___owner',
-    ChildrenNavigationJsonChildrenInternalType = 'childrenNavigationJson___children___internal___type',
-    ChildrenNavigationJsonInternalContent = 'childrenNavigationJson___internal___content',
-    ChildrenNavigationJsonInternalContentDigest = 'childrenNavigationJson___internal___contentDigest',
-    ChildrenNavigationJsonInternalDescription = 'childrenNavigationJson___internal___description',
-    ChildrenNavigationJsonInternalFieldOwners = 'childrenNavigationJson___internal___fieldOwners',
-    ChildrenNavigationJsonInternalIgnoreType = 'childrenNavigationJson___internal___ignoreType',
-    ChildrenNavigationJsonInternalMediaType = 'childrenNavigationJson___internal___mediaType',
-    ChildrenNavigationJsonInternalOwner = 'childrenNavigationJson___internal___owner',
-    ChildrenNavigationJsonInternalType = 'childrenNavigationJson___internal___type',
-    ChildrenNavigationJsonIcon = 'childrenNavigationJson___icon',
-    ChildrenNavigationJsonKeywords = 'childrenNavigationJson___keywords',
-    ChildrenNavigationJsonName = 'childrenNavigationJson___name',
-    ChildrenNavigationJsonNavOrder = 'childrenNavigationJson___navOrder',
-    ChildrenNavigationJsonPage = 'childrenNavigationJson___page',
-    ChildrenNavigationJsonTo = 'childrenNavigationJson___to',
-    ChildrenNavigationJsonIgnoreInNavigation = 'childrenNavigationJson___ignoreInNavigation',
     ChildDataJsonId = 'childDataJson___id',
     ChildDataJsonParentId = 'childDataJson___parent___id',
     ChildDataJsonParentParentId = 'childDataJson___parent___parent___id',
@@ -1022,6 +921,139 @@ declare module GraphQL {
     ChildDataJsonLocationWebsite = 'childDataJson___location___website',
     ChildDataJsonOpenToGigs = 'childDataJson___openToGigs',
     ChildDataJsonResumeFile = 'childDataJson___resumeFile',
+    ChildrenNavigationJson = 'childrenNavigationJson',
+    ChildrenNavigationJsonId = 'childrenNavigationJson___id',
+    ChildrenNavigationJsonParentId = 'childrenNavigationJson___parent___id',
+    ChildrenNavigationJsonParentParentId = 'childrenNavigationJson___parent___parent___id',
+    ChildrenNavigationJsonParentParentChildren = 'childrenNavigationJson___parent___parent___children',
+    ChildrenNavigationJsonParentChildren = 'childrenNavigationJson___parent___children',
+    ChildrenNavigationJsonParentChildrenId = 'childrenNavigationJson___parent___children___id',
+    ChildrenNavigationJsonParentChildrenChildren = 'childrenNavigationJson___parent___children___children',
+    ChildrenNavigationJsonParentInternalContent = 'childrenNavigationJson___parent___internal___content',
+    ChildrenNavigationJsonParentInternalContentDigest = 'childrenNavigationJson___parent___internal___contentDigest',
+    ChildrenNavigationJsonParentInternalDescription = 'childrenNavigationJson___parent___internal___description',
+    ChildrenNavigationJsonParentInternalFieldOwners = 'childrenNavigationJson___parent___internal___fieldOwners',
+    ChildrenNavigationJsonParentInternalIgnoreType = 'childrenNavigationJson___parent___internal___ignoreType',
+    ChildrenNavigationJsonParentInternalMediaType = 'childrenNavigationJson___parent___internal___mediaType',
+    ChildrenNavigationJsonParentInternalOwner = 'childrenNavigationJson___parent___internal___owner',
+    ChildrenNavigationJsonParentInternalType = 'childrenNavigationJson___parent___internal___type',
+    ChildrenNavigationJsonChildren = 'childrenNavigationJson___children',
+    ChildrenNavigationJsonChildrenId = 'childrenNavigationJson___children___id',
+    ChildrenNavigationJsonChildrenParentId = 'childrenNavigationJson___children___parent___id',
+    ChildrenNavigationJsonChildrenParentChildren = 'childrenNavigationJson___children___parent___children',
+    ChildrenNavigationJsonChildrenChildren = 'childrenNavigationJson___children___children',
+    ChildrenNavigationJsonChildrenChildrenId = 'childrenNavigationJson___children___children___id',
+    ChildrenNavigationJsonChildrenChildrenChildren = 'childrenNavigationJson___children___children___children',
+    ChildrenNavigationJsonChildrenInternalContent = 'childrenNavigationJson___children___internal___content',
+    ChildrenNavigationJsonChildrenInternalContentDigest = 'childrenNavigationJson___children___internal___contentDigest',
+    ChildrenNavigationJsonChildrenInternalDescription = 'childrenNavigationJson___children___internal___description',
+    ChildrenNavigationJsonChildrenInternalFieldOwners = 'childrenNavigationJson___children___internal___fieldOwners',
+    ChildrenNavigationJsonChildrenInternalIgnoreType = 'childrenNavigationJson___children___internal___ignoreType',
+    ChildrenNavigationJsonChildrenInternalMediaType = 'childrenNavigationJson___children___internal___mediaType',
+    ChildrenNavigationJsonChildrenInternalOwner = 'childrenNavigationJson___children___internal___owner',
+    ChildrenNavigationJsonChildrenInternalType = 'childrenNavigationJson___children___internal___type',
+    ChildrenNavigationJsonInternalContent = 'childrenNavigationJson___internal___content',
+    ChildrenNavigationJsonInternalContentDigest = 'childrenNavigationJson___internal___contentDigest',
+    ChildrenNavigationJsonInternalDescription = 'childrenNavigationJson___internal___description',
+    ChildrenNavigationJsonInternalFieldOwners = 'childrenNavigationJson___internal___fieldOwners',
+    ChildrenNavigationJsonInternalIgnoreType = 'childrenNavigationJson___internal___ignoreType',
+    ChildrenNavigationJsonInternalMediaType = 'childrenNavigationJson___internal___mediaType',
+    ChildrenNavigationJsonInternalOwner = 'childrenNavigationJson___internal___owner',
+    ChildrenNavigationJsonInternalType = 'childrenNavigationJson___internal___type',
+    ChildrenNavigationJsonIcon = 'childrenNavigationJson___icon',
+    ChildrenNavigationJsonKeywords = 'childrenNavigationJson___keywords',
+    ChildrenNavigationJsonName = 'childrenNavigationJson___name',
+    ChildrenNavigationJsonNavOrder = 'childrenNavigationJson___navOrder',
+    ChildrenNavigationJsonPage = 'childrenNavigationJson___page',
+    ChildrenNavigationJsonTo = 'childrenNavigationJson___to',
+    ChildrenNavigationJsonIgnoreInNavigation = 'childrenNavigationJson___ignoreInNavigation',
+    ChildrenTechnologiesJson = 'childrenTechnologiesJson',
+    ChildrenTechnologiesJsonId = 'childrenTechnologiesJson___id',
+    ChildrenTechnologiesJsonParentId = 'childrenTechnologiesJson___parent___id',
+    ChildrenTechnologiesJsonParentParentId = 'childrenTechnologiesJson___parent___parent___id',
+    ChildrenTechnologiesJsonParentParentChildren = 'childrenTechnologiesJson___parent___parent___children',
+    ChildrenTechnologiesJsonParentChildren = 'childrenTechnologiesJson___parent___children',
+    ChildrenTechnologiesJsonParentChildrenId = 'childrenTechnologiesJson___parent___children___id',
+    ChildrenTechnologiesJsonParentChildrenChildren = 'childrenTechnologiesJson___parent___children___children',
+    ChildrenTechnologiesJsonParentInternalContent = 'childrenTechnologiesJson___parent___internal___content',
+    ChildrenTechnologiesJsonParentInternalContentDigest = 'childrenTechnologiesJson___parent___internal___contentDigest',
+    ChildrenTechnologiesJsonParentInternalDescription = 'childrenTechnologiesJson___parent___internal___description',
+    ChildrenTechnologiesJsonParentInternalFieldOwners = 'childrenTechnologiesJson___parent___internal___fieldOwners',
+    ChildrenTechnologiesJsonParentInternalIgnoreType = 'childrenTechnologiesJson___parent___internal___ignoreType',
+    ChildrenTechnologiesJsonParentInternalMediaType = 'childrenTechnologiesJson___parent___internal___mediaType',
+    ChildrenTechnologiesJsonParentInternalOwner = 'childrenTechnologiesJson___parent___internal___owner',
+    ChildrenTechnologiesJsonParentInternalType = 'childrenTechnologiesJson___parent___internal___type',
+    ChildrenTechnologiesJsonChildren = 'childrenTechnologiesJson___children',
+    ChildrenTechnologiesJsonChildrenId = 'childrenTechnologiesJson___children___id',
+    ChildrenTechnologiesJsonChildrenParentId = 'childrenTechnologiesJson___children___parent___id',
+    ChildrenTechnologiesJsonChildrenParentChildren = 'childrenTechnologiesJson___children___parent___children',
+    ChildrenTechnologiesJsonChildrenChildren = 'childrenTechnologiesJson___children___children',
+    ChildrenTechnologiesJsonChildrenChildrenId = 'childrenTechnologiesJson___children___children___id',
+    ChildrenTechnologiesJsonChildrenChildrenChildren = 'childrenTechnologiesJson___children___children___children',
+    ChildrenTechnologiesJsonChildrenInternalContent = 'childrenTechnologiesJson___children___internal___content',
+    ChildrenTechnologiesJsonChildrenInternalContentDigest = 'childrenTechnologiesJson___children___internal___contentDigest',
+    ChildrenTechnologiesJsonChildrenInternalDescription = 'childrenTechnologiesJson___children___internal___description',
+    ChildrenTechnologiesJsonChildrenInternalFieldOwners = 'childrenTechnologiesJson___children___internal___fieldOwners',
+    ChildrenTechnologiesJsonChildrenInternalIgnoreType = 'childrenTechnologiesJson___children___internal___ignoreType',
+    ChildrenTechnologiesJsonChildrenInternalMediaType = 'childrenTechnologiesJson___children___internal___mediaType',
+    ChildrenTechnologiesJsonChildrenInternalOwner = 'childrenTechnologiesJson___children___internal___owner',
+    ChildrenTechnologiesJsonChildrenInternalType = 'childrenTechnologiesJson___children___internal___type',
+    ChildrenTechnologiesJsonInternalContent = 'childrenTechnologiesJson___internal___content',
+    ChildrenTechnologiesJsonInternalContentDigest = 'childrenTechnologiesJson___internal___contentDigest',
+    ChildrenTechnologiesJsonInternalDescription = 'childrenTechnologiesJson___internal___description',
+    ChildrenTechnologiesJsonInternalFieldOwners = 'childrenTechnologiesJson___internal___fieldOwners',
+    ChildrenTechnologiesJsonInternalIgnoreType = 'childrenTechnologiesJson___internal___ignoreType',
+    ChildrenTechnologiesJsonInternalMediaType = 'childrenTechnologiesJson___internal___mediaType',
+    ChildrenTechnologiesJsonInternalOwner = 'childrenTechnologiesJson___internal___owner',
+    ChildrenTechnologiesJsonInternalType = 'childrenTechnologiesJson___internal___type',
+    ChildrenTechnologiesJsonImg = 'childrenTechnologiesJson___img',
+    ChildrenTechnologiesJsonName = 'childrenTechnologiesJson___name',
+    ChildrenTechnologiesJsonWebsite = 'childrenTechnologiesJson___website',
+    ChildrenSkillsJson = 'childrenSkillsJson',
+    ChildrenSkillsJsonId = 'childrenSkillsJson___id',
+    ChildrenSkillsJsonParentId = 'childrenSkillsJson___parent___id',
+    ChildrenSkillsJsonParentParentId = 'childrenSkillsJson___parent___parent___id',
+    ChildrenSkillsJsonParentParentChildren = 'childrenSkillsJson___parent___parent___children',
+    ChildrenSkillsJsonParentChildren = 'childrenSkillsJson___parent___children',
+    ChildrenSkillsJsonParentChildrenId = 'childrenSkillsJson___parent___children___id',
+    ChildrenSkillsJsonParentChildrenChildren = 'childrenSkillsJson___parent___children___children',
+    ChildrenSkillsJsonParentInternalContent = 'childrenSkillsJson___parent___internal___content',
+    ChildrenSkillsJsonParentInternalContentDigest = 'childrenSkillsJson___parent___internal___contentDigest',
+    ChildrenSkillsJsonParentInternalDescription = 'childrenSkillsJson___parent___internal___description',
+    ChildrenSkillsJsonParentInternalFieldOwners = 'childrenSkillsJson___parent___internal___fieldOwners',
+    ChildrenSkillsJsonParentInternalIgnoreType = 'childrenSkillsJson___parent___internal___ignoreType',
+    ChildrenSkillsJsonParentInternalMediaType = 'childrenSkillsJson___parent___internal___mediaType',
+    ChildrenSkillsJsonParentInternalOwner = 'childrenSkillsJson___parent___internal___owner',
+    ChildrenSkillsJsonParentInternalType = 'childrenSkillsJson___parent___internal___type',
+    ChildrenSkillsJsonChildren = 'childrenSkillsJson___children',
+    ChildrenSkillsJsonChildrenId = 'childrenSkillsJson___children___id',
+    ChildrenSkillsJsonChildrenParentId = 'childrenSkillsJson___children___parent___id',
+    ChildrenSkillsJsonChildrenParentChildren = 'childrenSkillsJson___children___parent___children',
+    ChildrenSkillsJsonChildrenChildren = 'childrenSkillsJson___children___children',
+    ChildrenSkillsJsonChildrenChildrenId = 'childrenSkillsJson___children___children___id',
+    ChildrenSkillsJsonChildrenChildrenChildren = 'childrenSkillsJson___children___children___children',
+    ChildrenSkillsJsonChildrenInternalContent = 'childrenSkillsJson___children___internal___content',
+    ChildrenSkillsJsonChildrenInternalContentDigest = 'childrenSkillsJson___children___internal___contentDigest',
+    ChildrenSkillsJsonChildrenInternalDescription = 'childrenSkillsJson___children___internal___description',
+    ChildrenSkillsJsonChildrenInternalFieldOwners = 'childrenSkillsJson___children___internal___fieldOwners',
+    ChildrenSkillsJsonChildrenInternalIgnoreType = 'childrenSkillsJson___children___internal___ignoreType',
+    ChildrenSkillsJsonChildrenInternalMediaType = 'childrenSkillsJson___children___internal___mediaType',
+    ChildrenSkillsJsonChildrenInternalOwner = 'childrenSkillsJson___children___internal___owner',
+    ChildrenSkillsJsonChildrenInternalType = 'childrenSkillsJson___children___internal___type',
+    ChildrenSkillsJsonInternalContent = 'childrenSkillsJson___internal___content',
+    ChildrenSkillsJsonInternalContentDigest = 'childrenSkillsJson___internal___contentDigest',
+    ChildrenSkillsJsonInternalDescription = 'childrenSkillsJson___internal___description',
+    ChildrenSkillsJsonInternalFieldOwners = 'childrenSkillsJson___internal___fieldOwners',
+    ChildrenSkillsJsonInternalIgnoreType = 'childrenSkillsJson___internal___ignoreType',
+    ChildrenSkillsJsonInternalMediaType = 'childrenSkillsJson___internal___mediaType',
+    ChildrenSkillsJsonInternalOwner = 'childrenSkillsJson___internal___owner',
+    ChildrenSkillsJsonInternalType = 'childrenSkillsJson___internal___type',
+    ChildrenSkillsJsonName = 'childrenSkillsJson___name',
+    ChildrenSkillsJsonSortOrder = 'childrenSkillsJson___sortOrder',
+    ChildrenSkillsJsonItems = 'childrenSkillsJson___items',
+    ChildrenSkillsJsonItemsName = 'childrenSkillsJson___items___name',
+    ChildrenSkillsJsonItemsProficiencyLevel = 'childrenSkillsJson___items___proficiencyLevel',
+    ChildrenSkillsJsonItemsSortOrder = 'childrenSkillsJson___items___sortOrder',
     ChildGoogleMapsJsonId = 'childGoogleMapsJson___id',
     ChildGoogleMapsJsonParentId = 'childGoogleMapsJson___parent___id',
     ChildGoogleMapsJsonParentParentId = 'childGoogleMapsJson___parent___parent___id',
@@ -1110,14 +1142,14 @@ declare module GraphQL {
     parent?: Maybe<NodeFilterInput>;
     children?: Maybe<NodeFilterListInput>;
     internal?: Maybe<InternalFilterInput>;
-    childrenTechnologiesJson?: Maybe<TechnologiesJsonFilterListInput>;
-    childrenNavigationJson?: Maybe<NavigationJsonFilterListInput>;
     childDataJson?: Maybe<DataJsonFilterInput>;
+    childrenNavigationJson?: Maybe<NavigationJsonFilterListInput>;
+    childrenTechnologiesJson?: Maybe<TechnologiesJsonFilterListInput>;
+    childrenSkillsJson?: Maybe<SkillsJsonFilterListInput>;
     childGoogleMapsJson?: Maybe<GoogleMapsJsonFilterInput>;
   };
 
   type FileGroupConnection = {
-    __typename?: 'FileGroupConnection';
     totalCount: Scalars['Int'];
     edges: Array<FileEdge>;
     nodes: Array<File>;
@@ -1143,7 +1175,6 @@ declare module GraphQL {
   };
 
   type Frontmatter = {
-    __typename?: 'Frontmatter';
     date: Scalars['String'];
     keywords: Scalars['String'];
     slug: Scalars['String'];
@@ -1160,7 +1191,6 @@ declare module GraphQL {
   };
 
   type GoogleMapsJson = Node & {
-    __typename?: 'GoogleMapsJson';
     id: Scalars['ID'];
     parent?: Maybe<Node>;
     children: Array<Node>;
@@ -1169,7 +1199,6 @@ declare module GraphQL {
   };
 
   type GoogleMapsJsonConnection = {
-    __typename?: 'GoogleMapsJsonConnection';
     totalCount: Scalars['Int'];
     edges: Array<GoogleMapsJsonEdge>;
     nodes: Array<GoogleMapsJson>;
@@ -1189,7 +1218,6 @@ declare module GraphQL {
   };
 
   type GoogleMapsJsonEdge = {
-    __typename?: 'GoogleMapsJsonEdge';
     next?: Maybe<GoogleMapsJson>;
     node: GoogleMapsJson;
     previous?: Maybe<GoogleMapsJson>;
@@ -1303,7 +1331,6 @@ declare module GraphQL {
   };
 
   type GoogleMapsJsonGroupConnection = {
-    __typename?: 'GoogleMapsJsonGroupConnection';
     totalCount: Scalars['Int'];
     edges: Array<GoogleMapsJsonEdge>;
     nodes: Array<GoogleMapsJson>;
@@ -1318,13 +1345,11 @@ declare module GraphQL {
   };
 
   type GoogleMapsJsonStyles = {
-    __typename?: 'GoogleMapsJsonStyles';
     dark?: Maybe<Array<Maybe<GoogleMapsJsonStylesDark>>>;
     light?: Maybe<Array<Maybe<GoogleMapsJsonStylesLight>>>;
   };
 
   type GoogleMapsJsonStylesDark = {
-    __typename?: 'GoogleMapsJsonStylesDark';
     elementType?: Maybe<Scalars['String']>;
     stylers?: Maybe<Array<Maybe<GoogleMapsJsonStylesDarkStylers>>>;
     featureType?: Maybe<Scalars['String']>;
@@ -1341,7 +1366,6 @@ declare module GraphQL {
   };
 
   type GoogleMapsJsonStylesDarkStylers = {
-    __typename?: 'GoogleMapsJsonStylesDarkStylers';
     color?: Maybe<Scalars['String']>;
   };
 
@@ -1359,7 +1383,6 @@ declare module GraphQL {
   };
 
   type GoogleMapsJsonStylesLight = {
-    __typename?: 'GoogleMapsJsonStylesLight';
     elementType?: Maybe<Scalars['String']>;
     stylers?: Maybe<Array<Maybe<GoogleMapsJsonStylesLightStylers>>>;
     featureType?: Maybe<Scalars['String']>;
@@ -1376,7 +1399,6 @@ declare module GraphQL {
   };
 
   type GoogleMapsJsonStylesLightStylers = {
-    __typename?: 'GoogleMapsJsonStylesLightStylers';
     color?: Maybe<Scalars['String']>;
   };
 
@@ -1416,7 +1438,6 @@ declare module GraphQL {
   }
 
   type ImageSharp = Node & {
-    __typename?: 'ImageSharp';
     fixed?: Maybe<ImageSharpFixed>;
     resolutions?: Maybe<ImageSharpResolutions>;
     fluid?: Maybe<ImageSharpFluid>;
@@ -1544,7 +1565,6 @@ declare module GraphQL {
   };
 
   type ImageSharpConnection = {
-    __typename?: 'ImageSharpConnection';
     totalCount: Scalars['Int'];
     edges: Array<ImageSharpEdge>;
     nodes: Array<ImageSharp>;
@@ -1564,7 +1584,6 @@ declare module GraphQL {
   };
 
   type ImageSharpEdge = {
-    __typename?: 'ImageSharpEdge';
     next?: Maybe<ImageSharp>;
     node: ImageSharp;
     previous?: Maybe<ImageSharp>;
@@ -1726,7 +1745,6 @@ declare module GraphQL {
   };
 
   type ImageSharpFixed = {
-    __typename?: 'ImageSharpFixed';
     base64?: Maybe<Scalars['String']>;
     tracedSVG?: Maybe<Scalars['String']>;
     aspectRatio?: Maybe<Scalars['Float']>;
@@ -1753,7 +1771,6 @@ declare module GraphQL {
   };
 
   type ImageSharpFluid = {
-    __typename?: 'ImageSharpFluid';
     base64?: Maybe<Scalars['String']>;
     tracedSVG?: Maybe<Scalars['String']>;
     aspectRatio?: Maybe<Scalars['Float']>;
@@ -1784,7 +1801,6 @@ declare module GraphQL {
   };
 
   type ImageSharpGroupConnection = {
-    __typename?: 'ImageSharpGroupConnection';
     totalCount: Scalars['Int'];
     edges: Array<ImageSharpEdge>;
     nodes: Array<ImageSharp>;
@@ -1794,7 +1810,6 @@ declare module GraphQL {
   };
 
   type ImageSharpOriginal = {
-    __typename?: 'ImageSharpOriginal';
     width?: Maybe<Scalars['Float']>;
     height?: Maybe<Scalars['Float']>;
     src?: Maybe<Scalars['String']>;
@@ -1807,7 +1822,6 @@ declare module GraphQL {
   };
 
   type ImageSharpResize = {
-    __typename?: 'ImageSharpResize';
     src?: Maybe<Scalars['String']>;
     tracedSVG?: Maybe<Scalars['String']>;
     width?: Maybe<Scalars['Int']>;
@@ -1826,7 +1840,6 @@ declare module GraphQL {
   };
 
   type ImageSharpResolutions = {
-    __typename?: 'ImageSharpResolutions';
     base64?: Maybe<Scalars['String']>;
     tracedSVG?: Maybe<Scalars['String']>;
     aspectRatio?: Maybe<Scalars['Float']>;
@@ -1853,7 +1866,6 @@ declare module GraphQL {
   };
 
   type ImageSharpSizes = {
-    __typename?: 'ImageSharpSizes';
     base64?: Maybe<Scalars['String']>;
     tracedSVG?: Maybe<Scalars['String']>;
     aspectRatio?: Maybe<Scalars['Float']>;
@@ -1889,7 +1901,6 @@ declare module GraphQL {
   };
 
   type Internal = {
-    __typename?: 'Internal';
     content?: Maybe<Scalars['String']>;
     contentDigest: Scalars['String'];
     description?: Maybe<Scalars['String']>;
@@ -1938,7 +1949,6 @@ declare module GraphQL {
   }
 
   type MarkdownHeading = {
-    __typename?: 'MarkdownHeading';
     value?: Maybe<Scalars['String']>;
     depth?: Maybe<Scalars['Int']>;
   };
@@ -1962,7 +1972,6 @@ declare module GraphQL {
   }
 
   type MarkdownRemark = Node & {
-    __typename?: 'MarkdownRemark';
     id: Scalars['ID'];
     frontmatter: Frontmatter;
     html?: Maybe<Scalars['String']>;
@@ -2001,7 +2010,6 @@ declare module GraphQL {
   };
 
   type MarkdownRemarkConnection = {
-    __typename?: 'MarkdownRemarkConnection';
     totalCount: Scalars['Int'];
     edges: Array<MarkdownRemarkEdge>;
     nodes: Array<MarkdownRemark>;
@@ -2021,7 +2029,6 @@ declare module GraphQL {
   };
 
   type MarkdownRemarkEdge = {
-    __typename?: 'MarkdownRemarkEdge';
     next?: Maybe<MarkdownRemark>;
     node: MarkdownRemark;
     previous?: Maybe<MarkdownRemark>;
@@ -2150,7 +2157,6 @@ declare module GraphQL {
   };
 
   type MarkdownRemarkGroupConnection = {
-    __typename?: 'MarkdownRemarkGroupConnection';
     totalCount: Scalars['Int'];
     edges: Array<MarkdownRemarkEdge>;
     nodes: Array<MarkdownRemark>;
@@ -2165,7 +2171,6 @@ declare module GraphQL {
   };
 
   type MarkdownWordCount = {
-    __typename?: 'MarkdownWordCount';
     paragraphs?: Maybe<Scalars['Int']>;
     sentences?: Maybe<Scalars['Int']>;
     words?: Maybe<Scalars['Int']>;
@@ -2178,7 +2183,6 @@ declare module GraphQL {
   };
 
   type NavigationJson = Node & {
-    __typename?: 'NavigationJson';
     id: Scalars['ID'];
     parent?: Maybe<Node>;
     children: Array<Node>;
@@ -2193,7 +2197,6 @@ declare module GraphQL {
   };
 
   type NavigationJsonConnection = {
-    __typename?: 'NavigationJsonConnection';
     totalCount: Scalars['Int'];
     edges: Array<NavigationJsonEdge>;
     nodes: Array<NavigationJson>;
@@ -2213,7 +2216,6 @@ declare module GraphQL {
   };
 
   type NavigationJsonEdge = {
-    __typename?: 'NavigationJsonEdge';
     next?: Maybe<NavigationJson>;
     node: NavigationJson;
     previous?: Maybe<NavigationJson>;
@@ -2334,7 +2336,6 @@ declare module GraphQL {
   };
 
   type NavigationJsonGroupConnection = {
-    __typename?: 'NavigationJsonGroupConnection';
     totalCount: Scalars['Int'];
     edges: Array<NavigationJsonEdge>;
     nodes: Array<NavigationJson>;
@@ -2367,7 +2368,6 @@ declare module GraphQL {
   };
 
   type PageInfo = {
-    __typename?: 'PageInfo';
     currentPage: Scalars['Int'];
     hasPreviousPage: Scalars['Boolean'];
     hasNextPage: Scalars['Boolean'];
@@ -2398,7 +2398,6 @@ declare module GraphQL {
   }
 
   type Query = {
-    __typename?: 'Query';
     file?: Maybe<File>;
     allFile: FileConnection;
     directory?: Maybe<Directory>;
@@ -2407,14 +2406,16 @@ declare module GraphQL {
     allImageSharp: ImageSharpConnection;
     markdownRemark?: Maybe<MarkdownRemark>;
     allMarkdownRemark: MarkdownRemarkConnection;
+    skillsJson?: Maybe<SkillsJson>;
+    allSkillsJson: SkillsJsonConnection;
     googleMapsJson?: Maybe<GoogleMapsJson>;
     allGoogleMapsJson: GoogleMapsJsonConnection;
-    dataJson?: Maybe<DataJson>;
-    allDataJson: DataJsonConnection;
-    navigationJson?: Maybe<NavigationJson>;
-    allNavigationJson: NavigationJsonConnection;
     technologiesJson?: Maybe<TechnologiesJson>;
     allTechnologiesJson: TechnologiesJsonConnection;
+    navigationJson?: Maybe<NavigationJson>;
+    allNavigationJson: NavigationJsonConnection;
+    dataJson?: Maybe<DataJson>;
+    allDataJson: DataJsonConnection;
     site?: Maybe<Site>;
     allSite: SiteConnection;
     sitePlugin?: Maybe<SitePlugin>;
@@ -2463,9 +2464,10 @@ declare module GraphQL {
     parent?: Maybe<NodeFilterInput>;
     children?: Maybe<NodeFilterListInput>;
     internal?: Maybe<InternalFilterInput>;
-    childrenTechnologiesJson?: Maybe<TechnologiesJsonFilterListInput>;
-    childrenNavigationJson?: Maybe<NavigationJsonFilterListInput>;
     childDataJson?: Maybe<DataJsonFilterInput>;
+    childrenNavigationJson?: Maybe<NavigationJsonFilterListInput>;
+    childrenTechnologiesJson?: Maybe<TechnologiesJsonFilterListInput>;
+    childrenSkillsJson?: Maybe<SkillsJsonFilterListInput>;
     childGoogleMapsJson?: Maybe<GoogleMapsJsonFilterInput>;
   };
 
@@ -2566,6 +2568,23 @@ declare module GraphQL {
     limit?: Maybe<Scalars['Int']>;
   };
 
+  type QuerySkillsJsonArgs = {
+    id?: Maybe<StringQueryOperatorInput>;
+    parent?: Maybe<NodeFilterInput>;
+    children?: Maybe<NodeFilterListInput>;
+    internal?: Maybe<InternalFilterInput>;
+    name?: Maybe<StringQueryOperatorInput>;
+    sortOrder?: Maybe<IntQueryOperatorInput>;
+    items?: Maybe<SkillsJsonItemsFilterListInput>;
+  };
+
+  type QueryAllSkillsJsonArgs = {
+    filter?: Maybe<SkillsJsonFilterInput>;
+    sort?: Maybe<SkillsJsonSortInput>;
+    skip?: Maybe<Scalars['Int']>;
+    limit?: Maybe<Scalars['Int']>;
+  };
+
   type QueryGoogleMapsJsonArgs = {
     id?: Maybe<StringQueryOperatorInput>;
     parent?: Maybe<NodeFilterInput>;
@@ -2581,22 +2600,19 @@ declare module GraphQL {
     limit?: Maybe<Scalars['Int']>;
   };
 
-  type QueryDataJsonArgs = {
+  type QueryTechnologiesJsonArgs = {
     id?: Maybe<StringQueryOperatorInput>;
     parent?: Maybe<NodeFilterInput>;
     children?: Maybe<NodeFilterListInput>;
     internal?: Maybe<InternalFilterInput>;
-    company?: Maybe<DataJsonCompanyFilterInput>;
-    contacts?: Maybe<DataJsonContactsFilterListInput>;
-    jobTitle?: Maybe<StringQueryOperatorInput>;
-    location?: Maybe<DataJsonLocationFilterInput>;
-    openToGigs?: Maybe<BooleanQueryOperatorInput>;
-    resumeFile?: Maybe<StringQueryOperatorInput>;
+    img?: Maybe<StringQueryOperatorInput>;
+    name?: Maybe<StringQueryOperatorInput>;
+    website?: Maybe<StringQueryOperatorInput>;
   };
 
-  type QueryAllDataJsonArgs = {
-    filter?: Maybe<DataJsonFilterInput>;
-    sort?: Maybe<DataJsonSortInput>;
+  type QueryAllTechnologiesJsonArgs = {
+    filter?: Maybe<TechnologiesJsonFilterInput>;
+    sort?: Maybe<TechnologiesJsonSortInput>;
     skip?: Maybe<Scalars['Int']>;
     limit?: Maybe<Scalars['Int']>;
   };
@@ -2622,19 +2638,22 @@ declare module GraphQL {
     limit?: Maybe<Scalars['Int']>;
   };
 
-  type QueryTechnologiesJsonArgs = {
+  type QueryDataJsonArgs = {
     id?: Maybe<StringQueryOperatorInput>;
     parent?: Maybe<NodeFilterInput>;
     children?: Maybe<NodeFilterListInput>;
     internal?: Maybe<InternalFilterInput>;
-    img?: Maybe<StringQueryOperatorInput>;
-    name?: Maybe<StringQueryOperatorInput>;
-    website?: Maybe<StringQueryOperatorInput>;
+    company?: Maybe<DataJsonCompanyFilterInput>;
+    contacts?: Maybe<DataJsonContactsFilterListInput>;
+    jobTitle?: Maybe<StringQueryOperatorInput>;
+    location?: Maybe<DataJsonLocationFilterInput>;
+    openToGigs?: Maybe<BooleanQueryOperatorInput>;
+    resumeFile?: Maybe<StringQueryOperatorInput>;
   };
 
-  type QueryAllTechnologiesJsonArgs = {
-    filter?: Maybe<TechnologiesJsonFilterInput>;
-    sort?: Maybe<TechnologiesJsonSortInput>;
+  type QueryAllDataJsonArgs = {
+    filter?: Maybe<DataJsonFilterInput>;
+    sort?: Maybe<DataJsonSortInput>;
     skip?: Maybe<Scalars['Int']>;
     limit?: Maybe<Scalars['Int']>;
   };
@@ -2705,7 +2724,6 @@ declare module GraphQL {
   };
 
   type Site = Node & {
-    __typename?: 'Site';
     id: Scalars['ID'];
     parent?: Maybe<Node>;
     children: Array<Node>;
@@ -2726,7 +2744,6 @@ declare module GraphQL {
   };
 
   type SiteConnection = {
-    __typename?: 'SiteConnection';
     totalCount: Scalars['Int'];
     edges: Array<SiteEdge>;
     nodes: Array<Site>;
@@ -2746,7 +2763,6 @@ declare module GraphQL {
   };
 
   type SiteEdge = {
-    __typename?: 'SiteEdge';
     next?: Maybe<Site>;
     node: Site;
     previous?: Maybe<Site>;
@@ -2844,8 +2860,8 @@ declare module GraphQL {
     SiteMetadataLicense = 'siteMetadata___license',
     SiteMetadataRepositoryType = 'siteMetadata___repository___type',
     SiteMetadataRepositoryUrl = 'siteMetadata___repository___url',
-    SiteMetadataTitle = 'siteMetadata___title',
     SiteMetadataSiteUrl = 'siteMetadata___siteUrl',
+    SiteMetadataTitle = 'siteMetadata___title',
     SiteMetadataVersion = 'siteMetadata___version',
     Port = 'port',
     Host = 'host',
@@ -2868,7 +2884,6 @@ declare module GraphQL {
   };
 
   type SiteGroupConnection = {
-    __typename?: 'SiteGroupConnection';
     totalCount: Scalars['Int'];
     edges: Array<SiteEdge>;
     nodes: Array<Site>;
@@ -2878,7 +2893,6 @@ declare module GraphQL {
   };
 
   type SitePage = Node & {
-    __typename?: 'SitePage';
     id: Scalars['ID'];
     parent?: Maybe<Node>;
     children: Array<Node>;
@@ -2894,7 +2908,6 @@ declare module GraphQL {
   };
 
   type SitePageConnection = {
-    __typename?: 'SitePageConnection';
     totalCount: Scalars['Int'];
     edges: Array<SitePageEdge>;
     nodes: Array<SitePage>;
@@ -2914,7 +2927,6 @@ declare module GraphQL {
   };
 
   type SitePageEdge = {
-    __typename?: 'SitePageEdge';
     next?: Maybe<SitePage>;
     node: SitePage;
     previous?: Maybe<SitePage>;
@@ -3060,6 +3072,8 @@ declare module GraphQL {
     PluginCreatorPluginOptionsPluginsVersion = 'pluginCreator___pluginOptions___plugins___version',
     PluginCreatorPluginOptionsPluginsBrowserApIs = 'pluginCreator___pluginOptions___plugins___browserAPIs',
     PluginCreatorPluginOptionsPluginsPluginFilepath = 'pluginCreator___pluginOptions___plugins___pluginFilepath',
+    PluginCreatorPluginOptionsCookieDomain = 'pluginCreator___pluginOptions___cookieDomain',
+    PluginCreatorPluginOptionsTrackingId = 'pluginCreator___pluginOptions___trackingId',
     PluginCreatorPluginOptionsDisplay = 'pluginCreator___pluginOptions___display',
     PluginCreatorPluginOptionsFonts = 'pluginCreator___pluginOptions___fonts',
     PluginCreatorPluginOptionsBackgroundColor = 'pluginCreator___pluginOptions___background_color',
@@ -3113,7 +3127,6 @@ declare module GraphQL {
   };
 
   type SitePageGroupConnection = {
-    __typename?: 'SitePageGroupConnection';
     totalCount: Scalars['Int'];
     edges: Array<SitePageEdge>;
     nodes: Array<SitePage>;
@@ -3128,7 +3141,6 @@ declare module GraphQL {
   };
 
   type SitePlugin = Node & {
-    __typename?: 'SitePlugin';
     id: Scalars['ID'];
     parent?: Maybe<Node>;
     children: Array<Node>;
@@ -3145,7 +3157,6 @@ declare module GraphQL {
   };
 
   type SitePluginConnection = {
-    __typename?: 'SitePluginConnection';
     totalCount: Scalars['Int'];
     edges: Array<SitePluginEdge>;
     nodes: Array<SitePlugin>;
@@ -3165,7 +3176,6 @@ declare module GraphQL {
   };
 
   type SitePluginEdge = {
-    __typename?: 'SitePluginEdge';
     next?: Maybe<SitePlugin>;
     node: SitePlugin;
     previous?: Maybe<SitePlugin>;
@@ -3272,6 +3282,8 @@ declare module GraphQL {
     PluginOptionsPluginsPluginOptionsColorTheme = 'pluginOptions___plugins___pluginOptions___colorTheme',
     PluginOptionsPluginsBrowserApIs = 'pluginOptions___plugins___browserAPIs',
     PluginOptionsPluginsPluginFilepath = 'pluginOptions___plugins___pluginFilepath',
+    PluginOptionsCookieDomain = 'pluginOptions___cookieDomain',
+    PluginOptionsTrackingId = 'pluginOptions___trackingId',
     PluginOptionsDisplay = 'pluginOptions___display',
     PluginOptionsFonts = 'pluginOptions___fonts',
     PluginOptionsBackgroundColor = 'pluginOptions___background_color',
@@ -3324,7 +3336,6 @@ declare module GraphQL {
   };
 
   type SitePluginGroupConnection = {
-    __typename?: 'SitePluginGroupConnection';
     totalCount: Scalars['Int'];
     edges: Array<SitePluginEdge>;
     nodes: Array<SitePlugin>;
@@ -3334,7 +3345,6 @@ declare module GraphQL {
   };
 
   type SitePluginPackageJson = {
-    __typename?: 'SitePluginPackageJson';
     name?: Maybe<Scalars['String']>;
     description?: Maybe<Scalars['String']>;
     version?: Maybe<Scalars['String']>;
@@ -3347,7 +3357,6 @@ declare module GraphQL {
   };
 
   type SitePluginPackageJsonDependencies = {
-    __typename?: 'SitePluginPackageJsonDependencies';
     name?: Maybe<Scalars['String']>;
     version?: Maybe<Scalars['String']>;
   };
@@ -3362,7 +3371,6 @@ declare module GraphQL {
   };
 
   type SitePluginPackageJsonDevDependencies = {
-    __typename?: 'SitePluginPackageJsonDevDependencies';
     name?: Maybe<Scalars['String']>;
     version?: Maybe<Scalars['String']>;
   };
@@ -3389,7 +3397,6 @@ declare module GraphQL {
   };
 
   type SitePluginPackageJsonPeerDependencies = {
-    __typename?: 'SitePluginPackageJsonPeerDependencies';
     name?: Maybe<Scalars['String']>;
     version?: Maybe<Scalars['String']>;
   };
@@ -3404,8 +3411,9 @@ declare module GraphQL {
   };
 
   type SitePluginPluginOptions = {
-    __typename?: 'SitePluginPluginOptions';
     plugins?: Maybe<Array<Maybe<SitePluginPluginOptionsPlugins>>>;
+    cookieDomain?: Maybe<Scalars['String']>;
+    trackingId?: Maybe<Scalars['String']>;
     display?: Maybe<Scalars['String']>;
     fonts?: Maybe<Array<Maybe<Scalars['String']>>>;
     background_color?: Maybe<Scalars['String']>;
@@ -3424,6 +3432,8 @@ declare module GraphQL {
 
   type SitePluginPluginOptionsFilterInput = {
     plugins?: Maybe<SitePluginPluginOptionsPluginsFilterListInput>;
+    cookieDomain?: Maybe<StringQueryOperatorInput>;
+    trackingId?: Maybe<StringQueryOperatorInput>;
     display?: Maybe<StringQueryOperatorInput>;
     fonts?: Maybe<StringQueryOperatorInput>;
     background_color?: Maybe<StringQueryOperatorInput>;
@@ -3441,7 +3451,6 @@ declare module GraphQL {
   };
 
   type SitePluginPluginOptionsPlugins = {
-    __typename?: 'SitePluginPluginOptionsPlugins';
     resolve?: Maybe<Scalars['String']>;
     id?: Maybe<Scalars['String']>;
     name?: Maybe<Scalars['String']>;
@@ -3466,7 +3475,6 @@ declare module GraphQL {
   };
 
   type SitePluginPluginOptionsPluginsPluginOptions = {
-    __typename?: 'SitePluginPluginOptionsPluginsPluginOptions';
     maxWidth?: Maybe<Scalars['Int']>;
     quality?: Maybe<Scalars['Int']>;
     withWebp?: Maybe<Scalars['Boolean']>;
@@ -3486,13 +3494,12 @@ declare module GraphQL {
   };
 
   type SiteSiteMetadata = {
-    __typename?: 'SiteSiteMetadata';
     author?: Maybe<Scalars['String']>;
     description?: Maybe<Scalars['String']>;
     license?: Maybe<Scalars['String']>;
     repository?: Maybe<SiteSiteMetadataRepository>;
-    title?: Maybe<Scalars['String']>;
     siteUrl?: Maybe<Scalars['String']>;
+    title?: Maybe<Scalars['String']>;
     version?: Maybe<Scalars['String']>;
   };
 
@@ -3501,13 +3508,12 @@ declare module GraphQL {
     description?: Maybe<StringQueryOperatorInput>;
     license?: Maybe<StringQueryOperatorInput>;
     repository?: Maybe<SiteSiteMetadataRepositoryFilterInput>;
-    title?: Maybe<StringQueryOperatorInput>;
     siteUrl?: Maybe<StringQueryOperatorInput>;
+    title?: Maybe<StringQueryOperatorInput>;
     version?: Maybe<StringQueryOperatorInput>;
   };
 
   type SiteSiteMetadataRepository = {
-    __typename?: 'SiteSiteMetadataRepository';
     type?: Maybe<Scalars['String']>;
     url?: Maybe<Scalars['String']>;
   };
@@ -3519,6 +3525,180 @@ declare module GraphQL {
 
   type SiteSortInput = {
     fields?: Maybe<Array<Maybe<SiteFieldsEnum>>>;
+    order?: Maybe<Array<Maybe<SortOrderEnum>>>;
+  };
+
+  type SkillsJson = Node & {
+    id: Scalars['ID'];
+    parent?: Maybe<Node>;
+    children: Array<Node>;
+    internal: Internal;
+    name?: Maybe<Scalars['String']>;
+    sortOrder?: Maybe<Scalars['Int']>;
+    items?: Maybe<Array<Maybe<SkillsJsonItems>>>;
+  };
+
+  type SkillsJsonConnection = {
+    totalCount: Scalars['Int'];
+    edges: Array<SkillsJsonEdge>;
+    nodes: Array<SkillsJson>;
+    pageInfo: PageInfo;
+    distinct: Array<Scalars['String']>;
+    group: Array<SkillsJsonGroupConnection>;
+  };
+
+  type SkillsJsonConnectionDistinctArgs = {
+    field: SkillsJsonFieldsEnum;
+  };
+
+  type SkillsJsonConnectionGroupArgs = {
+    skip?: Maybe<Scalars['Int']>;
+    limit?: Maybe<Scalars['Int']>;
+    field: SkillsJsonFieldsEnum;
+  };
+
+  type SkillsJsonEdge = {
+    next?: Maybe<SkillsJson>;
+    node: SkillsJson;
+    previous?: Maybe<SkillsJson>;
+  };
+
+  enum SkillsJsonFieldsEnum {
+    Id = 'id',
+    ParentId = 'parent___id',
+    ParentParentId = 'parent___parent___id',
+    ParentParentParentId = 'parent___parent___parent___id',
+    ParentParentParentChildren = 'parent___parent___parent___children',
+    ParentParentChildren = 'parent___parent___children',
+    ParentParentChildrenId = 'parent___parent___children___id',
+    ParentParentChildrenChildren = 'parent___parent___children___children',
+    ParentParentInternalContent = 'parent___parent___internal___content',
+    ParentParentInternalContentDigest = 'parent___parent___internal___contentDigest',
+    ParentParentInternalDescription = 'parent___parent___internal___description',
+    ParentParentInternalFieldOwners = 'parent___parent___internal___fieldOwners',
+    ParentParentInternalIgnoreType = 'parent___parent___internal___ignoreType',
+    ParentParentInternalMediaType = 'parent___parent___internal___mediaType',
+    ParentParentInternalOwner = 'parent___parent___internal___owner',
+    ParentParentInternalType = 'parent___parent___internal___type',
+    ParentChildren = 'parent___children',
+    ParentChildrenId = 'parent___children___id',
+    ParentChildrenParentId = 'parent___children___parent___id',
+    ParentChildrenParentChildren = 'parent___children___parent___children',
+    ParentChildrenChildren = 'parent___children___children',
+    ParentChildrenChildrenId = 'parent___children___children___id',
+    ParentChildrenChildrenChildren = 'parent___children___children___children',
+    ParentChildrenInternalContent = 'parent___children___internal___content',
+    ParentChildrenInternalContentDigest = 'parent___children___internal___contentDigest',
+    ParentChildrenInternalDescription = 'parent___children___internal___description',
+    ParentChildrenInternalFieldOwners = 'parent___children___internal___fieldOwners',
+    ParentChildrenInternalIgnoreType = 'parent___children___internal___ignoreType',
+    ParentChildrenInternalMediaType = 'parent___children___internal___mediaType',
+    ParentChildrenInternalOwner = 'parent___children___internal___owner',
+    ParentChildrenInternalType = 'parent___children___internal___type',
+    ParentInternalContent = 'parent___internal___content',
+    ParentInternalContentDigest = 'parent___internal___contentDigest',
+    ParentInternalDescription = 'parent___internal___description',
+    ParentInternalFieldOwners = 'parent___internal___fieldOwners',
+    ParentInternalIgnoreType = 'parent___internal___ignoreType',
+    ParentInternalMediaType = 'parent___internal___mediaType',
+    ParentInternalOwner = 'parent___internal___owner',
+    ParentInternalType = 'parent___internal___type',
+    Children = 'children',
+    ChildrenId = 'children___id',
+    ChildrenParentId = 'children___parent___id',
+    ChildrenParentParentId = 'children___parent___parent___id',
+    ChildrenParentParentChildren = 'children___parent___parent___children',
+    ChildrenParentChildren = 'children___parent___children',
+    ChildrenParentChildrenId = 'children___parent___children___id',
+    ChildrenParentChildrenChildren = 'children___parent___children___children',
+    ChildrenParentInternalContent = 'children___parent___internal___content',
+    ChildrenParentInternalContentDigest = 'children___parent___internal___contentDigest',
+    ChildrenParentInternalDescription = 'children___parent___internal___description',
+    ChildrenParentInternalFieldOwners = 'children___parent___internal___fieldOwners',
+    ChildrenParentInternalIgnoreType = 'children___parent___internal___ignoreType',
+    ChildrenParentInternalMediaType = 'children___parent___internal___mediaType',
+    ChildrenParentInternalOwner = 'children___parent___internal___owner',
+    ChildrenParentInternalType = 'children___parent___internal___type',
+    ChildrenChildren = 'children___children',
+    ChildrenChildrenId = 'children___children___id',
+    ChildrenChildrenParentId = 'children___children___parent___id',
+    ChildrenChildrenParentChildren = 'children___children___parent___children',
+    ChildrenChildrenChildren = 'children___children___children',
+    ChildrenChildrenChildrenId = 'children___children___children___id',
+    ChildrenChildrenChildrenChildren = 'children___children___children___children',
+    ChildrenChildrenInternalContent = 'children___children___internal___content',
+    ChildrenChildrenInternalContentDigest = 'children___children___internal___contentDigest',
+    ChildrenChildrenInternalDescription = 'children___children___internal___description',
+    ChildrenChildrenInternalFieldOwners = 'children___children___internal___fieldOwners',
+    ChildrenChildrenInternalIgnoreType = 'children___children___internal___ignoreType',
+    ChildrenChildrenInternalMediaType = 'children___children___internal___mediaType',
+    ChildrenChildrenInternalOwner = 'children___children___internal___owner',
+    ChildrenChildrenInternalType = 'children___children___internal___type',
+    ChildrenInternalContent = 'children___internal___content',
+    ChildrenInternalContentDigest = 'children___internal___contentDigest',
+    ChildrenInternalDescription = 'children___internal___description',
+    ChildrenInternalFieldOwners = 'children___internal___fieldOwners',
+    ChildrenInternalIgnoreType = 'children___internal___ignoreType',
+    ChildrenInternalMediaType = 'children___internal___mediaType',
+    ChildrenInternalOwner = 'children___internal___owner',
+    ChildrenInternalType = 'children___internal___type',
+    InternalContent = 'internal___content',
+    InternalContentDigest = 'internal___contentDigest',
+    InternalDescription = 'internal___description',
+    InternalFieldOwners = 'internal___fieldOwners',
+    InternalIgnoreType = 'internal___ignoreType',
+    InternalMediaType = 'internal___mediaType',
+    InternalOwner = 'internal___owner',
+    InternalType = 'internal___type',
+    Name = 'name',
+    SortOrder = 'sortOrder',
+    Items = 'items',
+    ItemsName = 'items___name',
+    ItemsProficiencyLevel = 'items___proficiencyLevel',
+    ItemsSortOrder = 'items___sortOrder',
+  }
+
+  type SkillsJsonFilterInput = {
+    id?: Maybe<StringQueryOperatorInput>;
+    parent?: Maybe<NodeFilterInput>;
+    children?: Maybe<NodeFilterListInput>;
+    internal?: Maybe<InternalFilterInput>;
+    name?: Maybe<StringQueryOperatorInput>;
+    sortOrder?: Maybe<IntQueryOperatorInput>;
+    items?: Maybe<SkillsJsonItemsFilterListInput>;
+  };
+
+  type SkillsJsonFilterListInput = {
+    elemMatch?: Maybe<SkillsJsonFilterInput>;
+  };
+
+  type SkillsJsonGroupConnection = {
+    totalCount: Scalars['Int'];
+    edges: Array<SkillsJsonEdge>;
+    nodes: Array<SkillsJson>;
+    pageInfo: PageInfo;
+    field: Scalars['String'];
+    fieldValue?: Maybe<Scalars['String']>;
+  };
+
+  type SkillsJsonItems = {
+    name?: Maybe<Scalars['String']>;
+    proficiencyLevel?: Maybe<Scalars['Int']>;
+    sortOrder?: Maybe<Scalars['Int']>;
+  };
+
+  type SkillsJsonItemsFilterInput = {
+    name?: Maybe<StringQueryOperatorInput>;
+    proficiencyLevel?: Maybe<IntQueryOperatorInput>;
+    sortOrder?: Maybe<IntQueryOperatorInput>;
+  };
+
+  type SkillsJsonItemsFilterListInput = {
+    elemMatch?: Maybe<SkillsJsonItemsFilterInput>;
+  };
+
+  type SkillsJsonSortInput = {
+    fields?: Maybe<Array<Maybe<SkillsJsonFieldsEnum>>>;
     order?: Maybe<Array<Maybe<SortOrderEnum>>>;
   };
 
@@ -3537,7 +3717,6 @@ declare module GraphQL {
   };
 
   type TechnologiesJson = Node & {
-    __typename?: 'TechnologiesJson';
     id: Scalars['ID'];
     parent?: Maybe<Node>;
     children: Array<Node>;
@@ -3548,7 +3727,6 @@ declare module GraphQL {
   };
 
   type TechnologiesJsonConnection = {
-    __typename?: 'TechnologiesJsonConnection';
     totalCount: Scalars['Int'];
     edges: Array<TechnologiesJsonEdge>;
     nodes: Array<TechnologiesJson>;
@@ -3568,7 +3746,6 @@ declare module GraphQL {
   };
 
   type TechnologiesJsonEdge = {
-    __typename?: 'TechnologiesJsonEdge';
     next?: Maybe<TechnologiesJson>;
     node: TechnologiesJson;
     previous?: Maybe<TechnologiesJson>;
@@ -3681,7 +3858,6 @@ declare module GraphQL {
   };
 
   type TechnologiesJsonGroupConnection = {
-    __typename?: 'TechnologiesJsonGroupConnection';
     totalCount: Scalars['Int'];
     edges: Array<TechnologiesJsonEdge>;
     nodes: Array<TechnologiesJson>;
@@ -3695,336 +3871,339 @@ declare module GraphQL {
     order?: Maybe<Array<Maybe<SortOrderEnum>>>;
   };
 
-  type GatsbyImageSharpFixedFragment = { __typename?: 'ImageSharpFixed' } & Pick<
-    ImageSharpFixed,
-    'base64' | 'width' | 'height' | 'src' | 'srcSet'
-  >;
+  type GatsbyImageSharpFixedFragment = {
+    base64: Maybe<string>;
+    width: Maybe<number>;
+    height: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+  };
 
-  type GatsbyImageSharpFixed_TracedSvgFragment = { __typename?: 'ImageSharpFixed' } & Pick<
-    ImageSharpFixed,
-    'tracedSVG' | 'width' | 'height' | 'src' | 'srcSet'
-  >;
+  type GatsbyImageSharpFixed_TracedSvgFragment = {
+    tracedSVG: Maybe<string>;
+    width: Maybe<number>;
+    height: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+  };
 
-  type GatsbyImageSharpFixed_WithWebpFragment = { __typename?: 'ImageSharpFixed' } & Pick<
-    ImageSharpFixed,
-    'base64' | 'width' | 'height' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp'
-  >;
+  type GatsbyImageSharpFixed_WithWebpFragment = {
+    base64: Maybe<string>;
+    width: Maybe<number>;
+    height: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+    srcWebp: Maybe<string>;
+    srcSetWebp: Maybe<string>;
+  };
 
-  type GatsbyImageSharpFixed_WithWebp_TracedSvgFragment = { __typename?: 'ImageSharpFixed' } & Pick<
-    ImageSharpFixed,
-    'tracedSVG' | 'width' | 'height' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp'
-  >;
+  type GatsbyImageSharpFixed_WithWebp_TracedSvgFragment = {
+    tracedSVG: Maybe<string>;
+    width: Maybe<number>;
+    height: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+    srcWebp: Maybe<string>;
+    srcSetWebp: Maybe<string>;
+  };
 
-  type GatsbyImageSharpFixed_NoBase64Fragment = { __typename?: 'ImageSharpFixed' } & Pick<
-    ImageSharpFixed,
-    'width' | 'height' | 'src' | 'srcSet'
-  >;
+  type GatsbyImageSharpFixed_NoBase64Fragment = {
+    width: Maybe<number>;
+    height: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+  };
 
-  type GatsbyImageSharpFixed_WithWebp_NoBase64Fragment = { __typename?: 'ImageSharpFixed' } & Pick<
-    ImageSharpFixed,
-    'width' | 'height' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp'
-  >;
+  type GatsbyImageSharpFixed_WithWebp_NoBase64Fragment = {
+    width: Maybe<number>;
+    height: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+    srcWebp: Maybe<string>;
+    srcSetWebp: Maybe<string>;
+  };
 
-  type GatsbyImageSharpFluidFragment = { __typename?: 'ImageSharpFluid' } & Pick<
-    ImageSharpFluid,
-    'base64' | 'aspectRatio' | 'src' | 'srcSet' | 'sizes'
-  >;
+  type GatsbyImageSharpFluidFragment = {
+    base64: Maybe<string>;
+    aspectRatio: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+    sizes: Maybe<string>;
+  };
 
-  type GatsbyImageSharpFluid_TracedSvgFragment = { __typename?: 'ImageSharpFluid' } & Pick<
-    ImageSharpFluid,
-    'tracedSVG' | 'aspectRatio' | 'src' | 'srcSet' | 'sizes'
-  >;
+  type GatsbyImageSharpFluid_TracedSvgFragment = {
+    tracedSVG: Maybe<string>;
+    aspectRatio: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+    sizes: Maybe<string>;
+  };
 
-  type GatsbyImageSharpFluid_WithWebpFragment = { __typename?: 'ImageSharpFluid' } & Pick<
-    ImageSharpFluid,
-    'base64' | 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'
-  >;
+  type GatsbyImageSharpFluid_WithWebpFragment = {
+    base64: Maybe<string>;
+    aspectRatio: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+    srcWebp: Maybe<string>;
+    srcSetWebp: Maybe<string>;
+    sizes: Maybe<string>;
+  };
 
-  type GatsbyImageSharpFluid_WithWebp_TracedSvgFragment = { __typename?: 'ImageSharpFluid' } & Pick<
-    ImageSharpFluid,
-    'tracedSVG' | 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'
-  >;
+  type GatsbyImageSharpFluid_WithWebp_TracedSvgFragment = {
+    tracedSVG: Maybe<string>;
+    aspectRatio: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+    srcWebp: Maybe<string>;
+    srcSetWebp: Maybe<string>;
+    sizes: Maybe<string>;
+  };
 
-  type GatsbyImageSharpFluid_NoBase64Fragment = { __typename?: 'ImageSharpFluid' } & Pick<
-    ImageSharpFluid,
-    'aspectRatio' | 'src' | 'srcSet' | 'sizes'
-  >;
+  type GatsbyImageSharpFluid_NoBase64Fragment = {
+    aspectRatio: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+    sizes: Maybe<string>;
+  };
 
-  type GatsbyImageSharpFluid_WithWebp_NoBase64Fragment = { __typename?: 'ImageSharpFluid' } & Pick<
-    ImageSharpFluid,
-    'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'
-  >;
+  type GatsbyImageSharpFluid_WithWebp_NoBase64Fragment = {
+    aspectRatio: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+    srcWebp: Maybe<string>;
+    srcSetWebp: Maybe<string>;
+    sizes: Maybe<string>;
+  };
 
-  type GatsbyImageSharpResolutionsFragment = { __typename?: 'ImageSharpResolutions' } & Pick<
-    ImageSharpResolutions,
-    'base64' | 'width' | 'height' | 'src' | 'srcSet'
-  >;
+  type GatsbyImageSharpResolutionsFragment = {
+    base64: Maybe<string>;
+    width: Maybe<number>;
+    height: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+  };
 
-  type GatsbyImageSharpResolutions_TracedSvgFragment = { __typename?: 'ImageSharpResolutions' } & Pick<
-    ImageSharpResolutions,
-    'tracedSVG' | 'width' | 'height' | 'src' | 'srcSet'
-  >;
+  type GatsbyImageSharpResolutions_TracedSvgFragment = {
+    tracedSVG: Maybe<string>;
+    width: Maybe<number>;
+    height: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+  };
 
-  type GatsbyImageSharpResolutions_WithWebpFragment = { __typename?: 'ImageSharpResolutions' } & Pick<
-    ImageSharpResolutions,
-    'base64' | 'width' | 'height' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp'
-  >;
+  type GatsbyImageSharpResolutions_WithWebpFragment = {
+    base64: Maybe<string>;
+    width: Maybe<number>;
+    height: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+    srcWebp: Maybe<string>;
+    srcSetWebp: Maybe<string>;
+  };
 
-  type GatsbyImageSharpResolutions_WithWebp_TracedSvgFragment = { __typename?: 'ImageSharpResolutions' } & Pick<
-    ImageSharpResolutions,
-    'tracedSVG' | 'width' | 'height' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp'
-  >;
+  type GatsbyImageSharpResolutions_WithWebp_TracedSvgFragment = {
+    tracedSVG: Maybe<string>;
+    width: Maybe<number>;
+    height: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+    srcWebp: Maybe<string>;
+    srcSetWebp: Maybe<string>;
+  };
 
-  type GatsbyImageSharpResolutions_NoBase64Fragment = { __typename?: 'ImageSharpResolutions' } & Pick<
-    ImageSharpResolutions,
-    'width' | 'height' | 'src' | 'srcSet'
-  >;
+  type GatsbyImageSharpResolutions_NoBase64Fragment = {
+    width: Maybe<number>;
+    height: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+  };
 
-  type GatsbyImageSharpResolutions_WithWebp_NoBase64Fragment = { __typename?: 'ImageSharpResolutions' } & Pick<
-    ImageSharpResolutions,
-    'width' | 'height' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp'
-  >;
+  type GatsbyImageSharpResolutions_WithWebp_NoBase64Fragment = {
+    width: Maybe<number>;
+    height: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+    srcWebp: Maybe<string>;
+    srcSetWebp: Maybe<string>;
+  };
 
-  type GatsbyImageSharpSizesFragment = { __typename?: 'ImageSharpSizes' } & Pick<
-    ImageSharpSizes,
-    'base64' | 'aspectRatio' | 'src' | 'srcSet' | 'sizes'
-  >;
+  type GatsbyImageSharpSizesFragment = {
+    base64: Maybe<string>;
+    aspectRatio: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+    sizes: Maybe<string>;
+  };
 
-  type GatsbyImageSharpSizes_TracedSvgFragment = { __typename?: 'ImageSharpSizes' } & Pick<
-    ImageSharpSizes,
-    'tracedSVG' | 'aspectRatio' | 'src' | 'srcSet' | 'sizes'
-  >;
+  type GatsbyImageSharpSizes_TracedSvgFragment = {
+    tracedSVG: Maybe<string>;
+    aspectRatio: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+    sizes: Maybe<string>;
+  };
 
-  type GatsbyImageSharpSizes_WithWebpFragment = { __typename?: 'ImageSharpSizes' } & Pick<
-    ImageSharpSizes,
-    'base64' | 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'
-  >;
+  type GatsbyImageSharpSizes_WithWebpFragment = {
+    base64: Maybe<string>;
+    aspectRatio: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+    srcWebp: Maybe<string>;
+    srcSetWebp: Maybe<string>;
+    sizes: Maybe<string>;
+  };
 
-  type GatsbyImageSharpSizes_WithWebp_TracedSvgFragment = { __typename?: 'ImageSharpSizes' } & Pick<
-    ImageSharpSizes,
-    'tracedSVG' | 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'
-  >;
+  type GatsbyImageSharpSizes_WithWebp_TracedSvgFragment = {
+    tracedSVG: Maybe<string>;
+    aspectRatio: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+    srcWebp: Maybe<string>;
+    srcSetWebp: Maybe<string>;
+    sizes: Maybe<string>;
+  };
 
-  type GatsbyImageSharpSizes_NoBase64Fragment = { __typename?: 'ImageSharpSizes' } & Pick<
-    ImageSharpSizes,
-    'aspectRatio' | 'src' | 'srcSet' | 'sizes'
-  >;
+  type GatsbyImageSharpSizes_NoBase64Fragment = {
+    aspectRatio: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+    sizes: Maybe<string>;
+  };
 
-  type GatsbyImageSharpSizes_WithWebp_NoBase64Fragment = { __typename?: 'ImageSharpSizes' } & Pick<
-    ImageSharpSizes,
-    'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'
-  >;
+  type GatsbyImageSharpSizes_WithWebp_NoBase64Fragment = {
+    aspectRatio: Maybe<number>;
+    src: Maybe<string>;
+    srcSet: Maybe<string>;
+    srcWebp: Maybe<string>;
+    srcSetWebp: Maybe<string>;
+    sizes: Maybe<string>;
+  };
 
   type SeoDataQueryVariables = {};
 
-  type SeoDataQuery = { __typename?: 'Query' } & {
-    site: Maybe<
-      { __typename?: 'Site' } & {
-        siteMetadata: Maybe<
-          { __typename?: 'SiteSiteMetadata' } & Pick<SiteSiteMetadata, 'title' | 'description' | 'author'>
-        >;
-      }
-    >;
+  type SeoDataQuery = {
+    site: Maybe<{ siteMetadata: Maybe<{ title: Maybe<string>; description: Maybe<string>; author: Maybe<string> }> }>;
   };
 
   type FooterDataQueryVariables = {};
 
-  type FooterDataQuery = { __typename?: 'Query' } & {
-    site: Maybe<
-      { __typename?: 'Site' } & {
-        siteMetadata: Maybe<
-          { __typename?: 'SiteSiteMetadata' } & Pick<SiteSiteMetadata, 'license' | 'version'> & {
-              repository: Maybe<
-                { __typename?: 'SiteSiteMetadataRepository' } & Pick<SiteSiteMetadataRepository, 'url'>
-              >;
-            }
-        >;
-      }
-    >;
+  type FooterDataQuery = {
+    site: Maybe<{
+      siteMetadata: Maybe<{
+        license: Maybe<string>;
+        version: Maybe<string>;
+        repository: Maybe<{ url: Maybe<string> }>;
+      }>;
+    }>;
   };
 
   type HeaderDataQueryVariables = {};
 
-  type HeaderDataQuery = { __typename?: 'Query' } & {
-    dataJson: Maybe<{ __typename?: 'DataJson' } & Pick<DataJson, 'jobTitle'>>;
-    file: Maybe<
-      { __typename?: 'File' } & {
-        childImageSharp: Maybe<
-          { __typename?: 'ImageSharp' } & {
-            fixed: Maybe<{ __typename?: 'ImageSharpFixed' } & GatsbyImageSharpFixed_WithWebpFragment>;
-          }
-        >;
-      }
-    >;
+  type HeaderDataQuery = {
+    dataJson: Maybe<{ jobTitle: Maybe<string> }>;
+    file: Maybe<{ childImageSharp: Maybe<{ fixed: Maybe<GatsbyImageSharpFixed_WithWebpFragment> }> }>;
   };
 
   type NavigationDataQueryVariables = {};
 
-  type NavigationDataQuery = { __typename?: 'Query' } & {
-    allMarkdownRemark: { __typename?: 'MarkdownRemarkConnection' } & Pick<MarkdownRemarkConnection, 'totalCount'>;
-    allNavigationJson: { __typename?: 'NavigationJsonConnection' } & {
-      nodes: Array<
-        { __typename?: 'NavigationJson' } & Pick<
-          NavigationJson,
-          'icon' | 'ignoreInNavigation' | 'keywords' | 'name' | 'navOrder' | 'to'
-        >
-      >;
+  type NavigationDataQuery = {
+    allMarkdownRemark: { totalCount: number };
+    allNavigationJson: {
+      nodes: Array<{
+        icon: Maybe<string>;
+        ignoreInNavigation: Maybe<boolean>;
+        keywords: Maybe<Array<Maybe<string>>>;
+        name: Maybe<string>;
+        navOrder: Maybe<number>;
+        to: Maybe<string>;
+      }>;
     };
-    dataJson: Maybe<{ __typename?: 'DataJson' } & Pick<DataJson, 'resumeFile'>>;
+    dataJson: Maybe<{ resumeFile: Maybe<string> }>;
   };
 
   type LocationMapDataQueryVariables = {};
 
-  type LocationMapDataQuery = { __typename?: 'Query' } & {
-    dataJson: Maybe<
-      { __typename?: 'DataJson' } & {
-        location: Maybe<{ __typename?: 'DataJsonLocation' } & Pick<DataJsonLocation, 'lat' | 'lng'>>;
-      }
-    >;
-    googleMapsJson: Maybe<
-      { __typename?: 'GoogleMapsJson' } & {
-        styles: Maybe<
-          { __typename?: 'GoogleMapsJsonStyles' } & {
-            dark: Maybe<
-              Array<
-                Maybe<
-                  { __typename?: 'GoogleMapsJsonStylesDark' } & Pick<
-                    GoogleMapsJsonStylesDark,
-                    'elementType' | 'featureType'
-                  > & {
-                      stylers: Maybe<
-                        Array<
-                          Maybe<
-                            { __typename?: 'GoogleMapsJsonStylesDarkStylers' } & Pick<
-                              GoogleMapsJsonStylesDarkStylers,
-                              'color'
-                            >
-                          >
-                        >
-                      >;
-                    }
-                >
-              >
-            >;
-            light: Maybe<
-              Array<
-                Maybe<
-                  { __typename?: 'GoogleMapsJsonStylesLight' } & Pick<
-                    GoogleMapsJsonStylesLight,
-                    'elementType' | 'featureType'
-                  > & {
-                      stylers: Maybe<
-                        Array<
-                          Maybe<
-                            { __typename?: 'GoogleMapsJsonStylesLightStylers' } & Pick<
-                              GoogleMapsJsonStylesLightStylers,
-                              'color'
-                            >
-                          >
-                        >
-                      >;
-                    }
-                >
-              >
-            >;
-          }
+  type LocationMapDataQuery = {
+    dataJson: Maybe<{ location: Maybe<{ lat: Maybe<number>; lng: Maybe<number> }> }>;
+    googleMapsJson: Maybe<{
+      styles: Maybe<{
+        dark: Maybe<
+          Array<
+            Maybe<{
+              elementType: Maybe<string>;
+              featureType: Maybe<string>;
+              stylers: Maybe<Array<Maybe<{ color: Maybe<string> }>>>;
+            }>
+          >
         >;
-      }
-    >;
+        light: Maybe<
+          Array<
+            Maybe<{
+              elementType: Maybe<string>;
+              featureType: Maybe<string>;
+              stylers: Maybe<Array<Maybe<{ color: Maybe<string> }>>>;
+            }>
+          >
+        >;
+      }>;
+    }>;
   };
 
   type NotFoundPageQueryVariables = {};
 
-  type NotFoundPageQuery = { __typename?: 'Query' } & {
-    pageData: Maybe<{ __typename?: 'NavigationJson' } & Pick<NavigationJson, 'keywords' | 'name'>>;
-  };
+  type NotFoundPageQuery = { pageData: Maybe<{ keywords: Maybe<Array<Maybe<string>>>; name: Maybe<string> }> };
 
   type AboutMePageDataQueryVariables = {};
 
-  type AboutMePageDataQuery = { __typename?: 'Query' } & {
-    companyImg: Maybe<
-      { __typename?: 'File' } & {
-        childImageSharp: Maybe<
-          { __typename?: 'ImageSharp' } & {
-            fixed: Maybe<{ __typename?: 'ImageSharpFixed' } & GatsbyImageSharpFixed_WithWebpFragment>;
-          }
-        >;
-      }
-    >;
-    contactImgs: { __typename?: 'FileConnection' } & {
-      nodes: Array<
-        { __typename?: 'File' } & Pick<File, 'base'> & {
-            childImageSharp: Maybe<
-              { __typename?: 'ImageSharp' } & {
-                fluid: Maybe<{ __typename?: 'ImageSharpFluid' } & GatsbyImageSharpFluid_WithWebpFragment>;
-              }
-            >;
-          }
-      >;
+  type AboutMePageDataQuery = {
+    companyImg: Maybe<{ childImageSharp: Maybe<{ fixed: Maybe<GatsbyImageSharpFixed_WithWebpFragment> }> }>;
+    contactImgs: {
+      nodes: Array<{ base: string; childImageSharp: Maybe<{ fluid: Maybe<GatsbyImageSharpFluid_WithWebpFragment> }> }>;
     };
-    coverImg: Maybe<
-      { __typename?: 'File' } & {
-        childImageSharp: Maybe<
-          { __typename?: 'ImageSharp' } & {
-            fluid: Maybe<{ __typename?: 'ImageSharpFluid' } & GatsbyImageSharpFluid_WithWebpFragment>;
-          }
-        >;
-      }
-    >;
-    pageData: Maybe<{ __typename?: 'NavigationJson' } & Pick<NavigationJson, 'keywords' | 'name'>>;
-    personalDetails: Maybe<
-      { __typename?: 'DataJson' } & Pick<DataJson, 'jobTitle' | 'openToGigs'> & {
-          company: Maybe<{ __typename?: 'DataJsonCompany' } & Pick<DataJsonCompany, 'name' | 'website'>>;
-          contacts: Maybe<
-            Array<Maybe<{ __typename?: 'DataJsonContacts' } & Pick<DataJsonContacts, 'img' | 'label' | 'url'>>>
-          >;
-          location: Maybe<{ __typename?: 'DataJsonLocation' } & Pick<DataJsonLocation, 'city' | 'website'>>;
-        }
-    >;
-    techImgs: { __typename?: 'FileConnection' } & {
-      nodes: Array<
-        { __typename?: 'File' } & Pick<File, 'base'> & {
-            childImageSharp: Maybe<
-              { __typename?: 'ImageSharp' } & {
-                fixed: Maybe<{ __typename?: 'ImageSharpFixed' } & GatsbyImageSharpFixed_WithWebpFragment>;
-              }
-            >;
-          }
-      >;
+    coverImg: Maybe<{ childImageSharp: Maybe<{ fluid: Maybe<GatsbyImageSharpFluid_WithWebpFragment> }> }>;
+    pageData: Maybe<{ keywords: Maybe<Array<Maybe<string>>>; name: Maybe<string> }>;
+    personalDetails: Maybe<{
+      jobTitle: Maybe<string>;
+      openToGigs: Maybe<boolean>;
+      company: Maybe<{ name: Maybe<string>; website: Maybe<string> }>;
+      contacts: Maybe<Array<Maybe<{ img: Maybe<string>; label: Maybe<string>; url: Maybe<string> }>>>;
+      location: Maybe<{ city: Maybe<string>; website: Maybe<string> }>;
+    }>;
+    techImgs: {
+      nodes: Array<{ base: string; childImageSharp: Maybe<{ fixed: Maybe<GatsbyImageSharpFixed_WithWebpFragment> }> }>;
     };
-    techs: { __typename?: 'TechnologiesJsonConnection' } & {
-      nodes: Array<{ __typename?: 'TechnologiesJson' } & Pick<TechnologiesJson, 'img' | 'name' | 'website'>>;
-    };
+    techs: { nodes: Array<{ img: Maybe<string>; name: Maybe<string>; website: Maybe<string> }> };
   };
 
   type IndexPageQueryVariables = {};
 
-  type IndexPageQuery = { __typename?: 'Query' } & {
-    pageData: Maybe<{ __typename?: 'NavigationJson' } & Pick<NavigationJson, 'keywords' | 'name'>>;
-  };
+  type IndexPageQuery = { pageData: Maybe<{ keywords: Maybe<Array<Maybe<string>>>; name: Maybe<string> }> };
 
   type PostsPageQueryVariables = {};
 
-  type PostsPageQuery = { __typename?: 'Query' } & {
-    mdData: { __typename?: 'MarkdownRemarkConnection' } & {
-      nodes: Array<
-        { __typename?: 'MarkdownRemark' } & {
-          frontmatter: { __typename?: 'Frontmatter' } & Pick<Frontmatter, 'date' | 'slug' | 'title'>;
-        }
-      >;
+  type PostsPageQuery = {
+    mdData: { nodes: Array<{ frontmatter: { date: string; slug: string; title: string } }> };
+    pageData: Maybe<{ keywords: Maybe<Array<Maybe<string>>>; name: Maybe<string> }>;
+  };
+
+  type SkillsPageDataQueryVariables = {};
+
+  type SkillsPageDataQuery = {
+    allSkillsJson: {
+      nodes: Array<{
+        name: Maybe<string>;
+        sortOrder: Maybe<number>;
+        items: Maybe<Array<Maybe<{ name: Maybe<string>; proficiencyLevel: Maybe<number>; sortOrder: Maybe<number> }>>>;
+      }>;
     };
-    pageData: Maybe<{ __typename?: 'NavigationJson' } & Pick<NavigationJson, 'keywords' | 'name'>>;
+    pageData: Maybe<{ keywords: Maybe<Array<Maybe<string>>>; name: Maybe<string> }>;
   };
 
   type PostDataQueryVariables = {
     path: Scalars['String'];
   };
 
-  type PostDataQuery = { __typename?: 'Query' } & {
-    markdownRemark: Maybe<
-      { __typename?: 'MarkdownRemark' } & Pick<MarkdownRemark, 'htmlAst'> & {
-          frontmatter: { __typename?: 'Frontmatter' } & Pick<Frontmatter, 'date' | 'keywords' | 'title'>;
-        }
-    >;
+  type PostDataQuery = {
+    markdownRemark: Maybe<{ htmlAst: Maybe<any>; frontmatter: { date: string; keywords: string; title: string } }>;
   };
 }
