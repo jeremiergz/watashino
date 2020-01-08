@@ -9,11 +9,13 @@ import BookIcon from '../../../svg/Book';
 import DownloadIcon from '../../../svg/Download';
 import HouseIcon from '../../../svg/House';
 import MoodIcon from '../../../svg/Mood';
+import SkillIcon from '../../../svg/Skill';
 
 const iconsMapping = {
   book: BookIcon,
   home: HouseIcon,
   mood: MoodIcon,
+  skill: SkillIcon,
 };
 
 const LinkContainer = ({ children, ...rest }: { children: ReactNode }) => (

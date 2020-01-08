@@ -1,11 +1,27 @@
 [
   {
+    "icon": "book",
+    "keywords": ["posts", "gatsby", "react"],
+    "name": "Posts",
+    "navOrder": 0,
+    "page": "PostsPage",
+    "to": "/posts"
+  },
+  {
     "icon": "mood",
     "keywords": ["about", "gatsby", "react"],
     "name": "About Me",
     "navOrder": 1,
     "page": "AboutMePage",
     "to": "/about-me"
+  },
+  {
+    "icon": "skill",
+    "keywords": ["skills", "gatsby", "react"],
+    "name": "My Skills",
+    "navOrder": 2,
+    "page": "SkillsPage",
+    "to": "/skills"
   },
   {
     "icon": "home",
@@ -21,13 +37,5 @@
     "name": "404 Not Found",
     "page": "NotFoundPage",
     "to": "/"
-  },
-  {
-    "icon": "book",
-    "keywords": ["posts", "gatsby", "react"],
-    "name": "Posts",
-    "navOrder": 0,
-    "page": "PostsPage",
-    "to": "/posts"
   }
 ]
