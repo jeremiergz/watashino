@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import SkillBlock from '../components/common/SkillBlock';
 import Layout from '../components/core/Layout';
+import { Routes } from '../utils/Routes';
 
 const SkillsPage = () => {
   const {
@@ -28,7 +29,7 @@ const SkillsPage = () => {
   `);
   return (
     <Layout>
-      <Layout.Content keywords={keywords} title={name} type="section">
+      <Layout.Content keywords={keywords} path={Routes.skills} title={name} type="section">
         {skills
           .sort((a, b) => a.sortOrder - b.sortOrder)
           .map(item => (

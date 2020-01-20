@@ -5,6 +5,7 @@ const { author, description, homepage, license, name, repository, version } = pa
 const appColor = '#17365C';
 const appName = `${name.charAt(0).toUpperCase()}${name.substring(1, name.length)}`;
 const authorName = 'Jeremie Rodriguez';
+const twitterUsername = '@JeremieRgz';
 
 module.exports = {
   siteMetadata: {
@@ -14,15 +15,15 @@ module.exports = {
     repository,
     siteUrl: homepage,
     title: authorName,
+    twitterUsername,
     version,
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-react-helmet-async',
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-styled-components',
-    'gatsby-plugin-typescript',
     'gatsby-transformer-json',
     'gatsby-transformer-sharp',
     {
@@ -49,6 +50,13 @@ module.exports = {
         short_name: appName,
         start_url: '/',
         theme_color: appColor,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-typescript',
+      options: {
+        isTSX: true,
+        allExtensions: true,
       },
     },
     {

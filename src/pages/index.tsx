@@ -19,7 +19,7 @@ const IndexPage = () => {
   }, []);
   return (
     <Layout>
-      <Layout.Content keywords={keywords} type="section" />
+      <Layout.Content keywords={keywords} path="" type="section" />
     </Layout>
   );
 };

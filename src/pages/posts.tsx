@@ -57,7 +57,7 @@ const PostsPage = () => {
   return (
     <Layout>
       {allPostsKeys.length > 0 && (
-        <Layout.Content keywords={keywords} title={name} type="section">
+        <Layout.Content keywords={keywords} path={Routes.posts} title={name} type="section">
           <Groups>
             {allPostsKeys
               .sort((a, b) => b.localeCompare(a))

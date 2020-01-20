@@ -6,10 +6,6 @@ import Box from '../../../primitives/Box';
 import Flex from '../../../primitives/Flex';
 import Text from '../../../primitives/Text';
 
-type ThemeToggleProps = {
-  toggle: () => void;
-};
-
 const Circle = styled.div`
   align-items: center;
   display: flex;
@@ -17,8 +13,8 @@ const Circle = styled.div`
   transform: ${({ theme }) => (theme.type === 'light' ? 'rotate3d(0, 0, 1, 0deg)' : 'rotate3d(0, 0, 1, 180deg)')};
 `;
 
-const ThemeToggle = ({ toggle }: ThemeToggleProps) => {
-  const { theme } = useTheming();
+const ThemeToggle = () => {
+  const { theme, toggle } = useTheming();
   return (
     <Button onClick={() => toggle()} position="absolute" right={3} top={3}>
       <Flex>

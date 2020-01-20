@@ -33,7 +33,7 @@ const Post = ({ data, pageContext }: PostProps) => {
   const { next, previous } = pageContext;
   const {
     markdownRemark: {
-      frontmatter: { date: rawDate, keywords: rawKeywords, title },
+      frontmatter: { date: rawDate, keywords: rawKeywords, slug, title },
       htmlAst,
     },
   } = data;
@@ -44,7 +44,7 @@ const Post = ({ data, pageContext }: PostProps) => {
   const renderedJSX = renderASTToJSX(htmlAst);
   return (
     <Layout>
-      <Layout.Content keywords={keywords} title={title} type="post">
+      <Layout.Content keywords={keywords} path={slug} title={title} type="post">
         <Flex alignItems="center" flexDirection={{ _: 'column', tablet: 'row-reverse' }} justifyContent="center">
           <Chips flexWrap="wrap" justifyContent="center">
             {keywords.map(keyword => (
@@ -81,10 +81,10 @@ export const query = graphql`
       frontmatter {
         date
         keywords
+        slug
         title
       }
     }
   }
 `;
-export { PostProps };
 export default Post;

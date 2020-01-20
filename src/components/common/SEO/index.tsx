@@ -1,67 +1,54 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
-type SEOProps = {
-  description?: string;
-  keywords?: string[];
-  lang?: string;
-  meta?: [];
-  title: string;
-};
-
-function buildMeta({
-  author,
-  keywords,
-  meta,
-  metaDescription,
-  title,
-}: {
-  author: string;
-  keywords: string[];
-  meta: [];
-  metaDescription: string;
-  title: string;
-}) {
-  return [
-    { content: 'summary', name: 'twitter:card' },
-    { content: 'website', property: 'og:type' },
-    { content: author, name: 'twitter:creator' },
-    { content: metaDescription, name: 'description' },
-    { content: metaDescription, name: 'twitter:description' },
-    { content: metaDescription, property: 'og:description' },
-    { content: title, name: 'twitter:title' },
-    { content: title, property: 'og:title' },
-  ]
-    .concat(keywords.length > 0 ? { content: keywords.join(', '), name: 'keywords' } : [])
-    .concat(meta);
-}
-
-const SEO = ({ description = '', keywords = [], lang = 'en', meta = [], title }: SEOProps) => {
-  const data = useStaticQuery<GraphQL.SeoDataQuery>(graphql`
+const SEO = ({ description = '', keywords = [], lang = 'en', path = '', title }: SEO) => {
+  const {
+    banner,
+    site: { siteMetadata },
+  } = useStaticQuery<GraphQL.SeoDataQuery>(graphql`
     query SEOData {
+      banner: file(relativePath: { eq: "cover.png" }) {
+        childImageSharp {
+          resize(width: 512) {
+            src
+          }
+        }
+      }
       site {
         siteMetadata {
-          title
           description
-          author
+          siteUrl
+          title
+          twitterUsername
         }
       }
     }
   `);
-  const metaDescription = description || data.site.siteMetadata.description;
-  const metadata = buildMeta({ author: data.site.siteMetadata.author, keywords, meta, metaDescription, title });
+  const metaDescription = description || siteMetadata.description;
+  const siteUrl = siteMetadata.siteUrl;
+  const imageUrl = `${siteUrl}${banner.childImageSharp.resize.src}`;
+  const url = `${siteUrl}${path}`;
   return (
-    <Helmet
-      htmlAttributes={{ lang }}
-      meta={metadata}
-      title={title}
-      titleTemplate={`%s | ${data.site.siteMetadata.title}`}
-    />
+    <Helmet htmlAttributes={{ lang }} title={title} titleTemplate={`%s | ${siteMetadata.title}`}>
+      <link rel="canonical" href={url} />
+      <meta name="description" content={metaDescription} />
+      <meta name="image" content={imageUrl} />
+      <meta name="keywords" content={keywords.join(', ')} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:image" content={imageUrl} />
+      <meta property="og:title" content={title} />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={url} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:creator" content={siteMetadata.twitterUsername} />
+      <meta name="twitter:description" content={metaDescription} />
+      <meta name="twitter:image" content={imageUrl} />
+      <meta name="twitter:title" content={title} />
+    </Helmet>
   );
 };
 
 SEO.displayName = 'SEO';
 
-export { SEOProps };
 export default SEO;

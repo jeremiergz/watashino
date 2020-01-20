@@ -581,6 +581,7 @@ declare module GraphQL {
     childrenTechnologiesJson?: Maybe<Array<Maybe<TechnologiesJson>>>;
     childrenSkillsJson?: Maybe<Array<Maybe<SkillsJson>>>;
     childGoogleMapsJson?: Maybe<GoogleMapsJson>;
+    childMarkdownRemark?: Maybe<MarkdownRemark>;
   };
 
   type FileModifiedTimeArgs = {
@@ -1100,6 +1101,63 @@ declare module GraphQL {
     ChildGoogleMapsJsonStylesLightElementType = 'childGoogleMapsJson___styles___light___elementType',
     ChildGoogleMapsJsonStylesLightStylers = 'childGoogleMapsJson___styles___light___stylers',
     ChildGoogleMapsJsonStylesLightFeatureType = 'childGoogleMapsJson___styles___light___featureType',
+    ChildMarkdownRemarkId = 'childMarkdownRemark___id',
+    ChildMarkdownRemarkFrontmatterDate = 'childMarkdownRemark___frontmatter___date',
+    ChildMarkdownRemarkFrontmatterKeywords = 'childMarkdownRemark___frontmatter___keywords',
+    ChildMarkdownRemarkFrontmatterSlug = 'childMarkdownRemark___frontmatter___slug',
+    ChildMarkdownRemarkFrontmatterTags = 'childMarkdownRemark___frontmatter___tags',
+    ChildMarkdownRemarkFrontmatterTitle = 'childMarkdownRemark___frontmatter___title',
+    ChildMarkdownRemarkExcerpt = 'childMarkdownRemark___excerpt',
+    ChildMarkdownRemarkRawMarkdownBody = 'childMarkdownRemark___rawMarkdownBody',
+    ChildMarkdownRemarkFileAbsolutePath = 'childMarkdownRemark___fileAbsolutePath',
+    ChildMarkdownRemarkHtml = 'childMarkdownRemark___html',
+    ChildMarkdownRemarkHtmlAst = 'childMarkdownRemark___htmlAst',
+    ChildMarkdownRemarkExcerptAst = 'childMarkdownRemark___excerptAst',
+    ChildMarkdownRemarkHeadings = 'childMarkdownRemark___headings',
+    ChildMarkdownRemarkHeadingsValue = 'childMarkdownRemark___headings___value',
+    ChildMarkdownRemarkHeadingsDepth = 'childMarkdownRemark___headings___depth',
+    ChildMarkdownRemarkTimeToRead = 'childMarkdownRemark___timeToRead',
+    ChildMarkdownRemarkTableOfContents = 'childMarkdownRemark___tableOfContents',
+    ChildMarkdownRemarkWordCountParagraphs = 'childMarkdownRemark___wordCount___paragraphs',
+    ChildMarkdownRemarkWordCountSentences = 'childMarkdownRemark___wordCount___sentences',
+    ChildMarkdownRemarkWordCountWords = 'childMarkdownRemark___wordCount___words',
+    ChildMarkdownRemarkParentId = 'childMarkdownRemark___parent___id',
+    ChildMarkdownRemarkParentParentId = 'childMarkdownRemark___parent___parent___id',
+    ChildMarkdownRemarkParentParentChildren = 'childMarkdownRemark___parent___parent___children',
+    ChildMarkdownRemarkParentChildren = 'childMarkdownRemark___parent___children',
+    ChildMarkdownRemarkParentChildrenId = 'childMarkdownRemark___parent___children___id',
+    ChildMarkdownRemarkParentChildrenChildren = 'childMarkdownRemark___parent___children___children',
+    ChildMarkdownRemarkParentInternalContent = 'childMarkdownRemark___parent___internal___content',
+    ChildMarkdownRemarkParentInternalContentDigest = 'childMarkdownRemark___parent___internal___contentDigest',
+    ChildMarkdownRemarkParentInternalDescription = 'childMarkdownRemark___parent___internal___description',
+    ChildMarkdownRemarkParentInternalFieldOwners = 'childMarkdownRemark___parent___internal___fieldOwners',
+    ChildMarkdownRemarkParentInternalIgnoreType = 'childMarkdownRemark___parent___internal___ignoreType',
+    ChildMarkdownRemarkParentInternalMediaType = 'childMarkdownRemark___parent___internal___mediaType',
+    ChildMarkdownRemarkParentInternalOwner = 'childMarkdownRemark___parent___internal___owner',
+    ChildMarkdownRemarkParentInternalType = 'childMarkdownRemark___parent___internal___type',
+    ChildMarkdownRemarkChildren = 'childMarkdownRemark___children',
+    ChildMarkdownRemarkChildrenId = 'childMarkdownRemark___children___id',
+    ChildMarkdownRemarkChildrenParentId = 'childMarkdownRemark___children___parent___id',
+    ChildMarkdownRemarkChildrenParentChildren = 'childMarkdownRemark___children___parent___children',
+    ChildMarkdownRemarkChildrenChildren = 'childMarkdownRemark___children___children',
+    ChildMarkdownRemarkChildrenChildrenId = 'childMarkdownRemark___children___children___id',
+    ChildMarkdownRemarkChildrenChildrenChildren = 'childMarkdownRemark___children___children___children',
+    ChildMarkdownRemarkChildrenInternalContent = 'childMarkdownRemark___children___internal___content',
+    ChildMarkdownRemarkChildrenInternalContentDigest = 'childMarkdownRemark___children___internal___contentDigest',
+    ChildMarkdownRemarkChildrenInternalDescription = 'childMarkdownRemark___children___internal___description',
+    ChildMarkdownRemarkChildrenInternalFieldOwners = 'childMarkdownRemark___children___internal___fieldOwners',
+    ChildMarkdownRemarkChildrenInternalIgnoreType = 'childMarkdownRemark___children___internal___ignoreType',
+    ChildMarkdownRemarkChildrenInternalMediaType = 'childMarkdownRemark___children___internal___mediaType',
+    ChildMarkdownRemarkChildrenInternalOwner = 'childMarkdownRemark___children___internal___owner',
+    ChildMarkdownRemarkChildrenInternalType = 'childMarkdownRemark___children___internal___type',
+    ChildMarkdownRemarkInternalContent = 'childMarkdownRemark___internal___content',
+    ChildMarkdownRemarkInternalContentDigest = 'childMarkdownRemark___internal___contentDigest',
+    ChildMarkdownRemarkInternalDescription = 'childMarkdownRemark___internal___description',
+    ChildMarkdownRemarkInternalFieldOwners = 'childMarkdownRemark___internal___fieldOwners',
+    ChildMarkdownRemarkInternalIgnoreType = 'childMarkdownRemark___internal___ignoreType',
+    ChildMarkdownRemarkInternalMediaType = 'childMarkdownRemark___internal___mediaType',
+    ChildMarkdownRemarkInternalOwner = 'childMarkdownRemark___internal___owner',
+    ChildMarkdownRemarkInternalType = 'childMarkdownRemark___internal___type',
   }
 
   type FileFilterInput = {
@@ -1147,6 +1205,7 @@ declare module GraphQL {
     childrenTechnologiesJson?: Maybe<TechnologiesJsonFilterListInput>;
     childrenSkillsJson?: Maybe<SkillsJsonFilterListInput>;
     childGoogleMapsJson?: Maybe<GoogleMapsJsonFilterInput>;
+    childMarkdownRemark?: Maybe<MarkdownRemarkFilterInput>;
   };
 
   type FileGroupConnection = {
@@ -1748,10 +1807,10 @@ declare module GraphQL {
     base64?: Maybe<Scalars['String']>;
     tracedSVG?: Maybe<Scalars['String']>;
     aspectRatio?: Maybe<Scalars['Float']>;
-    width?: Maybe<Scalars['Float']>;
-    height?: Maybe<Scalars['Float']>;
-    src?: Maybe<Scalars['String']>;
-    srcSet?: Maybe<Scalars['String']>;
+    width: Scalars['Float'];
+    height: Scalars['Float'];
+    src: Scalars['String'];
+    srcSet: Scalars['String'];
     srcWebp?: Maybe<Scalars['String']>;
     srcSetWebp?: Maybe<Scalars['String']>;
     originalName?: Maybe<Scalars['String']>;
@@ -1773,12 +1832,12 @@ declare module GraphQL {
   type ImageSharpFluid = {
     base64?: Maybe<Scalars['String']>;
     tracedSVG?: Maybe<Scalars['String']>;
-    aspectRatio?: Maybe<Scalars['Float']>;
-    src?: Maybe<Scalars['String']>;
-    srcSet?: Maybe<Scalars['String']>;
+    aspectRatio: Scalars['Float'];
+    src: Scalars['String'];
+    srcSet: Scalars['String'];
     srcWebp?: Maybe<Scalars['String']>;
     srcSetWebp?: Maybe<Scalars['String']>;
-    sizes?: Maybe<Scalars['String']>;
+    sizes: Scalars['String'];
     originalImg?: Maybe<Scalars['String']>;
     originalName?: Maybe<Scalars['String']>;
     presentationWidth?: Maybe<Scalars['Int']>;
@@ -1843,10 +1902,10 @@ declare module GraphQL {
     base64?: Maybe<Scalars['String']>;
     tracedSVG?: Maybe<Scalars['String']>;
     aspectRatio?: Maybe<Scalars['Float']>;
-    width?: Maybe<Scalars['Float']>;
-    height?: Maybe<Scalars['Float']>;
-    src?: Maybe<Scalars['String']>;
-    srcSet?: Maybe<Scalars['String']>;
+    width: Scalars['Float'];
+    height: Scalars['Float'];
+    src: Scalars['String'];
+    srcSet: Scalars['String'];
     srcWebp?: Maybe<Scalars['String']>;
     srcSetWebp?: Maybe<Scalars['String']>;
     originalName?: Maybe<Scalars['String']>;
@@ -1868,12 +1927,12 @@ declare module GraphQL {
   type ImageSharpSizes = {
     base64?: Maybe<Scalars['String']>;
     tracedSVG?: Maybe<Scalars['String']>;
-    aspectRatio?: Maybe<Scalars['Float']>;
-    src?: Maybe<Scalars['String']>;
-    srcSet?: Maybe<Scalars['String']>;
+    aspectRatio: Scalars['Float'];
+    src: Scalars['String'];
+    srcSet: Scalars['String'];
     srcWebp?: Maybe<Scalars['String']>;
     srcSetWebp?: Maybe<Scalars['String']>;
-    sizes?: Maybe<Scalars['String']>;
+    sizes: Scalars['String'];
     originalImg?: Maybe<Scalars['String']>;
     originalName?: Maybe<Scalars['String']>;
     presentationWidth?: Maybe<Scalars['Int']>;
@@ -1974,9 +2033,11 @@ declare module GraphQL {
   type MarkdownRemark = Node & {
     id: Scalars['ID'];
     frontmatter: Frontmatter;
+    excerpt?: Maybe<Scalars['String']>;
+    rawMarkdownBody?: Maybe<Scalars['String']>;
+    fileAbsolutePath?: Maybe<Scalars['String']>;
     html?: Maybe<Scalars['String']>;
     htmlAst?: Maybe<Scalars['JSON']>;
-    excerpt?: Maybe<Scalars['String']>;
     excerptAst?: Maybe<Scalars['JSON']>;
     headings?: Maybe<Array<Maybe<MarkdownHeading>>>;
     timeToRead?: Maybe<Scalars['Int']>;
@@ -2041,9 +2102,11 @@ declare module GraphQL {
     FrontmatterSlug = 'frontmatter___slug',
     FrontmatterTags = 'frontmatter___tags',
     FrontmatterTitle = 'frontmatter___title',
+    Excerpt = 'excerpt',
+    RawMarkdownBody = 'rawMarkdownBody',
+    FileAbsolutePath = 'fileAbsolutePath',
     Html = 'html',
     HtmlAst = 'htmlAst',
-    Excerpt = 'excerpt',
     ExcerptAst = 'excerptAst',
     Headings = 'headings',
     HeadingsValue = 'headings___value',
@@ -2143,9 +2206,11 @@ declare module GraphQL {
   type MarkdownRemarkFilterInput = {
     id?: Maybe<StringQueryOperatorInput>;
     frontmatter?: Maybe<FrontmatterFilterInput>;
+    excerpt?: Maybe<StringQueryOperatorInput>;
+    rawMarkdownBody?: Maybe<StringQueryOperatorInput>;
+    fileAbsolutePath?: Maybe<StringQueryOperatorInput>;
     html?: Maybe<StringQueryOperatorInput>;
     htmlAst?: Maybe<JsonQueryOperatorInput>;
-    excerpt?: Maybe<StringQueryOperatorInput>;
     excerptAst?: Maybe<JsonQueryOperatorInput>;
     headings?: Maybe<MarkdownHeadingFilterListInput>;
     timeToRead?: Maybe<IntQueryOperatorInput>;
@@ -2406,10 +2471,10 @@ declare module GraphQL {
     allImageSharp: ImageSharpConnection;
     markdownRemark?: Maybe<MarkdownRemark>;
     allMarkdownRemark: MarkdownRemarkConnection;
-    skillsJson?: Maybe<SkillsJson>;
-    allSkillsJson: SkillsJsonConnection;
     googleMapsJson?: Maybe<GoogleMapsJson>;
     allGoogleMapsJson: GoogleMapsJsonConnection;
+    skillsJson?: Maybe<SkillsJson>;
+    allSkillsJson: SkillsJsonConnection;
     technologiesJson?: Maybe<TechnologiesJson>;
     allTechnologiesJson: TechnologiesJsonConnection;
     navigationJson?: Maybe<NavigationJson>;
@@ -2469,6 +2534,7 @@ declare module GraphQL {
     childrenTechnologiesJson?: Maybe<TechnologiesJsonFilterListInput>;
     childrenSkillsJson?: Maybe<SkillsJsonFilterListInput>;
     childGoogleMapsJson?: Maybe<GoogleMapsJsonFilterInput>;
+    childMarkdownRemark?: Maybe<MarkdownRemarkFilterInput>;
   };
 
   type QueryAllFileArgs = {
@@ -2548,9 +2614,11 @@ declare module GraphQL {
   type QueryMarkdownRemarkArgs = {
     id?: Maybe<StringQueryOperatorInput>;
     frontmatter?: Maybe<FrontmatterFilterInput>;
+    excerpt?: Maybe<StringQueryOperatorInput>;
+    rawMarkdownBody?: Maybe<StringQueryOperatorInput>;
+    fileAbsolutePath?: Maybe<StringQueryOperatorInput>;
     html?: Maybe<StringQueryOperatorInput>;
     htmlAst?: Maybe<JsonQueryOperatorInput>;
-    excerpt?: Maybe<StringQueryOperatorInput>;
     excerptAst?: Maybe<JsonQueryOperatorInput>;
     headings?: Maybe<MarkdownHeadingFilterListInput>;
     timeToRead?: Maybe<IntQueryOperatorInput>;
@@ -2568,6 +2636,21 @@ declare module GraphQL {
     limit?: Maybe<Scalars['Int']>;
   };
 
+  type QueryGoogleMapsJsonArgs = {
+    id?: Maybe<StringQueryOperatorInput>;
+    parent?: Maybe<NodeFilterInput>;
+    children?: Maybe<NodeFilterListInput>;
+    internal?: Maybe<InternalFilterInput>;
+    styles?: Maybe<GoogleMapsJsonStylesFilterInput>;
+  };
+
+  type QueryAllGoogleMapsJsonArgs = {
+    filter?: Maybe<GoogleMapsJsonFilterInput>;
+    sort?: Maybe<GoogleMapsJsonSortInput>;
+    skip?: Maybe<Scalars['Int']>;
+    limit?: Maybe<Scalars['Int']>;
+  };
+
   type QuerySkillsJsonArgs = {
     id?: Maybe<StringQueryOperatorInput>;
     parent?: Maybe<NodeFilterInput>;
@@ -2581,21 +2664,6 @@ declare module GraphQL {
   type QueryAllSkillsJsonArgs = {
     filter?: Maybe<SkillsJsonFilterInput>;
     sort?: Maybe<SkillsJsonSortInput>;
-    skip?: Maybe<Scalars['Int']>;
-    limit?: Maybe<Scalars['Int']>;
-  };
-
-  type QueryGoogleMapsJsonArgs = {
-    id?: Maybe<StringQueryOperatorInput>;
-    parent?: Maybe<NodeFilterInput>;
-    children?: Maybe<NodeFilterListInput>;
-    internal?: Maybe<InternalFilterInput>;
-    styles?: Maybe<GoogleMapsJsonStylesFilterInput>;
-  };
-
-  type QueryAllGoogleMapsJsonArgs = {
-    filter?: Maybe<GoogleMapsJsonFilterInput>;
-    sort?: Maybe<GoogleMapsJsonSortInput>;
     skip?: Maybe<Scalars['Int']>;
     limit?: Maybe<Scalars['Int']>;
   };
@@ -2706,8 +2774,8 @@ declare module GraphQL {
     parent?: Maybe<NodeFilterInput>;
     children?: Maybe<NodeFilterListInput>;
     internal?: Maybe<InternalFilterInput>;
-    path?: Maybe<StringQueryOperatorInput>;
     internalComponentName?: Maybe<StringQueryOperatorInput>;
+    path?: Maybe<StringQueryOperatorInput>;
     component?: Maybe<StringQueryOperatorInput>;
     componentChunkName?: Maybe<StringQueryOperatorInput>;
     isCreatedByStatefulCreatePages?: Maybe<BooleanQueryOperatorInput>;
@@ -2862,6 +2930,7 @@ declare module GraphQL {
     SiteMetadataRepositoryUrl = 'siteMetadata___repository___url',
     SiteMetadataSiteUrl = 'siteMetadata___siteUrl',
     SiteMetadataTitle = 'siteMetadata___title',
+    SiteMetadataTwitterUsername = 'siteMetadata___twitterUsername',
     SiteMetadataVersion = 'siteMetadata___version',
     Port = 'port',
     Host = 'host',
@@ -2897,8 +2966,8 @@ declare module GraphQL {
     parent?: Maybe<Node>;
     children: Array<Node>;
     internal: Internal;
-    path?: Maybe<Scalars['String']>;
     internalComponentName?: Maybe<Scalars['String']>;
+    path?: Maybe<Scalars['String']>;
     component?: Maybe<Scalars['String']>;
     componentChunkName?: Maybe<Scalars['String']>;
     isCreatedByStatefulCreatePages?: Maybe<Scalars['Boolean']>;
@@ -3019,8 +3088,8 @@ declare module GraphQL {
     InternalMediaType = 'internal___mediaType',
     InternalOwner = 'internal___owner',
     InternalType = 'internal___type',
-    Path = 'path',
     InternalComponentName = 'internalComponentName',
+    Path = 'path',
     Component = 'component',
     ComponentChunkName = 'componentChunkName',
     IsCreatedByStatefulCreatePages = 'isCreatedByStatefulCreatePages',
@@ -3072,8 +3141,6 @@ declare module GraphQL {
     PluginCreatorPluginOptionsPluginsVersion = 'pluginCreator___pluginOptions___plugins___version',
     PluginCreatorPluginOptionsPluginsBrowserApIs = 'pluginCreator___pluginOptions___plugins___browserAPIs',
     PluginCreatorPluginOptionsPluginsPluginFilepath = 'pluginCreator___pluginOptions___plugins___pluginFilepath',
-    PluginCreatorPluginOptionsCookieDomain = 'pluginCreator___pluginOptions___cookieDomain',
-    PluginCreatorPluginOptionsTrackingId = 'pluginCreator___pluginOptions___trackingId',
     PluginCreatorPluginOptionsDisplay = 'pluginCreator___pluginOptions___display',
     PluginCreatorPluginOptionsFonts = 'pluginCreator___pluginOptions___fonts',
     PluginCreatorPluginOptionsBackgroundColor = 'pluginCreator___pluginOptions___background_color',
@@ -3082,12 +3149,16 @@ declare module GraphQL {
     PluginCreatorPluginOptionsShortName = 'pluginCreator___pluginOptions___short_name',
     PluginCreatorPluginOptionsStartUrl = 'pluginCreator___pluginOptions___start_url',
     PluginCreatorPluginOptionsThemeColor = 'pluginCreator___pluginOptions___theme_color',
+    PluginCreatorPluginOptionsIsTsx = 'pluginCreator___pluginOptions___isTSX',
+    PluginCreatorPluginOptionsAllExtensions = 'pluginCreator___pluginOptions___allExtensions',
     PluginCreatorPluginOptionsPath = 'pluginCreator___pluginOptions___path',
     PluginCreatorPluginOptionsMaxWidth = 'pluginCreator___pluginOptions___maxWidth',
     PluginCreatorPluginOptionsQuality = 'pluginCreator___pluginOptions___quality',
     PluginCreatorPluginOptionsWithWebp = 'pluginCreator___pluginOptions___withWebp',
     PluginCreatorPluginOptionsColorTheme = 'pluginCreator___pluginOptions___colorTheme',
     PluginCreatorPluginOptionsPathCheck = 'pluginCreator___pluginOptions___pathCheck',
+    PluginCreatorPluginOptionsCookieDomain = 'pluginCreator___pluginOptions___cookieDomain',
+    PluginCreatorPluginOptionsTrackingId = 'pluginCreator___pluginOptions___trackingId',
     PluginCreatorNodeApIs = 'pluginCreator___nodeAPIs',
     PluginCreatorBrowserApIs = 'pluginCreator___browserAPIs',
     PluginCreatorSsrApIs = 'pluginCreator___ssrAPIs',
@@ -3116,8 +3187,8 @@ declare module GraphQL {
     parent?: Maybe<NodeFilterInput>;
     children?: Maybe<NodeFilterListInput>;
     internal?: Maybe<InternalFilterInput>;
-    path?: Maybe<StringQueryOperatorInput>;
     internalComponentName?: Maybe<StringQueryOperatorInput>;
+    path?: Maybe<StringQueryOperatorInput>;
     component?: Maybe<StringQueryOperatorInput>;
     componentChunkName?: Maybe<StringQueryOperatorInput>;
     isCreatedByStatefulCreatePages?: Maybe<BooleanQueryOperatorInput>;
@@ -3282,8 +3353,6 @@ declare module GraphQL {
     PluginOptionsPluginsPluginOptionsColorTheme = 'pluginOptions___plugins___pluginOptions___colorTheme',
     PluginOptionsPluginsBrowserApIs = 'pluginOptions___plugins___browserAPIs',
     PluginOptionsPluginsPluginFilepath = 'pluginOptions___plugins___pluginFilepath',
-    PluginOptionsCookieDomain = 'pluginOptions___cookieDomain',
-    PluginOptionsTrackingId = 'pluginOptions___trackingId',
     PluginOptionsDisplay = 'pluginOptions___display',
     PluginOptionsFonts = 'pluginOptions___fonts',
     PluginOptionsBackgroundColor = 'pluginOptions___background_color',
@@ -3292,12 +3361,16 @@ declare module GraphQL {
     PluginOptionsShortName = 'pluginOptions___short_name',
     PluginOptionsStartUrl = 'pluginOptions___start_url',
     PluginOptionsThemeColor = 'pluginOptions___theme_color',
+    PluginOptionsIsTsx = 'pluginOptions___isTSX',
+    PluginOptionsAllExtensions = 'pluginOptions___allExtensions',
     PluginOptionsPath = 'pluginOptions___path',
     PluginOptionsMaxWidth = 'pluginOptions___maxWidth',
     PluginOptionsQuality = 'pluginOptions___quality',
     PluginOptionsWithWebp = 'pluginOptions___withWebp',
     PluginOptionsColorTheme = 'pluginOptions___colorTheme',
     PluginOptionsPathCheck = 'pluginOptions___pathCheck',
+    PluginOptionsCookieDomain = 'pluginOptions___cookieDomain',
+    PluginOptionsTrackingId = 'pluginOptions___trackingId',
     NodeApIs = 'nodeAPIs',
     BrowserApIs = 'browserAPIs',
     SsrApIs = 'ssrAPIs',
@@ -3412,8 +3485,6 @@ declare module GraphQL {
 
   type SitePluginPluginOptions = {
     plugins?: Maybe<Array<Maybe<SitePluginPluginOptionsPlugins>>>;
-    cookieDomain?: Maybe<Scalars['String']>;
-    trackingId?: Maybe<Scalars['String']>;
     display?: Maybe<Scalars['String']>;
     fonts?: Maybe<Array<Maybe<Scalars['String']>>>;
     background_color?: Maybe<Scalars['String']>;
@@ -3422,18 +3493,20 @@ declare module GraphQL {
     short_name?: Maybe<Scalars['String']>;
     start_url?: Maybe<Scalars['String']>;
     theme_color?: Maybe<Scalars['String']>;
+    isTSX?: Maybe<Scalars['Boolean']>;
+    allExtensions?: Maybe<Scalars['Boolean']>;
     path?: Maybe<Scalars['String']>;
     maxWidth?: Maybe<Scalars['Int']>;
     quality?: Maybe<Scalars['Int']>;
     withWebp?: Maybe<Scalars['Boolean']>;
     colorTheme?: Maybe<Scalars['String']>;
     pathCheck?: Maybe<Scalars['Boolean']>;
+    cookieDomain?: Maybe<Scalars['String']>;
+    trackingId?: Maybe<Scalars['String']>;
   };
 
   type SitePluginPluginOptionsFilterInput = {
     plugins?: Maybe<SitePluginPluginOptionsPluginsFilterListInput>;
-    cookieDomain?: Maybe<StringQueryOperatorInput>;
-    trackingId?: Maybe<StringQueryOperatorInput>;
     display?: Maybe<StringQueryOperatorInput>;
     fonts?: Maybe<StringQueryOperatorInput>;
     background_color?: Maybe<StringQueryOperatorInput>;
@@ -3442,12 +3515,16 @@ declare module GraphQL {
     short_name?: Maybe<StringQueryOperatorInput>;
     start_url?: Maybe<StringQueryOperatorInput>;
     theme_color?: Maybe<StringQueryOperatorInput>;
+    isTSX?: Maybe<BooleanQueryOperatorInput>;
+    allExtensions?: Maybe<BooleanQueryOperatorInput>;
     path?: Maybe<StringQueryOperatorInput>;
     maxWidth?: Maybe<IntQueryOperatorInput>;
     quality?: Maybe<IntQueryOperatorInput>;
     withWebp?: Maybe<BooleanQueryOperatorInput>;
     colorTheme?: Maybe<StringQueryOperatorInput>;
     pathCheck?: Maybe<BooleanQueryOperatorInput>;
+    cookieDomain?: Maybe<StringQueryOperatorInput>;
+    trackingId?: Maybe<StringQueryOperatorInput>;
   };
 
   type SitePluginPluginOptionsPlugins = {
@@ -3500,6 +3577,7 @@ declare module GraphQL {
     repository?: Maybe<SiteSiteMetadataRepository>;
     siteUrl?: Maybe<Scalars['String']>;
     title?: Maybe<Scalars['String']>;
+    twitterUsername?: Maybe<Scalars['String']>;
     version?: Maybe<Scalars['String']>;
   };
 
@@ -3510,6 +3588,7 @@ declare module GraphQL {
     repository?: Maybe<SiteSiteMetadataRepositoryFilterInput>;
     siteUrl?: Maybe<StringQueryOperatorInput>;
     title?: Maybe<StringQueryOperatorInput>;
+    twitterUsername?: Maybe<StringQueryOperatorInput>;
     version?: Maybe<StringQueryOperatorInput>;
   };
 
@@ -3873,216 +3952,204 @@ declare module GraphQL {
 
   type GatsbyImageSharpFixedFragment = {
     base64: Maybe<string>;
-    width: Maybe<number>;
-    height: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
+    width: number;
+    height: number;
+    src: string;
+    srcSet: string;
   };
 
   type GatsbyImageSharpFixed_TracedSvgFragment = {
     tracedSVG: Maybe<string>;
-    width: Maybe<number>;
-    height: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
+    width: number;
+    height: number;
+    src: string;
+    srcSet: string;
   };
 
   type GatsbyImageSharpFixed_WithWebpFragment = {
     base64: Maybe<string>;
-    width: Maybe<number>;
-    height: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
+    width: number;
+    height: number;
+    src: string;
+    srcSet: string;
     srcWebp: Maybe<string>;
     srcSetWebp: Maybe<string>;
   };
 
   type GatsbyImageSharpFixed_WithWebp_TracedSvgFragment = {
     tracedSVG: Maybe<string>;
-    width: Maybe<number>;
-    height: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
+    width: number;
+    height: number;
+    src: string;
+    srcSet: string;
     srcWebp: Maybe<string>;
     srcSetWebp: Maybe<string>;
   };
 
-  type GatsbyImageSharpFixed_NoBase64Fragment = {
-    width: Maybe<number>;
-    height: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
-  };
+  type GatsbyImageSharpFixed_NoBase64Fragment = { width: number; height: number; src: string; srcSet: string };
 
   type GatsbyImageSharpFixed_WithWebp_NoBase64Fragment = {
-    width: Maybe<number>;
-    height: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
+    width: number;
+    height: number;
+    src: string;
+    srcSet: string;
     srcWebp: Maybe<string>;
     srcSetWebp: Maybe<string>;
   };
 
   type GatsbyImageSharpFluidFragment = {
     base64: Maybe<string>;
-    aspectRatio: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
-    sizes: Maybe<string>;
+    aspectRatio: number;
+    src: string;
+    srcSet: string;
+    sizes: string;
   };
 
   type GatsbyImageSharpFluid_TracedSvgFragment = {
     tracedSVG: Maybe<string>;
-    aspectRatio: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
-    sizes: Maybe<string>;
+    aspectRatio: number;
+    src: string;
+    srcSet: string;
+    sizes: string;
   };
 
   type GatsbyImageSharpFluid_WithWebpFragment = {
     base64: Maybe<string>;
-    aspectRatio: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
+    aspectRatio: number;
+    src: string;
+    srcSet: string;
     srcWebp: Maybe<string>;
     srcSetWebp: Maybe<string>;
-    sizes: Maybe<string>;
+    sizes: string;
   };
 
   type GatsbyImageSharpFluid_WithWebp_TracedSvgFragment = {
     tracedSVG: Maybe<string>;
-    aspectRatio: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
+    aspectRatio: number;
+    src: string;
+    srcSet: string;
     srcWebp: Maybe<string>;
     srcSetWebp: Maybe<string>;
-    sizes: Maybe<string>;
+    sizes: string;
   };
 
-  type GatsbyImageSharpFluid_NoBase64Fragment = {
-    aspectRatio: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
-    sizes: Maybe<string>;
-  };
+  type GatsbyImageSharpFluid_NoBase64Fragment = { aspectRatio: number; src: string; srcSet: string; sizes: string };
 
   type GatsbyImageSharpFluid_WithWebp_NoBase64Fragment = {
-    aspectRatio: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
+    aspectRatio: number;
+    src: string;
+    srcSet: string;
     srcWebp: Maybe<string>;
     srcSetWebp: Maybe<string>;
-    sizes: Maybe<string>;
+    sizes: string;
   };
 
   type GatsbyImageSharpResolutionsFragment = {
     base64: Maybe<string>;
-    width: Maybe<number>;
-    height: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
+    width: number;
+    height: number;
+    src: string;
+    srcSet: string;
   };
 
   type GatsbyImageSharpResolutions_TracedSvgFragment = {
     tracedSVG: Maybe<string>;
-    width: Maybe<number>;
-    height: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
+    width: number;
+    height: number;
+    src: string;
+    srcSet: string;
   };
 
   type GatsbyImageSharpResolutions_WithWebpFragment = {
     base64: Maybe<string>;
-    width: Maybe<number>;
-    height: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
+    width: number;
+    height: number;
+    src: string;
+    srcSet: string;
     srcWebp: Maybe<string>;
     srcSetWebp: Maybe<string>;
   };
 
   type GatsbyImageSharpResolutions_WithWebp_TracedSvgFragment = {
     tracedSVG: Maybe<string>;
-    width: Maybe<number>;
-    height: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
+    width: number;
+    height: number;
+    src: string;
+    srcSet: string;
     srcWebp: Maybe<string>;
     srcSetWebp: Maybe<string>;
   };
 
-  type GatsbyImageSharpResolutions_NoBase64Fragment = {
-    width: Maybe<number>;
-    height: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
-  };
+  type GatsbyImageSharpResolutions_NoBase64Fragment = { width: number; height: number; src: string; srcSet: string };
 
   type GatsbyImageSharpResolutions_WithWebp_NoBase64Fragment = {
-    width: Maybe<number>;
-    height: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
+    width: number;
+    height: number;
+    src: string;
+    srcSet: string;
     srcWebp: Maybe<string>;
     srcSetWebp: Maybe<string>;
   };
 
   type GatsbyImageSharpSizesFragment = {
     base64: Maybe<string>;
-    aspectRatio: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
-    sizes: Maybe<string>;
+    aspectRatio: number;
+    src: string;
+    srcSet: string;
+    sizes: string;
   };
 
   type GatsbyImageSharpSizes_TracedSvgFragment = {
     tracedSVG: Maybe<string>;
-    aspectRatio: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
-    sizes: Maybe<string>;
+    aspectRatio: number;
+    src: string;
+    srcSet: string;
+    sizes: string;
   };
 
   type GatsbyImageSharpSizes_WithWebpFragment = {
     base64: Maybe<string>;
-    aspectRatio: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
+    aspectRatio: number;
+    src: string;
+    srcSet: string;
     srcWebp: Maybe<string>;
     srcSetWebp: Maybe<string>;
-    sizes: Maybe<string>;
+    sizes: string;
   };
 
   type GatsbyImageSharpSizes_WithWebp_TracedSvgFragment = {
     tracedSVG: Maybe<string>;
-    aspectRatio: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
+    aspectRatio: number;
+    src: string;
+    srcSet: string;
     srcWebp: Maybe<string>;
     srcSetWebp: Maybe<string>;
-    sizes: Maybe<string>;
+    sizes: string;
   };
 
-  type GatsbyImageSharpSizes_NoBase64Fragment = {
-    aspectRatio: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
-    sizes: Maybe<string>;
-  };
+  type GatsbyImageSharpSizes_NoBase64Fragment = { aspectRatio: number; src: string; srcSet: string; sizes: string };
 
   type GatsbyImageSharpSizes_WithWebp_NoBase64Fragment = {
-    aspectRatio: Maybe<number>;
-    src: Maybe<string>;
-    srcSet: Maybe<string>;
+    aspectRatio: number;
+    src: string;
+    srcSet: string;
     srcWebp: Maybe<string>;
     srcSetWebp: Maybe<string>;
-    sizes: Maybe<string>;
+    sizes: string;
   };
 
   type SeoDataQueryVariables = {};
 
   type SeoDataQuery = {
-    site: Maybe<{ siteMetadata: Maybe<{ title: Maybe<string>; description: Maybe<string>; author: Maybe<string> }> }>;
+    banner: Maybe<{ childImageSharp: Maybe<{ resize: Maybe<{ src: Maybe<string> }> }> }>;
+    site: Maybe<{
+      siteMetadata: Maybe<{
+        description: Maybe<string>;
+        siteUrl: Maybe<string>;
+        title: Maybe<string>;
+        twitterUsername: Maybe<string>;
+      }>;
+    }>;
   };
 
   type FooterDataQueryVariables = {};
@@ -4204,6 +4271,9 @@ declare module GraphQL {
   };
 
   type PostDataQuery = {
-    markdownRemark: Maybe<{ htmlAst: Maybe<any>; frontmatter: { date: string; keywords: string; title: string } }>;
+    markdownRemark: Maybe<{
+      htmlAst: Maybe<any>;
+      frontmatter: { date: string; keywords: string; slug: string; title: string };
+    }>;
   };
 }

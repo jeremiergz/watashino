@@ -1,6 +1,7 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import Img, { FixedObject } from 'gatsby-image';
 import React from 'react';
+import { Routes } from '../../../../utils/Routes';
 import Heading from '../../../common/Heading';
 import Link from '../../../common/Link';
 import Flex from '../../../primitives/Flex';
@@ -27,7 +28,7 @@ const NameAndJob = () => {
       flexDirection={{ _: 'column', tablet: 'row' }}
       justifyContent={{ _: 'center', tablet: 'flex-start' }}
       textAlign={{ _: 'center', tablet: 'left' }}
-      to="/about-me"
+      to={Routes.aboutMe}
     >
       <Img fixed={file.childImageSharp.fixed as FixedObject} imgStyle={{ height: '80px', width: '80px' }} />
       <Flex flexDirection="column" justifyContent="center" marginLeft={{ tablet: 2 }}>

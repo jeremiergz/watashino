@@ -1,7 +1,6 @@
 import React, { createContext, PropsWithChildren, useContext, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { DarkTheme, LightTheme, Theme } from '../../../theme';
-import ThemeToggle from './ThemeToggle';
 
 type ThemingManagerProps = PropsWithChildren<{}>;
 
@@ -30,10 +29,7 @@ const ThemingManager = ({ children }: ThemingManagerProps) => {
   const theme = mode === 'light' ? LightTheme : DarkTheme;
   return (
     <ThemingManagerContext.Provider value={{ mode, theme, toggle }}>
-      <ThemeProvider theme={theme}>
-        <ThemeToggle toggle={toggle} />
-        {children}
-      </ThemeProvider>
+      <ThemeProvider theme={theme}>{children}</ThemeProvider>
     </ThemingManagerContext.Provider>
   );
 };

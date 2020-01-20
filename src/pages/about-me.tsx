@@ -9,6 +9,7 @@ import LocationMap from '../components/core/LocationMap';
 import Box from '../components/primitives/Box';
 import Flex from '../components/primitives/Flex';
 import { Theme } from '../theme';
+import { Routes } from '../utils/Routes';
 
 const vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
 
@@ -129,7 +130,7 @@ const AboutMePage = () => {
   const mailto = contacts.find(c => c.url.startsWith('mailto:'));
   return (
     <Layout>
-      <Layout.Content keywords={keywords} title={name} type="section">
+      <Layout.Content keywords={keywords} path={Routes.aboutMe} title={name} type="section">
         <Flex alignItems="center" justifyContent="center" marginBottom={4}>
           {contactObjects.map(({ img, label, url }) => (
             <Link key={url} to={url} external>
