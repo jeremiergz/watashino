@@ -3,11 +3,11 @@
 exports[`utils/HTML Test Suite matches snapshot 1`] = `
 <div>
   <p
-    className="sc-bdVaJa dCDznL"
+    className="sc-AykKC fVJlmq"
     fontSize={20}
   >
     <a
-      className="sc-bxivhb sc-EHOje djSQgw"
+      className="sc-AykKE sc-AykKF lnYTBS"
       href="https://www.gatsbyjs.org"
       onClick={[Function]}
       rel="noopener noreferrer"
@@ -19,18 +19,18 @@ exports[`utils/HTML Test Suite matches snapshot 1`] = `
   
 
   <blockquote
-    className="sc-bxivhb kgwSjx"
+    className="sc-AykKE VSurP"
     color="gray"
     fontStyle="italic"
   >
     <div
-      className="sc-bxivhb sc-bZQynM gpdccO"
+      className="sc-AykKE sc-AykKG bNsjnF"
       height="100%"
     />
     
 
     <p
-      className="sc-bdVaJa dCDznL"
+      className="sc-AykKC fVJlmq"
       fontSize={20}
     >
       blockquote
@@ -41,11 +41,11 @@ exports[`utils/HTML Test Suite matches snapshot 1`] = `
   
 
   <p
-    className="sc-bdVaJa dCDznL"
+    className="sc-AykKC fVJlmq"
     fontSize={20}
   >
     <code
-      className="sc-bdVaJa iELOxI"
+      className="sc-AykKC dWimRH"
       color="white"
       display="inline-block"
       fontSize={16}
@@ -57,7 +57,7 @@ exports[`utils/HTML Test Suite matches snapshot 1`] = `
 
   <pre>
     <code
-      className="sc-bdVaJa iELOxI"
+      className="sc-AykKC dWimRH"
       color="white"
       display="inline-block"
       fontSize={16}
@@ -69,40 +69,40 @@ exports[`utils/HTML Test Suite matches snapshot 1`] = `
   
 
   <h1
-    className="sc-bdVaJa sc-bwzfXH jrAUjp"
+    className="sc-AykKC sc-AykKD ilIBWX"
   >
     h1
   </h1>
   
 
   <h2
-    className="sc-bdVaJa sc-bwzfXH gHduMf"
+    className="sc-AykKC sc-AykKD cuLbSf"
   >
     h2
   </h2>
   
 
   <h3
-    className="sc-bdVaJa sc-bwzfXH iTNkdO"
+    className="sc-AykKC sc-AykKD kdozWw"
   >
     h3
   </h3>
   
 
   <h4
-    className="sc-bdVaJa sc-bwzfXH cCbrNn"
+    className="sc-AykKC sc-AykKD hOiHRw"
   >
     h4
   </h4>
   
 
   <hr
-    className="sc-bxivhb dCPlLh"
+    className="sc-AykKE hohTMb"
   />
   
 
   <p
-    className="sc-bdVaJa dCDznL"
+    className="sc-AykKC fVJlmq"
     fontSize={20}
   >
     text

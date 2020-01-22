@@ -1,13 +1,17 @@
 import * as ReactGoogleMapsAPI from '@react-google-maps/api';
 import * as Gatsby from 'gatsby';
 import React from 'react';
+import { HelmetProvider } from 'react-helmet-async';
 import ReactTestRenderer from 'react-test-renderer';
 import ThemingManager from '../../components/core/ThemingManager';
+import ThemeToggle from '../../components/core/ThemingManager/ThemeToggle';
 import NotFoundPage from '../404';
 import AboutMePage from '../about-me';
 import IndexPage from '../index';
 import PostsPage from '../posts';
 import SkillsPage from '../skills';
+
+jest.mock('../../components/core/LocationMap');
 
 describe('pages Test Suite', () => {
   beforeAll(() => {
@@ -77,6 +81,7 @@ describe('pages Test Suite', () => {
           },
         ],
       },
+      banner: { childImageSharp: { resize: { src: 'fake.png' } } },
       companyImg: { childImageSharp },
       contactImgs: { nodes: [{ base: 'contact-image.png', childImageSharp }] },
       coverImg: { childImageSharp },
@@ -115,9 +120,12 @@ describe('pages Test Suite', () => {
   describe('pages/404 Test Suite', () => {
     it('matches snapshot', () => {
       const jsx = (
-        <ThemingManager>
-          <NotFoundPage />
-        </ThemingManager>
+        <HelmetProvider>
+          <ThemingManager>
+            <ThemeToggle />
+            <NotFoundPage />
+          </ThemingManager>
+        </HelmetProvider>
       );
       expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
     });
@@ -126,9 +134,12 @@ describe('pages Test Suite', () => {
   describe('pages/about-me Test Suite', () => {
     it('matches snapshot', () => {
       const jsx = (
-        <ThemingManager>
-          <AboutMePage />
-        </ThemingManager>
+        <HelmetProvider>
+          <ThemingManager>
+            <ThemeToggle />
+            <AboutMePage />
+          </ThemingManager>
+        </HelmetProvider>
       );
       expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
     });
@@ -137,9 +148,12 @@ describe('pages Test Suite', () => {
   describe('pages/index Test Suite', () => {
     it('matches snapshot', () => {
       const jsx = (
-        <ThemingManager>
-          <IndexPage />
-        </ThemingManager>
+        <HelmetProvider>
+          <ThemingManager>
+            <ThemeToggle />
+            <IndexPage />
+          </ThemingManager>
+        </HelmetProvider>
       );
       expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
     });
@@ -148,9 +162,12 @@ describe('pages Test Suite', () => {
   describe('pages/posts Test Suite', () => {
     it('matches snapshot', () => {
       const jsx = (
-        <ThemingManager>
-          <PostsPage />
-        </ThemingManager>
+        <HelmetProvider>
+          <ThemingManager>
+            <ThemeToggle />
+            <PostsPage />
+          </ThemingManager>
+        </HelmetProvider>
       );
       expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
     });
@@ -159,9 +176,12 @@ describe('pages Test Suite', () => {
   describe('pages/skills Test Suite', () => {
     it('matches snapshot', () => {
       const jsx = (
-        <ThemingManager>
-          <SkillsPage />
-        </ThemingManager>
+        <HelmetProvider>
+          <ThemingManager>
+            <ThemeToggle />
+            <SkillsPage />
+          </ThemingManager>
+        </HelmetProvider>
       );
       expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
     });

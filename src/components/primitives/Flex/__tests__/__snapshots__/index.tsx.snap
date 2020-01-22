@@ -2,7 +2,7 @@
 
 exports[`components/primitives/Flex Test Suite matches snapshot 1`] = `
 <div
-  className="sc-bdVaJa cLjUOW"
+  className="sc-AykKC emIcyF"
   display="flex"
 >
   Flex Component

@@ -2,44 +2,12 @@
 
 exports[`components/Layout Test Suite matches snapshot 1`] = `
 Array [
-  <button
-    className="sc-bwzfXH jfdKSm"
-    onClick={[Function]}
-  >
-    <div
-      className="sc-bdVaJa cLjUOW"
-      display="flex"
-    >
-      <div
-        className="sc-bxivhb gahHdT"
-      >
-        <div
-          className="sc-bdVaJa gcrpvP"
-          height={16}
-          width={8}
-        />
-        <div
-          className="sc-bdVaJa gZPpMF"
-          height={16}
-          width={8}
-        />
-      </div>
-      <span
-        className="sc-htpNat iJnzsZ"
-        color="gray"
-        fontFamily="'Open Sans', sans-serif"
-        fontSize={14}
-      >
-        light
-      </span>
-    </div>
-  </button>,
   <header
-    className="sc-bdVaJa hGmmkD"
+    className="sc-AykKC eabPrn"
     display="flex"
   >
     <a
-      className="sc-bdVaJa sc-ifAKCX chIEls"
+      className="sc-AykKC sc-AykKD gSqtt"
       href="/about-me"
       target="_blank"
     >
@@ -57,6 +25,7 @@ Array [
       >
         <img
           alt=""
+          aria-hidden={true}
           src="data:image/png;base64"
           style={
             Object {
@@ -114,11 +83,11 @@ Array [
         />
       </div>
       <div
-        className="sc-bdVaJa cvOatm"
+        className="sc-AykKC hQAXLw"
         display="flex"
       >
         <h3
-          className="sc-htpNat sc-EHOje cZVNAw"
+          className="sc-AykKE sc-AykKF iTkmMC"
           color="primary"
           fontWeight="bold"
           letterSpacing={-1}
@@ -126,7 +95,7 @@ Array [
           Jeremie Rodriguez
         </h3>
         <h4
-          className="sc-htpNat sc-EHOje bQzxQU"
+          className="sc-AykKE sc-AykKF hdVueZ"
           fontWeight="semi-bold"
         >
           Full Stack Engineer
@@ -134,20 +103,20 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-bdVaJa ePhjHk"
+      className="sc-AykKC eBXRSy"
       display="flex"
     >
       <div
-        className="sc-bdVaJa lgUGop"
+        className="sc-AykKC dUqoui"
         display="flex"
       >
         <a
-          className="sc-bdVaJa sc-ifAKCX djohnT"
+          className="sc-AykKC sc-AykKD igWYvC"
           href="/"
           target="_blank"
         >
           <svg
-            className="sc-bZQynM fTyviB"
+            className="sc-AykKG falauK"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -157,18 +126,18 @@ Array [
         </a>
       </div>
       <div
-        className="sc-bdVaJa lgUGop"
+        className="sc-AykKC dUqoui"
         display="flex"
       >
         <a
-          className="sc-bdVaJa sc-ifAKCX djohnT"
+          className="sc-AykKC sc-AykKD igWYvC"
           display="flex"
           download={true}
           fontWeight="semi-bold"
           target="_blank"
         >
           <svg
-            className="sc-bZQynM fTyviB sc-bZQynM fTyviB"
+            className="sc-AykKG falauK sc-AykKG falauK"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -188,15 +157,15 @@ Array [
     </nav>
   </header>,
   <main
-    className="sc-bdVaJa ieheFk"
+    className="sc-AykKC grkOYh"
   >
     Layout Component
   </main>,
   <footer
-    className="sc-bdVaJa ccyflP"
+    className="sc-AykKC doSOLY"
   >
     <a
-      className="sc-bdVaJa sc-ifAKCX eSCzpL"
+      className="sc-AykKC sc-AykKD jphqpV"
       href="https://test-repository/tree/3.16.120"
       onClick={[Function]}
       rel="noopener noreferrer"
@@ -205,7 +174,7 @@ Array [
       v3.16.120 - source code
     </a>
     <div
-      className="sc-bdVaJa hJAvxc"
+      className="sc-AykKC bjXMAi"
       color="gray"
       fontSize={14}
     >

@@ -2,7 +2,7 @@
 
 exports[`components/svg Test Suite Book Test Suite matches snapshot 1`] = `
 <svg
-  className="sc-bdVaJa GmTez"
+  className="sc-AykKC hVlXBK"
   height={32}
   viewBox="0 0 24 24"
   width={32}
@@ -23,7 +23,7 @@ exports[`components/svg Test Suite Book Test Suite matches snapshot 1`] = `
 
 exports[`components/svg Test Suite Business Test Suite matches snapshot 1`] = `
 <svg
-  className="sc-bdVaJa GmTez"
+  className="sc-AykKC hVlXBK"
   height={32}
   viewBox="0 0 24 24"
   width={32}
@@ -41,7 +41,7 @@ exports[`components/svg Test Suite Business Test Suite matches snapshot 1`] = `
 
 exports[`components/svg Test Suite Download Test Suite matches snapshot 1`] = `
 <svg
-  className="sc-bdVaJa GmTez"
+  className="sc-AykKC hVlXBK"
   height={32}
   viewBox="0 0 24 24"
   width={32}
@@ -59,7 +59,7 @@ exports[`components/svg Test Suite Download Test Suite matches snapshot 1`] = `
 
 exports[`components/svg Test Suite House Test Suite matches snapshot 1`] = `
 <svg
-  className="sc-bdVaJa GmTez"
+  className="sc-AykKC hVlXBK"
   height={32}
   viewBox="0 0 24 24"
   width={32}
@@ -77,7 +77,7 @@ exports[`components/svg Test Suite House Test Suite matches snapshot 1`] = `
 
 exports[`components/svg Test Suite Mood Test Suite matches snapshot 1`] = `
 <svg
-  className="sc-bdVaJa GmTez"
+  className="sc-AykKC hVlXBK"
   height={32}
   viewBox="0 0 24 24"
   width={32}
@@ -95,7 +95,7 @@ exports[`components/svg Test Suite Mood Test Suite matches snapshot 1`] = `
 
 exports[`components/svg Test Suite Person Test Suite matches snapshot 1`] = `
 <svg
-  className="sc-bdVaJa GmTez"
+  className="sc-AykKC hVlXBK"
   height={32}
   viewBox="0 0 24 24"
   width={32}

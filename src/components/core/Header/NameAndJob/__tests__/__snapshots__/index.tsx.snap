@@ -2,7 +2,7 @@
 
 exports[`components/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
 <a
-  className="sc-bxivhb sc-EHOje lpdRHf"
+  className="sc-AykKE sc-AykKF ivlMwz"
   href="/about-me"
   target="_blank"
 >
@@ -20,6 +20,7 @@ exports[`components/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
   >
     <img
       alt=""
+      aria-hidden={true}
       src="data:image/png;base64"
       style={
         Object {
@@ -77,11 +78,11 @@ exports[`components/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
     />
   </div>
   <div
-    className="sc-bxivhb hRqDK"
+    className="sc-AykKE bthTpq"
     display="flex"
   >
     <h3
-      className="sc-bdVaJa sc-bwzfXH hwmPtm"
+      className="sc-AykKC sc-AykKD kQbpus"
       color="primary"
       fontWeight="bold"
       letterSpacing={-1}
@@ -89,7 +90,7 @@ exports[`components/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
       Jeremie Rodriguez
     </h3>
     <h4
-      className="sc-bdVaJa sc-bwzfXH ichCKc"
+      className="sc-AykKC sc-AykKD fXXXdv"
       fontWeight="semi-bold"
     >
       Full Stack Engineer

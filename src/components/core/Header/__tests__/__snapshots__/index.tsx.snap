@@ -2,11 +2,11 @@
 
 exports[`components/Header Test Suite matches snapshot 1`] = `
 <header
-  className="sc-bdVaJa hGmmkD"
+  className="sc-AykKC eabPrn"
   display="flex"
 >
   <a
-    className="sc-bdVaJa sc-EHOje lpdRHf"
+    className="sc-AykKC sc-AykKF ivlMwz"
     href="/about-me"
     target="_blank"
   >
@@ -24,6 +24,7 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
     >
       <img
         alt=""
+        aria-hidden={true}
         src="data:image/png;base64"
         style={
           Object {
@@ -81,11 +82,11 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
       />
     </div>
     <div
-      className="sc-bdVaJa cvOatm"
+      className="sc-AykKC hQAXLw"
       display="flex"
     >
       <h3
-        className="sc-htpNat sc-ifAKCX ggqWfj"
+        className="sc-AykKD sc-AykKE ejUWqZ"
         color="primary"
         fontWeight="bold"
         letterSpacing={-1}
@@ -93,7 +94,7 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
         Jeremie Rodriguez
       </h3>
       <h4
-        className="sc-htpNat sc-ifAKCX dvNjIF"
+        className="sc-AykKD sc-AykKE gAWIEk"
         fontWeight="semi-bold"
       >
         Full Stack Engineer
@@ -101,20 +102,20 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
     </div>
   </a>
   <nav
-    className="sc-bdVaJa ePhjHk"
+    className="sc-AykKC eBXRSy"
     display="flex"
   >
     <div
-      className="sc-bdVaJa lgUGop"
+      className="sc-AykKC dUqoui"
       display="flex"
     >
       <a
-        className="sc-bdVaJa sc-EHOje fLiyyB"
+        className="sc-AykKC sc-AykKF cDDyWc"
         href="/"
         target="_blank"
       >
         <svg
-          className="sc-bZQynM fTyviB"
+          className="sc-AykKG falauK"
           height={32}
           viewBox="0 0 24 24"
           width={32}
@@ -124,18 +125,18 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
       </a>
     </div>
     <div
-      className="sc-bdVaJa lgUGop"
+      className="sc-AykKC dUqoui"
       display="flex"
     >
       <a
-        className="sc-bdVaJa sc-EHOje fLiyyB"
+        className="sc-AykKC sc-AykKF cDDyWc"
         display="flex"
         download={true}
         fontWeight="semi-bold"
         target="_blank"
       >
         <svg
-          className="sc-bZQynM fTyviB sc-bZQynM fTyviB"
+          className="sc-AykKG falauK sc-AykKG falauK"
           height={32}
           viewBox="0 0 24 24"
           width={32}

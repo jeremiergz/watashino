@@ -2,7 +2,7 @@
 
 exports[`components/widgets/Paragraph Test Suite matches snapshot 1`] = `
 <p
-  className="sc-bdVaJa dCDznL"
+  className="sc-AykKC fVJlmq"
   fontSize={20}
 >
   Paragraph Component
