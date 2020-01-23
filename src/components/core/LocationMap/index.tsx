@@ -12,7 +12,7 @@ const LocationMap = () => {
   });
   const {
     dataJson: { location },
-    googleMapsJson: { styles },
+    gmapsJson: { styles },
   } = useStaticQuery<GraphQL.LocationMapDataQuery>(graphql`
     query LocationMapData {
       dataJson {
@@ -21,7 +21,7 @@ const LocationMap = () => {
           lng
         }
       }
-      googleMapsJson {
+      gmapsJson {
         styles {
           dark {
             elementType

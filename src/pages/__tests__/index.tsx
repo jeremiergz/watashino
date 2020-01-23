@@ -87,7 +87,7 @@ describe('pages Test Suite', () => {
       coverImg: { childImageSharp },
       dataJson: { jobTitle, location },
       file: { childImageSharp },
-      googleMapsJson: {
+      gmapsJson: {
         styles: { dark: [], light: [] },
       },
       pageData: { keywords: ['test', 'keyword'], name: 'Test Page' },

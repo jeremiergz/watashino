@@ -70,7 +70,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'googlemaps',
-        path: `${__dirname}/content/google-maps`,
+        path: `${__dirname}/content/gmaps`,
       },
     },
     {
