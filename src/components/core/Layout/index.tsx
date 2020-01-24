@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
         width: 100%;
         margin: 0;
         padding: 0;
+        transition: background-color 250ms ease;
     }
     body {
         color: ${({ theme }: { theme: Theme }) => theme.colors.text};
