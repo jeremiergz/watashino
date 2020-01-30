@@ -3,7 +3,7 @@
 exports[`pages Test Suite pages/404 Test Suite matches snapshot 1`] = `
 Array [
   <button
-    className="sc-AykKC kOXBlQ"
+    className="sc-AykKC dRfZtv"
     onClick={[Function]}
   >
     <div
@@ -144,7 +144,7 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-AykKD jlniob"
+      className="sc-AykKD iyOXvw"
       display="flex"
     >
       <div
@@ -250,7 +250,7 @@ Array [
 exports[`pages Test Suite pages/about-me Test Suite matches snapshot 1`] = `
 Array [
   <button
-    className="sc-AykKC kOXBlQ"
+    className="sc-AykKC dRfZtv"
     onClick={[Function]}
   >
     <div
@@ -391,7 +391,7 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-AykKD jlniob"
+      className="sc-AykKD iyOXvw"
       display="flex"
     >
       <div
@@ -859,7 +859,7 @@ Array [
 exports[`pages Test Suite pages/index Test Suite matches snapshot 1`] = `
 Array [
   <button
-    className="sc-AykKC kOXBlQ"
+    className="sc-AykKC dRfZtv"
     onClick={[Function]}
   >
     <div
@@ -1000,7 +1000,7 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-AykKD jlniob"
+      className="sc-AykKD iyOXvw"
       display="flex"
     >
       <div
@@ -1086,7 +1086,7 @@ Array [
 exports[`pages Test Suite pages/posts Test Suite matches snapshot 1`] = `
 Array [
   <button
-    className="sc-AykKC kOXBlQ"
+    className="sc-AykKC dRfZtv"
     onClick={[Function]}
   >
     <div
@@ -1227,7 +1227,7 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-AykKD jlniob"
+      className="sc-AykKD iyOXvw"
       display="flex"
     >
       <div
@@ -1358,7 +1358,7 @@ Array [
 exports[`pages Test Suite pages/skills Test Suite matches snapshot 1`] = `
 Array [
   <button
-    className="sc-AykKC kOXBlQ"
+    className="sc-AykKC dRfZtv"
     onClick={[Function]}
   >
     <div
@@ -1499,7 +1499,7 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-AykKD jlniob"
+      className="sc-AykKD iyOXvw"
       display="flex"
     >
       <div

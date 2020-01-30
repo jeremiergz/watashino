@@ -102,7 +102,7 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
     </div>
   </a>
   <nav
-    className="sc-AykKC eBXRSy"
+    className="sc-AykKC fWKbuP"
     display="flex"
   >
     <div

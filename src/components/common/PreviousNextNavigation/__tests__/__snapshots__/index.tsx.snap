@@ -6,16 +6,18 @@ exports[`components/widgets/PreviousNextNavigation Test Suite matches snapshot 1
   display="flex"
 >
   <a
-    className="sc-AykKC sc-AykKD eDypRO"
+    className="sc-AykKC sc-AykKD jKEIpI"
     href="/previous"
     target="_blank"
+    variant="underlined"
   >
     Prev
   </a>
   <a
-    className="sc-AykKC sc-AykKD kmnPqK"
+    className="sc-AykKC sc-AykKD jKEIpI"
     href="/next"
     target="_blank"
+    variant="underlined"
   >
     Next
   </a>

@@ -2,7 +2,7 @@
 
 exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
 <nav
-  className="sc-AykKC eBXRSy"
+  className="sc-AykKC fWKbuP"
   display="flex"
 >
   <div

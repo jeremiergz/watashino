@@ -11,7 +11,7 @@ import IndexPage from '../index';
 import PostsPage from '../posts';
 import SkillsPage from '../skills';
 
-jest.mock('../../components/core/LocationMap');
+jest.mock('../../components/common/LocationMap');
 
 describe('pages Test Suite', () => {
   beforeAll(() => {
