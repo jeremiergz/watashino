@@ -1,5 +1,6 @@
 import { GoogleMap, Marker, useLoadScript } from '@react-google-maps/api';
 import { graphql, useStaticQuery } from 'gatsby';
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
 import React, { useState } from 'react';
 import { useTheming } from '../../core/ThemingManager';
 import Box from '../../primitives/Box';
@@ -15,12 +16,16 @@ const LocationMap = () => {
     googleMapsApiKey: process.env.GATSBY_GOOGLE_MAPS_API_KEY,
     preventGoogleFontsLoading: true,
   });
-  const [marker, setEmoji] = useState(nerdSmilingEmoji);
-  const handleMarkerClick = e => {
-    if (marker !== nerdAstonishedEmoji) setEmoji(nerdAstonishedEmoji);
+  const [marker, setMarker] = useState(nerdSmilingEmoji);
+  const handleMarkerClick = () => {
+    trackCustomEvent({
+      action: 'click',
+      category: 'Google Maps Emoji Marker',
+    });
+    if (marker !== nerdAstonishedEmoji) setMarker(nerdAstonishedEmoji);
     clearTimeout(timeout);
     timeout = setTimeout(() => {
-      setEmoji(nerdSmilingEmoji);
+      setMarker(nerdSmilingEmoji);
     }, 2500);
   };
   const {
