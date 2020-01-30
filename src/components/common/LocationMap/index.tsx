@@ -1,8 +1,13 @@
 import { GoogleMap, Marker, useLoadScript } from '@react-google-maps/api';
 import { graphql, useStaticQuery } from 'gatsby';
-import React from 'react';
+import React, { useState } from 'react';
+import { useTheming } from '../../core/ThemingManager';
 import Box from '../../primitives/Box';
-import { useTheming } from '../ThemingManager';
+
+const nerdAstonishedEmoji = require('../../../images/nerd-astonished.png');
+const nerdSmilingEmoji = require('../../../images/nerd-smiling.png');
+
+let timeout: number;
 
 const LocationMap = () => {
   const { theme } = useTheming();
@@ -10,6 +15,14 @@ const LocationMap = () => {
     googleMapsApiKey: process.env.GATSBY_GOOGLE_MAPS_API_KEY,
     preventGoogleFontsLoading: true,
   });
+  const [marker, setEmoji] = useState(nerdSmilingEmoji);
+  const handleMarkerClick = e => {
+    if (marker !== nerdAstonishedEmoji) setEmoji(nerdAstonishedEmoji);
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      setEmoji(nerdSmilingEmoji);
+    }, 2500);
+  };
   const {
     dataJson: { location },
     gmapsJson: { styles },
@@ -52,6 +65,10 @@ const LocationMap = () => {
           center={position}
           mapContainerStyle={{ height: '100%', width: '100%', borderRadius: '8px' }}
           options={{
+            draggable: false,
+            draggableCursor: 'initial',
+            mapTypeControl: false,
+            streetViewControl: false,
             styles: [
               ...styles[theme.type],
               {
@@ -63,7 +80,7 @@ const LocationMap = () => {
           }}
           zoom={4}
         >
-          <Marker position={position} />
+          <Marker icon={marker} onClick={handleMarkerClick} position={position} />
         </GoogleMap>
       </Box>
     )
