@@ -577,10 +577,11 @@ declare module GraphQL {
     children: Array<Node>;
     internal: Internal;
     childrenNavigationJson?: Maybe<Array<Maybe<NavigationJson>>>;
-    childDataJson?: Maybe<DataJson>;
     childrenSkillsJson?: Maybe<Array<Maybe<SkillsJson>>>;
+    childDataJson?: Maybe<DataJson>;
     childrenTechnologiesJson?: Maybe<Array<Maybe<TechnologiesJson>>>;
     childGmapsJson?: Maybe<GmapsJson>;
+    childMarkdownRemark?: Maybe<MarkdownRemark>;
   };
 
   type FileModifiedTimeArgs = {
@@ -915,6 +916,51 @@ declare module GraphQL {
     ChildrenNavigationJsonPage = 'childrenNavigationJson___page',
     ChildrenNavigationJsonTo = 'childrenNavigationJson___to',
     ChildrenNavigationJsonIgnoreInNavigation = 'childrenNavigationJson___ignoreInNavigation',
+    ChildrenSkillsJson = 'childrenSkillsJson',
+    ChildrenSkillsJsonId = 'childrenSkillsJson___id',
+    ChildrenSkillsJsonParentId = 'childrenSkillsJson___parent___id',
+    ChildrenSkillsJsonParentParentId = 'childrenSkillsJson___parent___parent___id',
+    ChildrenSkillsJsonParentParentChildren = 'childrenSkillsJson___parent___parent___children',
+    ChildrenSkillsJsonParentChildren = 'childrenSkillsJson___parent___children',
+    ChildrenSkillsJsonParentChildrenId = 'childrenSkillsJson___parent___children___id',
+    ChildrenSkillsJsonParentChildrenChildren = 'childrenSkillsJson___parent___children___children',
+    ChildrenSkillsJsonParentInternalContent = 'childrenSkillsJson___parent___internal___content',
+    ChildrenSkillsJsonParentInternalContentDigest = 'childrenSkillsJson___parent___internal___contentDigest',
+    ChildrenSkillsJsonParentInternalDescription = 'childrenSkillsJson___parent___internal___description',
+    ChildrenSkillsJsonParentInternalFieldOwners = 'childrenSkillsJson___parent___internal___fieldOwners',
+    ChildrenSkillsJsonParentInternalIgnoreType = 'childrenSkillsJson___parent___internal___ignoreType',
+    ChildrenSkillsJsonParentInternalMediaType = 'childrenSkillsJson___parent___internal___mediaType',
+    ChildrenSkillsJsonParentInternalOwner = 'childrenSkillsJson___parent___internal___owner',
+    ChildrenSkillsJsonParentInternalType = 'childrenSkillsJson___parent___internal___type',
+    ChildrenSkillsJsonChildren = 'childrenSkillsJson___children',
+    ChildrenSkillsJsonChildrenId = 'childrenSkillsJson___children___id',
+    ChildrenSkillsJsonChildrenParentId = 'childrenSkillsJson___children___parent___id',
+    ChildrenSkillsJsonChildrenParentChildren = 'childrenSkillsJson___children___parent___children',
+    ChildrenSkillsJsonChildrenChildren = 'childrenSkillsJson___children___children',
+    ChildrenSkillsJsonChildrenChildrenId = 'childrenSkillsJson___children___children___id',
+    ChildrenSkillsJsonChildrenChildrenChildren = 'childrenSkillsJson___children___children___children',
+    ChildrenSkillsJsonChildrenInternalContent = 'childrenSkillsJson___children___internal___content',
+    ChildrenSkillsJsonChildrenInternalContentDigest = 'childrenSkillsJson___children___internal___contentDigest',
+    ChildrenSkillsJsonChildrenInternalDescription = 'childrenSkillsJson___children___internal___description',
+    ChildrenSkillsJsonChildrenInternalFieldOwners = 'childrenSkillsJson___children___internal___fieldOwners',
+    ChildrenSkillsJsonChildrenInternalIgnoreType = 'childrenSkillsJson___children___internal___ignoreType',
+    ChildrenSkillsJsonChildrenInternalMediaType = 'childrenSkillsJson___children___internal___mediaType',
+    ChildrenSkillsJsonChildrenInternalOwner = 'childrenSkillsJson___children___internal___owner',
+    ChildrenSkillsJsonChildrenInternalType = 'childrenSkillsJson___children___internal___type',
+    ChildrenSkillsJsonInternalContent = 'childrenSkillsJson___internal___content',
+    ChildrenSkillsJsonInternalContentDigest = 'childrenSkillsJson___internal___contentDigest',
+    ChildrenSkillsJsonInternalDescription = 'childrenSkillsJson___internal___description',
+    ChildrenSkillsJsonInternalFieldOwners = 'childrenSkillsJson___internal___fieldOwners',
+    ChildrenSkillsJsonInternalIgnoreType = 'childrenSkillsJson___internal___ignoreType',
+    ChildrenSkillsJsonInternalMediaType = 'childrenSkillsJson___internal___mediaType',
+    ChildrenSkillsJsonInternalOwner = 'childrenSkillsJson___internal___owner',
+    ChildrenSkillsJsonInternalType = 'childrenSkillsJson___internal___type',
+    ChildrenSkillsJsonName = 'childrenSkillsJson___name',
+    ChildrenSkillsJsonSortOrder = 'childrenSkillsJson___sortOrder',
+    ChildrenSkillsJsonItems = 'childrenSkillsJson___items',
+    ChildrenSkillsJsonItemsName = 'childrenSkillsJson___items___name',
+    ChildrenSkillsJsonItemsProficiencyLevel = 'childrenSkillsJson___items___proficiencyLevel',
+    ChildrenSkillsJsonItemsSortOrder = 'childrenSkillsJson___items___sortOrder',
     ChildDataJsonId = 'childDataJson___id',
     ChildDataJsonParentId = 'childDataJson___parent___id',
     ChildDataJsonParentParentId = 'childDataJson___parent___parent___id',
@@ -967,51 +1013,6 @@ declare module GraphQL {
     ChildDataJsonLocationWebsite = 'childDataJson___location___website',
     ChildDataJsonOpenToGigs = 'childDataJson___openToGigs',
     ChildDataJsonResumeFile = 'childDataJson___resumeFile',
-    ChildrenSkillsJson = 'childrenSkillsJson',
-    ChildrenSkillsJsonId = 'childrenSkillsJson___id',
-    ChildrenSkillsJsonParentId = 'childrenSkillsJson___parent___id',
-    ChildrenSkillsJsonParentParentId = 'childrenSkillsJson___parent___parent___id',
-    ChildrenSkillsJsonParentParentChildren = 'childrenSkillsJson___parent___parent___children',
-    ChildrenSkillsJsonParentChildren = 'childrenSkillsJson___parent___children',
-    ChildrenSkillsJsonParentChildrenId = 'childrenSkillsJson___parent___children___id',
-    ChildrenSkillsJsonParentChildrenChildren = 'childrenSkillsJson___parent___children___children',
-    ChildrenSkillsJsonParentInternalContent = 'childrenSkillsJson___parent___internal___content',
-    ChildrenSkillsJsonParentInternalContentDigest = 'childrenSkillsJson___parent___internal___contentDigest',
-    ChildrenSkillsJsonParentInternalDescription = 'childrenSkillsJson___parent___internal___description',
-    ChildrenSkillsJsonParentInternalFieldOwners = 'childrenSkillsJson___parent___internal___fieldOwners',
-    ChildrenSkillsJsonParentInternalIgnoreType = 'childrenSkillsJson___parent___internal___ignoreType',
-    ChildrenSkillsJsonParentInternalMediaType = 'childrenSkillsJson___parent___internal___mediaType',
-    ChildrenSkillsJsonParentInternalOwner = 'childrenSkillsJson___parent___internal___owner',
-    ChildrenSkillsJsonParentInternalType = 'childrenSkillsJson___parent___internal___type',
-    ChildrenSkillsJsonChildren = 'childrenSkillsJson___children',
-    ChildrenSkillsJsonChildrenId = 'childrenSkillsJson___children___id',
-    ChildrenSkillsJsonChildrenParentId = 'childrenSkillsJson___children___parent___id',
-    ChildrenSkillsJsonChildrenParentChildren = 'childrenSkillsJson___children___parent___children',
-    ChildrenSkillsJsonChildrenChildren = 'childrenSkillsJson___children___children',
-    ChildrenSkillsJsonChildrenChildrenId = 'childrenSkillsJson___children___children___id',
-    ChildrenSkillsJsonChildrenChildrenChildren = 'childrenSkillsJson___children___children___children',
-    ChildrenSkillsJsonChildrenInternalContent = 'childrenSkillsJson___children___internal___content',
-    ChildrenSkillsJsonChildrenInternalContentDigest = 'childrenSkillsJson___children___internal___contentDigest',
-    ChildrenSkillsJsonChildrenInternalDescription = 'childrenSkillsJson___children___internal___description',
-    ChildrenSkillsJsonChildrenInternalFieldOwners = 'childrenSkillsJson___children___internal___fieldOwners',
-    ChildrenSkillsJsonChildrenInternalIgnoreType = 'childrenSkillsJson___children___internal___ignoreType',
-    ChildrenSkillsJsonChildrenInternalMediaType = 'childrenSkillsJson___children___internal___mediaType',
-    ChildrenSkillsJsonChildrenInternalOwner = 'childrenSkillsJson___children___internal___owner',
-    ChildrenSkillsJsonChildrenInternalType = 'childrenSkillsJson___children___internal___type',
-    ChildrenSkillsJsonInternalContent = 'childrenSkillsJson___internal___content',
-    ChildrenSkillsJsonInternalContentDigest = 'childrenSkillsJson___internal___contentDigest',
-    ChildrenSkillsJsonInternalDescription = 'childrenSkillsJson___internal___description',
-    ChildrenSkillsJsonInternalFieldOwners = 'childrenSkillsJson___internal___fieldOwners',
-    ChildrenSkillsJsonInternalIgnoreType = 'childrenSkillsJson___internal___ignoreType',
-    ChildrenSkillsJsonInternalMediaType = 'childrenSkillsJson___internal___mediaType',
-    ChildrenSkillsJsonInternalOwner = 'childrenSkillsJson___internal___owner',
-    ChildrenSkillsJsonInternalType = 'childrenSkillsJson___internal___type',
-    ChildrenSkillsJsonName = 'childrenSkillsJson___name',
-    ChildrenSkillsJsonSortOrder = 'childrenSkillsJson___sortOrder',
-    ChildrenSkillsJsonItems = 'childrenSkillsJson___items',
-    ChildrenSkillsJsonItemsName = 'childrenSkillsJson___items___name',
-    ChildrenSkillsJsonItemsProficiencyLevel = 'childrenSkillsJson___items___proficiencyLevel',
-    ChildrenSkillsJsonItemsSortOrder = 'childrenSkillsJson___items___sortOrder',
     ChildrenTechnologiesJson = 'childrenTechnologiesJson',
     ChildrenTechnologiesJsonId = 'childrenTechnologiesJson___id',
     ChildrenTechnologiesJsonParentId = 'childrenTechnologiesJson___parent___id',
@@ -1100,6 +1101,63 @@ declare module GraphQL {
     ChildGmapsJsonStylesLightElementType = 'childGmapsJson___styles___light___elementType',
     ChildGmapsJsonStylesLightStylers = 'childGmapsJson___styles___light___stylers',
     ChildGmapsJsonStylesLightFeatureType = 'childGmapsJson___styles___light___featureType',
+    ChildMarkdownRemarkId = 'childMarkdownRemark___id',
+    ChildMarkdownRemarkFrontmatterDate = 'childMarkdownRemark___frontmatter___date',
+    ChildMarkdownRemarkFrontmatterKeywords = 'childMarkdownRemark___frontmatter___keywords',
+    ChildMarkdownRemarkFrontmatterSlug = 'childMarkdownRemark___frontmatter___slug',
+    ChildMarkdownRemarkFrontmatterTags = 'childMarkdownRemark___frontmatter___tags',
+    ChildMarkdownRemarkFrontmatterTitle = 'childMarkdownRemark___frontmatter___title',
+    ChildMarkdownRemarkExcerpt = 'childMarkdownRemark___excerpt',
+    ChildMarkdownRemarkRawMarkdownBody = 'childMarkdownRemark___rawMarkdownBody',
+    ChildMarkdownRemarkFileAbsolutePath = 'childMarkdownRemark___fileAbsolutePath',
+    ChildMarkdownRemarkHtml = 'childMarkdownRemark___html',
+    ChildMarkdownRemarkHtmlAst = 'childMarkdownRemark___htmlAst',
+    ChildMarkdownRemarkExcerptAst = 'childMarkdownRemark___excerptAst',
+    ChildMarkdownRemarkHeadings = 'childMarkdownRemark___headings',
+    ChildMarkdownRemarkHeadingsValue = 'childMarkdownRemark___headings___value',
+    ChildMarkdownRemarkHeadingsDepth = 'childMarkdownRemark___headings___depth',
+    ChildMarkdownRemarkTimeToRead = 'childMarkdownRemark___timeToRead',
+    ChildMarkdownRemarkTableOfContents = 'childMarkdownRemark___tableOfContents',
+    ChildMarkdownRemarkWordCountParagraphs = 'childMarkdownRemark___wordCount___paragraphs',
+    ChildMarkdownRemarkWordCountSentences = 'childMarkdownRemark___wordCount___sentences',
+    ChildMarkdownRemarkWordCountWords = 'childMarkdownRemark___wordCount___words',
+    ChildMarkdownRemarkParentId = 'childMarkdownRemark___parent___id',
+    ChildMarkdownRemarkParentParentId = 'childMarkdownRemark___parent___parent___id',
+    ChildMarkdownRemarkParentParentChildren = 'childMarkdownRemark___parent___parent___children',
+    ChildMarkdownRemarkParentChildren = 'childMarkdownRemark___parent___children',
+    ChildMarkdownRemarkParentChildrenId = 'childMarkdownRemark___parent___children___id',
+    ChildMarkdownRemarkParentChildrenChildren = 'childMarkdownRemark___parent___children___children',
+    ChildMarkdownRemarkParentInternalContent = 'childMarkdownRemark___parent___internal___content',
+    ChildMarkdownRemarkParentInternalContentDigest = 'childMarkdownRemark___parent___internal___contentDigest',
+    ChildMarkdownRemarkParentInternalDescription = 'childMarkdownRemark___parent___internal___description',
+    ChildMarkdownRemarkParentInternalFieldOwners = 'childMarkdownRemark___parent___internal___fieldOwners',
+    ChildMarkdownRemarkParentInternalIgnoreType = 'childMarkdownRemark___parent___internal___ignoreType',
+    ChildMarkdownRemarkParentInternalMediaType = 'childMarkdownRemark___parent___internal___mediaType',
+    ChildMarkdownRemarkParentInternalOwner = 'childMarkdownRemark___parent___internal___owner',
+    ChildMarkdownRemarkParentInternalType = 'childMarkdownRemark___parent___internal___type',
+    ChildMarkdownRemarkChildren = 'childMarkdownRemark___children',
+    ChildMarkdownRemarkChildrenId = 'childMarkdownRemark___children___id',
+    ChildMarkdownRemarkChildrenParentId = 'childMarkdownRemark___children___parent___id',
+    ChildMarkdownRemarkChildrenParentChildren = 'childMarkdownRemark___children___parent___children',
+    ChildMarkdownRemarkChildrenChildren = 'childMarkdownRemark___children___children',
+    ChildMarkdownRemarkChildrenChildrenId = 'childMarkdownRemark___children___children___id',
+    ChildMarkdownRemarkChildrenChildrenChildren = 'childMarkdownRemark___children___children___children',
+    ChildMarkdownRemarkChildrenInternalContent = 'childMarkdownRemark___children___internal___content',
+    ChildMarkdownRemarkChildrenInternalContentDigest = 'childMarkdownRemark___children___internal___contentDigest',
+    ChildMarkdownRemarkChildrenInternalDescription = 'childMarkdownRemark___children___internal___description',
+    ChildMarkdownRemarkChildrenInternalFieldOwners = 'childMarkdownRemark___children___internal___fieldOwners',
+    ChildMarkdownRemarkChildrenInternalIgnoreType = 'childMarkdownRemark___children___internal___ignoreType',
+    ChildMarkdownRemarkChildrenInternalMediaType = 'childMarkdownRemark___children___internal___mediaType',
+    ChildMarkdownRemarkChildrenInternalOwner = 'childMarkdownRemark___children___internal___owner',
+    ChildMarkdownRemarkChildrenInternalType = 'childMarkdownRemark___children___internal___type',
+    ChildMarkdownRemarkInternalContent = 'childMarkdownRemark___internal___content',
+    ChildMarkdownRemarkInternalContentDigest = 'childMarkdownRemark___internal___contentDigest',
+    ChildMarkdownRemarkInternalDescription = 'childMarkdownRemark___internal___description',
+    ChildMarkdownRemarkInternalFieldOwners = 'childMarkdownRemark___internal___fieldOwners',
+    ChildMarkdownRemarkInternalIgnoreType = 'childMarkdownRemark___internal___ignoreType',
+    ChildMarkdownRemarkInternalMediaType = 'childMarkdownRemark___internal___mediaType',
+    ChildMarkdownRemarkInternalOwner = 'childMarkdownRemark___internal___owner',
+    ChildMarkdownRemarkInternalType = 'childMarkdownRemark___internal___type',
   }
 
   type FileFilterInput = {
@@ -1143,10 +1201,11 @@ declare module GraphQL {
     children?: Maybe<NodeFilterListInput>;
     internal?: Maybe<InternalFilterInput>;
     childrenNavigationJson?: Maybe<NavigationJsonFilterListInput>;
-    childDataJson?: Maybe<DataJsonFilterInput>;
     childrenSkillsJson?: Maybe<SkillsJsonFilterListInput>;
+    childDataJson?: Maybe<DataJsonFilterInput>;
     childrenTechnologiesJson?: Maybe<TechnologiesJsonFilterListInput>;
     childGmapsJson?: Maybe<GmapsJsonFilterInput>;
+    childMarkdownRemark?: Maybe<MarkdownRemarkFilterInput>;
   };
 
   type FileGroupConnection = {
@@ -1974,9 +2033,11 @@ declare module GraphQL {
   type MarkdownRemark = Node & {
     id: Scalars['ID'];
     frontmatter: Frontmatter;
+    excerpt?: Maybe<Scalars['String']>;
+    rawMarkdownBody?: Maybe<Scalars['String']>;
+    fileAbsolutePath?: Maybe<Scalars['String']>;
     html?: Maybe<Scalars['String']>;
     htmlAst?: Maybe<Scalars['JSON']>;
-    excerpt?: Maybe<Scalars['String']>;
     excerptAst?: Maybe<Scalars['JSON']>;
     headings?: Maybe<Array<Maybe<MarkdownHeading>>>;
     timeToRead?: Maybe<Scalars['Int']>;
@@ -2041,9 +2102,11 @@ declare module GraphQL {
     FrontmatterSlug = 'frontmatter___slug',
     FrontmatterTags = 'frontmatter___tags',
     FrontmatterTitle = 'frontmatter___title',
+    Excerpt = 'excerpt',
+    RawMarkdownBody = 'rawMarkdownBody',
+    FileAbsolutePath = 'fileAbsolutePath',
     Html = 'html',
     HtmlAst = 'htmlAst',
-    Excerpt = 'excerpt',
     ExcerptAst = 'excerptAst',
     Headings = 'headings',
     HeadingsValue = 'headings___value',
@@ -2143,9 +2206,11 @@ declare module GraphQL {
   type MarkdownRemarkFilterInput = {
     id?: Maybe<StringQueryOperatorInput>;
     frontmatter?: Maybe<FrontmatterFilterInput>;
+    excerpt?: Maybe<StringQueryOperatorInput>;
+    rawMarkdownBody?: Maybe<StringQueryOperatorInput>;
+    fileAbsolutePath?: Maybe<StringQueryOperatorInput>;
     html?: Maybe<StringQueryOperatorInput>;
     htmlAst?: Maybe<JsonQueryOperatorInput>;
-    excerpt?: Maybe<StringQueryOperatorInput>;
     excerptAst?: Maybe<JsonQueryOperatorInput>;
     headings?: Maybe<MarkdownHeadingFilterListInput>;
     timeToRead?: Maybe<IntQueryOperatorInput>;
@@ -2402,26 +2467,26 @@ declare module GraphQL {
     allFile: FileConnection;
     directory?: Maybe<Directory>;
     allDirectory: DirectoryConnection;
+    sitePage?: Maybe<SitePage>;
+    allSitePage: SitePageConnection;
     imageSharp?: Maybe<ImageSharp>;
     allImageSharp: ImageSharpConnection;
     markdownRemark?: Maybe<MarkdownRemark>;
     allMarkdownRemark: MarkdownRemarkConnection;
     gmapsJson?: Maybe<GmapsJson>;
     allGmapsJson: GmapsJsonConnection;
+    dataJson?: Maybe<DataJson>;
+    allDataJson: DataJsonConnection;
     technologiesJson?: Maybe<TechnologiesJson>;
     allTechnologiesJson: TechnologiesJsonConnection;
     skillsJson?: Maybe<SkillsJson>;
     allSkillsJson: SkillsJsonConnection;
-    dataJson?: Maybe<DataJson>;
-    allDataJson: DataJsonConnection;
     navigationJson?: Maybe<NavigationJson>;
     allNavigationJson: NavigationJsonConnection;
     site?: Maybe<Site>;
     allSite: SiteConnection;
     sitePlugin?: Maybe<SitePlugin>;
     allSitePlugin: SitePluginConnection;
-    sitePage?: Maybe<SitePage>;
-    allSitePage: SitePageConnection;
   };
 
   type QueryFileArgs = {
@@ -2465,10 +2530,11 @@ declare module GraphQL {
     children?: Maybe<NodeFilterListInput>;
     internal?: Maybe<InternalFilterInput>;
     childrenNavigationJson?: Maybe<NavigationJsonFilterListInput>;
-    childDataJson?: Maybe<DataJsonFilterInput>;
     childrenSkillsJson?: Maybe<SkillsJsonFilterListInput>;
+    childDataJson?: Maybe<DataJsonFilterInput>;
     childrenTechnologiesJson?: Maybe<TechnologiesJsonFilterListInput>;
     childGmapsJson?: Maybe<GmapsJsonFilterInput>;
+    childMarkdownRemark?: Maybe<MarkdownRemarkFilterInput>;
   };
 
   type QueryAllFileArgs = {
@@ -2525,6 +2591,30 @@ declare module GraphQL {
     limit?: Maybe<Scalars['Int']>;
   };
 
+  type QuerySitePageArgs = {
+    path?: Maybe<StringQueryOperatorInput>;
+    component?: Maybe<StringQueryOperatorInput>;
+    internalComponentName?: Maybe<StringQueryOperatorInput>;
+    componentChunkName?: Maybe<StringQueryOperatorInput>;
+    matchPath?: Maybe<StringQueryOperatorInput>;
+    id?: Maybe<StringQueryOperatorInput>;
+    parent?: Maybe<NodeFilterInput>;
+    children?: Maybe<NodeFilterListInput>;
+    internal?: Maybe<InternalFilterInput>;
+    isCreatedByStatefulCreatePages?: Maybe<BooleanQueryOperatorInput>;
+    context?: Maybe<SitePageContextFilterInput>;
+    pluginCreator?: Maybe<SitePluginFilterInput>;
+    pluginCreatorId?: Maybe<StringQueryOperatorInput>;
+    componentPath?: Maybe<StringQueryOperatorInput>;
+  };
+
+  type QueryAllSitePageArgs = {
+    filter?: Maybe<SitePageFilterInput>;
+    sort?: Maybe<SitePageSortInput>;
+    skip?: Maybe<Scalars['Int']>;
+    limit?: Maybe<Scalars['Int']>;
+  };
+
   type QueryImageSharpArgs = {
     fixed?: Maybe<ImageSharpFixedFilterInput>;
     resolutions?: Maybe<ImageSharpResolutionsFilterInput>;
@@ -2548,9 +2638,11 @@ declare module GraphQL {
   type QueryMarkdownRemarkArgs = {
     id?: Maybe<StringQueryOperatorInput>;
     frontmatter?: Maybe<FrontmatterFilterInput>;
+    excerpt?: Maybe<StringQueryOperatorInput>;
+    rawMarkdownBody?: Maybe<StringQueryOperatorInput>;
+    fileAbsolutePath?: Maybe<StringQueryOperatorInput>;
     html?: Maybe<StringQueryOperatorInput>;
     htmlAst?: Maybe<JsonQueryOperatorInput>;
-    excerpt?: Maybe<StringQueryOperatorInput>;
     excerptAst?: Maybe<JsonQueryOperatorInput>;
     headings?: Maybe<MarkdownHeadingFilterListInput>;
     timeToRead?: Maybe<IntQueryOperatorInput>;
@@ -2579,6 +2671,26 @@ declare module GraphQL {
   type QueryAllGmapsJsonArgs = {
     filter?: Maybe<GmapsJsonFilterInput>;
     sort?: Maybe<GmapsJsonSortInput>;
+    skip?: Maybe<Scalars['Int']>;
+    limit?: Maybe<Scalars['Int']>;
+  };
+
+  type QueryDataJsonArgs = {
+    id?: Maybe<StringQueryOperatorInput>;
+    parent?: Maybe<NodeFilterInput>;
+    children?: Maybe<NodeFilterListInput>;
+    internal?: Maybe<InternalFilterInput>;
+    company?: Maybe<DataJsonCompanyFilterInput>;
+    contacts?: Maybe<DataJsonContactsFilterListInput>;
+    jobTitle?: Maybe<StringQueryOperatorInput>;
+    location?: Maybe<DataJsonLocationFilterInput>;
+    openToGigs?: Maybe<BooleanQueryOperatorInput>;
+    resumeFile?: Maybe<StringQueryOperatorInput>;
+  };
+
+  type QueryAllDataJsonArgs = {
+    filter?: Maybe<DataJsonFilterInput>;
+    sort?: Maybe<DataJsonSortInput>;
     skip?: Maybe<Scalars['Int']>;
     limit?: Maybe<Scalars['Int']>;
   };
@@ -2613,26 +2725,6 @@ declare module GraphQL {
   type QueryAllSkillsJsonArgs = {
     filter?: Maybe<SkillsJsonFilterInput>;
     sort?: Maybe<SkillsJsonSortInput>;
-    skip?: Maybe<Scalars['Int']>;
-    limit?: Maybe<Scalars['Int']>;
-  };
-
-  type QueryDataJsonArgs = {
-    id?: Maybe<StringQueryOperatorInput>;
-    parent?: Maybe<NodeFilterInput>;
-    children?: Maybe<NodeFilterListInput>;
-    internal?: Maybe<InternalFilterInput>;
-    company?: Maybe<DataJsonCompanyFilterInput>;
-    contacts?: Maybe<DataJsonContactsFilterListInput>;
-    jobTitle?: Maybe<StringQueryOperatorInput>;
-    location?: Maybe<DataJsonLocationFilterInput>;
-    openToGigs?: Maybe<BooleanQueryOperatorInput>;
-    resumeFile?: Maybe<StringQueryOperatorInput>;
-  };
-
-  type QueryAllDataJsonArgs = {
-    filter?: Maybe<DataJsonFilterInput>;
-    sort?: Maybe<DataJsonSortInput>;
     skip?: Maybe<Scalars['Int']>;
     limit?: Maybe<Scalars['Int']>;
   };
@@ -2697,28 +2789,6 @@ declare module GraphQL {
   type QueryAllSitePluginArgs = {
     filter?: Maybe<SitePluginFilterInput>;
     sort?: Maybe<SitePluginSortInput>;
-    skip?: Maybe<Scalars['Int']>;
-    limit?: Maybe<Scalars['Int']>;
-  };
-
-  type QuerySitePageArgs = {
-    id?: Maybe<StringQueryOperatorInput>;
-    parent?: Maybe<NodeFilterInput>;
-    children?: Maybe<NodeFilterListInput>;
-    internal?: Maybe<InternalFilterInput>;
-    path?: Maybe<StringQueryOperatorInput>;
-    internalComponentName?: Maybe<StringQueryOperatorInput>;
-    component?: Maybe<StringQueryOperatorInput>;
-    componentChunkName?: Maybe<StringQueryOperatorInput>;
-    isCreatedByStatefulCreatePages?: Maybe<BooleanQueryOperatorInput>;
-    pluginCreator?: Maybe<SitePluginFilterInput>;
-    pluginCreatorId?: Maybe<StringQueryOperatorInput>;
-    componentPath?: Maybe<StringQueryOperatorInput>;
-  };
-
-  type QueryAllSitePageArgs = {
-    filter?: Maybe<SitePageFilterInput>;
-    sort?: Maybe<SitePageSortInput>;
     skip?: Maybe<Scalars['Int']>;
     limit?: Maybe<Scalars['Int']>;
   };
@@ -2894,15 +2964,17 @@ declare module GraphQL {
   };
 
   type SitePage = Node & {
+    path: Scalars['String'];
+    component: Scalars['String'];
+    internalComponentName: Scalars['String'];
+    componentChunkName: Scalars['String'];
+    matchPath?: Maybe<Scalars['String']>;
     id: Scalars['ID'];
     parent?: Maybe<Node>;
     children: Array<Node>;
     internal: Internal;
-    path?: Maybe<Scalars['String']>;
-    internalComponentName?: Maybe<Scalars['String']>;
-    component?: Maybe<Scalars['String']>;
-    componentChunkName?: Maybe<Scalars['String']>;
     isCreatedByStatefulCreatePages?: Maybe<Scalars['Boolean']>;
+    context?: Maybe<SitePageContext>;
     pluginCreator?: Maybe<SitePlugin>;
     pluginCreatorId?: Maybe<Scalars['String']>;
     componentPath?: Maybe<Scalars['String']>;
@@ -2927,6 +2999,224 @@ declare module GraphQL {
     field: SitePageFieldsEnum;
   };
 
+  type SitePageContext = {
+    frontmatter?: Maybe<SitePageContextFrontmatter>;
+    htmlAst?: Maybe<SitePageContextHtmlAst>;
+    previous?: Maybe<Scalars['String']>;
+    next?: Maybe<Scalars['String']>;
+    timeToRead?: Maybe<Scalars['Int']>;
+  };
+
+  type SitePageContextFilterInput = {
+    frontmatter?: Maybe<SitePageContextFrontmatterFilterInput>;
+    htmlAst?: Maybe<SitePageContextHtmlAstFilterInput>;
+    previous?: Maybe<StringQueryOperatorInput>;
+    next?: Maybe<StringQueryOperatorInput>;
+    timeToRead?: Maybe<IntQueryOperatorInput>;
+  };
+
+  type SitePageContextFrontmatter = {
+    date?: Maybe<Scalars['Date']>;
+    keywords?: Maybe<Scalars['String']>;
+    slug?: Maybe<Scalars['String']>;
+    title?: Maybe<Scalars['String']>;
+  };
+
+  type SitePageContextFrontmatterFilterInput = {
+    date?: Maybe<DateQueryOperatorInput>;
+    keywords?: Maybe<StringQueryOperatorInput>;
+    slug?: Maybe<StringQueryOperatorInput>;
+    title?: Maybe<StringQueryOperatorInput>;
+  };
+
+  type SitePageContextHtmlAst = {
+    type?: Maybe<Scalars['String']>;
+    children?: Maybe<Array<Maybe<SitePageContextHtmlAstChildren>>>;
+    data?: Maybe<SitePageContextHtmlAstData>;
+  };
+
+  type SitePageContextHtmlAstChildren = {
+    type?: Maybe<Scalars['String']>;
+    tagName?: Maybe<Scalars['String']>;
+    properties?: Maybe<SitePageContextHtmlAstChildrenProperties>;
+    children?: Maybe<Array<Maybe<SitePageContextHtmlAstChildrenChildren>>>;
+    value?: Maybe<Scalars['String']>;
+  };
+
+  type SitePageContextHtmlAstChildrenChildren = {
+    type?: Maybe<Scalars['String']>;
+    value?: Maybe<Scalars['String']>;
+    tagName?: Maybe<Scalars['String']>;
+    properties?: Maybe<SitePageContextHtmlAstChildrenChildrenProperties>;
+    children?: Maybe<Array<Maybe<SitePageContextHtmlAstChildrenChildrenChildren>>>;
+  };
+
+  type SitePageContextHtmlAstChildrenChildrenChildren = {
+    type?: Maybe<Scalars['String']>;
+    value?: Maybe<Scalars['String']>;
+    tagName?: Maybe<Scalars['String']>;
+    properties?: Maybe<SitePageContextHtmlAstChildrenChildrenChildrenProperties>;
+    children?: Maybe<Array<Maybe<SitePageContextHtmlAstChildrenChildrenChildrenChildren>>>;
+  };
+
+  type SitePageContextHtmlAstChildrenChildrenChildrenChildren = {
+    type?: Maybe<Scalars['String']>;
+    value?: Maybe<Scalars['String']>;
+    tagName?: Maybe<Scalars['String']>;
+    properties?: Maybe<SitePageContextHtmlAstChildrenChildrenChildrenChildrenProperties>;
+    children?: Maybe<Array<Maybe<SitePageContextHtmlAstChildrenChildrenChildrenChildrenChildren>>>;
+  };
+
+  type SitePageContextHtmlAstChildrenChildrenChildrenChildrenChildren = {
+    type?: Maybe<Scalars['String']>;
+    value?: Maybe<Scalars['String']>;
+    tagName?: Maybe<Scalars['String']>;
+    properties?: Maybe<SitePageContextHtmlAstChildrenChildrenChildrenChildrenChildrenProperties>;
+  };
+
+  type SitePageContextHtmlAstChildrenChildrenChildrenChildrenChildrenFilterInput = {
+    type?: Maybe<StringQueryOperatorInput>;
+    value?: Maybe<StringQueryOperatorInput>;
+    tagName?: Maybe<StringQueryOperatorInput>;
+    properties?: Maybe<SitePageContextHtmlAstChildrenChildrenChildrenChildrenChildrenPropertiesFilterInput>;
+  };
+
+  type SitePageContextHtmlAstChildrenChildrenChildrenChildrenChildrenFilterListInput = {
+    elemMatch?: Maybe<SitePageContextHtmlAstChildrenChildrenChildrenChildrenChildrenFilterInput>;
+  };
+
+  type SitePageContextHtmlAstChildrenChildrenChildrenChildrenChildrenProperties = {
+    srcSet?: Maybe<Array<Maybe<Scalars['String']>>>;
+    sizes?: Maybe<Array<Maybe<Scalars['String']>>>;
+    type?: Maybe<Scalars['String']>;
+    className?: Maybe<Array<Maybe<Scalars['String']>>>;
+    src?: Maybe<Scalars['String']>;
+    alt?: Maybe<Scalars['String']>;
+    title?: Maybe<Scalars['String']>;
+    loading?: Maybe<Scalars['String']>;
+    style?: Maybe<Scalars['String']>;
+  };
+
+  type SitePageContextHtmlAstChildrenChildrenChildrenChildrenChildrenPropertiesFilterInput = {
+    srcSet?: Maybe<StringQueryOperatorInput>;
+    sizes?: Maybe<StringQueryOperatorInput>;
+    type?: Maybe<StringQueryOperatorInput>;
+    className?: Maybe<StringQueryOperatorInput>;
+    src?: Maybe<StringQueryOperatorInput>;
+    alt?: Maybe<StringQueryOperatorInput>;
+    title?: Maybe<StringQueryOperatorInput>;
+    loading?: Maybe<StringQueryOperatorInput>;
+    style?: Maybe<StringQueryOperatorInput>;
+  };
+
+  type SitePageContextHtmlAstChildrenChildrenChildrenChildrenFilterInput = {
+    type?: Maybe<StringQueryOperatorInput>;
+    value?: Maybe<StringQueryOperatorInput>;
+    tagName?: Maybe<StringQueryOperatorInput>;
+    properties?: Maybe<SitePageContextHtmlAstChildrenChildrenChildrenChildrenPropertiesFilterInput>;
+    children?: Maybe<SitePageContextHtmlAstChildrenChildrenChildrenChildrenChildrenFilterListInput>;
+  };
+
+  type SitePageContextHtmlAstChildrenChildrenChildrenChildrenFilterListInput = {
+    elemMatch?: Maybe<SitePageContextHtmlAstChildrenChildrenChildrenChildrenFilterInput>;
+  };
+
+  type SitePageContextHtmlAstChildrenChildrenChildrenChildrenProperties = {
+    className?: Maybe<Array<Maybe<Scalars['String']>>>;
+    style?: Maybe<Scalars['String']>;
+  };
+
+  type SitePageContextHtmlAstChildrenChildrenChildrenChildrenPropertiesFilterInput = {
+    className?: Maybe<StringQueryOperatorInput>;
+    style?: Maybe<StringQueryOperatorInput>;
+  };
+
+  type SitePageContextHtmlAstChildrenChildrenChildrenFilterInput = {
+    type?: Maybe<StringQueryOperatorInput>;
+    value?: Maybe<StringQueryOperatorInput>;
+    tagName?: Maybe<StringQueryOperatorInput>;
+    properties?: Maybe<SitePageContextHtmlAstChildrenChildrenChildrenPropertiesFilterInput>;
+    children?: Maybe<SitePageContextHtmlAstChildrenChildrenChildrenChildrenFilterListInput>;
+  };
+
+  type SitePageContextHtmlAstChildrenChildrenChildrenFilterListInput = {
+    elemMatch?: Maybe<SitePageContextHtmlAstChildrenChildrenChildrenFilterInput>;
+  };
+
+  type SitePageContextHtmlAstChildrenChildrenChildrenProperties = {
+    className?: Maybe<Array<Maybe<Scalars['String']>>>;
+    href?: Maybe<Scalars['String']>;
+    style?: Maybe<Scalars['String']>;
+    target?: Maybe<Scalars['String']>;
+    rel?: Maybe<Array<Maybe<Scalars['String']>>>;
+  };
+
+  type SitePageContextHtmlAstChildrenChildrenChildrenPropertiesFilterInput = {
+    className?: Maybe<StringQueryOperatorInput>;
+    href?: Maybe<StringQueryOperatorInput>;
+    style?: Maybe<StringQueryOperatorInput>;
+    target?: Maybe<StringQueryOperatorInput>;
+    rel?: Maybe<StringQueryOperatorInput>;
+  };
+
+  type SitePageContextHtmlAstChildrenChildrenFilterInput = {
+    type?: Maybe<StringQueryOperatorInput>;
+    value?: Maybe<StringQueryOperatorInput>;
+    tagName?: Maybe<StringQueryOperatorInput>;
+    properties?: Maybe<SitePageContextHtmlAstChildrenChildrenPropertiesFilterInput>;
+    children?: Maybe<SitePageContextHtmlAstChildrenChildrenChildrenFilterListInput>;
+  };
+
+  type SitePageContextHtmlAstChildrenChildrenFilterListInput = {
+    elemMatch?: Maybe<SitePageContextHtmlAstChildrenChildrenFilterInput>;
+  };
+
+  type SitePageContextHtmlAstChildrenChildrenProperties = {
+    className?: Maybe<Array<Maybe<Scalars['String']>>>;
+    style?: Maybe<Scalars['String']>;
+  };
+
+  type SitePageContextHtmlAstChildrenChildrenPropertiesFilterInput = {
+    className?: Maybe<StringQueryOperatorInput>;
+    style?: Maybe<StringQueryOperatorInput>;
+  };
+
+  type SitePageContextHtmlAstChildrenFilterInput = {
+    type?: Maybe<StringQueryOperatorInput>;
+    tagName?: Maybe<StringQueryOperatorInput>;
+    properties?: Maybe<SitePageContextHtmlAstChildrenPropertiesFilterInput>;
+    children?: Maybe<SitePageContextHtmlAstChildrenChildrenFilterListInput>;
+    value?: Maybe<StringQueryOperatorInput>;
+  };
+
+  type SitePageContextHtmlAstChildrenFilterListInput = {
+    elemMatch?: Maybe<SitePageContextHtmlAstChildrenFilterInput>;
+  };
+
+  type SitePageContextHtmlAstChildrenProperties = {
+    className?: Maybe<Array<Maybe<Scalars['String']>>>;
+    dataLanguage?: Maybe<Scalars['String']>;
+  };
+
+  type SitePageContextHtmlAstChildrenPropertiesFilterInput = {
+    className?: Maybe<StringQueryOperatorInput>;
+    dataLanguage?: Maybe<StringQueryOperatorInput>;
+  };
+
+  type SitePageContextHtmlAstData = {
+    quirksMode?: Maybe<Scalars['Boolean']>;
+  };
+
+  type SitePageContextHtmlAstDataFilterInput = {
+    quirksMode?: Maybe<BooleanQueryOperatorInput>;
+  };
+
+  type SitePageContextHtmlAstFilterInput = {
+    type?: Maybe<StringQueryOperatorInput>;
+    children?: Maybe<SitePageContextHtmlAstChildrenFilterListInput>;
+    data?: Maybe<SitePageContextHtmlAstDataFilterInput>;
+  };
+
   type SitePageEdge = {
     next?: Maybe<SitePage>;
     node: SitePage;
@@ -2934,6 +3224,11 @@ declare module GraphQL {
   };
 
   enum SitePageFieldsEnum {
+    Path = 'path',
+    Component = 'component',
+    InternalComponentName = 'internalComponentName',
+    ComponentChunkName = 'componentChunkName',
+    MatchPath = 'matchPath',
     Id = 'id',
     ParentId = 'parent___id',
     ParentParentId = 'parent___parent___id',
@@ -3020,11 +3315,21 @@ declare module GraphQL {
     InternalMediaType = 'internal___mediaType',
     InternalOwner = 'internal___owner',
     InternalType = 'internal___type',
-    Path = 'path',
-    InternalComponentName = 'internalComponentName',
-    Component = 'component',
-    ComponentChunkName = 'componentChunkName',
     IsCreatedByStatefulCreatePages = 'isCreatedByStatefulCreatePages',
+    ContextFrontmatterDate = 'context___frontmatter___date',
+    ContextFrontmatterKeywords = 'context___frontmatter___keywords',
+    ContextFrontmatterSlug = 'context___frontmatter___slug',
+    ContextFrontmatterTitle = 'context___frontmatter___title',
+    ContextHtmlAstType = 'context___htmlAst___type',
+    ContextHtmlAstChildren = 'context___htmlAst___children',
+    ContextHtmlAstChildrenType = 'context___htmlAst___children___type',
+    ContextHtmlAstChildrenTagName = 'context___htmlAst___children___tagName',
+    ContextHtmlAstChildrenChildren = 'context___htmlAst___children___children',
+    ContextHtmlAstChildrenValue = 'context___htmlAst___children___value',
+    ContextHtmlAstDataQuirksMode = 'context___htmlAst___data___quirksMode',
+    ContextPrevious = 'context___previous',
+    ContextNext = 'context___next',
+    ContextTimeToRead = 'context___timeToRead',
     PluginCreatorId = 'pluginCreator___id',
     PluginCreatorParentId = 'pluginCreator___parent___id',
     PluginCreatorParentParentId = 'pluginCreator___parent___parent___id',
@@ -3089,7 +3394,18 @@ declare module GraphQL {
     PluginCreatorPluginOptionsMaxWidth = 'pluginCreator___pluginOptions___maxWidth',
     PluginCreatorPluginOptionsQuality = 'pluginCreator___pluginOptions___quality',
     PluginCreatorPluginOptionsWithWebp = 'pluginCreator___pluginOptions___withWebp',
+    PluginCreatorPluginOptionsPathPrefix = 'pluginCreator___pluginOptions___pathPrefix',
+    PluginCreatorPluginOptionsWrapperStyle = 'pluginCreator___pluginOptions___wrapperStyle',
+    PluginCreatorPluginOptionsBackgroundColor = 'pluginCreator___pluginOptions___backgroundColor',
+    PluginCreatorPluginOptionsLinkImagesToOriginal = 'pluginCreator___pluginOptions___linkImagesToOriginal',
+    PluginCreatorPluginOptionsShowCaptions = 'pluginCreator___pluginOptions___showCaptions',
+    PluginCreatorPluginOptionsMarkdownCaptions = 'pluginCreator___pluginOptions___markdownCaptions',
+    PluginCreatorPluginOptionsTracedSvg = 'pluginCreator___pluginOptions___tracedSVG',
+    PluginCreatorPluginOptionsLoading = 'pluginCreator___pluginOptions___loading',
+    PluginCreatorPluginOptionsDisableBgImageOnAlpha = 'pluginCreator___pluginOptions___disableBgImageOnAlpha',
+    PluginCreatorPluginOptionsDisableBgImage = 'pluginCreator___pluginOptions___disableBgImage',
     PluginCreatorPluginOptionsColorTheme = 'pluginCreator___pluginOptions___colorTheme',
+    PluginCreatorPluginOptionsWrapperClassName = 'pluginCreator___pluginOptions___wrapperClassName',
     PluginCreatorPluginOptionsPathCheck = 'pluginCreator___pluginOptions___pathCheck',
     PluginCreatorNodeApIs = 'pluginCreator___nodeAPIs',
     PluginCreatorBrowserApIs = 'pluginCreator___browserAPIs',
@@ -3115,15 +3431,17 @@ declare module GraphQL {
   }
 
   type SitePageFilterInput = {
+    path?: Maybe<StringQueryOperatorInput>;
+    component?: Maybe<StringQueryOperatorInput>;
+    internalComponentName?: Maybe<StringQueryOperatorInput>;
+    componentChunkName?: Maybe<StringQueryOperatorInput>;
+    matchPath?: Maybe<StringQueryOperatorInput>;
     id?: Maybe<StringQueryOperatorInput>;
     parent?: Maybe<NodeFilterInput>;
     children?: Maybe<NodeFilterListInput>;
     internal?: Maybe<InternalFilterInput>;
-    path?: Maybe<StringQueryOperatorInput>;
-    internalComponentName?: Maybe<StringQueryOperatorInput>;
-    component?: Maybe<StringQueryOperatorInput>;
-    componentChunkName?: Maybe<StringQueryOperatorInput>;
     isCreatedByStatefulCreatePages?: Maybe<BooleanQueryOperatorInput>;
+    context?: Maybe<SitePageContextFilterInput>;
     pluginCreator?: Maybe<SitePluginFilterInput>;
     pluginCreatorId?: Maybe<StringQueryOperatorInput>;
     componentPath?: Maybe<StringQueryOperatorInput>;
@@ -3282,7 +3600,18 @@ declare module GraphQL {
     PluginOptionsPluginsPluginOptionsMaxWidth = 'pluginOptions___plugins___pluginOptions___maxWidth',
     PluginOptionsPluginsPluginOptionsQuality = 'pluginOptions___plugins___pluginOptions___quality',
     PluginOptionsPluginsPluginOptionsWithWebp = 'pluginOptions___plugins___pluginOptions___withWebp',
+    PluginOptionsPluginsPluginOptionsPathPrefix = 'pluginOptions___plugins___pluginOptions___pathPrefix',
+    PluginOptionsPluginsPluginOptionsWrapperStyle = 'pluginOptions___plugins___pluginOptions___wrapperStyle',
+    PluginOptionsPluginsPluginOptionsBackgroundColor = 'pluginOptions___plugins___pluginOptions___backgroundColor',
+    PluginOptionsPluginsPluginOptionsLinkImagesToOriginal = 'pluginOptions___plugins___pluginOptions___linkImagesToOriginal',
+    PluginOptionsPluginsPluginOptionsShowCaptions = 'pluginOptions___plugins___pluginOptions___showCaptions',
+    PluginOptionsPluginsPluginOptionsMarkdownCaptions = 'pluginOptions___plugins___pluginOptions___markdownCaptions',
+    PluginOptionsPluginsPluginOptionsTracedSvg = 'pluginOptions___plugins___pluginOptions___tracedSVG',
+    PluginOptionsPluginsPluginOptionsLoading = 'pluginOptions___plugins___pluginOptions___loading',
+    PluginOptionsPluginsPluginOptionsDisableBgImageOnAlpha = 'pluginOptions___plugins___pluginOptions___disableBgImageOnAlpha',
+    PluginOptionsPluginsPluginOptionsDisableBgImage = 'pluginOptions___plugins___pluginOptions___disableBgImage',
     PluginOptionsPluginsPluginOptionsColorTheme = 'pluginOptions___plugins___pluginOptions___colorTheme',
+    PluginOptionsPluginsPluginOptionsWrapperClassName = 'pluginOptions___plugins___pluginOptions___wrapperClassName',
     PluginOptionsPluginsBrowserApIs = 'pluginOptions___plugins___browserAPIs',
     PluginOptionsPluginsPluginFilepath = 'pluginOptions___plugins___pluginFilepath',
     PluginOptionsCookieDomain = 'pluginOptions___cookieDomain',
@@ -3301,7 +3630,18 @@ declare module GraphQL {
     PluginOptionsMaxWidth = 'pluginOptions___maxWidth',
     PluginOptionsQuality = 'pluginOptions___quality',
     PluginOptionsWithWebp = 'pluginOptions___withWebp',
+    PluginOptionsPathPrefix = 'pluginOptions___pathPrefix',
+    PluginOptionsWrapperStyle = 'pluginOptions___wrapperStyle',
+    PluginOptionsBackgroundColor = 'pluginOptions___backgroundColor',
+    PluginOptionsLinkImagesToOriginal = 'pluginOptions___linkImagesToOriginal',
+    PluginOptionsShowCaptions = 'pluginOptions___showCaptions',
+    PluginOptionsMarkdownCaptions = 'pluginOptions___markdownCaptions',
+    PluginOptionsTracedSvg = 'pluginOptions___tracedSVG',
+    PluginOptionsLoading = 'pluginOptions___loading',
+    PluginOptionsDisableBgImageOnAlpha = 'pluginOptions___disableBgImageOnAlpha',
+    PluginOptionsDisableBgImage = 'pluginOptions___disableBgImage',
     PluginOptionsColorTheme = 'pluginOptions___colorTheme',
+    PluginOptionsWrapperClassName = 'pluginOptions___wrapperClassName',
     PluginOptionsPathCheck = 'pluginOptions___pathCheck',
     NodeApIs = 'nodeAPIs',
     BrowserApIs = 'browserAPIs',
@@ -3433,7 +3773,18 @@ declare module GraphQL {
     maxWidth?: Maybe<Scalars['Int']>;
     quality?: Maybe<Scalars['Int']>;
     withWebp?: Maybe<Scalars['Boolean']>;
+    pathPrefix?: Maybe<Scalars['String']>;
+    wrapperStyle?: Maybe<Scalars['String']>;
+    backgroundColor?: Maybe<Scalars['String']>;
+    linkImagesToOriginal?: Maybe<Scalars['Boolean']>;
+    showCaptions?: Maybe<Scalars['Boolean']>;
+    markdownCaptions?: Maybe<Scalars['Boolean']>;
+    tracedSVG?: Maybe<Scalars['Boolean']>;
+    loading?: Maybe<Scalars['String']>;
+    disableBgImageOnAlpha?: Maybe<Scalars['Boolean']>;
+    disableBgImage?: Maybe<Scalars['Boolean']>;
     colorTheme?: Maybe<Scalars['String']>;
+    wrapperClassName?: Maybe<Scalars['String']>;
     pathCheck?: Maybe<Scalars['Boolean']>;
   };
 
@@ -3455,7 +3806,18 @@ declare module GraphQL {
     maxWidth?: Maybe<IntQueryOperatorInput>;
     quality?: Maybe<IntQueryOperatorInput>;
     withWebp?: Maybe<BooleanQueryOperatorInput>;
+    pathPrefix?: Maybe<StringQueryOperatorInput>;
+    wrapperStyle?: Maybe<StringQueryOperatorInput>;
+    backgroundColor?: Maybe<StringQueryOperatorInput>;
+    linkImagesToOriginal?: Maybe<BooleanQueryOperatorInput>;
+    showCaptions?: Maybe<BooleanQueryOperatorInput>;
+    markdownCaptions?: Maybe<BooleanQueryOperatorInput>;
+    tracedSVG?: Maybe<BooleanQueryOperatorInput>;
+    loading?: Maybe<StringQueryOperatorInput>;
+    disableBgImageOnAlpha?: Maybe<BooleanQueryOperatorInput>;
+    disableBgImage?: Maybe<BooleanQueryOperatorInput>;
     colorTheme?: Maybe<StringQueryOperatorInput>;
+    wrapperClassName?: Maybe<StringQueryOperatorInput>;
     pathCheck?: Maybe<BooleanQueryOperatorInput>;
   };
 
@@ -3487,14 +3849,36 @@ declare module GraphQL {
     maxWidth?: Maybe<Scalars['Int']>;
     quality?: Maybe<Scalars['Int']>;
     withWebp?: Maybe<Scalars['Boolean']>;
+    pathPrefix?: Maybe<Scalars['String']>;
+    wrapperStyle?: Maybe<Scalars['String']>;
+    backgroundColor?: Maybe<Scalars['String']>;
+    linkImagesToOriginal?: Maybe<Scalars['Boolean']>;
+    showCaptions?: Maybe<Scalars['Boolean']>;
+    markdownCaptions?: Maybe<Scalars['Boolean']>;
+    tracedSVG?: Maybe<Scalars['Boolean']>;
+    loading?: Maybe<Scalars['String']>;
+    disableBgImageOnAlpha?: Maybe<Scalars['Boolean']>;
+    disableBgImage?: Maybe<Scalars['Boolean']>;
     colorTheme?: Maybe<Scalars['String']>;
+    wrapperClassName?: Maybe<Scalars['String']>;
   };
 
   type SitePluginPluginOptionsPluginsPluginOptionsFilterInput = {
     maxWidth?: Maybe<IntQueryOperatorInput>;
     quality?: Maybe<IntQueryOperatorInput>;
     withWebp?: Maybe<BooleanQueryOperatorInput>;
+    pathPrefix?: Maybe<StringQueryOperatorInput>;
+    wrapperStyle?: Maybe<StringQueryOperatorInput>;
+    backgroundColor?: Maybe<StringQueryOperatorInput>;
+    linkImagesToOriginal?: Maybe<BooleanQueryOperatorInput>;
+    showCaptions?: Maybe<BooleanQueryOperatorInput>;
+    markdownCaptions?: Maybe<BooleanQueryOperatorInput>;
+    tracedSVG?: Maybe<BooleanQueryOperatorInput>;
+    loading?: Maybe<StringQueryOperatorInput>;
+    disableBgImageOnAlpha?: Maybe<BooleanQueryOperatorInput>;
+    disableBgImage?: Maybe<BooleanQueryOperatorInput>;
     colorTheme?: Maybe<StringQueryOperatorInput>;
+    wrapperClassName?: Maybe<StringQueryOperatorInput>;
   };
 
   type SitePluginSortInput = {
@@ -4070,6 +4454,34 @@ declare module GraphQL {
     sizes: string;
   };
 
+  type LocationMapDataQueryVariables = {};
+
+  type LocationMapDataQuery = {
+    dataJson: Maybe<{ location: Maybe<{ lat: Maybe<number>; lng: Maybe<number> }> }>;
+    gmapsJson: Maybe<{
+      styles: Maybe<{
+        dark: Maybe<
+          Array<
+            Maybe<{
+              elementType: Maybe<string>;
+              featureType: Maybe<string>;
+              stylers: Maybe<Array<Maybe<{ color: Maybe<string> }>>>;
+            }>
+          >
+        >;
+        light: Maybe<
+          Array<
+            Maybe<{
+              elementType: Maybe<string>;
+              featureType: Maybe<string>;
+              stylers: Maybe<Array<Maybe<{ color: Maybe<string> }>>>;
+            }>
+          >
+        >;
+      }>;
+    }>;
+  };
+
   type SeoDataQueryVariables = {};
 
   type SeoDataQuery = {
@@ -4120,34 +4532,6 @@ declare module GraphQL {
     dataJson: Maybe<{ resumeFile: Maybe<string> }>;
   };
 
-  type LocationMapDataQueryVariables = {};
-
-  type LocationMapDataQuery = {
-    dataJson: Maybe<{ location: Maybe<{ lat: Maybe<number>; lng: Maybe<number> }> }>;
-    gmapsJson: Maybe<{
-      styles: Maybe<{
-        dark: Maybe<
-          Array<
-            Maybe<{
-              elementType: Maybe<string>;
-              featureType: Maybe<string>;
-              stylers: Maybe<Array<Maybe<{ color: Maybe<string> }>>>;
-            }>
-          >
-        >;
-        light: Maybe<
-          Array<
-            Maybe<{
-              elementType: Maybe<string>;
-              featureType: Maybe<string>;
-              stylers: Maybe<Array<Maybe<{ color: Maybe<string> }>>>;
-            }>
-          >
-        >;
-      }>;
-    }>;
-  };
-
   type NotFoundPageQueryVariables = {};
 
   type NotFoundPageQuery = { pageData: Maybe<{ keywords: Maybe<Array<Maybe<string>>>; name: Maybe<string> }> };
@@ -4196,16 +4580,5 @@ declare module GraphQL {
       }>;
     };
     pageData: Maybe<{ keywords: Maybe<Array<Maybe<string>>>; name: Maybe<string> }>;
-  };
-
-  type PostDataQueryVariables = {
-    path: Scalars['String'];
-  };
-
-  type PostDataQuery = {
-    markdownRemark: Maybe<{
-      htmlAst: Maybe<any>;
-      frontmatter: { date: string; keywords: string; slug: string; title: string };
-    }>;
   };
 }

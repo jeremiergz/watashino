@@ -1,4 +1,3 @@
-import { graphql } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 import Chip from '../components/common/Chip';
@@ -11,10 +10,17 @@ import { getMonthAndDay } from '../utils/Date';
 import { renderASTToJSX } from '../utils/HTML';
 
 type PostProps = {
-  data: GraphQL.PostDataQuery;
   pageContext: {
+    htmlAst: any;
+    frontmatter: {
+      date: string;
+      keywords: string;
+      slug: string;
+      title: string;
+    };
     next: string;
     previous: string;
+    timeToRead: number;
   };
 };
 
@@ -29,14 +35,14 @@ const Chips = styled(Flex)`
   }
 `;
 
-const Post = ({ data, pageContext }: PostProps) => {
-  const { next, previous } = pageContext;
+const Post = ({ pageContext }: PostProps) => {
   const {
-    markdownRemark: {
-      frontmatter: { date: rawDate, keywords: rawKeywords, slug, title },
-      htmlAst,
-    },
-  } = data;
+    frontmatter: { date: rawDate, keywords: rawKeywords, slug, title },
+    htmlAst,
+    previous,
+    next,
+    timeToRead,
+  } = pageContext;
   const date = new Date(rawDate);
   const keywords = rawKeywords.split(',');
   const [month, day] = getMonthAndDay(date);
@@ -66,6 +72,9 @@ const Post = ({ data, pageContext }: PostProps) => {
             {displayedDate}
           </Text>
         </Flex>
+        <Text color="gray" fontSize={14}>
+          {timeToRead} min read
+        </Text>
         <PreviousNextNavigation marginBottom={5} marginTop={3} next={next} previous={previous} />
         {renderedJSX}
         <PreviousNextNavigation marginTop={5} next={next} previous={previous} />
@@ -74,17 +83,4 @@ const Post = ({ data, pageContext }: PostProps) => {
   );
 };
 
-export const query = graphql`
-  query PostData($path: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $path } }) {
-      htmlAst
-      frontmatter {
-        date
-        keywords
-        slug
-        title
-      }
-    }
-  }
-`;
 export default Post;

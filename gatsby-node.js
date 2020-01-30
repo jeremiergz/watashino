@@ -24,21 +24,29 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         mdData: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
           nodes {
             frontmatter {
+              date
+              keywords
               slug
+              title
             }
+            htmlAst
+            timeToRead
           }
         }
       }
     `);
     if (errors) return reporter.panicOnBuild('Error while running GraphQL query');
-    posts.forEach(({ frontmatter }, index) => {
+    posts.forEach(({ frontmatter, htmlAst, timeToRead }, index) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].frontmatter.slug;
       const next = index === 0 ? null : posts[index - 1].frontmatter.slug;
       createPage({
         component: path.resolve('src/templates/Post.tsx'),
         context: {
+          frontmatter,
+          htmlAst,
           previous,
           next,
+          timeToRead,
         },
         path: frontmatter.slug,
       });
