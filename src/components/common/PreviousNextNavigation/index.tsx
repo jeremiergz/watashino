@@ -14,42 +14,14 @@ const PreviousNextNavigation = ({ next, previous, ...rest }: PreviousNextNavigat
     shouldDisplay && (
       <Flex justifyContent="space-between" {...rest}>
         {previous ? (
-          <Link
-            backgroundColor="dark"
-            borderBottomLeftRadius={16}
-            borderBottomRightRadius={4}
-            borderTopLeftRadius={16}
-            borderTopRightRadius={4}
-            color="white"
-            fontSize={16}
-            fontWeight="semi-bold"
-            paddingBottom="3px"
-            paddingLeft={3}
-            paddingRight={2}
-            paddingTop="2px"
-            to={previous}
-          >
+          <Link fontSize={16} fontWeight="semi-bold" to={previous} variant="underlined">
             {'Prev'}
           </Link>
         ) : (
           <Box />
         )}
         {next ? (
-          <Link
-            backgroundColor="dark"
-            borderBottomLeftRadius={4}
-            borderBottomRightRadius={16}
-            borderTopLeftRadius={4}
-            borderTopRightRadius={16}
-            color="white"
-            fontSize={16}
-            fontWeight="semi-bold"
-            paddingBottom="3px"
-            paddingLeft={2}
-            paddingRight={3}
-            paddingTop="2px"
-            to={next}
-          >
+          <Link fontSize={16} fontWeight="semi-bold" to={next} variant="underlined">
             {'Next'}
           </Link>
         ) : (

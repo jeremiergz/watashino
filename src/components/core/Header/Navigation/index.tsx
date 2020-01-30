@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from 'gatsby';
-import React, { ReactNode } from 'react';
+import React from 'react';
 import { Routes } from '../../../../utils/Routes';
 import Anchor from '../../../common/Anchor';
 import Link from '../../../common/Link';
@@ -17,12 +17,6 @@ const iconsMapping = {
   mood: MoodIcon,
   skill: SkillIcon,
 };
-
-const LinkContainer = ({ children, ...rest }: { children: ReactNode }) => (
-  <Flex alignItems="center" flexDirection="column" justifyContent="center" minWidth={96}>
-    {children}
-  </Flex>
-);
 
 const Navigation = () => {
   const {
@@ -50,7 +44,7 @@ const Navigation = () => {
     }
   `);
   return (
-    <Flex as="nav" marginTop={{ _: 16, tablet: 0 }}>
+    <Flex as="nav" flexWrap="wrap" justifyContent="center" marginTop={{ _: 16, tablet: 0 }}>
       {links
         .filter(link => {
           if (link.to === Routes.posts && totalCount === 0) return false;
@@ -58,19 +52,19 @@ const Navigation = () => {
         })
         .sort((a, b) => a.navOrder - b.navOrder)
         .map(link => (
-          <LinkContainer key={link.name}>
+          <Flex alignItems="center" flexDirection="column" justifyContent="center" key={link.name} minWidth={96}>
             <Link alignItems="center" display="flex" flexDirection="column" partiallyActive to={link.to}>
               <Svg as={iconsMapping[link.icon]} />
               {link.name}
             </Link>
-          </LinkContainer>
+          </Flex>
         ))}
-      <LinkContainer>
+      <Flex alignItems="center" flexDirection="column" justifyContent="center" minWidth={96}>
         <Anchor alignItems="center" display="flex" download flexDirection="column" href={resumeFile}>
           <Svg as={DownloadIcon} />
           Resume
         </Anchor>
-      </LinkContainer>
+      </Flex>
     </Flex>
   );
 };

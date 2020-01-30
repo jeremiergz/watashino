@@ -1,17 +1,17 @@
-import React, { PropsWithChildren, ButtonHTMLAttributes } from 'react';
+import React, { ButtonHTMLAttributes, PropsWithChildren } from 'react';
 import styled from 'styled-components';
-import { position, PositionProps } from 'styled-system';
+import { position, PositionProps, space, SpaceProps } from 'styled-system';
 
-type ButtonProps = PropsWithChildren<ButtonHTMLAttributes<HTMLButtonElement> & PositionProps & {}>;
+type ButtonProps = PropsWithChildren<ButtonHTMLAttributes<HTMLButtonElement> & PositionProps & SpaceProps & {}>;
 
 const BaseButton = styled.button`
   ${position}
+  ${space}
   background: none;
   border: none;
   color: inherit;
   cursor: pointer;
   outline: inherit;
-  padding: 0;
   transition: color 100ms ease-in-out;
   :hover {
     color: ${({ theme }) => theme.colors.primary};
@@ -19,7 +19,11 @@ const BaseButton = styled.button`
 `;
 
 const Button = ({ children, ...rest }: ButtonProps) => {
-  return <BaseButton {...rest}>{children}</BaseButton>;
+  return (
+    <BaseButton padding={0} {...rest}>
+      {children}
+    </BaseButton>
+  );
 };
 
 Button.displayName = 'Button';
