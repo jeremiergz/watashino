@@ -106,7 +106,7 @@ const AboutMePage = () => {
   const contactObjects: { img: FluidObject; label: string; url: string }[] = contacts.reduce((acc, rawContact) => {
     const { img, label, url } = rawContact;
     const contact = {
-      img: contactImgNodes.find(i => i.base === img).childImageSharp.fluid as FluidObject,
+      img: contactImgNodes.find(i => i.base === img).childImageSharp.fluid,
       label,
       url,
     };
@@ -117,7 +117,7 @@ const AboutMePage = () => {
     (acc, rawTechnology) => {
       const { img, name, website } = rawTechnology;
       const contact = {
-        img: techImgNodes.find(i => i.base === img).childImageSharp.fixed as FixedObject,
+        img: techImgNodes.find(i => i.base === img).childImageSharp.fixed,
         name,
         website,
       };
@@ -140,12 +140,12 @@ const AboutMePage = () => {
             </Link>
           ))}
         </Flex>
-        <Img alt="Cover" fluid={coverImgFluid as FluidObject} imgStyle={{ borderRadius: 8 }} />
+        <Img alt="Cover" fluid={coverImgFluid} imgStyle={{ borderRadius: 8 }} />
         <Paragraph marginTop={4}>{`Hi there, I'm Jeremie!`}</Paragraph>
         <Paragraph>
           {`I'm currently working at `}
           <Link display="inline-flex" height="26px" to={company.website} external verticalAlign="middle">
-            <Img alt={company.name} fixed={companyImgFixed as FixedObject} imgStyle={{ height: '25px' }} Tag="span" />
+            <Img alt={company.name} fixed={companyImgFixed} imgStyle={{ height: '25px' }} Tag="span" />
           </Link>
           {` as a${jobTitleStartsWithVowel ? 'n' : ''} ${jobTitle}.`}
         </Paragraph>

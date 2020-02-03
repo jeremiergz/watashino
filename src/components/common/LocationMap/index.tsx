@@ -1,14 +1,10 @@
-import { GoogleMap, Marker, useLoadScript } from '@react-google-maps/api';
+import { GoogleMap, useLoadScript } from '@react-google-maps/api';
 import { graphql, useStaticQuery } from 'gatsby';
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
-import React, { useState } from 'react';
+import React from 'react';
 import { useTheming } from '../../core/ThemingManager';
 import Box from '../../primitives/Box';
-
-const nerdAstonishedEmoji = require('../../../images/nerd-astonished.png');
-const nerdSmilingEmoji = require('../../../images/nerd-smiling.png');
-
-let timeout: number;
+import EmojiMarker from './EmojiMarker';
 
 const LocationMap = () => {
   const { theme } = useTheming();
@@ -16,17 +12,11 @@ const LocationMap = () => {
     googleMapsApiKey: process.env.GATSBY_GOOGLE_MAPS_API_KEY,
     preventGoogleFontsLoading: true,
   });
-  const [marker, setMarker] = useState(nerdSmilingEmoji);
   const handleMarkerClick = () => {
     trackCustomEvent({
       action: 'click',
       category: 'Google Maps Emoji Marker',
     });
-    if (marker !== nerdAstonishedEmoji) setMarker(nerdAstonishedEmoji);
-    clearTimeout(timeout);
-    timeout = setTimeout(() => {
-      setMarker(nerdSmilingEmoji);
-    }, 2500);
   };
   const {
     dataJson: { location },
@@ -85,7 +75,7 @@ const LocationMap = () => {
           }}
           zoom={4}
         >
-          <Marker icon={marker} onClick={handleMarkerClick} position={position} />
+          <EmojiMarker onClick={handleMarkerClick} position={position} />
         </GoogleMap>
       </Box>
     )

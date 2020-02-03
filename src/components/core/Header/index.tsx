@@ -14,8 +14,9 @@ const Header = () => {
       justifyContent={{ _: 'flex-start', tablet: 'space-between' }}
       margin="auto"
       maxWidth={theme.breakpoints[5]}
+      paddingBottom={32}
+      paddingTop={{ _: 32, tablet: 48 }}
       paddingX={{ _: 16, tablet: 32 }}
-      paddingY={32}
     >
       <NameAndJob />
       <Navigation />

@@ -1,6 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { Theme } from '../../../theme';
+import InstallPWA from '../../common/InstallPWA';
 import Box from '../../primitives/Box';
 import Footer from '../Footer';
 import Header from '../Header';
@@ -55,6 +56,7 @@ const Layout = ({ children }: LayoutProps) => {
         {children}
       </Box>
       <Footer />
+      <InstallPWA />
     </>
   );
 };

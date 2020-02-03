@@ -9,6 +9,7 @@ const twitterUsername = '@JeremieRgz';
 
 module.exports = {
   siteMetadata: {
+    appName,
     author,
     description,
     license,
@@ -44,12 +45,18 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         background_color: appColor,
-        display: 'minimal-ui',
+        display: 'standalone',
         icon: 'src/images/profile-pic.png',
         name: `${authorName} - ${appName}`,
         short_name: appName,
         start_url: '/',
         theme_color: appColor,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-offline',
+      options: {
+        debug: true,
       },
     },
     {
@@ -102,8 +109,8 @@ module.exports = {
           {
             resolve: 'gatsby-remark-vscode',
             options: {
-              colorTheme: 'Dark+ (default dark)',
-              languageAliases: {},
+              theme: 'Dark+ (default dark)',
+              wrapperClassName: 'code',
             },
           },
         ],
