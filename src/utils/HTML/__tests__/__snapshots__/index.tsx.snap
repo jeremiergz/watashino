@@ -7,7 +7,7 @@ exports[`utils/HTML Test Suite matches snapshot 1`] = `
     fontSize={20}
   >
     <a
-      className="sc-AykKE sc-AykKF lnYTBS"
+      className="sc-AykKE sc-AykKF gjJNAL"
       href="https://www.gatsbyjs.org"
       onClick={[Function]}
       rel="noopener noreferrer"
@@ -19,12 +19,12 @@ exports[`utils/HTML Test Suite matches snapshot 1`] = `
   
 
   <blockquote
-    className="sc-AykKE VSurP"
+    className="sc-AykKE hDdjAk"
     color="gray"
     fontStyle="italic"
   >
     <div
-      className="sc-AykKE sc-AykKG bNsjnF"
+      className="sc-AykKE sc-AykKG bLQTRm"
       height="100%"
     />
     
@@ -97,7 +97,7 @@ exports[`utils/HTML Test Suite matches snapshot 1`] = `
   
 
   <hr
-    className="sc-AykKE hohTMb"
+    className="sc-AykKE eITaFc"
   />
   
 

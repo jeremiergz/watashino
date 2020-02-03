@@ -3,12 +3,14 @@
 exports[`pages Test Suite pages/404 Test Suite matches snapshot 1`] = `
 Array [
   <button
-    className="sc-AykKC dRfZtv"
+    className="sc-AykKC eVsyqR"
     onClick={[Function]}
+    width={72}
   >
     <div
-      className="sc-AykKD cOKOq"
+      className="sc-AykKD bPoEVc"
       display="flex"
+      width="100%"
     >
       <svg
         className="sc-AykKF FGKRX"
@@ -34,7 +36,7 @@ Array [
         />
       </svg>
       <span
-        className="sc-AykKE kcueKH"
+        className="sc-AykKE bTmoai"
         color="gray"
         fontFamily="'Open Sans', sans-serif"
         fontSize={14}
@@ -44,11 +46,11 @@ Array [
     </div>
   </button>,
   <header
-    className="sc-AykKD gHJXcA"
+    className="sc-AykKD dxwqUF"
     display="flex"
   >
     <a
-      className="sc-AykKD sc-AykKH fujzaJ"
+      className="sc-AykKD sc-AykKH hbQOCi"
       href="/about-me"
       target="_blank"
     >
@@ -70,7 +72,7 @@ Array [
           src="data:image/png;base64"
           style={
             Object {
-              "height": "80px",
+              "height": 80,
               "left": 0,
               "objectFit": "cover",
               "objectPosition": "center",
@@ -78,7 +80,7 @@ Array [
               "position": "absolute",
               "top": 0,
               "transitionDelay": "500ms",
-              "width": "80px",
+              "width": 80,
             }
           }
         />
@@ -98,7 +100,7 @@ Array [
 /static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
             style={
               Object {
-                "height": "80px",
+                "height": 80,
                 "left": 0,
                 "objectFit": "cover",
                 "objectPosition": "center",
@@ -106,7 +108,7 @@ Array [
                 "position": "absolute",
                 "top": 0,
                 "transition": "opacity 500ms",
-                "width": "80px",
+                "width": 80,
               }
             }
           />
@@ -124,7 +126,7 @@ Array [
         />
       </div>
       <div
-        className="sc-AykKD eERvAt"
+        className="sc-AykKD isxtDC"
         display="flex"
       >
         <h3
@@ -144,15 +146,15 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-AykKD iyOXvw"
+      className="sc-AykKD esYesN"
       display="flex"
     >
       <div
-        className="sc-AykKD XkkrL"
+        className="sc-AykKD hUUWeU"
         display="flex"
       >
         <a
-          className="sc-AykKD sc-AykKH ipFIVy"
+          className="sc-AykKD sc-AykKH jBaOzv"
           href="/"
           target="_blank"
         >
@@ -167,11 +169,11 @@ Array [
         </a>
       </div>
       <div
-        className="sc-AykKD XkkrL"
+        className="sc-AykKD hUUWeU"
         display="flex"
       >
         <a
-          className="sc-AykKD sc-AykKH ipFIVy"
+          className="sc-AykKD sc-AykKH jBaOzv"
           display="flex"
           download={true}
           fontWeight="semi-bold"
@@ -198,7 +200,7 @@ Array [
     </nav>
   </header>,
   <main
-    className="sc-AykKD hQpGkO"
+    className="sc-AykKD hwgtQD"
   >
     <h1
       className="sc-AykKE sc-AykKG xRctR"
@@ -206,7 +208,7 @@ Array [
       Test Page
     </h1>
     <section
-      className="sc-AykKD exUlWw"
+      className="sc-AykKD cBGOuB"
     >
       <h4
         className="sc-AykKE sc-AykKG eLdLcT"
@@ -215,7 +217,7 @@ Array [
       </h4>
       Find your way 
       <a
-        className="sc-AykKD sc-AykKH ikgBNt"
+        className="sc-AykKD sc-AykKH jHoPUm"
         href="/about-me"
         target="_blank"
         variant="underlined"
@@ -225,10 +227,10 @@ Array [
     </section>
   </main>,
   <footer
-    className="sc-AykKD eibRex"
+    className="sc-AykKD dkNcBa"
   >
     <a
-      className="sc-AykKD sc-AykKH kPrNvl"
+      className="sc-AykKD sc-AykKH giWWOK"
       href="https://test-repository/tree/3.16.120"
       onClick={[Function]}
       rel="noopener noreferrer"
@@ -237,25 +239,165 @@ Array [
       v3.16.120 - source code
     </a>
     <div
-      className="sc-AykKD fYdsrD"
+      className="sc-AykKD fquYNQ"
       color="gray"
       fontSize={14}
     >
       licensed under the Test-Licence license
     </div>
   </footer>,
+  <div
+    className="sc-AykKD ezpnmC sc-AykKI beuTTw"
+    display="flex"
+    width={
+      Object {
+        "mobileL": 256,
+      }
+    }
+  >
+    <div
+      className="sc-AykKD gKIvSH"
+      display="flex"
+    >
+      <button
+        className="sc-AykKC jzNBjm"
+        onClick={[Function]}
+      >
+        <div
+          className=" gatsby-image-wrapper"
+          style={
+            Object {
+              "display": "inline-block",
+              "height": undefined,
+              "overflow": "hidden",
+              "position": "relative",
+              "width": undefined,
+            }
+          }
+        >
+          <img
+            alt=""
+            aria-hidden={true}
+            src="data:image/png;base64"
+            style={
+              Object {
+                "height": 32,
+                "left": 0,
+                "objectFit": "cover",
+                "objectPosition": "center",
+                "opacity": 1,
+                "position": "absolute",
+                "top": 0,
+                "transitionDelay": "500ms",
+                "width": 32,
+              }
+            }
+          />
+          <picture>
+            <source
+              srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              onLoad={[Function]}
+              src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
+              srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+              style={
+                Object {
+                  "height": 32,
+                  "left": 0,
+                  "objectFit": "cover",
+                  "objectPosition": "center",
+                  "opacity": 0,
+                  "position": "absolute",
+                  "top": 0,
+                  "transition": "opacity 500ms",
+                  "width": 32,
+                }
+              }
+            />
+          </picture>
+          <noscript
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+              }
+            }
+          />
+        </div>
+        <span
+          className="sc-AykKE hwWbEQ"
+          fontSize={18}
+        >
+          Install App
+        </span>
+        <svg
+          className="sc-AykKF lLqjH"
+          height={24}
+          viewBox="0 0 24 24"
+          width={24}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M18 1.01L8 1c-1.1 0-2 .9-2 2v3h2V5h10v14H8v-1H6v3c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM10 15h2V8H5v2h3.59L3 15.59 4.41 17 10 11.41z"
+            fill="white"
+          />
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+        </svg>
+      </button>
+    </div>
+    <button
+      className="sc-AykKC bDFkZn"
+      onClick={[Function]}
+    >
+      <svg
+        className="sc-AykKF iCQICJ"
+        height={32}
+        viewBox="0 0 24 24"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          fill="white"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>,
 ]
 `;
 
 exports[`pages Test Suite pages/about-me Test Suite matches snapshot 1`] = `
 Array [
   <button
-    className="sc-AykKC dRfZtv"
+    className="sc-AykKC eVsyqR"
     onClick={[Function]}
+    width={72}
   >
     <div
-      className="sc-AykKD cOKOq"
+      className="sc-AykKD bPoEVc"
       display="flex"
+      width="100%"
     >
       <svg
         className="sc-AykKF FGKRX"
@@ -281,7 +423,7 @@ Array [
         />
       </svg>
       <span
-        className="sc-AykKE kcueKH"
+        className="sc-AykKE bTmoai"
         color="gray"
         fontFamily="'Open Sans', sans-serif"
         fontSize={14}
@@ -291,11 +433,11 @@ Array [
     </div>
   </button>,
   <header
-    className="sc-AykKD gHJXcA"
+    className="sc-AykKD dxwqUF"
     display="flex"
   >
     <a
-      className="sc-AykKD sc-AykKH fujzaJ"
+      className="sc-AykKD sc-AykKH hbQOCi"
       href="/about-me"
       target="_blank"
     >
@@ -317,7 +459,7 @@ Array [
           src="data:image/png;base64"
           style={
             Object {
-              "height": "80px",
+              "height": 80,
               "left": 0,
               "objectFit": "cover",
               "objectPosition": "center",
@@ -325,7 +467,7 @@ Array [
               "position": "absolute",
               "top": 0,
               "transitionDelay": "500ms",
-              "width": "80px",
+              "width": 80,
             }
           }
         />
@@ -345,7 +487,7 @@ Array [
 /static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
             style={
               Object {
-                "height": "80px",
+                "height": 80,
                 "left": 0,
                 "objectFit": "cover",
                 "objectPosition": "center",
@@ -353,7 +495,7 @@ Array [
                 "position": "absolute",
                 "top": 0,
                 "transition": "opacity 500ms",
-                "width": "80px",
+                "width": 80,
               }
             }
           />
@@ -371,7 +513,7 @@ Array [
         />
       </div>
       <div
-        className="sc-AykKD eERvAt"
+        className="sc-AykKD isxtDC"
         display="flex"
       >
         <h3
@@ -391,15 +533,15 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-AykKD iyOXvw"
+      className="sc-AykKD esYesN"
       display="flex"
     >
       <div
-        className="sc-AykKD XkkrL"
+        className="sc-AykKD hUUWeU"
         display="flex"
       >
         <a
-          className="sc-AykKD sc-AykKH ipFIVy"
+          className="sc-AykKD sc-AykKH jBaOzv"
           href="/"
           target="_blank"
         >
@@ -414,11 +556,11 @@ Array [
         </a>
       </div>
       <div
-        className="sc-AykKD XkkrL"
+        className="sc-AykKD hUUWeU"
         display="flex"
       >
         <a
-          className="sc-AykKD sc-AykKH ipFIVy"
+          className="sc-AykKD sc-AykKH jBaOzv"
           display="flex"
           download={true}
           fontWeight="semi-bold"
@@ -445,7 +587,7 @@ Array [
     </nav>
   </header>,
   <main
-    className="sc-AykKD hQpGkO"
+    className="sc-AykKD hwgtQD"
   >
     <h1
       className="sc-AykKE sc-AykKG xRctR"
@@ -453,21 +595,21 @@ Array [
       Test Page
     </h1>
     <section
-      className="sc-AykKD exUlWw"
+      className="sc-AykKD cBGOuB"
     >
       <div
-        className="sc-AykKD hVAAzk"
+        className="sc-AykKD kiJFuJ"
         display="flex"
       >
         <a
-          className="sc-AykKD sc-AykKH dqQhCA"
+          className="sc-AykKD sc-AykKH eDYkwh"
           href="mailto:contact@fake.test"
           onClick={[Function]}
           rel="noopener noreferrer"
           target="_blank"
         >
           <div
-            className="sc-AykKD fxyLor"
+            className="sc-AykKD kePSrk"
             width={
               Object {
                 "_": 32,
@@ -646,7 +788,7 @@ Array [
       >
         I'm currently working at 
         <a
-          className="sc-AykKD sc-AykKH kUfQqu"
+          className="sc-AykKD sc-AykKH hkzrwr"
           href="https://fakecompany.test"
           onClick={[Function]}
           rel="noopener noreferrer"
@@ -733,11 +875,11 @@ Array [
         I particularly enjoy working with those technologies:
       </p>
       <div
-        className="sc-AykKD gXKzaQ sc-AykKI bhTfgs"
+        className="sc-AykKD eqDyfB sc-AykKJ imHlHx"
         display="flex"
       >
         <a
-          className="sc-AykKD sc-AykKH jVtvzP"
+          className="sc-AykKD sc-AykKH kEXHSs"
           href="https://image.tech"
           onClick={[Function]}
           rel="noopener noreferrer"
@@ -817,12 +959,12 @@ Array [
         </a>
       </div>
       <div
-        className="sc-AykKD jtRyeU"
+        className="sc-AykKD kUFgJN"
         fontSize={20}
       >
         ▾ By the way, this is where I live, 
         <a
-          className="sc-AykKD sc-AykKH dqQhCA"
+          className="sc-AykKD sc-AykKH eDYkwh"
           onClick={[Function]}
           rel="noopener noreferrer"
           target="_blank"
@@ -834,10 +976,10 @@ Array [
     </section>
   </main>,
   <footer
-    className="sc-AykKD eibRex"
+    className="sc-AykKD dkNcBa"
   >
     <a
-      className="sc-AykKD sc-AykKH kPrNvl"
+      className="sc-AykKD sc-AykKH giWWOK"
       href="https://test-repository/tree/3.16.120"
       onClick={[Function]}
       rel="noopener noreferrer"
@@ -846,25 +988,165 @@ Array [
       v3.16.120 - source code
     </a>
     <div
-      className="sc-AykKD fYdsrD"
+      className="sc-AykKD fquYNQ"
       color="gray"
       fontSize={14}
     >
       licensed under the Test-Licence license
     </div>
   </footer>,
+  <div
+    className="sc-AykKD ezpnmC sc-AykKI beuTTw"
+    display="flex"
+    width={
+      Object {
+        "mobileL": 256,
+      }
+    }
+  >
+    <div
+      className="sc-AykKD gKIvSH"
+      display="flex"
+    >
+      <button
+        className="sc-AykKC jzNBjm"
+        onClick={[Function]}
+      >
+        <div
+          className=" gatsby-image-wrapper"
+          style={
+            Object {
+              "display": "inline-block",
+              "height": undefined,
+              "overflow": "hidden",
+              "position": "relative",
+              "width": undefined,
+            }
+          }
+        >
+          <img
+            alt=""
+            aria-hidden={true}
+            src="data:image/png;base64"
+            style={
+              Object {
+                "height": 32,
+                "left": 0,
+                "objectFit": "cover",
+                "objectPosition": "center",
+                "opacity": 1,
+                "position": "absolute",
+                "top": 0,
+                "transitionDelay": "500ms",
+                "width": 32,
+              }
+            }
+          />
+          <picture>
+            <source
+              srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              onLoad={[Function]}
+              src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
+              srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+              style={
+                Object {
+                  "height": 32,
+                  "left": 0,
+                  "objectFit": "cover",
+                  "objectPosition": "center",
+                  "opacity": 0,
+                  "position": "absolute",
+                  "top": 0,
+                  "transition": "opacity 500ms",
+                  "width": 32,
+                }
+              }
+            />
+          </picture>
+          <noscript
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+              }
+            }
+          />
+        </div>
+        <span
+          className="sc-AykKE hwWbEQ"
+          fontSize={18}
+        >
+          Install App
+        </span>
+        <svg
+          className="sc-AykKF lLqjH"
+          height={24}
+          viewBox="0 0 24 24"
+          width={24}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M18 1.01L8 1c-1.1 0-2 .9-2 2v3h2V5h10v14H8v-1H6v3c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM10 15h2V8H5v2h3.59L3 15.59 4.41 17 10 11.41z"
+            fill="white"
+          />
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+        </svg>
+      </button>
+    </div>
+    <button
+      className="sc-AykKC bDFkZn"
+      onClick={[Function]}
+    >
+      <svg
+        className="sc-AykKF iCQICJ"
+        height={32}
+        viewBox="0 0 24 24"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          fill="white"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>,
 ]
 `;
 
 exports[`pages Test Suite pages/index Test Suite matches snapshot 1`] = `
 Array [
   <button
-    className="sc-AykKC dRfZtv"
+    className="sc-AykKC eVsyqR"
     onClick={[Function]}
+    width={72}
   >
     <div
-      className="sc-AykKD cOKOq"
+      className="sc-AykKD bPoEVc"
       display="flex"
+      width="100%"
     >
       <svg
         className="sc-AykKF FGKRX"
@@ -890,7 +1172,7 @@ Array [
         />
       </svg>
       <span
-        className="sc-AykKE kcueKH"
+        className="sc-AykKE bTmoai"
         color="gray"
         fontFamily="'Open Sans', sans-serif"
         fontSize={14}
@@ -900,11 +1182,11 @@ Array [
     </div>
   </button>,
   <header
-    className="sc-AykKD gHJXcA"
+    className="sc-AykKD dxwqUF"
     display="flex"
   >
     <a
-      className="sc-AykKD sc-AykKH fujzaJ"
+      className="sc-AykKD sc-AykKH hbQOCi"
       href="/about-me"
       target="_blank"
     >
@@ -926,7 +1208,7 @@ Array [
           src="data:image/png;base64"
           style={
             Object {
-              "height": "80px",
+              "height": 80,
               "left": 0,
               "objectFit": "cover",
               "objectPosition": "center",
@@ -934,7 +1216,7 @@ Array [
               "position": "absolute",
               "top": 0,
               "transitionDelay": "500ms",
-              "width": "80px",
+              "width": 80,
             }
           }
         />
@@ -954,7 +1236,7 @@ Array [
 /static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
             style={
               Object {
-                "height": "80px",
+                "height": 80,
                 "left": 0,
                 "objectFit": "cover",
                 "objectPosition": "center",
@@ -962,7 +1244,7 @@ Array [
                 "position": "absolute",
                 "top": 0,
                 "transition": "opacity 500ms",
-                "width": "80px",
+                "width": 80,
               }
             }
           />
@@ -980,7 +1262,7 @@ Array [
         />
       </div>
       <div
-        className="sc-AykKD eERvAt"
+        className="sc-AykKD isxtDC"
         display="flex"
       >
         <h3
@@ -1000,15 +1282,15 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-AykKD iyOXvw"
+      className="sc-AykKD esYesN"
       display="flex"
     >
       <div
-        className="sc-AykKD XkkrL"
+        className="sc-AykKD hUUWeU"
         display="flex"
       >
         <a
-          className="sc-AykKD sc-AykKH ipFIVy"
+          className="sc-AykKD sc-AykKH jBaOzv"
           href="/"
           target="_blank"
         >
@@ -1023,11 +1305,11 @@ Array [
         </a>
       </div>
       <div
-        className="sc-AykKD XkkrL"
+        className="sc-AykKD hUUWeU"
         display="flex"
       >
         <a
-          className="sc-AykKD sc-AykKH ipFIVy"
+          className="sc-AykKD sc-AykKH jBaOzv"
           display="flex"
           download={true}
           fontWeight="semi-bold"
@@ -1054,17 +1336,17 @@ Array [
     </nav>
   </header>,
   <main
-    className="sc-AykKD hQpGkO"
+    className="sc-AykKD hwgtQD"
   >
     <section
-      className="sc-AykKD exUlWw"
+      className="sc-AykKD cBGOuB"
     />
   </main>,
   <footer
-    className="sc-AykKD eibRex"
+    className="sc-AykKD dkNcBa"
   >
     <a
-      className="sc-AykKD sc-AykKH kPrNvl"
+      className="sc-AykKD sc-AykKH giWWOK"
       href="https://test-repository/tree/3.16.120"
       onClick={[Function]}
       rel="noopener noreferrer"
@@ -1073,25 +1355,165 @@ Array [
       v3.16.120 - source code
     </a>
     <div
-      className="sc-AykKD fYdsrD"
+      className="sc-AykKD fquYNQ"
       color="gray"
       fontSize={14}
     >
       licensed under the Test-Licence license
     </div>
   </footer>,
+  <div
+    className="sc-AykKD ezpnmC sc-AykKI beuTTw"
+    display="flex"
+    width={
+      Object {
+        "mobileL": 256,
+      }
+    }
+  >
+    <div
+      className="sc-AykKD gKIvSH"
+      display="flex"
+    >
+      <button
+        className="sc-AykKC jzNBjm"
+        onClick={[Function]}
+      >
+        <div
+          className=" gatsby-image-wrapper"
+          style={
+            Object {
+              "display": "inline-block",
+              "height": undefined,
+              "overflow": "hidden",
+              "position": "relative",
+              "width": undefined,
+            }
+          }
+        >
+          <img
+            alt=""
+            aria-hidden={true}
+            src="data:image/png;base64"
+            style={
+              Object {
+                "height": 32,
+                "left": 0,
+                "objectFit": "cover",
+                "objectPosition": "center",
+                "opacity": 1,
+                "position": "absolute",
+                "top": 0,
+                "transitionDelay": "500ms",
+                "width": 32,
+              }
+            }
+          />
+          <picture>
+            <source
+              srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              onLoad={[Function]}
+              src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
+              srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+              style={
+                Object {
+                  "height": 32,
+                  "left": 0,
+                  "objectFit": "cover",
+                  "objectPosition": "center",
+                  "opacity": 0,
+                  "position": "absolute",
+                  "top": 0,
+                  "transition": "opacity 500ms",
+                  "width": 32,
+                }
+              }
+            />
+          </picture>
+          <noscript
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+              }
+            }
+          />
+        </div>
+        <span
+          className="sc-AykKE hwWbEQ"
+          fontSize={18}
+        >
+          Install App
+        </span>
+        <svg
+          className="sc-AykKF lLqjH"
+          height={24}
+          viewBox="0 0 24 24"
+          width={24}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M18 1.01L8 1c-1.1 0-2 .9-2 2v3h2V5h10v14H8v-1H6v3c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM10 15h2V8H5v2h3.59L3 15.59 4.41 17 10 11.41z"
+            fill="white"
+          />
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+        </svg>
+      </button>
+    </div>
+    <button
+      className="sc-AykKC bDFkZn"
+      onClick={[Function]}
+    >
+      <svg
+        className="sc-AykKF iCQICJ"
+        height={32}
+        viewBox="0 0 24 24"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          fill="white"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>,
 ]
 `;
 
 exports[`pages Test Suite pages/posts Test Suite matches snapshot 1`] = `
 Array [
   <button
-    className="sc-AykKC dRfZtv"
+    className="sc-AykKC eVsyqR"
     onClick={[Function]}
+    width={72}
   >
     <div
-      className="sc-AykKD cOKOq"
+      className="sc-AykKD bPoEVc"
       display="flex"
+      width="100%"
     >
       <svg
         className="sc-AykKF FGKRX"
@@ -1117,7 +1539,7 @@ Array [
         />
       </svg>
       <span
-        className="sc-AykKE kcueKH"
+        className="sc-AykKE bTmoai"
         color="gray"
         fontFamily="'Open Sans', sans-serif"
         fontSize={14}
@@ -1127,11 +1549,11 @@ Array [
     </div>
   </button>,
   <header
-    className="sc-AykKD gHJXcA"
+    className="sc-AykKD dxwqUF"
     display="flex"
   >
     <a
-      className="sc-AykKD sc-AykKH fujzaJ"
+      className="sc-AykKD sc-AykKH hbQOCi"
       href="/about-me"
       target="_blank"
     >
@@ -1153,7 +1575,7 @@ Array [
           src="data:image/png;base64"
           style={
             Object {
-              "height": "80px",
+              "height": 80,
               "left": 0,
               "objectFit": "cover",
               "objectPosition": "center",
@@ -1161,7 +1583,7 @@ Array [
               "position": "absolute",
               "top": 0,
               "transitionDelay": "500ms",
-              "width": "80px",
+              "width": 80,
             }
           }
         />
@@ -1181,7 +1603,7 @@ Array [
 /static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
             style={
               Object {
-                "height": "80px",
+                "height": 80,
                 "left": 0,
                 "objectFit": "cover",
                 "objectPosition": "center",
@@ -1189,7 +1611,7 @@ Array [
                 "position": "absolute",
                 "top": 0,
                 "transition": "opacity 500ms",
-                "width": "80px",
+                "width": 80,
               }
             }
           />
@@ -1207,7 +1629,7 @@ Array [
         />
       </div>
       <div
-        className="sc-AykKD eERvAt"
+        className="sc-AykKD isxtDC"
         display="flex"
       >
         <h3
@@ -1227,15 +1649,15 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-AykKD iyOXvw"
+      className="sc-AykKD esYesN"
       display="flex"
     >
       <div
-        className="sc-AykKD XkkrL"
+        className="sc-AykKD hUUWeU"
         display="flex"
       >
         <a
-          className="sc-AykKD sc-AykKH ipFIVy"
+          className="sc-AykKD sc-AykKH jBaOzv"
           href="/"
           target="_blank"
         >
@@ -1250,11 +1672,11 @@ Array [
         </a>
       </div>
       <div
-        className="sc-AykKD XkkrL"
+        className="sc-AykKD hUUWeU"
         display="flex"
       >
         <a
-          className="sc-AykKD sc-AykKH ipFIVy"
+          className="sc-AykKD sc-AykKH jBaOzv"
           display="flex"
           download={true}
           fontWeight="semi-bold"
@@ -1281,7 +1703,7 @@ Array [
     </nav>
   </header>,
   <main
-    className="sc-AykKD hQpGkO"
+    className="sc-AykKD hwgtQD"
   >
     <h1
       className="sc-AykKE sc-AykKG xRctR"
@@ -1289,13 +1711,13 @@ Array [
       Test Page
     </h1>
     <section
-      className="sc-AykKD exUlWw"
+      className="sc-AykKD cBGOuB"
     >
       <div
-        className="sc-AykKD sc-AykKK eHfUVg"
+        className="sc-AykKD sc-fzXfLO dbgLbX"
       >
         <ul
-          className="sc-AykKD sc-AykKJ grpCGr"
+          className="sc-AykKD sc-AykKK jVYGdB"
         >
           <label
             className="sc-AykKE eeQYeJ"
@@ -1307,13 +1729,13 @@ Array [
             2019
           </label>
           <li
-            className="sc-AykKD ktdGCb"
+            className="sc-AykKD hirYnY"
             display="flex"
             fontSize={24}
             fontWeight="semi-bold"
           >
             <span
-              className="sc-AykKD hzgvrq"
+              className="sc-AykKD jyvdTL"
               color="primary"
               fontSize={16}
               fontWeight="bold"
@@ -1321,7 +1743,7 @@ Array [
               AUG-08
             </span>
             <a
-              className="sc-AykKD sc-AykKH dqQhCA"
+              className="sc-AykKD sc-AykKH eDYkwh"
               href="/posts/test"
               target="_blank"
             >
@@ -1333,10 +1755,10 @@ Array [
     </section>
   </main>,
   <footer
-    className="sc-AykKD eibRex"
+    className="sc-AykKD dkNcBa"
   >
     <a
-      className="sc-AykKD sc-AykKH kPrNvl"
+      className="sc-AykKD sc-AykKH giWWOK"
       href="https://test-repository/tree/3.16.120"
       onClick={[Function]}
       rel="noopener noreferrer"
@@ -1345,25 +1767,165 @@ Array [
       v3.16.120 - source code
     </a>
     <div
-      className="sc-AykKD fYdsrD"
+      className="sc-AykKD fquYNQ"
       color="gray"
       fontSize={14}
     >
       licensed under the Test-Licence license
     </div>
   </footer>,
+  <div
+    className="sc-AykKD ezpnmC sc-AykKI beuTTw"
+    display="flex"
+    width={
+      Object {
+        "mobileL": 256,
+      }
+    }
+  >
+    <div
+      className="sc-AykKD gKIvSH"
+      display="flex"
+    >
+      <button
+        className="sc-AykKC jzNBjm"
+        onClick={[Function]}
+      >
+        <div
+          className=" gatsby-image-wrapper"
+          style={
+            Object {
+              "display": "inline-block",
+              "height": undefined,
+              "overflow": "hidden",
+              "position": "relative",
+              "width": undefined,
+            }
+          }
+        >
+          <img
+            alt=""
+            aria-hidden={true}
+            src="data:image/png;base64"
+            style={
+              Object {
+                "height": 32,
+                "left": 0,
+                "objectFit": "cover",
+                "objectPosition": "center",
+                "opacity": 1,
+                "position": "absolute",
+                "top": 0,
+                "transitionDelay": "500ms",
+                "width": 32,
+              }
+            }
+          />
+          <picture>
+            <source
+              srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              onLoad={[Function]}
+              src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
+              srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+              style={
+                Object {
+                  "height": 32,
+                  "left": 0,
+                  "objectFit": "cover",
+                  "objectPosition": "center",
+                  "opacity": 0,
+                  "position": "absolute",
+                  "top": 0,
+                  "transition": "opacity 500ms",
+                  "width": 32,
+                }
+              }
+            />
+          </picture>
+          <noscript
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+              }
+            }
+          />
+        </div>
+        <span
+          className="sc-AykKE hwWbEQ"
+          fontSize={18}
+        >
+          Install App
+        </span>
+        <svg
+          className="sc-AykKF lLqjH"
+          height={24}
+          viewBox="0 0 24 24"
+          width={24}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M18 1.01L8 1c-1.1 0-2 .9-2 2v3h2V5h10v14H8v-1H6v3c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM10 15h2V8H5v2h3.59L3 15.59 4.41 17 10 11.41z"
+            fill="white"
+          />
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+        </svg>
+      </button>
+    </div>
+    <button
+      className="sc-AykKC bDFkZn"
+      onClick={[Function]}
+    >
+      <svg
+        className="sc-AykKF iCQICJ"
+        height={32}
+        viewBox="0 0 24 24"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          fill="white"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>,
 ]
 `;
 
 exports[`pages Test Suite pages/skills Test Suite matches snapshot 1`] = `
 Array [
   <button
-    className="sc-AykKC dRfZtv"
+    className="sc-AykKC eVsyqR"
     onClick={[Function]}
+    width={72}
   >
     <div
-      className="sc-AykKD cOKOq"
+      className="sc-AykKD bPoEVc"
       display="flex"
+      width="100%"
     >
       <svg
         className="sc-AykKF FGKRX"
@@ -1389,7 +1951,7 @@ Array [
         />
       </svg>
       <span
-        className="sc-AykKE kcueKH"
+        className="sc-AykKE bTmoai"
         color="gray"
         fontFamily="'Open Sans', sans-serif"
         fontSize={14}
@@ -1399,11 +1961,11 @@ Array [
     </div>
   </button>,
   <header
-    className="sc-AykKD gHJXcA"
+    className="sc-AykKD dxwqUF"
     display="flex"
   >
     <a
-      className="sc-AykKD sc-AykKH fujzaJ"
+      className="sc-AykKD sc-AykKH hbQOCi"
       href="/about-me"
       target="_blank"
     >
@@ -1425,7 +1987,7 @@ Array [
           src="data:image/png;base64"
           style={
             Object {
-              "height": "80px",
+              "height": 80,
               "left": 0,
               "objectFit": "cover",
               "objectPosition": "center",
@@ -1433,7 +1995,7 @@ Array [
               "position": "absolute",
               "top": 0,
               "transitionDelay": "500ms",
-              "width": "80px",
+              "width": 80,
             }
           }
         />
@@ -1453,7 +2015,7 @@ Array [
 /static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
             style={
               Object {
-                "height": "80px",
+                "height": 80,
                 "left": 0,
                 "objectFit": "cover",
                 "objectPosition": "center",
@@ -1461,7 +2023,7 @@ Array [
                 "position": "absolute",
                 "top": 0,
                 "transition": "opacity 500ms",
-                "width": "80px",
+                "width": 80,
               }
             }
           />
@@ -1479,7 +2041,7 @@ Array [
         />
       </div>
       <div
-        className="sc-AykKD eERvAt"
+        className="sc-AykKD isxtDC"
         display="flex"
       >
         <h3
@@ -1499,15 +2061,15 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-AykKD iyOXvw"
+      className="sc-AykKD esYesN"
       display="flex"
     >
       <div
-        className="sc-AykKD XkkrL"
+        className="sc-AykKD hUUWeU"
         display="flex"
       >
         <a
-          className="sc-AykKD sc-AykKH ipFIVy"
+          className="sc-AykKD sc-AykKH jBaOzv"
           href="/"
           target="_blank"
         >
@@ -1522,11 +2084,11 @@ Array [
         </a>
       </div>
       <div
-        className="sc-AykKD XkkrL"
+        className="sc-AykKD hUUWeU"
         display="flex"
       >
         <a
-          className="sc-AykKD sc-AykKH ipFIVy"
+          className="sc-AykKD sc-AykKH jBaOzv"
           display="flex"
           download={true}
           fontWeight="semi-bold"
@@ -1553,7 +2115,7 @@ Array [
     </nav>
   </header>,
   <main
-    className="sc-AykKD hQpGkO"
+    className="sc-AykKD hwgtQD"
   >
     <h1
       className="sc-AykKE sc-AykKG xRctR"
@@ -1561,13 +2123,13 @@ Array [
       Test Page
     </h1>
     <section
-      className="sc-AykKD exUlWw"
+      className="sc-AykKD cBGOuB"
     >
       <div
-        className="sc-AykKD kFxcRg"
+        className="sc-AykKD jVgyTJ"
       >
         <div
-          className="sc-AykKD dEXdaM"
+          className="sc-AykKD gXJfnh"
           display="flex"
         >
           <span
@@ -1580,7 +2142,7 @@ Array [
           </span>
         </div>
         <div
-          className="sc-AykKD jsWvaY"
+          className="sc-AykKD kCOdXd"
           display="flex"
           height={22}
         >
@@ -1592,7 +2154,7 @@ Array [
             Skill 0
           </span>
           <div
-            className="sc-AykKD hlBuXb"
+            className="sc-AykKD DjsxU"
             display={
               Object {
                 "_": "flex",
@@ -1612,7 +2174,7 @@ Array [
             </span>
           </div>
           <div
-            className="sc-AykKD dcNBVz"
+            className="sc-AykKD djaPxE"
             display={
               Object {
                 "_": "none",
@@ -1621,44 +2183,44 @@ Array [
             }
           >
             <span
-              className="sc-AykKD jzFOzu"
+              className="sc-AykKD lmDSAf"
               height={16}
               width={16}
             />
             <span
-              className="sc-AykKD eaLxNh"
+              className="sc-AykKD kurJCi"
               height={16}
               width={16}
             />
             <span
-              className="sc-AykKD eaLxNh"
+              className="sc-AykKD kurJCi"
               height={16}
               width={16}
             />
             <span
-              className="sc-AykKD eaLxNh"
+              className="sc-AykKD kurJCi"
               height={16}
               width={16}
             />
             <span
-              className="sc-AykKD bcxfdk"
+              className="sc-AykKD cexCel"
               height={16}
               width={16}
             />
             <span
-              className="sc-AykKD bcxfdk"
+              className="sc-AykKD cexCel"
               height={16}
               width={16}
             />
             <span
-              className="sc-AykKD bcxfdk"
+              className="sc-AykKD cexCel"
               height={16}
               width={16}
             />
           </div>
         </div>
         <div
-          className="sc-AykKD jsWvaY"
+          className="sc-AykKD kCOdXd"
           display="flex"
           height={22}
         >
@@ -1670,7 +2232,7 @@ Array [
             Skill 1
           </span>
           <div
-            className="sc-AykKD hlBuXb"
+            className="sc-AykKD DjsxU"
             display={
               Object {
                 "_": "flex",
@@ -1690,7 +2252,7 @@ Array [
             </span>
           </div>
           <div
-            className="sc-AykKD dcNBVz"
+            className="sc-AykKD djaPxE"
             display={
               Object {
                 "_": "none",
@@ -1699,37 +2261,37 @@ Array [
             }
           >
             <span
-              className="sc-AykKD jzFOzu"
+              className="sc-AykKD lmDSAf"
               height={16}
               width={16}
             />
             <span
-              className="sc-AykKD eaLxNh"
+              className="sc-AykKD kurJCi"
               height={16}
               width={16}
             />
             <span
-              className="sc-AykKD eaLxNh"
+              className="sc-AykKD kurJCi"
               height={16}
               width={16}
             />
             <span
-              className="sc-AykKD eaLxNh"
+              className="sc-AykKD kurJCi"
               height={16}
               width={16}
             />
             <span
-              className="sc-AykKD eaLxNh"
+              className="sc-AykKD kurJCi"
               height={16}
               width={16}
             />
             <span
-              className="sc-AykKD eaLxNh"
+              className="sc-AykKD kurJCi"
               height={16}
               width={16}
             />
             <span
-              className="sc-AykKD bcxfdk"
+              className="sc-AykKD cexCel"
               height={16}
               width={16}
             />
@@ -1737,10 +2299,10 @@ Array [
         </div>
       </div>
       <div
-        className="sc-AykKD kFxcRg"
+        className="sc-AykKD jVgyTJ"
       >
         <div
-          className="sc-AykKD dEXdaM"
+          className="sc-AykKD gXJfnh"
           display="flex"
         >
           <span
@@ -1753,7 +2315,7 @@ Array [
           </span>
         </div>
         <div
-          className="sc-AykKD jsWvaY"
+          className="sc-AykKD kCOdXd"
           display="flex"
           height={22}
         >
@@ -1765,7 +2327,7 @@ Array [
             Skill 0
           </span>
           <div
-            className="sc-AykKD hlBuXb"
+            className="sc-AykKD DjsxU"
             display={
               Object {
                 "_": "flex",
@@ -1785,7 +2347,7 @@ Array [
             </span>
           </div>
           <div
-            className="sc-AykKD dcNBVz"
+            className="sc-AykKD djaPxE"
             display={
               Object {
                 "_": "none",
@@ -1794,37 +2356,37 @@ Array [
             }
           >
             <span
-              className="sc-AykKD jzFOzu"
+              className="sc-AykKD lmDSAf"
               height={16}
               width={16}
             />
             <span
-              className="sc-AykKD eaLxNh"
+              className="sc-AykKD kurJCi"
               height={16}
               width={16}
             />
             <span
-              className="sc-AykKD eaLxNh"
+              className="sc-AykKD kurJCi"
               height={16}
               width={16}
             />
             <span
-              className="sc-AykKD eaLxNh"
+              className="sc-AykKD kurJCi"
               height={16}
               width={16}
             />
             <span
-              className="sc-AykKD eaLxNh"
+              className="sc-AykKD kurJCi"
               height={16}
               width={16}
             />
             <span
-              className="sc-AykKD bcxfdk"
+              className="sc-AykKD cexCel"
               height={16}
               width={16}
             />
             <span
-              className="sc-AykKD bcxfdk"
+              className="sc-AykKD cexCel"
               height={16}
               width={16}
             />
@@ -1834,10 +2396,10 @@ Array [
     </section>
   </main>,
   <footer
-    className="sc-AykKD eibRex"
+    className="sc-AykKD dkNcBa"
   >
     <a
-      className="sc-AykKD sc-AykKH kPrNvl"
+      className="sc-AykKD sc-AykKH giWWOK"
       href="https://test-repository/tree/3.16.120"
       onClick={[Function]}
       rel="noopener noreferrer"
@@ -1846,12 +2408,150 @@ Array [
       v3.16.120 - source code
     </a>
     <div
-      className="sc-AykKD fYdsrD"
+      className="sc-AykKD fquYNQ"
       color="gray"
       fontSize={14}
     >
       licensed under the Test-Licence license
     </div>
   </footer>,
+  <div
+    className="sc-AykKD ezpnmC sc-AykKI beuTTw"
+    display="flex"
+    width={
+      Object {
+        "mobileL": 256,
+      }
+    }
+  >
+    <div
+      className="sc-AykKD gKIvSH"
+      display="flex"
+    >
+      <button
+        className="sc-AykKC jzNBjm"
+        onClick={[Function]}
+      >
+        <div
+          className=" gatsby-image-wrapper"
+          style={
+            Object {
+              "display": "inline-block",
+              "height": undefined,
+              "overflow": "hidden",
+              "position": "relative",
+              "width": undefined,
+            }
+          }
+        >
+          <img
+            alt=""
+            aria-hidden={true}
+            src="data:image/png;base64"
+            style={
+              Object {
+                "height": 32,
+                "left": 0,
+                "objectFit": "cover",
+                "objectPosition": "center",
+                "opacity": 1,
+                "position": "absolute",
+                "top": 0,
+                "transitionDelay": "500ms",
+                "width": 32,
+              }
+            }
+          />
+          <picture>
+            <source
+              srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              onLoad={[Function]}
+              src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
+              srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+              style={
+                Object {
+                  "height": 32,
+                  "left": 0,
+                  "objectFit": "cover",
+                  "objectPosition": "center",
+                  "opacity": 0,
+                  "position": "absolute",
+                  "top": 0,
+                  "transition": "opacity 500ms",
+                  "width": 32,
+                }
+              }
+            />
+          </picture>
+          <noscript
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+              }
+            }
+          />
+        </div>
+        <span
+          className="sc-AykKE hwWbEQ"
+          fontSize={18}
+        >
+          Install App
+        </span>
+        <svg
+          className="sc-AykKF lLqjH"
+          height={24}
+          viewBox="0 0 24 24"
+          width={24}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M18 1.01L8 1c-1.1 0-2 .9-2 2v3h2V5h10v14H8v-1H6v3c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM10 15h2V8H5v2h3.59L3 15.59 4.41 17 10 11.41z"
+            fill="white"
+          />
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+        </svg>
+      </button>
+    </div>
+    <button
+      className="sc-AykKC bDFkZn"
+      onClick={[Function]}
+    >
+      <svg
+        className="sc-AykKF iCQICJ"
+        height={32}
+        viewBox="0 0 24 24"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          fill="white"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>,
 ]
 `;

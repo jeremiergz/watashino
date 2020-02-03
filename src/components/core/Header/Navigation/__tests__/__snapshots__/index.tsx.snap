@@ -2,15 +2,15 @@
 
 exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
 <nav
-  className="sc-AykKC fWKbuP"
+  className="sc-AykKC fIiwYg"
   display="flex"
 >
   <div
-    className="sc-AykKC dUqoui"
+    className="sc-AykKC hpWXlr"
     display="flex"
   >
     <a
-      className="sc-AykKC sc-AykKD igWYvC"
+      className="sc-AykKC sc-AykKD kTXGHX"
       href="/"
       target="_blank"
     >
@@ -25,11 +25,11 @@ exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
     </a>
   </div>
   <div
-    className="sc-AykKC dUqoui"
+    className="sc-AykKC hpWXlr"
     display="flex"
   >
     <a
-      className="sc-AykKC sc-AykKD igWYvC"
+      className="sc-AykKC sc-AykKD kTXGHX"
       display="flex"
       download={true}
       fontWeight="semi-bold"

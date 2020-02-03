@@ -61,7 +61,6 @@ const InstallPWA = () => {
   useEffect(() => {
     const handler = (e: BeforeInstallPromptEvent) => {
       e.preventDefault();
-      console.log('we are being triggered :D');
       setIsPWAReady(true);
       setPromptInstall(e);
     };

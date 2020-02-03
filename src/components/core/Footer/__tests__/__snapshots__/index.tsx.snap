@@ -2,10 +2,10 @@
 
 exports[`components/Footer Test Suite matches snapshot 1`] = `
 <footer
-  className="sc-AykKC doSOLY"
+  className="sc-AykKC gnEApV"
 >
   <a
-    className="sc-AykKC sc-AykKD jphqpV"
+    className="sc-AykKC sc-AykKD dctdMy"
     href="https://test-repository/tree/3.16.120"
     onClick={[Function]}
     rel="noopener noreferrer"
@@ -14,7 +14,7 @@ exports[`components/Footer Test Suite matches snapshot 1`] = `
     v3.16.120 - source code
   </a>
   <div
-    className="sc-AykKC bjXMAi"
+    className="sc-AykKC kpUvPX"
     color="gray"
     fontSize={14}
   >

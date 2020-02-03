@@ -3,11 +3,11 @@
 exports[`components/Layout Test Suite matches snapshot 1`] = `
 Array [
   <header
-    className="sc-AykKC eabPrn"
+    className="sc-AykKC kCzpuw"
     display="flex"
   >
     <a
-      className="sc-AykKC sc-AykKD gSqtt"
+      className="sc-AykKC sc-AykKH hbQOCi"
       href="/about-me"
       target="_blank"
     >
@@ -29,7 +29,7 @@ Array [
           src="data:image/png;base64"
           style={
             Object {
-              "height": "80px",
+              "height": 80,
               "left": 0,
               "objectFit": "cover",
               "objectPosition": "center",
@@ -37,7 +37,7 @@ Array [
               "position": "absolute",
               "top": 0,
               "transitionDelay": "500ms",
-              "width": "80px",
+              "width": 80,
             }
           }
         />
@@ -57,7 +57,7 @@ Array [
 /static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
             style={
               Object {
-                "height": "80px",
+                "height": 80,
                 "left": 0,
                 "objectFit": "cover",
                 "objectPosition": "center",
@@ -65,7 +65,7 @@ Array [
                 "position": "absolute",
                 "top": 0,
                 "transition": "opacity 500ms",
-                "width": "80px",
+                "width": 80,
               }
             }
           />
@@ -83,11 +83,11 @@ Array [
         />
       </div>
       <div
-        className="sc-AykKC hQAXLw"
+        className="sc-AykKC VVQyp"
         display="flex"
       >
         <h3
-          className="sc-AykKE sc-AykKF iTkmMC"
+          className="sc-AykKD sc-AykKI qmRbt"
           color="primary"
           fontWeight="bold"
           letterSpacing={-1}
@@ -95,7 +95,7 @@ Array [
           Jeremie Rodriguez
         </h3>
         <h4
-          className="sc-AykKE sc-AykKF hdVueZ"
+          className="sc-AykKD sc-AykKI iMRCHs"
           fontWeight="semi-bold"
         >
           Full Stack Engineer
@@ -103,20 +103,20 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-AykKC fWKbuP"
+      className="sc-AykKC fIiwYg"
       display="flex"
     >
       <div
-        className="sc-AykKC dUqoui"
+        className="sc-AykKC hpWXlr"
         display="flex"
       >
         <a
-          className="sc-AykKC sc-AykKD igWYvC"
+          className="sc-AykKC sc-AykKH jBaOzv"
           href="/"
           target="_blank"
         >
           <svg
-            className="sc-AykKG falauK"
+            className="sc-AykKE QaHlM"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -126,18 +126,18 @@ Array [
         </a>
       </div>
       <div
-        className="sc-AykKC dUqoui"
+        className="sc-AykKC hpWXlr"
         display="flex"
       >
         <a
-          className="sc-AykKC sc-AykKD igWYvC"
+          className="sc-AykKC sc-AykKH jBaOzv"
           display="flex"
           download={true}
           fontWeight="semi-bold"
           target="_blank"
         >
           <svg
-            className="sc-AykKG falauK sc-AykKG falauK"
+            className="sc-AykKE QaHlM sc-AykKE QaHlM"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -157,15 +157,15 @@ Array [
     </nav>
   </header>,
   <main
-    className="sc-AykKC grkOYh"
+    className="sc-AykKC eHtUhO"
   >
     Layout Component
   </main>,
   <footer
-    className="sc-AykKC doSOLY"
+    className="sc-AykKC gnEApV"
   >
     <a
-      className="sc-AykKC sc-AykKD jphqpV"
+      className="sc-AykKC sc-AykKH giWWOK"
       href="https://test-repository/tree/3.16.120"
       onClick={[Function]}
       rel="noopener noreferrer"
@@ -174,12 +174,150 @@ Array [
       v3.16.120 - source code
     </a>
     <div
-      className="sc-AykKC bjXMAi"
+      className="sc-AykKC kpUvPX"
       color="gray"
       fontSize={14}
     >
       licensed under the Test-Licence license
     </div>
   </footer>,
+  <div
+    className="sc-AykKC jqflLh sc-AykKG gPESru"
+    display="flex"
+    width={
+      Object {
+        "mobileL": 256,
+      }
+    }
+  >
+    <div
+      className="sc-AykKC cHQUle"
+      display="flex"
+    >
+      <button
+        className="sc-AykKF jXEPwR"
+        onClick={[Function]}
+      >
+        <div
+          className=" gatsby-image-wrapper"
+          style={
+            Object {
+              "display": "inline-block",
+              "height": undefined,
+              "overflow": "hidden",
+              "position": "relative",
+              "width": undefined,
+            }
+          }
+        >
+          <img
+            alt=""
+            aria-hidden={true}
+            src="data:image/png;base64"
+            style={
+              Object {
+                "height": 32,
+                "left": 0,
+                "objectFit": "cover",
+                "objectPosition": "center",
+                "opacity": 1,
+                "position": "absolute",
+                "top": 0,
+                "transitionDelay": "500ms",
+                "width": 32,
+              }
+            }
+          />
+          <picture>
+            <source
+              srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              onLoad={[Function]}
+              src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
+              srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+              style={
+                Object {
+                  "height": 32,
+                  "left": 0,
+                  "objectFit": "cover",
+                  "objectPosition": "center",
+                  "opacity": 0,
+                  "position": "absolute",
+                  "top": 0,
+                  "transition": "opacity 500ms",
+                  "width": 32,
+                }
+              }
+            />
+          </picture>
+          <noscript
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+              }
+            }
+          />
+        </div>
+        <span
+          className="sc-AykKD jjaliH"
+          fontSize={18}
+        >
+          Install App
+        </span>
+        <svg
+          className="sc-AykKE dOqYrG"
+          height={24}
+          viewBox="0 0 24 24"
+          width={24}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M18 1.01L8 1c-1.1 0-2 .9-2 2v3h2V5h10v14H8v-1H6v3c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM10 15h2V8H5v2h3.59L3 15.59 4.41 17 10 11.41z"
+            fill="white"
+          />
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+        </svg>
+      </button>
+    </div>
+    <button
+      className="sc-AykKF iAjbny"
+      onClick={[Function]}
+    >
+      <svg
+        className="sc-AykKE QaHlM"
+        height={32}
+        viewBox="0 0 24 24"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          fill="white"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+  </div>,
 ]
 `;

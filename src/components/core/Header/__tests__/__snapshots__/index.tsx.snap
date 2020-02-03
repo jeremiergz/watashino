@@ -2,11 +2,11 @@
 
 exports[`components/Header Test Suite matches snapshot 1`] = `
 <header
-  className="sc-AykKC eabPrn"
+  className="sc-AykKC kCzpuw"
   display="flex"
 >
   <a
-    className="sc-AykKC sc-AykKF ivlMwz"
+    className="sc-AykKC sc-AykKF Gtrtk"
     href="/about-me"
     target="_blank"
   >
@@ -28,7 +28,7 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
         src="data:image/png;base64"
         style={
           Object {
-            "height": "80px",
+            "height": 80,
             "left": 0,
             "objectFit": "cover",
             "objectPosition": "center",
@@ -36,7 +36,7 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
             "position": "absolute",
             "top": 0,
             "transitionDelay": "500ms",
-            "width": "80px",
+            "width": 80,
           }
         }
       />
@@ -56,7 +56,7 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
 /static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
           style={
             Object {
-              "height": "80px",
+              "height": 80,
               "left": 0,
               "objectFit": "cover",
               "objectPosition": "center",
@@ -64,7 +64,7 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
               "position": "absolute",
               "top": 0,
               "transition": "opacity 500ms",
-              "width": "80px",
+              "width": 80,
             }
           }
         />
@@ -82,7 +82,7 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
       />
     </div>
     <div
-      className="sc-AykKC hQAXLw"
+      className="sc-AykKC VVQyp"
       display="flex"
     >
       <h3
@@ -102,15 +102,15 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
     </div>
   </a>
   <nav
-    className="sc-AykKC fWKbuP"
+    className="sc-AykKC fIiwYg"
     display="flex"
   >
     <div
-      className="sc-AykKC dUqoui"
+      className="sc-AykKC hpWXlr"
       display="flex"
     >
       <a
-        className="sc-AykKC sc-AykKF cDDyWc"
+        className="sc-AykKC sc-AykKF eCOsRl"
         href="/"
         target="_blank"
       >
@@ -125,11 +125,11 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
       </a>
     </div>
     <div
-      className="sc-AykKC dUqoui"
+      className="sc-AykKC hpWXlr"
       display="flex"
     >
       <a
-        className="sc-AykKC sc-AykKF cDDyWc"
+        className="sc-AykKC sc-AykKF eCOsRl"
         display="flex"
         download={true}
         fontWeight="semi-bold"
