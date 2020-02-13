@@ -3,11 +3,11 @@
 exports[`components/Layout Test Suite matches snapshot 1`] = `
 Array [
   <header
-    className="sc-AykKC kCzpuw"
+    className="sc-AxjAm hsUHgH"
     display="flex"
   >
     <a
-      className="sc-AykKC sc-AykKH hbQOCi"
+      className="sc-AxjAm sc-AxgMl fDFUVy"
       href="/about-me"
       target="_blank"
     >
@@ -83,11 +83,11 @@ Array [
         />
       </div>
       <div
-        className="sc-AykKC VVQyp"
+        className="sc-AxjAm hhwnmI"
         display="flex"
       >
         <h3
-          className="sc-AykKD sc-AykKI qmRbt"
+          className="sc-AxirZ sc-AxheI exFRVs"
           color="primary"
           fontWeight="bold"
           letterSpacing={-1}
@@ -95,7 +95,7 @@ Array [
           Jeremie Rodriguez
         </h3>
         <h4
-          className="sc-AykKD sc-AykKI iMRCHs"
+          className="sc-AxirZ sc-AxheI kraidT"
           fontWeight="semi-bold"
         >
           Full Stack Engineer
@@ -103,20 +103,20 @@ Array [
       </div>
     </a>
     <nav
-      className="sc-AykKC fIiwYg"
+      className="sc-AxjAm kyEBbt"
       display="flex"
     >
       <div
-        className="sc-AykKC hpWXlr"
+        className="sc-AxjAm YJyBc"
         display="flex"
       >
         <a
-          className="sc-AykKC sc-AykKH jBaOzv"
+          className="sc-AxjAm sc-AxgMl iepZAN"
           href="/"
           target="_blank"
         >
           <svg
-            className="sc-AykKE QaHlM"
+            className="sc-AxiKw cFlUSo"
             height={32}
             viewBox="0 0 24 24"
             width={32}
@@ -126,29 +126,28 @@ Array [
         </a>
       </div>
       <div
-        className="sc-AykKC hpWXlr"
+        className="sc-AxjAm YJyBc"
         display="flex"
       >
         <a
-          className="sc-AykKC sc-AykKH jBaOzv"
-          display="flex"
-          download={true}
-          fontWeight="semi-bold"
+          className="sc-AxjAm sc-AxgMl iepZAN"
+          onClick={[Function]}
+          rel="noopener noreferrer"
           target="_blank"
         >
           <svg
-            className="sc-AykKE QaHlM sc-AykKE QaHlM"
+            className="sc-AxiKw cFlUSo sc-AxiKw cFlUSo"
             height={32}
             viewBox="0 0 24 24"
             width={32}
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"
-            />
-            <path
               d="M0 0h24v24H0z"
               fill="none"
+            />
+            <path
+              d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"
             />
           </svg>
           Resume
@@ -157,15 +156,15 @@ Array [
     </nav>
   </header>,
   <main
-    className="sc-AykKC eHtUhO"
+    className="sc-AxjAm dHhofD"
   >
     Layout Component
   </main>,
   <footer
-    className="sc-AykKC gnEApV"
+    className="sc-AxjAm hiAgES"
   >
     <a
-      className="sc-AykKC sc-AykKH giWWOK"
+      className="sc-AxjAm sc-AxgMl TWyuE"
       href="https://test-repository/tree/3.16.120"
       onClick={[Function]}
       rel="noopener noreferrer"
@@ -174,7 +173,7 @@ Array [
       v3.16.120 - source code
     </a>
     <div
-      className="sc-AykKC kpUvPX"
+      className="sc-AxjAm iIgCKo"
       color="gray"
       fontSize={14}
     >
@@ -182,7 +181,7 @@ Array [
     </div>
   </footer>,
   <div
-    className="sc-AykKC jqflLh sc-AykKG gPESru"
+    className="sc-AxjAm kuDOdm sc-AxhUy nDnej"
     display="flex"
     width={
       Object {
@@ -191,11 +190,11 @@ Array [
     }
   >
     <div
-      className="sc-AykKC cHQUle"
+      className="sc-AxjAm dEMKQP"
       display="flex"
     >
       <button
-        className="sc-AykKF jXEPwR"
+        className="sc-AxhCb ldrPoz"
         onClick={[Function]}
       >
         <div
@@ -270,13 +269,13 @@ Array [
           />
         </div>
         <span
-          className="sc-AykKD jjaliH"
+          className="sc-AxirZ iiXnRa"
           fontSize={18}
         >
           Install App
         </span>
         <svg
-          className="sc-AykKE dOqYrG"
+          className="sc-AxiKw gjbmxY"
           height={24}
           viewBox="0 0 24 24"
           width={24}
@@ -298,11 +297,11 @@ Array [
       </button>
     </div>
     <button
-      className="sc-AykKF iAjbny"
+      className="sc-AxhCb etDJDI"
       onClick={[Function]}
     >
       <svg
-        className="sc-AykKE QaHlM"
+        className="sc-AxiKw cFlUSo"
         height={32}
         viewBox="0 0 24 24"
         width={32}

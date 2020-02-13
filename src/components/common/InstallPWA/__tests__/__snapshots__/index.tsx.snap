@@ -2,7 +2,7 @@
 
 exports[`components/InstallPWA Test Suite matches snapshot 1`] = `
 <div
-  className="sc-AykKC jqflLh sc-AykKG gPESru"
+  className="sc-AxjAm kuDOdm sc-AxhUy nDnej"
   display="flex"
   width={
     Object {
@@ -11,11 +11,11 @@ exports[`components/InstallPWA Test Suite matches snapshot 1`] = `
   }
 >
   <div
-    className="sc-AykKC cHQUle"
+    className="sc-AxjAm dEMKQP"
     display="flex"
   >
     <button
-      className="sc-AykKF jXEPwR"
+      className="sc-AxhCb ldrPoz"
       onClick={[Function]}
     >
       <div
@@ -82,13 +82,13 @@ exports[`components/InstallPWA Test Suite matches snapshot 1`] = `
         />
       </div>
       <span
-        className="sc-AykKD jjaliH"
+        className="sc-AxirZ iiXnRa"
         fontSize={18}
       >
         Install App
       </span>
       <svg
-        className="sc-AykKE dOqYrG"
+        className="sc-AxiKw gjbmxY"
         height={24}
         viewBox="0 0 24 24"
         width={24}
@@ -110,11 +110,11 @@ exports[`components/InstallPWA Test Suite matches snapshot 1`] = `
     </button>
   </div>
   <button
-    className="sc-AykKF iAjbny"
+    className="sc-AxhCb etDJDI"
     onClick={[Function]}
   >
     <svg
-      className="sc-AykKE QaHlM"
+      className="sc-AxiKw cFlUSo"
       height={32}
       viewBox="0 0 24 24"
       width={32}

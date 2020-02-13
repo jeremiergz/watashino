@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/widgets/InlineCode Test Suite matches snapshot 1`] = `
+exports[`components/widgets/Code/Inline Test Suite matches snapshot 1`] = `
 <code
-  className="sc-AykKC dWimRH"
+  className="sc-AxjAm doXTVW"
   color="white"
   display="inline-block"
   fontSize={16}

@@ -2,10 +2,10 @@
 
 exports[`components/widgets/List Test Suite matches snapshot 1`] = `
 <ul
-  className="sc-AykKC sc-AykKE jhrrfD"
+  className="sc-AxjAm sc-AxiKw laWlNr"
 >
   <label
-    className="sc-AykKD bSeRXq"
+    className="sc-AxirZ jyJqGT"
     color="secondary"
     display="block"
     fontSize={32}
@@ -14,7 +14,7 @@ exports[`components/widgets/List Test Suite matches snapshot 1`] = `
     List Label
   </label>
   <li
-    className="sc-AykKC ikGVWR"
+    className="sc-AxjAm fyCqyO"
     display="flex"
     fontSize={24}
     fontWeight="semi-bold"
@@ -22,7 +22,7 @@ exports[`components/widgets/List Test Suite matches snapshot 1`] = `
     List Item 0
   </li>
   <li
-    className="sc-AykKC ikGVWR"
+    className="sc-AxjAm fyCqyO"
     display="flex"
     fontSize={24}
     fontWeight="semi-bold"

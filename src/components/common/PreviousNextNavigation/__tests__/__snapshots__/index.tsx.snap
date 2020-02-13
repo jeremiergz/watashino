@@ -2,11 +2,11 @@
 
 exports[`components/widgets/PreviousNextNavigation Test Suite matches snapshot 1`] = `
 <div
-  className="sc-AykKC hSdUYk"
+  className="sc-AxjAm gHGfxz"
   display="flex"
 >
   <a
-    className="sc-AykKC sc-AykKD bgHOvV"
+    className="sc-AxjAm sc-AxirZ kbiYlu"
     href="/previous"
     target="_blank"
     variant="underlined"
@@ -14,7 +14,7 @@ exports[`components/widgets/PreviousNextNavigation Test Suite matches snapshot 1
     Prev
   </a>
   <a
-    className="sc-AykKC sc-AykKD bgHOvV"
+    className="sc-AxjAm sc-AxirZ kbiYlu"
     href="/next"
     target="_blank"
     variant="underlined"

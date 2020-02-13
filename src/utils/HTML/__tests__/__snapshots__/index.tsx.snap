@@ -3,11 +3,11 @@
 exports[`utils/HTML Test Suite matches snapshot 1`] = `
 <div>
   <p
-    className="sc-AykKC fVJlmq"
+    className="sc-AxirZ jqkUmq"
     fontSize={20}
   >
     <a
-      className="sc-AykKE sc-AykKF gjJNAL"
+      className="sc-AxjAm sc-AxgMl fFXmft"
       href="https://www.gatsbyjs.org"
       onClick={[Function]}
       rel="noopener noreferrer"
@@ -19,18 +19,18 @@ exports[`utils/HTML Test Suite matches snapshot 1`] = `
   
 
   <blockquote
-    className="sc-AykKE hDdjAk"
+    className="sc-AxjAm bFmpxn"
     color="gray"
     fontStyle="italic"
   >
     <div
-      className="sc-AykKE sc-AykKG bLQTRm"
+      className="sc-AxjAm sc-AxheI jKIUan"
       height="100%"
     />
     
 
     <p
-      className="sc-AykKC fVJlmq"
+      className="sc-AxirZ jqkUmq"
       fontSize={20}
     >
       blockquote
@@ -41,23 +41,56 @@ exports[`utils/HTML Test Suite matches snapshot 1`] = `
   
 
   <p
-    className="sc-AykKC fVJlmq"
+    className="sc-AxirZ jqkUmq"
     fontSize={20}
   >
     <code
-      className="sc-AykKC dWimRH"
+      className="sc-AxirZ idqhbh"
       color="white"
       display="inline-block"
       fontSize={16}
     >
       inline code
     </code>
+    <span
+      className="sc-AxjAm ezCmCO"
+      display="flex"
+      width={0}
+    >
+      <button
+        className="sc-AxhCb OPdng"
+        onClick={[Function]}
+      >
+        <svg
+          className="sc-AxiKw gjbmxY"
+          height={24}
+          viewBox="0 0 24 24"
+          width={24}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"
+            fill="white"
+          />
+        </svg>
+        <span
+          className="sc-AxirZ cdMprA"
+          color="white"
+        >
+          copy
+        </span>
+      </button>
+    </span>
   </p>
   
 
   <pre>
     <code
-      className="sc-AykKC dWimRH"
+      className="sc-AxirZ idqhbh"
       color="white"
       display="inline-block"
       fontSize={16}
@@ -65,44 +98,77 @@ exports[`utils/HTML Test Suite matches snapshot 1`] = `
       code
 
     </code>
+    <span
+      className="sc-AxjAm ezCmCO"
+      display="flex"
+      width={0}
+    >
+      <button
+        className="sc-AxhCb OPdng"
+        onClick={[Function]}
+      >
+        <svg
+          className="sc-AxiKw gjbmxY"
+          height={24}
+          viewBox="0 0 24 24"
+          width={24}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"
+            fill="white"
+          />
+        </svg>
+        <span
+          className="sc-AxirZ cdMprA"
+          color="white"
+        >
+          copy
+        </span>
+      </button>
+    </span>
   </pre>
   
 
   <h1
-    className="sc-AykKC sc-AykKD ilIBWX"
+    className="sc-AxirZ sc-AxhUy dpPckj"
   >
     h1
   </h1>
   
 
   <h2
-    className="sc-AykKC sc-AykKD cuLbSf"
+    className="sc-AxirZ sc-AxhUy gxLmbd"
   >
     h2
   </h2>
   
 
   <h3
-    className="sc-AykKC sc-AykKD kdozWw"
+    className="sc-AxirZ sc-AxhUy dxogtu"
   >
     h3
   </h3>
   
 
   <h4
-    className="sc-AykKC sc-AykKD hOiHRw"
+    className="sc-AxirZ sc-AxhUy gGHSWu"
   >
     h4
   </h4>
   
 
   <hr
-    className="sc-AykKE eITaFc"
+    className="sc-AxjAm jgSZUz"
   />
   
 
   <p
-    className="sc-AykKC fVJlmq"
+    className="sc-AxirZ jqkUmq"
     fontSize={20}
   >
     text

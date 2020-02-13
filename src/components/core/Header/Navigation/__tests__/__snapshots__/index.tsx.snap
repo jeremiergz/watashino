@@ -2,20 +2,20 @@
 
 exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
 <nav
-  className="sc-AykKC fIiwYg"
+  className="sc-AxjAm kyEBbt"
   display="flex"
 >
   <div
-    className="sc-AykKC hpWXlr"
+    className="sc-AxjAm YJyBc"
     display="flex"
   >
     <a
-      className="sc-AykKC sc-AykKD kTXGHX"
+      className="sc-AxjAm sc-AxirZ clnAGy"
       href="/"
       target="_blank"
     >
       <svg
-        className="sc-AykKE QaHlM"
+        className="sc-AxiKw cFlUSo"
         height={32}
         viewBox="0 0 24 24"
         width={32}
@@ -25,30 +25,29 @@ exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
     </a>
   </div>
   <div
-    className="sc-AykKC hpWXlr"
+    className="sc-AxjAm YJyBc"
     display="flex"
   >
     <a
-      className="sc-AykKC sc-AykKD kTXGHX"
-      display="flex"
-      download={true}
-      fontWeight="semi-bold"
-      href="/static/resume-file.pdf"
+      className="sc-AxjAm sc-AxirZ clnAGy"
+      href="https://fake/resume-file.pdf"
+      onClick={[Function]}
+      rel="noopener noreferrer"
       target="_blank"
     >
       <svg
-        className="sc-AykKE QaHlM sc-AykKE QaHlM"
+        className="sc-AxiKw cFlUSo sc-AxiKw cFlUSo"
         height={32}
         viewBox="0 0 24 24"
         width={32}
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"
-        />
-        <path
           d="M0 0h24v24H0z"
           fill="none"
+        />
+        <path
+          d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"
         />
       </svg>
       Resume

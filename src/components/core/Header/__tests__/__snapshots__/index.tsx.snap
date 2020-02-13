@@ -2,11 +2,11 @@
 
 exports[`components/Header Test Suite matches snapshot 1`] = `
 <header
-  className="sc-AykKC kCzpuw"
+  className="sc-AxjAm hsUHgH"
   display="flex"
 >
   <a
-    className="sc-AykKC sc-AykKF Gtrtk"
+    className="sc-AxjAm sc-AxhCb fRiVuR"
     href="/about-me"
     target="_blank"
   >
@@ -82,11 +82,11 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
       />
     </div>
     <div
-      className="sc-AykKC VVQyp"
+      className="sc-AxjAm hhwnmI"
       display="flex"
     >
       <h3
-        className="sc-AykKD sc-AykKE ejUWqZ"
+        className="sc-AxirZ sc-AxiKw hOKSWF"
         color="primary"
         fontWeight="bold"
         letterSpacing={-1}
@@ -94,7 +94,7 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
         Jeremie Rodriguez
       </h3>
       <h4
-        className="sc-AykKD sc-AykKE gAWIEk"
+        className="sc-AxirZ sc-AxiKw dydJS"
         fontWeight="semi-bold"
       >
         Full Stack Engineer
@@ -102,20 +102,20 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
     </div>
   </a>
   <nav
-    className="sc-AykKC fIiwYg"
+    className="sc-AxjAm kyEBbt"
     display="flex"
   >
     <div
-      className="sc-AykKC hpWXlr"
+      className="sc-AxjAm YJyBc"
       display="flex"
     >
       <a
-        className="sc-AykKC sc-AykKF eCOsRl"
+        className="sc-AxjAm sc-AxhCb hFUsPC"
         href="/"
         target="_blank"
       >
         <svg
-          className="sc-AykKG falauK"
+          className="sc-AxhUy iqzrep"
           height={32}
           viewBox="0 0 24 24"
           width={32}
@@ -125,29 +125,28 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
       </a>
     </div>
     <div
-      className="sc-AykKC hpWXlr"
+      className="sc-AxjAm YJyBc"
       display="flex"
     >
       <a
-        className="sc-AykKC sc-AykKF eCOsRl"
-        display="flex"
-        download={true}
-        fontWeight="semi-bold"
+        className="sc-AxjAm sc-AxhCb hFUsPC"
+        onClick={[Function]}
+        rel="noopener noreferrer"
         target="_blank"
       >
         <svg
-          className="sc-AykKG falauK sc-AykKG falauK"
+          className="sc-AxhUy iqzrep sc-AxhUy iqzrep"
           height={32}
           viewBox="0 0 24 24"
           width={32}
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"
-          />
-          <path
             d="M0 0h24v24H0z"
             fill="none"
+          />
+          <path
+            d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"
           />
         </svg>
         Resume

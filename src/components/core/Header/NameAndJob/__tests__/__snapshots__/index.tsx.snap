@@ -2,7 +2,7 @@
 
 exports[`components/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
 <a
-  className="sc-AykKE sc-AykKF Gtrtk"
+  className="sc-AxiKw sc-AxhCb fRiVuR"
   href="/about-me"
   target="_blank"
 >
@@ -78,11 +78,11 @@ exports[`components/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
     />
   </div>
   <div
-    className="sc-AykKE ezDnjT"
+    className="sc-AxiKw dsGmxf"
     display="flex"
   >
     <h3
-      className="sc-AykKC sc-AykKD kQbpus"
+      className="sc-AxjAm sc-AxirZ cWVwIJ"
       color="primary"
       fontWeight="bold"
       letterSpacing={-1}
@@ -90,7 +90,7 @@ exports[`components/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
       Jeremie Rodriguez
     </h3>
     <h4
-      className="sc-AykKC sc-AykKD fXXXdv"
+      className="sc-AxjAm sc-AxirZ fPGUJq"
       fontWeight="semi-bold"
     >
       Full Stack Engineer
