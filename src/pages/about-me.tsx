@@ -133,7 +133,7 @@ const AboutMePage = () => {
       <Layout.Content keywords={keywords} path={Routes.aboutMe} title={name} type="section">
         <Flex alignItems="center" justifyContent="center" marginBottom={4}>
           {contactObjects.map(({ img, label, url }) => (
-            <Link key={url} to={url} external>
+            <Link external key={url} to={url}>
               <Box paddingX={2} width={{ _: 32, mobileM: 38 }}>
                 <Img alt={label} fluid={img} imgStyle={{ height: '100%', width: '100%' }} />
               </Box>
@@ -144,7 +144,7 @@ const AboutMePage = () => {
         <Paragraph marginTop={4}>{`Hi there, I'm Jeremie!`}</Paragraph>
         <Paragraph>
           {`I'm currently working at `}
-          <Link display="inline-flex" height="26px" to={company.website} external verticalAlign="middle">
+          <Link display="inline-flex" external height="26px" to={company.website} verticalAlign="middle">
             <Img alt={company.name} fixed={companyImgFixed} imgStyle={{ height: '25px' }} Tag="span" />
           </Link>
           {` as a${jobTitleStartsWithVowel ? 'n' : ''} ${jobTitle}.`}
@@ -152,7 +152,7 @@ const AboutMePage = () => {
         <Paragraph>{'I particularly enjoy working with those technologies:'}</Paragraph>
         <Technologies flexWrap="wrap" justifyContent={{ _: 'center', tablet: 'flex-start' }}>
           {technologyObjects.map(({ img, name, website }) => (
-            <Link key={name} to={website} external margin={2}>
+            <Link external key={name} margin={2} to={website}>
               <Img alt={name} fixed={img} imgStyle={{ height: '52px', width: '52px' }} />
             </Link>
           ))}
@@ -160,7 +160,7 @@ const AboutMePage = () => {
         {openToGigs && (
           <Paragraph>
             {` I'm also doing freelancing gigs, feel free to `}
-            <Link to={mailto.url} external variant="underlined">
+            <Link external to={mailto.url} variant="underlined">
               contact me
             </Link>
             {` if you're interested!`}
@@ -168,7 +168,7 @@ const AboutMePage = () => {
         )}
         <Box fontSize={20} marginBottom={2} marginTop={5}>
           {'▾ By the way, this is where I live, '}
-          <Link to={location.website} external>
+          <Link external to={location.website}>
             {location.city}
           </Link>
           {'! ▾'}

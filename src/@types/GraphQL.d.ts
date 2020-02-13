@@ -29,7 +29,7 @@ declare module GraphQL {
     jobTitle?: Maybe<Scalars['String']>;
     location?: Maybe<DataJsonLocation>;
     openToGigs?: Maybe<Scalars['Boolean']>;
-    resumeFile?: Maybe<Scalars['String']>;
+    resumeLink?: Maybe<Scalars['String']>;
   };
 
   type DataJsonCompany = {
@@ -183,7 +183,7 @@ declare module GraphQL {
     LocationLng = 'location___lng',
     LocationWebsite = 'location___website',
     OpenToGigs = 'openToGigs',
-    ResumeFile = 'resumeFile',
+    ResumeLink = 'resumeLink',
   }
 
   type DataJsonFilterInput = {
@@ -196,7 +196,7 @@ declare module GraphQL {
     jobTitle?: Maybe<StringQueryOperatorInput>;
     location?: Maybe<DataJsonLocationFilterInput>;
     openToGigs?: Maybe<BooleanQueryOperatorInput>;
-    resumeFile?: Maybe<StringQueryOperatorInput>;
+    resumeLink?: Maybe<StringQueryOperatorInput>;
   };
 
   type DataJsonGroupConnection = {
@@ -576,10 +576,10 @@ declare module GraphQL {
     parent?: Maybe<Node>;
     children: Array<Node>;
     internal: Internal;
-    childrenSkillsJson?: Maybe<Array<Maybe<SkillsJson>>>;
-    childrenTechnologiesJson?: Maybe<Array<Maybe<TechnologiesJson>>>;
     childDataJson?: Maybe<DataJson>;
+    childrenSkillsJson?: Maybe<Array<Maybe<SkillsJson>>>;
     childrenNavigationJson?: Maybe<Array<Maybe<NavigationJson>>>;
+    childrenTechnologiesJson?: Maybe<Array<Maybe<TechnologiesJson>>>;
     childGmapsJson?: Maybe<GmapsJson>;
     childMarkdownRemark?: Maybe<MarkdownRemark>;
   };
@@ -870,93 +870,6 @@ declare module GraphQL {
     InternalMediaType = 'internal___mediaType',
     InternalOwner = 'internal___owner',
     InternalType = 'internal___type',
-    ChildrenSkillsJson = 'childrenSkillsJson',
-    ChildrenSkillsJsonId = 'childrenSkillsJson___id',
-    ChildrenSkillsJsonParentId = 'childrenSkillsJson___parent___id',
-    ChildrenSkillsJsonParentParentId = 'childrenSkillsJson___parent___parent___id',
-    ChildrenSkillsJsonParentParentChildren = 'childrenSkillsJson___parent___parent___children',
-    ChildrenSkillsJsonParentChildren = 'childrenSkillsJson___parent___children',
-    ChildrenSkillsJsonParentChildrenId = 'childrenSkillsJson___parent___children___id',
-    ChildrenSkillsJsonParentChildrenChildren = 'childrenSkillsJson___parent___children___children',
-    ChildrenSkillsJsonParentInternalContent = 'childrenSkillsJson___parent___internal___content',
-    ChildrenSkillsJsonParentInternalContentDigest = 'childrenSkillsJson___parent___internal___contentDigest',
-    ChildrenSkillsJsonParentInternalDescription = 'childrenSkillsJson___parent___internal___description',
-    ChildrenSkillsJsonParentInternalFieldOwners = 'childrenSkillsJson___parent___internal___fieldOwners',
-    ChildrenSkillsJsonParentInternalIgnoreType = 'childrenSkillsJson___parent___internal___ignoreType',
-    ChildrenSkillsJsonParentInternalMediaType = 'childrenSkillsJson___parent___internal___mediaType',
-    ChildrenSkillsJsonParentInternalOwner = 'childrenSkillsJson___parent___internal___owner',
-    ChildrenSkillsJsonParentInternalType = 'childrenSkillsJson___parent___internal___type',
-    ChildrenSkillsJsonChildren = 'childrenSkillsJson___children',
-    ChildrenSkillsJsonChildrenId = 'childrenSkillsJson___children___id',
-    ChildrenSkillsJsonChildrenParentId = 'childrenSkillsJson___children___parent___id',
-    ChildrenSkillsJsonChildrenParentChildren = 'childrenSkillsJson___children___parent___children',
-    ChildrenSkillsJsonChildrenChildren = 'childrenSkillsJson___children___children',
-    ChildrenSkillsJsonChildrenChildrenId = 'childrenSkillsJson___children___children___id',
-    ChildrenSkillsJsonChildrenChildrenChildren = 'childrenSkillsJson___children___children___children',
-    ChildrenSkillsJsonChildrenInternalContent = 'childrenSkillsJson___children___internal___content',
-    ChildrenSkillsJsonChildrenInternalContentDigest = 'childrenSkillsJson___children___internal___contentDigest',
-    ChildrenSkillsJsonChildrenInternalDescription = 'childrenSkillsJson___children___internal___description',
-    ChildrenSkillsJsonChildrenInternalFieldOwners = 'childrenSkillsJson___children___internal___fieldOwners',
-    ChildrenSkillsJsonChildrenInternalIgnoreType = 'childrenSkillsJson___children___internal___ignoreType',
-    ChildrenSkillsJsonChildrenInternalMediaType = 'childrenSkillsJson___children___internal___mediaType',
-    ChildrenSkillsJsonChildrenInternalOwner = 'childrenSkillsJson___children___internal___owner',
-    ChildrenSkillsJsonChildrenInternalType = 'childrenSkillsJson___children___internal___type',
-    ChildrenSkillsJsonInternalContent = 'childrenSkillsJson___internal___content',
-    ChildrenSkillsJsonInternalContentDigest = 'childrenSkillsJson___internal___contentDigest',
-    ChildrenSkillsJsonInternalDescription = 'childrenSkillsJson___internal___description',
-    ChildrenSkillsJsonInternalFieldOwners = 'childrenSkillsJson___internal___fieldOwners',
-    ChildrenSkillsJsonInternalIgnoreType = 'childrenSkillsJson___internal___ignoreType',
-    ChildrenSkillsJsonInternalMediaType = 'childrenSkillsJson___internal___mediaType',
-    ChildrenSkillsJsonInternalOwner = 'childrenSkillsJson___internal___owner',
-    ChildrenSkillsJsonInternalType = 'childrenSkillsJson___internal___type',
-    ChildrenSkillsJsonName = 'childrenSkillsJson___name',
-    ChildrenSkillsJsonSortOrder = 'childrenSkillsJson___sortOrder',
-    ChildrenSkillsJsonItems = 'childrenSkillsJson___items',
-    ChildrenSkillsJsonItemsName = 'childrenSkillsJson___items___name',
-    ChildrenSkillsJsonItemsProficiencyLevel = 'childrenSkillsJson___items___proficiencyLevel',
-    ChildrenSkillsJsonItemsSortOrder = 'childrenSkillsJson___items___sortOrder',
-    ChildrenTechnologiesJson = 'childrenTechnologiesJson',
-    ChildrenTechnologiesJsonId = 'childrenTechnologiesJson___id',
-    ChildrenTechnologiesJsonParentId = 'childrenTechnologiesJson___parent___id',
-    ChildrenTechnologiesJsonParentParentId = 'childrenTechnologiesJson___parent___parent___id',
-    ChildrenTechnologiesJsonParentParentChildren = 'childrenTechnologiesJson___parent___parent___children',
-    ChildrenTechnologiesJsonParentChildren = 'childrenTechnologiesJson___parent___children',
-    ChildrenTechnologiesJsonParentChildrenId = 'childrenTechnologiesJson___parent___children___id',
-    ChildrenTechnologiesJsonParentChildrenChildren = 'childrenTechnologiesJson___parent___children___children',
-    ChildrenTechnologiesJsonParentInternalContent = 'childrenTechnologiesJson___parent___internal___content',
-    ChildrenTechnologiesJsonParentInternalContentDigest = 'childrenTechnologiesJson___parent___internal___contentDigest',
-    ChildrenTechnologiesJsonParentInternalDescription = 'childrenTechnologiesJson___parent___internal___description',
-    ChildrenTechnologiesJsonParentInternalFieldOwners = 'childrenTechnologiesJson___parent___internal___fieldOwners',
-    ChildrenTechnologiesJsonParentInternalIgnoreType = 'childrenTechnologiesJson___parent___internal___ignoreType',
-    ChildrenTechnologiesJsonParentInternalMediaType = 'childrenTechnologiesJson___parent___internal___mediaType',
-    ChildrenTechnologiesJsonParentInternalOwner = 'childrenTechnologiesJson___parent___internal___owner',
-    ChildrenTechnologiesJsonParentInternalType = 'childrenTechnologiesJson___parent___internal___type',
-    ChildrenTechnologiesJsonChildren = 'childrenTechnologiesJson___children',
-    ChildrenTechnologiesJsonChildrenId = 'childrenTechnologiesJson___children___id',
-    ChildrenTechnologiesJsonChildrenParentId = 'childrenTechnologiesJson___children___parent___id',
-    ChildrenTechnologiesJsonChildrenParentChildren = 'childrenTechnologiesJson___children___parent___children',
-    ChildrenTechnologiesJsonChildrenChildren = 'childrenTechnologiesJson___children___children',
-    ChildrenTechnologiesJsonChildrenChildrenId = 'childrenTechnologiesJson___children___children___id',
-    ChildrenTechnologiesJsonChildrenChildrenChildren = 'childrenTechnologiesJson___children___children___children',
-    ChildrenTechnologiesJsonChildrenInternalContent = 'childrenTechnologiesJson___children___internal___content',
-    ChildrenTechnologiesJsonChildrenInternalContentDigest = 'childrenTechnologiesJson___children___internal___contentDigest',
-    ChildrenTechnologiesJsonChildrenInternalDescription = 'childrenTechnologiesJson___children___internal___description',
-    ChildrenTechnologiesJsonChildrenInternalFieldOwners = 'childrenTechnologiesJson___children___internal___fieldOwners',
-    ChildrenTechnologiesJsonChildrenInternalIgnoreType = 'childrenTechnologiesJson___children___internal___ignoreType',
-    ChildrenTechnologiesJsonChildrenInternalMediaType = 'childrenTechnologiesJson___children___internal___mediaType',
-    ChildrenTechnologiesJsonChildrenInternalOwner = 'childrenTechnologiesJson___children___internal___owner',
-    ChildrenTechnologiesJsonChildrenInternalType = 'childrenTechnologiesJson___children___internal___type',
-    ChildrenTechnologiesJsonInternalContent = 'childrenTechnologiesJson___internal___content',
-    ChildrenTechnologiesJsonInternalContentDigest = 'childrenTechnologiesJson___internal___contentDigest',
-    ChildrenTechnologiesJsonInternalDescription = 'childrenTechnologiesJson___internal___description',
-    ChildrenTechnologiesJsonInternalFieldOwners = 'childrenTechnologiesJson___internal___fieldOwners',
-    ChildrenTechnologiesJsonInternalIgnoreType = 'childrenTechnologiesJson___internal___ignoreType',
-    ChildrenTechnologiesJsonInternalMediaType = 'childrenTechnologiesJson___internal___mediaType',
-    ChildrenTechnologiesJsonInternalOwner = 'childrenTechnologiesJson___internal___owner',
-    ChildrenTechnologiesJsonInternalType = 'childrenTechnologiesJson___internal___type',
-    ChildrenTechnologiesJsonImg = 'childrenTechnologiesJson___img',
-    ChildrenTechnologiesJsonName = 'childrenTechnologiesJson___name',
-    ChildrenTechnologiesJsonWebsite = 'childrenTechnologiesJson___website',
     ChildDataJsonId = 'childDataJson___id',
     ChildDataJsonParentId = 'childDataJson___parent___id',
     ChildDataJsonParentParentId = 'childDataJson___parent___parent___id',
@@ -1008,7 +921,52 @@ declare module GraphQL {
     ChildDataJsonLocationLng = 'childDataJson___location___lng',
     ChildDataJsonLocationWebsite = 'childDataJson___location___website',
     ChildDataJsonOpenToGigs = 'childDataJson___openToGigs',
-    ChildDataJsonResumeFile = 'childDataJson___resumeFile',
+    ChildDataJsonResumeLink = 'childDataJson___resumeLink',
+    ChildrenSkillsJson = 'childrenSkillsJson',
+    ChildrenSkillsJsonId = 'childrenSkillsJson___id',
+    ChildrenSkillsJsonParentId = 'childrenSkillsJson___parent___id',
+    ChildrenSkillsJsonParentParentId = 'childrenSkillsJson___parent___parent___id',
+    ChildrenSkillsJsonParentParentChildren = 'childrenSkillsJson___parent___parent___children',
+    ChildrenSkillsJsonParentChildren = 'childrenSkillsJson___parent___children',
+    ChildrenSkillsJsonParentChildrenId = 'childrenSkillsJson___parent___children___id',
+    ChildrenSkillsJsonParentChildrenChildren = 'childrenSkillsJson___parent___children___children',
+    ChildrenSkillsJsonParentInternalContent = 'childrenSkillsJson___parent___internal___content',
+    ChildrenSkillsJsonParentInternalContentDigest = 'childrenSkillsJson___parent___internal___contentDigest',
+    ChildrenSkillsJsonParentInternalDescription = 'childrenSkillsJson___parent___internal___description',
+    ChildrenSkillsJsonParentInternalFieldOwners = 'childrenSkillsJson___parent___internal___fieldOwners',
+    ChildrenSkillsJsonParentInternalIgnoreType = 'childrenSkillsJson___parent___internal___ignoreType',
+    ChildrenSkillsJsonParentInternalMediaType = 'childrenSkillsJson___parent___internal___mediaType',
+    ChildrenSkillsJsonParentInternalOwner = 'childrenSkillsJson___parent___internal___owner',
+    ChildrenSkillsJsonParentInternalType = 'childrenSkillsJson___parent___internal___type',
+    ChildrenSkillsJsonChildren = 'childrenSkillsJson___children',
+    ChildrenSkillsJsonChildrenId = 'childrenSkillsJson___children___id',
+    ChildrenSkillsJsonChildrenParentId = 'childrenSkillsJson___children___parent___id',
+    ChildrenSkillsJsonChildrenParentChildren = 'childrenSkillsJson___children___parent___children',
+    ChildrenSkillsJsonChildrenChildren = 'childrenSkillsJson___children___children',
+    ChildrenSkillsJsonChildrenChildrenId = 'childrenSkillsJson___children___children___id',
+    ChildrenSkillsJsonChildrenChildrenChildren = 'childrenSkillsJson___children___children___children',
+    ChildrenSkillsJsonChildrenInternalContent = 'childrenSkillsJson___children___internal___content',
+    ChildrenSkillsJsonChildrenInternalContentDigest = 'childrenSkillsJson___children___internal___contentDigest',
+    ChildrenSkillsJsonChildrenInternalDescription = 'childrenSkillsJson___children___internal___description',
+    ChildrenSkillsJsonChildrenInternalFieldOwners = 'childrenSkillsJson___children___internal___fieldOwners',
+    ChildrenSkillsJsonChildrenInternalIgnoreType = 'childrenSkillsJson___children___internal___ignoreType',
+    ChildrenSkillsJsonChildrenInternalMediaType = 'childrenSkillsJson___children___internal___mediaType',
+    ChildrenSkillsJsonChildrenInternalOwner = 'childrenSkillsJson___children___internal___owner',
+    ChildrenSkillsJsonChildrenInternalType = 'childrenSkillsJson___children___internal___type',
+    ChildrenSkillsJsonInternalContent = 'childrenSkillsJson___internal___content',
+    ChildrenSkillsJsonInternalContentDigest = 'childrenSkillsJson___internal___contentDigest',
+    ChildrenSkillsJsonInternalDescription = 'childrenSkillsJson___internal___description',
+    ChildrenSkillsJsonInternalFieldOwners = 'childrenSkillsJson___internal___fieldOwners',
+    ChildrenSkillsJsonInternalIgnoreType = 'childrenSkillsJson___internal___ignoreType',
+    ChildrenSkillsJsonInternalMediaType = 'childrenSkillsJson___internal___mediaType',
+    ChildrenSkillsJsonInternalOwner = 'childrenSkillsJson___internal___owner',
+    ChildrenSkillsJsonInternalType = 'childrenSkillsJson___internal___type',
+    ChildrenSkillsJsonName = 'childrenSkillsJson___name',
+    ChildrenSkillsJsonSortOrder = 'childrenSkillsJson___sortOrder',
+    ChildrenSkillsJsonItems = 'childrenSkillsJson___items',
+    ChildrenSkillsJsonItemsName = 'childrenSkillsJson___items___name',
+    ChildrenSkillsJsonItemsProficiencyLevel = 'childrenSkillsJson___items___proficiencyLevel',
+    ChildrenSkillsJsonItemsSortOrder = 'childrenSkillsJson___items___sortOrder',
     ChildrenNavigationJson = 'childrenNavigationJson',
     ChildrenNavigationJsonId = 'childrenNavigationJson___id',
     ChildrenNavigationJsonParentId = 'childrenNavigationJson___parent___id',
@@ -1055,6 +1013,48 @@ declare module GraphQL {
     ChildrenNavigationJsonPage = 'childrenNavigationJson___page',
     ChildrenNavigationJsonTo = 'childrenNavigationJson___to',
     ChildrenNavigationJsonIgnoreInNavigation = 'childrenNavigationJson___ignoreInNavigation',
+    ChildrenTechnologiesJson = 'childrenTechnologiesJson',
+    ChildrenTechnologiesJsonId = 'childrenTechnologiesJson___id',
+    ChildrenTechnologiesJsonParentId = 'childrenTechnologiesJson___parent___id',
+    ChildrenTechnologiesJsonParentParentId = 'childrenTechnologiesJson___parent___parent___id',
+    ChildrenTechnologiesJsonParentParentChildren = 'childrenTechnologiesJson___parent___parent___children',
+    ChildrenTechnologiesJsonParentChildren = 'childrenTechnologiesJson___parent___children',
+    ChildrenTechnologiesJsonParentChildrenId = 'childrenTechnologiesJson___parent___children___id',
+    ChildrenTechnologiesJsonParentChildrenChildren = 'childrenTechnologiesJson___parent___children___children',
+    ChildrenTechnologiesJsonParentInternalContent = 'childrenTechnologiesJson___parent___internal___content',
+    ChildrenTechnologiesJsonParentInternalContentDigest = 'childrenTechnologiesJson___parent___internal___contentDigest',
+    ChildrenTechnologiesJsonParentInternalDescription = 'childrenTechnologiesJson___parent___internal___description',
+    ChildrenTechnologiesJsonParentInternalFieldOwners = 'childrenTechnologiesJson___parent___internal___fieldOwners',
+    ChildrenTechnologiesJsonParentInternalIgnoreType = 'childrenTechnologiesJson___parent___internal___ignoreType',
+    ChildrenTechnologiesJsonParentInternalMediaType = 'childrenTechnologiesJson___parent___internal___mediaType',
+    ChildrenTechnologiesJsonParentInternalOwner = 'childrenTechnologiesJson___parent___internal___owner',
+    ChildrenTechnologiesJsonParentInternalType = 'childrenTechnologiesJson___parent___internal___type',
+    ChildrenTechnologiesJsonChildren = 'childrenTechnologiesJson___children',
+    ChildrenTechnologiesJsonChildrenId = 'childrenTechnologiesJson___children___id',
+    ChildrenTechnologiesJsonChildrenParentId = 'childrenTechnologiesJson___children___parent___id',
+    ChildrenTechnologiesJsonChildrenParentChildren = 'childrenTechnologiesJson___children___parent___children',
+    ChildrenTechnologiesJsonChildrenChildren = 'childrenTechnologiesJson___children___children',
+    ChildrenTechnologiesJsonChildrenChildrenId = 'childrenTechnologiesJson___children___children___id',
+    ChildrenTechnologiesJsonChildrenChildrenChildren = 'childrenTechnologiesJson___children___children___children',
+    ChildrenTechnologiesJsonChildrenInternalContent = 'childrenTechnologiesJson___children___internal___content',
+    ChildrenTechnologiesJsonChildrenInternalContentDigest = 'childrenTechnologiesJson___children___internal___contentDigest',
+    ChildrenTechnologiesJsonChildrenInternalDescription = 'childrenTechnologiesJson___children___internal___description',
+    ChildrenTechnologiesJsonChildrenInternalFieldOwners = 'childrenTechnologiesJson___children___internal___fieldOwners',
+    ChildrenTechnologiesJsonChildrenInternalIgnoreType = 'childrenTechnologiesJson___children___internal___ignoreType',
+    ChildrenTechnologiesJsonChildrenInternalMediaType = 'childrenTechnologiesJson___children___internal___mediaType',
+    ChildrenTechnologiesJsonChildrenInternalOwner = 'childrenTechnologiesJson___children___internal___owner',
+    ChildrenTechnologiesJsonChildrenInternalType = 'childrenTechnologiesJson___children___internal___type',
+    ChildrenTechnologiesJsonInternalContent = 'childrenTechnologiesJson___internal___content',
+    ChildrenTechnologiesJsonInternalContentDigest = 'childrenTechnologiesJson___internal___contentDigest',
+    ChildrenTechnologiesJsonInternalDescription = 'childrenTechnologiesJson___internal___description',
+    ChildrenTechnologiesJsonInternalFieldOwners = 'childrenTechnologiesJson___internal___fieldOwners',
+    ChildrenTechnologiesJsonInternalIgnoreType = 'childrenTechnologiesJson___internal___ignoreType',
+    ChildrenTechnologiesJsonInternalMediaType = 'childrenTechnologiesJson___internal___mediaType',
+    ChildrenTechnologiesJsonInternalOwner = 'childrenTechnologiesJson___internal___owner',
+    ChildrenTechnologiesJsonInternalType = 'childrenTechnologiesJson___internal___type',
+    ChildrenTechnologiesJsonImg = 'childrenTechnologiesJson___img',
+    ChildrenTechnologiesJsonName = 'childrenTechnologiesJson___name',
+    ChildrenTechnologiesJsonWebsite = 'childrenTechnologiesJson___website',
     ChildGmapsJsonId = 'childGmapsJson___id',
     ChildGmapsJsonParentId = 'childGmapsJson___parent___id',
     ChildGmapsJsonParentParentId = 'childGmapsJson___parent___parent___id',
@@ -1164,6 +1164,7 @@ declare module GraphQL {
     ChildMarkdownRemarkChildGrvscCodeBlockPreClassName = 'childMarkdownRemark___childGrvscCodeBlock___preClassName',
     ChildMarkdownRemarkChildGrvscCodeBlockCodeClassName = 'childMarkdownRemark___childGrvscCodeBlock___codeClassName',
     ChildMarkdownRemarkChildGrvscCodeBlockLanguage = 'childMarkdownRemark___childGrvscCodeBlock___language',
+    ChildMarkdownRemarkChildGrvscCodeBlockMeta = 'childMarkdownRemark___childGrvscCodeBlock___meta',
     ChildMarkdownRemarkChildGrvscCodeBlockDefaultThemePath = 'childMarkdownRemark___childGrvscCodeBlock___defaultTheme___path',
     ChildMarkdownRemarkChildGrvscCodeBlockDefaultThemeIdentifier = 'childMarkdownRemark___childGrvscCodeBlock___defaultTheme___identifier',
     ChildMarkdownRemarkChildGrvscCodeBlockDefaultThemeConditions = 'childMarkdownRemark___childGrvscCodeBlock___defaultTheme___conditions',
@@ -1235,10 +1236,10 @@ declare module GraphQL {
     parent?: Maybe<NodeFilterInput>;
     children?: Maybe<NodeFilterListInput>;
     internal?: Maybe<InternalFilterInput>;
-    childrenSkillsJson?: Maybe<SkillsJsonFilterListInput>;
-    childrenTechnologiesJson?: Maybe<TechnologiesJsonFilterListInput>;
     childDataJson?: Maybe<DataJsonFilterInput>;
+    childrenSkillsJson?: Maybe<SkillsJsonFilterListInput>;
     childrenNavigationJson?: Maybe<NavigationJsonFilterListInput>;
+    childrenTechnologiesJson?: Maybe<TechnologiesJsonFilterListInput>;
     childGmapsJson?: Maybe<GmapsJsonFilterInput>;
     childMarkdownRemark?: Maybe<MarkdownRemarkFilterInput>;
   };
@@ -1511,6 +1512,7 @@ declare module GraphQL {
     preClassName: Scalars['String'];
     codeClassName: Scalars['String'];
     language?: Maybe<Scalars['String']>;
+    meta?: Maybe<Scalars['JSON']>;
     defaultTheme: GrvscTheme;
     additionalThemes: Array<GrvscTheme>;
     tokenizedLines?: Maybe<Array<GrvscTokenizedLine>>;
@@ -1552,6 +1554,7 @@ declare module GraphQL {
     PreClassName = 'preClassName',
     CodeClassName = 'codeClassName',
     Language = 'language',
+    Meta = 'meta',
     DefaultThemePath = 'defaultTheme___path',
     DefaultThemeIdentifier = 'defaultTheme___identifier',
     DefaultThemeConditions = 'defaultTheme___conditions',
@@ -1687,6 +1690,7 @@ declare module GraphQL {
     preClassName?: Maybe<StringQueryOperatorInput>;
     codeClassName?: Maybe<StringQueryOperatorInput>;
     language?: Maybe<StringQueryOperatorInput>;
+    meta?: Maybe<JsonQueryOperatorInput>;
     defaultTheme?: Maybe<GrvscThemeFilterInput>;
     additionalThemes?: Maybe<GrvscThemeFilterListInput>;
     tokenizedLines?: Maybe<GrvscTokenizedLineFilterListInput>;
@@ -2717,6 +2721,7 @@ declare module GraphQL {
     ChildGrvscCodeBlockPreClassName = 'childGrvscCodeBlock___preClassName',
     ChildGrvscCodeBlockCodeClassName = 'childGrvscCodeBlock___codeClassName',
     ChildGrvscCodeBlockLanguage = 'childGrvscCodeBlock___language',
+    ChildGrvscCodeBlockMeta = 'childGrvscCodeBlock___meta',
     ChildGrvscCodeBlockDefaultThemePath = 'childGrvscCodeBlock___defaultTheme___path',
     ChildGrvscCodeBlockDefaultThemeIdentifier = 'childGrvscCodeBlock___defaultTheme___identifier',
     ChildGrvscCodeBlockDefaultThemeConditions = 'childGrvscCodeBlock___defaultTheme___conditions',
@@ -3058,14 +3063,14 @@ declare module GraphQL {
     allGrvscCodeBlock: GrvscCodeBlockConnection;
     grvscStylesheet?: Maybe<GrvscStylesheet>;
     allGrvscStylesheet: GrvscStylesheetConnection;
-    gmapsJson?: Maybe<GmapsJson>;
-    allGmapsJson: GmapsJsonConnection;
     dataJson?: Maybe<DataJson>;
     allDataJson: DataJsonConnection;
-    navigationJson?: Maybe<NavigationJson>;
-    allNavigationJson: NavigationJsonConnection;
+    gmapsJson?: Maybe<GmapsJson>;
+    allGmapsJson: GmapsJsonConnection;
     technologiesJson?: Maybe<TechnologiesJson>;
     allTechnologiesJson: TechnologiesJsonConnection;
+    navigationJson?: Maybe<NavigationJson>;
+    allNavigationJson: NavigationJsonConnection;
     skillsJson?: Maybe<SkillsJson>;
     allSkillsJson: SkillsJsonConnection;
     site?: Maybe<Site>;
@@ -3115,10 +3120,10 @@ declare module GraphQL {
     parent?: Maybe<NodeFilterInput>;
     children?: Maybe<NodeFilterListInput>;
     internal?: Maybe<InternalFilterInput>;
-    childrenSkillsJson?: Maybe<SkillsJsonFilterListInput>;
-    childrenTechnologiesJson?: Maybe<TechnologiesJsonFilterListInput>;
     childDataJson?: Maybe<DataJsonFilterInput>;
+    childrenSkillsJson?: Maybe<SkillsJsonFilterListInput>;
     childrenNavigationJson?: Maybe<NavigationJsonFilterListInput>;
+    childrenTechnologiesJson?: Maybe<TechnologiesJsonFilterListInput>;
     childGmapsJson?: Maybe<GmapsJsonFilterInput>;
     childMarkdownRemark?: Maybe<MarkdownRemarkFilterInput>;
   };
@@ -3254,6 +3259,7 @@ declare module GraphQL {
     preClassName?: Maybe<StringQueryOperatorInput>;
     codeClassName?: Maybe<StringQueryOperatorInput>;
     language?: Maybe<StringQueryOperatorInput>;
+    meta?: Maybe<JsonQueryOperatorInput>;
     defaultTheme?: Maybe<GrvscThemeFilterInput>;
     additionalThemes?: Maybe<GrvscThemeFilterListInput>;
     tokenizedLines?: Maybe<GrvscTokenizedLineFilterListInput>;
@@ -3283,6 +3289,26 @@ declare module GraphQL {
     limit?: Maybe<Scalars['Int']>;
   };
 
+  type QueryDataJsonArgs = {
+    id?: Maybe<StringQueryOperatorInput>;
+    parent?: Maybe<NodeFilterInput>;
+    children?: Maybe<NodeFilterListInput>;
+    internal?: Maybe<InternalFilterInput>;
+    company?: Maybe<DataJsonCompanyFilterInput>;
+    contacts?: Maybe<DataJsonContactsFilterListInput>;
+    jobTitle?: Maybe<StringQueryOperatorInput>;
+    location?: Maybe<DataJsonLocationFilterInput>;
+    openToGigs?: Maybe<BooleanQueryOperatorInput>;
+    resumeLink?: Maybe<StringQueryOperatorInput>;
+  };
+
+  type QueryAllDataJsonArgs = {
+    filter?: Maybe<DataJsonFilterInput>;
+    sort?: Maybe<DataJsonSortInput>;
+    skip?: Maybe<Scalars['Int']>;
+    limit?: Maybe<Scalars['Int']>;
+  };
+
   type QueryGmapsJsonArgs = {
     id?: Maybe<StringQueryOperatorInput>;
     parent?: Maybe<NodeFilterInput>;
@@ -3298,22 +3324,19 @@ declare module GraphQL {
     limit?: Maybe<Scalars['Int']>;
   };
 
-  type QueryDataJsonArgs = {
+  type QueryTechnologiesJsonArgs = {
     id?: Maybe<StringQueryOperatorInput>;
     parent?: Maybe<NodeFilterInput>;
     children?: Maybe<NodeFilterListInput>;
     internal?: Maybe<InternalFilterInput>;
-    company?: Maybe<DataJsonCompanyFilterInput>;
-    contacts?: Maybe<DataJsonContactsFilterListInput>;
-    jobTitle?: Maybe<StringQueryOperatorInput>;
-    location?: Maybe<DataJsonLocationFilterInput>;
-    openToGigs?: Maybe<BooleanQueryOperatorInput>;
-    resumeFile?: Maybe<StringQueryOperatorInput>;
+    img?: Maybe<StringQueryOperatorInput>;
+    name?: Maybe<StringQueryOperatorInput>;
+    website?: Maybe<StringQueryOperatorInput>;
   };
 
-  type QueryAllDataJsonArgs = {
-    filter?: Maybe<DataJsonFilterInput>;
-    sort?: Maybe<DataJsonSortInput>;
+  type QueryAllTechnologiesJsonArgs = {
+    filter?: Maybe<TechnologiesJsonFilterInput>;
+    sort?: Maybe<TechnologiesJsonSortInput>;
     skip?: Maybe<Scalars['Int']>;
     limit?: Maybe<Scalars['Int']>;
   };
@@ -3335,23 +3358,6 @@ declare module GraphQL {
   type QueryAllNavigationJsonArgs = {
     filter?: Maybe<NavigationJsonFilterInput>;
     sort?: Maybe<NavigationJsonSortInput>;
-    skip?: Maybe<Scalars['Int']>;
-    limit?: Maybe<Scalars['Int']>;
-  };
-
-  type QueryTechnologiesJsonArgs = {
-    id?: Maybe<StringQueryOperatorInput>;
-    parent?: Maybe<NodeFilterInput>;
-    children?: Maybe<NodeFilterListInput>;
-    internal?: Maybe<InternalFilterInput>;
-    img?: Maybe<StringQueryOperatorInput>;
-    name?: Maybe<StringQueryOperatorInput>;
-    website?: Maybe<StringQueryOperatorInput>;
-  };
-
-  type QueryAllTechnologiesJsonArgs = {
-    filter?: Maybe<TechnologiesJsonFilterInput>;
-    sort?: Maybe<TechnologiesJsonSortInput>;
     skip?: Maybe<Scalars['Int']>;
     limit?: Maybe<Scalars['Int']>;
   };
@@ -4013,6 +4019,8 @@ declare module GraphQL {
     PluginCreatorPluginOptionsPluginsNodeApIs = 'pluginCreator___pluginOptions___plugins___nodeAPIs',
     PluginCreatorPluginOptionsPluginsBrowserApIs = 'pluginCreator___pluginOptions___plugins___browserAPIs',
     PluginCreatorPluginOptionsPluginsPluginFilepath = 'pluginCreator___pluginOptions___plugins___pluginFilepath',
+    PluginCreatorPluginOptionsCookieDomain = 'pluginCreator___pluginOptions___cookieDomain',
+    PluginCreatorPluginOptionsTrackingId = 'pluginCreator___pluginOptions___trackingId',
     PluginCreatorPluginOptionsDisplay = 'pluginCreator___pluginOptions___display',
     PluginCreatorPluginOptionsFonts = 'pluginCreator___pluginOptions___fonts',
     PluginCreatorPluginOptionsBackgroundColor = 'pluginCreator___pluginOptions___background_color',
@@ -4039,10 +4047,7 @@ declare module GraphQL {
     PluginCreatorPluginOptionsDisableBgImageOnAlpha = 'pluginCreator___pluginOptions___disableBgImageOnAlpha',
     PluginCreatorPluginOptionsDisableBgImage = 'pluginCreator___pluginOptions___disableBgImage',
     PluginCreatorPluginOptionsTheme = 'pluginCreator___pluginOptions___theme',
-    PluginCreatorPluginOptionsWrapperClassName = 'pluginCreator___pluginOptions___wrapperClassName',
     PluginCreatorPluginOptionsPathCheck = 'pluginCreator___pluginOptions___pathCheck',
-    PluginCreatorPluginOptionsCookieDomain = 'pluginCreator___pluginOptions___cookieDomain',
-    PluginCreatorPluginOptionsTrackingId = 'pluginCreator___pluginOptions___trackingId',
     PluginCreatorNodeApIs = 'pluginCreator___nodeAPIs',
     PluginCreatorBrowserApIs = 'pluginCreator___browserAPIs',
     PluginCreatorSsrApIs = 'pluginCreator___ssrAPIs',
@@ -4247,10 +4252,11 @@ declare module GraphQL {
     PluginOptionsPluginsPluginOptionsDisableBgImageOnAlpha = 'pluginOptions___plugins___pluginOptions___disableBgImageOnAlpha',
     PluginOptionsPluginsPluginOptionsDisableBgImage = 'pluginOptions___plugins___pluginOptions___disableBgImage',
     PluginOptionsPluginsPluginOptionsTheme = 'pluginOptions___plugins___pluginOptions___theme',
-    PluginOptionsPluginsPluginOptionsWrapperClassName = 'pluginOptions___plugins___pluginOptions___wrapperClassName',
     PluginOptionsPluginsNodeApIs = 'pluginOptions___plugins___nodeAPIs',
     PluginOptionsPluginsBrowserApIs = 'pluginOptions___plugins___browserAPIs',
     PluginOptionsPluginsPluginFilepath = 'pluginOptions___plugins___pluginFilepath',
+    PluginOptionsCookieDomain = 'pluginOptions___cookieDomain',
+    PluginOptionsTrackingId = 'pluginOptions___trackingId',
     PluginOptionsDisplay = 'pluginOptions___display',
     PluginOptionsFonts = 'pluginOptions___fonts',
     PluginOptionsBackgroundColor = 'pluginOptions___background_color',
@@ -4277,10 +4283,7 @@ declare module GraphQL {
     PluginOptionsDisableBgImageOnAlpha = 'pluginOptions___disableBgImageOnAlpha',
     PluginOptionsDisableBgImage = 'pluginOptions___disableBgImage',
     PluginOptionsTheme = 'pluginOptions___theme',
-    PluginOptionsWrapperClassName = 'pluginOptions___wrapperClassName',
     PluginOptionsPathCheck = 'pluginOptions___pathCheck',
-    PluginOptionsCookieDomain = 'pluginOptions___cookieDomain',
-    PluginOptionsTrackingId = 'pluginOptions___trackingId',
     NodeApIs = 'nodeAPIs',
     BrowserApIs = 'browserAPIs',
     SsrApIs = 'ssrAPIs',
@@ -4395,6 +4398,8 @@ declare module GraphQL {
 
   type SitePluginPluginOptions = {
     plugins?: Maybe<Array<Maybe<SitePluginPluginOptionsPlugins>>>;
+    cookieDomain?: Maybe<Scalars['String']>;
+    trackingId?: Maybe<Scalars['String']>;
     display?: Maybe<Scalars['String']>;
     fonts?: Maybe<Array<Maybe<Scalars['String']>>>;
     background_color?: Maybe<Scalars['String']>;
@@ -4421,14 +4426,13 @@ declare module GraphQL {
     disableBgImageOnAlpha?: Maybe<Scalars['Boolean']>;
     disableBgImage?: Maybe<Scalars['Boolean']>;
     theme?: Maybe<Scalars['String']>;
-    wrapperClassName?: Maybe<Scalars['String']>;
     pathCheck?: Maybe<Scalars['Boolean']>;
-    cookieDomain?: Maybe<Scalars['String']>;
-    trackingId?: Maybe<Scalars['String']>;
   };
 
   type SitePluginPluginOptionsFilterInput = {
     plugins?: Maybe<SitePluginPluginOptionsPluginsFilterListInput>;
+    cookieDomain?: Maybe<StringQueryOperatorInput>;
+    trackingId?: Maybe<StringQueryOperatorInput>;
     display?: Maybe<StringQueryOperatorInput>;
     fonts?: Maybe<StringQueryOperatorInput>;
     background_color?: Maybe<StringQueryOperatorInput>;
@@ -4455,10 +4459,7 @@ declare module GraphQL {
     disableBgImageOnAlpha?: Maybe<BooleanQueryOperatorInput>;
     disableBgImage?: Maybe<BooleanQueryOperatorInput>;
     theme?: Maybe<StringQueryOperatorInput>;
-    wrapperClassName?: Maybe<StringQueryOperatorInput>;
     pathCheck?: Maybe<BooleanQueryOperatorInput>;
-    cookieDomain?: Maybe<StringQueryOperatorInput>;
-    trackingId?: Maybe<StringQueryOperatorInput>;
   };
 
   type SitePluginPluginOptionsPlugins = {
@@ -4502,7 +4503,6 @@ declare module GraphQL {
     disableBgImageOnAlpha?: Maybe<Scalars['Boolean']>;
     disableBgImage?: Maybe<Scalars['Boolean']>;
     theme?: Maybe<Scalars['String']>;
-    wrapperClassName?: Maybe<Scalars['String']>;
   };
 
   type SitePluginPluginOptionsPluginsPluginOptionsFilterInput = {
@@ -4520,7 +4520,6 @@ declare module GraphQL {
     disableBgImageOnAlpha?: Maybe<BooleanQueryOperatorInput>;
     disableBgImage?: Maybe<BooleanQueryOperatorInput>;
     theme?: Maybe<StringQueryOperatorInput>;
-    wrapperClassName?: Maybe<StringQueryOperatorInput>;
   };
 
   type SitePluginSortInput = {
@@ -5179,7 +5178,7 @@ declare module GraphQL {
         to: Maybe<string>;
       }>;
     };
-    dataJson: Maybe<{ resumeFile: Maybe<string> }>;
+    dataJson: Maybe<{ resumeLink: Maybe<string> }>;
   };
 
   type NotFoundPageQueryVariables = {};

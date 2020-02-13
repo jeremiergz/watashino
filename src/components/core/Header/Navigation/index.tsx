@@ -1,12 +1,12 @@
 import { graphql, useStaticQuery } from 'gatsby';
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
 import React from 'react';
 import { Routes } from '../../../../utils/Routes';
-import Anchor from '../../../common/Anchor';
 import Link from '../../../common/Link';
 import Svg from '../../../common/Svg';
 import Flex from '../../../primitives/Flex';
 import BookIcon from '../../../svg/Book';
-import DownloadIcon from '../../../svg/Download';
+import DescriptionIcon from '../../../svg/Description';
 import HouseIcon from '../../../svg/House';
 import MoodIcon from '../../../svg/Mood';
 import SkillIcon from '../../../svg/Skill';
@@ -22,7 +22,7 @@ const Navigation = () => {
   const {
     allMarkdownRemark: { totalCount },
     allNavigationJson: { nodes: links },
-    dataJson: { resumeFile },
+    dataJson: { resumeLink },
   } = useStaticQuery<GraphQL.NavigationDataQuery>(graphql`
     query NavigationData {
       allMarkdownRemark {
@@ -39,10 +39,16 @@ const Navigation = () => {
         }
       }
       dataJson {
-        resumeFile
+        resumeLink
       }
     }
   `);
+  const handleResumeClick = () => {
+    trackCustomEvent({
+      action: 'click',
+      category: 'Open Resume',
+    });
+  };
   return (
     <Flex as="nav" flexWrap="wrap" justifyContent="center" marginTop={{ _: 16, tablet: 0 }}>
       {links
@@ -60,10 +66,17 @@ const Navigation = () => {
           </Flex>
         ))}
       <Flex alignItems="center" flexDirection="column" justifyContent="center" minWidth={96}>
-        <Anchor alignItems="center" display="flex" download flexDirection="column" href={resumeFile}>
-          <Svg as={DownloadIcon} />
+        <Link
+          alignItems="center"
+          display="flex"
+          external
+          flexDirection="column"
+          onClick={handleResumeClick}
+          to={resumeLink}
+        >
+          <Svg as={DescriptionIcon} />
           Resume
-        </Anchor>
+        </Link>
       </Flex>
     </Flex>
   );

@@ -24,7 +24,7 @@ describe('components/Layout/Header/Navigation Test Suite', () => {
           },
         ],
       },
-      dataJson: { resumeFile: '/static/resume-file.pdf' },
+      dataJson: { resumeLink: 'https://fake/resume-file.pdf' },
     }));
   });
 
