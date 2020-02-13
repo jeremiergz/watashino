@@ -16,6 +16,7 @@ const BaseButton = styled.button<ButtonProps>`
   color: white;
   cursor: pointer;
   display: flex;
+  font: inherit;
   justify-content: center;
   outline: inherit;
   transition: color 100ms ease-in-out;

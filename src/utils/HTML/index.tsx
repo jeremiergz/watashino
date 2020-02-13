@@ -4,7 +4,6 @@ import RehypeReact from 'rehype-react';
 import styled from 'styled-components';
 import Code from '../../components/common/Code';
 import Heading from '../../components/common/Heading';
-import InlineCode from '../../components/common/InlineCode';
 import Link from '../../components/common/Link';
 import Paragraph from '../../components/common/Paragraph';
 import Box from '../../components/primitives/Box';
@@ -27,7 +26,7 @@ const astRenderer = new RehypeReact({
         {children}
       </Box>
     ),
-    code: ({ children, className }) => (className ? <Code>{children}</Code> : <InlineCode>{children}</InlineCode>),
+    code: ({ children, className }) => <Code className={className}>{children}</Code>,
     h1: ({ children }) => <Heading variant="h1">{children}</Heading>,
     h2: ({ children }) => <Heading variant="h2">{children}</Heading>,
     h3: ({ children }) => <Heading variant="h3">{children}</Heading>,

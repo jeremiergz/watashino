@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
-import { DarkTheme } from '../../../../theme';
-import InlineCode from '../../InlineCode';
+import InlineCode from '..';
+import { DarkTheme } from '../../../../../theme';
 
-describe('components/widgets/InlineCode Test Suite', () => {
+describe('components/widgets/Code/Inline Test Suite', () => {
   it('matches snapshot', () => {
     const jsx = (
       <ThemeProvider theme={DarkTheme}>
