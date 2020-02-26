@@ -9,9 +9,8 @@ import Layout from '../components/core/Layout';
 import Box from '../components/primitives/Box';
 import Flex from '../components/primitives/Flex';
 import { Theme } from '../theme';
+import { beginsWithVowel } from '../utils';
 import { Routes } from '../utils/Routes';
-
-const vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
 
 const Technologies = styled(Flex)`
   @media screen and (min-width: ${({ theme }: { theme: Theme }) => theme.breakpoints[3]}) {
@@ -126,7 +125,6 @@ const AboutMePage = () => {
     },
     [],
   );
-  const jobTitleStartsWithVowel = vowels.includes(jobTitle.charAt(0).toLowerCase());
   const mailto = contacts.find(c => c.url.startsWith('mailto:'));
   return (
     <Layout>
@@ -147,10 +145,12 @@ const AboutMePage = () => {
           <Link display="inline-flex" external height="26px" to={company.website} verticalAlign="middle">
             <Img alt={company.name} fixed={companyImgFixed} imgStyle={{ height: '25px' }} Tag="span" />
           </Link>
-          {` as a${jobTitleStartsWithVowel ? 'n' : ''} ${jobTitle}.`}
+          {` as a${
+            beginsWithVowel(jobTitle) ? 'n' : ''
+          } ${jobTitle}, but starting from April I'll be a full-time freelancer.`}
         </Paragraph>
         <Paragraph>{'I particularly enjoy working with those technologies:'}</Paragraph>
-        <Technologies flexWrap="wrap" justifyContent={{ _: 'center', tablet: 'flex-start' }}>
+        <Technologies flexWrap="wrap" justifyContent={{ _: 'center', tablet: 'space-between' }}>
           {technologyObjects.map(({ img, name, website }) => (
             <Link external key={name} margin={2} to={website}>
               <Img alt={name} fixed={img} imgStyle={{ height: '52px', width: '52px' }} />
@@ -159,7 +159,7 @@ const AboutMePage = () => {
         </Technologies>
         {openToGigs && (
           <Paragraph>
-            {` I'm also doing freelancing gigs, feel free to `}
+            {`Feel free to `}
             <Link external to={mailto.url} variant="underlined">
               contact me
             </Link>
