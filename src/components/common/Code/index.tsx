@@ -23,24 +23,22 @@ const Code = ({ children, className, ...rest }: CodeProps) => {
     }
   };
   const isBlockCode = !!className;
-  return (
+  return isBlockCode ? (
     <>
-      {isBlockCode ? (
-        <BlockCode ref={codeRef} {...rest}>
-          {children}
-        </BlockCode>
-      ) : (
-        <InlineCode {...rest}>{children}</InlineCode>
-      )}
-      <Flex as="span" alignItems="center" left={3} marginTop={2} position="sticky" width={0}>
+      <BlockCode ref={codeRef} {...rest}>
+        {children}
+      </BlockCode>
+      <Flex as="span" alignItems="center" left={3} marginTop={4} position="sticky" width={0}>
         <Button onClick={handleCopyClick} padding={2}>
-          <Copy fill="white" height={24} width={24} />
+          <Copy fill="white" height={16} width={16} />
           <Text color="white" marginLeft={1}>
             {hasCopied ? 'copied!' : 'copy'}
           </Text>
         </Button>
       </Flex>
     </>
+  ) : (
+    <InlineCode {...rest}>{children}</InlineCode>
   );
 };
 

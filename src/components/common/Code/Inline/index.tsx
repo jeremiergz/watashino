@@ -3,20 +3,20 @@ import Text, { TextProps } from '../../../primitives/Text';
 
 type InlineCodeProps = TextProps;
 
+const vsCodeBackgroundColor = '#1E1E1E';
+
 const InlineCode = ({ children, ...rest }: InlineCodeProps) => {
   return (
     <Text
       as="code"
-      backgroundColor="secondary"
+      backgroundColor={vsCodeBackgroundColor}
       borderRadius={8}
       color="white"
-      display="inline-block"
+      display="inline-flex"
       fontSize={16}
-      paddingBottom={1}
-      paddingTop="2px"
       paddingX={2}
+      paddingY="2px"
       textAlign="left"
-      verticalAlign="bottom"
       {...rest}
     >
       {children}
