@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { ComponentType } from 'react';
 import { lightenColor } from '../../../utils/CSS';
 import { useTheming } from '../../core/ThemingManager';
 import Box from '../../primitives/Box';
 import Flex from '../../primitives/Flex';
 import Text from '../../primitives/Text';
+import CodeIcon from '../../svg/Code';
+import FrameworkIcon from '../../svg/Framework';
+import ServerIcon from '../../svg/Server';
 
 type SkillBlockProps = {
   items: Models.Skill[];
   title: string;
+};
+
+const iconsMapping: Record<string, ComponentType> = {
+  DevOps: ServerIcon,
+  Frameworks: FrameworkIcon,
+  Programming: CodeIcon,
 };
 
 const bubbleSize = 16;
@@ -16,6 +25,7 @@ const maxBubblesNumber = 7;
 
 const SkillBlock = ({ items, title }: SkillBlockProps) => {
   const { theme } = useTheming();
+  const Icon = iconsMapping[title];
   return (
     <Box
       backgroundColor={lightenColor(theme.colors.gray, 0.1)}
@@ -25,8 +35,9 @@ const SkillBlock = ({ items, title }: SkillBlockProps) => {
       maxWidth={theme.breakpoints[2]}
       padding={3}
     >
-      <Flex alignSelf="flex-start" marginBottom={2}>
-        <Text color="primary" fontSize={20} fontWeight="bold" textAlign="left">
+      <Flex alignItems="center" alignSelf="flex-start" marginBottom={2}>
+        <Icon />
+        <Text color="primary" fontSize={20} fontWeight="bold" marginLeft={2} textAlign="left">
           {title.toUpperCase()}
         </Text>
       </Flex>
