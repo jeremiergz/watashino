@@ -2,9 +2,9 @@
 
 exports[`components/widgets/Code/Inline Test Suite matches snapshot 1`] = `
 <code
-  className="sc-AxjAm doXTVW"
+  className="sc-AxjAm lFMqP"
   color="white"
-  display="inline-block"
+  display="inline-flex"
   fontSize={16}
 >
   InlineCode Component

@@ -67,7 +67,7 @@ describe('pages Test Suite', () => {
       allSkillsJson: {
         nodes: [
           {
-            name: 'Skills Section 0',
+            name: 'Programming',
             sortOrder: 0,
             items: [
               { name: 'Skill 0', proficiencyLevel: 4, sortOrder: 0 },
@@ -75,7 +75,7 @@ describe('pages Test Suite', () => {
             ],
           },
           {
-            name: 'Skills Section 1',
+            name: 'DevOps',
             sortOrder: 1,
             items: [{ name: 'Skill 0', proficiencyLevel: 5, sortOrder: 0 }],
           },
