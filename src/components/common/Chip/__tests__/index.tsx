@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { DarkTheme } from '../../../../theme';
 import Chip from '../../Chip';
 
-describe('components/widgets/Chip Test Suite', () => {
+describe('components/common/Chip Test Suite', () => {
   it('matches snapshot', () => {
     const jsx = (
       <ThemeProvider theme={DarkTheme}>

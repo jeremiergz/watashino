@@ -4,7 +4,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import ReactTestRenderer from 'react-test-renderer';
 import SEO from '../../SEO';
 
-describe('components/widgets/SEO Test Suite', () => {
+describe('components/common/SEO Test Suite', () => {
   beforeAll(() => {
     const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
     useStaticQuery.mockImplementation(() => ({

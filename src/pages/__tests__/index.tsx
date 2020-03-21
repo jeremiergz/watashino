@@ -1,4 +1,3 @@
-import * as ReactGoogleMapsAPI from '@react-google-maps/api';
 import * as Gatsby from 'gatsby';
 import React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
@@ -10,8 +9,6 @@ import AboutMePage from '../about-me';
 import IndexPage from '../index';
 import PostsPage from '../posts';
 import SkillsPage from '../skills';
-
-jest.mock('../../components/common/LocationMap');
 
 describe('pages Test Suite', () => {
   beforeAll(() => {
@@ -38,12 +35,6 @@ describe('pages Test Suite', () => {
       lat: 37.77493,
       lng: -122.41942,
     };
-    const useLoadScript = jest.spyOn(ReactGoogleMapsAPI, 'useLoadScript');
-    useLoadScript.mockImplementation(() => ({
-      isLoaded: true,
-      loadError: null,
-      url: '',
-    }));
     const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
     useStaticQuery.mockImplementation(() => ({
       mdData: {
@@ -88,9 +79,7 @@ describe('pages Test Suite', () => {
       coverImg: { childImageSharp },
       dataJson: { jobTitle, location },
       file: { childImageSharp },
-      gmapsJson: {
-        styles: { dark: [], light: [] },
-      },
+      gmapsImgs: { nodes: [{ theme: 'default', childFile: { childImageSharp } }] },
       pageData: { keywords: ['test', 'keyword'], name: 'Test Page' },
       personalDetails: {
         company: {
@@ -115,7 +104,7 @@ describe('pages Test Suite', () => {
       techImgs: { nodes: [{ base: 'tech-image.png', childImageSharp }] },
     }));
     const navigate = jest.spyOn(Gatsby, 'navigate');
-    navigate.mockImplementation(x => null);
+    navigate.mockImplementation(() => null);
   });
 
   describe('pages/404 Test Suite', () => {

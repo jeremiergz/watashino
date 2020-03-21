@@ -7,7 +7,7 @@ import Link from '../../../common/Link';
 import Flex from '../../../primitives/Flex';
 
 const NameAndJob = () => {
-  const { dataJson, file } = useStaticQuery<GraphQL.HeaderDataQuery>(graphql`
+  const { dataJson, file } = useStaticQuery(graphql`
     query HeaderData {
       dataJson {
         jobTitle
@@ -15,7 +15,7 @@ const NameAndJob = () => {
       file(relativePath: { eq: "profile-pic.png" }) {
         childImageSharp {
           fixed(height: 80, width: 80) {
-            ...GatsbyImageSharpFixed_withWebp
+            ...GatsbyImageSharpFixed
           }
         }
       }

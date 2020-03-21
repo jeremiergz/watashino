@@ -2,7 +2,7 @@ import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
 import List from '../../List';
 
-describe('components/widgets/List Test Suite', () => {
+describe('components/common/List Test Suite', () => {
   it('matches snapshot', () => {
     const jsx = (
       <List>

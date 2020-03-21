@@ -1,17 +1,29 @@
-import { GoogleMap, useLoadScript } from '@react-google-maps/api';
 import { graphql, useStaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
-import React from 'react';
+import React, { FunctionComponent } from 'react';
+import styled from 'styled-components';
 import { useTheming } from '../../core/ThemingManager';
 import Box from '../../primitives/Box';
 import EmojiMarker from './EmojiMarker';
+import Link from '../Link';
 
-const LocationMap = () => {
-  const { theme } = useTheming();
-  const { isLoaded } = useLoadScript({
-    googleMapsApiKey: process.env.GATSBY_GOOGLE_MAPS_API_KEY,
-    preventGoogleFontsLoading: true,
-  });
+const StaticGMapImg = styled(Img)`
+  max-height: 416px;
+  width: 100% !important;
+  border-radius: 8px;
+  img {
+    object-fit: none !important;
+  }
+  @media (min-width: 641px) {
+    img {
+      object-fit: cover !important;
+    }
+  }
+`;
+
+const LocationMap: FunctionComponent = () => {
+  const { mode } = useTheming();
   const handleMarkerClick = () => {
     trackCustomEvent({
       action: 'click',
@@ -19,66 +31,35 @@ const LocationMap = () => {
     });
   };
   const {
-    dataJson: { location },
-    gmapsJson: { styles },
-  } = useStaticQuery<GraphQL.LocationMapDataQuery>(graphql`
+    gmapsImgs: { nodes: gmapsImgNodes },
+  } = useStaticQuery(graphql`
     query LocationMapData {
-      dataJson {
-        location {
-          lat
-          lng
-        }
-      }
-      gmapsJson {
-        styles {
-          dark {
-            elementType
-            featureType
-            stylers {
-              color
+      gmapsImgs: allStaticGmapsImage {
+        nodes {
+          childFile {
+            childImageSharp {
+              fixed(height: 640) {
+                ...GatsbyImageSharpFixed
+              }
             }
           }
-          light {
-            elementType
-            featureType
-            stylers {
-              color
-            }
-          }
+          mapURL
+          theme
         }
       }
     }
   `);
-  const position = {
-    lat: location.lat,
-    lng: location.lng,
-  };
+  const gmapsImgNode = gmapsImgNodes.find(i => i.theme === mode) || gmapsImgNodes.find(i => i.theme === 'default');
+  const locationMap = gmapsImgNode.childFile.childImageSharp.fixed;
   return (
-    isLoaded && (
-      <Box height={416} width="100%">
-        <GoogleMap
-          center={position}
-          mapContainerStyle={{ height: '100%', width: '100%', borderRadius: '8px' }}
-          options={{
-            draggable: false,
-            draggableCursor: 'initial',
-            mapTypeControl: false,
-            streetViewControl: false,
-            styles: [
-              ...styles[theme.type],
-              {
-                elementType: 'geometry',
-                featureType: 'water',
-                stylers: [{ color: theme.type === 'light' ? theme.colors.primary : theme.colors.secondary }],
-              },
-            ],
-          }}
-          zoom={4}
-        >
-          <EmojiMarker onClick={handleMarkerClick} position={position} />
-        </GoogleMap>
+    <Box position="relative">
+      <Link external to={gmapsImgNode.mapURL}>
+        <StaticGMapImg alt="Location" fixed={locationMap} />
+      </Link>
+      <Box bottom={0} height={32} left={0} margin="auto" position="absolute" right={0} top={0} width={32}>
+        <EmojiMarker onClick={handleMarkerClick} />
       </Box>
-    )
+    </Box>
   );
 };
 

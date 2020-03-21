@@ -8,7 +8,7 @@ const SkillsPage = () => {
   const {
     allSkillsJson: { nodes: skills },
     pageData: { keywords, name },
-  } = useStaticQuery<GraphQL.SkillsPageDataQuery>(graphql`
+  } = useStaticQuery(graphql`
     query SkillsPageData {
       allSkillsJson {
         nodes {

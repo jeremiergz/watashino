@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/widgets/Code Test Suite matches snapshot 1`] = `
+exports[`components/common/Code Test Suite matches snapshot 1`] = `
 <code
   className="sc-AxirZ eauiyo"
   color="white"

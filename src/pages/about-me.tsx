@@ -36,12 +36,12 @@ const AboutMePage = () => {
     personalDetails: { company, contacts, jobTitle, location, openToGigs },
     techImgs: { nodes: techImgNodes },
     techs: { nodes: technologies },
-  } = useStaticQuery<GraphQL.AboutMePageDataQuery>(graphql`
+  } = useStaticQuery(graphql`
     query AboutMePageData {
       companyImg: file(relativePath: { eq: "company.png" }) {
         childImageSharp {
           fixed(height: 25) {
-            ...GatsbyImageSharpFixed_withWebp
+            ...GatsbyImageSharpFixed
           }
         }
       }
@@ -50,7 +50,7 @@ const AboutMePage = () => {
           base
           childImageSharp {
             fluid {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -58,7 +58,7 @@ const AboutMePage = () => {
       coverImg: file(relativePath: { eq: "cover.png" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -88,7 +88,7 @@ const AboutMePage = () => {
           base
           childImageSharp {
             fixed(height: 52, width: 52) {
-              ...GatsbyImageSharpFixed_withWebp
+              ...GatsbyImageSharpFixed
             }
           }
         }
@@ -141,13 +141,11 @@ const AboutMePage = () => {
         <Img alt="Cover" fluid={coverImgFluid} imgStyle={{ borderRadius: 8 }} />
         <Paragraph marginTop={4}>{`Hi there, I'm Jeremie!`}</Paragraph>
         <Paragraph>
-          {`I'm currently working at `}
+          {`I'm a${beginsWithVowel(jobTitle) ? 'n' : ''} ${jobTitle} freelancer, previously working at `}
           <Link display="inline-flex" external height="26px" to={company.website} verticalAlign="middle">
             <Img alt={company.name} fixed={companyImgFixed} imgStyle={{ height: '25px' }} Tag="span" />
           </Link>
-          {` as a${
-            beginsWithVowel(jobTitle) ? 'n' : ''
-          } ${jobTitle}, but starting from April I'll be a full-time freelancer.`}
+          {`.`}
         </Paragraph>
         <Paragraph>{'I particularly enjoy working with those technologies:'}</Paragraph>
         <Technologies flexWrap="wrap" justifyContent={{ _: 'center', tablet: 'space-between' }}>

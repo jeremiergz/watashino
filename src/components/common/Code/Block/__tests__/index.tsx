@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import BlockCode from '..';
 import { DarkTheme } from '../../../../../theme';
 
-describe('components/widgets/Code/Block Test Suite', () => {
+describe('components/common/Code/Block Test Suite', () => {
   it('matches snapshot', () => {
     const jsx = (
       <ThemeProvider theme={DarkTheme}>

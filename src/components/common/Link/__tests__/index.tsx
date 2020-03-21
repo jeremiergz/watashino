@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { DarkTheme } from '../../../../theme';
 import Link from '../../Link';
 
-describe('components/widgets/Link Test Suite', () => {
+describe('components/common/Link Test Suite', () => {
   it('matches snapshot', () => {
     const jsx = (
       <ThemeProvider theme={DarkTheme}>

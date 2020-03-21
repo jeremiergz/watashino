@@ -1,0 +1,18 @@
+{
+  "name": "gatsby-source-custom-googlemaps-static",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Custom Gatsby source plugin for Google Maps Static API.",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-source",
+    "google",
+    "googlemaps",
+    "maps",
+    "static"
+  ],
+  "license": "Apache-2.0",
+  "author": "Jeremie Rodriguez <contact@jeremierodriguez.com> (https://github.com/jeremiergz)",
+  "main": "gatsby-node.js"
+}

@@ -28,12 +28,12 @@ const Container = styled(Flex)`
 const eventName = 'beforeinstallprompt';
 
 const InstallPWA = () => {
-  const { appIcon } = useStaticQuery<GraphQL.InstallPwaDataQuery>(graphql`
+  const { appIcon } = useStaticQuery(graphql`
     query InstallPWAData {
       appIcon: file(relativePath: { eq: "profile-pic.png" }) {
         childImageSharp {
           fixed(height: 32, width: 32) {
-            ...GatsbyImageSharpFixed_withWebp
+            ...GatsbyImageSharpFixed
           }
         }
       }

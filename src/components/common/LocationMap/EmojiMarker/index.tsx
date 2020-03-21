@@ -1,43 +1,36 @@
-import { Marker } from '@react-google-maps/api';
 import React, { useState } from 'react';
-const astonishedEmoji = require('../../../../images/emoji-astonished.png');
-const smilingEmoji = require('../../../../images/emoji-smiling.png');
-const uglyEmoji = require('../../../../images/emoji-ugly.png');
+import EmojiAstonished from '../../../svg/EmojiAstonished';
+import EmojiNerd from '../../../svg/EmojiNerd';
+import EmojiUgly from '../../../svg/EmojiUgly';
 
 type EmojiMarkerProps = {
   onClick: () => void;
-  position: {
-    lat: number;
-    lng: number;
-  };
+};
+
+const Emojis = {
+  EmojiAstonished,
+  EmojiNerd,
+  EmojiUgly,
 };
 
 let timeout: number;
 
-const EmojiMarker = ({ onClick, position }: EmojiMarkerProps) => {
-  const [marker, setMarker] = useState(smilingEmoji);
+const EmojiMarker = ({ onClick }: EmojiMarkerProps) => {
+  const [marker, setMarker] = useState(EmojiNerd.displayName);
   const handleMarkerClick = () => {
     if (typeof onClick === 'function') onClick();
-    if (marker === smilingEmoji) {
-      setMarker(astonishedEmoji);
-    } else if (marker === astonishedEmoji) {
-      setMarker(uglyEmoji);
+    if (marker === EmojiNerd.displayName) {
+      setMarker(EmojiAstonished.displayName);
+    } else if (marker === EmojiAstonished.displayName) {
+      setMarker(EmojiUgly.displayName);
     }
     clearTimeout(timeout);
     timeout = setTimeout(() => {
-      setMarker(smilingEmoji);
+      setMarker(EmojiNerd.displayName);
     }, 2500);
   };
-  return (
-    <Marker
-      icon={{
-        scaledSize: new google.maps.Size(32, 32),
-        url: marker,
-      }}
-      onClick={handleMarkerClick}
-      position={position}
-    />
-  );
+  const Emoji = Emojis[marker];
+  return <Emoji cursor="help" onClick={handleMarkerClick} />;
 };
 
 EmojiMarker.displayName = 'EmojiMarker';

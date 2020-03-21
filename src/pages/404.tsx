@@ -8,7 +8,7 @@ import { Routes } from '../utils/Routes';
 const NotFoundPage = () => {
   const {
     pageData: { keywords, name },
-  } = useStaticQuery<GraphQL.NotFoundPageQuery>(graphql`
+  } = useStaticQuery(graphql`
     query NotFoundPage {
       pageData: navigationJson(page: { eq: "NotFoundPage" }) {
         keywords

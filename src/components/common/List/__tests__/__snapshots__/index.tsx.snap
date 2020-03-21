@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/widgets/List Test Suite matches snapshot 1`] = `
+exports[`components/common/List Test Suite matches snapshot 1`] = `
 <ul
   className="sc-AxjAm sc-AxiKw laWlNr"
 >

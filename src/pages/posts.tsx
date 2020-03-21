@@ -18,7 +18,7 @@ const PostsPage = () => {
   const {
     mdData: { nodes },
     pageData: { keywords, name },
-  } = useStaticQuery<GraphQL.PostsPageQuery>(graphql`
+  } = useStaticQuery(graphql`
     query PostsPage {
       mdData: allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
         nodes {

@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { DarkTheme } from '../../../../theme';
 import PreviousNextNavigation from '../../PreviousNextNavigation';
 
-describe('components/widgets/PreviousNextNavigation Test Suite', () => {
+describe('components/common/PreviousNextNavigation Test Suite', () => {
   it('matches snapshot', () => {
     const jsx = (
       <ThemeProvider theme={DarkTheme}>
