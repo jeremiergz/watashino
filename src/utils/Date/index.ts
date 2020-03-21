@@ -20,10 +20,7 @@ const months = {
  */
 function getMonthAndDay(date: Date) {
   const month = months[date.getMonth()];
-  const day = date
-    .getDate()
-    .toString()
-    .padStart(2, '0');
+  const day = date.getDate().toString().padStart(2, '0');
   return [month, day];
 }
 

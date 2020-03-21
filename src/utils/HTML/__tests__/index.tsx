@@ -21,9 +21,7 @@ describe('utils/HTML Test Suite', () => {
       '---',
       'text',
     ].join('\n\n');
-    const mdast = unified()
-      .use(parse)
-      .parse(md);
+    const mdast = unified().use(parse).parse(md);
     const jsx = <ThemeProvider theme={DarkTheme}>{renderASTToJSX(toHast(mdast))}</ThemeProvider>;
     expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
   });
