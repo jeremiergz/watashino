@@ -1,5 +1,7 @@
 FROM node:12 AS builder
 
+ARG GOOGLE_MAPS_STATIC_API_KEY
+
 RUN apt-get update && \
   apt-get install --yes libglu1 && \
   apt-get clean && \
