@@ -102,7 +102,7 @@ module.exports = {
         key: process.env.GOOGLE_MAPS_STATIC_API_KEY,
         styles: {
           dark: [
-            { element: 'geometry', rules: { color: '0x242f3e' } },
+            { element: 'geometry', rules: { color: '0x31859a' } },
             { element: 'labels.text.fill', rules: { color: '0x746855' } },
             { element: 'labels.text.stroke', rules: { color: '0x242f3e' } },
             { element: 'labels.text.fill', feature: 'administrative.locality', rules: { color: '0xd59563' } },
