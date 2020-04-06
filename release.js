@@ -14,8 +14,13 @@ function exit(message) {
 }
 
 async function computeNextVersion() {
-  const { stdout } = await exec('git describe --abbrev=0');
-  const [major, minor, patch] = stdout.split('.').map(s => parseInt(s, 10));
+  let major = 0;
+  let minor = 0;
+  let patch = 0;
+  try {
+    const { stdout } = await exec('git describe --abbrev=0');
+    [major, minor, patch] = stdout.split('.').map(s => parseInt(s, 10));
+  } catch {}
   const date = new Date();
   const nextMajor = parseInt(date.getFullYear().toString().substring(2, 4), 10);
   const nextMinor = date.getMonth() + 1;
