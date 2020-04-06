@@ -1,4 +1,4 @@
-require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` });
+require('dotenv/config');
 const { location } = require('./content/data/personal-details.json');
 const packageJSON = require('./package.json');
 
