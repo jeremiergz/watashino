@@ -16,14 +16,6 @@
     "to": "/about-me"
   },
   {
-    "icon": "skill",
-    "keywords": ["skills", "gatsby", "react"],
-    "name": "My Skills",
-    "navOrder": 2,
-    "page": "SkillsPage",
-    "to": "/skills"
-  },
-  {
     "icon": "home",
     "ignoreInNavigation": true,
     "keywords": ["contact", "gatsby", "react"],

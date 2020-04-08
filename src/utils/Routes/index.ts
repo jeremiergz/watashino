@@ -3,7 +3,6 @@ const Routes = {
   index: '/',
   notFound: '/404',
   posts: '/posts',
-  skills: '/skills',
 } as const;
 
 export { Routes };
