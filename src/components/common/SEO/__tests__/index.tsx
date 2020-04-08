@@ -8,7 +8,7 @@ describe('components/common/SEO Test Suite', () => {
   beforeAll(() => {
     const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
     useStaticQuery.mockImplementation(() => ({
-      banner: { childImageSharp: { resize: { src: 'fake.png' } } },
+      banner: { childImageSharp: { fixed: { src: 'fake.png' } } },
       site: {
         siteMetadata: {
           title: 'SEO Test title',

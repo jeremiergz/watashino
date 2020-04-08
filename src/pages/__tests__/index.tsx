@@ -55,7 +55,7 @@ describe('pages Test Suite', () => {
         ],
       },
       appIcon: { childImageSharp },
-      banner: { childImageSharp: { resize: { src: 'fake.png' } } },
+      banner: { childImageSharp: { fixed: { src: 'fake.png' } } },
       companyImg: { childImageSharp },
       contactImgs: { nodes: [{ base: 'contact-image.png', childImageSharp }] },
       coverImg: { childImageSharp },
