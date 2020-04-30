@@ -88,7 +88,7 @@ const InstallPWA = () => {
         </Button>
       </Flex>
       <Button onClick={handleClose} paddingRight={3} position="absolute" right={0}>
-        <CloseIcon fill="white" />
+        <CloseIcon fill="white" height={25} width={25} />
       </Button>
     </Container>
   );
