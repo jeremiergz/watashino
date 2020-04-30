@@ -114,10 +114,10 @@ exports[`components/InstallPWA Test Suite matches snapshot 1`] = `
     onClick={[Function]}
   >
     <svg
-      className="sc-AxiKw cFlUSo"
-      height={32}
+      className="sc-AxiKw cFHfnQ"
+      height={25}
       viewBox="0 0 24 24"
-      width={32}
+      width={25}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
