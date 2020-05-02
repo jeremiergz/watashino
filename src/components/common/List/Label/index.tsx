@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Text, { TextProps } from '../../../primitives/Text';
 
-type LabelProps = TextProps;
-
-const Label = ({ children, ...rest }: LabelProps) => {
+const Label: FunctionComponent<LabelProps> = ({ children, ...rest }) => {
   return (
     <Text
       as="label"
@@ -23,5 +21,5 @@ const Label = ({ children, ...rest }: LabelProps) => {
 
 Label.displayName = 'ListLabel';
 
-export { LabelProps };
+export type LabelProps = TextProps;
 export default Label;

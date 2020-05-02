@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Svg, { SvgProps } from '../../common/Svg';
 
-type CopyProps = SvgProps;
-
-const Copy = ({ fill, ...rest }: CopyProps) => {
+const Copy: FunctionComponent<CopyProps> = ({ fill, ...rest }) => {
   return (
     <Svg {...rest}>
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -17,4 +15,5 @@ const Copy = ({ fill, ...rest }: CopyProps) => {
 
 Copy.displayName = 'Copy';
 
+export type CopyProps = SvgProps;
 export default Copy;

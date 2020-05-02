@@ -1,13 +1,9 @@
-import React from 'react';
 import styled from 'styled-components';
 import { variant } from 'styled-system';
-import BaseText, { TextProps } from '../../primitives/Text';
+import Text, { TextProps } from '../../primitives/Text';
 
-type HeadingProps = TextProps & {
-  variant: 'h1' | 'h2' | 'h3' | 'h4';
-};
-
-const Text = styled(BaseText)<HeadingProps>`
+const Heading = styled(Text)<HeadingProps>`
+  display: inline-block;
   ${variant({
     variants: {
       h1: { fontSize: 44, fontWeight: 'bold' },
@@ -18,15 +14,9 @@ const Text = styled(BaseText)<HeadingProps>`
   })}
 `;
 
-const Heading = ({ children, variant, ...rest }: HeadingProps) => {
-  return (
-    <Text as={variant} variant={variant} {...rest}>
-      {children}
-    </Text>
-  );
-};
-
 Heading.displayName = 'Heading';
 
-export { HeadingProps };
+export type HeadingProps = TextProps & {
+  variant: 'h1' | 'h2' | 'h3' | 'h4';
+};
 export default Heading;

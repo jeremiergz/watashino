@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Svg, { SvgProps } from '../../common/Svg';
 
-type DescriptionProps = SvgProps;
-
-const Description = ({ fill, ...rest }: DescriptionProps) => {
+const Description: FunctionComponent<DescriptionProps> = ({ fill, ...rest }) => {
   return (
     <Svg {...rest}>
       <path fill="none" d="M0 0h24v24H0z"></path>
@@ -17,4 +15,5 @@ const Description = ({ fill, ...rest }: DescriptionProps) => {
 
 Description.displayName = 'Description';
 
+export type DescriptionProps = SvgProps;
 export default Description;

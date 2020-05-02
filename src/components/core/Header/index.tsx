@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Flex from '../../primitives/Flex';
 import { useTheming } from '../ThemingManager';
 import NameAndJob from './NameAndJob';
 import Navigation from './Navigation';
 
-const Header = () => {
+const Header: FunctionComponent = () => {
   const { theme } = useTheming();
   return (
     <Flex

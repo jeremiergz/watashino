@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Svg, { SvgProps } from '../../common/Svg';
 
-type SunProps = SvgProps;
-
-const Sun = (props: SunProps) => {
+const Sun: FunctionComponent<SunProps> = props => {
   return (
     <Svg viewBox="0 0 512 512" {...props}>
       <path
@@ -21,4 +19,5 @@ const Sun = (props: SunProps) => {
 
 Sun.displayName = 'Sun';
 
+export type SunProps = SvgProps;
 export default Sun;

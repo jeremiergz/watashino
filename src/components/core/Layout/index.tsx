@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react';
+import React, { FunctionComponent, HTMLAttributes } from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { Theme } from '../../../theme';
 import InstallPWA from '../../common/InstallPWA';
@@ -7,8 +7,6 @@ import Footer from '../Footer';
 import Header from '../Header';
 import { useTheming } from '../ThemingManager';
 import Content from './Content';
-
-type LayoutProps = HTMLAttributes<HTMLDivElement>;
 
 const GlobalStyle = createGlobalStyle`
     html, body {
@@ -39,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
     }
 `;
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout: FunctionComponent<LayoutProps> & { Content: typeof Content } = ({ children }) => {
   const { theme } = useTheming();
   return (
     <>
@@ -61,9 +59,8 @@ const Layout = ({ children }: LayoutProps) => {
   );
 };
 
+Layout.Content = Content;
 Layout.displayName = 'Layout';
 
-Layout.Content = Content;
-
-export { LayoutProps };
+export type LayoutProps = HTMLAttributes<HTMLDivElement>;
 export default Layout;

@@ -1,14 +1,7 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 import { variant } from 'styled-system';
 import BaseBox, { BoxProps } from '../../primitives/Box';
-
-type AnchorProps = BoxProps & {
-  download?: boolean;
-  href?: string;
-  target?: string;
-  variant?: 'underlined';
-};
 
 const A = styled(BaseBox)`
   color: inherit;
@@ -32,7 +25,7 @@ const A = styled(BaseBox)`
   })}
 `;
 
-const Anchor = ({ children, ...rest }: AnchorProps) => {
+const Anchor: FunctionComponent<AnchorProps> = ({ children, ...rest }) => {
   const isTouchDevice = typeof window !== 'undefined' && window.navigator.maxTouchPoints > 0;
   const target = isTouchDevice ? '_self' : '_blank';
   return (
@@ -44,5 +37,10 @@ const Anchor = ({ children, ...rest }: AnchorProps) => {
 
 Anchor.displayName = 'Anchor';
 
-export { AnchorProps };
+export type AnchorProps = BoxProps & {
+  download?: boolean;
+  href?: string;
+  target?: string;
+  variant?: 'underlined';
+};
 export default Anchor;

@@ -1,4 +1,4 @@
-import React, { TimeHTMLAttributes } from 'react';
+import { ComponentType, TimeHTMLAttributes } from 'react';
 import styled, { StyledComponentProps } from 'styled-components';
 import {
   border,
@@ -14,6 +14,7 @@ import {
   PositionProps,
   space,
   SpaceProps,
+  system,
   typography,
   TypographyProps,
   zIndex,
@@ -21,7 +22,27 @@ import {
 } from 'styled-system';
 import { Theme, ThemeProps } from '../../../theme';
 
-type BoxProps = StyledComponentProps<
+const Box = styled.div<BoxProps>`
+  ${compose(
+    border,
+    color,
+    flexbox,
+    layout,
+    position,
+    space,
+    typography,
+    zIndex,
+    system({
+      listStyle: true,
+      transform: true,
+      transition: true,
+    }),
+  )}
+`;
+
+Box.displayName = 'Box';
+
+export type BoxProps = StyledComponentProps<
   'div',
   Theme,
   BorderProps &
@@ -36,16 +57,9 @@ type BoxProps = StyledComponentProps<
     ThemeProps,
   never
 > & {
-  as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
+  as?: keyof JSX.IntrinsicElements | ComponentType<any>;
+  listStyle?: string;
+  transform?: string;
+  transition?: string;
 };
-
-const Box = styled.div<BoxProps>`
-  #___gatsby > div {
-  }
-  ${compose(border, color, flexbox, layout, position, space, typography, zIndex)}
-`;
-
-Box.displayName = 'Box';
-
-export { BoxProps };
 export default Box;

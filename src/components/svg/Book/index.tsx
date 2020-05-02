@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Svg, { SvgProps } from '../../common/Svg';
 
-type BookProps = SvgProps;
-
-const Book = ({ fill, ...rest }: BookProps) => {
+const Book: FunctionComponent<BookProps> = ({ fill, ...rest }) => {
   return (
     <Svg {...rest}>
       <path d="M0 0H24V24H0z" fill="none" />
@@ -21,4 +19,5 @@ const Book = ({ fill, ...rest }: BookProps) => {
 
 Book.displayName = 'Book';
 
+export type BookProps = SvgProps;
 export default Book;

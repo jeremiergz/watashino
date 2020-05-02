@@ -1,15 +1,11 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Text, { TextProps } from '../../../primitives/Text';
 
-type InlineCodeProps = TextProps;
-
-const vsCodeBackgroundColor = '#1E1E1E';
-
-const InlineCode = ({ children, ...rest }: InlineCodeProps) => {
+const InlineCode: FunctionComponent<InlineCodeProps> = ({ children, ...rest }) => {
   return (
     <Text
       as="code"
-      backgroundColor={vsCodeBackgroundColor}
+      backgroundColor="#1e1e1e"
       borderRadius={8}
       color="white"
       display="inline-flex"
@@ -26,5 +22,5 @@ const InlineCode = ({ children, ...rest }: InlineCodeProps) => {
 
 InlineCode.displayName = 'InlineCode';
 
-export { InlineCodeProps };
+export type InlineCodeProps = TextProps;
 export default InlineCode;

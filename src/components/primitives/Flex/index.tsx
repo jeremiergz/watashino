@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Box, { BoxProps } from '../Box';
 
-type FlexProps = BoxProps;
-
-const Flex = ({ children, ...rest }: BoxProps) => {
+const Flex: FunctionComponent<BoxProps> = ({ children, ...rest }) => {
   return (
     <Box display="flex" {...rest}>
       {children}
@@ -13,5 +11,5 @@ const Flex = ({ children, ...rest }: BoxProps) => {
 
 Flex.displayName = 'Flex';
 
-export { FlexProps };
+export type FlexProps = BoxProps;
 export default Flex;

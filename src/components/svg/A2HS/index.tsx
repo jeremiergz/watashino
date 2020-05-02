@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Svg, { SvgProps } from '../../common/Svg';
 
-type A2HSProps = SvgProps;
-
-const A2HS = ({ fill, ...rest }: A2HSProps) => {
+const A2HS: FunctionComponent<A2HSProps> = ({ fill, ...rest }) => {
   return (
     <Svg {...rest}>
       <path d="M0 0h24v24H0V0z" fill="none"></path>
@@ -18,4 +16,5 @@ const A2HS = ({ fill, ...rest }: A2HSProps) => {
 
 A2HS.displayName = 'A2HS';
 
+export type A2HSProps = SvgProps;
 export default A2HS;

@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Flex, { FlexProps } from '../../../primitives/Flex';
 
-type ItemProps = FlexProps;
-
-const Item = ({ children, ...rest }: ItemProps) => {
+const Item: FunctionComponent<ItemProps> = ({ children, ...rest }) => {
   return (
     <Flex
       alignItems="center"
@@ -23,5 +21,5 @@ const Item = ({ children, ...rest }: ItemProps) => {
 
 Item.displayName = 'ListItem';
 
-export { ItemProps };
+export type ItemProps = FlexProps;
 export default Item;

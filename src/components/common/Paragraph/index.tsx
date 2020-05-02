@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Text, { TextProps } from '../../primitives/Text';
 
-type ParagraphProps = TextProps;
-
-const Paragraph = ({ children, ...rest }: ParagraphProps) => {
+const Paragraph: FunctionComponent<ParagraphProps> = ({ children, ...rest }) => {
   return (
     <Text as="p" fontSize={20} marginY={4} textAlign={{ _: 'center', mobileL: 'left' }} {...rest}>
       {children}
@@ -13,5 +11,5 @@ const Paragraph = ({ children, ...rest }: ParagraphProps) => {
 
 Paragraph.displayName = 'Paragraph';
 
-export { ParagraphProps };
+export type ParagraphProps = TextProps;
 export default Paragraph;

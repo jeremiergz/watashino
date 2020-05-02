@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Svg, { SvgProps } from '../../common/Svg';
 
-type EmojiAstonishedProps = SvgProps;
-
-const EmojiAstonished = (props: EmojiAstonishedProps) => {
+const EmojiAstonished: FunctionComponent<EmojiAstonishedProps> = props => {
   return (
     <Svg viewBox="0 0 512 512" {...props}>
       <circle cx="255.984" cy="246.672" r="246.672" fill="#ffd93b"></circle>
@@ -51,4 +49,5 @@ const EmojiAstonished = (props: EmojiAstonishedProps) => {
 
 EmojiAstonished.displayName = 'EmojiAstonished';
 
+export type EmojiAstonishedProps = SvgProps;
 export default EmojiAstonished;

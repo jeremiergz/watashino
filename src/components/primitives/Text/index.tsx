@@ -19,7 +19,13 @@ import {
 } from 'styled-system';
 import { ThemeProps } from '../../../theme';
 
-type TextProps = BorderProps &
+const Text = styled.span<TextProps>`
+  ${compose(border, color, display, layout, space, typography, zIndex)}
+`;
+
+Text.displayName = 'Text';
+
+export type TextProps = BorderProps &
   ColorProps &
   DisplayProps &
   LayoutProps &
@@ -28,12 +34,4 @@ type TextProps = BorderProps &
   ZIndexProps &
   ThemeProps &
   TimeHTMLAttributes<unknown>;
-
-const Text = styled.span<TextProps>`
-  ${compose(border, color, display, layout, space, typography, zIndex)}
-`;
-
-Text.displayName = 'Text';
-
-export { TextProps };
 export default Text;

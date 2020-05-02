@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Svg, { SvgProps } from '../../common/Svg';
 
-type MoodProps = SvgProps;
-
-const Mood = ({ fill, ...rest }: MoodProps) => {
+const Mood: FunctionComponent<MoodProps> = ({ fill, ...rest }) => {
   return (
     <Svg {...rest}>
       <path d="M0 0h24v24H0z" fill="none" />
@@ -17,4 +15,5 @@ const Mood = ({ fill, ...rest }: MoodProps) => {
 
 Mood.displayName = 'Mood';
 
+export type MoodProps = SvgProps;
 export default Mood;

@@ -1,5 +1,5 @@
 import { graphql, navigate, useStaticQuery } from 'gatsby';
-import React, { useEffect } from 'react';
+import React, { FunctionComponent, useEffect } from 'react';
 import styled from 'styled-components';
 import Link from '../components/common/Link';
 import List from '../components/common/List';
@@ -14,7 +14,7 @@ const Groups = styled(Box)`
   }
 `;
 
-const PostsPage = () => {
+const PostsPage: FunctionComponent = () => {
   const {
     mdData: { nodes },
     pageData: { keywords, name },

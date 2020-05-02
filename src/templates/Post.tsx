@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 import Chip from '../components/common/Chip';
 import PreviousNextNavigation from '../components/common/PreviousNextNavigation';
@@ -8,21 +8,6 @@ import Text from '../components/primitives/Text';
 import { colors, Theme } from '../theme';
 import { getMonthAndDay } from '../utils/Date';
 import { renderASTToJSX } from '../utils/HTML';
-
-type PostProps = {
-  pageContext: {
-    htmlAst: any;
-    frontmatter: {
-      date: string;
-      keywords: string;
-      slug: string;
-      title: string;
-    };
-    next: string;
-    previous: string;
-    timeToRead: number;
-  };
-};
 
 const Chips = styled(Flex)`
   @media screen and (min-width: ${({ theme }: { theme: Theme }) => theme.breakpoints[3]}) {
@@ -35,7 +20,7 @@ const Chips = styled(Flex)`
   }
 `;
 
-const Post = ({ pageContext }: PostProps) => {
+const Post: FunctionComponent<PostProps> = ({ pageContext }) => {
   const {
     frontmatter: { date: rawDate, keywords: rawKeywords, slug, title },
     htmlAst,
@@ -83,4 +68,18 @@ const Post = ({ pageContext }: PostProps) => {
   );
 };
 
+export type PostProps = {
+  pageContext: {
+    htmlAst: any;
+    frontmatter: {
+      date: string;
+      keywords: string;
+      slug: string;
+      title: string;
+    };
+    next: string;
+    previous: string;
+    timeToRead: number;
+  };
+};
 export default Post;

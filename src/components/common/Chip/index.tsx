@@ -1,14 +1,10 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { Theme } from '../../../theme';
 import { lightenColor } from '../../../utils/CSS';
 import { useTheming } from '../../core/ThemingManager';
 import Text, { TextProps } from '../../primitives/Text';
 
-type ChipProps = Omit<TextProps, 'color'> & {
-  color?: string;
-};
-
-const Chip = ({ children, color, ...rest }: ChipProps) => {
+const Chip: FunctionComponent<ChipProps> = ({ children, color, ...rest }) => {
   const { theme } = useTheming();
   const fontColor = (color || theme.colors.gray) as keyof Theme['colors'];
   const backgroundColor = lightenColor(fontColor, 0.25);
@@ -34,5 +30,7 @@ const Chip = ({ children, color, ...rest }: ChipProps) => {
 
 Chip.displayName = 'Chip';
 
-export { ChipProps };
+export type ChipProps = Omit<TextProps, 'color'> & {
+  color?: string;
+};
 export default Chip;

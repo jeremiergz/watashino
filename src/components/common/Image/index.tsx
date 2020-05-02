@@ -1,8 +1,8 @@
-import Img, { GatsbyImageProps } from 'gatsby-image';
+import GatsbyImage, { GatsbyImageProps } from 'gatsby-image';
 import styled from 'styled-components';
 import { compose, layout, LayoutProps, space, SpaceProps } from 'styled-system';
 
-const Image = styled(Img)<ImageProps>`
+const Image = styled(GatsbyImage)<ImageProps>`
   ${compose(layout, space)}
 `;
 

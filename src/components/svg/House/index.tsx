@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Svg, { SvgProps } from '../../common/Svg';
 
-type HouseProps = SvgProps;
-
-const House = ({ fill, ...rest }: HouseProps) => {
+const House: FunctionComponent<HouseProps> = ({ fill, ...rest }) => {
   return (
     <Svg {...rest}>
       <path d="M0 0H24V24H0z" fill="none" />
@@ -14,4 +12,5 @@ const House = ({ fill, ...rest }: HouseProps) => {
 
 House.displayName = 'House';
 
+export type HouseProps = SvgProps;
 export default House;

@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Svg, { SvgProps } from '../../common/Svg';
 
-type BusinessProps = SvgProps;
-
-const Business = ({ fill, ...rest }: BusinessProps) => {
+const Business: FunctionComponent<BusinessProps> = ({ fill, ...rest }) => {
   return (
     <Svg {...rest}>
       <path d="M0 0h24v24H0zm10 5h4v2h-4zm0 0h4v2h-4z" fill="none" />
@@ -17,4 +15,5 @@ const Business = ({ fill, ...rest }: BusinessProps) => {
 
 Business.displayName = 'Business';
 
+export type BusinessProps = SvgProps;
 export default Business;

@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { Routes } from '../../../../utils/Routes';
 import Link from '../../../common/Link';
 import Svg from '../../../common/Svg';
@@ -16,7 +16,7 @@ const iconsMapping = {
   mood: MoodIcon,
 };
 
-const Navigation = () => {
+const Navigation: FunctionComponent = () => {
   const {
     allMarkdownRemark: { totalCount },
     allNavigationJson: { nodes: links },

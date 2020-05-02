@@ -1,5 +1,5 @@
 import copyToClipboard from 'copy-to-clipboard';
-import React, { useRef, useState } from 'react';
+import React, { FunctionComponent, useRef, useState } from 'react';
 import Flex from '../../primitives/Flex';
 import Text, { TextProps } from '../../primitives/Text';
 import Copy from '../../svg/Copy';
@@ -7,11 +7,9 @@ import Button from '../Button';
 import BlockCode from './Block';
 import InlineCode from './Inline';
 
-type CodeProps = TextProps;
-
 let timeout: number;
 
-const Code = ({ children, className, ...rest }: CodeProps) => {
+const Code: FunctionComponent<CodeProps> = ({ children, className, ...rest }) => {
   const [hasCopied, setHasCopied] = useState(false);
   const codeRef = useRef<HTMLPreElement>();
   const handleCopyClick = () => {
@@ -44,5 +42,5 @@ const Code = ({ children, className, ...rest }: CodeProps) => {
 
 Code.displayName = 'Code';
 
-export { CodeProps };
+export type CodeProps = TextProps;
 export default Code;

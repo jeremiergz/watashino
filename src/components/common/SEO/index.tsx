@@ -1,8 +1,14 @@
 import { graphql, useStaticQuery } from 'gatsby';
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { Helmet } from 'react-helmet-async';
 
-const SEO = ({ description = '', keywords = [], lang = 'en', path = '', title = 'My Website' }: SEO) => {
+const SEO: FunctionComponent<SEOProps> = ({
+  description = '',
+  keywords = [],
+  lang = 'en',
+  path = '',
+  title = 'My Website',
+}) => {
   const {
     banner,
     site: { siteMetadata },
@@ -52,4 +58,11 @@ const SEO = ({ description = '', keywords = [], lang = 'en', path = '', title = 
 
 SEO.displayName = 'SEO';
 
+export type SEOProps = {
+  description?: string;
+  keywords?: string[];
+  lang?: string;
+  path?: string;
+  title: string;
+};
 export default SEO;

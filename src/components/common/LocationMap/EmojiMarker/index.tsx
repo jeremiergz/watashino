@@ -1,11 +1,7 @@
-import React, { useState } from 'react';
+import React, { FunctionComponent, useState } from 'react';
 import EmojiAstonished from '../../../svg/EmojiAstonished';
 import EmojiNerd from '../../../svg/EmojiNerd';
 import EmojiUgly from '../../../svg/EmojiUgly';
-
-type EmojiMarkerProps = {
-  onClick: () => void;
-};
 
 const Emojis = {
   EmojiAstonished,
@@ -15,8 +11,9 @@ const Emojis = {
 
 let timeout: number;
 
-const EmojiMarker = ({ onClick }: EmojiMarkerProps) => {
+const EmojiMarker: FunctionComponent<EmojiMarkerProps> = ({ onClick }) => {
   const [marker, setMarker] = useState(EmojiNerd.displayName);
+  const Emoji = Emojis[marker];
   const handleMarkerClick = () => {
     if (typeof onClick === 'function') onClick();
     if (marker === EmojiNerd.displayName) {
@@ -29,10 +26,12 @@ const EmojiMarker = ({ onClick }: EmojiMarkerProps) => {
       setMarker(EmojiNerd.displayName);
     }, 2500);
   };
-  const Emoji = Emojis[marker];
   return <Emoji cursor="help" onClick={handleMarkerClick} />;
 };
 
 EmojiMarker.displayName = 'EmojiMarker';
 
+export type EmojiMarkerProps = {
+  onClick: () => void;
+};
 export default EmojiMarker;

@@ -1,27 +1,19 @@
-import React from 'react';
-import styled from 'styled-components';
-import BaseBox, { BoxProps } from '../../primitives/Box';
+import React, { FunctionComponent } from 'react';
+import Box, { BoxProps } from '../../primitives/Box';
 import Item from './Item';
 import Label from './Label';
 
-type ListProps = BoxProps;
-
-const Box = styled(BaseBox)`
-  list-style: none;
-`;
-
-const List = ({ children, ...rest }: ListProps) => {
+const List: FunctionComponent<ListProps> & { Item: typeof Item; Label: typeof Label } = ({ children, ...rest }) => {
   return (
-    <Box as="ul" margin={0} padding={0} {...rest}>
+    <Box as="ul" listStyle="none" margin={0} padding={0} {...rest}>
       {children}
     </Box>
   );
 };
 
 List.displayName = 'List';
-
-List.Label = Label;
 List.Item = Item;
+List.Label = Label;
 
-export { ListProps };
+export type ListProps = BoxProps;
 export default List;

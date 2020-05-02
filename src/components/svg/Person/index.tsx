@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Svg, { SvgProps } from '../../common/Svg';
 
-type PersonProps = SvgProps;
-
-const Person = ({ fill, ...rest }: PersonProps) => {
+const Person: FunctionComponent<PersonProps> = ({ fill, ...rest }) => {
   return (
     <Svg {...rest}>
       <path
@@ -17,4 +15,5 @@ const Person = ({ fill, ...rest }: PersonProps) => {
 
 Person.displayName = 'Person';
 
+export type PersonProps = SvgProps;
 export default Person;

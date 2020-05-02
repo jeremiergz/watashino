@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Svg, { SvgProps } from '../../common/Svg';
 
-type CloseProps = SvgProps;
-
-const Close = ({ fill, ...rest }: CloseProps) => {
+const Close: FunctionComponent<CloseProps> = ({ fill, ...rest }) => {
   return (
     <Svg {...rest}>
       <path
@@ -17,4 +15,5 @@ const Close = ({ fill, ...rest }: CloseProps) => {
 
 Close.displayName = 'Close';
 
+export type CloseProps = SvgProps;
 export default Close;

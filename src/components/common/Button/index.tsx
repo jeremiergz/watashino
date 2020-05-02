@@ -1,13 +1,6 @@
-import React, { ButtonHTMLAttributes, PropsWithChildren } from 'react';
+import React, { ButtonHTMLAttributes, FunctionComponent, PropsWithChildren } from 'react';
 import styled from 'styled-components';
 import { compose, layout, LayoutProps, position, PositionProps, space, SpaceProps, variant } from 'styled-system';
-
-type ButtonProps = PropsWithChildren<
-  ButtonHTMLAttributes<HTMLButtonElement> &
-    LayoutProps &
-    PositionProps &
-    SpaceProps & { variant?: 'contained' | 'outlined' | 'text' }
->;
 
 const BaseButton = styled.button<ButtonProps>`
   ${compose(layout, position, space)}
@@ -46,7 +39,7 @@ const BaseButton = styled.button<ButtonProps>`
   })}
 `;
 
-const Button = ({ children, variant = 'text', ...rest }: ButtonProps) => {
+const Button: FunctionComponent<ButtonProps> = ({ children, variant = 'text', ...rest }) => {
   return (
     <BaseButton padding={0} variant={variant} {...rest}>
       {children}
@@ -56,4 +49,10 @@ const Button = ({ children, variant = 'text', ...rest }: ButtonProps) => {
 
 Button.displayName = 'Button';
 
+export type ButtonProps = PropsWithChildren<
+  ButtonHTMLAttributes<HTMLButtonElement> &
+    LayoutProps &
+    PositionProps &
+    SpaceProps & { variant?: 'contained' | 'outlined' | 'text' }
+>;
 export default Button;

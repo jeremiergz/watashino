@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Svg, { SvgProps } from '../../common/Svg';
 
-type EmojiUglyProps = SvgProps;
-
-const EmojiUgly = (props: EmojiUglyProps) => {
+const EmojiUgly: FunctionComponent<EmojiUglyProps> = props => {
   return (
     <Svg viewBox="0 0 512 512" {...props}>
       <circle cx="255.995" cy="265.526" r="246.464" fill="#ffd93b"></circle>
@@ -61,4 +59,5 @@ const EmojiUgly = (props: EmojiUglyProps) => {
 
 EmojiUgly.displayName = 'EmojiUgly';
 
+export type EmojiUglyProps = SvgProps;
 export default EmojiUgly;

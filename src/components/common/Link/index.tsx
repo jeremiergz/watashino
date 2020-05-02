@@ -1,22 +1,15 @@
 import { Link as BaseGatsbyLink } from 'gatsby';
 import { OutboundLink as BaseOutboundLink } from 'gatsby-plugin-google-analytics';
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { Routes } from '../../../utils/Routes';
 import { useTheming } from '../../core/ThemingManager';
 import withoutStylingProps from '../../hocs/withoutStylingProps';
 import Anchor, { AnchorProps } from '../Anchor';
 
-type LinkProps = AnchorProps & {
-  external?: boolean;
-  partiallyActive?: boolean;
-  to: string;
-};
-
 const GatsbyLink = withoutStylingProps(BaseGatsbyLink);
-
 const OutboundLink = withoutStylingProps(BaseOutboundLink);
 
-const Link = ({ children, external, partiallyActive = false, to, ...rest }: LinkProps) => {
+const Link: FunctionComponent<LinkProps> = ({ children, external, partiallyActive = false, to, ...rest }) => {
   const { theme } = useTheming();
   const isTouchDevice = typeof window !== 'undefined' && window.navigator.maxTouchPoints > 0;
   const target = isTouchDevice ? '_self' : '_blank';
@@ -42,5 +35,9 @@ const Link = ({ children, external, partiallyActive = false, to, ...rest }: Link
 
 Link.displayName = 'Link';
 
-export { LinkProps };
+export type LinkProps = AnchorProps & {
+  external?: boolean;
+  partiallyActive?: boolean;
+  to: string;
+};
 export default Link;

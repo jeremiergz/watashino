@@ -1,11 +1,11 @@
 import { graphql, useStaticQuery } from 'gatsby';
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Heading from '../components/common/Heading';
 import Link from '../components/common/Link';
 import Layout from '../components/core/Layout';
 import { Routes } from '../utils/Routes';
 
-const NotFoundPage = () => {
+const NotFoundPage: FunctionComponent = () => {
   const {
     pageData: { keywords, name },
   } = useStaticQuery(graphql`

@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import { FixedObject, FluidObject } from 'gatsby-image';
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 import Image from '../components/common/Image';
 import Link from '../components/common/Link';
@@ -24,7 +24,7 @@ const Technologies = styled(Flex)`
   }
 `;
 
-const AboutMePage = () => {
+const AboutMePage: FunctionComponent = () => {
   const {
     companyImg: {
       childImageSharp: { fixed: companyImgFixed },

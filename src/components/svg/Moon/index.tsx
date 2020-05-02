@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Svg, { SvgProps } from '../../common/Svg';
 
-type MoonProps = SvgProps;
-
-const Moon = (props: MoonProps) => {
+const Moon: FunctionComponent<MoonProps> = props => {
   return (
     <Svg viewBox="0 0 512 512" {...props}>
       <path
@@ -36,4 +34,5 @@ const Moon = (props: MoonProps) => {
 
 Moon.displayName = 'Moon';
 
+export type MoonProps = SvgProps;
 export default Moon;

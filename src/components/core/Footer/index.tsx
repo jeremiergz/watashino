@@ -1,9 +1,9 @@
 import { graphql, useStaticQuery } from 'gatsby';
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Link from '../../common/Link';
 import Box from '../../primitives/Box';
 
-const Footer = () => {
+const Footer: FunctionComponent = () => {
   const {
     site: {
       siteMetadata: { license, repository, version },

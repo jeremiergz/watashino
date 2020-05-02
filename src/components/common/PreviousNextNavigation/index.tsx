@@ -1,14 +1,9 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Box from '../../primitives/Box';
 import Flex, { FlexProps } from '../../primitives/Flex';
 import Link from '../Link';
 
-type PreviousNextNavigationProps = FlexProps & {
-  next: string;
-  previous: string;
-};
-
-const PreviousNextNavigation = ({ next, previous, ...rest }: PreviousNextNavigationProps) => {
+const PreviousNextNavigation: FunctionComponent<PreviousNextNavigationProps> = ({ next, previous, ...rest }) => {
   const shouldDisplay = !!previous || !!next;
   return (
     shouldDisplay && (
@@ -34,5 +29,8 @@ const PreviousNextNavigation = ({ next, previous, ...rest }: PreviousNextNavigat
 
 PreviousNextNavigation.displayName = 'PreviousNextNavigation';
 
-export { PreviousNextNavigationProps };
+export type PreviousNextNavigationProps = FlexProps & {
+  next: string;
+  previous: string;
+};
 export default PreviousNextNavigation;

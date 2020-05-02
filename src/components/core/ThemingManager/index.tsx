@@ -1,8 +1,6 @@
-import React, { createContext, PropsWithChildren, useContext, useState } from 'react';
+import React, { createContext, FunctionComponent, PropsWithChildren, useContext, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { DarkTheme, LightTheme, Theme } from '../../../theme';
-
-type ThemingManagerProps = PropsWithChildren<{}>;
 
 const defaultMode = 'light';
 const localStorageKey = 'theme.mode';
@@ -13,11 +11,7 @@ const ThemingManagerContext = createContext<{ mode: ThemeMode; theme: Theme; tog
   toggle: () => null,
 });
 
-function useTheming() {
-  return useContext(ThemingManagerContext);
-}
-
-const ThemingManager = ({ children }: ThemingManagerProps) => {
+const ThemingManager: FunctionComponent<ThemingManagerProps> = ({ children }) => {
   const isBrowser = typeof window !== 'undefined';
   const storedMode = (isBrowser && (localStorage.getItem(localStorageKey) as ThemeMode)) || defaultMode;
   const [mode, setMode] = useState<ThemeMode>(storedMode);
@@ -36,5 +30,13 @@ const ThemingManager = ({ children }: ThemingManagerProps) => {
 
 ThemingManager.displayName = 'ThemingManager';
 
+/**
+ * Returns the theming context that allows retrieval of theme & toggling theme mode.
+ */
+function useTheming() {
+  return useContext(ThemingManagerContext);
+}
+
 export { useTheming };
+export type ThemingManagerProps = PropsWithChildren<{}>;
 export default ThemingManager;

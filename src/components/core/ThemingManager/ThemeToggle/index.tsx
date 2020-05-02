@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { useTheming } from '..';
 import Button from '../../../common/Button';
 import Flex from '../../../primitives/Flex';
@@ -11,7 +11,7 @@ const iconMapping = {
   light: Sun,
 };
 
-const ThemeToggle = () => {
+const ThemeToggle: FunctionComponent = () => {
   const { theme, toggle } = useTheming();
   const ThemeIcon = iconMapping[theme.type];
   return (
