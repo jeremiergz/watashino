@@ -54,7 +54,7 @@ const LocationMap: FunctionComponent = () => {
   return (
     <Box position="relative">
       <Link external to={gmapsImgNode.mapURL}>
-        <StaticGMapImg alt="Location" fixed={locationMap} loading="eager" />
+        <StaticGMapImg alt="Location" fixed={locationMap} />
       </Link>
       <Box bottom={0} height={32} left={0} margin="auto" position="absolute" right={0} top={0} width={32}>
         <EmojiMarker onClick={handleMarkerClick} />

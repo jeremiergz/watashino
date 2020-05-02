@@ -49,7 +49,7 @@ exports[`components/common/LocationMap Test Suite matches snapshot 1`] = `
         />
         <img
           alt="Location"
-          loading="eager"
+          loading="lazy"
           onLoad={[Function]}
           src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
           srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
@@ -75,7 +75,7 @@ exports[`components/common/LocationMap Test Suite matches snapshot 1`] = `
           Object {
             "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
 /static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"eager\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
 /static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
 /static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"Location\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
           }

@@ -134,7 +134,7 @@ const AboutMePage: FunctionComponent = () => {
           {contactObjects.map(({ img, label, url }) => (
             <Link external key={url} to={url}>
               <Box paddingX={2} width={{ _: 32, mobileM: 38 }}>
-                <Image alt={label} fluid={img} loading="eager" />
+                <Image alt={label} fluid={img} />
               </Box>
             </Link>
           ))}
