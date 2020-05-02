@@ -2,7 +2,7 @@
 
 exports[`components/common/Code/Inline Test Suite matches snapshot 1`] = `
 <code
-  className="sc-AxjAm lFMqP"
+  className="sc-AxjAm hDEGTf"
   color="white"
   display="inline-flex"
   fontSize={16}
