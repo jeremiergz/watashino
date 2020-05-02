@@ -1,7 +1,8 @@
 import { graphql, useStaticQuery } from 'gatsby';
-import Img, { FixedObject, FluidObject } from 'gatsby-image';
+import { FixedObject, FluidObject } from 'gatsby-image';
 import React from 'react';
 import styled from 'styled-components';
+import Image from '../components/common/Image';
 import Link from '../components/common/Link';
 import LocationMap from '../components/common/LocationMap';
 import Paragraph from '../components/common/Paragraph';
@@ -133,17 +134,17 @@ const AboutMePage = () => {
           {contactObjects.map(({ img, label, url }) => (
             <Link external key={url} to={url}>
               <Box paddingX={2} width={{ _: 32, mobileM: 38 }}>
-                <Img alt={label} fluid={img} imgStyle={{ height: '100%', width: '100%' }} />
+                <Image alt={label} fluid={img} loading="eager" />
               </Box>
             </Link>
           ))}
         </Flex>
-        <Img alt="Cover" fluid={coverImgFluid} imgStyle={{ borderRadius: 8 }} />
+        <Image alt="Cover" fluid={coverImgFluid} imgStyle={{ borderRadius: 8 }} loading="auto" />
         <Paragraph marginTop={4}>{`Hi there, I'm Jeremie!`}</Paragraph>
         <Paragraph>
           {`I'm a${beginsWithVowel(jobTitle) ? 'n' : ''} ${jobTitle} freelancer, previously working at `}
           <Link display="inline-flex" external height="26px" to={company.website} verticalAlign="middle">
-            <Img alt={company.name} fixed={companyImgFixed} imgStyle={{ height: '25px' }} Tag="span" />
+            <Image alt={company.name} fixed={companyImgFixed} marginTop="2px" Tag="span" />
           </Link>
           {`.`}
         </Paragraph>
@@ -151,7 +152,7 @@ const AboutMePage = () => {
         <Technologies flexWrap="wrap" justifyContent={{ _: 'center', tablet: 'space-between' }}>
           {technologyObjects.map(({ img, name, website }) => (
             <Link external key={name} margin={2} to={website}>
-              <Img alt={name} fixed={img} imgStyle={{ height: '52px', width: '52px' }} />
+              <Image alt={name} fixed={img} imgStyle={{ height: '52px', width: '52px' }} />
             </Link>
           ))}
         </Technologies>

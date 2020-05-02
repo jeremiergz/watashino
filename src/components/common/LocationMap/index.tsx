@@ -1,14 +1,14 @@
 import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
 import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 import { useTheming } from '../../core/ThemingManager';
 import Box from '../../primitives/Box';
-import EmojiMarker from './EmojiMarker';
+import Image from '../Image';
 import Link from '../Link';
+import EmojiMarker from './EmojiMarker';
 
-const StaticGMapImg = styled(Img)`
+const StaticGMapImg = styled(Image)`
   max-height: 416px;
   width: 100% !important;
   border-radius: 8px;
@@ -54,7 +54,7 @@ const LocationMap: FunctionComponent = () => {
   return (
     <Box position="relative">
       <Link external to={gmapsImgNode.mapURL}>
-        <StaticGMapImg alt="Location" fixed={locationMap} />
+        <StaticGMapImg alt="Location" fixed={locationMap} loading="eager" />
       </Link>
       <Box bottom={0} height={32} left={0} margin="auto" position="absolute" right={0} top={0} width={32}>
         <EmojiMarker onClick={handleMarkerClick} />
