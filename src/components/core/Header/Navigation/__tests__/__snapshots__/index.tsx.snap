@@ -2,15 +2,15 @@
 
 exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
 <nav
-  className="sc-AxjAm kyEBbt"
+  className="sc-AxjAm fbAfJg"
   display="flex"
 >
   <div
-    className="sc-AxjAm YJyBc"
+    className="sc-AxjAm gqPulF"
     display="flex"
   >
     <a
-      className="sc-AxjAm sc-AxirZ clnAGy"
+      className="sc-AxjAm sc-AxirZ DVGBb"
       href="/"
       target="_blank"
     >
@@ -25,11 +25,11 @@ exports[`components/Layout/Header/Navigation Test Suite matches snapshot 1`] = `
     </a>
   </div>
   <div
-    className="sc-AxjAm YJyBc"
+    className="sc-AxjAm gqPulF"
     display="flex"
   >
     <a
-      className="sc-AxjAm sc-AxirZ clnAGy"
+      className="sc-AxjAm sc-AxirZ DVGBb"
       href="https://fake/resume-file.pdf"
       onClick={[Function]}
       rel="noopener noreferrer"

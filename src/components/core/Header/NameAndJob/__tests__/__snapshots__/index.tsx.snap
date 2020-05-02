@@ -2,12 +2,12 @@
 
 exports[`components/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
 <a
-  className="sc-AxiKw sc-AxhCb fRiVuR"
+  className="sc-AxhCb sc-AxhUy gYbbTp"
   href="/about-me"
   target="_blank"
 >
   <div
-    className=" gatsby-image-wrapper"
+    className="sc-AxiKw cBoXSN gatsby-image-wrapper"
     style={
       Object {
         "display": "inline-block",
@@ -78,23 +78,23 @@ exports[`components/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
     />
   </div>
   <div
-    className="sc-AxiKw dsGmxf"
+    className="sc-AxhCb MKTGy"
     display="flex"
   >
-    <h3
-      className="sc-AxjAm sc-AxirZ cWVwIJ"
+    <span
+      className="sc-AxjAm sc-AxirZ hBFrQF"
       color="primary"
       fontWeight="bold"
       letterSpacing={-1}
     >
       Jeremie Rodriguez
-    </h3>
-    <h4
-      className="sc-AxjAm sc-AxirZ fPGUJq"
+    </span>
+    <span
+      className="sc-AxjAm sc-AxirZ cebxIy"
       fontWeight="semi-bold"
     >
       Full Stack Engineer
-    </h4>
+    </span>
   </div>
 </a>
 `;

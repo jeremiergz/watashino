@@ -2,8 +2,9 @@
 
 exports[`components/InstallPWA Test Suite matches snapshot 1`] = `
 <div
-  className="sc-AxjAm kuDOdm sc-AxhUy nDnej"
+  className="sc-AxjAm efVvhy"
   display="flex"
+  transform="translate3d(0, 100%, 0)"
   width={
     Object {
       "mobileL": 256,
@@ -11,7 +12,7 @@ exports[`components/InstallPWA Test Suite matches snapshot 1`] = `
   }
 >
   <div
-    className="sc-AxjAm dEMKQP"
+    className="sc-AxjAm ikXqKK"
     display="flex"
   >
     <button
@@ -19,7 +20,7 @@ exports[`components/InstallPWA Test Suite matches snapshot 1`] = `
       onClick={[Function]}
     >
       <div
-        className=" gatsby-image-wrapper"
+        className="sc-AxhUy hRxdMo gatsby-image-wrapper"
         style={
           Object {
             "display": "inline-block",

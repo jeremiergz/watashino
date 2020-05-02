@@ -3,16 +3,16 @@
 exports[`components/Layout Test Suite matches snapshot 1`] = `
 Array [
   <header
-    className="sc-AxjAm hsUHgH"
+    className="sc-AxjAm ceTnwe"
     display="flex"
   >
     <a
-      className="sc-AxjAm sc-AxgMl fDFUVy"
+      className="sc-AxjAm sc-AxgMl kwzZub"
       href="/about-me"
       target="_blank"
     >
       <div
-        className=" gatsby-image-wrapper"
+        className="sc-AxhUy hRxdMo gatsby-image-wrapper"
         style={
           Object {
             "display": "inline-block",
@@ -83,35 +83,35 @@ Array [
         />
       </div>
       <div
-        className="sc-AxjAm hhwnmI"
+        className="sc-AxjAm inuzPJ"
         display="flex"
       >
-        <h3
-          className="sc-AxirZ sc-AxheI exFRVs"
+        <span
+          className="sc-AxirZ sc-AxheI bklyOs"
           color="primary"
           fontWeight="bold"
           letterSpacing={-1}
         >
           Jeremie Rodriguez
-        </h3>
-        <h4
-          className="sc-AxirZ sc-AxheI kraidT"
+        </span>
+        <span
+          className="sc-AxirZ sc-AxheI kQMNyf"
           fontWeight="semi-bold"
         >
           Full Stack Engineer
-        </h4>
+        </span>
       </div>
     </a>
     <nav
-      className="sc-AxjAm kyEBbt"
+      className="sc-AxjAm fbAfJg"
       display="flex"
     >
       <div
-        className="sc-AxjAm YJyBc"
+        className="sc-AxjAm gqPulF"
         display="flex"
       >
         <a
-          className="sc-AxjAm sc-AxgMl iepZAN"
+          className="sc-AxjAm sc-AxgMl cvwZGk"
           href="/"
           target="_blank"
         >
@@ -126,11 +126,11 @@ Array [
         </a>
       </div>
       <div
-        className="sc-AxjAm YJyBc"
+        className="sc-AxjAm gqPulF"
         display="flex"
       >
         <a
-          className="sc-AxjAm sc-AxgMl iepZAN"
+          className="sc-AxjAm sc-AxgMl cvwZGk"
           onClick={[Function]}
           rel="noopener noreferrer"
           target="_blank"
@@ -156,15 +156,15 @@ Array [
     </nav>
   </header>,
   <main
-    className="sc-AxjAm dHhofD"
+    className="sc-AxjAm kmPJdy"
   >
     Layout Component
   </main>,
   <footer
-    className="sc-AxjAm hiAgES"
+    className="sc-AxjAm bqVEBf"
   >
     <a
-      className="sc-AxjAm sc-AxgMl TWyuE"
+      className="sc-AxjAm sc-AxgMl cdpyPx"
       href="https://test-repository/tree/3.16.120"
       onClick={[Function]}
       rel="noopener noreferrer"
@@ -173,7 +173,7 @@ Array [
       v3.16.120 - source code
     </a>
     <div
-      className="sc-AxjAm iIgCKo"
+      className="sc-AxjAm MTWgd"
       color="gray"
       fontSize={14}
     >
@@ -181,8 +181,9 @@ Array [
     </div>
   </footer>,
   <div
-    className="sc-AxjAm kuDOdm sc-AxhUy nDnej"
+    className="sc-AxjAm efVvhy"
     display="flex"
+    transform="translate3d(0, 100%, 0)"
     width={
       Object {
         "mobileL": 256,
@@ -190,7 +191,7 @@ Array [
     }
   >
     <div
-      className="sc-AxjAm dEMKQP"
+      className="sc-AxjAm ikXqKK"
       display="flex"
     >
       <button
@@ -198,7 +199,7 @@ Array [
         onClick={[Function]}
       >
         <div
-          className=" gatsby-image-wrapper"
+          className="sc-AxhUy hRxdMo gatsby-image-wrapper"
           style={
             Object {
               "display": "inline-block",

@@ -2,13 +2,13 @@
 
 exports[`components/Layout/Content Test Suite matches snapshot 1`] = `
 Array [
-  <h1
-    className="sc-AxjAm sc-AxirZ PKVbC"
+  <span
+    className="sc-AxjAm sc-AxirZ hFIURS"
   >
     SEO Test
-  </h1>,
+  </span>,
   <article
-    className="sc-AxiKw drmXOs"
+    className="sc-AxiKw cBoXSN"
   >
     Content Component
   </article>,

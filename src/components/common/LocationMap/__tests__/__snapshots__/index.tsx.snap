@@ -2,17 +2,17 @@
 
 exports[`components/common/LocationMap Test Suite matches snapshot 1`] = `
 <div
-  className="sc-AxjAm jyKimT"
+  className="sc-AxjAm hQsawa"
 >
   <a
-    className="sc-AxjAm sc-AxiKw eWfgZO"
+    className="sc-AxjAm sc-AxiKw bvKCNv"
     href="https://fake.com"
     onClick={[Function]}
     rel="noopener noreferrer"
     target="_blank"
   >
     <div
-      className="sc-AxhCb jqtwge gatsby-image-wrapper"
+      className="sc-AxirZ sc-AxhUy bEWhpf gatsby-image-wrapper"
       style={
         Object {
           "display": "inline-block",
@@ -49,7 +49,7 @@ exports[`components/common/LocationMap Test Suite matches snapshot 1`] = `
         />
         <img
           alt="Location"
-          loading="lazy"
+          loading="eager"
           onLoad={[Function]}
           src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
           srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
@@ -75,7 +75,7 @@ exports[`components/common/LocationMap Test Suite matches snapshot 1`] = `
           Object {
             "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
 /static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"eager\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
 /static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
 /static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"Location\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
           }
@@ -84,12 +84,12 @@ exports[`components/common/LocationMap Test Suite matches snapshot 1`] = `
     </div>
   </a>
   <div
-    className="sc-AxjAm cnxygq"
+    className="sc-AxjAm jMuSGT"
     height={32}
     width={32}
   >
     <svg
-      className="sc-AxirZ fRvtTw"
+      className="sc-AxhCb bgTglM"
       cursor="help"
       height={32}
       onClick={[Function]}

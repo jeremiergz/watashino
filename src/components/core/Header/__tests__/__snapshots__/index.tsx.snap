@@ -2,16 +2,16 @@
 
 exports[`components/Header Test Suite matches snapshot 1`] = `
 <header
-  className="sc-AxjAm hsUHgH"
+  className="sc-AxjAm ceTnwe"
   display="flex"
 >
   <a
-    className="sc-AxjAm sc-AxhCb fRiVuR"
+    className="sc-AxjAm sc-AxhUy gYbbTp"
     href="/about-me"
     target="_blank"
   >
     <div
-      className=" gatsby-image-wrapper"
+      className="sc-AxhCb eYhTuB gatsby-image-wrapper"
       style={
         Object {
           "display": "inline-block",
@@ -82,40 +82,40 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
       />
     </div>
     <div
-      className="sc-AxjAm hhwnmI"
+      className="sc-AxjAm inuzPJ"
       display="flex"
     >
-      <h3
-        className="sc-AxirZ sc-AxiKw hOKSWF"
+      <span
+        className="sc-AxirZ sc-AxiKw cmzJMB"
         color="primary"
         fontWeight="bold"
         letterSpacing={-1}
       >
         Jeremie Rodriguez
-      </h3>
-      <h4
-        className="sc-AxirZ sc-AxiKw dydJS"
+      </span>
+      <span
+        className="sc-AxirZ sc-AxiKw bHICOK"
         fontWeight="semi-bold"
       >
         Full Stack Engineer
-      </h4>
+      </span>
     </div>
   </a>
   <nav
-    className="sc-AxjAm kyEBbt"
+    className="sc-AxjAm fbAfJg"
     display="flex"
   >
     <div
-      className="sc-AxjAm YJyBc"
+      className="sc-AxjAm gqPulF"
       display="flex"
     >
       <a
-        className="sc-AxjAm sc-AxhCb hFUsPC"
+        className="sc-AxjAm sc-AxhUy gVqdnK"
         href="/"
         target="_blank"
       >
         <svg
-          className="sc-AxhUy iqzrep"
+          className="sc-AxgMl fWyUcL"
           height={32}
           viewBox="0 0 24 24"
           width={32}
@@ -125,17 +125,17 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
       </a>
     </div>
     <div
-      className="sc-AxjAm YJyBc"
+      className="sc-AxjAm gqPulF"
       display="flex"
     >
       <a
-        className="sc-AxjAm sc-AxhCb hFUsPC"
+        className="sc-AxjAm sc-AxhUy gVqdnK"
         onClick={[Function]}
         rel="noopener noreferrer"
         target="_blank"
       >
         <svg
-          className="sc-AxhUy iqzrep sc-AxhUy iqzrep"
+          className="sc-AxgMl fWyUcL sc-AxgMl fWyUcL"
           height={32}
           viewBox="0 0 24 24"
           width={32}

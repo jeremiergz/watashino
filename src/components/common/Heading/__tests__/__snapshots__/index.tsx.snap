@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/common/Heading Test Suite matches snapshot 1`] = `
-<h1
-  className="sc-AxjAm sc-AxirZ kIUuND"
+<span
+  className="sc-AxjAm sc-AxirZ gOZIXb"
 >
   Heading Component
-</h1>
+</span>
 `;
