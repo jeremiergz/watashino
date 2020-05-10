@@ -1,1 +1,1 @@
-type ThemeMode = 'dark' | 'light';
+declare type ThemeMode = 'dark' | 'light';
