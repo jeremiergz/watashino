@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import { DarkTheme } from '../../../../../theme';
 import NameAndJob from '../../NameAndJob';
 
-describe('components/Layout/Header/NameAndJob Test Suite', () => {
+describe('components/core/Layout/Header/NameAndJob Test Suite', () => {
   beforeAll(() => {
     const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
     useStaticQuery.mockImplementation(() => ({

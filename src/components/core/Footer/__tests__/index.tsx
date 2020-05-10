@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import Footer from '..';
 import { DarkTheme } from '../../../../theme';
 
-describe('components/Footer Test Suite', () => {
+describe('components/core/Footer Test Suite', () => {
   beforeAll(() => {
     const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
     useStaticQuery.mockImplementation(() => ({

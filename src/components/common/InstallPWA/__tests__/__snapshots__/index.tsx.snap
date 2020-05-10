@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/InstallPWA Test Suite matches snapshot 1`] = `
+exports[`components/common/InstallPWA Test Suite matches snapshot 1`] = `
 <div
   className="sc-AxjAm efVvhy"
   display="flex"

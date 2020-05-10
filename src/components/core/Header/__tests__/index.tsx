@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import Header from '..';
 import { DarkTheme } from '../../../../theme';
 
-describe('components/Header Test Suite', () => {
+describe('components/core/Header Test Suite', () => {
   beforeAll(() => {
     const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
     useStaticQuery.mockImplementation(() => ({

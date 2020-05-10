@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/Layout Test Suite matches snapshot 1`] = `
+exports[`components/core/Layout Test Suite matches snapshot 1`] = `
 Array [
   <header
     className="sc-AxjAm ceTnwe"

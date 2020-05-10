@@ -620,6 +620,8 @@ Array [
               className="sc-AxheI ckNXyg gatsby-image-wrapper"
               style={
                 Object {
+                  "maxHeight": null,
+                  "maxWidth": null,
                   "overflow": "hidden",
                   "position": "relative",
                 }
@@ -700,6 +702,8 @@ Array [
         className="sc-AxheI ckNXyg gatsby-image-wrapper"
         style={
           Object {
+            "maxHeight": null,
+            "maxWidth": null,
             "overflow": "hidden",
             "position": "relative",
           }

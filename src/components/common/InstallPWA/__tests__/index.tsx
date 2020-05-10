@@ -4,7 +4,7 @@ import ReactTestRenderer from 'react-test-renderer';
 import InstallPWA from '..';
 import ThemingManager from '../../../core/ThemingManager';
 
-describe('components/InstallPWA Test Suite', () => {
+describe('components/common/InstallPWA Test Suite', () => {
   beforeAll(() => {
     const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
     useStaticQuery.mockImplementation(() => ({

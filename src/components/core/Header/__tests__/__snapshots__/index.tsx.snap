@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/Header Test Suite matches snapshot 1`] = `
+exports[`components/core/Header Test Suite matches snapshot 1`] = `
 <header
   className="sc-AxjAm ceTnwe"
   display="flex"

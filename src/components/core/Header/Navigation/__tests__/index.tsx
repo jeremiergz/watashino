@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import { DarkTheme } from '../../../../../theme';
 import Navigation from '../../Navigation';
 
-describe('components/Layout/Header/Navigation Test Suite', () => {
+describe('components/core/Layout/Header/Navigation Test Suite', () => {
   beforeAll(() => {
     const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
     useStaticQuery.mockImplementation(() => ({

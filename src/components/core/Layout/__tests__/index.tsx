@@ -4,7 +4,7 @@ import ReactTestRenderer from 'react-test-renderer';
 import Layout from '..';
 import ThemingManager from '../../ThemingManager';
 
-describe('components/Layout Test Suite', () => {
+describe('components/core/Layout Test Suite', () => {
   beforeAll(() => {
     const childImageSharp = {
       fixed: {
