@@ -61,13 +61,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-typescript',
-      options: {
-        allExtensions: true,
-        isTSX: true,
-      },
-    },
-    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'data',
