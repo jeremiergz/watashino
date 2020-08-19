@@ -1,13 +1,13 @@
-import React, { FunctionComponent } from 'react';
+import Chip from 'components/Chip';
+import Layout from 'components/Layout';
+import PreviousNextNavigation from 'components/PreviousNextNavigation';
+import Flex from 'components/primitives/FlexBox';
+import Text from 'components/primitives/Text';
+import React from 'react';
 import styled from 'styled-components';
-import Chip from '../components/common/Chip';
-import PreviousNextNavigation from '../components/common/PreviousNextNavigation';
-import Layout from '../components/core/Layout';
-import Flex from '../components/primitives/Flex';
-import Text from '../components/primitives/Text';
-import { colors, Theme } from '../theme';
-import { getMonthAndDay } from '../utils/Date';
-import { renderASTToJSX } from '../utils/HTML';
+import { colors, Theme } from 'theme';
+import { getMonthAndDay } from 'utils/Date';
+import { renderASTToJSX } from 'utils/HTML';
 
 const Chips = styled(Flex)`
   @media screen and (min-width: ${({ theme }: { theme: Theme }) => theme.breakpoints[3]}) {
@@ -20,7 +20,7 @@ const Chips = styled(Flex)`
   }
 `;
 
-const Post: FunctionComponent<PostProps> = ({ pageContext }) => {
+const Post: React.FC<PostProps> = ({ pageContext }) => {
   const {
     frontmatter: { date: rawDate, keywords: rawKeywords, slug, title },
     htmlAst,

@@ -1,4 +1,5 @@
 require('dotenv/config');
+const path = require('path');
 const { location } = require('./content/data/personal-details.json');
 const packageJSON = require('./package.json');
 
@@ -58,6 +59,15 @@ module.exports = {
       resolve: 'gatsby-plugin-offline',
       options: {
         debug: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        components: path.join(__dirname, 'src/components'),
+        templates: path.join(__dirname, 'src/templates'),
+        theme: path.join(__dirname, 'src/theme'),
+        utils: path.join(__dirname, 'src/utils'),
       },
     },
     {

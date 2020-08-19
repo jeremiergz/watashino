@@ -1,22 +1,23 @@
 /* eslint-disable react/display-name */
+import Code from 'components/Code';
+import Heading from 'components/Heading';
+import Link from 'components/Link';
+import Paragraph from 'components/Paragraph';
+import Box from 'components/primitives/Box';
 import React, { createElement } from 'react';
-import RehypeReact from 'rehype-react';
+import rehype2react from 'rehype-react';
 import styled from 'styled-components';
-import Code from '../../components/common/Code';
-import Heading from '../../components/common/Heading';
-import Link from '../../components/common/Link';
-import Paragraph from '../../components/common/Paragraph';
-import Box from '../../components/primitives/Box';
-import { colors } from '../../theme';
+import { colors } from 'theme';
 
 const VerticalHR = styled(Box)`
   box-sizing: border-box;
 `;
 
-const astRenderer = new RehypeReact({
+// @ts-ignore
+const astRenderer = new rehype2react({
   components: {
-    a: ({ children, href }) => (
-      <Link external to={href}>
+    a: ({ children, href }: { children: React.ReactNode; href: string }) => (
+      <Link external to={href} variant="underlined">
         {children}
       </Link>
     ),
@@ -26,7 +27,11 @@ const astRenderer = new RehypeReact({
         {children}
       </Box>
     ),
-    code: ({ children, className }) => <Code className={className}>{children}</Code>,
+    code: ({ children, className }) => (
+      <Code className={className} textAlign="left">
+        {children}
+      </Code>
+    ),
     h1: ({ children }) => <Heading variant="h1">{children}</Heading>,
     h2: ({ children }) => <Heading variant="h2">{children}</Heading>,
     h3: ({ children }) => <Heading variant="h3">{children}</Heading>,

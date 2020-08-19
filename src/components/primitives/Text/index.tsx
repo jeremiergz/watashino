@@ -15,17 +15,11 @@ import {
   typography,
   TypographyProps,
   zIndex,
-  ZIndexProps,
+  ZIndexProps
 } from 'styled-system';
-import { ThemeProps } from '../../../theme';
+import { ThemeProps } from 'theme';
 
-const Text = styled.span<TextProps>`
-  ${compose(border, color, display, layout, space, typography, zIndex)}
-`;
-
-Text.displayName = 'Text';
-
-export type TextProps = BorderProps &
+type TextKnownProps = BorderProps &
   ColorProps &
   DisplayProps &
   LayoutProps &
@@ -34,4 +28,12 @@ export type TextProps = BorderProps &
   ZIndexProps &
   ThemeProps &
   TimeHTMLAttributes<unknown>;
+
+const Text = styled.span<TextKnownProps>`
+  ${compose(border, color, display, layout, space, typography, zIndex)}
+`;
+
+Text.displayName = 'Text';
+
+export type TextProps = React.ComponentProps<typeof Text>;
 export default Text;

@@ -1,12 +1,12 @@
 const React = require('react');
-const ThemingManager = require('./src/components/core/ThemingManager').default;
-const ThemeToggle = require('./src/components/core/ThemingManager/ThemeToggle').default;
+const ThemeProvider = require('./src/components/providers/ThemeProvider').default;
+const ThemeToggle = require('./src/components/providers/ThemeProvider/ThemeToggle').default;
 
 exports.wrapRootElement = ({ element }) => {
   return (
-    <ThemingManager>
+    <ThemeProvider>
       <ThemeToggle />
       {element}
-    </ThemingManager>
+    </ThemeProvider>
   );
 };

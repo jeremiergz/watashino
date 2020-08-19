@@ -2,10 +2,8 @@
 
 exports[`components/svg Test Suite A2HS Test Suite matches snapshot 1`] = `
 <svg
-  className="sc-AxjAm kwDkyT"
-  height={32}
+  className="sc-AxjAm lhDQpH"
   viewBox="0 0 24 24"
-  width={32}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -24,10 +22,8 @@ exports[`components/svg Test Suite A2HS Test Suite matches snapshot 1`] = `
 
 exports[`components/svg Test Suite Book Test Suite matches snapshot 1`] = `
 <svg
-  className="sc-AxjAm kwDkyT"
-  height={32}
+  className="sc-AxjAm lhDQpH"
   viewBox="0 0 24 24"
-  width={32}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -45,10 +41,8 @@ exports[`components/svg Test Suite Book Test Suite matches snapshot 1`] = `
 
 exports[`components/svg Test Suite Business Test Suite matches snapshot 1`] = `
 <svg
-  className="sc-AxjAm kwDkyT"
-  height={32}
+  className="sc-AxjAm lhDQpH"
   viewBox="0 0 24 24"
-  width={32}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -63,10 +57,8 @@ exports[`components/svg Test Suite Business Test Suite matches snapshot 1`] = `
 
 exports[`components/svg Test Suite Close Test Suite matches snapshot 1`] = `
 <svg
-  className="sc-AxjAm kwDkyT"
-  height={32}
+  className="sc-AxjAm lhDQpH"
   viewBox="0 0 24 24"
-  width={32}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -81,10 +73,8 @@ exports[`components/svg Test Suite Close Test Suite matches snapshot 1`] = `
 
 exports[`components/svg Test Suite Copy Test Suite matches snapshot 1`] = `
 <svg
-  className="sc-AxjAm kwDkyT"
-  height={32}
+  className="sc-AxjAm lhDQpH"
   viewBox="0 0 24 24"
-  width={32}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -99,10 +89,8 @@ exports[`components/svg Test Suite Copy Test Suite matches snapshot 1`] = `
 
 exports[`components/svg Test Suite Description Test Suite matches snapshot 1`] = `
 <svg
-  className="sc-AxjAm kwDkyT"
-  height={32}
+  className="sc-AxjAm lhDQpH"
   viewBox="0 0 24 24"
-  width={32}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -117,10 +105,8 @@ exports[`components/svg Test Suite Description Test Suite matches snapshot 1`] =
 
 exports[`components/svg Test Suite Download Test Suite matches snapshot 1`] = `
 <svg
-  className="sc-AxjAm kwDkyT"
-  height={32}
+  className="sc-AxjAm lhDQpH"
   viewBox="0 0 24 24"
-  width={32}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -135,10 +121,8 @@ exports[`components/svg Test Suite Download Test Suite matches snapshot 1`] = `
 
 exports[`components/svg Test Suite EmojiAstonished Test Suite matches snapshot 1`] = `
 <svg
-  className="sc-AxjAm kwDkyT"
-  height={32}
+  className="sc-AxjAm lhDQpH"
   viewBox="0 0 512 512"
-  width={32}
   xmlns="http://www.w3.org/2000/svg"
 >
   <circle
@@ -208,10 +192,8 @@ exports[`components/svg Test Suite EmojiAstonished Test Suite matches snapshot 1
 
 exports[`components/svg Test Suite EmojiNerd Test Suite matches snapshot 1`] = `
 <svg
-  className="sc-AxjAm kwDkyT"
-  height={32}
+  className="sc-AxjAm lhDQpH"
   viewBox="0 0 512 512"
-  width={32}
   xmlns="http://www.w3.org/2000/svg"
 >
   <circle
@@ -277,10 +259,8 @@ exports[`components/svg Test Suite EmojiNerd Test Suite matches snapshot 1`] = `
 
 exports[`components/svg Test Suite EmojiUgly Test Suite matches snapshot 1`] = `
 <svg
-  className="sc-AxjAm kwDkyT"
-  height={32}
+  className="sc-AxjAm lhDQpH"
   viewBox="0 0 512 512"
-  width={32}
   xmlns="http://www.w3.org/2000/svg"
 >
   <circle
@@ -365,10 +345,8 @@ exports[`components/svg Test Suite EmojiUgly Test Suite matches snapshot 1`] = `
 
 exports[`components/svg Test Suite House Test Suite matches snapshot 1`] = `
 <svg
-  className="sc-AxjAm kwDkyT"
-  height={32}
+  className="sc-AxjAm lhDQpH"
   viewBox="0 0 24 24"
-  width={32}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -383,10 +361,8 @@ exports[`components/svg Test Suite House Test Suite matches snapshot 1`] = `
 
 exports[`components/svg Test Suite Mood Test Suite matches snapshot 1`] = `
 <svg
-  className="sc-AxjAm kwDkyT"
-  height={32}
+  className="sc-AxjAm lhDQpH"
   viewBox="0 0 24 24"
-  width={32}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -401,10 +377,8 @@ exports[`components/svg Test Suite Mood Test Suite matches snapshot 1`] = `
 
 exports[`components/svg Test Suite Moon Test Suite matches snapshot 1`] = `
 <svg
-  className="sc-AxjAm kwDkyT"
-  height={32}
+  className="sc-AxjAm lhDQpH"
   viewBox="0 0 512 512"
-  width={32}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -436,10 +410,8 @@ exports[`components/svg Test Suite Moon Test Suite matches snapshot 1`] = `
 
 exports[`components/svg Test Suite Person Test Suite matches snapshot 1`] = `
 <svg
-  className="sc-AxjAm kwDkyT"
-  height={32}
+  className="sc-AxjAm lhDQpH"
   viewBox="0 0 24 24"
-  width={32}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -454,10 +426,8 @@ exports[`components/svg Test Suite Person Test Suite matches snapshot 1`] = `
 
 exports[`components/svg Test Suite Sun Test Suite matches snapshot 1`] = `
 <svg
-  className="sc-AxjAm kwDkyT"
-  height={32}
+  className="sc-AxjAm lhDQpH"
   viewBox="0 0 512 512"
-  width={32}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path

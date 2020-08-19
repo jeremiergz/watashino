@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/common/LocationMap Test Suite matches snapshot 1`] = `
+<div
+  className="sc-AxirZ kdLUNZ"
+>
+  <a
+    className="sc-AxirZ sc-AxiKw jPGtWX"
+    href="https://fake.com"
+    onClick={[Function]}
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <div
+      className="sc-AxjAm sc-AxhUy bEWhpf gatsby-image-wrapper"
+      style={
+        Object {
+          "display": "inline-block",
+          "height": undefined,
+          "overflow": "hidden",
+          "position": "relative",
+          "width": undefined,
+        }
+      }
+    >
+      <img
+        alt=""
+        aria-hidden={true}
+        src="data:image/png;base64"
+        style={
+          Object {
+            "height": "100%",
+            "left": 0,
+            "objectFit": "cover",
+            "objectPosition": "center",
+            "opacity": 1,
+            "position": "absolute",
+            "top": 0,
+            "transitionDelay": "500ms",
+            "width": "100%",
+          }
+        }
+      />
+      <picture>
+        <source
+          srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+        />
+        <img
+          alt="Location"
+          loading="lazy"
+          onLoad={[Function]}
+          src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
+          srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+          style={
+            Object {
+              "height": "100%",
+              "left": 0,
+              "objectFit": "cover",
+              "objectPosition": "center",
+              "opacity": 0,
+              "position": "absolute",
+              "top": 0,
+              "transition": "opacity 500ms",
+              "width": "100%",
+            }
+          }
+        />
+      </picture>
+      <noscript
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
+/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"Location\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+          }
+        }
+      />
+    </div>
+  </a>
+  <div
+    className="sc-AxirZ lfbEcI"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="sc-AxhCb jeQFck"
+      cursor="help"
+      onClick={[Function]}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="256"
+        cy="256"
+        fill="#ffd93b"
+        r="256"
+      />
+      <path
+        d="M351.936 367.216c-7.36 40.8-39.84 81.92-96 81.92s-88.64-41.12-95.84-81.92c-1.12-6.08 3.04-11.84 9.12-12.96 6.08-.96 11.84 3.04 12.96 9.12 5.6 31.52 30.56 63.36 73.76 63.36s68.32-31.84 73.92-63.36c1.12-6.08 6.88-10.08 12.96-9.12 6.08 1.104 10.24 6.88 9.12 12.96z"
+        fill="#3e4347"
+      />
+      <path
+        d="M512 256c0 141.44-114.64 256-256 256-80.48 0-152.32-37.12-199.28-95.28 43.92 35.52 99.84 56.72 160.72 56.72 141.36 0 256-114.56 256-256 0-60.88-21.2-116.8-56.72-160.72C474.8 103.68 512 175.52 512 256z"
+        fill="#f4c534"
+      />
+      <path
+        d="M235.44 225.232c0 43.808-35.424 79.376-79.376 79.376-43.792 0-79.376-35.568-79.376-79.376 0-43.952 35.584-79.52 79.376-79.52 43.952 0 79.376 35.584 79.376 79.52z"
+        fill="#fff"
+      />
+      <circle
+        cx="156.064"
+        cy="225.12"
+        fill="#3e4347"
+        r="36.16"
+      />
+      <path
+        d="M276.624 225.088c0-43.808 35.424-79.376 79.376-79.376 43.808 0 79.376 35.568 79.376 79.376 0 43.952-35.568 79.52-79.376 79.52-43.952.016-79.376-35.568-79.376-79.52z"
+        fill="#fff"
+      />
+      <path
+        d="M485.264 213.168H445.76c-5.92-44.336-43.888-78.64-89.76-78.64-33.952 0-63.552 18.816-79.04 46.56-4.208 7.536-12.16 11.92-20.784 11.872h-.384c-8.592.064-16.512-4.336-20.688-11.84-15.488-27.76-45.088-46.592-79.04-46.592-45.856 0-83.744 34.336-89.68 78.64H26.736v24h39.92c5.568 41.408 39.216 74.736 81.6 78.32 53.632 4.544 99.44-38.224 98.304-92.144.912-4.512 4.72-7.968 9.472-7.968 4.864 0 9.376 3.504 9.376 9.872 0 52.288 44.56 94.384 97.696 90.304 42.528-3.264 76.832-36.528 82.368-78.384h39.776v-24h.016zm-329.2 80.224c-37.584 0-68.176-30.592-68.176-68.16 0-37.664 30.576-68.304 68.176-68.304 37.584 0 68.16 30.64 68.16 68.304 0 37.584-30.576 68.16-68.16 68.16zm199.936 0c-37.584 0-68.176-30.592-68.176-68.16 0-37.664 30.576-68.304 68.176-68.304 37.584 0 68.16 30.64 68.16 68.304 0 37.584-30.576 68.16-68.16 68.16z"
+        fill="#3e4347"
+      />
+      <ellipse
+        cx="169.695"
+        cy="211.503"
+        fill="#fff"
+        rx="10"
+        ry="6.48"
+        transform="rotate(-135 169.696 211.505)"
+      />
+      <circle
+        cx="356"
+        cy="225.12"
+        fill="#3e4347"
+        r="36.16"
+      />
+      <ellipse
+        cx="369.623"
+        cy="211.559"
+        fill="#fff"
+        rx="10"
+        ry="6.48"
+        transform="rotate(-135 369.625 211.56)"
+      />
+      <path
+        d="M413.776 107.456c-5.12 2.992-12.256 1.536-15.52-4.064-26.672-45.648-82.272-35.552-82.864-35.408-6.176 1.2-12.048-2.864-13.264-9.04-1.056-6.176 2.864-12.064 9.04-13.264 2.864-.448 71.872-12.96 106.672 46.256 3.168 5.424 1.36 12.368-4.064 15.52zm-315.552 0c5.12 2.992 12.256 1.536 15.52-4.064C140.416 57.744 196 67.84 196.608 67.984c6.176 1.2 12.048-2.864 13.264-9.04 1.056-6.176-2.864-12.064-9.04-13.264-2.864-.448-71.872-12.96-106.672 46.256-3.168 5.424-1.36 12.368 4.064 15.52z"
+        fill="#3e4347"
+      />
+    </svg>
+  </div>
+</div>
+`;

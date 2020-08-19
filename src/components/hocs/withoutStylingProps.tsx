@@ -1,5 +1,5 @@
 import React, { ComponentType } from 'react';
-import { omit } from '../../utils/Object';
+import { omit } from 'utils/Object';
 
 const stylingPropsMapping = {
   alignContent: true,

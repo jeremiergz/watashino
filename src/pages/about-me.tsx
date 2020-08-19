@@ -1,17 +1,17 @@
+import Image from 'components/Image';
+import Layout from 'components/Layout';
+import Link from 'components/Link';
+import LocationMap from 'components/LocationMap';
+import Paragraph from 'components/Paragraph';
+import Box from 'components/primitives/Box';
+import Flex from 'components/primitives/FlexBox';
 import { graphql, useStaticQuery } from 'gatsby';
 import { FixedObject, FluidObject } from 'gatsby-image';
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import Image from '../components/common/Image';
-import Link from '../components/common/Link';
-import LocationMap from '../components/common/LocationMap';
-import Paragraph from '../components/common/Paragraph';
-import Layout from '../components/core/Layout';
-import Box from '../components/primitives/Box';
-import Flex from '../components/primitives/Flex';
-import { Theme } from '../theme';
-import { beginsWithVowel } from '../utils';
-import { Routes } from '../utils/Routes';
+import { Theme } from 'theme';
+import { Routes } from 'utils/Routes';
+import { beginsWithVowel } from 'utils/Text';
 
 const Technologies = styled(Flex)`
   @media screen and (min-width: ${({ theme }: { theme: Theme }) => theme.breakpoints[3]}) {
@@ -24,7 +24,7 @@ const Technologies = styled(Flex)`
   }
 `;
 
-const AboutMePage: FunctionComponent = () => {
+const AboutMePage: React.FC = () => {
   const {
     companyImg: {
       childImageSharp: { fixed: companyImgFixed },

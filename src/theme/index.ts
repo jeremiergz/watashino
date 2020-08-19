@@ -1,3 +1,37 @@
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+    html, body {
+        background-color: ${({ theme }: { theme: Theme }) => theme.background};
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        transition: background-color 250ms ease;
+    }
+    body {
+        color: ${({ theme }: { theme: Theme }) => theme.colors.text};
+        font-family: ${({ theme }: { theme: Theme }) => theme.fonts.main};
+        font-weight: ${({ theme }: { theme: Theme }) => theme.fontWeights.regular};
+        svg {
+            fill: ${({ theme }: { theme: Theme }) => theme.colors.text};
+        }
+    }
+    #___gatsby {
+        position: relative;
+        min-height: 100%;
+    }
+    /* Format Markdown images loaded by gatsby-remark-images */
+    .gatsby-resp-image-wrapper {
+        .gatsby-resp-image-background-image, .gatsby-resp-image-image {
+            border-radius: 8px;
+        }
+    }
+    .grvsc-container {
+      text-align: left;
+    }
+`;
+
 const breakpoints = ['320px', '375px', '425px', '768px', '1024px', '1200px', '1440px', '2560px'] as const;
 Object.defineProperties(breakpoints, {
   mobileS: { value: breakpoints[0] },
@@ -13,14 +47,15 @@ Object.defineProperties(breakpoints, {
 const colors = {
   black: '#212121',
   dark: '#424242',
-  error: '#F44336',
+  error: '#f44336',
   gray: '#757575',
-  info: '#2196F3',
-  lightgray: '#E0E0E0',
-  primary: '#31859A',
-  secondary: '#17365C',
-  success: '#4CAF50',
-  white: '#FAFAFA',
+  info: '#2196f3',
+  lightgray: '#e0e0e0',
+  primary: '#31859a',
+  secondary: '#17365c',
+  success: '#4caf50',
+  vsCodeDark: '#1e1e1e',
+  white: '#fafafa',
 } as const;
 
 const fonts = {
@@ -68,4 +103,4 @@ type ThemeProps = {
   type?: 'light' | 'dark';
 };
 
-export { colors, DarkTheme, LightTheme, Theme, ThemeProps };
+export { colors, DarkTheme, GlobalStyle, LightTheme, Theme, ThemeProps };

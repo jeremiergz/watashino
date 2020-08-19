@@ -1,12 +1,12 @@
+import Layout from 'components/Layout';
+import Link from 'components/Link';
+import List from 'components/List';
+import Box from 'components/primitives/Box';
 import { graphql, navigate, useStaticQuery } from 'gatsby';
-import React, { FunctionComponent, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import Link from '../components/common/Link';
-import List from '../components/common/List';
-import Layout from '../components/core/Layout';
-import Box from '../components/primitives/Box';
-import { getMonthAndDay } from '../utils/Date';
-import { Routes } from '../utils/Routes';
+import { getMonthAndDay } from 'utils/Date';
+import { Routes } from 'utils/Routes';
 
 const Groups = styled(Box)`
   > :first-child > label {
@@ -14,7 +14,7 @@ const Groups = styled(Box)`
   }
 `;
 
-const PostsPage: FunctionComponent = () => {
+const PostsPage: React.FC = () => {
   const {
     mdData: { nodes },
     pageData: { keywords, name },

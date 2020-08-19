@@ -1,9 +1,9 @@
+import Layout from 'components/Layout';
 import { graphql, navigate, useStaticQuery } from 'gatsby';
-import React, { FunctionComponent, useEffect } from 'react';
-import Layout from '../components/core/Layout';
-import { Routes } from '../utils/Routes';
+import React, { useEffect } from 'react';
+import { Routes } from 'utils/Routes';
 
-const IndexPage: FunctionComponent = () => {
+const IndexPage: React.FC = () => {
   const {
     pageData: { keywords },
   } = useStaticQuery(graphql`

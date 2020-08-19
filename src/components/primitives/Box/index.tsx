@@ -1,5 +1,5 @@
-import { ComponentType, TimeHTMLAttributes } from 'react';
-import styled, { StyledComponentProps } from 'styled-components';
+import { TimeHTMLAttributes } from 'react';
+import styled from 'styled-components';
 import {
   border,
   BorderProps,
@@ -18,11 +18,26 @@ import {
   typography,
   TypographyProps,
   zIndex,
-  ZIndexProps,
+  ZIndexProps
 } from 'styled-system';
-import { Theme, ThemeProps } from '../../../theme';
+import { ThemeProps } from 'theme';
 
-const Box = styled.div<BoxProps>`
+type BoxKnownProps = BorderProps &
+  ColorProps &
+  FlexboxProps &
+  LayoutProps &
+  PositionProps &
+  SpaceProps &
+  Omit<TypographyProps, 'fontWeight'> &
+  TimeHTMLAttributes<unknown> &
+  ThemeProps &
+  ZIndexProps & {
+    listStyle?: string;
+    transform?: string;
+    transition?: string;
+  };
+
+const Box = styled.div<BoxKnownProps>`
   ${compose(
     border,
     color,
@@ -42,24 +57,5 @@ const Box = styled.div<BoxProps>`
 
 Box.displayName = 'Box';
 
-export type BoxProps = StyledComponentProps<
-  'div',
-  Theme,
-  BorderProps &
-    ColorProps &
-    FlexboxProps &
-    LayoutProps &
-    SpaceProps &
-    Omit<TypographyProps, 'fontWeight'> &
-    PositionProps &
-    ZIndexProps &
-    TimeHTMLAttributes<unknown> &
-    ThemeProps,
-  never
-> & {
-  as?: keyof JSX.IntrinsicElements | ComponentType<any>;
-  listStyle?: string;
-  transform?: string;
-  transition?: string;
-};
+export type BoxProps = React.ComponentProps<typeof Box>;
 export default Box;

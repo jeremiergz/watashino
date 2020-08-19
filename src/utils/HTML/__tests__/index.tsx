@@ -3,9 +3,9 @@ import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
 import parse from 'remark-parse';
 import { ThemeProvider } from 'styled-components';
+import { DarkTheme } from 'theme';
 import unified from 'unified';
 import { renderASTToJSX } from '..';
-import { DarkTheme } from '../../../theme';
 
 describe('utils/HTML Test Suite', () => {
   it('matches snapshot', () => {

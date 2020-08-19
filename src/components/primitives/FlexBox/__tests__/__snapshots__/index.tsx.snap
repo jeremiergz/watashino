@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/primitives/FlexBox Test Suite matches snapshot 1`] = `
+<div
+  className="sc-AxjAm fzFkQq"
+  display="flex"
+>
+  FlexBox Component
+</div>
+`;

@@ -1,9 +1,9 @@
+import ThemeProvider from 'components/providers/ThemeProvider';
+import ThemeToggle from 'components/providers/ThemeProvider/ThemeToggle';
 import * as Gatsby from 'gatsby';
 import React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import ReactTestRenderer from 'react-test-renderer';
-import ThemingManager from '../../components/core/ThemingManager';
-import ThemeToggle from '../../components/core/ThemingManager/ThemeToggle';
 import NotFoundPage from '../404';
 import AboutMePage from '../about-me';
 import IndexPage from '../index';
@@ -93,10 +93,10 @@ describe('pages Test Suite', () => {
     it('matches snapshot', () => {
       const jsx = (
         <HelmetProvider>
-          <ThemingManager>
+          <ThemeProvider>
             <ThemeToggle />
             <NotFoundPage />
-          </ThemingManager>
+          </ThemeProvider>
         </HelmetProvider>
       );
       expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
@@ -107,10 +107,10 @@ describe('pages Test Suite', () => {
     it('matches snapshot', () => {
       const jsx = (
         <HelmetProvider>
-          <ThemingManager>
+          <ThemeProvider>
             <ThemeToggle />
             <AboutMePage />
-          </ThemingManager>
+          </ThemeProvider>
         </HelmetProvider>
       );
       expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
@@ -121,10 +121,10 @@ describe('pages Test Suite', () => {
     it('matches snapshot', () => {
       const jsx = (
         <HelmetProvider>
-          <ThemingManager>
+          <ThemeProvider>
             <ThemeToggle />
             <IndexPage />
-          </ThemingManager>
+          </ThemeProvider>
         </HelmetProvider>
       );
       expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
@@ -135,10 +135,10 @@ describe('pages Test Suite', () => {
     it('matches snapshot', () => {
       const jsx = (
         <HelmetProvider>
-          <ThemingManager>
+          <ThemeProvider>
             <ThemeToggle />
             <PostsPage />
-          </ThemingManager>
+          </ThemeProvider>
         </HelmetProvider>
       );
       expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
