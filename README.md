@@ -3,7 +3,7 @@
 [![pipeline status](https://github.com/jeremiergz/watashino/workflows/Build%20&%20Test%20&%20Deploy/badge.svg?branch=master)](https://github.com/jeremiergz/watashino/actions)
 [![license](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/jeremiergz/watashino/blob/master/LICENSE)
 [![code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io)
-[![pages](https://img.shields.io/badge/pages-jeremierodriguez.com-31859a)](https://cv.jeremierodriguez.com)
+[![pages](https://img.shields.io/badge/pages-jeremierodriguez.com-31859a)](https://jeremierodriguez.com)
 
 My personal website about my journey as a developer, powered by Gatsby.
 
