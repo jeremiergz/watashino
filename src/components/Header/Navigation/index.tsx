@@ -1,11 +1,11 @@
 import Link from 'components/Link';
 import FlexBox from 'components/primitives/FlexBox';
-import SVG from 'components/primitives/SVG';
 import { useTheming } from 'components/providers/ThemeProvider';
-import BookIcon from 'components/svg/Book';
-import DescriptionIcon from 'components/svg/Description';
-import HouseIcon from 'components/svg/House';
-import MoodIcon from 'components/svg/Mood';
+import SVG from 'components/SVG';
+import BookIcon from 'components/svgs/Book';
+import DescriptionIcon from 'components/svgs/Description';
+import HouseIcon from 'components/svgs/House';
+import MoodIcon from 'components/svgs/Mood';
 import { graphql, useStaticQuery } from 'gatsby';
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
 import React from 'react';

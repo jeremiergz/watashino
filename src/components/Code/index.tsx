@@ -3,7 +3,7 @@ import BlockCode from 'components/Code/Block';
 import InlineCode from 'components/Code/Inline';
 import FlexBox from 'components/primitives/FlexBox';
 import Text, { TextProps } from 'components/primitives/Text';
-import CopyIcon from 'components/svg/Copy';
+import CopyIcon from 'components/svgs/Copy';
 import copyToClipboard from 'copy-to-clipboard';
 import React, { useRef, useState } from 'react';
 

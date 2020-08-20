@@ -1,8 +1,8 @@
 import Button from 'components/Button';
 import FlexBox from 'components/primitives/FlexBox';
 import Text from 'components/primitives/Text';
-import MoonIcon from 'components/svg/Moon';
-import SunIcon from 'components/svg/Sun';
+import MoonIcon from 'components/svgs/Moon';
+import SunIcon from 'components/svgs/Sun';
 import React from 'react';
 import { useTheming } from '..';
 

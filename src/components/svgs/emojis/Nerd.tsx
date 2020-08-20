@@ -1,4 +1,4 @@
-import SVG, { SVGProps } from 'components/primitives/SVG';
+import SVG, { SVGProps } from 'components/SVG';
 import React from 'react';
 
 const Nerd: React.FC<NerdProps> = props => {

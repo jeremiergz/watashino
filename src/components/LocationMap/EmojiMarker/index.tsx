@@ -1,6 +1,6 @@
-import AstonishedIcon from 'components/svg/emojis/Astonished';
-import NerdIcon from 'components/svg/emojis/Nerd';
-import UglyIcon from 'components/svg/emojis/Ugly';
+import AstonishedIcon from 'components/svgs/emojis/Astonished';
+import NerdIcon from 'components/svgs/emojis/Nerd';
+import UglyIcon from 'components/svgs/emojis/Ugly';
 import React, { useState } from 'react';
 
 const Emojis = {
