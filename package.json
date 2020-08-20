@@ -11,14 +11,14 @@
   ],
   "homepage": "https://jeremierodriguez.com",
   "bugs": {
-    "url": "https://gitlab.com/jeremiergz/watashino/issues"
+    "url": "https://github.com/jeremiergz/watashino/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/jeremiergz/watashino.git"
+    "url": "git+https://github.com/jeremiergz/watashino.git"
   },
   "license": "Apache-2.0",
-  "author": "Jeremie Rodriguez <contact@jeremierodriguez.com> (https://gitlab.com/jeremiergz)",
+  "author": "Jeremie Rodriguez <contact@jeremierodriguez.com> (https://github.com/jeremiergz)",
   "files": [
     "public/"
   ],
@@ -26,6 +26,7 @@
     "build": "run-s clean compile",
     "clean": "rimraf .cache coverage dist out public",
     "compile": "gatsby build",
+    "deploy": "gh-pages --dist public --repo https://${GH_TOKEN}@github.com/jeremiergz/watashino.git",
     "lint": "run-p lint:eslint lint:tsc",
     "lint:eslint": "eslint --ext ts,tsx src",
     "lint:tsc": "tsc --noEmit",
@@ -127,6 +128,7 @@
     "dotenv": "^8.2.0",
     "eslint": "^7.7.0",
     "eslint-plugin-react": "^7.20.6",
+    "gh-pages": "^3.1.0",
     "husky": "^4.2.5",
     "jest": "^26.4.1",
     "jest-styled-components": "^7.0.3",
