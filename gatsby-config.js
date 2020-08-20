@@ -47,6 +47,7 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         background_color: appColor,
+        cache_busting_mode: 'none',
         display: 'standalone',
         icon: 'src/images/profile-pic.png',
         name: `${authorName} - ${appName}`,
@@ -58,7 +59,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-offline',
       options: {
-        debug: true,
+        workboxConfig: {
+          globPatterns: ['**/static*'],
+        },
       },
     },
     {

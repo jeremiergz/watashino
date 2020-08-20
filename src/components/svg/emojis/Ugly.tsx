@@ -1,7 +1,7 @@
 import SVG, { SVGProps } from 'components/primitives/SVG';
 import React from 'react';
 
-const EmojiUgly: React.FC<EmojiUglyProps> = props => {
+const Ugly: React.FC<UglyProps> = props => {
   return (
     <SVG viewBox="0 0 512 512" {...props}>
       <circle cx="255.995" cy="265.526" fill="#ffd93b" r="246.464" />
@@ -43,7 +43,7 @@ const EmojiUgly: React.FC<EmojiUglyProps> = props => {
   );
 };
 
-EmojiUgly.displayName = 'EmojiUgly';
+Ugly.displayName = 'Ugly';
 
-export type EmojiUglyProps = SVGProps;
-export default EmojiUgly;
+export type UglyProps = SVGProps;
+export default Ugly;

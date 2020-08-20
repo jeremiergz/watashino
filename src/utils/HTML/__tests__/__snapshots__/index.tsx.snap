@@ -7,7 +7,7 @@ exports[`utils/HTML Test Suite matches snapshot 1`] = `
     fontSize={20}
   >
     <a
-      className="sc-AxiKw sc-AxgMl dGeXYV"
+      className="sc-AxiKw sc-AxgMl bFTFRJ"
       href="https://www.gatsbyjs.org"
       onClick={[Function]}
       rel="noopener noreferrer"

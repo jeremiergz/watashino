@@ -5,28 +5,28 @@
   },
   "contacts": [
     {
-      "img": "contact-linkedin.png",
       "label": "/jeremiergz",
+      "type": "linkedin",
       "url": "https://linkedin.com/in/jeremiergz"
     },
     {
-      "img": "contact-twitter.png",
       "label": "@JeremieRgz",
+      "type": "twitter",
       "url": "https://twitter.com/JeremieRgz"
     },
     {
-      "img": "contact-gitlab.png",
       "label": "/jeremiergz",
+      "type": "gitlab",
       "url": "https://gitlab.com/jeremiergz"
     },
     {
-      "img": "contact-github.png",
       "label": "/jeremiergz",
+      "type": "github",
       "url": "https://github.com/jeremiergz"
     },
     {
-      "img": "contact-email.png",
       "label": "contact@jeremierodriguez.com",
+      "type": "email",
       "url": "mailto:contact@jeremierodriguez.com"
     }
   ],

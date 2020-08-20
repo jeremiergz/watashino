@@ -1,7 +1,7 @@
 import SVG, { SVGProps } from 'components/primitives/SVG';
 import React from 'react';
 
-const EmojiNerd: React.FC<EmojiNerdProps> = props => {
+const Nerd: React.FC<NerdProps> = props => {
   return (
     <SVG viewBox="0 0 512 512" {...props}>
       <circle cx="256" cy="256" fill="#ffd93b" r="256" />
@@ -37,7 +37,7 @@ const EmojiNerd: React.FC<EmojiNerdProps> = props => {
   );
 };
 
-EmojiNerd.displayName = 'EmojiNerd';
+Nerd.displayName = 'Nerd';
 
-export type EmojiNerdProps = SVGProps;
-export default EmojiNerd;
+export type NerdProps = SVGProps;
+export default Nerd;

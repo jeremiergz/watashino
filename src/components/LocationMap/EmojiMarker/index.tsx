@@ -1,29 +1,29 @@
-import EmojiAstonishedIcon from 'components/svg/EmojiAstonished';
-import EmojiNerdIcon from 'components/svg/EmojiNerd';
-import EmojiUglyIcon from 'components/svg/EmojiUgly';
+import AstonishedIcon from 'components/svg/emojis/Astonished';
+import NerdIcon from 'components/svg/emojis/Nerd';
+import UglyIcon from 'components/svg/emojis/Ugly';
 import React, { useState } from 'react';
 
 const Emojis = {
-  EmojiAstonished: EmojiAstonishedIcon,
-  EmojiNerd: EmojiNerdIcon,
-  EmojiUgly: EmojiUglyIcon,
+  Astonished: AstonishedIcon,
+  Nerd: NerdIcon,
+  Ugly: UglyIcon,
 };
 
 let timeout: number;
 
 const EmojiMarker: React.FC<EmojiMarkerProps> = ({ onClick }) => {
-  const [marker, setMarker] = useState(EmojiNerdIcon.displayName);
+  const [marker, setMarker] = useState(NerdIcon.displayName);
   const Emoji = Emojis[marker];
   const handleMarkerClick = () => {
     if (typeof onClick === 'function') onClick();
-    if (marker === EmojiNerdIcon.displayName) {
-      setMarker(EmojiAstonishedIcon.displayName);
-    } else if (marker === EmojiAstonishedIcon.displayName) {
-      setMarker(EmojiUglyIcon.displayName);
+    if (marker === NerdIcon.displayName) {
+      setMarker(AstonishedIcon.displayName);
+    } else if (marker === AstonishedIcon.displayName) {
+      setMarker(UglyIcon.displayName);
     }
     clearTimeout(timeout);
     timeout = setTimeout(() => {
-      setMarker(EmojiNerdIcon.displayName);
+      setMarker(NerdIcon.displayName);
     }, 2500);
   };
   return <Emoji cursor="help" onClick={handleMarkerClick} />;

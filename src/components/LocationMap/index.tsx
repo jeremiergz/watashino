@@ -38,8 +38,8 @@ const LocationMap: React.FC = () => {
         nodes {
           childFile {
             childImageSharp {
-              fixed(height: 640) {
-                ...GatsbyImageSharpFixed
+              fixed(height: 640, quality: 100) {
+                ...GatsbyImageSharpFixed_withWebp
               }
             }
           }

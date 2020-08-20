@@ -14,8 +14,8 @@ const NameAndJob: React.FC = () => {
       }
       file(relativePath: { eq: "profile-pic.png" }) {
         childImageSharp {
-          fixed(height: 80, width: 80) {
-            ...GatsbyImageSharpFixed
+          fixed(height: 80, quality: 100, width: 80) {
+            ...GatsbyImageSharpFixed_withWebp
           }
         }
       }

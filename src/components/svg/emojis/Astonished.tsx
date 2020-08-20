@@ -1,7 +1,7 @@
 import SVG, { SVGProps } from 'components/primitives/SVG';
 import React from 'react';
 
-const EmojiAstonished: React.FC<EmojiAstonishedProps> = props => {
+const Astonished: React.FC<AstonishedProps> = props => {
   return (
     <SVG viewBox="0 0 512 512" {...props}>
       <circle cx="255.984" cy="246.672" fill="#ffd93b" r="246.672" />
@@ -33,7 +33,7 @@ const EmojiAstonished: React.FC<EmojiAstonishedProps> = props => {
   );
 };
 
-EmojiAstonished.displayName = 'EmojiAstonished';
+Astonished.displayName = 'Astonished';
 
-export type EmojiAstonishedProps = SVGProps;
-export default EmojiAstonished;
+export type AstonishedProps = SVGProps;
+export default Astonished;

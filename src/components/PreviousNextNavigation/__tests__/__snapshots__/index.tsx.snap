@@ -6,7 +6,7 @@ exports[`components/common/PreviousNextNavigation Test Suite matches snapshot 1`
   display="flex"
 >
   <a
-    className="sc-AxjAm sc-AxirZ cAhhkD"
+    className="sc-AxjAm sc-AxirZ fhLSnz"
     href="/previous"
     target="_blank"
     variant="underlined"
@@ -14,7 +14,7 @@ exports[`components/common/PreviousNextNavigation Test Suite matches snapshot 1`
     Prev
   </a>
   <a
-    className="sc-AxjAm sc-AxirZ cAhhkD"
+    className="sc-AxjAm sc-AxirZ fhLSnz"
     href="/next"
     target="_blank"
     variant="underlined"

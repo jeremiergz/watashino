@@ -13,9 +13,6 @@ const GlobalStyle = createGlobalStyle`
         color: ${({ theme }: { theme: Theme }) => theme.colors.text};
         font-family: ${({ theme }: { theme: Theme }) => theme.fonts.main};
         font-weight: ${({ theme }: { theme: Theme }) => theme.fontWeights.regular};
-        svg {
-            fill: ${({ theme }: { theme: Theme }) => theme.colors.text};
-        }
     }
     #___gatsby {
         position: relative;

@@ -5,13 +5,41 @@ import LocationMap from 'components/LocationMap';
 import Paragraph from 'components/Paragraph';
 import Box from 'components/primitives/Box';
 import Flex from 'components/primitives/FlexBox';
+import { useTheming } from 'components/providers/ThemeProvider';
+import EmailIcon from 'components/svg/contacts/Email';
+import FacebookIcon from 'components/svg/contacts/Facebook';
+import GitHubIcon from 'components/svg/contacts/GitHub';
+import GitLabIcon from 'components/svg/contacts/GitLab';
+import InstagramIcon from 'components/svg/contacts/Instagram';
+import LinkedInIcon from 'components/svg/contacts/LinkedIn';
+import MessengerIcon from 'components/svg/contacts/Messenger';
+import PhoneIcon from 'components/svg/contacts/Phone';
+import RedditIcon from 'components/svg/contacts/Reddit';
+import SkypeIcon from 'components/svg/contacts/Skype';
+import TwitterIcon from 'components/svg/contacts/Twitter';
+import WhatsappIcon from 'components/svg/contacts/Whatsapp';
 import { graphql, useStaticQuery } from 'gatsby';
-import { FixedObject, FluidObject } from 'gatsby-image';
+import { FixedObject } from 'gatsby-image';
 import React from 'react';
 import styled from 'styled-components';
 import { Theme } from 'theme';
 import { Routes } from 'utils/Routes';
 import { beginsWithVowel } from 'utils/Text';
+
+const contactIcons: Record<Models.Contact['type'], React.ReactNode> = {
+  email: EmailIcon,
+  facebook: FacebookIcon,
+  github: GitHubIcon,
+  gitlab: GitLabIcon,
+  instagram: InstagramIcon,
+  linkedin: LinkedInIcon,
+  messenger: MessengerIcon,
+  phone: PhoneIcon,
+  reddit: RedditIcon,
+  skype: SkypeIcon,
+  twitter: TwitterIcon,
+  whatsapp: WhatsappIcon,
+};
 
 const Technologies = styled(Flex)`
   @media screen and (min-width: ${({ theme }: { theme: Theme }) => theme.breakpoints[3]}) {
@@ -25,11 +53,11 @@ const Technologies = styled(Flex)`
 `;
 
 const AboutMePage: React.FC = () => {
+  const { theme } = useTheming();
   const {
     companyImg: {
       childImageSharp: { fixed: companyImgFixed },
     },
-    contactImgs: { nodes: contactImgNodes },
     coverImg: {
       childImageSharp: { fluid: coverImgFluid },
     },
@@ -41,25 +69,15 @@ const AboutMePage: React.FC = () => {
     query AboutMePageData {
       companyImg: file(relativePath: { eq: "company.png" }) {
         childImageSharp {
-          fixed(height: 25) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      contactImgs: allFile(filter: { relativePath: { regex: "/contact-/" } }) {
-        nodes {
-          base
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
+          fixed(height: 25, quality: 100) {
+            ...GatsbyImageSharpFixed_withWebp
           }
         }
       }
       coverImg: file(relativePath: { eq: "cover.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
@@ -73,8 +91,8 @@ const AboutMePage: React.FC = () => {
           website
         }
         contacts {
-          img
           label
+          type
           url
         }
         jobTitle
@@ -88,8 +106,8 @@ const AboutMePage: React.FC = () => {
         nodes {
           base
           childImageSharp {
-            fixed(height: 52, width: 52) {
-              ...GatsbyImageSharpFixed
+            fixed(height: 52, quality: 100, width: 52) {
+              ...GatsbyImageSharpFixed_withWebp
             }
           }
         }
@@ -103,25 +121,15 @@ const AboutMePage: React.FC = () => {
       }
     }
   `);
-  const contactObjects: { img: FluidObject; label: string; url: string }[] = contacts.reduce((acc, rawContact) => {
-    const { img, label, url } = rawContact;
-    const contact = {
-      img: contactImgNodes.find(i => i.base === img).childImageSharp.fluid,
-      label,
-      url,
-    };
-    acc.push(contact);
-    return acc;
-  }, []);
   const technologyObjects: { img: FixedObject; name: string; website: string }[] = technologies.reduce(
     (acc, rawTechnology) => {
       const { img, name, website } = rawTechnology;
-      const contact = {
+      const tech = {
         img: techImgNodes.find(i => i.base === img).childImageSharp.fixed,
         name,
         website,
       };
-      acc.push(contact);
+      acc.push(tech);
       return acc;
     },
     [],
@@ -131,13 +139,18 @@ const AboutMePage: React.FC = () => {
     <Layout>
       <Layout.Content keywords={keywords} path={Routes.aboutMe} title={name} type="section">
         <Flex alignItems="center" justifyContent="center" marginBottom={4}>
-          {contactObjects.map(({ img, label, url }) => (
-            <Link external key={url} to={url}>
-              <Box paddingX={2} width={{ _: 32, mobileM: 38 }}>
-                <Image alt={label} fluid={img} />
-              </Box>
-            </Link>
-          ))}
+          {contacts.map(({ label, type, url }, index) => {
+            const isEven = index % 2 === 0;
+            const fillColor = isEven ? theme.colors.secondary : theme.colors.primary;
+            const Icon = contactIcons[type];
+            return (
+              <Link external key={url} to={url}>
+                <Box paddingX={2} width={{ _: 32, mobileM: 38 }}>
+                  <Icon fill={fillColor} />
+                </Box>
+              </Link>
+            );
+          })}
         </Flex>
         <Image alt="Cover" fluid={coverImgFluid} imgStyle={{ borderRadius: 8 }} loading="auto" />
         <Paragraph marginTop={4}>{`Hi there, I'm Jeremie!`}</Paragraph>

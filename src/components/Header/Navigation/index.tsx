@@ -1,6 +1,7 @@
 import Link from 'components/Link';
 import FlexBox from 'components/primitives/FlexBox';
 import SVG from 'components/primitives/SVG';
+import { useTheming } from 'components/providers/ThemeProvider';
 import BookIcon from 'components/svg/Book';
 import DescriptionIcon from 'components/svg/Description';
 import HouseIcon from 'components/svg/House';
@@ -17,6 +18,7 @@ const iconsMapping = {
 };
 
 const Navigation: React.FC = () => {
+  const { theme } = useTheming();
   const {
     allMarkdownRemark: { totalCount },
     allNavigationJson: { nodes: links },
@@ -58,7 +60,7 @@ const Navigation: React.FC = () => {
         .map(link => (
           <FlexBox alignItems="center" flexDirection="column" justifyContent="center" key={link.name} minWidth={96}>
             <Link alignItems="center" display="flex" flexDirection="column" partiallyActive to={link.to}>
-              <SVG as={iconsMapping[link.icon]} />
+              <SVG as={iconsMapping[link.icon]} fill={theme.colors.text} />
               {link.name}
             </Link>
           </FlexBox>
@@ -72,7 +74,7 @@ const Navigation: React.FC = () => {
           onClick={handleResumeClick}
           to={resumeLink}
         >
-          <SVG as={DescriptionIcon} />
+          <SVG as={DescriptionIcon} fill={theme.colors.text} />
           Resume
         </Link>
       </FlexBox>

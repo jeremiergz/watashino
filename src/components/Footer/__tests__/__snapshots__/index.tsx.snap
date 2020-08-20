@@ -5,7 +5,7 @@ exports[`components/core/Footer Test Suite matches snapshot 1`] = `
   className="sc-AxjAm bqVEBf"
 >
   <a
-    className="sc-AxjAm sc-AxirZ lawslq"
+    className="sc-AxjAm sc-AxirZ iZypTW"
     href="https://test-repository/tree/3.16.120"
     onClick={[Function]}
     rel="noopener noreferrer"
