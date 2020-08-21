@@ -1,9 +1,9 @@
 import SVG, { SVGProps } from 'components/SVG';
 import React from 'react';
 
-const Phone: React.FC<PhoneProps> = ({ fill, ...rest }) => {
+const Phone: React.FC<PhoneProps> = props => {
   return (
-    <SVG fill={fill} viewBox="0 0 512 512" {...rest}>
+    <SVG viewBox="0 0 512 512" {...props}>
       <circle cx="256" cy="256" r="224" fill="white" />
       <ellipse cx="256" cy="385.85175" rx="19.998854" ry="19.99872" />
       <path d="M311.79301 116.47659H200.20699c-6.25498 0-11.34429 4.85205-11.34429 10.8049v210.93035c0 5.95797 5.0859 10.80491 11.34429 10.80491h111.58602c6.25498 0 11.34429-4.85206 11.34429-10.80491V127.28149c-.003-5.95797-5.08931-10.8049-11.34429-10.8049z" />
