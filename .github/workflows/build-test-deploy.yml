@@ -42,7 +42,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build Docker image
-        run: docker build .
+        run: docker build --build-arg GOOGLE_MAPS_STATIC_API_KEY=${GOOGLE_MAPS_STATIC_API_KEY} .
         env:
           GOOGLE_ANALYTICS_COOKIE_DOMAIN: ${{ secrets.GOOGLE_ANALYTICS_COOKIE_DOMAIN }}
           GOOGLE_ANALYTICS_TRACKING_ID: ${{ secrets.GOOGLE_ANALYTICS_TRACKING_ID }}
