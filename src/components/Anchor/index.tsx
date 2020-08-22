@@ -1,4 +1,5 @@
 import BaseBox, { BoxProps } from 'components/primitives/Box';
+import { Theme } from 'components/providers/ThemeProvider';
 import React from 'react';
 import styled from 'styled-components';
 import { variant } from 'styled-system';
@@ -8,7 +9,7 @@ const A = styled(BaseBox)`
   text-decoration: none;
   transition: color 100ms ease-in-out, filter 100ms ease-in-out;
   &:hover {
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }: { theme: Theme }) => theme.colors.primary};
     filter: brightness(0.75);
   }
   ${variant({
@@ -24,7 +25,7 @@ const Anchor: React.FC<AnchorProps> = ({ children, ...rest }) => {
   const isTouchDevice = typeof window !== 'undefined' && window.navigator.maxTouchPoints > 0;
   const target = isTouchDevice ? '_self' : '_blank';
   return (
-    <A as="a" fontWeight="semi-bold" target={target} {...rest}>
+    <A as="a" fontWeight="semiBold" target={target} {...rest}>
       {children}
     </A>
   );

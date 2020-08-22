@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/common/PreviousNextNavigation Test Suite matches snapshot 1`] = `
+exports[`components/PreviousNextNavigation Test Suite matches snapshot 1`] = `
 <div
   className="sc-AxjAm gGWDia"
   display="flex"

@@ -23,7 +23,7 @@ const StaticGMapImg = styled(Image)`
 `;
 
 const LocationMap: React.FC = () => {
-  const { mode } = useTheming();
+  const { theme } = useTheming();
   const handleMarkerClick = () => {
     trackCustomEvent({
       action: 'click',
@@ -32,7 +32,7 @@ const LocationMap: React.FC = () => {
   };
   const {
     gmapsImgs: { nodes: gmapsImgNodes },
-  } = useStaticQuery(graphql`
+  } = useStaticQuery<GraphQL.LocationMapDataQuery>(graphql`
     query LocationMapData {
       gmapsImgs: allStaticGmapsImage {
         nodes {
@@ -49,7 +49,8 @@ const LocationMap: React.FC = () => {
       }
     }
   `);
-  const gmapsImgNode = gmapsImgNodes.find(i => i.theme === mode) || gmapsImgNodes.find(i => i.theme === 'default');
+  const gmapsImgNode =
+    gmapsImgNodes.find(i => i.theme === theme.type) || gmapsImgNodes.find(i => i.theme === 'default');
   const locationMap = gmapsImgNode.childFile.childImageSharp.fixed;
   return (
     <Box position="relative">

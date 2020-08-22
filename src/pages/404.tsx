@@ -8,7 +8,7 @@ import { Routes } from 'utils/Routes';
 const NotFoundPage: React.FC = () => {
   const {
     pageData: { keywords, name },
-  } = useStaticQuery(graphql`
+  } = useStaticQuery<GraphQL.NotFoundPageQuery>(graphql`
     query NotFoundPage {
       pageData: navigationJson(page: { eq: "NotFoundPage" }) {
         keywords

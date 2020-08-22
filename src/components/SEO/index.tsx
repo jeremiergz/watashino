@@ -6,7 +6,7 @@ const SEO: React.FC<SEOProps> = ({ description = '', keywords = [], lang = 'en',
   const {
     banner,
     site: { siteMetadata },
-  } = useStaticQuery(graphql`
+  } = useStaticQuery<GraphQL.SeoDataQuery>(graphql`
     query SEOData {
       banner: file(relativePath: { eq: "cover.png" }) {
         childImageSharp {

@@ -1,12 +1,11 @@
 import Text, { TextProps } from 'components/primitives/Text';
 import { useTheming } from 'components/providers/ThemeProvider';
 import React from 'react';
-import { Theme } from 'theme';
 import { lightenColor } from 'utils/CSS';
 
 const Chip: React.FC<ChipProps> = ({ children, color, ...rest }) => {
   const { theme } = useTheming();
-  const fontColor = (color || theme.colors.gray) as keyof Theme['colors'];
+  const fontColor = color || theme.colors.gray;
   const backgroundColor = lightenColor(fontColor, 0.25);
   return (
     <Text
@@ -15,7 +14,7 @@ const Chip: React.FC<ChipProps> = ({ children, color, ...rest }) => {
       borderRadius={12}
       color={fontColor}
       fontSize={12}
-      fontWeight="semi-bold"
+      fontWeight="semiBold"
       lineHeight="12px"
       maxHeight={12}
       paddingBottom={1}

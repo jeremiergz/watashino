@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/common/Chip Test Suite matches snapshot 1`] = `
+exports[`components/Chip Test Suite matches snapshot 1`] = `
 <span
   className="sc-AxjAm bUDpmk"
   color="#757575"
   fontSize={12}
-  fontWeight="semi-bold"
+  fontWeight="semiBold"
 >
   Chip Component
 </span>

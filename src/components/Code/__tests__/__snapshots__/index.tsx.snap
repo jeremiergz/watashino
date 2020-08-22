@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/common/Code Test Suite matches snapshot 1`] = `
+exports[`components/Code Test Suite matches snapshot 1`] = `
 Array [
   <code
     className="sc-AxirZ kYslxL"
@@ -44,7 +44,7 @@ Array [
 ]
 `;
 
-exports[`components/common/Code Test Suite matches snapshot 2`] = `
+exports[`components/Code Test Suite matches snapshot 2`] = `
 <code
   className="sc-AxirZ dNannA"
   color="white"

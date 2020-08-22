@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 type BeforeInstallPromptEvent = Event & {
   prompt(): Promise<void>;
@@ -6,20 +6,20 @@ type BeforeInstallPromptEvent = Event & {
 
 const eventName = 'beforeinstallprompt';
 
-/**
- * Returns theme retrieved from context.
- */
-function useInstallPWA() {
+const InstallPWA: React.FC = () => {
   useEffect(() => {
     const handler = (e: BeforeInstallPromptEvent) => {
       e.preventDefault();
-      e.prompt().catch(() => {});
+      e.prompt();
     };
     window.addEventListener(eventName, handler);
     return () => {
       window.removeEventListener(eventName, handler);
     };
   }, []);
-}
+  return null;
+};
 
-export default useInstallPWA;
+InstallPWA.displayName = 'InstallPWA';
+
+export default InstallPWA;

@@ -6,7 +6,7 @@ import { Routes } from 'utils/Routes';
 const IndexPage: React.FC = () => {
   const {
     pageData: { keywords },
-  } = useStaticQuery(graphql`
+  } = useStaticQuery<GraphQL.IndexPageQuery>(graphql`
     query IndexPage {
       pageData: navigationJson(page: { eq: "NotFoundPage" }) {
         keywords

@@ -9,9 +9,10 @@ import { Routes } from 'utils/Routes';
 const GatsbyLink = withoutStylingProps(BaseGatsbyLink);
 const OutboundLink = withoutStylingProps(BaseOutboundLink);
 
+const isTouchDevice = typeof window !== 'undefined' && window.navigator.maxTouchPoints > 0;
+
 const Link: React.FC<LinkProps> = ({ children, external, partiallyActive = false, to, ...rest }) => {
   const { theme } = useTheming();
-  const isTouchDevice = typeof window !== 'undefined' && window.navigator.maxTouchPoints > 0;
   const target = isTouchDevice ? '_self' : '_blank';
   const linkProps = external
     ? {

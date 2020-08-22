@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/core/Footer Test Suite matches snapshot 1`] = `
+exports[`components/Footer Test Suite matches snapshot 1`] = `
 <footer
   className="sc-AxjAm bqVEBf"
 >

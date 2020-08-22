@@ -23,7 +23,7 @@ const Navigation: React.FC = () => {
     allMarkdownRemark: { totalCount },
     allNavigationJson: { nodes: links },
     dataJson: { resumeLink },
-  } = useStaticQuery(graphql`
+  } = useStaticQuery<GraphQL.NavigationDataQuery>(graphql`
     query NavigationData {
       allMarkdownRemark {
         totalCount

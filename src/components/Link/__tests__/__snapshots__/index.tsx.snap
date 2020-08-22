@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/common/Link Test Suite matches snapshot 1`] = `
+exports[`components/Link Test Suite matches snapshot 1`] = `
 <a
   className="sc-AxjAm sc-AxirZ govlXK"
   href="/test-page"

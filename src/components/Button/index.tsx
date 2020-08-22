@@ -1,3 +1,4 @@
+import { Theme } from 'components/providers/ThemeProvider';
 import styled from 'styled-components';
 import { compose, layout, LayoutProps, position, PositionProps, space, SpaceProps, variant } from 'styled-system';
 
@@ -16,7 +17,7 @@ const Button = styled.button<ButtonKnownProps>`
   padding: 0;
   transition: color 100ms ease-in-out;
   :hover {
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }: { theme: Theme }) => theme.colors.primary};
   }
   ${variant({
     variants: {

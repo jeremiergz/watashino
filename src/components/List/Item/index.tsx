@@ -7,7 +7,7 @@ const Item: React.FC<ItemProps> = ({ children, ...rest }) => {
       alignItems="center"
       as="li"
       fontSize={24}
-      fontWeight="semi-bold"
+      fontWeight="semiBold"
       justifyContent="left"
       paddingX={0}
       paddingY={2}

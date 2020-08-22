@@ -6,7 +6,7 @@ const Heading = styled(Text)<HeadingProps>`
   display: inline-block;
   ${variant({
     variants: {
-      h1: { fontSize: 44, fontWeight: 'bold' },
+      h1: { fontSize: 38, fontWeight: 'bold' },
       h2: { fontSize: 32 },
       h3: { fontSize: 24 },
       h4: { fontSize: 20 },

@@ -3,9 +3,9 @@ import Layout from 'components/Layout';
 import PreviousNextNavigation from 'components/PreviousNextNavigation';
 import Flex from 'components/primitives/FlexBox';
 import Text from 'components/primitives/Text';
+import { Theme, useTheming } from 'components/providers/ThemeProvider';
 import React from 'react';
 import styled from 'styled-components';
-import { colors, Theme } from 'theme';
 import { getMonthAndDay } from 'utils/Date';
 import { renderASTToJSX } from 'utils/HTML';
 
@@ -21,6 +21,7 @@ const Chips = styled(Flex)`
 `;
 
 const Post: React.FC<PostProps> = ({ pageContext }) => {
+  const { theme } = useTheming();
   const {
     frontmatter: { date: rawDate, keywords: rawKeywords, slug, title },
     htmlAst,
@@ -39,7 +40,7 @@ const Post: React.FC<PostProps> = ({ pageContext }) => {
         <Flex alignItems="center" flexDirection={{ _: 'column', tablet: 'row-reverse' }} justifyContent="center">
           <Chips flexWrap="wrap" justifyContent="center">
             {keywords.map(keyword => (
-              <Chip color={colors.primary} key={keyword} marginBottom={{ _: 2, tablet: 0 }} marginX={1}>
+              <Chip color={theme.colors.primary} key={keyword} marginBottom={{ _: 2, tablet: 0 }} marginX={1}>
                 {keyword}
               </Chip>
             ))}
@@ -50,7 +51,7 @@ const Post: React.FC<PostProps> = ({ pageContext }) => {
             dateTime={date.toString()}
             display="block"
             fontSize={24}
-            fontWeight="semi-bold"
+            fontWeight="semiBold"
             marginRight={{ _: 0, tablet: 3 }}
             paddingBottom={{ _: 0, tablet: '2px' }}
           >

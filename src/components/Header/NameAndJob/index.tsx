@@ -7,7 +7,7 @@ import React from 'react';
 import { Routes } from 'utils/Routes';
 
 const NameAndJob: React.FC = () => {
-  const { dataJson, file } = useStaticQuery(graphql`
+  const { dataJson, file } = useStaticQuery<GraphQL.HeaderDataQuery>(graphql`
     query HeaderData {
       dataJson {
         jobTitle
@@ -36,7 +36,7 @@ const NameAndJob: React.FC = () => {
           Jeremie Rodriguez
         </Heading>
         <Heading
-          fontWeight="semi-bold"
+          fontWeight="semiBold"
           margin={0}
           marginTop={-2}
           paddingBottom={2}

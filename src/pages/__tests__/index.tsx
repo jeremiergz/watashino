@@ -36,23 +36,9 @@ describe('pages Test Suite', () => {
     };
     const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
     useStaticQuery.mockImplementation(() => ({
-      mdData: {
-        nodes: [{ frontmatter: { date: '2019-08-08', slug: '/posts/test', title: 'Test Post' } }],
-      },
-      allMarkdownRemark: {
-        totalCount: 1,
-      },
+      allMarkdownRemark: { totalCount: 1 },
       allNavigationJson: {
-        nodes: [
-          {
-            icon: 'icon',
-            ignoreInNavigation: false,
-            keywords: [],
-            name: 'Test',
-            navOrder: 0,
-            to: '/',
-          },
-        ],
+        nodes: [{ icon: 'icon', ignoreInNavigation: false, keywords: [], name: 'Test', navOrder: 0, to: '/' }],
       },
       appIcon: { childImageSharp },
       banner: { childImageSharp: { fixed: { src: 'fake.png' } } },
@@ -60,13 +46,11 @@ describe('pages Test Suite', () => {
       coverImg: { childImageSharp },
       dataJson: { jobTitle, location },
       file: { childImageSharp },
-      gmapsImgs: { nodes: [{ theme: 'default', childFile: { childImageSharp } }] },
+      gmapsImgs: { nodes: [{ childFile: { childImageSharp }, theme: 'default' }] },
+      mdData: { nodes: [{ frontmatter: { date: '2019-08-08', slug: '/posts/test', title: 'Test Post' } }] },
       pageData: { keywords: ['test', 'keyword'], name: 'Test Page' },
       personalDetails: {
-        company: {
-          name: 'FakeCompany',
-          website: 'https://fakecompany.test',
-        },
+        company: { name: 'FakeCompany', website: 'https://fakecompany.test' },
         contacts: [{ label: 'FakeContact', type: 'email', url: 'mailto:contact@fake.test' }],
         jobTitle,
         location,
@@ -81,8 +65,31 @@ describe('pages Test Suite', () => {
           version: '3.16.120',
         },
       },
-      techs: { nodes: [{ img: 'tech-image.png', name: 'TechImage', website: 'https://image.tech' }] },
       techImgs: { nodes: [{ base: 'tech-image.png', childImageSharp }] },
+      techs: { nodes: [{ img: 'tech-image.png', name: 'TechImage', website: 'https://image.tech' }] },
+      themeJson: {
+        colors: {
+          black: '#212121',
+          dark: '#424242',
+          error: '#f44336',
+          gray: '#757575',
+          info: '#2196f3',
+          lightgray: '#e0e0e0',
+          primary: '#31859a',
+          secondary: '#17365c',
+          success: '#4caf50',
+          vsCodeDark: '#1e1e1e',
+          white: '#fafafa',
+        },
+        fonts: {
+          main: "'Open Sans', sans-serif",
+        },
+        fontWeights: {
+          bold: 800,
+          regular: 400,
+          semiBold: 600,
+        },
+      },
     }));
     const navigate = jest.spyOn(Gatsby, 'navigate');
     navigate.mockImplementation(() => null);

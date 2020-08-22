@@ -139,7 +139,7 @@ Array [
         </span>
         <span
           className="sc-AxiKw sc-AxhUy dQelTb"
-          fontWeight="semi-bold"
+          fontWeight="semiBold"
         >
           Full Stack Engineer
         </span>
@@ -200,7 +200,7 @@ Array [
     className="sc-AxirZ eeQbIR"
   >
     <span
-      className="sc-AxiKw sc-AxhUy hRMkWq"
+      className="sc-AxiKw sc-AxhUy hsiEiB"
     >
       Test Page
     </span>
@@ -385,7 +385,7 @@ Array [
         </span>
         <span
           className="sc-AxiKw sc-AxhUy dQelTb"
-          fontWeight="semi-bold"
+          fontWeight="semiBold"
         >
           Full Stack Engineer
         </span>
@@ -446,7 +446,7 @@ Array [
     className="sc-AxirZ eeQbIR"
   >
     <span
-      className="sc-AxiKw sc-AxhUy hRMkWq"
+      className="sc-AxiKw sc-AxhUy hsiEiB"
     >
       Test Page
     </span>
@@ -1091,7 +1091,7 @@ Array [
         </span>
         <span
           className="sc-AxiKw sc-AxhUy dQelTb"
-          fontWeight="semi-bold"
+          fontWeight="semiBold"
         >
           Full Stack Engineer
         </span>
@@ -1317,7 +1317,7 @@ Array [
         </span>
         <span
           className="sc-AxiKw sc-AxhUy dQelTb"
-          fontWeight="semi-bold"
+          fontWeight="semiBold"
         >
           Full Stack Engineer
         </span>
@@ -1378,7 +1378,7 @@ Array [
     className="sc-AxirZ eeQbIR"
   >
     <span
-      className="sc-AxiKw sc-AxhUy hRMkWq"
+      className="sc-AxiKw sc-AxhUy hsiEiB"
     >
       Test Page
     </span>
@@ -1396,7 +1396,7 @@ Array [
             color="secondary"
             display="block"
             fontSize={32}
-            fontWeight="semi-bold"
+            fontWeight="semiBold"
           >
             2019
           </label>
@@ -1404,7 +1404,7 @@ Array [
             className="sc-AxirZ jfSKMU"
             display="flex"
             fontSize={24}
-            fontWeight="semi-bold"
+            fontWeight="semiBold"
           >
             <span
               className="sc-AxirZ cgtmPh"

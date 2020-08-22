@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/core/Header Test Suite matches snapshot 1`] = `
+exports[`components/Header Test Suite matches snapshot 1`] = `
 <header
   className="sc-AxjAm ceTnwe"
   display="flex"
@@ -95,7 +95,7 @@ exports[`components/core/Header Test Suite matches snapshot 1`] = `
       </span>
       <span
         className="sc-AxirZ sc-AxiKw bHICOK"
-        fontWeight="semi-bold"
+        fontWeight="semiBold"
       >
         Full Stack Engineer
       </span>

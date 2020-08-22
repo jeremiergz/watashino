@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/core/Layout Test Suite matches snapshot 1`] = `
+exports[`components/Layout Test Suite matches snapshot 1`] = `
 Array [
   <header
     className="sc-AxjAm ceTnwe"
@@ -96,7 +96,7 @@ Array [
         </span>
         <span
           className="sc-AxiKw sc-AxhCb vdjnK"
-          fontWeight="semi-bold"
+          fontWeight="semiBold"
         >
           Full Stack Engineer
         </span>

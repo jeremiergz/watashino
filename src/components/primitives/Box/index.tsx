@@ -1,3 +1,4 @@
+import { ThemeProps } from 'components/providers/ThemeProvider';
 import { TimeHTMLAttributes } from 'react';
 import styled from 'styled-components';
 import {
@@ -18,9 +19,8 @@ import {
   typography,
   TypographyProps,
   zIndex,
-  ZIndexProps
+  ZIndexProps,
 } from 'styled-system';
-import { ThemeProps } from 'theme';
 
 type BoxKnownProps = BorderProps &
   ColorProps &
@@ -28,9 +28,9 @@ type BoxKnownProps = BorderProps &
   LayoutProps &
   PositionProps &
   SpaceProps &
+  ThemeProps &
   Omit<TypographyProps, 'fontWeight'> &
   TimeHTMLAttributes<unknown> &
-  ThemeProps &
   ZIndexProps & {
     listStyle?: string;
     transform?: string;

@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
     site: {
       siteMetadata: { license, repository, version },
     },
-  } = useStaticQuery(graphql`
+  } = useStaticQuery<GraphQL.FooterDataQuery>(graphql`
     query FooterData {
       site {
         siteMetadata {

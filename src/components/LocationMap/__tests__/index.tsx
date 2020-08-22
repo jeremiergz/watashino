@@ -4,7 +4,7 @@ import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
 import LocationMap from '../../LocationMap';
 
-describe('components/common/LocationMap Test Suite', () => {
+describe('components/LocationMap Test Suite', () => {
   beforeAll(() => {
     const childImageSharp = {
       fixed: {
@@ -18,6 +18,29 @@ describe('components/common/LocationMap Test Suite', () => {
     const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
     useStaticQuery.mockImplementation(() => ({
       gmapsImgs: { nodes: [{ mapURL: 'https://fake.com', theme: 'default', childFile: { childImageSharp } }] },
+      themeJson: {
+        colors: {
+          black: '#212121',
+          dark: '#424242',
+          error: '#f44336',
+          gray: '#757575',
+          info: '#2196f3',
+          lightgray: '#e0e0e0',
+          primary: '#31859a',
+          secondary: '#17365c',
+          success: '#4caf50',
+          vsCodeDark: '#1e1e1e',
+          white: '#fafafa',
+        },
+        fonts: {
+          main: "'Open Sans', sans-serif",
+        },
+        fontWeights: {
+          bold: 800,
+          regular: 400,
+          semiBold: 600,
+        },
+      },
     }));
   });
 

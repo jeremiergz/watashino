@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/core/Layout/Header/NameAndJob Test Suite matches snapshot 1`] = `
+exports[`components/Header/NameAndJob Test Suite matches snapshot 1`] = `
 <a
   className="sc-AxhCb sc-AxhUy ghFdRF"
   href="/about-me"
@@ -91,7 +91,7 @@ exports[`components/core/Layout/Header/NameAndJob Test Suite matches snapshot 1`
     </span>
     <span
       className="sc-AxjAm sc-AxirZ cebxIy"
-      fontWeight="semi-bold"
+      fontWeight="semiBold"
     >
       Full Stack Engineer
     </span>

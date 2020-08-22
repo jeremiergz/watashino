@@ -1,3 +1,4 @@
+import { ThemeProps } from 'components/providers/ThemeProvider';
 import { TimeHTMLAttributes } from 'react';
 import styled from 'styled-components';
 import {
@@ -15,18 +16,17 @@ import {
   typography,
   TypographyProps,
   zIndex,
-  ZIndexProps
+  ZIndexProps,
 } from 'styled-system';
-import { ThemeProps } from 'theme';
 
 type TextKnownProps = BorderProps &
   ColorProps &
   DisplayProps &
   LayoutProps &
   SpaceProps &
+  ThemeProps &
   Omit<TypographyProps, 'fontWeight'> &
   ZIndexProps &
-  ThemeProps &
   TimeHTMLAttributes<unknown>;
 
 const Text = styled.span<TextKnownProps>`

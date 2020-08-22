@@ -1,13 +1,42 @@
+import ThemeProvider from 'components/providers/ThemeProvider';
+import * as Gatsby from 'gatsby';
 import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
-import { ThemeProvider } from 'styled-components';
-import { DarkTheme } from 'theme';
 import InlineCode from '..';
 
-describe('components/common/Code/Inline Test Suite', () => {
+describe('components/Code/Inline Test Suite', () => {
+  beforeAll(() => {
+    const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
+    useStaticQuery.mockImplementation(() => ({
+      themeJson: {
+        colors: {
+          black: '#212121',
+          dark: '#424242',
+          error: '#f44336',
+          gray: '#757575',
+          info: '#2196f3',
+          lightgray: '#e0e0e0',
+          primary: '#31859a',
+          secondary: '#17365c',
+          success: '#4caf50',
+          vsCodeDark: '#1e1e1e',
+          white: '#fafafa',
+        },
+        fonts: {
+          main: "'Open Sans', sans-serif",
+        },
+        fontWeights: {
+          bold: 800,
+          regular: 400,
+          semiBold: 600,
+        },
+      },
+    }));
+  });
+
   it('matches snapshot', () => {
     const jsx = (
-      <ThemeProvider theme={DarkTheme}>
+      <ThemeProvider>
         <InlineCode>InlineCode Component</InlineCode>
       </ThemeProvider>
     );

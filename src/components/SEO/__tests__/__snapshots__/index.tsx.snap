@@ -1,5 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/common/SEO Test Suite matches snapshot 1`] = `null`;
+exports[`components/SEO Test Suite matches snapshot 1`] = `null`;
 
-exports[`components/common/SEO Test Suite matches snapshot without optional props 1`] = `null`;
+exports[`components/SEO Test Suite matches snapshot without optional props 1`] = `null`;

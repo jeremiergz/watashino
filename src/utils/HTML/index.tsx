@@ -7,7 +7,7 @@ import Box from 'components/primitives/Box';
 import React, { createElement } from 'react';
 import rehype2react from 'rehype-react';
 import styled from 'styled-components';
-import { colors } from 'theme';
+import themeJSON from '../../../content/theme/index.json';
 
 const VerticalHR = styled(Box)`
   box-sizing: border-box;
@@ -23,7 +23,13 @@ const astRenderer = new rehype2react({
     ),
     blockquote: ({ children }) => (
       <Box as="blockquote" color="gray" fontStyle="italic" paddingX={4} position="relative">
-        <VerticalHR border={`2px solid ${colors.gray}`} borderRadius={4} height="100%" left={0} position="absolute" />
+        <VerticalHR
+          border={`2px solid ${themeJSON.colors.gray}`}
+          borderRadius={4}
+          height="100%"
+          left={0}
+          position="absolute"
+        />
         {children}
       </Box>
     ),
@@ -36,7 +42,7 @@ const astRenderer = new rehype2react({
     h2: ({ children }) => <Heading variant="h2">{children}</Heading>,
     h3: ({ children }) => <Heading variant="h3">{children}</Heading>,
     h4: ({ children }) => <Heading variant="h4">{children}</Heading>,
-    hr: () => <Box as="hr" border={`2px solid ${colors.gray}`} borderRadius={4} marginX={4} marginY={5} />,
+    hr: () => <Box as="hr" border={`2px solid ${themeJSON.colors.gray}`} borderRadius={4} marginX={4} marginY={5} />,
     p: Paragraph,
   },
   createElement: createElement,

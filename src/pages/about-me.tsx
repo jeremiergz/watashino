@@ -5,7 +5,7 @@ import LocationMap from 'components/LocationMap';
 import Paragraph from 'components/Paragraph';
 import Box from 'components/primitives/Box';
 import Flex from 'components/primitives/FlexBox';
-import { useTheming } from 'components/providers/ThemeProvider';
+import { Theme, useTheming } from 'components/providers/ThemeProvider';
 import EmailIcon from 'components/svgs/contacts/Email';
 import FacebookIcon from 'components/svgs/contacts/Facebook';
 import GitHubIcon from 'components/svgs/contacts/GitHub';
@@ -22,7 +22,6 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { FixedObject } from 'gatsby-image';
 import React from 'react';
 import styled from 'styled-components';
-import { Theme } from 'theme';
 import { Routes } from 'utils/Routes';
 import { beginsWithVowel } from 'utils/Text';
 
@@ -65,7 +64,7 @@ const AboutMePage: React.FC = () => {
     personalDetails: { company, contacts, jobTitle, location, openToGigs },
     techImgs: { nodes: techImgNodes },
     techs: { nodes: technologies },
-  } = useStaticQuery(graphql`
+  } = useStaticQuery<GraphQL.AboutMePageDataQuery>(graphql`
     query AboutMePageData {
       companyImg: file(relativePath: { eq: "company.png" }) {
         childImageSharp {

@@ -5,7 +5,7 @@ import React from 'react';
 import ReactTestRenderer, { act, ReactTestInstance } from 'react-test-renderer';
 import EmojiMarker from '..';
 
-describe('components/common/LocationMap/EmojiMarker Test Suite', () => {
+describe('components/LocationMap/EmojiMarker Test Suite', () => {
   beforeAll(() => {
     jest.useFakeTimers();
   });

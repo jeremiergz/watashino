@@ -4,7 +4,7 @@ import ReactTestRenderer from 'react-test-renderer';
 import Layout from '..';
 import ThemingManager from '../../providers/ThemeProvider';
 
-describe('components/core/Layout Test Suite', () => {
+describe('components/Layout Test Suite', () => {
   beforeAll(() => {
     const childImageSharp = {
       fixed: {
@@ -47,6 +47,29 @@ describe('components/core/Layout Test Suite', () => {
           repository: { url: 'git+https://test-repository.git' },
           title: 'SEO Test title',
           version: '3.16.120',
+        },
+      },
+      themeJson: {
+        colors: {
+          black: '#212121',
+          dark: '#424242',
+          error: '#f44336',
+          gray: '#757575',
+          info: '#2196f3',
+          lightgray: '#e0e0e0',
+          primary: '#31859a',
+          secondary: '#17365c',
+          success: '#4caf50',
+          vsCodeDark: '#1e1e1e',
+          white: '#fafafa',
+        },
+        fonts: {
+          main: "'Open Sans', sans-serif",
+        },
+        fontWeights: {
+          bold: 800,
+          regular: 400,
+          semiBold: 600,
         },
       },
     }));

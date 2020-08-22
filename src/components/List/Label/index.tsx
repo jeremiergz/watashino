@@ -8,7 +8,7 @@ const Label: React.FC<LabelProps> = ({ children, ...rest }) => {
       color="secondary"
       display="block"
       fontSize={32}
-      fontWeight="semi-bold"
+      fontWeight="semiBold"
       marginBottom={4}
       marginTop={5}
       marginX={0}
