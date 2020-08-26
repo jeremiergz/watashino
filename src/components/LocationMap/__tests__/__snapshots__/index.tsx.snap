@@ -5,7 +5,7 @@ exports[`components/LocationMap Test Suite matches snapshot 1`] = `
   className="sc-AxirZ kdLUNZ"
 >
   <a
-    className="sc-AxirZ sc-AxiKw gKjgFD"
+    className="sc-AxirZ sc-AxiKw gsCGzJ"
     href="https://fake.com"
     onClick={[Function]}
     rel="noopener noreferrer"

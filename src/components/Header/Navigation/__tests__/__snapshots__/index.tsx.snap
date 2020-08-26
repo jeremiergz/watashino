@@ -10,7 +10,7 @@ exports[`components/Header/Navigation Test Suite matches snapshot 1`] = `
     display="flex"
   >
     <a
-      className="sc-AxjAm sc-AxirZ cmxHJj"
+      className="sc-AxjAm sc-AxirZ hhsOLh"
       href="/"
       target="_blank"
     >
@@ -28,7 +28,7 @@ exports[`components/Header/Navigation Test Suite matches snapshot 1`] = `
     display="flex"
   >
     <a
-      className="sc-AxjAm sc-AxirZ cmxHJj"
+      className="sc-AxjAm sc-AxirZ hhsOLh"
       href="https://fake/resume-file.pdf"
       onClick={[Function]}
       rel="noopener noreferrer"

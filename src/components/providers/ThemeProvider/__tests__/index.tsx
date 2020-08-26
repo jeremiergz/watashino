@@ -2,7 +2,7 @@ import { act, renderHook } from '@testing-library/react-hooks';
 import * as Gatsby from 'gatsby';
 import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
-import ThemeProvider, { useTheming } from '..';
+import ThemeProvider, { useTheme } from '..';
 
 describe('components/providers/ThemeProvider Test Suite', () => {
   beforeAll(() => {
@@ -41,7 +41,7 @@ describe('components/providers/ThemeProvider Test Suite', () => {
 
   it('should change theme accordingly', () => {
     const wrapper = ({ children }) => <ThemeProvider>{children}</ThemeProvider>;
-    const { result } = renderHook(() => useTheming(), { wrapper });
+    const { result } = renderHook(() => useTheme(), { wrapper });
     expect(result.current.theme.type).toBe('light');
     act(() => {
       result.current.toggle();

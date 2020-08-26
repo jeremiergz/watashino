@@ -7,7 +7,7 @@ Array [
     display="flex"
   >
     <a
-      className="sc-AxjAm sc-AxirZ cytqIg"
+      className="sc-AxjAm sc-AxirZ kOmDUi"
       href="/about-me"
       target="_blank"
     >
@@ -111,7 +111,7 @@ Array [
         display="flex"
       >
         <a
-          className="sc-AxjAm sc-AxirZ cmxHJj"
+          className="sc-AxjAm sc-AxirZ hhsOLh"
           href="/"
           target="_blank"
         >
@@ -129,7 +129,7 @@ Array [
         display="flex"
       >
         <a
-          className="sc-AxjAm sc-AxirZ cmxHJj"
+          className="sc-AxjAm sc-AxirZ hhsOLh"
           onClick={[Function]}
           rel="noopener noreferrer"
           target="_blank"
@@ -162,7 +162,7 @@ Array [
     className="sc-AxjAm bqVEBf"
   >
     <a
-      className="sc-AxjAm sc-AxirZ iZypTW"
+      className="sc-AxjAm sc-AxirZ fuzhFE"
       href="https://test-repository/tree/3.16.120"
       onClick={[Function]}
       rel="noopener noreferrer"

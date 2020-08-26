@@ -2,7 +2,7 @@
 
 exports[`components/Anchor Test Suite matches snapshot 1`] = `
 <a
-  className="sc-AxjAm sc-AxirZ govlXK"
+  className="sc-AxjAm sc-AxirZ dWhqPI"
   fontWeight="semiBold"
   target="_blank"
 >

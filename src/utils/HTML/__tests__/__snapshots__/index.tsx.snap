@@ -3,11 +3,11 @@
 exports[`utils/HTML Test Suite matches snapshot 1`] = `
 <div>
   <p
-    className="sc-AxirZ cYqzvF"
+    className="sc-AxirZ fMgAHY"
     fontSize={20}
   >
     <a
-      className="sc-AxiKw sc-AxgMl bFTFRJ"
+      className="sc-AxiKw sc-AxgMl ijhgGX"
       href="https://www.gatsbyjs.org"
       onClick={[Function]}
       rel="noopener noreferrer"
@@ -31,7 +31,7 @@ exports[`utils/HTML Test Suite matches snapshot 1`] = `
     
 
     <p
-      className="sc-AxirZ cYqzvF"
+      className="sc-AxirZ fMgAHY"
       fontSize={20}
     >
       blockquote
@@ -42,7 +42,7 @@ exports[`utils/HTML Test Suite matches snapshot 1`] = `
   
 
   <p
-    className="sc-AxirZ cYqzvF"
+    className="sc-AxirZ fMgAHY"
     fontSize={20}
   >
     <code
@@ -103,7 +103,7 @@ exports[`utils/HTML Test Suite matches snapshot 1`] = `
   
 
   <p
-    className="sc-AxirZ cYqzvF"
+    className="sc-AxirZ fMgAHY"
     fontSize={20}
   >
     text
