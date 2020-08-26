@@ -1,6 +1,6 @@
 import Link from 'components/Link';
 import FlexBox from 'components/primitives/FlexBox';
-import { useTheming } from 'components/providers/ThemeProvider';
+import { useTheme } from 'components/providers/ThemeProvider';
 import SVG from 'components/SVG';
 import BookIcon from 'components/svgs/icons/Book';
 import DescriptionIcon from 'components/svgs/icons/Description';
@@ -18,7 +18,7 @@ const iconsMapping = {
 };
 
 const Navigation: React.FC = () => {
-  const { theme } = useTheming();
+  const { theme } = useTheme();
   const {
     allMarkdownRemark: { totalCount },
     allNavigationJson: { nodes: links },

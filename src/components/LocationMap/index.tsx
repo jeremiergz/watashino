@@ -1,7 +1,7 @@
 import Image from 'components/Image';
 import Link from 'components/Link';
 import Box from 'components/primitives/Box';
-import { useTheming } from 'components/providers/ThemeProvider';
+import { useTheme } from 'components/providers/ThemeProvider';
 import { graphql, useStaticQuery } from 'gatsby';
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
 import React from 'react';
@@ -23,7 +23,7 @@ const StaticGMapImg = styled(Image)`
 `;
 
 const LocationMap: React.FC = () => {
-  const { theme } = useTheming();
+  const { theme } = useTheme();
   const handleMarkerClick = () => {
     trackCustomEvent({
       action: 'click',

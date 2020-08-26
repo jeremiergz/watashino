@@ -1,10 +1,11 @@
 require('dotenv/config');
 const path = require('path');
-const { location } = require('./content/data/personal-details.json');
+const personalDetailsJSON = require('./content/data/personal-details.json');
+const themeJSON = require('./content/theme/index.json');
 const packageJSON = require('./package.json');
 
 const { author, description, homepage, license, name, repository, version } = packageJSON;
-const appColor = '#17365C';
+const appColor = themeJSON.colors.primary;
 const appName = `${name.charAt(0).toUpperCase()}${name.substring(1, name.length)}`;
 const authorName = 'Jeremie Rodriguez';
 const twitterUsername = '@JeremieRgz';
@@ -69,6 +70,7 @@ module.exports = {
       options: {
         components: path.join(__dirname, 'src/components'),
         hooks: path.join(__dirname, 'src/hooks'),
+        styles: path.join(__dirname, 'src/styles'),
         templates: path.join(__dirname, 'src/templates'),
         theme: path.join(__dirname, 'src/theme'),
         utils: path.join(__dirname, 'src/utils'),
@@ -105,7 +107,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-custom-googlemaps-static',
       options: {
-        center: `${location.lat},${location.lng}`,
+        center: `${personalDetailsJSON.location.lat},${personalDetailsJSON.location.lng}`,
         key: process.env.GOOGLE_MAPS_STATIC_API_KEY,
         styles: {
           dark: [
@@ -163,8 +165,9 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
+              linkImagesToOriginal: false,
               maxWidth: 768,
-              quality: 75,
+              quality: 100,
               withWebp: true,
             },
           },

@@ -1,10 +1,10 @@
 import Text, { TextProps } from 'components/primitives/Text';
-import { useTheming } from 'components/providers/ThemeProvider';
+import { useTheme } from 'components/providers/ThemeProvider';
 import React from 'react';
 import { lightenColor } from 'utils/CSS';
 
 const Chip: React.FC<ChipProps> = ({ children, color, ...rest }) => {
-  const { theme } = useTheming();
+  const { theme } = useTheme();
   const fontColor = color || theme.colors.gray;
   const backgroundColor = lightenColor(fontColor, 0.25);
   return (

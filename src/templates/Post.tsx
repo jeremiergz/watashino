@@ -1,27 +1,15 @@
 import Chip from 'components/Chip';
 import Layout from 'components/Layout';
 import PreviousNextNavigation from 'components/PreviousNextNavigation';
-import Flex from 'components/primitives/FlexBox';
+import FlexBox from 'components/primitives/FlexBox';
 import Text from 'components/primitives/Text';
-import { Theme, useTheming } from 'components/providers/ThemeProvider';
+import { useTheme } from 'components/providers/ThemeProvider';
 import React from 'react';
-import styled from 'styled-components';
 import { getMonthAndDay } from 'utils/Date';
 import { renderASTToJSX } from 'utils/HTML';
 
-const Chips = styled(Flex)`
-  @media screen and (min-width: ${({ theme }: { theme: Theme }) => theme.breakpoints[3]}) {
-    > :first-child {
-      margin-left: 0;
-    }
-    > :last-child {
-      margin-right: 0;
-    }
-  }
-`;
-
 const Post: React.FC<PostProps> = ({ pageContext }) => {
-  const { theme } = useTheming();
+  const { theme } = useTheme();
   const {
     frontmatter: { date: rawDate, keywords: rawKeywords, slug, title },
     htmlAst,
@@ -37,14 +25,19 @@ const Post: React.FC<PostProps> = ({ pageContext }) => {
   return (
     <Layout>
       <Layout.Content keywords={keywords} path={slug} title={title} type="post">
-        <Flex alignItems="center" flexDirection={{ _: 'column', tablet: 'row-reverse' }} justifyContent="center">
-          <Chips flexWrap="wrap" justifyContent="center">
-            {keywords.map(keyword => (
-              <Chip color={theme.colors.primary} key={keyword} marginBottom={{ _: 2, tablet: 0 }} marginX={1}>
+        <FlexBox alignItems="center" flexDirection={{ _: 'column', tablet: 'row-reverse' }} justifyContent="center">
+          <FlexBox flexWrap="wrap" justifyContent="center">
+            {keywords.map((keyword, index) => (
+              <Chip
+                color={theme.colors.primary}
+                key={keyword}
+                marginBottom={{ _: 2, tablet: 0 }}
+                marginLeft={index !== 0 ? 2 : 0}
+              >
                 {keyword}
               </Chip>
             ))}
-          </Chips>
+          </FlexBox>
           <Text
             as="time"
             color="gray"
@@ -57,7 +50,7 @@ const Post: React.FC<PostProps> = ({ pageContext }) => {
           >
             {displayedDate}
           </Text>
-        </Flex>
+        </FlexBox>
         <Text color="gray" fontSize={14}>
           {timeToRead} min read
         </Text>

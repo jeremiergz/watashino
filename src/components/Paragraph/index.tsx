@@ -3,7 +3,7 @@ import React from 'react';
 
 const Paragraph: React.FC<ParagraphProps> = ({ children, ...rest }) => {
   return (
-    <Text as="p" fontSize={20} marginY={4} textAlign={{ _: 'center', mobileL: 'left' }} {...rest}>
+    <Text as="p" fontSize={20} marginY={4} textAlign={{ _: 'center', mobileL: 'justify' }} {...rest}>
       {children}
     </Text>
   );

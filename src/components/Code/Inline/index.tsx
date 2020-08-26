@@ -1,9 +1,9 @@
 import Text, { TextProps } from 'components/primitives/Text';
-import { useTheming } from 'components/providers/ThemeProvider';
+import { useTheme } from 'components/providers/ThemeProvider';
 import React from 'react';
 
 const InlineCode: React.FC<InlineCodeProps> = ({ children, ...rest }) => {
-  const { theme } = useTheming();
+  const { theme } = useTheme();
   return (
     <Text
       as="code"

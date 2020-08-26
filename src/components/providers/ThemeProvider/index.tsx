@@ -4,32 +4,14 @@ import { createGlobalStyle, ThemeProvider as StyledThemeProvider } from 'styled-
 import { Theme as StyledTheme } from 'styled-system';
 
 const GlobalStyle = createGlobalStyle`
-    html, body {
-      background-color: ${({ theme }: { theme: Theme }) => theme.background};
-      height: 100%;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      transition: background-color 250ms ease;
-    }
-    body {
-      color: ${({ theme }: { theme: Theme }) => theme.colors.text};
-      font-family: ${({ theme }: { theme: Theme }) => theme.fonts.main};
-      font-weight: ${({ theme }: { theme: Theme }) => theme.fontWeights.regular};
-    }
-    #___gatsby {
-      position: relative;
-      min-height: 100%;
-    }
-    /* Format Markdown images loaded by gatsby-remark-images */
-    .gatsby-resp-image-wrapper {
-      .gatsby-resp-image-background-image, .gatsby-resp-image-image {
-        border-radius: 8px;
-      }
-    }
-    .grvsc-container {
-      text-align: left;
-    }
+  html, body {
+    background-color: ${({ theme }: { theme: Theme }) => theme.background};
+  }
+  body {
+    color: ${({ theme }: { theme: Theme }) => theme.colors.text};
+    font-family: ${({ theme }: { theme: Theme }) => theme.fonts.main};
+    font-weight: ${({ theme }: { theme: Theme }) => theme.fontWeights.regular};
+  }
 `;
 
 const breakpoints = ['320px', '375px', '425px', '768px', '1024px', '1200px', '1440px', '2560px'];
@@ -138,11 +120,11 @@ ThemeProvider.displayName = 'ThemeProvider';
 /**
  * Returns the theming context that allows retrieval of theme & toggling theme mode.
  */
-function useTheming() {
+function useTheme() {
   return useContext(ThemeContext);
 }
 
-export { useTheming };
+export { useTheme };
 export type Theme = Omit<StyledTheme, 'breakpoints' | 'colors' | 'fonts' | 'fontWeights'> & {
   background: string;
   breakpoints: string[];

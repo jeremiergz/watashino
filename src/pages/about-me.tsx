@@ -4,8 +4,8 @@ import Link from 'components/Link';
 import LocationMap from 'components/LocationMap';
 import Paragraph from 'components/Paragraph';
 import Box from 'components/primitives/Box';
-import Flex from 'components/primitives/FlexBox';
-import { Theme, useTheming } from 'components/providers/ThemeProvider';
+import FlexBox from 'components/primitives/FlexBox';
+import { useTheme } from 'components/providers/ThemeProvider';
 import EmailIcon from 'components/svgs/contacts/Email';
 import FacebookIcon from 'components/svgs/contacts/Facebook';
 import GitHubIcon from 'components/svgs/contacts/GitHub';
@@ -21,7 +21,6 @@ import WhatsappIcon from 'components/svgs/contacts/Whatsapp';
 import { graphql, useStaticQuery } from 'gatsby';
 import { FixedObject } from 'gatsby-image';
 import React from 'react';
-import styled from 'styled-components';
 import { Routes } from 'utils/Routes';
 import { beginsWithVowel } from 'utils/Text';
 
@@ -40,19 +39,8 @@ const contactIcons: Record<Models.Contact['type'], React.ReactNode> = {
   whatsapp: WhatsappIcon,
 };
 
-const Technologies = styled(Flex)`
-  @media screen and (min-width: ${({ theme }: { theme: Theme }) => theme.breakpoints[3]}) {
-    > :first-child {
-      margin-left: 0;
-    }
-    > :last-child {
-      margin-right: 0;
-    }
-  }
-`;
-
 const AboutMePage: React.FC = () => {
-  const { theme } = useTheming();
+  const { theme } = useTheme();
   const {
     companyImg: {
       childImageSharp: { fixed: companyImgFixed },
@@ -137,7 +125,7 @@ const AboutMePage: React.FC = () => {
   return (
     <Layout>
       <Layout.Content keywords={keywords} path={Routes.aboutMe} title={name} type="section">
-        <Flex alignItems="center" justifyContent="center" marginBottom={4}>
+        <FlexBox alignItems="center" justifyContent="center" marginBottom={4}>
           {contacts.map(({ label, type, url }, index) => {
             const isEven = index % 2 === 0;
             const fillColor = isEven ? theme.colors.secondary : theme.colors.primary;
@@ -150,7 +138,7 @@ const AboutMePage: React.FC = () => {
               </Link>
             );
           })}
-        </Flex>
+        </FlexBox>
         <Image alt="Cover" fluid={coverImgFluid} imgStyle={{ borderRadius: 8 }} loading="auto" />
         <Paragraph marginTop={4}>{`Hi there, I'm Jeremie!`}</Paragraph>
         <Paragraph>
@@ -161,13 +149,20 @@ const AboutMePage: React.FC = () => {
           {`.`}
         </Paragraph>
         <Paragraph>{'I particularly enjoy working with those technologies:'}</Paragraph>
-        <Technologies flexWrap="wrap" justifyContent={{ _: 'center', tablet: 'space-between' }}>
-          {technologyObjects.map(({ img, name, website }) => (
-            <Link external key={name} margin={2} to={website}>
+        <FlexBox flexWrap="wrap" justifyContent={{ _: 'center', tablet: 'space-between' }}>
+          {technologyObjects.map(({ img, name, website }, index) => (
+            <Link
+              external
+              key={name}
+              marginLeft={{ _: 2, tablet: index !== 0 ? 2 : 0 }}
+              marginRight={{ _: 2, tablet: index !== technologyObjects.length - 1 ? 2 : 0 }}
+              marginY={2}
+              to={website}
+            >
               <Image alt={name} fixed={img} imgStyle={{ height: '52px', width: '52px' }} />
             </Link>
           ))}
-        </Technologies>
+        </FlexBox>
         {openToGigs && (
           <Paragraph>
             {`Feel free to `}

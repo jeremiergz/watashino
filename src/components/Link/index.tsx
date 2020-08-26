@@ -1,6 +1,6 @@
 import Anchor, { AnchorProps } from 'components/Anchor';
 import withoutStylingProps from 'components/hocs/withoutStylingProps';
-import { useTheming } from 'components/providers/ThemeProvider';
+import { useTheme } from 'components/providers/ThemeProvider';
 import { Link as BaseGatsbyLink } from 'gatsby';
 import { OutboundLink as BaseOutboundLink } from 'gatsby-plugin-google-analytics';
 import React from 'react';
@@ -9,10 +9,9 @@ import { Routes } from 'utils/Routes';
 const GatsbyLink = withoutStylingProps(BaseGatsbyLink);
 const OutboundLink = withoutStylingProps(BaseOutboundLink);
 
-const isTouchDevice = typeof window !== 'undefined' && window.navigator.maxTouchPoints > 0;
-
 const Link: React.FC<LinkProps> = ({ children, external, partiallyActive = false, to, ...rest }) => {
-  const { theme } = useTheming();
+  const { theme } = useTheme();
+  const isTouchDevice = typeof window !== 'undefined' && window.navigator.maxTouchPoints > 0;
   const target = isTouchDevice ? '_self' : '_blank';
   const linkProps = external
     ? {

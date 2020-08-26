@@ -1,13 +1,14 @@
-import BaseBox, { BoxProps } from 'components/primitives/Box';
+import Box, { BoxProps } from 'components/primitives/Box';
 import { Theme } from 'components/providers/ThemeProvider';
 import React from 'react';
 import styled from 'styled-components';
 import { variant } from 'styled-system';
 
-const A = styled(BaseBox)`
+const A = styled(Box)`
   color: inherit;
   text-decoration: none;
   transition: color 100ms ease-in-out, filter 100ms ease-in-out;
+  will-change: filter;
   &:hover {
     color: ${({ theme }: { theme: Theme }) => theme.colors.primary};
     filter: brightness(0.75);
@@ -34,7 +35,6 @@ const Anchor: React.FC<AnchorProps> = ({ children, ...rest }) => {
 Anchor.displayName = 'Anchor';
 
 export type AnchorProps = BoxProps & {
-  download?: boolean;
   href?: string;
   target?: string;
   variant?: 'underlined';

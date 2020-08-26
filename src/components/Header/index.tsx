@@ -1,11 +1,11 @@
 import FlexBox from 'components/primitives/FlexBox';
-import { useTheming } from 'components/providers/ThemeProvider';
+import { useTheme } from 'components/providers/ThemeProvider';
 import React from 'react';
 import NameAndJob from './NameAndJob';
 import Navigation from './Navigation';
 
 const Header: React.FC = () => {
-  const { theme } = useTheming();
+  const { theme } = useTheme();
   return (
     <FlexBox
       alignItems="center"

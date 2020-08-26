@@ -1,8 +1,9 @@
-const { default: ThemeProvider } = require('components/providers/ThemeProvider');
-const { default: ThemeToggle } = require('components/providers/ThemeProvider/ThemeToggle');
-const React = require('react');
+import ThemeProvider from 'components/providers/ThemeProvider';
+import ThemeToggle from 'components/providers/ThemeProvider/ThemeToggle';
+import React from 'react';
+import 'styles/global.css';
 
-exports.wrapRootElement = ({ element }) => {
+const wrapRootElement = ({ element }) => {
   return (
     <ThemeProvider>
       <ThemeToggle />
@@ -10,3 +11,5 @@ exports.wrapRootElement = ({ element }) => {
     </ThemeProvider>
   );
 };
+
+export { wrapRootElement };

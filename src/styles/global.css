@@ -1,0 +1,21 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  transition: background-color 250ms ease;
+  width: 100%;
+}
+#___gatsby {
+  position: relative;
+  min-height: 100%;
+}
+/* Format Markdown images loaded by gatsby-remark-images */
+.gatsby-resp-image-background-image,
+.gatsby-resp-image-image {
+  border-radius: 8px;
+  box-shadow: none !important; /* hack to remove white corners because of gatsby-image's box-shadow */
+}
+.grvsc-container {
+  text-align: left;
+}

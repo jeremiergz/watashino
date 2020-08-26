@@ -4,7 +4,7 @@ import Text from 'components/primitives/Text';
 import MoonIcon from 'components/svgs/icons/Moon';
 import SunIcon from 'components/svgs/icons/Sun';
 import React from 'react';
-import { useTheming } from '..';
+import { useTheme } from '..';
 
 const iconMapping = {
   dark: MoonIcon,
@@ -12,7 +12,7 @@ const iconMapping = {
 };
 
 const ThemeToggle: React.FC = () => {
-  const { theme, toggle } = useTheming();
+  const { theme, toggle } = useTheme();
   const ThemeIcon = iconMapping[theme.type];
   return (
     <Button onClick={() => toggle()} position="absolute" right={3} top={3} variant="outlined" width={72}>

@@ -1,12 +1,12 @@
 import Footer from 'components/Footer';
 import Header from 'components/Header';
 import Box from 'components/primitives/Box';
-import { useTheming } from 'components/providers/ThemeProvider';
+import { useTheme } from 'components/providers/ThemeProvider';
 import React, { HTMLAttributes } from 'react';
 import Content from './Content';
 
 const Layout: React.FC<LayoutProps> & { Content: typeof Content } = ({ children }) => {
-  const { theme } = useTheming();
+  const { theme } = useTheme();
   return (
     <>
       <Header />
