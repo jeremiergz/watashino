@@ -5,27 +5,22 @@
   },
   "contacts": [
     {
-      "label": "/jeremiergz",
       "type": "linkedin",
       "url": "https://linkedin.com/in/jeremiergz"
     },
     {
-      "label": "@JeremieRgz",
       "type": "twitter",
       "url": "https://twitter.com/JeremieRgz"
     },
     {
-      "label": "/jeremiergz",
       "type": "gitlab",
       "url": "https://gitlab.com/jeremiergz"
     },
     {
-      "label": "/jeremiergz",
       "type": "github",
       "url": "https://github.com/jeremiergz"
     },
     {
-      "label": "contact@jeremierodriguez.com",
       "type": "email",
       "url": "mailto:contact@jeremierodriguez.com"
     }

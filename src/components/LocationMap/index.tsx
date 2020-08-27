@@ -54,7 +54,7 @@ const LocationMap: React.FC = () => {
   const locationMap = gmapsImgNode.childFile.childImageSharp.fixed;
   return (
     <Box position="relative">
-      <Link external to={gmapsImgNode.mapURL}>
+      <Link aria-label={`Go to ${gmapsImgNode.mapURL}`} external to={gmapsImgNode.mapURL}>
         <StaticGMapImg alt="Location" fixed={locationMap} />
       </Link>
       <Box bottom={0} height={32} left={0} margin="auto" position="absolute" right={0} top={0} width={32}>

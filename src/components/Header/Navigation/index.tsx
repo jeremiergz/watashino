@@ -59,7 +59,14 @@ const Navigation: React.FC = () => {
         .sort((a, b) => a.navOrder - b.navOrder)
         .map(link => (
           <FlexBox alignItems="center" flexDirection="column" justifyContent="center" key={link.name} minWidth={96}>
-            <Link alignItems="center" display="flex" flexDirection="column" partiallyActive to={link.to}>
+            <Link
+              alignItems="center"
+              aria-label={`Go to ${link.name} page`}
+              display="flex"
+              flexDirection="column"
+              partiallyActive
+              to={link.to}
+            >
               <SVG as={iconsMapping[link.icon]} fill={theme.colors.text} />
               {link.name}
             </Link>

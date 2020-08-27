@@ -2,6 +2,7 @@
 
 exports[`components/Header/NameAndJob Test Suite matches snapshot 1`] = `
 <a
+  aria-label="Go to homepage"
   className="sc-AxhCb sc-AxhUy bcqpYD"
   href="/about-me"
   target="_blank"

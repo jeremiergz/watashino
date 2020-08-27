@@ -5,6 +5,7 @@ exports[`components/LocationMap Test Suite matches snapshot 1`] = `
   className="sc-AxirZ kdLUNZ"
 >
   <a
+    aria-label="Go to https://fake.com"
     className="sc-AxirZ sc-AxiKw gsCGzJ"
     href="https://fake.com"
     onClick={[Function]}

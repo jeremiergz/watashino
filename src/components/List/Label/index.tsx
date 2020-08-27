@@ -10,7 +10,6 @@ const Label: React.FC<LabelProps> = ({ children, ...rest }) => {
       fontSize={32}
       fontWeight="semiBold"
       marginBottom={4}
-      marginTop={5}
       marginX={0}
       {...rest}
     >

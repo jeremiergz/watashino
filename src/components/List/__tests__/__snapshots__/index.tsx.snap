@@ -5,7 +5,7 @@ exports[`components/List Test Suite matches snapshot 1`] = `
   className="sc-AxjAm JEaiO"
 >
   <label
-    className="sc-AxirZ eUuHHC"
+    className="sc-AxirZ QKxAB"
     color="secondary"
     display="block"
     fontSize={32}

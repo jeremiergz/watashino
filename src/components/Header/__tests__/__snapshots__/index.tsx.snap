@@ -6,6 +6,7 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
   display="flex"
 >
   <a
+    aria-label="Go to homepage"
     className="sc-AxjAm sc-AxhUy bcqpYD"
     href="/about-me"
     target="_blank"
@@ -110,6 +111,7 @@ exports[`components/Header Test Suite matches snapshot 1`] = `
       display="flex"
     >
       <a
+        aria-label="Go to Test page"
         className="sc-AxjAm sc-AxhUy cdKpwg"
         href="/"
         target="_blank"

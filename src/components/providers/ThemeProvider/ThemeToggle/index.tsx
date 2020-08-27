@@ -15,7 +15,15 @@ const ThemeToggle: React.FC = () => {
   const { theme, toggle } = useTheme();
   const ThemeIcon = iconMapping[theme.type];
   return (
-    <Button onClick={() => toggle()} position="absolute" right={3} top={3} variant="outlined" width={72}>
+    <Button
+      aria-label="Toggle Theme mode"
+      onClick={() => toggle()}
+      position="absolute"
+      right={3}
+      top={3}
+      variant="outlined"
+      width={72}
+    >
       <FlexBox alignItems="center" justifyContent="space-between" width="100%">
         <ThemeIcon height={20} width={20} />
         <Text color="gray" fontFamily={theme.fonts.main} fontSize={14}>

@@ -24,6 +24,7 @@ const NameAndJob: React.FC = () => {
   return (
     <Link
       alignItems="center"
+      aria-label="Go to homepage"
       display="flex"
       flexDirection={{ _: 'column', tablet: 'row' }}
       justifyContent={{ _: 'center', tablet: 'flex-start' }}

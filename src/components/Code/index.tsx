@@ -27,7 +27,7 @@ const Code: React.FC<CodeProps> = ({ children, className, ...rest }) => {
         {children}
       </BlockCode>
       <FlexBox as="span" alignItems="center" left={3} marginTop={4} position="sticky" width={0}>
-        <Button onClick={handleCopyClick} padding={2} variant="text">
+        <Button aria-label="Copy content to clipboard" onClick={handleCopyClick} padding={2} variant="text">
           <CopyIcon fill="white" height={16} width={16} />
           <Text color="white" marginLeft={1}>
             {hasCopied ? 'copied!' : 'copy'}

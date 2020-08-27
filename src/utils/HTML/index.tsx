@@ -17,7 +17,7 @@ const VerticalHR = styled(Box)`
 const astRenderer = new rehype2react({
   components: {
     a: ({ children, href }: { children: React.ReactNode; href: string }) => (
-      <Link external to={href} variant="underlined">
+      <Link aria-label={`Go to ${href}`} external to={href} variant="underlined">
         {children}
       </Link>
     ),

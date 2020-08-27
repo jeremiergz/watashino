@@ -33,7 +33,13 @@ const Footer: React.FC = () => {
       right={0}
       textAlign="center"
     >
-      <Link borderBottom="1px dashed gray" color="gray" external to={sourceCodeURL}>
+      <Link
+        aria-label={`Go to version ${version} source code`}
+        borderBottom="1px dashed gray"
+        color="gray"
+        external
+        to={sourceCodeURL}
+      >
         {`v${version} - source code`}
       </Link>
       <Box color="gray" fontSize={14} marginTop={1}>{`licensed under the ${license} license`}</Box>

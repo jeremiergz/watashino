@@ -4,15 +4,8 @@ import List from 'components/List';
 import Box from 'components/primitives/Box';
 import { graphql, navigate, useStaticQuery } from 'gatsby';
 import React, { useEffect } from 'react';
-import styled from 'styled-components';
 import { getMonthAndDay } from 'utils/Date';
 import { Routes } from 'utils/Routes';
-
-const Groups = styled(Box)`
-  > :first-child > label {
-    margin-top: 0;
-  }
-`;
 
 const PostsPage: React.FC = () => {
   const {
@@ -58,12 +51,12 @@ const PostsPage: React.FC = () => {
     <Layout>
       {allPostsKeys.length > 0 && (
         <Layout.Content keywords={keywords} path={Routes.posts} title={name} type="section">
-          <Groups>
+          <Box>
             {allPostsKeys
               .sort((a, b) => b.localeCompare(a))
-              .map(year => (
+              .map((year, index) => (
                 <List key={year}>
-                  <List.Label>{year}</List.Label>
+                  <List.Label marginTop={index === 0 ? 0 : 5}>{year}</List.Label>
                   {allPosts[year].map(({ date, slug, title }) => {
                     const [month, day] = getMonthAndDay(date);
                     const monthAndDay = `${month}-${day}`;
@@ -80,13 +73,15 @@ const PostsPage: React.FC = () => {
                         >
                           {monthAndDay}
                         </Box>
-                        <Link to={slug}>{title}</Link>
+                        <Link aria-label={`Go to ${slug}`} to={slug}>
+                          {title}
+                        </Link>
                       </List.Item>
                     );
                   })}
                 </List>
               ))}
-          </Groups>
+          </Box>
         </Layout.Content>
       )}
     </Layout>

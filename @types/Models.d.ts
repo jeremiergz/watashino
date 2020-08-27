@@ -1,6 +1,5 @@
 declare module Models {
   type Contact = {
-    label: string;
     type:
       | 'email'
       | 'facebook'

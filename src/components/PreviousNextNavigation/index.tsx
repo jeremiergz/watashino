@@ -9,14 +9,14 @@ const PreviousNextNavigation: React.FC<PreviousNextNavigationProps> = ({ next, p
     shouldDisplay && (
       <FlexBox justifyContent="space-between" {...rest}>
         {previous ? (
-          <Link fontSize={16} fontWeight="semiBold" to={previous} variant="underlined">
+          <Link aria-label="Previous article" fontSize={16} fontWeight="semiBold" to={previous} variant="underlined">
             {'Prev'}
           </Link>
         ) : (
           <Box />
         )}
         {next ? (
-          <Link fontSize={16} fontWeight="semiBold" to={next} variant="underlined">
+          <Link aria-label="Next article" fontSize={16} fontWeight="semiBold" to={next} variant="underlined">
             {'Next'}
           </Link>
         ) : (

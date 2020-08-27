@@ -78,7 +78,6 @@ const AboutMePage: React.FC = () => {
           website
         }
         contacts {
-          label
           type
           url
         }
@@ -126,12 +125,12 @@ const AboutMePage: React.FC = () => {
     <Layout>
       <Layout.Content keywords={keywords} path={Routes.aboutMe} title={name} type="section">
         <FlexBox alignItems="center" justifyContent="center" marginBottom={4}>
-          {contacts.map(({ label, type, url }, index) => {
+          {contacts.map(({ type, url }, index) => {
             const isEven = index % 2 === 0;
             const fillColor = isEven ? theme.colors.secondary : theme.colors.primary;
             const Icon = contactIcons[type];
             return (
-              <Link external key={url} to={url}>
+              <Link aria-label={`Open ${type} contact`} external key={url} to={url}>
                 <Box paddingX={2} width={{ _: 32, mobileM: 38 }}>
                   <Icon fill={fillColor} />
                 </Box>
@@ -143,7 +142,14 @@ const AboutMePage: React.FC = () => {
         <Paragraph marginTop={4}>{`Hi there, I'm Jeremie!`}</Paragraph>
         <Paragraph>
           {`I'm a${beginsWithVowel(jobTitle) ? 'n' : ''} ${jobTitle} freelancer, previously working at `}
-          <Link display="inline-flex" external height="26px" to={company.website} verticalAlign="middle">
+          <Link
+            aria-label={`Go to ${company.website}`}
+            display="inline-flex"
+            external
+            height="26px"
+            to={company.website}
+            verticalAlign="middle"
+          >
             <Image alt={company.name} fixed={companyImgFixed} marginTop="2px" Tag="span" />
           </Link>
           {`.`}
@@ -152,6 +158,7 @@ const AboutMePage: React.FC = () => {
         <FlexBox flexWrap="wrap" justifyContent={{ _: 'center', tablet: 'space-between' }}>
           {technologyObjects.map(({ img, name, website }, index) => (
             <Link
+              aria-label={`Go to ${website}`}
               external
               key={name}
               marginLeft={{ _: 2, tablet: index !== 0 ? 2 : 0 }}
@@ -166,7 +173,7 @@ const AboutMePage: React.FC = () => {
         {openToGigs && (
           <Paragraph>
             {`Feel free to `}
-            <Link external to={mailto.url} variant="underlined">
+            <Link aria-label="Open email client" external to={mailto.url} variant="underlined">
               contact me
             </Link>
             {` if you're interested!`}
@@ -174,7 +181,7 @@ const AboutMePage: React.FC = () => {
         )}
         <Box fontSize={20} marginBottom={2} marginTop={5}>
           {'▾ By the way, this is where I live, '}
-          <Link external to={location.website}>
+          <Link aria-label={`Go to ${location.website}`} external to={location.website}>
             {location.city}
           </Link>
           {'! ▾'}

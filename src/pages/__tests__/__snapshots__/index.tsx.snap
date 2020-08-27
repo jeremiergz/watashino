@@ -3,6 +3,7 @@
 exports[`pages Test Suite pages/404 Test Suite matches snapshot 1`] = `
 Array [
   <button
+    aria-label="Toggle Theme mode"
     className="sc-AxjAm iWlnJd"
     onClick={[Function]}
     width={72}
@@ -50,6 +51,7 @@ Array [
     display="flex"
   >
     <a
+      aria-label="Go to homepage"
       className="sc-AxirZ sc-AxgMl gABrJl"
       href="/about-me"
       target="_blank"
@@ -154,6 +156,7 @@ Array [
         display="flex"
       >
         <a
+          aria-label="Go to Test page"
           className="sc-AxirZ sc-AxgMl fNnSKC"
           href="/"
           target="_blank"
@@ -214,6 +217,7 @@ Array [
       </span>
       Find your way 
       <a
+        aria-label="Go to homepage"
         className="sc-AxirZ sc-AxgMl ijhgGX"
         href="/about-me"
         target="_blank"
@@ -227,6 +231,7 @@ Array [
     className="sc-AxirZ qAAtk"
   >
     <a
+      aria-label="Go to version 3.16.120 source code"
       className="sc-AxirZ sc-AxgMl koQhhb"
       href="https://test-repository/tree/3.16.120"
       onClick={[Function]}
@@ -249,6 +254,7 @@ Array [
 exports[`pages Test Suite pages/about-me Test Suite matches snapshot 1`] = `
 Array [
   <button
+    aria-label="Toggle Theme mode"
     className="sc-AxjAm iWlnJd"
     onClick={[Function]}
     width={72}
@@ -296,6 +302,7 @@ Array [
     display="flex"
   >
     <a
+      aria-label="Go to homepage"
       className="sc-AxirZ sc-AxgMl gABrJl"
       href="/about-me"
       target="_blank"
@@ -400,6 +407,7 @@ Array [
         display="flex"
       >
         <a
+          aria-label="Go to Test page"
           className="sc-AxirZ sc-AxgMl fNnSKC"
           href="/"
           target="_blank"
@@ -458,6 +466,7 @@ Array [
         display="flex"
       >
         <a
+          aria-label="Open email contact"
           className="sc-AxirZ sc-AxgMl ijXTvW"
           href="mailto:contact@fake.test"
           onClick={[Function]}
@@ -588,6 +597,7 @@ Array [
       >
         I'm a Full Stack Engineer freelancer, previously working at 
         <a
+          aria-label="Go to https://fakecompany.test"
           className="sc-AxirZ sc-AxgMl hVFUcy"
           href="https://fakecompany.test"
           onClick={[Function]}
@@ -679,6 +689,7 @@ Array [
         display="flex"
       >
         <a
+          aria-label="Go to https://image.tech"
           className="sc-AxirZ sc-AxgMl jDAIQM"
           href="https://image.tech"
           marginY={2}
@@ -765,6 +776,7 @@ Array [
       >
         ▾ By the way, this is where I live, 
         <a
+          aria-label="Go to undefined"
           className="sc-AxirZ sc-AxgMl ijXTvW"
           onClick={[Function]}
           rel="noopener noreferrer"
@@ -778,6 +790,7 @@ Array [
         className="sc-AxirZ kdLUNZ"
       >
         <a
+          aria-label="Go to undefined"
           className="sc-AxirZ sc-AxgMl ijXTvW"
           onClick={[Function]}
           rel="noopener noreferrer"
@@ -934,6 +947,7 @@ Array [
     className="sc-AxirZ qAAtk"
   >
     <a
+      aria-label="Go to version 3.16.120 source code"
       className="sc-AxirZ sc-AxgMl koQhhb"
       href="https://test-repository/tree/3.16.120"
       onClick={[Function]}
@@ -956,6 +970,7 @@ Array [
 exports[`pages Test Suite pages/index Test Suite matches snapshot 1`] = `
 Array [
   <button
+    aria-label="Toggle Theme mode"
     className="sc-AxjAm iWlnJd"
     onClick={[Function]}
     width={72}
@@ -1003,6 +1018,7 @@ Array [
     display="flex"
   >
     <a
+      aria-label="Go to homepage"
       className="sc-AxirZ sc-AxgMl gABrJl"
       href="/about-me"
       target="_blank"
@@ -1107,6 +1123,7 @@ Array [
         display="flex"
       >
         <a
+          aria-label="Go to Test page"
           className="sc-AxirZ sc-AxgMl fNnSKC"
           href="/"
           target="_blank"
@@ -1160,6 +1177,7 @@ Array [
     className="sc-AxirZ qAAtk"
   >
     <a
+      aria-label="Go to version 3.16.120 source code"
       className="sc-AxirZ sc-AxgMl koQhhb"
       href="https://test-repository/tree/3.16.120"
       onClick={[Function]}
@@ -1182,6 +1200,7 @@ Array [
 exports[`pages Test Suite pages/posts Test Suite matches snapshot 1`] = `
 Array [
   <button
+    aria-label="Toggle Theme mode"
     className="sc-AxjAm iWlnJd"
     onClick={[Function]}
     width={72}
@@ -1229,6 +1248,7 @@ Array [
     display="flex"
   >
     <a
+      aria-label="Go to homepage"
       className="sc-AxirZ sc-AxgMl gABrJl"
       href="/about-me"
       target="_blank"
@@ -1333,6 +1353,7 @@ Array [
         display="flex"
       >
         <a
+          aria-label="Go to Test page"
           className="sc-AxirZ sc-AxgMl fNnSKC"
           href="/"
           target="_blank"
@@ -1387,13 +1408,13 @@ Array [
       className="sc-AxirZ dVRjgl"
     >
       <div
-        className="sc-AxirZ sc-AxmLO fBGfAj"
+        className="sc-AxirZ dVRjgl"
       >
         <ul
           className="sc-AxirZ hxdfvB"
         >
           <label
-            className="sc-AxiKw bXfPZn"
+            className="sc-AxiKw frqcPp"
             color="secondary"
             display="block"
             fontSize={32}
@@ -1416,6 +1437,7 @@ Array [
               AUG-08
             </span>
             <a
+              aria-label="Go to /posts/test"
               className="sc-AxirZ sc-AxgMl ijXTvW"
               href="/posts/test"
               target="_blank"
@@ -1431,6 +1453,7 @@ Array [
     className="sc-AxirZ qAAtk"
   >
     <a
+      aria-label="Go to version 3.16.120 source code"
       className="sc-AxirZ sc-AxgMl koQhhb"
       href="https://test-repository/tree/3.16.120"
       onClick={[Function]}

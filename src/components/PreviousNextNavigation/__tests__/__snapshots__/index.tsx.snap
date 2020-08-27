@@ -6,6 +6,7 @@ exports[`components/PreviousNextNavigation Test Suite matches snapshot 1`] = `
   display="flex"
 >
   <a
+    aria-label="Previous article"
     className="sc-AxjAm sc-AxirZ fyrbsR"
     href="/previous"
     target="_blank"
@@ -14,6 +15,7 @@ exports[`components/PreviousNextNavigation Test Suite matches snapshot 1`] = `
     Prev
   </a>
   <a
+    aria-label="Next article"
     className="sc-AxjAm sc-AxirZ fyrbsR"
     href="/next"
     target="_blank"

@@ -21,7 +21,7 @@ const NotFoundPage: React.FC = () => {
       <Layout.Content keywords={keywords} path={Routes.notFound} title={name} type="section">
         <Heading variant="h4">Man, I hate when this happens...</Heading>
         {'Find your way '}
-        <Link to={Routes.aboutMe} variant="underlined">
+        <Link aria-label="Go to homepage" to={Routes.aboutMe} variant="underlined">
           Home
         </Link>
       </Layout.Content>
