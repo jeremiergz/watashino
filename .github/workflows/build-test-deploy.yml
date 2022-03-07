@@ -26,6 +26,8 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+        env:
+          GOOGLE_MAPS_STATIC_API_KEY: ${{ secrets.GOOGLE_MAPS_STATIC_API_KEY }}
       - name: Upload dist files
         if: startsWith(github.ref, 'refs/tags/')
         uses: actions/upload-artifact@v2
