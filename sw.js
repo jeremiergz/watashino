@@ -27,40 +27,69 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "framework-63ec46a3540d83159f28.js"
+    "url": "icons/android-icon-144x144.png",
+    "revision": "80127410b7c17183f5e60c853c388345"
   },
   {
-    "url": "styles.c97c00127f9c70cafc01.css"
+    "url": "icons/android-icon-192x192.png",
+    "revision": "bd88f1f7b44fb43cd13bf276b7da17dc"
   },
   {
-    "url": "styles-f7a64dad1c13bebc31fd.js"
+    "url": "icons/android-icon-36x36.png",
+    "revision": "8dbc436a4d8fddc6ea056b4960284ab9"
   },
   {
-    "url": "app-550e7ed3a2c417844175.js"
+    "url": "icons/android-icon-48x48.png",
+    "revision": "dfc56e909433ba188ae7d573f816af03"
+  },
+  {
+    "url": "icons/android-icon-512x512.png",
+    "revision": "9e49b6fe88a75e45aa1f81a4731045a9"
+  },
+  {
+    "url": "icons/android-icon-72x72.png",
+    "revision": "53c620bb4dee5b639624c574aaa7e150"
+  },
+  {
+    "url": "icons/android-icon-96x96.png",
+    "revision": "46cccd011b1c73528010b4b5923c517d"
+  },
+  {
+    "url": "icons/maskable-icon.png",
+    "revision": "9e49b6fe88a75e45aa1f81a4731045a9"
+  },
+  {
+    "url": "framework-c72b6d08a1cb4225c99f.js"
+  },
+  {
+    "url": "styles.8ae1079923cfc2d13381.css"
+  },
+  {
+    "url": "app-11b96764e2d9d14352b6.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "a3e092c9ae77afda9db67247033cf92b"
+    "revision": "be1df422fec0b5a2af317412ab1ed753"
   },
   {
-    "url": "webpack-runtime-5adde4deee1517e84fbd.js"
+    "url": "webpack-runtime-982b5e7b47e809eac5c1.js"
   },
   {
-    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-7c31e2436cade51cbcda.js"
+    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-64eafd693e5d65f36e84.js"
   },
   {
-    "url": "polyfill-ceb29d4a638023a4e942.js"
+    "url": "polyfill-92c352b398eadfaa3abc.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "49d5415083e4cff29d0d3837bf9a6181"
+    "revision": "bedbc95fb68dab9c35c2ff596eba81f7"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerRoute(/(\.js$|\.css$|static\/)/, new workbox.strategies.CacheFirst(), 'GET');
 workbox.routing.registerRoute(/^https?:.*\/page-data\/.*\.json/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
-workbox.routing.registerRoute(/^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
+workbox.routing.registerRoute(/^https?:.*\.(png|jpg|jpeg|webp|avif|svg|gif|tiff|js|woff|woff2|json|css)$/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
 workbox.routing.registerRoute(/^https?:\/\/fonts\.googleapis\.com\/css/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
 
 /* global importScripts, workbox, idbKeyval */
@@ -79,6 +108,24 @@ const MessageAPI = {
 
   clearPathResources: event => {
     event.waitUntil(idbKeyval.clear())
+
+    // We detected compilation hash mismatch
+    // we should clear runtime cache as data
+    // files might be out of sync and we should
+    // do fresh fetches for them
+    event.waitUntil(
+      caches.keys().then(function (keyList) {
+        return Promise.all(
+          keyList.map(function (key) {
+            if (key && key.includes(`runtime`)) {
+              return caches.delete(key)
+            }
+
+            return Promise.resolve()
+          })
+        )
+      })
+    )
   },
 
   enableOfflineShell: () => {
@@ -145,7 +192,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-550e7ed3a2c417844175.js`))) {
+  if (!resources || !(await caches.match(`/app-11b96764e2d9d14352b6.js`))) {
     return await fetch(event.request)
   }
 
