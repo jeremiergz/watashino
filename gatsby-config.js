@@ -1,79 +1,147 @@
 require('dotenv/config');
 const path = require('path');
-const personalDetailsJSON = require('./content/data/personal-details.json');
-const themeJSON = require('./content/theme/index.json');
-const packageJSON = require('./package.json');
+const informationJSON = require('./content/data/information');
+const { description, homepage, keywords, license, name, repository, version } = require('./package.json');
 
-const { author, description, homepage, license, name, repository, version } = packageJSON;
-const appColor = themeJSON.colors.primary;
-const appName = `${name.charAt(0).toUpperCase()}${name.substring(1, name.length)}`;
-const authorName = 'Jeremie Rodriguez';
-const twitterUsername = '@JeremieRgz';
+const APP_COLOR = '#282828';
+const APP_DESCRIPTION = description;
+const APP_KEYWORDS = keywords;
+const APP_LICENSE = license;
+const APP_NAME = `${name.charAt(0).toUpperCase()}${name.substring(1, name.length)}`;
+const APP_REPOSITORY_URL = repository.url.replace(/git\+|\.git/gi, '');
+const APP_SITE_URL = homepage;
+const APP_VERSION = version;
+const AUTHOR_NAME = 'Jeremie Rodriguez';
+const AUTHOR_TWITTER_USERNAME = '@JeremieRgz';
+
+[
+  ['APP_COLOR', APP_COLOR],
+  ['APP_DESCRIPTION', APP_DESCRIPTION],
+  ['APP_KEYWORDS', APP_KEYWORDS],
+  ['APP_LICENSE', APP_LICENSE],
+  ['APP_NAME', APP_NAME],
+  ['APP_REPOSITORY_URL', APP_REPOSITORY_URL],
+  ['APP_SITE_URL', APP_SITE_URL],
+  ['APP_VERSION', APP_VERSION],
+  ['AUTHOR_NAME', AUTHOR_NAME],
+  ['AUTHOR_TWITTER_USERNAME', AUTHOR_TWITTER_USERNAME],
+].forEach(([name, value]) => {
+  if (!value) throw new Error(`${name} is not defined`);
+});
 
 module.exports = {
   siteMetadata: {
-    appName,
-    author,
-    description,
-    license,
-    repository,
-    siteUrl: homepage,
-    title: authorName,
-    twitterUsername,
-    version,
+    authorName: AUTHOR_NAME,
+    authorTwitterUsername: AUTHOR_TWITTER_USERNAME,
+    color: APP_COLOR,
+    description: APP_DESCRIPTION,
+    keywords: APP_KEYWORDS,
+    license: APP_LICENSE,
+    name: APP_NAME,
+    repositoryUrl: APP_REPOSITORY_URL,
+    siteUrl: APP_SITE_URL,
+    version: APP_VERSION,
   },
   plugins: [
-    'gatsby-plugin-react-helmet-async',
+    'gatsby-plugin-image',
+    'gatsby-plugin-postcss',
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
-    'gatsby-plugin-styled-components',
-    'gatsby-transformer-json',
-    'gatsby-transformer-sharp',
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        cookieDomain: process.env.GOOGLE_ANALYTICS_COOKIE_DOMAIN,
-        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-google-fonts',
-      options: {
-        display: 'swap',
-        fonts: ['Open+Sans:400,400i,600,600i,800,800i'],
-      },
-    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        background_color: appColor,
+        background_color: APP_COLOR,
         cache_busting_mode: 'none',
         display: 'standalone',
-        icon: 'src/images/profile-pic.png',
-        name: `${authorName} - ${appName}`,
-        short_name: appName,
+        icon: 'logo.png',
+        icons: [
+          {
+            sizes: '36x36',
+            src: '/icons/android-icon-36x36.png',
+            type: 'image/png',
+          },
+          {
+            sizes: '48x48',
+            src: '/icons/android-icon-48x48.png',
+            type: 'image/png',
+          },
+          {
+            sizes: '72x72',
+            src: '/icons/android-icon-72x72.png',
+            type: 'image/png',
+          },
+          {
+            sizes: '96x96',
+            src: '/icons/android-icon-96x96.png',
+            type: 'image/png',
+          },
+          {
+            sizes: '144x144',
+            src: '/icons/android-icon-144x144.png',
+            type: 'image/png',
+          },
+          {
+            sizes: '192x192',
+            src: '/icons/android-icon-192x192.png',
+            type: 'image/png',
+          },
+          {
+            sizes: '512x512',
+            src: '/icons/android-icon-512x512.png',
+            type: 'image/png',
+          },
+          {
+            purpose: 'maskable',
+            sizes: '512x512',
+            src: '/icons/maskable-icon.png',
+            type: 'image/png',
+          },
+        ],
+        name: `${AUTHOR_NAME} - ${APP_NAME}`,
+        short_name: APP_NAME,
         start_url: '/',
-        theme_color: appColor,
+        theme_color: APP_COLOR,
       },
     },
     {
       resolve: 'gatsby-plugin-offline',
       options: {
         workboxConfig: {
-          globPatterns: ['**/static*'],
+          globPatterns: ['**/icons/**'],
         },
       },
     },
     {
       resolve: 'gatsby-plugin-root-import',
       options: {
-        components: path.join(__dirname, 'src/components'),
-        hooks: path.join(__dirname, 'src/hooks'),
-        styles: path.join(__dirname, 'src/styles'),
-        templates: path.join(__dirname, 'src/templates'),
-        theme: path.join(__dirname, 'src/theme'),
-        utils: path.join(__dirname, 'src/utils'),
+        '@': path.join(__dirname, 'src'),
+      },
+    },
+    {
+      resolve: 'gatsby-source-custom-googlemaps-static',
+      options: {
+        center: `${informationJSON.geolocation.lat},${informationJSON.geolocation.lng}`,
+        key: process.env.GOOGLE_MAPS_STATIC_API_KEY,
+        styles: [
+          { element: 'geometry', rules: { color: '0x0891b2' } },
+          { element: 'labels.text.fill', rules: { color: '0x9ca3af' } },
+          { element: 'labels.text.stroke', rules: { color: '0x242f3e' } },
+          { element: 'labels.text.fill', feature: 'administrative.locality', rules: { color: '0xd1d5db' } },
+          { element: 'geometry', feature: 'water', rules: { color: '0x1f2937' } },
+        ],
+        url: {
+          zoom: 10,
+        },
+        zoom: 4,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'assets',
+        path: `${__dirname}/content/assets`,
       },
     },
     {
@@ -83,102 +151,7 @@ module.exports = {
         path: `${__dirname}/content/data`,
       },
     },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'posts',
-        path: `${__dirname}/content/posts`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'theme',
-        path: `${__dirname}/content/theme`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-custom-googlemaps-static',
-      options: {
-        center: `${personalDetailsJSON.location.lat},${personalDetailsJSON.location.lng}`,
-        key: process.env.GOOGLE_MAPS_STATIC_API_KEY,
-        styles: {
-          dark: [
-            { element: 'geometry', rules: { color: '0x31859a' } },
-            { element: 'labels.text.fill', rules: { color: '0x746855' } },
-            { element: 'labels.text.stroke', rules: { color: '0x242f3e' } },
-            { element: 'labels.text.fill', feature: 'administrative.locality', rules: { color: '0xd59563' } },
-            { element: 'labels.text.fill', feature: 'poi', rules: { color: '0xd59563' } },
-            { element: 'geometry', feature: 'poi.park', rules: { color: '0x263c3f' } },
-            { element: 'labels.text.fill', feature: 'poi.park', rules: { color: '0x6b9a76' } },
-            { element: 'geometry', feature: 'road', rules: { color: '0x38414e' } },
-            { element: 'geometry.stroke', feature: 'road', rules: { color: '0x212a37' } },
-            { element: 'labels.text.fill', feature: 'road', rules: { color: '0x9ca5b3' } },
-            { element: 'geometry', feature: 'road.highway', rules: { color: '0x746855' } },
-            { element: 'geometry.stroke', feature: 'road.highway', rules: { color: '0x1f2835' } },
-            { element: 'labels.text.fill', feature: 'road.highway', rules: { color: '0xf3d19c' } },
-            { element: 'geometry', feature: 'transit', rules: { color: '0x2f3948' } },
-            { element: 'labels.text.fill', feature: 'transit.station', rules: { color: '0xd59563' } },
-            { element: 'geometry', feature: 'water', rules: { color: '0x17263c' } },
-          ],
-          light: [
-            { element: 'geometry', rules: { color: '0xebe3cd' } },
-            { element: 'labels.text.fill', rules: { color: '0x523735' } },
-            { element: 'labels.text.stroke', rules: { color: '0xf5f1e6' } },
-            { element: 'geometry.stroke', feature: 'administrative', rules: { color: '0xc9b2a6' } },
-            { element: 'geometry.stroke', feature: 'administrative.land_parcel', rules: { color: '0xdcd2be' } },
-            { element: 'labels.text.fill', feature: 'administrative.land_parcel', rules: { color: '0xae9e90' } },
-            { element: 'geometry', feature: 'landscape.natural', rules: { color: '0xdfd2ae' } },
-            { element: 'geometry', feature: 'poi', rules: { color: '0xdfd2ae' } },
-            { element: 'labels.text.fill', feature: 'poi', rules: { color: '0x93817c' } },
-            { element: 'geometry.fill', feature: 'poi.park', rules: { color: '0xa5b076' } },
-            { element: 'labels.text.fill', feature: 'poi.park', rules: { color: '0x447530' } },
-            { element: 'geometry', feature: 'road', rules: { color: '0xf5f1e6' } },
-            { element: 'geometry', feature: 'road.arterial', rules: { color: '0xfdfcf8' } },
-            { element: 'geometry', feature: 'road.highway', rules: { color: '0xf8c967' } },
-            { element: 'geometry.stroke', feature: 'road.highway', rules: { color: '0xe9bc62' } },
-            { element: 'geometry', feature: 'road.highway.controlled_access', rules: { color: '0xe98d58' } },
-            { element: 'geometry.stroke', feature: 'road.highway.controlled_access', rules: { color: '0xdb8555' } },
-            { element: 'labels.text.fill', feature: 'road.local', rules: { color: '0x806b63' } },
-            { element: 'geometry', feature: 'transit.line', rules: { color: '0xdfd2ae' } },
-            { element: 'labels.text.fill', feature: 'transit.line', rules: { color: '0x8f7d77' } },
-            { element: 'labels.text.stroke', feature: 'transit.line', rules: { color: '0xebe3cd' } },
-            { element: 'geometry', feature: 'transit.station', rules: { color: '0xdfd2ae' } },
-            { element: 'geometry', feature: 'water', rules: { color: '0x31859a' } },
-            { element: 'labels.text.fill', feature: 'water', rules: { color: '0x92998d' } },
-          ],
-        },
-        zoom: 4,
-      },
-    },
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              linkImagesToOriginal: false,
-              maxWidth: 768,
-              quality: 100,
-              withWebp: true,
-            },
-          },
-          {
-            resolve: 'gatsby-remark-vscode',
-            options: {
-              theme: 'Dark+ (default dark)',
-            },
-          },
-        ],
-      },
-    },
+    'gatsby-transformer-json',
+    'gatsby-transformer-sharp',
   ],
 };

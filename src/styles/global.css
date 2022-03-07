@@ -1,21 +1,28 @@
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  transition: background-color 250ms ease;
-  width: 100%;
-}
-#___gatsby {
-  position: relative;
-  min-height: 100%;
-}
-/* Format Markdown images loaded by gatsby-remark-images */
-.gatsby-resp-image-background-image,
-.gatsby-resp-image-image {
-  border-radius: 8px;
-  box-shadow: none !important; /* hack to remove white corners because of gatsby-image's box-shadow */
-}
-.grvsc-container {
-  text-align: left;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .flip-h {
+    transform: rotate3d(0, 1, 0, -180deg);
+  }
+
+  .flip-v {
+    transform: rotate3d(1, 0, 0, -180deg);
+  }
+
+  .card-back-h,
+  .card-back-v,
+  .card-front {
+    backface-visibility: hidden;
+    min-width: 100%;
+  }
+
+  .card-back-h {
+    transform: rotate3d(0, 1, 0, -180deg) translate(100%, 0);
+  }
+
+  .card-back-v {
+    transform: rotate3d(1, 0, 0, -180deg) translate(-100%, 0);
+  }
 }

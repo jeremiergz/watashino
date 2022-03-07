@@ -1,151 +1,112 @@
-import ThemeProvider from 'components/providers/ThemeProvider';
-import ThemeToggle from 'components/providers/ThemeProvider/ThemeToggle';
+import ErrorBoundary from '@/components/common/ErrorBoundary';
+import SEO from '@/components/common/SEO';
+import NotFoundPage from '@/pages/404';
+import IndexPage from '@/pages/index';
 import * as Gatsby from 'gatsby';
 import React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import ReactTestRenderer from 'react-test-renderer';
-import NotFoundPage from '../404';
-import AboutMePage from '../about-me';
-import IndexPage from '../index';
-import PostsPage from '../posts';
 
-describe('pages Test Suite', () => {
+const navigate = jest.spyOn(Gatsby, 'navigate');
+navigate.mockImplementation(() => null);
+
+describe('@/pages Test Suite', () => {
   beforeAll(() => {
-    const childImageSharp = {
-      fixed: {
-        aspectRatio: 1,
-        base64: 'data:image/png;base64',
-        src: '/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png',
-        srcSet:
-          '/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,\n/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,\n/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x',
-      },
-      fluid: {
-        aspectRatio: 1,
-        base64: 'data:image/png;base64',
-        src: '/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png',
-        srcSet:
-          '/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,\n/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,\n/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x',
-      },
-    };
-    const jobTitle = 'Full Stack Engineer';
-    const location = {
-      country: 'USA',
-      city: 'San Francisco',
-      lat: 37.77493,
-      lng: -122.41942,
-    };
     const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
     useStaticQuery.mockImplementation(() => ({
-      allMarkdownRemark: { totalCount: 1 },
-      allNavigationJson: {
-        nodes: [{ icon: 'icon', ignoreInNavigation: false, keywords: [], name: 'Test', navOrder: 0, to: '/' }],
-      },
-      appIcon: { childImageSharp },
-      banner: { childImageSharp: { fixed: { src: 'fake.png' } } },
-      companyImg: { childImageSharp },
-      coverImg: { childImageSharp },
-      dataJson: { jobTitle, location },
-      file: { childImageSharp },
-      gmapsImgs: { nodes: [{ childFile: { childImageSharp }, theme: 'default' }] },
-      mdData: { nodes: [{ frontmatter: { date: '2019-08-08', slug: '/posts/test', title: 'Test Post' } }] },
-      pageData: { keywords: ['test', 'keyword'], name: 'Test Page' },
-      personalDetails: {
-        company: { name: 'FakeCompany', website: 'https://fakecompany.test' },
-        contacts: [{ label: 'FakeContact', type: 'email', url: 'mailto:contact@fake.test' }],
-        jobTitle,
-        location,
+      information: {
+        contacts: [{ type: 'email', url: 'mailto:test@fake.com' }],
+        dateOfBirth: '2000-01-01',
+        geolocation: {
+          city: 'Montreal',
+          country: 'Canada',
+          countryCode: 'CAN',
+          lat: 45.5579564,
+          lng: -73.8703852,
+          website: 'https://www.mtl.org',
+        },
+        jobTitle: 'Fake Job',
+        nationality: 'Canadian',
+        openToGigs: false,
+        resumeUrl: 'https://fake.com',
       },
       site: {
         siteMetadata: {
-          author: 'SEO Test author',
-          description: 'SEO Test description.',
-          license: 'Test-Licence',
-          repository: { url: 'git+https://test-repository.git' },
-          title: 'SEO Test title',
-          version: '3.16.120',
+          authorName: 'Test author',
+          authorTwitterUsername: 'testAuthor',
+          color: '#fffff',
+          description: 'Test description.',
+          keywords: ['fake', 'test'],
+          license: 'MIT',
+          name: 'Test Name',
+          repositoryUrl: 'https://fake-repository.com',
+          siteUrl: 'http://localhost:8000',
+          title: 'Test title',
+          version: '99.01.0',
         },
       },
-      techImgs: { nodes: [{ base: 'tech-image.png', childImageSharp }] },
-      techs: { nodes: [{ img: 'tech-image.png', name: 'TechImage', website: 'https://image.tech' }] },
-      themeJson: {
-        colors: {
-          black: '#212121',
-          dark: '#424242',
-          error: '#f44336',
-          gray: '#757575',
-          info: '#2196f3',
-          lightgray: '#e0e0e0',
-          primary: '#31859a',
-          secondary: '#17365c',
-          success: '#4caf50',
-          vsCodeDark: '#1e1e1e',
-          white: '#fafafa',
+      staticGmapsImage: {
+        childFile: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: 'fixed',
+              placeholder: {
+                fallback: 'data:image/png;base64,fake',
+              },
+              images: {
+                fallback: {
+                  src: '/static/fake.png',
+                  srcSet: '/static/fake.png 1115w',
+                  sizes: '1114.8387096774195px',
+                },
+                sources: [
+                  {
+                    srcSet: '/static/fake.avif 1115w',
+                    type: 'image/avif',
+                    sizes: '1114.8387096774195px',
+                  },
+                  {
+                    srcSet: '/static/fake.webp 1115w',
+                    type: 'image/webp',
+                    sizes: '1114.8387096774195px',
+                  },
+                ],
+              },
+              width: 1152,
+              height: 1240,
+            },
+          },
         },
-        fonts: {
-          main: "'Open Sans', sans-serif",
-        },
-        fontWeights: {
-          bold: 800,
-          regular: 400,
-          semiBold: 600,
-        },
+        mapURL: 'https://www.google.com/maps/@?api=1&map_action=map&center=45.5579564,-73.8703852&zoom=10',
       },
     }));
-    const navigate = jest.spyOn(Gatsby, 'navigate');
-    navigate.mockImplementation(() => null);
   });
 
-  describe('pages/404 Test Suite', () => {
+  describe('NotFoundPage Test Suite', () => {
     it('matches snapshot', () => {
       const jsx = (
-        <HelmetProvider>
-          <ThemeProvider>
-            <ThemeToggle />
-            <NotFoundPage />
-          </ThemeProvider>
-        </HelmetProvider>
+        <ErrorBoundary>
+          <HelmetProvider>
+            <SEO />
+            {/* @ts-ignore */}
+            <NotFoundPage navigate={navigate} />
+          </HelmetProvider>
+        </ErrorBoundary>
       );
       expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
     });
   });
 
-  describe('pages/about-me Test Suite', () => {
+  describe('IndexPage Test Suite', () => {
     it('matches snapshot', () => {
       const jsx = (
-        <HelmetProvider>
-          <ThemeProvider>
-            <ThemeToggle />
-            <AboutMePage />
-          </ThemeProvider>
-        </HelmetProvider>
-      );
-      expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
-    });
-  });
-
-  describe('pages/index Test Suite', () => {
-    it('matches snapshot', () => {
-      const jsx = (
-        <HelmetProvider>
-          <ThemeProvider>
-            <ThemeToggle />
+        <ErrorBoundary>
+          <HelmetProvider>
+            <SEO />
+            {/* @ts-ignore */}
             <IndexPage />
-          </ThemeProvider>
-        </HelmetProvider>
-      );
-      expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
-    });
-  });
-
-  describe('pages/posts Test Suite', () => {
-    it('matches snapshot', () => {
-      const jsx = (
-        <HelmetProvider>
-          <ThemeProvider>
-            <ThemeToggle />
-            <PostsPage />
-          </ThemeProvider>
-        </HelmetProvider>
+          </HelmetProvider>
+        </ErrorBoundary>
       );
       expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
     });

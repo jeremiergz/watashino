@@ -1,15 +1,21 @@
-import ThemeProvider from 'components/providers/ThemeProvider';
-import ThemeToggle from 'components/providers/ThemeProvider/ThemeToggle';
+import '@/styles/global.css';
+import 'typeface-open-sans';
+import ErrorBoundary from '@/components/common/ErrorBoundary';
+import SEO from '@/components/common/SEO';
+import { isBrowser } from '@/utils';
 import React from 'react';
-import 'styles/global.css';
 
-const wrapRootElement = ({ element }) => {
+if (isBrowser()) {
+  document.documentElement.classList.add('dark');
+}
+
+export const wrapRootElement = ({ element }) => {
   return (
-    <ThemeProvider>
-      <ThemeToggle />
-      {element}
-    </ThemeProvider>
+    <ErrorBoundary>
+      <React.StrictMode>
+        <SEO />
+        {element}
+      </React.StrictMode>
+    </ErrorBoundary>
   );
 };
-
-export { wrapRootElement };

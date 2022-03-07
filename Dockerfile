@@ -1,30 +1,15 @@
-FROM node:12 AS builder
-
-ARG GOOGLE_MAPS_STATIC_API_KEY
-
-RUN apt-get update && \
-  apt-get install --yes libglu1 && \
-  apt-get clean && \
-  rm -rf /var/cache/apt/archives
-
-USER node
-WORKDIR /tmp
-COPY --chown=node:node . .
-
-RUN npm install --no-audit && \
-  npm run build
-
-FROM nginx:1.17-alpine
+FROM nginx:1-alpine
 
 ARG GIT_COMMIT
 ARG VERSION
 
-LABEL maintainer="Jeremie Rodriguez <contact@jeremierodriguez.com> (https://github.com/jeremiergz)" \
-  description="My personal website about my journey as a developer, powered by Gatsby." \
-  git_commit=${GIT_COMMIT} \
-  version=${VERSION}
+LABEL description="Yet Another Resume Website. This time it's mine though." \
+  git_commit="${GIT_COMMIT}" \
+  maintainer="Jeremie Rodriguez <contact@jeremierodriguez.com> (https://github.com/jeremiergz)" \
+  version="${VERSION}"
 
 WORKDIR /usr/share/nginx/html
-COPY --from=builder --chown=nginx /tmp/public .
+COPY --chown=nginx ./public/ .
+COPY ./nginx.conf /etc/nginx/nginx.conf
 
 EXPOSE 80

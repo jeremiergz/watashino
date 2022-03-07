@@ -1,7 +1,7 @@
 const fs = require('fs');
 const https = require('https');
 const path = require('path');
-const querystring = require('querystring');
+const { URLSearchParams } = require('url');
 const { plugin } = require('./config');
 
 /**
@@ -40,7 +40,8 @@ function encodeStyleParams(styles) {
     if (style.feature) toAdd.push(`feature:${style.feature}`);
     if (style.element) toAdd.push(`element:${style.element}`);
     if (style.rules) Object.keys(style.rules).forEach(rule => toAdd.push(`${rule}:${style.rules[rule]}`));
-    if (toAdd.length > 0) acc += `&${querystring.stringify({ style: toAdd.join('|') })}`;
+    if (toAdd.length > 0) acc += `&${new URLSearchParams({ style: toAdd.join('|') })}`;
+
     return acc;
   }, '');
 }

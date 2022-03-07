@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`components/primitives/Box Test Suite matches snapshot 1`] = `
-<div
-  className="sc-AxjAm hyNcgC"
->
-  Box Component
-</div>
-`;

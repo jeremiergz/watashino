@@ -1,34 +1,12 @@
-import Heading from 'components/Heading';
-import Layout from 'components/Layout';
-import Link from 'components/Link';
-import { graphql, useStaticQuery } from 'gatsby';
-import React from 'react';
-import { Routes } from 'utils/Routes';
+import { PageProps } from 'gatsby';
+import { useEffect } from 'react';
 
-const NotFoundPage: React.FC = () => {
-  const {
-    pageData: { keywords, name },
-  } = useStaticQuery<GraphQL.NotFoundPageQuery>(graphql`
-    query NotFoundPage {
-      pageData: navigationJson(page: { eq: "NotFoundPage" }) {
-        keywords
-        name
-      }
-    }
-  `);
-  return (
-    <Layout>
-      <Layout.Content keywords={keywords} path={Routes.notFound} title={name} type="section">
-        <Heading variant="h4">Man, I hate when this happens...</Heading>
-        {'Find your way '}
-        <Link aria-label="Go to homepage" to={Routes.aboutMe} variant="underlined">
-          Home
-        </Link>
-      </Layout.Content>
-    </Layout>
-  );
-};
+function NotFoundPage({ navigate }: PageProps): JSX.Element {
+  useEffect(() => {
+    navigate('/');
+  }, []);
 
-NotFoundPage.displayName = 'NotFoundPage';
+  return null;
+}
 
 export default NotFoundPage;

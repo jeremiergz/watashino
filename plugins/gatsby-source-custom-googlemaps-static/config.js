@@ -3,6 +3,7 @@ const format = 'png';
 const gmapsAPIURL = 'https://www.google.com/maps/@?api=1&map_action=map';
 const nodeType = 'StaticGmapsImage';
 const plugin = 'gatsby-source-custom-googlemaps-static';
+const scale = 2;
 const size = '640x640';
 const staticGmapsAPIURL = 'https://maps.googleapis.com/maps/api/staticmap';
 
@@ -12,6 +13,7 @@ module.exports = {
   gmapsAPIURL,
   nodeType,
   plugin,
+  scale,
   size,
   staticGmapsAPIURL,
 };

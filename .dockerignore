@@ -38,9 +38,8 @@ coverage/
 dist/
 node_modules/
 out/
-package/
-public/
 .dockerignore
-Dockerfile
-*.log*
+.env*
 *-report.*
+*.log*
+Dockerfile

@@ -1,1474 +1,483 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`pages Test Suite pages/404 Test Suite matches snapshot 1`] = `
-Array [
-  <button
-    aria-label="Toggle Theme mode"
-    className="sc-AxjAm iWlnJd"
-    onClick={[Function]}
-    width={72}
-  >
-    <div
-      className="sc-AxirZ esYvfu"
-      display="flex"
-      width="100%"
-    >
-      <svg
-        className="sc-AxhCb hSlENV"
-        height={20}
-        viewBox="0 0 512 512"
-        width={20}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M507.834 301.608l-54.769-48.312 52.832-50.399a7.46 7.46 0 002.099-7.189 7.505 7.505 0 00-5.211-5.401l-70.316-20.292 25.988-68.056a7.454 7.454 0 00-1.204-7.389 7.55 7.55 0 00-7.038-2.657l-72.274 11.652-5.878-72.561a7.485 7.485 0 00-4.275-6.161 7.569 7.569 0 00-7.504.601l-60.266 41.342-36.609-63.044A7.536 7.536 0 00256.889 0a7.534 7.534 0 00-6.519 3.742L208.347 76.11l-72.69-41.953a7.566 7.566 0 00-7.528-.018 7.477 7.477 0 00-3.78 6.473l-.176 72.795-72.965-6.014a7.55 7.55 0 00-6.807 3.194 7.444 7.444 0 00-.622 7.459l31.242 65.835-68.513 25.681a7.499 7.499 0 00-4.773 5.789 7.456 7.456 0 002.656 7.003l56.619 46.152-50.813 52.41a7.457 7.457 0 00-1.816 7.264 7.508 7.508 0 005.419 5.194l71.055 17.551-23.295 69.011a7.453 7.453 0 001.494 7.336 7.554 7.554 0 007.137 2.382l71.76-14.443 8.721 72.278a7.488 7.488 0 004.513 5.99 7.565 7.565 0 007.475-.891l58.596-43.647 39.055 59.566a7.538 7.538 0 006.662 3.486 7.533 7.533 0 006.368-3.992l34.107-62.405 61.839 38.974a7.566 7.566 0 007.522.31 7.482 7.482 0 004.03-6.322l3.031-72.734 72.674 8.84a7.555 7.555 0 006.928-2.927 7.45 7.45 0 00.914-7.43L435.75 337.31l69.465-23.003a7.502 7.502 0 004.997-5.599 7.46 7.46 0 00-2.378-7.1z"
-          fill="#ffa600"
-        />
-        <ellipse
-          cx="254.35"
-          cy="254.691"
-          fill="#ffdb2d"
-          rx="155.069"
-          ry="154.949"
-        />
-        <path
-          d="M254.354 99.743c-3.884 0-7.732.147-11.543.428 80.25 5.901 143.525 72.825 143.525 154.521 0 81.695-63.275 148.619-143.525 154.521 3.811.28 7.66.428 11.543.428 85.641 0 155.068-69.373 155.068-154.948 0-85.577-69.427-154.95-155.068-154.95z"
-          fill="#ffca00"
-        />
-      </svg>
-      <span
-        className="sc-AxiKw liBuIY"
-        color="gray"
-        fontFamily="'Open Sans', sans-serif"
-        fontSize={14}
-      >
-        light
-      </span>
-    </div>
-  </button>,
+exports[`@/pages Test Suite IndexPage Test Suite matches snapshot 1`] = `
+<div
+  className="m-auto flex h-full w-full flex-col items-center pt-16 md:pt-0 dark:text-gray-300"
+>
   <header
-    className="sc-AxirZ dZqEeB"
-    display="flex"
+    className="fixed top-0 left-0 right-0 z-50 flex h-16 w-full max-w-5xl justify-center bg-gray-900 py-4 md:relative md:justify-end md:bg-transparent md:py-8"
   >
-    <a
-      aria-label="Go to homepage"
-      className="sc-AxirZ sc-AxgMl gABrJl"
-      href="/about-me"
-      target="_blank"
-    >
-      <div
-        className="sc-AxheI ckNXyg gatsby-image-wrapper"
-        style={
-          Object {
-            "display": "inline-block",
-            "height": undefined,
-            "overflow": "hidden",
-            "position": "relative",
-            "width": undefined,
-          }
-        }
-      >
-        <img
-          alt=""
-          aria-hidden={true}
-          src="data:image/png;base64"
-          style={
-            Object {
-              "height": 80,
-              "left": 0,
-              "objectFit": "cover",
-              "objectPosition": "center",
-              "opacity": 1,
-              "position": "absolute",
-              "top": 0,
-              "transitionDelay": "500ms",
-              "width": 80,
-            }
-          }
-        />
-        <picture>
-          <source
-            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
-          />
-          <img
-            alt=""
-            loading="lazy"
-            onLoad={[Function]}
-            src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
-            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
-            style={
-              Object {
-                "height": 80,
-                "left": 0,
-                "objectFit": "cover",
-                "objectPosition": "center",
-                "opacity": 0,
-                "position": "absolute",
-                "top": 0,
-                "transition": "opacity 500ms",
-                "width": 80,
-              }
-            }
-          />
-        </picture>
-        <noscript
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
-            }
-          }
-        />
-      </div>
-      <div
-        className="sc-AxirZ fAeBe"
-        display="flex"
-      >
-        <span
-          className="sc-AxiKw sc-AxhUy hyodXU"
-          color="primary"
-          fontWeight="bold"
-          letterSpacing={-1}
-        >
-          Jeremie Rodriguez
-        </span>
-        <span
-          className="sc-AxiKw sc-AxhUy dQelTb"
-          fontWeight="semiBold"
-        >
-          Full Stack Engineer
-        </span>
-      </div>
-    </a>
     <nav
-      className="sc-AxirZ fMsvmv"
-      display="flex"
+      className="flex font-semibold"
     >
       <div
-        className="sc-AxirZ cCMoeS"
-        display="flex"
-      >
-        <a
-          aria-label="Go to Test page"
-          className="sc-AxirZ sc-AxgMl fNnSKC"
-          href="/"
-          target="_blank"
-        >
-          <svg
-            className="sc-AxhCb jeQFck"
-            fill="#262626"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          />
-          Test
-        </a>
-      </div>
-      <div
-        className="sc-AxirZ cCMoeS"
-        display="flex"
-      >
-        <a
-          className="sc-AxirZ sc-AxgMl fNnSKC"
-          onClick={[Function]}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <svg
-            className="sc-AxhCb jeQFck sc-AxhCb jeQFck"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"
-              fill="#262626"
-            />
-          </svg>
-          Resume
-        </a>
-      </div>
-    </nav>
-  </header>,
-  <main
-    className="sc-AxirZ eeQbIR"
-  >
-    <span
-      className="sc-AxiKw sc-AxhUy hsiEiB"
-    >
-      Test Page
-    </span>
-    <section
-      className="sc-AxirZ dVRjgl"
-    >
-      <span
-        className="sc-AxiKw sc-AxhUy lgyYxC"
-      >
-        Man, I hate when this happens...
-      </span>
-      Find your way 
-      <a
-        aria-label="Go to homepage"
-        className="sc-AxirZ sc-AxgMl ijhgGX"
-        href="/about-me"
-        target="_blank"
-        variant="underlined"
-      >
-        Home
-      </a>
-    </section>
-  </main>,
-  <footer
-    className="sc-AxirZ qAAtk"
-  >
-    <a
-      aria-label="Go to version 3.16.120 source code"
-      className="sc-AxirZ sc-AxgMl koQhhb"
-      href="https://test-repository/tree/3.16.120"
-      onClick={[Function]}
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      v3.16.120 - source code
-    </a>
-    <div
-      className="sc-AxirZ aCqYu"
-      color="gray"
-      fontSize={14}
-    >
-      licensed under the Test-Licence license
-    </div>
-  </footer>,
-]
-`;
-
-exports[`pages Test Suite pages/about-me Test Suite matches snapshot 1`] = `
-Array [
-  <button
-    aria-label="Toggle Theme mode"
-    className="sc-AxjAm iWlnJd"
-    onClick={[Function]}
-    width={72}
-  >
-    <div
-      className="sc-AxirZ esYvfu"
-      display="flex"
-      width="100%"
-    >
-      <svg
-        className="sc-AxhCb hSlENV"
-        height={20}
-        viewBox="0 0 512 512"
-        width={20}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M507.834 301.608l-54.769-48.312 52.832-50.399a7.46 7.46 0 002.099-7.189 7.505 7.505 0 00-5.211-5.401l-70.316-20.292 25.988-68.056a7.454 7.454 0 00-1.204-7.389 7.55 7.55 0 00-7.038-2.657l-72.274 11.652-5.878-72.561a7.485 7.485 0 00-4.275-6.161 7.569 7.569 0 00-7.504.601l-60.266 41.342-36.609-63.044A7.536 7.536 0 00256.889 0a7.534 7.534 0 00-6.519 3.742L208.347 76.11l-72.69-41.953a7.566 7.566 0 00-7.528-.018 7.477 7.477 0 00-3.78 6.473l-.176 72.795-72.965-6.014a7.55 7.55 0 00-6.807 3.194 7.444 7.444 0 00-.622 7.459l31.242 65.835-68.513 25.681a7.499 7.499 0 00-4.773 5.789 7.456 7.456 0 002.656 7.003l56.619 46.152-50.813 52.41a7.457 7.457 0 00-1.816 7.264 7.508 7.508 0 005.419 5.194l71.055 17.551-23.295 69.011a7.453 7.453 0 001.494 7.336 7.554 7.554 0 007.137 2.382l71.76-14.443 8.721 72.278a7.488 7.488 0 004.513 5.99 7.565 7.565 0 007.475-.891l58.596-43.647 39.055 59.566a7.538 7.538 0 006.662 3.486 7.533 7.533 0 006.368-3.992l34.107-62.405 61.839 38.974a7.566 7.566 0 007.522.31 7.482 7.482 0 004.03-6.322l3.031-72.734 72.674 8.84a7.555 7.555 0 006.928-2.927 7.45 7.45 0 00.914-7.43L435.75 337.31l69.465-23.003a7.502 7.502 0 004.997-5.599 7.46 7.46 0 00-2.378-7.1z"
-          fill="#ffa600"
-        />
-        <ellipse
-          cx="254.35"
-          cy="254.691"
-          fill="#ffdb2d"
-          rx="155.069"
-          ry="154.949"
-        />
-        <path
-          d="M254.354 99.743c-3.884 0-7.732.147-11.543.428 80.25 5.901 143.525 72.825 143.525 154.521 0 81.695-63.275 148.619-143.525 154.521 3.811.28 7.66.428 11.543.428 85.641 0 155.068-69.373 155.068-154.948 0-85.577-69.427-154.95-155.068-154.95z"
-          fill="#ffca00"
-        />
-      </svg>
-      <span
-        className="sc-AxiKw liBuIY"
-        color="gray"
-        fontFamily="'Open Sans', sans-serif"
-        fontSize={14}
-      >
-        light
-      </span>
-    </div>
-  </button>,
-  <header
-    className="sc-AxirZ dZqEeB"
-    display="flex"
-  >
-    <a
-      aria-label="Go to homepage"
-      className="sc-AxirZ sc-AxgMl gABrJl"
-      href="/about-me"
-      target="_blank"
-    >
-      <div
-        className="sc-AxheI ckNXyg gatsby-image-wrapper"
-        style={
-          Object {
-            "display": "inline-block",
-            "height": undefined,
-            "overflow": "hidden",
-            "position": "relative",
-            "width": undefined,
-          }
-        }
-      >
-        <img
-          alt=""
-          aria-hidden={true}
-          src="data:image/png;base64"
-          style={
-            Object {
-              "height": 80,
-              "left": 0,
-              "objectFit": "cover",
-              "objectPosition": "center",
-              "opacity": 1,
-              "position": "absolute",
-              "top": 0,
-              "transitionDelay": "500ms",
-              "width": 80,
-            }
-          }
-        />
-        <picture>
-          <source
-            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
-          />
-          <img
-            alt=""
-            loading="lazy"
-            onLoad={[Function]}
-            src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
-            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
-            style={
-              Object {
-                "height": 80,
-                "left": 0,
-                "objectFit": "cover",
-                "objectPosition": "center",
-                "opacity": 0,
-                "position": "absolute",
-                "top": 0,
-                "transition": "opacity 500ms",
-                "width": 80,
-              }
-            }
-          />
-        </picture>
-        <noscript
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
-            }
-          }
-        />
-      </div>
-      <div
-        className="sc-AxirZ fAeBe"
-        display="flex"
+        className="relative flex items-center"
       >
         <span
-          className="sc-AxiKw sc-AxhUy hyodXU"
-          color="primary"
-          fontWeight="bold"
-          letterSpacing={-1}
+          className="absolute text-sm font-bold text-primary"
         >
-          Jeremie Rodriguez
+          &gt;
         </span>
-        <span
-          className="sc-AxiKw sc-AxhUy dQelTb"
-          fontWeight="semiBold"
-        >
-          Full Stack Engineer
-        </span>
-      </div>
-    </a>
-    <nav
-      className="sc-AxirZ fMsvmv"
-      display="flex"
-    >
-      <div
-        className="sc-AxirZ cCMoeS"
-        display="flex"
-      >
         <a
-          aria-label="Go to Test page"
-          className="sc-AxirZ sc-AxgMl fNnSKC"
-          href="/"
-          target="_blank"
-        >
-          <svg
-            className="sc-AxhCb jeQFck"
-            fill="#262626"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          />
-          Test
-        </a>
-      </div>
-      <div
-        className="sc-AxirZ cCMoeS"
-        display="flex"
-      >
-        <a
-          className="sc-AxirZ sc-AxgMl fNnSKC"
+          className="cursor-pointer rounded py-1 px-4 transition hover:shadow-md hover:brightness-90 transition hover:shadow-md hover:brightness-90"
           onClick={[Function]}
           rel="noopener noreferrer"
-          target="_blank"
+          target="_self"
         >
-          <svg
-            className="sc-AxhCb jeQFck sc-AxhCb jeQFck"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"
-              fill="#262626"
-            />
-          </svg>
-          Resume
-        </a>
-      </div>
-    </nav>
-  </header>,
-  <main
-    className="sc-AxirZ eeQbIR"
-  >
-    <span
-      className="sc-AxiKw sc-AxhUy hsiEiB"
-    >
-      Test Page
-    </span>
-    <section
-      className="sc-AxirZ dVRjgl"
-    >
-      <div
-        className="sc-AxirZ cuFXft"
-        display="flex"
-      >
-        <a
-          aria-label="Open email contact"
-          className="sc-AxirZ sc-AxgMl ijXTvW"
-          href="mailto:contact@fake.test"
-          onClick={[Function]}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <div
-            className="sc-AxirZ fLScpy"
-            width={
-              Object {
-                "_": 32,
-                "mobileM": 38,
-              }
-            }
-          >
-            <svg
-              className="sc-AxhCb jeQFck"
-              fill="#17365c"
-              viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="256"
-                cy="256"
-                fill="white"
-                r="224"
-              />
-              <path
-                d="M257 210c-24.814 0-45 20.186-45 45s20.186 45 45 45 45-20.186 45-45-20.186-45-45-45z"
-              />
-              <path
-                d="M255 0C114.39 0 0 114.39 0 255s114.39 257 255 257 257-116.39 257-257S395.61 0 255 0zm107 330c-20.273 0-38.152-10.161-49.017-25.596C299.23 319.971 279.354 330 257 330c-41.353 0-75-33.647-75-75s33.647-75 75-75c16.948 0 32.426 5.865 45 15.383V195c0-8.291 6.709-15 15-15s15 6.709 15 15v75c0 16.538 13.462 30 30 30s30-13.462 30-30c0-100.391-66.432-150-135-150-74.443 0-135 60.557-135 135s60.557 135 135 135c30 0 58.374-9.609 82.061-27.803 15.822-12.078 33.94 11.765 18.281 23.789C328.353 408.237 293.665 420 257 420c-90.981 0-165-74.019-165-165S166.019 90 257 90c82.897 0 165 61.135 165 180 0 33.091-26.909 60-60 60z"
-              />
-            </svg>
-          </div>
-        </a>
-      </div>
-      <div
-        className="sc-AxheI ckNXyg gatsby-image-wrapper"
-        style={
-          Object {
-            "maxHeight": null,
-            "maxWidth": null,
-            "overflow": "hidden",
-            "position": "relative",
-          }
-        }
-      >
-        <div
-          aria-hidden={true}
-          style={
-            Object {
-              "paddingBottom": "100%",
-              "width": "100%",
-            }
-          }
-        />
-        <img
-          alt=""
-          aria-hidden={true}
-          src="data:image/png;base64"
-          style={
-            Object {
-              "borderRadius": 8,
-              "height": "100%",
-              "left": 0,
-              "objectFit": "cover",
-              "objectPosition": "center",
-              "opacity": 1,
-              "position": "absolute",
-              "top": 0,
-              "transitionDelay": "500ms",
-              "width": "100%",
-            }
-          }
-        />
-        <picture>
-          <source
-            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
-          />
-          <img
-            alt="Cover"
-            loading="auto"
-            onLoad={[Function]}
-            src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
-            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
-            style={
-              Object {
-                "borderRadius": 8,
-                "height": "100%",
-                "left": 0,
-                "objectFit": "cover",
-                "objectPosition": "center",
-                "opacity": 0,
-                "position": "absolute",
-                "top": 0,
-                "transition": "opacity 500ms",
-                "width": "100%",
-              }
-            }
-          />
-        </picture>
-        <noscript
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"auto\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"Cover\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
-            }
-          }
-        />
-      </div>
-      <p
-        className="sc-AxiKw fZYyYk"
-        fontSize={20}
-      >
-        Hi there, I'm Jeremie!
-      </p>
-      <p
-        className="sc-AxiKw fZYyYk"
-        fontSize={20}
-      >
-        I'm a Full Stack Engineer freelancer, previously working at 
-        <a
-          aria-label="Go to https://fakecompany.test"
-          className="sc-AxirZ sc-AxgMl hVFUcy"
-          href="https://fakecompany.test"
-          onClick={[Function]}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
+          <span>
+            who
+          </span>
           <span
-            className="sc-AxheI XTFGL gatsby-image-wrapper"
-            style={
-              Object {
-                "display": "inline-block",
-                "height": undefined,
-                "overflow": "hidden",
-                "position": "relative",
-                "width": undefined,
-              }
-            }
+            className="text-primary"
           >
-            <img
-              alt=""
-              aria-hidden={true}
-              src="data:image/png;base64"
-              style={
-                Object {
-                  "height": "100%",
-                  "left": 0,
-                  "objectFit": "cover",
-                  "objectPosition": "center",
-                  "opacity": 1,
-                  "position": "absolute",
-                  "top": 0,
-                  "transitionDelay": "500ms",
-                  "width": "100%",
-                }
-              }
-            />
-            <picture>
-              <source
-                srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
-              />
-              <img
-                alt="FakeCompany"
-                loading="lazy"
-                onLoad={[Function]}
-                src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
-                srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
-                style={
-                  Object {
-                    "height": "100%",
-                    "left": 0,
-                    "objectFit": "cover",
-                    "objectPosition": "center",
-                    "opacity": 0,
-                    "position": "absolute",
-                    "top": 0,
-                    "transition": "opacity 500ms",
-                    "width": "100%",
-                  }
-                }
-              />
-            </picture>
-            <noscript
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"FakeCompany\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
-                }
-              }
-            />
+            ami
           </span>
         </a>
-        .
-      </p>
-      <p
-        className="sc-AxiKw fZYyYk"
-        fontSize={20}
-      >
-        I particularly enjoy working with those technologies:
-      </p>
+      </div>
       <div
-        className="sc-AxirZ cHEbaY"
-        display="flex"
+        className="relative flex items-center ml-10"
       >
         <a
-          aria-label="Go to https://image.tech"
-          className="sc-AxirZ sc-AxgMl jDAIQM"
-          href="https://image.tech"
-          marginY={2}
+          className="cursor-pointer rounded py-1 px-4 transition hover:shadow-md hover:brightness-90 transition hover:shadow-md hover:brightness-90"
           onClick={[Function]}
           rel="noopener noreferrer"
-          target="_blank"
+          target="_self"
+        >
+          <span>
+            where
+          </span>
+          <span
+            className="text-primary"
+          >
+            ami
+          </span>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main
+    className="grid max-w-5xl transform-gpu will-change-transform"
+  >
+    <div
+      className="flex [perspective:1000px]"
+    >
+      <div
+        className="flex transition-transform duration-500 [transform-style:preserve-3d]"
+      >
+        <section
+          className="card-front md:max-h-[532px]"
         >
           <div
-            className="sc-AxheI ckNXyg gatsby-image-wrapper"
-            style={
-              Object {
-                "display": "inline-block",
-                "height": undefined,
-                "overflow": "hidden",
-                "position": "relative",
-                "width": undefined,
-              }
-            }
+            className="flex w-full bg-primary px-4 py-4 pt-8 md:max-h-[236px] md:pt-4 lg:rounded-t-2xl"
           >
-            <img
-              alt=""
-              aria-hidden={true}
-              src="data:image/png;base64"
-              style={
-                Object {
-                  "height": "52px",
-                  "left": 0,
-                  "objectFit": "cover",
-                  "objectPosition": "center",
-                  "opacity": 1,
-                  "position": "absolute",
-                  "top": 0,
-                  "transitionDelay": "500ms",
-                  "width": "52px",
-                }
-              }
-            />
-            <picture>
-              <source
-                srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
-              />
-              <img
-                alt="TechImage"
-                loading="lazy"
-                onLoad={[Function]}
-                src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
-                srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
-                style={
-                  Object {
-                    "height": "52px",
-                    "left": 0,
-                    "objectFit": "cover",
-                    "objectPosition": "center",
-                    "opacity": 0,
-                    "position": "absolute",
-                    "top": 0,
-                    "transition": "opacity 500ms",
-                    "width": "52px",
-                  }
-                }
-              />
-            </picture>
-            <noscript
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"TechImage\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
-                }
-              }
-            />
+            <div
+              className="flex w-full flex-col-reverse md:flex-row"
+            >
+              <div
+                className="flex flex-grow flex-col items-center justify-center text-center md:h-full"
+              >
+                <h1
+                  className="text-3xl font-bold md:text-4xl"
+                >
+                  Test author
+                </h1>
+                <h2
+                  className="mt-4 mb-3 text-xl font-bold text-secondary md:text-2xl"
+                >
+                  Fake Job
+                </h2>
+                <div
+                  className="flex"
+                />
+              </div>
+            </div>
           </div>
-        </a>
-      </div>
-      <div
-        className="sc-AxirZ gNCndr"
-        fontSize={20}
-      >
-        ▾ By the way, this is where I live, 
-        <a
-          aria-label="Go to undefined"
-          className="sc-AxirZ sc-AxgMl ijXTvW"
-          onClick={[Function]}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          San Francisco
-        </a>
-        ! ▾
-      </div>
-      <div
-        className="sc-AxirZ kdLUNZ"
-      >
-        <a
-          aria-label="Go to undefined"
-          className="sc-AxirZ sc-AxgMl ijXTvW"
-          onClick={[Function]}
-          rel="noopener noreferrer"
-          target="_blank"
+          <div
+            className="md:max-h-[296px] md:min-h-[296px] w-full bg-secondary px-4 pb-8 pt-16 md:px-16 md:pb-0 lg:rounded-b-2xl"
+          >
+            <div
+              className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-16"
+            >
+              <div
+                className="flex flex-col"
+              >
+                <h5
+                  className="text-center md:text-left"
+                >
+                  <span
+                    className="font-bold"
+                  >
+                    Who 
+                  </span>
+                  <span
+                    className="font-bold text-primary"
+                  >
+                    Am I
+                  </span>
+                </h5>
+                <p
+                  className="py-4 text-center text-sm md:text-left"
+                >
+                  Hello, I'm 
+                  Test author
+                  . Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum ullamcorper sem, at placerat dolor volutpat ac. Duis nulla enim, condimentum nec ultricies.
+                </p>
+                <div
+                  className="flex flex-col items-center justify-center md:flex-row md:justify-start"
+                >
+                  <form
+                    action="Jeremie Rodriguez - CV (EN).pdf"
+                    method="get"
+                  >
+                    <button
+                      className="md:-ml-4 flex items-center rounded py-2 px-4 text-xs font-semibold uppercase shadow-material-sm transition hover:shadow-material-lg hover:brightness-75"
+                      type="submit"
+                    >
+                      <svg
+                        className="fill-gray-300 mr-1"
+                        height={16}
+                        viewBox="0 0 20 20"
+                        width={16}
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                        />
+                      </svg>
+                      Resume
+                    </button>
+                  </form>
+                  <span
+                    className="my-3 text-xs md:my-0 md:mx-3"
+                  >
+                    or
+                  </span>
+                  <a
+                    className="text-sm text-primary transition hover:shadow-md hover:brightness-90"
+                    href="https://fake.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    read it online
+                  </a>
+                </div>
+              </div>
+              <ul
+                className="m-auto flex flex-col justify-center"
+              >
+                <li
+                  className="mb-1 flex items-center"
+                >
+                  <label
+                    className="mr-2 inline-block text-sm text-gray-400 md:w-24"
+                  >
+                    Age:
+                  </label>
+                  <span>
+                    22
+                  </span>
+                </li>
+                <li
+                  className="mb-1 flex items-center"
+                >
+                  <label
+                    className="mr-2 inline-block text-sm text-gray-400 md:w-24"
+                  >
+                    Nationality:
+                  </label>
+                  <span>
+                    Canadian
+                  </span>
+                </li>
+                <li
+                  className="mb-1 flex items-center"
+                >
+                  <label
+                    className="mr-2 inline-block text-sm text-gray-400 md:w-24"
+                  >
+                    Email:
+                  </label>
+                  <span
+                    className="text-primary"
+                  >
+                    <a
+                      className="-ml-1 rounded p-1 transition hover:shadow-md hover:brightness-90"
+                      href="mailto:test@fake.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      test@fake.com
+                    </a>
+                  </span>
+                </li>
+                <li
+                  className="mb-1 flex items-center"
+                >
+                  <label
+                    className="mr-2 inline-block text-sm text-gray-400 md:w-24"
+                  >
+                    Address:
+                  </label>
+                  <div
+                    className="flex items-center"
+                  >
+                    <a
+                      className="-ml-1 mr-1 rounded p-1 transition hover:shadow-md hover:brightness-90"
+                      href="https://www.mtl.org"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Montreal
+                    </a>
+                    <svg
+                      className="rounded-md"
+                      height={24}
+                      viewBox="0 0 513 342"
+                      width={24}
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        fill="#ffffff"
+                        height="342"
+                        width="513"
+                        y="0"
+                      />
+                      <g
+                        fill="#ff0000"
+                      >
+                        <rect
+                          height="342"
+                          width="142"
+                          y="0"
+                        />
+                        <rect
+                          height="342"
+                          width="142"
+                          x="371"
+                          y="0"
+                        />
+                        <polygon
+                          points="306.5,206 356.9,180.8 331.7,168.2 331.7,143 281.3,168.2 306.5,117.8 281.3,117.8 256.1,80 230.9,117.8 205.7,117.8 230.9,168.2 180.5,143 180.5,168.2 155.3,180.8 205.7,206 193.1,231.2 243.5,231.2 243.5,269 268.7,269 268.7,231.2 319.1,231.2"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                </li>
+                <li
+                  className="flex items-center"
+                >
+                  <label
+                    className="mr-2 inline-block text-sm text-gray-400 md:w-24"
+                  >
+                    Freelancing:
+                  </label>
+                  <span
+                    className="mr-2"
+                  >
+                    Unavailable
+                  </span>
+                  <svg
+                    className="inline-block h-5 w-5"
+                    height={32}
+                    viewBox="0 0 64 64"
+                    width={32}
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="32"
+                      cy="32"
+                      fill="#ffdd67"
+                      r="30"
+                    />
+                    <g
+                      fill="#664e27"
+                    >
+                      <circle
+                        cx="20.5"
+                        cy="24.6"
+                        r="5"
+                      />
+                      <circle
+                        cx="43.5"
+                        cy="24.6"
+                        r="5"
+                      />
+                      <path
+                        d="m19.4 45.8c8.1-5.7 17.1-5.6 25.2 0 1 .7 1.8-.5 1.2-1.6-2.5-4-7.4-7.7-13.8-7.7s-11.3 3.6-13.8 7.7c-.6 1.1.2 2.3 1.2 1.6"
+                      />
+                    </g>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section
+          className="card-back-h md:card-back-v md:max-h-[532px] flex items-center justify-center"
         >
           <div
-            className="sc-AxheI sc-Axmtr llhWOU gatsby-image-wrapper"
+            className="gatsby-image-wrapper h-full lg:rounded-2xl"
+            data-gatsby-image-wrapper=""
             style={
               Object {
-                "display": "inline-block",
-                "height": undefined,
+                "backgroundColor": undefined,
+                "height": 1240,
                 "overflow": "hidden",
                 "position": "relative",
-                "width": undefined,
+                "width": 1152,
               }
             }
           >
             <img
               alt=""
               aria-hidden={true}
-              src="data:image/png;base64"
+              data-placeholder-image=""
+              decoding="async"
+              src="data:image/png;base64,fake"
               style={
                 Object {
                   "height": "100%",
                   "left": 0,
-                  "objectFit": "cover",
-                  "objectPosition": "center",
-                  "opacity": 1,
                   "position": "absolute",
                   "top": 0,
-                  "transitionDelay": "500ms",
                   "width": "100%",
                 }
               }
             />
             <picture>
               <source
-                srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+                sizes="1114.8387096774195px"
+                srcSet="/static/fake.avif 1115w"
+                type="image/avif"
+              />
+              <source
+                sizes="1114.8387096774195px"
+                srcSet="/static/fake.webp 1115w"
+                type="image/webp"
               />
               <img
-                alt="Location"
-                loading="lazy"
+                alt=""
+                data-gatsby-image-ssr=""
+                data-main-image=""
+                decoding="async"
+                loading="eager"
                 onLoad={[Function]}
-                src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
-                srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
+                sizes="1114.8387096774195px"
+                src="/static/fake.png"
+                srcSet="/static/fake.png 1115w"
                 style={
                   Object {
+                    "backgroundColor": undefined,
                     "height": "100%",
                     "left": 0,
                     "objectFit": "cover",
-                    "objectPosition": "center",
+                    "objectPosition": undefined,
                     "opacity": 0,
                     "position": "absolute",
                     "top": 0,
-                    "transition": "opacity 500ms",
+                    "transform": "translateZ(0)",
+                    "transition": "opacity 250ms linear",
                     "width": "100%",
+                    "willChange": "opacity",
                   }
                 }
               />
             </picture>
-            <noscript
+            <noscript>
+              <picture>
+                <source
+                  sizes="1114.8387096774195px"
+                  srcSet="/static/fake.avif 1115w"
+                  type="image/avif"
+                />
+                <source
+                  sizes="1114.8387096774195px"
+                  srcSet="/static/fake.webp 1115w"
+                  type="image/webp"
+                />
+                <img
+                  alt=""
+                  data-gatsby-image-ssr=""
+                  data-main-image=""
+                  decoding="async"
+                  loading="eager"
+                  onLoad={[Function]}
+                  sizes="1114.8387096774195px"
+                  src="/static/fake.png"
+                  srcSet="/static/fake.png 1115w"
+                  style={
+                    Object {
+                      "backgroundColor": undefined,
+                      "height": "100%",
+                      "left": 0,
+                      "objectFit": "cover",
+                      "objectPosition": undefined,
+                      "opacity": 0,
+                      "position": "absolute",
+                      "top": 0,
+                      "transform": "translateZ(0)",
+                      "transition": "opacity 250ms linear",
+                      "width": "100%",
+                      "willChange": "opacity",
+                    }
+                  }
+                />
+              </picture>
+            </noscript>
+            <script
               dangerouslySetInnerHTML={
                 Object {
-                  "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"Location\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                  "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
                 }
               }
+              type="module"
             />
           </div>
-        </a>
-        <div
-          className="sc-AxirZ lfbEcI"
-          height={32}
-          width={32}
-        >
-          <svg
-            className="sc-AxhCb jeQFck"
-            cursor="help"
-            onClick={[Function]}
-            viewBox="0 0 512 512"
-            xmlns="http://www.w3.org/2000/svg"
+          <a
+            className="absolute mb-6 ml-[7px] rounded-full md:mb-5 md:ml-3.5 transition hover:shadow-md hover:brightness-90"
+            href="https://www.google.com/maps/@?api=1&map_action=map&center=45.5579564,-73.8703852&zoom=10"
+            rel="noopener noreferrer"
+            target="_blank"
           >
-            <circle
-              cx="256"
-              cy="256"
-              fill="#ffd93b"
-              r="256"
-            />
-            <path
-              d="M351.936 367.216c-7.36 40.8-39.84 81.92-96 81.92s-88.64-41.12-95.84-81.92c-1.12-6.08 3.04-11.84 9.12-12.96 6.08-.96 11.84 3.04 12.96 9.12 5.6 31.52 30.56 63.36 73.76 63.36s68.32-31.84 73.92-63.36c1.12-6.08 6.88-10.08 12.96-9.12 6.08 1.104 10.24 6.88 9.12 12.96z"
-              fill="#3e4347"
-            />
-            <path
-              d="M512 256c0 141.44-114.64 256-256 256-80.48 0-152.32-37.12-199.28-95.28 43.92 35.52 99.84 56.72 160.72 56.72 141.36 0 256-114.56 256-256 0-60.88-21.2-116.8-56.72-160.72C474.8 103.68 512 175.52 512 256z"
-              fill="#f4c534"
-            />
-            <path
-              d="M235.44 225.232c0 43.808-35.424 79.376-79.376 79.376-43.792 0-79.376-35.568-79.376-79.376 0-43.952 35.584-79.52 79.376-79.52 43.952 0 79.376 35.584 79.376 79.52z"
-              fill="#fff"
-            />
-            <circle
-              cx="156.064"
-              cy="225.12"
-              fill="#3e4347"
-              r="36.16"
-            />
-            <path
-              d="M276.624 225.088c0-43.808 35.424-79.376 79.376-79.376 43.808 0 79.376 35.568 79.376 79.376 0 43.952-35.568 79.52-79.376 79.52-43.952.016-79.376-35.568-79.376-79.52z"
-              fill="#fff"
-            />
-            <path
-              d="M485.264 213.168H445.76c-5.92-44.336-43.888-78.64-89.76-78.64-33.952 0-63.552 18.816-79.04 46.56-4.208 7.536-12.16 11.92-20.784 11.872h-.384c-8.592.064-16.512-4.336-20.688-11.84-15.488-27.76-45.088-46.592-79.04-46.592-45.856 0-83.744 34.336-89.68 78.64H26.736v24h39.92c5.568 41.408 39.216 74.736 81.6 78.32 53.632 4.544 99.44-38.224 98.304-92.144.912-4.512 4.72-7.968 9.472-7.968 4.864 0 9.376 3.504 9.376 9.872 0 52.288 44.56 94.384 97.696 90.304 42.528-3.264 76.832-36.528 82.368-78.384h39.776v-24h.016zm-329.2 80.224c-37.584 0-68.176-30.592-68.176-68.16 0-37.664 30.576-68.304 68.176-68.304 37.584 0 68.16 30.64 68.16 68.304 0 37.584-30.576 68.16-68.16 68.16zm199.936 0c-37.584 0-68.176-30.592-68.176-68.16 0-37.664 30.576-68.304 68.176-68.304 37.584 0 68.16 30.64 68.16 68.304 0 37.584-30.576 68.16-68.16 68.16z"
-              fill="#3e4347"
-            />
-            <ellipse
-              cx="169.695"
-              cy="211.503"
-              fill="#fff"
-              rx="10"
-              ry="6.48"
-              transform="rotate(-135 169.696 211.505)"
-            />
-            <circle
-              cx="356"
-              cy="225.12"
-              fill="#3e4347"
-              r="36.16"
-            />
-            <ellipse
-              cx="369.623"
-              cy="211.559"
-              fill="#fff"
-              rx="10"
-              ry="6.48"
-              transform="rotate(-135 369.625 211.56)"
-            />
-            <path
-              d="M413.776 107.456c-5.12 2.992-12.256 1.536-15.52-4.064-26.672-45.648-82.272-35.552-82.864-35.408-6.176 1.2-12.048-2.864-13.264-9.04-1.056-6.176 2.864-12.064 9.04-13.264 2.864-.448 71.872-12.96 106.672 46.256 3.168 5.424 1.36 12.368-4.064 15.52zm-315.552 0c5.12 2.992 12.256 1.536 15.52-4.064C140.416 57.744 196 67.84 196.608 67.984c6.176 1.2 12.048-2.864 13.264-9.04 1.056-6.176-2.864-12.064-9.04-13.264-2.864-.448-71.872-12.96-106.672 46.256-3.168 5.424-1.36 12.368 4.064 15.52z"
-              fill="#3e4347"
-            />
-          </svg>
-        </div>
+            <svg
+              className="fill-[#ffdd67]"
+              height={32}
+              viewBox="0 0 20 20"
+              width={32}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+              />
+            </svg>
+          </a>
+        </section>
       </div>
-    </section>
-  </main>,
+    </div>
+  </main>
   <footer
-    className="sc-AxirZ qAAtk"
+    className="pt-8 pb-4 flex flex-col items-center justify-center"
   >
+    <div
+      className="text-sm"
+    >
+      v
+      99.01.0
+    </div>
     <a
-      aria-label="Go to version 3.16.120 source code"
-      className="sc-AxirZ sc-AxgMl koQhhb"
-      href="https://test-repository/tree/3.16.120"
-      onClick={[Function]}
+      className="p-1 text-2xs transition hover:shadow-md hover:brightness-90"
+      href="https://fake-repository.com/tree/99.01.0"
       rel="noopener noreferrer"
       target="_blank"
     >
-      v3.16.120 - source code
+      <span
+        className="border-b border-dotted text-gray-400"
+      >
+        source code
+      </span>
     </a>
-    <div
-      className="sc-AxirZ aCqYu"
-      color="gray"
-      fontSize={14}
-    >
-      licensed under the Test-Licence license
-    </div>
-  </footer>,
-]
+  </footer>
+</div>
 `;
 
-exports[`pages Test Suite pages/index Test Suite matches snapshot 1`] = `
-Array [
-  <button
-    aria-label="Toggle Theme mode"
-    className="sc-AxjAm iWlnJd"
-    onClick={[Function]}
-    width={72}
-  >
-    <div
-      className="sc-AxirZ esYvfu"
-      display="flex"
-      width="100%"
-    >
-      <svg
-        className="sc-AxhCb hSlENV"
-        height={20}
-        viewBox="0 0 512 512"
-        width={20}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M507.834 301.608l-54.769-48.312 52.832-50.399a7.46 7.46 0 002.099-7.189 7.505 7.505 0 00-5.211-5.401l-70.316-20.292 25.988-68.056a7.454 7.454 0 00-1.204-7.389 7.55 7.55 0 00-7.038-2.657l-72.274 11.652-5.878-72.561a7.485 7.485 0 00-4.275-6.161 7.569 7.569 0 00-7.504.601l-60.266 41.342-36.609-63.044A7.536 7.536 0 00256.889 0a7.534 7.534 0 00-6.519 3.742L208.347 76.11l-72.69-41.953a7.566 7.566 0 00-7.528-.018 7.477 7.477 0 00-3.78 6.473l-.176 72.795-72.965-6.014a7.55 7.55 0 00-6.807 3.194 7.444 7.444 0 00-.622 7.459l31.242 65.835-68.513 25.681a7.499 7.499 0 00-4.773 5.789 7.456 7.456 0 002.656 7.003l56.619 46.152-50.813 52.41a7.457 7.457 0 00-1.816 7.264 7.508 7.508 0 005.419 5.194l71.055 17.551-23.295 69.011a7.453 7.453 0 001.494 7.336 7.554 7.554 0 007.137 2.382l71.76-14.443 8.721 72.278a7.488 7.488 0 004.513 5.99 7.565 7.565 0 007.475-.891l58.596-43.647 39.055 59.566a7.538 7.538 0 006.662 3.486 7.533 7.533 0 006.368-3.992l34.107-62.405 61.839 38.974a7.566 7.566 0 007.522.31 7.482 7.482 0 004.03-6.322l3.031-72.734 72.674 8.84a7.555 7.555 0 006.928-2.927 7.45 7.45 0 00.914-7.43L435.75 337.31l69.465-23.003a7.502 7.502 0 004.997-5.599 7.46 7.46 0 00-2.378-7.1z"
-          fill="#ffa600"
-        />
-        <ellipse
-          cx="254.35"
-          cy="254.691"
-          fill="#ffdb2d"
-          rx="155.069"
-          ry="154.949"
-        />
-        <path
-          d="M254.354 99.743c-3.884 0-7.732.147-11.543.428 80.25 5.901 143.525 72.825 143.525 154.521 0 81.695-63.275 148.619-143.525 154.521 3.811.28 7.66.428 11.543.428 85.641 0 155.068-69.373 155.068-154.948 0-85.577-69.427-154.95-155.068-154.95z"
-          fill="#ffca00"
-        />
-      </svg>
-      <span
-        className="sc-AxiKw liBuIY"
-        color="gray"
-        fontFamily="'Open Sans', sans-serif"
-        fontSize={14}
-      >
-        light
-      </span>
-    </div>
-  </button>,
-  <header
-    className="sc-AxirZ dZqEeB"
-    display="flex"
-  >
-    <a
-      aria-label="Go to homepage"
-      className="sc-AxirZ sc-AxgMl gABrJl"
-      href="/about-me"
-      target="_blank"
-    >
-      <div
-        className="sc-AxheI ckNXyg gatsby-image-wrapper"
-        style={
-          Object {
-            "display": "inline-block",
-            "height": undefined,
-            "overflow": "hidden",
-            "position": "relative",
-            "width": undefined,
-          }
-        }
-      >
-        <img
-          alt=""
-          aria-hidden={true}
-          src="data:image/png;base64"
-          style={
-            Object {
-              "height": 80,
-              "left": 0,
-              "objectFit": "cover",
-              "objectPosition": "center",
-              "opacity": 1,
-              "position": "absolute",
-              "top": 0,
-              "transitionDelay": "500ms",
-              "width": 80,
-            }
-          }
-        />
-        <picture>
-          <source
-            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
-          />
-          <img
-            alt=""
-            loading="lazy"
-            onLoad={[Function]}
-            src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
-            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
-            style={
-              Object {
-                "height": 80,
-                "left": 0,
-                "objectFit": "cover",
-                "objectPosition": "center",
-                "opacity": 0,
-                "position": "absolute",
-                "top": 0,
-                "transition": "opacity 500ms",
-                "width": 80,
-              }
-            }
-          />
-        </picture>
-        <noscript
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
-            }
-          }
-        />
-      </div>
-      <div
-        className="sc-AxirZ fAeBe"
-        display="flex"
-      >
-        <span
-          className="sc-AxiKw sc-AxhUy hyodXU"
-          color="primary"
-          fontWeight="bold"
-          letterSpacing={-1}
-        >
-          Jeremie Rodriguez
-        </span>
-        <span
-          className="sc-AxiKw sc-AxhUy dQelTb"
-          fontWeight="semiBold"
-        >
-          Full Stack Engineer
-        </span>
-      </div>
-    </a>
-    <nav
-      className="sc-AxirZ fMsvmv"
-      display="flex"
-    >
-      <div
-        className="sc-AxirZ cCMoeS"
-        display="flex"
-      >
-        <a
-          aria-label="Go to Test page"
-          className="sc-AxirZ sc-AxgMl fNnSKC"
-          href="/"
-          target="_blank"
-        >
-          <svg
-            className="sc-AxhCb jeQFck"
-            fill="#262626"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          />
-          Test
-        </a>
-      </div>
-      <div
-        className="sc-AxirZ cCMoeS"
-        display="flex"
-      >
-        <a
-          className="sc-AxirZ sc-AxgMl fNnSKC"
-          onClick={[Function]}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <svg
-            className="sc-AxhCb jeQFck sc-AxhCb jeQFck"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"
-              fill="#262626"
-            />
-          </svg>
-          Resume
-        </a>
-      </div>
-    </nav>
-  </header>,
-  <main
-    className="sc-AxirZ eeQbIR"
-  >
-    <section
-      className="sc-AxirZ dVRjgl"
-    />
-  </main>,
-  <footer
-    className="sc-AxirZ qAAtk"
-  >
-    <a
-      aria-label="Go to version 3.16.120 source code"
-      className="sc-AxirZ sc-AxgMl koQhhb"
-      href="https://test-repository/tree/3.16.120"
-      onClick={[Function]}
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      v3.16.120 - source code
-    </a>
-    <div
-      className="sc-AxirZ aCqYu"
-      color="gray"
-      fontSize={14}
-    >
-      licensed under the Test-Licence license
-    </div>
-  </footer>,
-]
-`;
-
-exports[`pages Test Suite pages/posts Test Suite matches snapshot 1`] = `
-Array [
-  <button
-    aria-label="Toggle Theme mode"
-    className="sc-AxjAm iWlnJd"
-    onClick={[Function]}
-    width={72}
-  >
-    <div
-      className="sc-AxirZ esYvfu"
-      display="flex"
-      width="100%"
-    >
-      <svg
-        className="sc-AxhCb hSlENV"
-        height={20}
-        viewBox="0 0 512 512"
-        width={20}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M507.834 301.608l-54.769-48.312 52.832-50.399a7.46 7.46 0 002.099-7.189 7.505 7.505 0 00-5.211-5.401l-70.316-20.292 25.988-68.056a7.454 7.454 0 00-1.204-7.389 7.55 7.55 0 00-7.038-2.657l-72.274 11.652-5.878-72.561a7.485 7.485 0 00-4.275-6.161 7.569 7.569 0 00-7.504.601l-60.266 41.342-36.609-63.044A7.536 7.536 0 00256.889 0a7.534 7.534 0 00-6.519 3.742L208.347 76.11l-72.69-41.953a7.566 7.566 0 00-7.528-.018 7.477 7.477 0 00-3.78 6.473l-.176 72.795-72.965-6.014a7.55 7.55 0 00-6.807 3.194 7.444 7.444 0 00-.622 7.459l31.242 65.835-68.513 25.681a7.499 7.499 0 00-4.773 5.789 7.456 7.456 0 002.656 7.003l56.619 46.152-50.813 52.41a7.457 7.457 0 00-1.816 7.264 7.508 7.508 0 005.419 5.194l71.055 17.551-23.295 69.011a7.453 7.453 0 001.494 7.336 7.554 7.554 0 007.137 2.382l71.76-14.443 8.721 72.278a7.488 7.488 0 004.513 5.99 7.565 7.565 0 007.475-.891l58.596-43.647 39.055 59.566a7.538 7.538 0 006.662 3.486 7.533 7.533 0 006.368-3.992l34.107-62.405 61.839 38.974a7.566 7.566 0 007.522.31 7.482 7.482 0 004.03-6.322l3.031-72.734 72.674 8.84a7.555 7.555 0 006.928-2.927 7.45 7.45 0 00.914-7.43L435.75 337.31l69.465-23.003a7.502 7.502 0 004.997-5.599 7.46 7.46 0 00-2.378-7.1z"
-          fill="#ffa600"
-        />
-        <ellipse
-          cx="254.35"
-          cy="254.691"
-          fill="#ffdb2d"
-          rx="155.069"
-          ry="154.949"
-        />
-        <path
-          d="M254.354 99.743c-3.884 0-7.732.147-11.543.428 80.25 5.901 143.525 72.825 143.525 154.521 0 81.695-63.275 148.619-143.525 154.521 3.811.28 7.66.428 11.543.428 85.641 0 155.068-69.373 155.068-154.948 0-85.577-69.427-154.95-155.068-154.95z"
-          fill="#ffca00"
-        />
-      </svg>
-      <span
-        className="sc-AxiKw liBuIY"
-        color="gray"
-        fontFamily="'Open Sans', sans-serif"
-        fontSize={14}
-      >
-        light
-      </span>
-    </div>
-  </button>,
-  <header
-    className="sc-AxirZ dZqEeB"
-    display="flex"
-  >
-    <a
-      aria-label="Go to homepage"
-      className="sc-AxirZ sc-AxgMl gABrJl"
-      href="/about-me"
-      target="_blank"
-    >
-      <div
-        className="sc-AxheI ckNXyg gatsby-image-wrapper"
-        style={
-          Object {
-            "display": "inline-block",
-            "height": undefined,
-            "overflow": "hidden",
-            "position": "relative",
-            "width": undefined,
-          }
-        }
-      >
-        <img
-          alt=""
-          aria-hidden={true}
-          src="data:image/png;base64"
-          style={
-            Object {
-              "height": 80,
-              "left": 0,
-              "objectFit": "cover",
-              "objectPosition": "center",
-              "opacity": 1,
-              "position": "absolute",
-              "top": 0,
-              "transitionDelay": "500ms",
-              "width": 80,
-            }
-          }
-        />
-        <picture>
-          <source
-            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
-          />
-          <img
-            alt=""
-            loading="lazy"
-            onLoad={[Function]}
-            src="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png"
-            srcSet="/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x"
-            style={
-              Object {
-                "height": 80,
-                "left": 0,
-                "objectFit": "cover",
-                "objectPosition": "center",
-                "opacity": 0,
-                "position": "absolute",
-                "top": 0,
-                "transition": "opacity 500ms",
-                "width": 80,
-              }
-            }
-          />
-        </picture>
-        <noscript
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<picture><source srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" /><img loading=\\"lazy\\" srcset=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png 1x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/1e576/profile-pic.png 1.5x,
-/static/89ee547c5db6cbf9b37a682e8b3f3f57/6cb10/profile-pic.png 2x\\" src=\\"/static/89ee547c5db6cbf9b37a682e8b3f3f57/8b091/profile-pic.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
-            }
-          }
-        />
-      </div>
-      <div
-        className="sc-AxirZ fAeBe"
-        display="flex"
-      >
-        <span
-          className="sc-AxiKw sc-AxhUy hyodXU"
-          color="primary"
-          fontWeight="bold"
-          letterSpacing={-1}
-        >
-          Jeremie Rodriguez
-        </span>
-        <span
-          className="sc-AxiKw sc-AxhUy dQelTb"
-          fontWeight="semiBold"
-        >
-          Full Stack Engineer
-        </span>
-      </div>
-    </a>
-    <nav
-      className="sc-AxirZ fMsvmv"
-      display="flex"
-    >
-      <div
-        className="sc-AxirZ cCMoeS"
-        display="flex"
-      >
-        <a
-          aria-label="Go to Test page"
-          className="sc-AxirZ sc-AxgMl fNnSKC"
-          href="/"
-          target="_blank"
-        >
-          <svg
-            className="sc-AxhCb jeQFck"
-            fill="#262626"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          />
-          Test
-        </a>
-      </div>
-      <div
-        className="sc-AxirZ cCMoeS"
-        display="flex"
-      >
-        <a
-          className="sc-AxirZ sc-AxgMl fNnSKC"
-          onClick={[Function]}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <svg
-            className="sc-AxhCb jeQFck sc-AxhCb jeQFck"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"
-              fill="#262626"
-            />
-          </svg>
-          Resume
-        </a>
-      </div>
-    </nav>
-  </header>,
-  <main
-    className="sc-AxirZ eeQbIR"
-  >
-    <span
-      className="sc-AxiKw sc-AxhUy hsiEiB"
-    >
-      Test Page
-    </span>
-    <section
-      className="sc-AxirZ dVRjgl"
-    >
-      <div
-        className="sc-AxirZ dVRjgl"
-      >
-        <ul
-          className="sc-AxirZ hxdfvB"
-        >
-          <label
-            className="sc-AxiKw frqcPp"
-            color="secondary"
-            display="block"
-            fontSize={32}
-            fontWeight="semiBold"
-          >
-            2019
-          </label>
-          <li
-            className="sc-AxirZ jfSKMU"
-            display="flex"
-            fontSize={24}
-            fontWeight="semiBold"
-          >
-            <span
-              className="sc-AxirZ cgtmPh"
-              color="primary"
-              fontSize={16}
-              fontWeight="bold"
-            >
-              AUG-08
-            </span>
-            <a
-              aria-label="Go to /posts/test"
-              className="sc-AxirZ sc-AxgMl ijXTvW"
-              href="/posts/test"
-              target="_blank"
-            >
-              Test Post
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>,
-  <footer
-    className="sc-AxirZ qAAtk"
-  >
-    <a
-      aria-label="Go to version 3.16.120 source code"
-      className="sc-AxirZ sc-AxgMl koQhhb"
-      href="https://test-repository/tree/3.16.120"
-      onClick={[Function]}
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      v3.16.120 - source code
-    </a>
-    <div
-      className="sc-AxirZ aCqYu"
-      color="gray"
-      fontSize={14}
-    >
-      licensed under the Test-Licence license
-    </div>
-  </footer>,
-]
-`;
+exports[`@/pages Test Suite NotFoundPage Test Suite matches snapshot 1`] = `null`;

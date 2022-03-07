@@ -37,9 +37,11 @@ build/
 coverage/
 dist/
 node_modules/
-out/
 package/
 public/
+out/
 .env*
-*.log*
 *-report.*
+*.log*
+*.tsbuildinfo
+sw.js

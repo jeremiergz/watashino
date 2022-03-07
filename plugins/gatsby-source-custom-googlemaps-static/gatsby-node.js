@@ -1,7 +1,8 @@
-const path = require('path');
-const querystring = require('querystring');
+const { unlink } = require('fs/promises');
 const { createFileNode } = require('gatsby-source-filesystem/create-file-node');
-const { cacheDir, format, gmapsAPIURL, nodeType, plugin, size, staticGmapsAPIURL } = require('./config');
+const path = require('path');
+const sharp = require('sharp');
+const { cacheDir, format, gmapsAPIURL, nodeType, plugin, scale, size, staticGmapsAPIURL } = require('./config');
 const { downloadFile, encodeStyleParams, error } = require('./utils');
 
 async function processNode({
@@ -17,10 +18,15 @@ async function processNode({
   url,
 }) {
   if (shouldDownload) {
-    await downloadFile(url, filePath);
+    const tempFilePath = filePath.replace('.png', '_temp.png');
+    await downloadFile(url, tempFilePath);
+    await sharp(tempFilePath).extract({ height: 1200, left: 40, top: 40, width: 1200 }).toFile(filePath);
+    await unlink(tempFilePath);
   }
+
   const fileNode = await createFileNode(filePath, createNodeId, {});
   fileNode.parent = id;
+
   await createNode(fileNode, { name: 'gatsby-source-filesystem' });
   await createNode({
     children: [fileNode.id],
@@ -51,40 +57,17 @@ exports.sourceNodes = async ({ actions, cache, createContentDigest, createNodeId
     const cacheDigest = createContentDigest(options);
     const shouldDownload = cacheDigest !== previousCacheDigest;
 
-    const mapURL = `${gmapsAPIURL}&center=${urlOptions.center}&zoom=${urlOptions.zoom || 4}`;
+    const mapURL = `${gmapsAPIURL}&center=${urlOptions.center}&zoom=${urlOptions.url.zoom || 4}`;
 
-    if (styles && typeof styles === 'object') {
-      await Promise.all(
-        Object.keys(styles).map(theme => {
-          const style = encodeStyleParams(styles[theme]);
-          const content = { ...options, styles: style };
-          const contentDigest = createContentDigest(content);
-          const filePath = path.join(filesDirectory, `${cacheDigest}-${theme}.${format}`);
-          const id = createNodeId(`${plugin}-${contentDigest}`);
-          const queryParams = querystring.stringify({ format, size, ...urlOptions });
-          const url = `${staticGmapsAPIURL}?${queryParams}${style}`;
-          return processNode({
-            createNode,
-            createNodeId,
-            content,
-            contentDigest,
-            filePath,
-            id,
-            mapURL,
-            shouldDownload,
-            theme,
-            url,
-          });
-        }),
-      );
-    } else {
-      const content = { ...options };
+    if (styles && Array.isArray(styles)) {
+      const style = encodeStyleParams(styles);
+      const content = { ...options, styles: style };
       const contentDigest = createContentDigest(content);
-      const filePath = path.join(filesDirectory, `${cacheDigest}-default.${format}`);
+      const filePath = path.join(filesDirectory, `${cacheDigest}.${format}`);
       const id = createNodeId(`${plugin}-${contentDigest}`);
-      const queryParams = querystring.stringify({ format, size, ...urlOptions });
-      const theme = 'default';
-      const url = `${staticGmapsAPIURL}?${queryParams}`;
+      const queryParams = new URLSearchParams({ format, size, ...urlOptions });
+      const url = `${staticGmapsAPIURL}?${queryParams}${style}&scale=2`;
+
       await processNode({
         createNode,
         createNodeId,
@@ -94,10 +77,29 @@ exports.sourceNodes = async ({ actions, cache, createContentDigest, createNodeId
         id,
         mapURL,
         shouldDownload,
-        theme,
+        url,
+      });
+    } else {
+      const content = { ...options };
+      const contentDigest = createContentDigest(content);
+      const filePath = path.join(filesDirectory, `${cacheDigest}.${format}`);
+      const id = createNodeId(`${plugin}-${contentDigest}`);
+      const queryParams = new URLSearchParams({ format, scale, size, ...urlOptions });
+      const url = `${staticGmapsAPIURL}?${queryParams}`;
+
+      await processNode({
+        createNode,
+        createNodeId,
+        content,
+        contentDigest,
+        filePath,
+        id,
+        mapURL,
+        shouldDownload,
         url,
       });
     }
+
     await cache.set('optionsDigest', cacheDigest);
   } catch (err) {
     reporter.panic(err);
