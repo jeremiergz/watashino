@@ -2,10 +2,10 @@
 
 exports[`@/pages Test Suite IndexPage Test Suite matches snapshot 1`] = `
 <div
-  className="m-auto flex h-full w-full flex-col items-center pt-16 md:pt-0 dark:text-gray-300"
+  className="m-auto flex h-full w-full flex-col items-center pt-12 md:pt-0 dark:text-gray-300"
 >
   <header
-    className="fixed top-0 left-0 right-0 z-50 flex h-16 w-full max-w-5xl justify-center bg-gray-900 py-4 md:relative md:justify-end md:bg-transparent md:py-8"
+    className="fixed top-0 left-0 right-0 z-50 flex h-12 w-full max-w-5xl justify-center bg-gray-900 md:relative md:h-16 md:justify-end md:bg-transparent"
   >
     <nav
       className="flex font-semibold"
@@ -14,44 +14,42 @@ exports[`@/pages Test Suite IndexPage Test Suite matches snapshot 1`] = `
         className="relative flex items-center"
       >
         <span
-          className="absolute text-sm font-bold text-primary"
+          className="absolute text-sm font-bold text-cyan-600"
         >
           &gt;
         </span>
-        <a
-          className="cursor-pointer rounded py-1 px-4 transition hover:shadow-md hover:brightness-90 transition hover:shadow-md hover:brightness-90"
+        <button
+          aria-label="Go to whoami"
+          className="cursor-pointer rounded py-1 px-4 transition hover:shadow-md hover:brightness-90"
           onClick={[Function]}
-          rel="noopener noreferrer"
-          target="_self"
         >
           <span>
             who
           </span>
           <span
-            className="text-primary"
+            className="text-cyan-600"
           >
             ami
           </span>
-        </a>
+        </button>
       </div>
       <div
         className="relative flex items-center ml-10"
       >
-        <a
-          className="cursor-pointer rounded py-1 px-4 transition hover:shadow-md hover:brightness-90 transition hover:shadow-md hover:brightness-90"
+        <button
+          aria-label="Go to whereami"
+          className="cursor-pointer rounded py-1 px-4 transition hover:shadow-md hover:brightness-90"
           onClick={[Function]}
-          rel="noopener noreferrer"
-          target="_self"
         >
           <span>
             where
           </span>
           <span
-            className="text-primary"
+            className="text-cyan-600"
           >
             ami
           </span>
-        </a>
+        </button>
       </div>
     </nav>
   </header>
@@ -65,10 +63,10 @@ exports[`@/pages Test Suite IndexPage Test Suite matches snapshot 1`] = `
         className="flex transition-transform duration-500 [transform-style:preserve-3d]"
       >
         <section
-          className="card-front md:max-h-[532px]"
+          className="card-front flex flex-col items-stretch"
         >
           <div
-            className="flex w-full bg-primary px-4 py-4 pt-8 md:max-h-[236px] md:pt-4 lg:rounded-t-2xl"
+            className="flex w-full bg-cyan-600 px-4 py-4 pt-8 md:max-h-[236px] md:pt-4 lg:rounded-t-2xl"
           >
             <div
               className="flex w-full flex-col-reverse md:flex-row"
@@ -77,12 +75,12 @@ exports[`@/pages Test Suite IndexPage Test Suite matches snapshot 1`] = `
                 className="flex flex-grow flex-col items-center justify-center text-center md:h-full"
               >
                 <h1
-                  className="text-3xl font-bold md:text-4xl"
+                  className="text-3xl font-bold text-gray-100 md:text-4xl"
                 >
                   Test author
                 </h1>
                 <h2
-                  className="mt-4 mb-3 text-xl font-bold text-secondary md:text-2xl"
+                  className="mt-4 mb-3 text-xl font-bold text-gray-800 md:text-2xl"
                 >
                   Fake Job
                 </h2>
@@ -93,7 +91,7 @@ exports[`@/pages Test Suite IndexPage Test Suite matches snapshot 1`] = `
             </div>
           </div>
           <div
-            className="md:max-h-[296px] md:min-h-[296px] w-full bg-secondary px-4 pb-8 pt-16 md:px-16 md:pb-0 lg:rounded-b-2xl"
+            className="h-full w-full bg-gray-800 px-4 pb-8 pt-16 md:px-16 md:pb-0 lg:rounded-b-2xl"
           >
             <div
               className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-16"
@@ -101,7 +99,7 @@ exports[`@/pages Test Suite IndexPage Test Suite matches snapshot 1`] = `
               <div
                 className="flex flex-col"
               >
-                <h5
+                <h3
                   className="text-center md:text-left"
                 >
                   <span
@@ -110,18 +108,19 @@ exports[`@/pages Test Suite IndexPage Test Suite matches snapshot 1`] = `
                     Who 
                   </span>
                   <span
-                    className="font-bold text-primary"
+                    className="font-bold text-cyan-600"
                   >
                     Am I
                   </span>
-                </h5>
-                <p
-                  className="py-4 text-center text-sm md:text-left"
-                >
-                  Hello, I'm 
-                  Test author
-                  . Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum ullamcorper sem, at placerat dolor volutpat ac. Duis nulla enim, condimentum nec ultricies.
-                </p>
+                </h3>
+                <div
+                  className="introduction py-4 text-center text-sm md:text-left"
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": undefined,
+                    }
+                  }
+                />
                 <div
                   className="flex flex-col items-center justify-center md:flex-row md:justify-start"
                 >
@@ -153,7 +152,8 @@ exports[`@/pages Test Suite IndexPage Test Suite matches snapshot 1`] = `
                     or
                   </span>
                   <a
-                    className="text-sm text-primary transition hover:shadow-md hover:brightness-90"
+                    aria-label="Go to https://fake.com"
+                    className="text-sm text-cyan-600 transition hover:shadow-md hover:brightness-90"
                     href="https://fake.com"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -198,9 +198,10 @@ exports[`@/pages Test Suite IndexPage Test Suite matches snapshot 1`] = `
                     Email:
                   </label>
                   <span
-                    className="text-primary"
+                    className="text-cyan-600"
                   >
                     <a
+                      aria-label="Send email to test@fake.com"
                       className="-ml-1 rounded p-1 transition hover:shadow-md hover:brightness-90"
                       href="mailto:test@fake.com"
                       rel="noopener noreferrer"
@@ -222,6 +223,7 @@ exports[`@/pages Test Suite IndexPage Test Suite matches snapshot 1`] = `
                     className="flex items-center"
                   >
                     <a
+                      aria-label="Go to https://www.mtl.org"
                       className="-ml-1 mr-1 rounded p-1 transition hover:shadow-md hover:brightness-90"
                       href="https://www.mtl.org"
                       rel="noopener noreferrer"
@@ -313,7 +315,7 @@ exports[`@/pages Test Suite IndexPage Test Suite matches snapshot 1`] = `
           </div>
         </section>
         <section
-          className="card-back-h md:card-back-v md:max-h-[532px] flex items-center justify-center"
+          className="card-back-h md:card-back-v md:max-h-[610px] flex items-center justify-center"
         >
           <div
             className="gatsby-image-wrapper h-full lg:rounded-2xl"
@@ -434,6 +436,7 @@ exports[`@/pages Test Suite IndexPage Test Suite matches snapshot 1`] = `
             />
           </div>
           <a
+            aria-label="Go to https://www.google.com/maps/@?api=1&map_action=map&center=45.5579564,-73.8703852&zoom=10"
             className="absolute mb-6 ml-[7px] rounded-full md:mb-5 md:ml-3.5 transition hover:shadow-md hover:brightness-90"
             href="https://www.google.com/maps/@?api=1&map_action=map&center=45.5579564,-73.8703852&zoom=10"
             rel="noopener noreferrer"
@@ -458,23 +461,20 @@ exports[`@/pages Test Suite IndexPage Test Suite matches snapshot 1`] = `
   <footer
     className="pt-8 pb-4 flex flex-col items-center justify-center"
   >
-    <div
-      className="text-sm"
-    >
-      v
-      99.01.0
-    </div>
     <a
-      className="p-1 text-2xs transition hover:shadow-md hover:brightness-90"
+      aria-label="Go to https://fake-repository.com/tree/99.01.0"
+      className="border-b border-dotted text-2xs text-gray-400 transition hover:shadow-md hover:brightness-90"
       href="https://fake-repository.com/tree/99.01.0"
       rel="noopener noreferrer"
       target="_blank"
     >
-      <span
-        className="border-b border-dotted text-gray-400"
+      <div
+        className="text-sm text-gray-300"
       >
-        source code
-      </span>
+        v
+        99.01.0
+      </div>
+      source code
     </a>
   </footer>
 </div>
