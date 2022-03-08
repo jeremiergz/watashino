@@ -15,7 +15,12 @@ function SEO({ description = '', keywords = [], lang = 'en', path = '', title = 
 
   return (
     <HelmetProvider>
-      <Helmet htmlAttributes={{ lang }} title={title} titleTemplate={`%s | ${authorName}`}>
+      <Helmet
+        bodyAttributes={{ class: 'dark:bg-gray-900 transition-colors' }}
+        htmlAttributes={{ lang }}
+        title={title}
+        titleTemplate={`%s | ${authorName}`}
+      >
         <link rel="canonical" href={url} />
         <meta name="description" content={metaDescription} />
         <meta name="image" content={imageUrl} />
