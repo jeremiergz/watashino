@@ -6,13 +6,18 @@ import React from 'react';
 function Footer({ className, ...rest }: FooterProps): JSX.Element {
   const { repositoryUrl, version } = useSiteMetadata();
 
-  const sourceCode = `${repositoryUrl}/tree/${version}`;
+  const sourceCodeUrl = `${repositoryUrl}/tree/${version}`;
 
   return (
     <footer className={clsx(className, 'flex flex-col items-center justify-center')} {...rest}>
-      <div className="text-sm">v{version}</div>
-      <Anchor className="p-1 text-2xs" external href={sourceCode}>
-        <span className="border-b border-dotted text-gray-400">source code</span>
+      <Anchor
+        aria-label={`Go to ${sourceCodeUrl}`}
+        className="border-b border-dotted text-2xs text-gray-400"
+        external
+        href={sourceCodeUrl}
+      >
+        <div className="text-sm text-gray-300">v{version}</div>
+        source code
       </Anchor>
     </footer>
   );

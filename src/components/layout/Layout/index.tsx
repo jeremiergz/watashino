@@ -3,7 +3,7 @@ import React from 'react';
 
 function Layout({ children }: LayoutProps): JSX.Element {
   return (
-    <div className={clsx('m-auto flex h-full w-full flex-col items-center pt-16 md:pt-0', 'dark:text-gray-300')}>
+    <div className={clsx('m-auto flex h-full w-full flex-col items-center pt-12 md:pt-0', 'dark:text-gray-300')}>
       {children}
     </div>
   );

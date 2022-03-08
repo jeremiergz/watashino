@@ -1,9 +1,13 @@
 require('dotenv/config');
+const fs = require('fs');
 const path = require('path');
-const informationJSON = require('./content/data/information');
+const yaml = require('js-yaml');
+const { gray } = require('tailwindcss/colors');
 const { description, homepage, keywords, license, name, repository, version } = require('./package.json');
 
-const APP_COLOR = '#282828';
+const information = yaml.load(fs.readFileSync('./content/data/information/index.yaml', 'utf8'));
+
+const APP_COLOR = gray[900];
 const APP_DESCRIPTION = description;
 const APP_KEYWORDS = keywords;
 const APP_LICENSE = license;
@@ -122,7 +126,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-custom-googlemaps-static',
       options: {
-        center: `${informationJSON.geolocation.lat},${informationJSON.geolocation.lng}`,
+        center: `${information.geolocation.lat},${information.geolocation.lng}`,
         key: process.env.GOOGLE_MAPS_STATIC_API_KEY,
         styles: [
           { element: 'geometry', rules: { color: '0x0891b2' } },
@@ -151,7 +155,7 @@ module.exports = {
         path: `${__dirname}/content/data`,
       },
     },
-    'gatsby-transformer-json',
+    'gatsby-transformer-yaml',
     'gatsby-transformer-sharp',
   ],
 };

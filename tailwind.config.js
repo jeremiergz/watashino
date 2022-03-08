@@ -11,10 +11,6 @@ module.exports = {
         'material-sm': 'rgb(0 0 0 / 10%) 0px 1px 1px, rgb(0 0 0 / 30%) 0px 2px 4px',
         'material-lg': '0 2px 4px rgb(0 0 0 / 10%), 0 4px 8px rgb(0 0 0 / 30%)',
       },
-      colors: {
-        primary: colors.cyan[600],
-        secondary: colors.gray[800],
-      },
       fontFamily: {
         sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
       },
@@ -23,8 +19,8 @@ module.exports = {
       },
     },
     screens: {
-      xs: '320px',
-      '2xs': '375px',
+      '2xs': '320px',
+      xs: '375px',
       sm: '425px',
       md: '768px',
       lg: '1024px',

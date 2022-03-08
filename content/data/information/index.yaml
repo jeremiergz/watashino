@@ -1,0 +1,28 @@
+contacts:
+    - type: linkedin
+      url: https://linkedin.com/in/jeremiergz
+    - type: twitter
+      url: https://twitter.com/JeremieRgz
+    - type: gitlab
+      url: https://gitlab.com/jeremiergz
+    - type: github
+      url: https://github.com/jeremiergz
+    - type: email
+      url: mailto:contact@jeremierodriguez.com
+dateOfBirth: 1987-03-27T05:00:00.000Z
+geolocation:
+    city: Montreal
+    country: Canada
+    countryCode: CAN
+    lat: 45.5579564
+    lng: -73.8703852
+    website: https://www.mtl.org
+introduction: >
+    <p>Hi, I'm Jeremie! I'm very passionate about coding and also a lifelong student.</p>
+    <p>I have a diverse set of skills, currently focused on <strong>DevOps</strong> techs such as <em>Kubernetes</em>, <em>GCP</em>, <em>Terraform</em>,&nbsp;...</p>
+    <p>When I <strong>write code</strong>, it's usually in <em>Golang</em> or <em>Node.js</em> with <em>TypeScript</em>.</p>
+    <p>My go-to-techs for the web are <em>React</em> & <em>Next.js</em>.</p>
+jobTitle: Cloud Engineer
+nationality: French
+openToGigs: false
+resumeUrl: https://cv.jeremierodriguez.com

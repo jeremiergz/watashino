@@ -18,6 +18,7 @@ type InformationDataQueryResponse = {
   information: {
     contacts: Contact[];
     dateOfBirth: string;
+    introduction: string;
     jobTitle: string;
     geolocation: Geolocation;
     nationality: string;
@@ -31,7 +32,7 @@ function useInformationData(): Omit<InformationDataQueryResponse['information'],
 } {
   const rawData = useStaticQuery<InformationDataQueryResponse>(graphql`
     query InformationData {
-      information: informationJson {
+      information: informationYaml {
         contacts {
           type
           url
@@ -45,6 +46,7 @@ function useInformationData(): Omit<InformationDataQueryResponse['information'],
           lng
           website
         }
+        introduction
         jobTitle
         nationality
         openToGigs

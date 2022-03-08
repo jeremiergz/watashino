@@ -1,4 +1,3 @@
-import Anchor from '@/components/common/Anchor';
 import Conditional from '@/components/common/Conditional';
 import clsx from 'clsx';
 import React from 'react';
@@ -15,7 +14,7 @@ function Header({ current, onCurrentChange }: HeaderProps): JSX.Element {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 flex h-16 w-full max-w-5xl justify-center bg-gray-900 py-4 md:relative md:justify-end md:bg-transparent md:py-8">
+    <header className="fixed top-0 left-0 right-0 z-50 flex h-12 w-full max-w-5xl justify-center bg-gray-900 md:relative md:h-16 md:justify-end md:bg-transparent">
       <nav className="flex font-semibold">
         {navItems.map((item, index) => {
           const labelStart = item.label.substring(0, item.label.length - 3);
@@ -27,18 +26,19 @@ function Header({ current, onCurrentChange }: HeaderProps): JSX.Element {
                 condition={item.label === current}
                 wrapper={children => (
                   <>
-                    <span className="absolute text-sm font-bold text-primary">&gt;</span>
+                    <span className="absolute text-sm font-bold text-cyan-600">&gt;</span>
                     {children}
                   </>
                 )}
               >
-                <Anchor
+                <button
+                  aria-label={`Go to ${item.label}`}
                   className="cursor-pointer rounded py-1 px-4 transition hover:shadow-md hover:brightness-90"
                   onClick={handleCurrentChange(item.label)}
                 >
                   <span>{labelStart}</span>
-                  <span className="text-primary">{labelEnd}</span>
-                </Anchor>
+                  <span className="text-cyan-600">{labelEnd}</span>
+                </button>
               </Conditional>
             </div>
           );

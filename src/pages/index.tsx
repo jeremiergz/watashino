@@ -23,9 +23,9 @@ function IndexPage(_: PageProps): JSX.Element {
               contentToDisplay === 'whereami' && 'flip-h md:flip-v',
             )}
           >
-            <WhoAmI className="card-front md:max-h-[532px]" />
+            <WhoAmI className="card-front" />
 
-            <WhereAmI className="card-back-h md:card-back-v md:max-h-[532px]" />
+            <WhereAmI className="card-back-h md:card-back-v md:max-h-[610px]" />
           </div>
         </div>
       </Main>

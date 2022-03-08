@@ -3,14 +3,6 @@
 @tailwind utilities;
 
 @layer utilities {
-  .flip-h {
-    transform: rotate3d(0, 1, 0, -180deg);
-  }
-
-  .flip-v {
-    transform: rotate3d(1, 0, 0, -180deg);
-  }
-
   .card-back-h,
   .card-back-v,
   .card-front {
@@ -24,5 +16,17 @@
 
   .card-back-v {
     transform: rotate3d(1, 0, 0, -180deg) translate(-100%, 0);
+  }
+
+  .flip-h {
+    transform: rotate3d(0, 1, 0, -180deg);
+  }
+
+  .flip-v {
+    transform: rotate3d(1, 0, 0, -180deg);
+  }
+
+  .introduction > p:not(:last-child) {
+    padding-bottom: 4px;
   }
 }

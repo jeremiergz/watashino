@@ -12,7 +12,12 @@ function WhereAmI({ className, ...rest }: WhereAmIProps): JSX.Element {
   return (
     <section className={clsx(className, 'flex items-center justify-center')} {...rest}>
       <GatsbyImage alt="" className="h-full lg:rounded-2xl" image={mapImage} loading="eager" objectFit="cover" />
-      <Anchor className="absolute mb-6 ml-[7px] rounded-full md:mb-5 md:ml-3.5" external href={mapURL}>
+      <Anchor
+        aria-label={`Go to ${mapURL}`}
+        className="absolute mb-6 ml-[7px] rounded-full md:mb-5 md:ml-3.5"
+        external
+        href={mapURL}
+      >
         <PoIIcon primaryClassName="fill-[#ffdd67]" />
       </Anchor>
     </section>
