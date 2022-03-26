@@ -6,11 +6,11 @@ import React from 'react';
 
 export const onRenderBody = ({ setBodyAttributes, setHtmlAttributes }) => {
   setHtmlAttributes({
-    class: 'dark',
+    className: 'dark',
     lang: 'en',
   });
   setBodyAttributes({
-    class: 'dark:bg-gray-900 transition-colors',
+    className: 'dark:bg-gray-900 transition-colors',
   });
 };
 
