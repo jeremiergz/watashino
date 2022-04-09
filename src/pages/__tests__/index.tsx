@@ -4,7 +4,6 @@ import NotFoundPage from '@/pages/404';
 import IndexPage from '@/pages/index';
 import * as Gatsby from 'gatsby';
 import React from 'react';
-import { HelmetProvider } from 'react-helmet-async';
 import ReactTestRenderer from 'react-test-renderer';
 
 const navigate = jest.spyOn(Gatsby, 'navigate');
@@ -86,11 +85,9 @@ describe('@/pages Test Suite', () => {
     it('matches snapshot', () => {
       const jsx = (
         <ErrorBoundary>
-          <HelmetProvider>
-            <SEO />
-            {/* @ts-ignore */}
-            <NotFoundPage navigate={navigate} />
-          </HelmetProvider>
+          <SEO />
+          {/* @ts-ignore */}
+          <NotFoundPage navigate={navigate} />
         </ErrorBoundary>
       );
       expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
@@ -101,11 +98,9 @@ describe('@/pages Test Suite', () => {
     it('matches snapshot', () => {
       const jsx = (
         <ErrorBoundary>
-          <HelmetProvider>
-            <SEO />
-            {/* @ts-ignore */}
-            <IndexPage />
-          </HelmetProvider>
+          <SEO />
+          {/* @ts-ignore */}
+          <IndexPage />
         </ErrorBoundary>
       );
       expect(ReactTestRenderer.create(jsx).toJSON()).toMatchSnapshot();
