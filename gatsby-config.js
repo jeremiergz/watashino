@@ -68,37 +68,47 @@ module.exports = {
         icons: [
           {
             sizes: '36x36',
-            src: '/icons/android-icon-36x36.png',
+            src: '/icons/icon-36x36.png',
             type: 'image/png',
           },
           {
             sizes: '48x48',
-            src: '/icons/android-icon-48x48.png',
+            src: '/icons/icon-48x48.png',
             type: 'image/png',
           },
           {
             sizes: '72x72',
-            src: '/icons/android-icon-72x72.png',
+            src: '/icons/icon-72x72.png',
             type: 'image/png',
           },
           {
             sizes: '96x96',
-            src: '/icons/android-icon-96x96.png',
+            src: '/icons/icon-96x96.png',
             type: 'image/png',
           },
           {
             sizes: '144x144',
-            src: '/icons/android-icon-144x144.png',
+            src: '/icons/icon-144x144.png',
             type: 'image/png',
           },
           {
             sizes: '192x192',
-            src: '/icons/android-icon-192x192.png',
+            src: '/icons/icon-192x192.png',
+            type: 'image/png',
+          },
+          {
+            sizes: '256x256',
+            src: '/icons/icon-256x256.png',
+            type: 'image/png',
+          },
+          {
+            sizes: '384x384',
+            src: '/icons/icon-384x384.png',
             type: 'image/png',
           },
           {
             sizes: '512x512',
-            src: '/icons/android-icon-512x512.png',
+            src: '/icons/icon-512x512.png',
             type: 'image/png',
           },
           {
@@ -112,6 +122,14 @@ module.exports = {
         short_name: AUTHOR_NAME,
         start_url: '/',
         theme_color: APP_COLOR,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-offline',
+      options: {
+        workboxConfig: {
+          globPatterns: ['**/icons/**'],
+        },
       },
     },
     {

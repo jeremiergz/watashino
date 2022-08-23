@@ -133,5 +133,7 @@ jobs:
           gsutil -m setmeta -h "Cache-Control:public, max-age=31536000, immutable" 'gs://${{ secrets.GOOGLE_CLOUD_BUCKET }}/static/*'
           echo -e "\nset \"cache-control:public, max-age=0, must-revalidate\" on page-data/**.json"
           gsutil -m setmeta -h "Cache-Control:public, max-age=0, must-revalidate" 'gs://${{ secrets.GOOGLE_CLOUD_BUCKET }}/page-data/**.json'
+          echo -e "\nset \"cache-control:public, max-age=0, must-revalidate\" on sw.js"
+          gsutil -m setmeta -h "Cache-Control:public, max-age=0, must-revalidate" 'gs://${{ secrets.GOOGLE_CLOUD_BUCKET }}/sw.js'
         env:
           GOOGLE_CLOUD_BUCKET: ${{ secrets.GOOGLE_CLOUD_BUCKET }}
