@@ -1,6 +1,5 @@
 import SVG, { SVGProps } from '@/components/common/SVG';
 import clsx from 'clsx';
-import React from 'react';
 
 function GitLab({ secondaryClassName, ...rest }: GitLabProps): JSX.Element {
   return (

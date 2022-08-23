@@ -1,5 +1,4 @@
 import SVG, { SVGProps } from '@/components/common/SVG';
-import React from 'react';
 
 function Download({ secondaryClassName, ...rest }: DownloadProps): JSX.Element {
   return (

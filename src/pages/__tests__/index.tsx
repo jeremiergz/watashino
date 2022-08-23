@@ -3,7 +3,6 @@ import SEO from '@/components/common/SEO';
 import NotFoundPage from '@/pages/404';
 import IndexPage from '@/pages/index';
 import * as Gatsby from 'gatsby';
-import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
 
 const navigate = jest.spyOn(Gatsby, 'navigate');

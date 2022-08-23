@@ -1,6 +1,5 @@
 import DownloadIcon from '@/components/svgs/misc/Download';
 import PoIIcon from '@/components/svgs/misc/PoI';
-import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
 
 describe('@/components/svgs/misc Test Suite', () => {

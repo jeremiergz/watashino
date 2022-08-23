@@ -1,4 +1,4 @@
-import Footer from '@/components/layout/Footer';
+import SEO from '@/components/common/SEO';
 import Header from '@/components/layout/Header';
 import Layout from '@/components/layout/Layout';
 import Main from '@/components/layout/Layout/Main';
@@ -6,7 +6,7 @@ import WhereAmI from '@/components/modules/WhereAmI';
 import WhoAmI from '@/components/modules/WhoAmI';
 import clsx from 'clsx';
 import { PageProps } from 'gatsby';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function IndexPage(_: PageProps): JSX.Element {
   const [contentToDisplay, setContentToDisplay] = useState<'whereami' | 'whoami'>('whoami');
@@ -14,7 +14,6 @@ function IndexPage(_: PageProps): JSX.Element {
   return (
     <Layout>
       <Header current={contentToDisplay} onCurrentChange={setContentToDisplay} />
-
       <Main>
         <div className="flex [perspective:1000px]">
           <div
@@ -29,9 +28,12 @@ function IndexPage(_: PageProps): JSX.Element {
           </div>
         </div>
       </Main>
-      <Footer className="pt-8 pb-4" />
     </Layout>
   );
+}
+
+export function Head(): JSX.Element {
+  return <SEO />;
 }
 
 export default IndexPage;

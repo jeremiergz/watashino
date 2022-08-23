@@ -1,13 +1,18 @@
 require('dotenv/config');
 const fs = require('fs');
-const path = require('path');
 const yaml = require('js-yaml');
-const { gray } = require('tailwindcss/colors');
+const path = require('path');
 const { description, homepage, keywords, license, name, repository, version } = require('./package.json');
+const tailwindConfig = require('./tailwind.config');
 
 const information = yaml.load(fs.readFileSync('./content/data/information/index.yaml', 'utf8'));
 
-const APP_COLOR = gray[900];
+const colorAccent = tailwindConfig.theme.extend.colors['accent'];
+const colorPrimary = tailwindConfig.theme.extend.colors['primary'];
+const colorPrimaryDark = tailwindConfig.theme.extend.colors['primary-dark'];
+const colorText = tailwindConfig.theme.extend.colors['text'];
+
+const APP_COLOR = colorPrimaryDark;
 const APP_DESCRIPTION = description;
 const APP_KEYWORDS = keywords;
 const APP_LICENSE = license;
@@ -34,6 +39,7 @@ const AUTHOR_TWITTER_USERNAME = '@JeremieRgz';
 });
 
 module.exports = {
+  jsxRuntime: 'automatic',
   siteMetadata: {
     authorName: AUTHOR_NAME,
     authorTwitterUsername: AUTHOR_TWITTER_USERNAME,
@@ -49,7 +55,6 @@ module.exports = {
   plugins: [
     'gatsby-plugin-image',
     'gatsby-plugin-postcss',
-    'gatsby-plugin-react-helmet',
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
@@ -103,18 +108,10 @@ module.exports = {
             type: 'image/png',
           },
         ],
-        name: `${AUTHOR_NAME} - ${APP_NAME}`,
-        short_name: APP_NAME,
+        name: AUTHOR_NAME,
+        short_name: AUTHOR_NAME,
         start_url: '/',
         theme_color: APP_COLOR,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-offline',
-      options: {
-        workboxConfig: {
-          globPatterns: ['**/icons/**'],
-        },
       },
     },
     {
@@ -129,11 +126,11 @@ module.exports = {
         center: `${information.geolocation.lat},${information.geolocation.lng}`,
         key: process.env.GOOGLE_MAPS_STATIC_API_KEY,
         styles: [
-          { element: 'geometry', rules: { color: '0x0891b2' } },
+          { element: 'geometry', rules: { color: colorAccent.replace('#', '0x') } },
+          { element: 'geometry', feature: 'water', rules: { color: colorPrimary.replace('#', '0x') } },
           { element: 'labels.text.fill', rules: { color: '0x9ca3af' } },
-          { element: 'labels.text.stroke', rules: { color: '0x242f3e' } },
-          { element: 'labels.text.fill', feature: 'administrative.locality', rules: { color: '0xd1d5db' } },
-          { element: 'geometry', feature: 'water', rules: { color: '0x1f2937' } },
+          { element: 'labels.text.fill', feature: 'administrative.locality', rules: { color: colorText.replace('#', '0x') } },
+          { element: 'labels.text.stroke', rules: { color: '0x171717', weight: 2 } },
         ],
         url: {
           zoom: 10,

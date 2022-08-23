@@ -1,7 +1,6 @@
 import CanadaIcon from '@/components/svgs/flags/Canada';
 import FranceIcon from '@/components/svgs/flags/France';
 import USAIcon from '@/components/svgs/flags/USA';
-import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
 
 describe('@/components/svgs/flags Test Suite', () => {

@@ -1,5 +1,4 @@
 import SVG, { SVGProps } from '@/components/common/SVG';
-import React from 'react';
 
 // From https://github.com/catamphetamine/country-flag-icons/blob/master/flags/3x2/US.svg
 

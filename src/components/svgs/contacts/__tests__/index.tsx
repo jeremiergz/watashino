@@ -3,7 +3,6 @@ import GitHubIcon from '@/components/svgs/contacts/GitHub';
 import GitLabIcon from '@/components/svgs/contacts/GitLab';
 import LinkedInIcon from '@/components/svgs/contacts/LinkedIn';
 import TwitterIcon from '@/components/svgs/contacts/Twitter';
-import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
 
 describe('@/components/svgs/contacts Test Suite', () => {

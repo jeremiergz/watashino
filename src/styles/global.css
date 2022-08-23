@@ -30,3 +30,8 @@
     padding-bottom: 4px;
   }
 }
+
+html,
+body {
+  height: 100%;
+}

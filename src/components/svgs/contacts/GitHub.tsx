@@ -1,6 +1,5 @@
 import SVG, { SVGProps } from '@/components/common/SVG';
 import clsx from 'clsx';
-import React from 'react';
 
 function GitHub({ secondaryClassName, ...rest }: GitHubProps): JSX.Element {
   return (

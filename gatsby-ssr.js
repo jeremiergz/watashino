@@ -1,7 +1,6 @@
 import '@/styles/global.css';
 import 'typeface-open-sans';
 import ErrorBoundary from '@/components/common/ErrorBoundary';
-import SEO from '@/components/common/SEO';
 import React from 'react';
 
 export const onRenderBody = ({ setBodyAttributes, setHtmlAttributes }) => {
@@ -10,17 +9,14 @@ export const onRenderBody = ({ setBodyAttributes, setHtmlAttributes }) => {
     lang: 'en',
   });
   setBodyAttributes({
-    className: 'dark:bg-gray-900 transition-colors',
+    className: 'bg-primary-dark dark:bg-primary-dark',
   });
 };
 
 export const wrapRootElement = ({ element }) => {
   return (
     <ErrorBoundary>
-      <React.StrictMode>
-        <SEO />
-        {element}
-      </React.StrictMode>
+      <React.StrictMode>{element}</React.StrictMode>
     </ErrorBoundary>
   );
 };

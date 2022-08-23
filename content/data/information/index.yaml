@@ -18,11 +18,13 @@ geolocation:
   lng: -73.8703852
   website: https://www.mtl.org
 introduction: >
-  <p>Hi, I'm Jeremie! I'm very passionate about coding and also a lifelong student.</p>
-  <p>I have a diverse set of skills, currently focused on <strong>DevOps</strong> techs such as <em>Kubernetes</em>, <em>GCP</em>, <em>Terraform</em>,&nbsp;...</p>
-  <p>When I <strong>write code</strong>, it's usually in <em>Golang</em> or <em>Node.js</em> with <em>TypeScript</em>.</p>
-  <p>My go-to-techs for the web are <em>React</em> & <em>Next.js</em>.</p>
+  <p>Hey, I'm Jeremie 👋! I'm passionate about coding & a lifelong student 🧑‍🎓.</p>
+  <p>I have a diverse set of skills, currently focused on <em>Cloud</em> & <em>DevOps</em> techs such as <strong>Kubernetes</strong>, <strong>GCP</strong>, <strong>Terraform</strong>,&nbsp;...</p>
+  <p>When I <em>write code</em>, it's usually in <strong>Golang</strong> or <strong>Node.js</strong> with <strong>TypeScript</strong>.</p>
+  <p>My go-to-techs for the web are <strong>React</strong> & <strong>Next.js</strong>.</p>
 jobTitle: Cloud Engineer
-nationality: French
+nationality: FRA
 openToGigs: false
+resumePdfUrlDark: https://cv.jeremierodriguez.com/Jeremie%20Rodriguez%20-%20CV%20(EN-dark).pdf
+resumePdfUrlLight: https://cv.jeremierodriguez.com/Jeremie%20Rodriguez%20-%20CV%20(EN-light).pdf
 resumeUrl: https://cv.jeremierodriguez.com

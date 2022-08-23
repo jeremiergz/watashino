@@ -23,6 +23,8 @@ type InformationDataQueryResponse = {
     geolocation: Geolocation;
     nationality: string;
     openToGigs: boolean;
+    resumePdfUrlDark: string;
+    resumePdfUrlLight: string;
     resumeUrl: string;
   };
 };
@@ -50,6 +52,8 @@ function useInformationData(): Omit<InformationDataQueryResponse['information'],
         jobTitle
         nationality
         openToGigs
+        resumePdfUrlDark
+        resumePdfUrlLight
         resumeUrl
       }
     }
