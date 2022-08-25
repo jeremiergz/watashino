@@ -117,6 +117,21 @@ module.exports = {
             src: '/icons/maskable-icon.png',
             type: 'image/png',
           },
+          {
+            sizes: '70x70',
+            src: '/icons/ms-icon-70x70.png',
+            type: 'image/png',
+          },
+          {
+            sizes: '150x150',
+            src: '/icons/ms-icon-150x150.png',
+            type: 'image/png',
+          },
+          {
+            sizes: '310x310',
+            src: '/icons/ms-icon-310x310.png',
+            type: 'image/png',
+          },
         ],
         name: AUTHOR_NAME,
         short_name: AUTHOR_NAME,

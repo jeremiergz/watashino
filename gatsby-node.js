@@ -11,9 +11,9 @@ exports.onPostBuild = async ({ reporter }) => {
 <browserconfig>
   <msapplication>
     <tile>
-      <square70x70logo src="/ms-icon-70x70.png" />
-      <square150x150logo src="/ms-icon-150x150.png" />
-      <square310x310logo src="/ms-icon-310x310.png" />
+      <square70x70logo src="/icons/ms-icon-70x70.png" />
+      <square150x150logo src="/icons/ms-icon-150x150.png" />
+      <square310x310logo src="/icons/ms-icon-310x310.png" />
       <TileColor>${colorPrimaryDark}</TileColor>
     </tile>
   </msapplication>
