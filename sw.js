@@ -27,62 +27,82 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "icons/android-icon-144x144.png",
-    "revision": "80127410b7c17183f5e60c853c388345"
+    "url": "icons/icon-144x144.png",
+    "revision": "8f133d3d2099f5cb88018255fbaba83b"
   },
   {
-    "url": "icons/android-icon-192x192.png",
-    "revision": "bd88f1f7b44fb43cd13bf276b7da17dc"
+    "url": "icons/icon-192x192.png",
+    "revision": "3c076329dc84f398901f422608eb85bd"
   },
   {
-    "url": "icons/android-icon-36x36.png",
-    "revision": "8dbc436a4d8fddc6ea056b4960284ab9"
+    "url": "icons/icon-256x256.png",
+    "revision": "053e3e68a7d581405af5715d0fdf4faf"
   },
   {
-    "url": "icons/android-icon-48x48.png",
-    "revision": "dfc56e909433ba188ae7d573f816af03"
+    "url": "icons/icon-36x36.png",
+    "revision": "80d911d4c4d92f22387126eb9ae4eb93"
   },
   {
-    "url": "icons/android-icon-512x512.png",
-    "revision": "9e49b6fe88a75e45aa1f81a4731045a9"
+    "url": "icons/icon-384x384.png",
+    "revision": "7f069506cad38f9e0573ddf4c9214d30"
   },
   {
-    "url": "icons/android-icon-72x72.png",
-    "revision": "53c620bb4dee5b639624c574aaa7e150"
+    "url": "icons/icon-48x48.png",
+    "revision": "f815b7f63e8dab7bcf05a4e254ac0a56"
   },
   {
-    "url": "icons/android-icon-96x96.png",
-    "revision": "46cccd011b1c73528010b4b5923c517d"
+    "url": "icons/icon-512x512.png",
+    "revision": "d689a479af93855b7b16eb3cde41fe4e"
+  },
+  {
+    "url": "icons/icon-72x72.png",
+    "revision": "4c0a14f46ad96bf454527b5f542fd7ad"
+  },
+  {
+    "url": "icons/icon-96x96.png",
+    "revision": "affd5944a3ad8bb363fdf8542346cfd3"
   },
   {
     "url": "icons/maskable-icon.png",
-    "revision": "9e49b6fe88a75e45aa1f81a4731045a9"
+    "revision": "d689a479af93855b7b16eb3cde41fe4e"
   },
   {
-    "url": "framework-c72b6d08a1cb4225c99f.js"
+    "url": "icons/ms-icon-150x150.png",
+    "revision": "b7213cdc5c9502a3df470e498cb5d7ef"
   },
   {
-    "url": "styles.d5632a271e52df61c5ca.css"
+    "url": "icons/ms-icon-310x310.png",
+    "revision": "c86f92f9dbf49d453aba15fb25d5fea2"
   },
   {
-    "url": "app-56b66631c17c7c04672f.js"
+    "url": "icons/ms-icon-70x70.png",
+    "revision": "7b71ff13b89bb7eb3a4cf5e0a1414ac8"
+  },
+  {
+    "url": "framework-bcbfc83513cb7085c202.js"
+  },
+  {
+    "url": "styles.eaabf856f3c0d262418f.css"
+  },
+  {
+    "url": "dc6a8720040df98778fe970bf6c000a41750d3ae-d706040e81332be67606.js"
+  },
+  {
+    "url": "app-c15cdfea5f1f61d08f0f.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "f38c9db589955777c48588411fdac813"
+    "revision": "7f087720265aa865064d5e66e84b58b6"
   },
   {
-    "url": "webpack-runtime-a76d3aa4f621c636c6ae.js"
+    "url": "polyfill-d19a761530e6c0ad1893.js"
   },
   {
-    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-64eafd693e5d65f36e84.js"
-  },
-  {
-    "url": "polyfill-92c352b398eadfaa3abc.js"
+    "url": "webpack-runtime-393e3e4f0b5c301263f3.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "696334d251439650afbb531a320fed43"
+    "revision": "8657d92d38f0ec93c6608d13855621ea"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -192,7 +212,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-56b66631c17c7c04672f.js`))) {
+  if (!resources || !(await caches.match(`/app-c15cdfea5f1f61d08f0f.js`))) {
     return await fetch(event.request)
   }
 
