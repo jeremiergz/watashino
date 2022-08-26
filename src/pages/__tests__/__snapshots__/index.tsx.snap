@@ -7,7 +7,7 @@ exports[`@/pages Test Suite IndexPage Test Suite matches snapshot 1`] = `
 `;
 
 exports[`@/pages Test Suite NotFoundPage Test Suite matches snapshot 1`] = `
-Array [
+[
   <title>
     Test author
   </title>,
