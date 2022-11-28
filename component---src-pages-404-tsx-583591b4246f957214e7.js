@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwatashino=self.webpackChunkwatashino||[]).push([[218],{2513:function(n,t,e){e.r(t),e.d(t,{Head:function(){return r}});var u=e(2330),a=e(7294),f=e(5893);function r(){return(0,f.jsx)(u.Z,{})}t.default=function(n){let{navigate:t}=n;return(0,a.useEffect)((()=>{t("/")}),[]),null}}}]);
+//# sourceMappingURL=component---src-pages-404-tsx-583591b4246f957214e7.js.map

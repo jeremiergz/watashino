@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://jeremierodriguez.com/sitemap/sitemap-index.xml
+Sitemap: https://jeremierodriguez.com/sitemap-index.xml
 Host: https://jeremierodriguez.com
